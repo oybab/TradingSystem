@@ -2,7 +2,7 @@
 
 Oybab Trading System is an open source **trading system** that support **multiple language** and run in **multiple device** (By windows platform for now).
 
-Imagine if you have some Employees use different languages, but the system and the information inside of system can handle only 1 language. We hopping the system can support every language and there is no limitation or problem with different language for employees and customers. The system support 3 different languages, which mean you can have 3 employees who speak different languages.
+Imagine if you have some Employees use different languages, but the system and the information inside of system can handle only 1 language. We hopping the system can support every language and there is no limitation or problem with different language for employees and customers. The system support 3 different languages for inside, which mean you can have 3 employees who speak different languages. The system also support unlimited different languages for the UI, which mean you can have any customers who speak different languages.
 
 Basically you could do any trading information in it. 
 You could download and install the binary files for free to:
