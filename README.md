@@ -28,7 +28,7 @@ There are multiple part for this system:
 
 ### Install
 
- 1. Download the newest install package, Install the Server Install Package, It will running as a windows service, It would auto create a new database when first time install. (If you reboot the windows, it will auto running the service as a background, but it might be delay running after reboot, that might be take few minutes. you can wait or start it by manually).
+ 1. Download the newest install package, Install the Server Install Package, It will running as a windows service, It would auto create a new database when first time install. (If you reboot the windows, it will auto running the service as a background).
  2. Install the Client (Recommend the PC Client, because it include the full feature), and run it after install(change the Language and Server IP address to the right server address which you install Server Install Package before you login).
  The default Super Administrator User Name:1000   Password:123456     (Please modify the Password in time)
  3. Start your journey.
