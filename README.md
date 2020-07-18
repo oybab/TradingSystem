@@ -20,11 +20,11 @@ You could download the source code and customized it based it [License](https://
 
 ## End User
 
-There are multiple part for this system:
-**Server System**: Install on the server machine(could install in the same machine which install client system ). At least Win7 or newer system required.
-**PC Client**: Install on the client machine(Recommended to install on a device with a keyboard and mouse for the full operation), At least Win XP or newer system required.
-**Tablet Client**: Install on the client machine(Recommended to install on a Tablet or device with touch screen for quick operation), At least Win XP or newer system required.
-**Phone Client**: Install on the Phone(For convenient operation.), currently support the newest iOS, Android, UWP system.(Download from App Store)
+There are multiple part for this system(Download from Release page):
+ - **Server System**: Install on the server machine(could install in the same machine which install client system ). At least Win7 or newer system required.
+ - **PC Client**: Install on the client machine(Recommended to install on a device with a keyboard and mouse for the full operation), At least Win XP or newer system required.
+ - **Tablet Client**: Install on the client machine(Recommended to install on a Tablet or device with touch screen for quick operation), At least Win XP or newer system required.
+ - **Phone Client**: Install on the Phone(For convenient operation.), currently support the newest iOS, Android, UWP system.(Download from App Store)
 
 ### Install
 
