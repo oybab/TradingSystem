@@ -3,7 +3,7 @@
 
 OYBAB
 
-**Effective Date：2020-07-10**
+**Effective Date：2020-07-18**
 
 Oybab Trading System（And "we", "our" or "this app/software source code/binary" mentioned below.）is composed of main body The company Oybab Co., Ltd. The network product that offers。  
 The product name： Oybab Trading System  
