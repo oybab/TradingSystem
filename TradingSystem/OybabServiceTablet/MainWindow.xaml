@@ -1,0 +1,82 @@
+﻿<Window x:Class="Oybab.ServiceTablet.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:control="clr-namespace:Oybab.ServiceTablet.Resources.Controls"
+        Width="1024" Height="768" x:Name="window" WindowState="Normal"  UseLayoutRounding="True" Title="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=SoftServiceName}" WindowStyle="None" AllowsTransparency="True" Background="{x:Null}" WindowStartupLocation="CenterScreen" Icon="/ServiceTablet;component/TradingSystem.ico">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary  Source="/ServiceTablet;component/Resources/Styles/Pages/MainWindowStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Grid  x:Name="grdTopPage" Style="{StaticResource grdCommonBackgroundStyle}"  Height="{Binding ElementName=window, Path=ActualHeight}" Width="{Binding ElementName=window, Path=ActualWidth}"  RenderTransformOrigin="0,0">
+            <Grid.RenderTransform>
+                <TranslateTransform x:Name="grdTranslate"/>
+            </Grid.RenderTransform>
+            <Grid x:Name="grdPage" HorizontalAlignment="Center" VerticalAlignment="Center" Height="{Binding ElementName=window, Path=ActualHeight}" Width="{Binding ElementName=window, Path=ActualWidth}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <!-- top -->
+                    <Grid x:Name="grdTop" Grid.Row="0" Style="{StaticResource grdTopLogoContentStyle}" HorizontalAlignment="Stretch">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <!-- soft and version -->
+                        <WrapPanel Grid.Column="0" Style="{StaticResource wpTopLogoContentWrapStyle}">
+                            <Label Style="{StaticResource lbTopLogoTitleStyle}" />
+                            <Label Style="{StaticResource lbTopLogoVersionStyle}" />
+                        </WrapPanel>
+                        <TextBlock Grid.Column="1" Style="{StaticResource tbOwenerNameStyle}" Text="{Binding OwnerName}"  HorizontalAlignment="Right"/>
+                        <!-- 这里放个东西比如时间, 然后智能控制宽度-->
+                        <Grid Grid.Column="2">
+                        
+                        </Grid>
+                    </Grid>
+                    <Line Grid.Row="1"  Style="{StaticResource lSpliteLineStyle}" X2="{Binding ElementName=grdTop, Path=ActualWidth}"/>
+
+                    <!-- Black Background -->
+                    <Grid Grid.RowSpan="2" Style="{StaticResource grdBlackBackgroundStyle}"/>
+                    <Grid Grid.Row="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="20"/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="20"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="0" Style="{StaticResource grdBlackBackgroundStyle}"/>
+                        <Frame Grid.Column="1" x:Name="mainFrame" Style="{StaticResource mainFrameStyle}"/>
+                        <Grid Grid.Column="2" Style="{StaticResource grdBlackBackgroundStyle}"/>
+                    </Grid>
+                </Grid>
+
+                <!-- Animation -->
+                <Grid Style="{StaticResource grdAnimationParentStyle}" DataContext="{Binding Animation}">
+                    <control:LoadingControl/>
+                </Grid>
+
+                <!-- Alert Msg -->
+                <Grid Style="{StaticResource grdMessageboxParentStyle}" DataContext="{Binding Msg}">
+                    <control:MsgControl/>
+                </Grid>
+                <!-- Key Msg -->
+                <Grid Style="{StaticResource grdMessageboxKeyParentStyle}" DataContext="{Binding Key}">
+                    <control:KeyControl/>
+                </Grid>
+            </Grid>
+        </Grid>
+        <Grid x:Name="grdImgPage" IsHitTestVisible="False" Style="{StaticResource grdCommonBackgroundStyle}" Height="{Binding ElementName=window, Path=ActualHeight}" Width="{Binding ElementName=window, Path=ActualWidth}" Visibility="Collapsed"  RenderTransformOrigin="0,0">
+            <Grid.RenderTransform>
+                <TranslateTransform x:Name="imgTranslate"/>
+            </Grid.RenderTransform>
+            <Image x:Name="imgPage"  IsHitTestVisible="False" Height="{Binding ElementName=window, Path=ActualHeight}" Width="{Binding ElementName=window, Path=ActualWidth}" Stretch="None">
+            </Image>
+        </Grid>
+    </Grid>
+</Window>

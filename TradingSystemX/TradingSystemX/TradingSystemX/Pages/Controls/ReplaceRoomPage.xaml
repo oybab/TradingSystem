@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.Core"
+             Title="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=SoftServiceName}"
+             x:Class="Oybab.TradingSystemX.Pages.Controls.ReplaceRoomPage" BackgroundColor="{DynamicResource PageBackgroundColor}">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <ControlTemplate x:Key="ReplaceListTemplate" x:Name="ReplaceListTemplate">
+                <Grid>
+                    <Grid Padding="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="{TemplateBinding BindingContext.RoomNo}" HorizontalOptions="StartAndExpand" />
+                        <Label Text="" Grid.Column="1" HorizontalOptions="EndAndExpand" Margin="0,0,10,0">
+                            <Label.Triggers>
+                                <DataTrigger TargetType="Label" Binding="{TemplateBinding BindingContext.UseState}" Value="True">
+                                    <Setter Property="Text" Value=">>>>>"/>
+                                </DataTrigger >
+                            </Label.Triggers>
+                        </Label>
+                    </Grid>
+                    <Button Command="{TemplateBinding BindingContext.GoCommand}" CommandParameter="{TemplateBinding BindingContext }" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  BackgroundColor="Transparent"></Button>
+                </Grid>
+            </ControlTemplate>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid>
+        <Grid>
+            <StackLayout Margin="10, 10, 10, 10"  Orientation="Vertical">
+                <Label HorizontalOptions="Start" Margin="6,20,0,0" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=ReplaceRoom}" />
+                <StackLayout>
+                    <ScrollView Margin="0,20,0,0" BackgroundColor="{DynamicResource ItemBackgroundColor}">
+                        <StackLayout x:Name="lvList">
+
+                        </StackLayout>
+                    </ScrollView>
+
+                    <Grid Margin="6,10,10,5" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="1" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Save}" HorizontalOptions="End" Command="{Binding OKCommand}"/>
+                    </Grid>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+
+        <Grid IsVisible="{Binding IsLoading}"  Style="{StaticResource LoadingBackground}">
+            <ActivityIndicator IsRunning="{Binding IsLoading}" />
+        </Grid>
+
+    </Grid>
+</ContentPage>

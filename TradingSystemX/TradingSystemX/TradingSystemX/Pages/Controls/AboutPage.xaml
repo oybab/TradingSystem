@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=SoftServiceName}"
+             xmlns:forms="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.Core"
+             x:Class="Oybab.TradingSystemX.Pages.Controls.AboutPage" BackgroundColor="{DynamicResource PageBackgroundColor}">
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            <ScrollView>
+                <StackLayout Margin="0, 20, 0, 10"  Orientation="Vertical">
+
+                    <Label HorizontalOptions="Start" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=About}"  Margin="6,0,0,0" />
+
+                    <Label HorizontalOptions="Center" x:Name="lbSoftware" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=SoftServiceName}" Margin="0,20,0,0"/>
+
+
+                    <StackLayout Margin="0, 15, 0, 5" Grid.Column="2"  HorizontalOptions="Center" VerticalOptions="Center" Orientation="Horizontal">
+                            <Label Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=VersionNo}" />
+                            <Label Text="："  Margin="0"/>
+                            <Label Text="{Binding VersionNo}" />
+                    </StackLayout>
+
+                    <Grid Margin="0,5,0,5">
+                        <Label Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=CompanyAbbreviation}" TextColor="{DynamicResource ButtonColor}" TextDecorations="Underline">
+                                    </Span>
+                                </FormattedString>
+                            </Label.FormattedText>
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Grid>
+
+                   
+                    <Grid  Margin="0, 5, 0, 5">
+                        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Orientation="Horizontal">
+                            <Label FontSize="Caption" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=RemainingDays}" />
+                            <Label FontSize="Caption" Text="："  Margin="0"/>
+                            <Label FontSize="Caption" Text="{Binding RemainingDays}" />
+                            <Label FontSize="Caption" Text=".  " />
+                            <Label FontSize="Caption" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Device}" />
+                            <Label FontSize="Caption" Text="："  Margin="0"/>
+                            <Label FontSize="Caption" Text="{Binding Device}" />
+                            <Label FontSize="Caption" Text=".  " />
+                            <Label FontSize="Caption" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Table}" />
+                            <Label FontSize="Caption" Text="："  Margin="0"/>
+                            <Label FontSize="Caption" Text="{Binding Table}" />
+                            <Label FontSize="Caption" Text=".  " />
+                        </StackLayout>
+                    </Grid>
+
+                    <Grid  Margin="0, 5, 0, 5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+
+                        
+                        <Label Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=License}" TextColor="{DynamicResource ButtonColor}" TextDecorations="Underline">
+                                    </Span>
+                                </FormattedString>
+                            </Label.FormattedText>
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <Label Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="service@oybab.net" TextColor="{DynamicResource ButtonColor}" TextDecorations="Underline">
+                                    </Span>
+                                </FormattedString>
+                            </Label.FormattedText>
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Grid>
+                    <Grid  Margin="0, 5, 0, 5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=SourceCode}" TextColor="{DynamicResource ButtonColor}" TextDecorations="Underline">
+                                    </Span>
+                                </FormattedString>
+                            </Label.FormattedText>
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Button_Clicked"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <Label Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Donate}" TextColor="{DynamicResource ButtonColor}" TextDecorations="Underline">
+                                    </Span>
+                                </FormattedString>
+                            </Label.FormattedText>
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Button_Clicked_1"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+
+
+                    </Grid>
+
+                    <Grid  Margin="0, 5, 0, 5">
+                        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Orientation="Horizontal">
+                            <Label Text="{Binding Admin}" x:Name="lbAdmin" />
+                            <Label Text="-"  Margin="0"/>
+                            <Label Text="{Binding Role}" />
+                        </StackLayout>
+                    </Grid>
+
+                    <Grid Margin="0, 5, 0, 5">
+                        <Button  VerticalOptions="CenterAndExpand" Command="{Binding DisableCommand}"  HorizontalOptions="End" IsVisible="False" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Enabled}">
+                            <Button.Triggers>
+                                <DataTrigger TargetType="Button" Binding="{Binding DisableMode}" Value="True">
+                                    <Setter Property="Text" Value="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Disabled}"/>
+                                    <Setter Property="TextColor" Value="Red"/>
+                                </DataTrigger>
+                                <DataTrigger TargetType="Button" Binding="{Binding DisableVisibleMode}" Value="True">
+                                    <Setter Property="IsVisible" Value="True"/>
+                                </DataTrigger >
+
+                            </Button.Triggers>
+                        </Button>
+                    </Grid>
+
+                    <Grid Margin="0, 10, 0, 10">
+                        <Button  VerticalOptions="CenterAndExpand" Command="{Binding DisableFireCommand}"  HorizontalOptions="End" IsVisible="False" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=SendFireAlarm}">
+                            <Button.Triggers>
+                                <DataTrigger TargetType="Button" Binding="{Binding FireAlarmMode}" Value="True">
+                                    <Setter Property="Text" Value="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=CancelFireAlarm}"/>
+                                    <Setter Property="TextColor" Value="Red"/>
+                                </DataTrigger>
+                                <DataTrigger TargetType="Button" Binding="{Binding DisableFireMode}" Value="True">
+                                    <Setter Property="IsVisible" Value="True"/>
+                                </DataTrigger >
+
+                            </Button.Triggers>
+                        </Button>
+                    </Grid>
+                </StackLayout>
+
+
+
+                
+            </ScrollView>
+
+            <StackLayout Grid.Row="1"  HorizontalOptions="CenterAndExpand"  Orientation="Horizontal">
+                <Label FontSize="Caption"  VerticalOptions="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=PrivacyPolicy}" TextColor="{DynamicResource ButtonColor}" TextDecorations="Underline">
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding PrivacyPolicyCommand}" CommandParameter="1" />
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label FontSize="Caption" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=And}" Margin="3" VerticalOptions="Center"/>
+                <Label FontSize="Caption" VerticalOptions="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=UserAgreement}" TextColor="{DynamicResource ButtonColor}" TextDecorations="Underline">
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding UserAgreementCommand}" CommandParameter="1" />
+                    </Label.GestureRecognizers>
+                </Label>
+            </StackLayout>
+        </Grid>
+        <Grid IsVisible="{Binding IsLoading}"  Style="{StaticResource LoadingBackground}">
+            <ActivityIndicator IsRunning="{Binding IsLoading}" />
+        </Grid>
+    </Grid>
+</ContentPage>

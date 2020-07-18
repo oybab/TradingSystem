@@ -1,0 +1,733 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+    <!-- 顶部产品标题背景 -->
+    <Style x:Key="grdTopProductsInfoTitleStyle" TargetType="{x:Type Label}">
+        <Setter Property="Background" Value="Black"/>
+        <Setter Property="Opacity" Value="0.4"/>
+    </Style>
+    
+    <!-- 顶部产品标题 -->
+    <Style x:Key="lbTopProductsInfoTitleStyle" TargetType="{x:Type Label}">
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontSize" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleKeyboardFontSize}"/>
+        <Setter Property="FontFamily" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+    </Style>
+
+
+    <!-- 顶部产品标题的分割线 -->
+    <Style x:Key="lTopProductsInfoTitleSpliteLineStyle" TargetType="Line">
+        <Setter Property="Stroke" Value="#FEFDFC"/>
+        <Setter Property="Opacity" Value="0.25"/>
+        <Setter Property="StrokeThickness" Value="2"/>
+        <Setter Property="Margin" Value="0, 5"/>
+    </Style>
+
+
+    <!-- 产品详情 产品图片 -->
+    <Style x:Key="imgProductInfoImageStyle" TargetType="Image">
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="Stretch" Value="Fill"/>
+        <Setter Property="Source" Value="{Binding ImagePath, Converter={StaticResource NullImageConverter}}"/>
+        <Setter Property="Width" Value="120"/>
+        <Setter Property="Height" Value="80"/>
+    </Style>
+
+
+    <!-- 产品详情 产品边框 -->
+    <Style x:Key="bdProductInfoBorderStyle" TargetType="Border">
+        <Setter Property="CornerRadius" Value="15"/>
+        <Setter Property="Background" Value="White"/>
+        <Setter Property="Opacity" Value="0.4"/>
+    </Style>
+
+
+    <!-- 产品详情 产品名称 -->
+    <Style x:Key="lbProductInfoProductNameStyle" TargetType="Label">
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Margin" Value="15, 0"/>
+        <Setter Property="FontSize" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleKeyboardFontSize}"/>
+        <Setter Property="FontFamily" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+    </Style>
+
+    <!-- 产品详情 产品名称 -->
+    <Style x:Key="tbProductInfoProductNameStyle" TargetType="TextBlock">
+        <Setter Property="FlowDirection" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=DirectionMode}"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Margin" Value="15, 0"/>
+        <Setter Property="FontSize" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleKeyboardFontSize}"/>
+        <Setter Property="FontFamily" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+    </Style>
+
+
+
+    <!-- 产品详情 产品数量 -->
+    <Style x:Key="btnSubtractStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonBase}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid Width="60" Height="40" Background="Transparent">
+                        <Grid>
+                            <Image x:Name="backgroundImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/subtract.png"  Width="31" Height="6"/>
+                            <Image x:Name="backgroundSelectImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/subtract_selected.png"  Width="31" Height="6" Visibility="Collapsed"/>
+                        </Grid>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="backgroundImage" Property="Visibility" Value="Collapsed"/>
+                            <Setter TargetName="backgroundSelectImage" Property="Visibility" Value="Visible"/>
+                        </Trigger>
+                        <DataTrigger Binding="{Binding IsNew}" Value="False">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <Style x:Key="btnAddStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonBase}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid Width="60" Height="40" Background="Transparent">
+                        <Grid>
+                            <Image x:Name="backgroundImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/add.png"  Width="31" Height="31"/>
+                            <Image x:Name="backgroundSelectImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/add_selected.png"  Width="31" Height="31" Visibility="Collapsed"/>
+                        </Grid>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="backgroundImage" Property="Visibility" Value="Collapsed"/>
+                            <Setter TargetName="backgroundSelectImage" Property="Visibility" Value="Visible"/>
+                        </Trigger>
+                        <DataTrigger Binding="{Binding IsNew}" Value="False">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+    <Style x:Key="btnCountStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonBase}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid MaxWidth="80" MinWidth="60" Height="40" Background="Transparent">
+                        <Grid x:Name="grdParent" Height="32" Background="White">
+                            <Label x:Name="lbContent" Padding="0" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{TemplateBinding Content}" Foreground="#CA0000" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleKeyboardFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                        </Grid>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                           
+                        </Trigger>
+                        <DataTrigger Binding="{Binding IsNew}" Value="False">
+                            <Setter TargetName="grdParent" Property="Background" Value="Transparent"/>
+                            <Setter TargetName="lbContent" Property="Foreground" Value="White"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+    <!-- 产品详情 产品数量 -->
+    <Style x:Key="lbProductInfoProductCountStyle" TargetType="Label">
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Margin" Value="2, 0"/>
+        <Setter Property="Padding" Value="0"/>
+        <Setter Property="FontSize" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleKeyboardFontSize}"/>
+        <Setter Property="FontFamily" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+    </Style>
+
+
+    <!-- 产品附加信息-->
+    <Style x:Key="imgProductInfoNewImageStyle" TargetType="Image">
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="Stretch" Value="None"/>
+        <Setter Property="Source" Value="/Res;component/Resources/Images/Tablet/new.png"/>
+        <Setter Property="Width" Value="46"/>
+        <Setter Property="Height" Value="22"/>
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding IsNew}" Value="True">
+                <Setter Property="Visibility" Value="Visible"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- 产品详情 产品数量 -->
+    <Style x:Key="lbProductInfoProductAddTimeStyle" TargetType="Label">
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Margin" Value="10, 0"/>
+        <Setter Property="FontSize" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleKeyboardFontSize}"/>
+        <Setter Property="FontFamily" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+    </Style>
+
+
+    <!-- 产品详情 操作 -->
+    <Style x:Key="btnPackageStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonBase}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid Width="90" Height="41">
+                        <Grid>
+                            <Image x:Name="backgroundImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/package.png"  Width="90" Height="41"/>
+                            <Image x:Name="backgroundSelectImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/package_selected.png"  Width="90" Height="41" Visibility="Collapsed"/>
+                        </Grid>
+                        <Label x:Name="lbContent" Padding="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=Package}" Foreground="White" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleKeyboardFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <DataTrigger Binding="{Binding IsShowRequest}" Value="False">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding IsPackage}" Value="True">
+                            <Setter TargetName="backgroundImage" Property="Visibility" Value="Collapsed"/>
+                            <Setter TargetName="backgroundSelectImage" Property="Visibility" Value="Visible"/>
+                            <Setter TargetName="lbContent" Property="Visibility" Value="Collapsed"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding IsNew}" Value="False">
+                            <Setter Property="IsHitTestVisible" Value="False"/>
+                            <Setter Property="Opacity" Value="0.5"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding State}" Value="3">
+                <Setter Property="Visibility" Value="Collapsed"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="btnRequestStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonBase}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid Width="90" Height="41">
+                        <Grid>
+                            <Image x:Name="backgroundImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/request.png"  Width="90" Height="41"/>
+                            <Image x:Name="backgroundSelectImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/request_selected.png"  Width="90" Height="41" Visibility="Collapsed"/>
+                        </Grid>
+                        <Label x:Name="lbContent" Padding="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=Request2}" Foreground="White" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleKeyboardFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <DataTrigger Binding="{Binding IsShowRequest}" Value="False">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding IsRequest}" Value="True">
+                            <Setter TargetName="backgroundImage" Property="Visibility" Value="Collapsed"/>
+                            <Setter TargetName="backgroundSelectImage" Property="Visibility" Value="Visible"/>
+                            <Setter TargetName="lbContent" Property="Visibility" Value="Collapsed"/>
+                            </DataTrigger>
+                        <DataTrigger Binding="{Binding IsNew}" Value="False">
+                            <Setter Property="IsHitTestVisible" Value="False"/>
+                            <Setter Property="Opacity" Value="0.5"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding State}" Value="3">
+                <Setter Property="Visibility" Value="Collapsed"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+
+
+    <Style x:Key="btnDeleteStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonBase}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid Width="70" Height="41">
+                        <Grid>
+                            <Image x:Name="backgroundImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/delete.png"  Width="70" Height="41"/>
+                            <Image x:Name="backgroundSelectImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/delete_selected.png"  Width="70" Height="41" Visibility="Collapsed"/>
+                        </Grid>
+                        <Label x:Name="lbContent" Padding="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=Delete}" Foreground="White" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleKeyboardFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="backgroundImage" Property="Visibility" Value="Collapsed"/>
+                            <Setter TargetName="backgroundSelectImage" Property="Visibility" Value="Visible"/>
+                        </Trigger>
+                        <DataTrigger Binding="{Binding IsDeleteProduct}" Value="False">
+                            <Setter Property="IsHitTestVisible" Value="False"/>
+                            <Setter Property="Opacity" Value="0.5"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding State}" Value="3">
+                <Setter Property="Visibility" Value="Collapsed"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+
+    <Style x:Key="lbStateStyle" TargetType="{x:Type Label}">
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="Red"/>
+        <Setter Property="Content" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=Canceld}"/>
+        <Setter Property="FontSize" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleKeyboardFontSize}"/>
+        <Setter Property="FontFamily" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding State}" Value="3">
+                <Setter Property="Visibility" Value="Visible"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+
+
+    <!-- 价格和已选数量信息显示 -->
+    <Style x:Key="lbStyle" TargetType="Label">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <WrapPanel VerticalAlignment="Center">
+                        <Label Padding="0" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=TotalPrice}"  FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MediumButtonFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                        <Label Padding="0" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Content="："  FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MediumButtonFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                        <Label Padding="0" Foreground="#FFD101" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Converter={StaticResource PriceConverter}}"  FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MediumButtonFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                        <Label x:Name="lbContent" Padding="0" Foreground="#FFD101" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{TemplateBinding Content}"  FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MediumButtonFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+
+                    </WrapPanel>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <!-- 价格显示 -->
+    <Style x:Key="lbIsPriceChangeStyle" TargetType="Grid">
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding IsChangePrice}" Value="True">
+                <Setter Property="Visibility" Value="Visible"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- 价格显示 -->
+    <Style x:Key="lbIsPriceNotChangeStyle" TargetType="WrapPanel">
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding IsChangePrice}" Value="False">
+                <Setter Property="Visibility" Value="Visible"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- 价格 -->
+    <Style x:Key="btnTotalPriceStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonBase}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="lbBorder" CornerRadius="15" Background="White" BorderThickness="2" BorderBrush="White" Height="32">
+                        <WrapPanel Margin="2, 0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Label x:Name="lbContent" Margin="2, 0" Padding="0" Foreground="#FF4800" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Converter={StaticResource PriceConverter}}"  FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleKeyboardFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                            <Label x:Name="lbContent2" Margin="2, 0" Padding="0" Foreground="#FF4800" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{TemplateBinding Content}"  FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleKeyboardFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                        </WrapPanel>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="lbBorder" Property="BorderBrush" Value="#FF4800"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <!-- 价格和已选数量信息显示 -->
+    <Style x:Key="lbOrderInfoTotalStyle" TargetType="Label">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <WrapPanel VerticalAlignment="Center">
+                        <Label Padding="0" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=TotalPrice}"  FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MediumButtonFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                        <Label Padding="0" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Content="："  FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MediumButtonFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                        <Label Padding="0" Foreground="#FFD101" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Converter={StaticResource PriceConverter}}"  FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MediumButtonFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                        <Label x:Name="lbContent" Padding="0" Foreground="#FFD101" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{TemplateBinding Content}"  FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MediumButtonFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+
+                    </WrapPanel>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <!-- 已付金额显示 -->
+    <Style x:Key="lbOrderInfoPaidStyle" TargetType="Label">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <WrapPanel VerticalAlignment="Center">
+                        <Label Padding="0" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=PaidPrice}"  FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                        <Label Padding="0" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Content="："  FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                        <Label Padding="0" Foreground="#FFD101" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Converter={StaticResource PriceConverter}}"  FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                        <Label x:Name="lbContent" Padding="0" Foreground="#FFD101" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{TemplateBinding Content}"  FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+
+                    </WrapPanel>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <Style x:Key="lbOrderInfoSelectedStyle" TargetType="Label">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <WrapPanel VerticalAlignment="Center">
+                        <Label Padding="0" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=SelectedCount}"  FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                        <Label Padding="0" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Content="："  FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                        <Label x:Name="lbContent" Padding="0" Foreground="#FFD101" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{TemplateBinding Content}"  FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+
+                    </WrapPanel>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+    <Style x:Key="btnSaveStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonBase}">
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid Width="235" Height="63" Margin="4,0,4,0">
+                        <Grid>
+                            <Image x:Name="backgroundImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/confirm_ok.png"  Width="235" Height="63"/>
+                            <Image x:Name="backgroundSelectImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/confirm_ok_selected.png"  Width="235" Height="63" Visibility="Collapsed"/>
+                        </Grid>
+                        <Label Padding="0" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=Save}" Foreground="White" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="backgroundImage" Property="Visibility" Value="Collapsed"/>
+                            <Setter TargetName="backgroundSelectImage" Property="Visibility" Value="Visible"/>
+                        </Trigger>
+                        <DataTrigger Binding="{Binding SaveMode}" Value="1">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="btnCheckoutStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonBase}">
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid Width="235" Height="63" Margin="4,0,4,0">
+                        <Grid>
+                            <Image x:Name="backgroundImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/confirm_ok.png"  Width="235" Height="63"/>
+                            <Image x:Name="backgroundSelectImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/confirm_ok_selected.png"  Width="235" Height="63" Visibility="Collapsed"/>
+                        </Grid>
+                        <Label x:Name="lbContent" Padding="0" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=CheckoutOrder}" Foreground="White" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <DataTrigger Binding="{Binding IsImport}" Value="True">
+                            <Setter TargetName="lbContent" Property="Content" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=CheckoutImport}"/>
+                        </DataTrigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="backgroundImage" Property="Visibility" Value="Collapsed"/>
+                            <Setter TargetName="backgroundSelectImage" Property="Visibility" Value="Visible"/>
+                        </Trigger>
+                        <DataTrigger Binding="{Binding SaveMode}" Value="2">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+    <Style x:Key="btnRefreshStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonBase}">
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid Width="235" Height="63" Margin="4,0,4,0">
+                        <Grid>
+                            <Image x:Name="backgroundImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/confirm_ok.png"  Width="235" Height="63"/>
+                            <Image x:Name="backgroundSelectImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/confirm_ok_selected.png"  Width="235" Height="63" Visibility="Collapsed"/>
+                        </Grid>
+                        <Label Padding="0" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=Refresh}" Foreground="Red" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="backgroundImage" Property="Visibility" Value="Collapsed"/>
+                            <Setter TargetName="backgroundSelectImage" Property="Visibility" Value="Visible"/>
+                        </Trigger>
+                        <DataTrigger Binding="{Binding IsRefresh}" Value="True">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <Style x:Key="btnAddressStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonBase}">
+        <Setter Property="Opacity" Value="0.6"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid Width="88" Height="63" Margin="4,0,4,0">
+                        <Grid>
+                            <Image x:Name="backgroundImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/location.png"  Width="88" Height="63"/>
+                            <Image x:Name="backgroundSelectImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/location_selected.png"  Width="88" Height="63" Visibility="Collapsed"/>
+                            <Image x:Name="backgroundUsingImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/location_using.png"  Width="88" Height="63" Visibility="Collapsed"/>
+                        </Grid>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="backgroundImage" Property="Visibility" Value="Collapsed"/>
+                            <Setter TargetName="backgroundSelectImage" Property="Visibility" Value="Visible"/>
+                            <Setter TargetName="backgroundUsingImage" Property="Visibility" Value="Collapsed"/>
+                        </Trigger>
+                        <DataTrigger Binding="{Binding HasAddress}" Value="0">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding HasAddress}" Value="2">
+                            <Setter TargetName="backgroundUsingImage" Property="Visibility" Value="Visible"/>
+                            <Setter TargetName="backgroundImage" Property="Visibility" Value="Collapsed"/>
+                            <Setter TargetName="backgroundSelectImage" Property="Visibility" Value="Collapsed"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <!-- 雅座信息是否显示 -->
+    <Style x:Key="grdRoomInfoDisplayStyle" TargetType="Grid">
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding RoomDisplay}" Value="True">
+                <Setter Property="Visibility" Value="Visible"/>
+            </DataTrigger>
+        </Style.Triggers>
+        
+    </Style>
+
+
+    <!-- 雅座信息 -->
+    <Style x:Key="imgRoomInfoImageStyle" TargetType="Image">
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="Stretch" Value="Fill"/>
+        <Setter Property="Source" Value="/Res;component/Resources/Images/Tablet/tablePrice.png"/>
+        <Setter Property="Width" Value="130"/>
+        <Setter Property="Height" Value="69"/>
+    </Style>
+
+    <Style x:Key="lbRoomInfoContentStyle" TargetType="{x:Type Label}">
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontSize" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MediumLabelFontSize}"/>
+        <Setter Property="FontFamily" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+    </Style>
+
+    <Style x:Key="btnRoomTimeStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonBase}">
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid Width="150" Height="53" Margin="4,0,4,0">
+                        <Grid>
+                            <Image x:Name="backgroundImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/changeTimeLittle.png"  Width="150" Height="53"/>
+                            <Image x:Name="backgroundSelectImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/changeTime_selectedLittle.png"  Width="150" Height="53" Visibility="Collapsed"/>
+                        </Grid>
+                        <Label Padding="0" Margin="20,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=Time}" Foreground="White" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="backgroundImage" Property="Visibility" Value="Collapsed"/>
+                            <Setter TargetName="backgroundSelectImage" Property="Visibility" Value="Visible"/>
+                        </Trigger>
+                        <!--暂时不开启, 平板先不打算能改时间-->
+                        <DataTrigger Binding="{Binding RoomType}" Value="1">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding RoomType}" Value="2">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="btnPaidPriceStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonBase}">
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid Width="150" Height="53" Margin="4,0,4,0">
+                        <Grid>
+                            <Image x:Name="backgroundImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/changePriceLittle.png"  Width="150" Height="53"/>
+                            <Image x:Name="backgroundSelectImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/changePrice_selectedLittle.png"  Width="150" Height="53" Visibility="Collapsed"/>
+                        </Grid>
+                        <Label Padding="0" Margin="20,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=Paid}" Foreground="White" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="backgroundImage" Property="Visibility" Value="Collapsed"/>
+                            <Setter TargetName="backgroundSelectImage" Property="Visibility" Value="Visible"/>
+                        </Trigger>
+                        <!--暂时不开启, 平板先不打算能改时间-->
+                        <DataTrigger Binding="{Binding AllowPaid}" Value="True">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+ 
+
+    <Style x:Key="lbRoomInfoRoomTimeChangeWarnStyle" TargetType="{x:Type Label}">
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="Red"/>
+        <Setter Property="FontSize" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MediumLabelFontSize}"/>
+        <Setter Property="FontFamily" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding RoomTimeChange}" Value="True">
+                <Setter Property="Visibility" Value="Visible"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding RoomPaidPriceChanged}" Value="True">
+                <Setter Property="Visibility" Value="Visible"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding RemarkChanged}" Value="True">
+                <Setter Property="Visibility" Value="Visible"/>
+            </DataTrigger>
+            
+        </Style.Triggers>
+    </Style>
+
+
+
+
+    <Style x:Key="lbRoomInfoRoomPriceStyle" TargetType="Label">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <WrapPanel VerticalAlignment="Center">
+                        <Label x:Name="lbContent1" Padding="0" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Converter={StaticResource PriceConverter}}"  FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                        <Label x:Name="lbContent" Padding="0" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{TemplateBinding Content}"  FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                    </WrapPanel>
+
+                    <ControlTemplate.Triggers>
+
+                        <DataTrigger Binding="{Binding TempUnlimitedTime}" Value="True">
+                            <Setter TargetName="lbContent" Property="Content" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=UnlimitedTime}"/>
+                            <Setter TargetName="lbContent1" Property="Content" Value=""/>
+                        </DataTrigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+    <Style x:Key="lbRoomInfoRoomTimeStyle" TargetType="{x:Type Label}">
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontSize" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MediumLabelFontSize}"/>
+        <Setter Property="FontFamily" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+    </Style>
+
+
+
+
+    <Style x:Key="lbInfoHeadBalanceStyle" TargetType="Label" BasedOn="{StaticResource lbInfoHeadStyle}">
+        
+    </Style>
+
+
+    <Style x:Key="lbOrderInfoBalanceStyle" TargetType="Label">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <WrapPanel VerticalAlignment="Center">
+                        <Label Padding="0" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Content="("  FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                        <Label Padding="0" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Converter={StaticResource PriceConverter}}"  FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                        <Label x:Name="lbContent" Padding="0"  VerticalAlignment="Center" HorizontalAlignment="Center" Content="{TemplateBinding Content}"  FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}">
+                            <Label.Style>
+                                <Style TargetType="Label">
+                                    <Setter Property="Foreground" Value="White"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding BalanceMode}" Value="1">
+                                            <Setter Property="Foreground" Value="#FF08B9FB"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding BalanceMode}" Value="2">
+                                            <Setter Property="Foreground" Value="Red"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Label.Style>
+                        </Label>
+                        <Label Padding="0" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Content=")"  FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                    </WrapPanel>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

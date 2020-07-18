@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="Oybab.ServicePC.Pos.Controls.MsgControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d"
+             d:DesignHeight="768" d:DesignWidth="900"
+             x:Name="control">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary  Source="/ServicePC;component/Pos/Styles/MsgControlStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <Grid Style="{StaticResource grdMessageboxParentBackgroundStyle}"  Opacity="0.7"/>
+        <Border Style="{StaticResource bdMessageboxBorderStyle}" Width="600">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="62"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Border Grid.Row="0" Style="{StaticResource bdTitleBackgroundStyle}" Height="62">
+                    <Label Style="{StaticResource lbTopTitleStyle}"/>
+                </Border>
+                <Grid x:Name="grdParent" Grid.Row="1" Margin="50, 10">
+                    <StackPanel>
+                        <WrapPanel Style="{StaticResource wpMessageboxWrapStyle}">
+                            <Image Style="{StaticResource imgMessageboxWarnStyle}"/>
+                            <TextBlock Style="{StaticResource tbMessageboxWarnContentStyle}" Text="{Binding AlertMsg, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+                        </WrapPanel>
+                        <Line Height="25" Style="{StaticResource lSpliteLineNewStyle}" X2="{Binding ElementName=grdParent, Path=ActualWidth}"/>
+                        <!-- Buttons for success and exit -->
+                        <WrapPanel Style="{StaticResource wpMessageboxButtonWrapStyle}">
+                            <Button Style="{StaticResource btnMsgOKStyle}"  Command="{Binding OKCommand}"/>
+
+                            <Button Style="{StaticResource btnMsgNoStyle}"  Command="{Binding NoCommand}"/>
+                            <Button Style="{StaticResource btnMsgYesStyle}"  Command="{Binding YesCommand}"/>
+                        </WrapPanel>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

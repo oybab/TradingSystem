@@ -1,0 +1,821 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{90DCA689-240B-4F97-A775-BCCF1F6E4835}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Oybab.ServicePC</RootNamespace>
+    <AssemblyName>ServicePC</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseIntermediateOutputPath>Y:\NET\TradingSystem\obj\OybabServicePC\</BaseIntermediateOutputPath>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Y:\NET\TradingSystem\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <IntermediateOutputPath>Y:\NET\TradingSystem\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Y:\NET\TradingSystem\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <IntermediateOutputPath>Y:\NET\TradingSystem\Release\</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>OybabSoft.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>TradingSystem.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Work\Program\Component Factory\Krypton Toolkit 4.4.0\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Application\ShardAssemblyInfo.cs">
+      <Link>Properties\ShardAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="DialogWindow\NewMemberWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogWindow\NewMemberWindow.Designer.cs">
+      <DependentUpon>NewMemberWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogWindow\BarcodeScales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogWindow\BarcodeScales.Designer.cs">
+      <DependentUpon>BarcodeScales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogWindow\BarcodeWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogWindow\BarcodeWindow.Designer.cs">
+      <DependentUpon>BarcodeWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogWindow\ConditionWindow\ProductConditionWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogWindow\ConditionWindow\ProductConditionWindow.Designer.cs">
+      <DependentUpon>ProductConditionWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogWindow\BalanceTransferWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogWindow\BalanceTransferWindow.Designer.cs">
+      <DependentUpon>BalanceTransferWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogWindow\GlobalSettingWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogWindow\GlobalSettingWindow.Designer.cs">
+      <DependentUpon>GlobalSettingWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogWindow\VodScrollWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogWindow\VodScrollWindow.designer.cs">
+      <DependentUpon>VodScrollWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogWindow\PrintInfoWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogWindow\PrintInfoWindow.Designer.cs">
+      <DependentUpon>PrintInfoWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogWindow\PrintBarcodeWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogWindow\PrintBarcodeWindow.Designer.cs">
+      <DependentUpon>PrintBarcodeWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogWindow\TakeoutCheckoutWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogWindow\TakeoutCheckoutWindow.Designer.cs">
+      <DependentUpon>TakeoutCheckoutWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogWindow\PriceCommonChangeWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogWindow\PriceCommonChangeWindow.Designer.cs">
+      <DependentUpon>PriceCommonChangeWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogWindow\RequestListWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogWindow\RequestListWindow.designer.cs">
+      <DependentUpon>RequestListWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogWindow\PrintLanguageWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogWindow\PrintLanguageWindow.Designer.cs">
+      <DependentUpon>PrintLanguageWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogWindow\SettingsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogWindow\SettingsWindow.Designer.cs">
+      <DependentUpon>SettingsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogWindow\MenuListWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogWindow\MenuListWindow.Designer.cs">
+      <DependentUpon>MenuListWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogWindow\ExpiredTimeWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogWindow\ExpiredTimeWindow.Designer.cs">
+      <DependentUpon>ExpiredTimeWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogWindow\CheckoutWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogWindow\CheckoutWindow.Designer.cs">
+      <DependentUpon>CheckoutWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogWindow\ImportCheckoutWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogWindow\ImportCheckoutWindow.Designer.cs">
+      <DependentUpon>ImportCheckoutWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogWindow\MemberPriceChangeWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogWindow\MemberPriceChangeWindow.Designer.cs">
+      <DependentUpon>MemberPriceChangeWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogWindow\AddMemberWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogWindow\AddMemberWindow.Designer.cs">
+      <DependentUpon>AddMemberWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogWindow\RegCountWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogWindow\RegCountWindow.Designer.cs">
+      <DependentUpon>RegCountWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogWindow\RegTimeWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogWindow\RegTimeWindow.Designer.cs">
+      <DependentUpon>RegTimeWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogWindow\ReplaceRoomWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogWindow\ReplaceRoomWindow.Designer.cs">
+      <DependentUpon>ReplaceRoomWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogWindow\PrinterListWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogWindow\PrinterListWindow.designer.cs">
+      <DependentUpon>PrinterListWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginWindow.Designer.cs">
+      <DependentUpon>LoginWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pos\Controls\LoadingControl.xaml.cs">
+      <DependentUpon>LoadingControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pos\Controls\CheckoutControl.xaml.cs">
+      <DependentUpon>CheckoutControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pos\Controls\MsgControl.xaml.cs">
+      <DependentUpon>MsgControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pos\Controls\ProductControl.xaml.cs">
+      <DependentUpon>ProductControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pos\Controls\SelectControl.xaml.cs">
+      <DependentUpon>SelectControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pos\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DialogWindow\AboutWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogWindow\AboutWindow.Designer.cs">
+      <DependentUpon>AboutWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindow\AdminLogWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubWindow\AdminLogWindow.Designer.cs">
+      <DependentUpon>AdminLogWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindow\BalancePayWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubWindow\BalancePayWindow.Designer.cs">
+      <DependentUpon>BalancePayWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindow\AdminPayWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubWindow\AdminPayWindow.Designer.cs">
+      <DependentUpon>AdminPayWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindow\FinanceLogWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubWindow\FinanceLogWindow.Designer.cs">
+      <DependentUpon>FinanceLogWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindow\BalanceWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubWindow\BalanceWindow.Designer.cs">
+      <DependentUpon>BalanceWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindow\HistoryOrderDetailsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubWindow\HistoryOrderDetailsWindow.Designer.cs">
+      <DependentUpon>HistoryOrderDetailsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindow\TakeoutDetailsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubWindow\TakeoutDetailsWindow.Designer.cs">
+      <DependentUpon>TakeoutDetailsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindow\TakeoutOperateWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubWindow\TakeoutOperateWindow.Designer.cs">
+      <DependentUpon>TakeoutOperateWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindow\RequestWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubWindow\RequestWindow.Designer.cs">
+      <DependentUpon>RequestWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindow\SupplierWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubWindow\SupplierWindow.Designer.cs">
+      <DependentUpon>SupplierWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindow\SupplierPayWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubWindow\SupplierPayWindow.Designer.cs">
+      <DependentUpon>SupplierPayWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindow\StatisticWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubWindow\StatisticWindow.Designer.cs">
+      <DependentUpon>StatisticWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindow\MemberPayWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubWindow\MemberPayWindow.Designer.cs">
+      <DependentUpon>MemberPayWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogWindow\FastGridWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogWindow\FastGridWindow.Designer.cs">
+      <DependentUpon>FastGridWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindow\OrderOperateWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubWindow\OrderOperateWindow.Designer.cs">
+      <DependentUpon>OrderOperateWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindow\NewImportDetailsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubWindow\NewImportDetailsWindow.Designer.cs">
+      <DependentUpon>NewImportDetailsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindow\ImportDetailsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubWindow\ImportDetailsWindow.Designer.cs">
+      <DependentUpon>ImportDetailsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindow\OrderDetailsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubWindow\OrderDetailsWindow.Designer.cs">
+      <DependentUpon>OrderDetailsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindow\ImportWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubWindow\ImportWindow.Designer.cs">
+      <DependentUpon>ImportWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindow\HomeWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubWindow\HomeWindow.Designer.cs">
+      <DependentUpon>HomeWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogWindow\TimeChangeWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogWindow\TimeChangeWindow.Designer.cs">
+      <DependentUpon>TimeChangeWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogWindow\PriceChangeWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogWindow\PriceChangeWindow.Designer.cs">
+      <DependentUpon>PriceChangeWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogWindow\PasswordWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogWindow\PasswordWindow.Designer.cs">
+      <DependentUpon>PasswordWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindow\OrderWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubWindow\OrderWindow.Designer.cs">
+      <DependentUpon>OrderWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindow\DeviceWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubWindow\DeviceWindow.Designer.cs">
+      <DependentUpon>DeviceWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindow\MemberWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubWindow\MemberWindow.Designer.cs">
+      <DependentUpon>MemberWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindow\PrinterWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubWindow\PrinterWindow.Designer.cs">
+      <DependentUpon>PrinterWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindow\AdminWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubWindow\AdminWindow.Designer.cs">
+      <DependentUpon>AdminWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindow\RoomWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubWindow\RoomWindow.Designer.cs">
+      <DependentUpon>RoomWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindow\ProductWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubWindow\ProductWindow.Designer.cs">
+      <DependentUpon>ProductWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindow\ProductTypeWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubWindow\ProductTypeWindow.Designer.cs">
+      <DependentUpon>ProductTypeWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\BakInOperate.cs" />
+    <Compile Include="Tools\BevelLine.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tools\TheLineDesigner.cs" />
+    <Compile Include="Tools\ComTextBox.cs" />
+    <Compile Include="Tools\ComTextColumn.cs" />
+    <Compile Include="Tools\ConfigString.cs" />
+    <Compile Include="Tools\ComTextBoxNumericUpDownColumn.cs" />
+    <Compile Include="Tools\CustomFlowLayoutPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tools\CustomTooltip.cs" />
+    <Compile Include="Tools\DataGridViewCustomColumn.cs" />
+    <Compile Include="Tools\DecimalTextBox.cs" />
+    <Compile Include="Tools\FlashWindow.cs" />
+    <Compile Include="Tools\Hotkey.cs" />
+    <Compile Include="Tools\KeyboardHook.cs" />
+    <Compile Include="Tools\PaletteBlue.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tools\RoomControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tools\RoomControl.Designer.cs">
+      <DependentUpon>RoomControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DialogWindow\NewMemberWindow.resx">
+      <DependentUpon>NewMemberWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogWindow\BarcodeScales.resx">
+      <DependentUpon>BarcodeScales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogWindow\BarcodeWindow.resx">
+      <DependentUpon>BarcodeWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogWindow\ConditionWindow\ProductConditionWindow.resx">
+      <DependentUpon>ProductConditionWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogWindow\BalanceTransferWindow.resx">
+      <DependentUpon>BalanceTransferWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogWindow\GlobalSettingWindow.resx">
+      <DependentUpon>GlobalSettingWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogWindow\VodScrollWindow.resx">
+      <DependentUpon>VodScrollWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogWindow\PrintInfoWindow.resx">
+      <DependentUpon>PrintInfoWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogWindow\PrintBarcodeWindow.resx">
+      <DependentUpon>PrintBarcodeWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogWindow\TakeoutCheckoutWindow.resx">
+      <DependentUpon>TakeoutCheckoutWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogWindow\PriceCommonChangeWindow.resx">
+      <DependentUpon>PriceCommonChangeWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogWindow\RequestListWindow.resx">
+      <DependentUpon>RequestListWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogWindow\PrintLanguageWindow.resx">
+      <DependentUpon>PrintLanguageWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogWindow\SettingsWindow.resx">
+      <DependentUpon>SettingsWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogWindow\MenuListWindow.resx">
+      <DependentUpon>MenuListWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogWindow\ExpiredTimeWindow.resx">
+      <DependentUpon>ExpiredTimeWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogWindow\CheckoutWindow.resx">
+      <DependentUpon>CheckoutWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogWindow\ImportCheckoutWindow.resx">
+      <DependentUpon>ImportCheckoutWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogWindow\MemberPriceChangeWindow.resx">
+      <DependentUpon>MemberPriceChangeWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogWindow\AddMemberWindow.resx">
+      <DependentUpon>AddMemberWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogWindow\RegCountWindow.resx">
+      <DependentUpon>RegCountWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogWindow\RegTimeWindow.resx">
+      <DependentUpon>RegTimeWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogWindow\ReplaceRoomWindow.resx">
+      <DependentUpon>ReplaceRoomWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogWindow\PrinterListWindow.resx">
+      <DependentUpon>PrinterListWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginWindow.resx">
+      <DependentUpon>LoginWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="DialogWindow\AboutWindow.resx">
+      <DependentUpon>AboutWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubWindow\AdminLogWindow.resx">
+      <DependentUpon>AdminLogWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubWindow\BalancePayWindow.resx">
+      <DependentUpon>BalancePayWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubWindow\AdminPayWindow.resx">
+      <DependentUpon>AdminPayWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubWindow\FinanceLogWindow.resx">
+      <DependentUpon>FinanceLogWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubWindow\BalanceWindow.resx">
+      <DependentUpon>BalanceWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubWindow\HistoryOrderDetailsWindow.resx">
+      <DependentUpon>HistoryOrderDetailsWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubWindow\TakeoutDetailsWindow.resx">
+      <DependentUpon>TakeoutDetailsWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubWindow\TakeoutOperateWindow.resx">
+      <DependentUpon>TakeoutOperateWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubWindow\RequestWindow.resx">
+      <DependentUpon>RequestWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubWindow\SupplierWindow.resx">
+      <DependentUpon>SupplierWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubWindow\SupplierPayWindow.resx">
+      <DependentUpon>SupplierPayWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubWindow\StatisticWindow.resx">
+      <DependentUpon>StatisticWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubWindow\MemberPayWindow.resx">
+      <DependentUpon>MemberPayWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogWindow\FastGridWindow.resx">
+      <DependentUpon>FastGridWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubWindow\OrderOperateWindow.resx">
+      <DependentUpon>OrderOperateWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubWindow\NewImportDetailsWindow.resx">
+      <DependentUpon>NewImportDetailsWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubWindow\ImportDetailsWindow.resx">
+      <DependentUpon>ImportDetailsWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubWindow\OrderDetailsWindow.resx">
+      <DependentUpon>OrderDetailsWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubWindow\ImportWindow.resx">
+      <DependentUpon>ImportWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubWindow\HomeWindow.resx">
+      <DependentUpon>HomeWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogWindow\TimeChangeWindow.resx">
+      <DependentUpon>TimeChangeWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogWindow\PriceChangeWindow.resx">
+      <DependentUpon>PriceChangeWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogWindow\PasswordWindow.resx">
+      <DependentUpon>PasswordWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubWindow\OrderWindow.resx">
+      <DependentUpon>OrderWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubWindow\DeviceWindow.resx">
+      <DependentUpon>DeviceWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubWindow\MemberWindow.resx">
+      <DependentUpon>MemberWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubWindow\PrinterWindow.resx">
+      <DependentUpon>PrinterWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubWindow\AdminWindow.resx">
+      <DependentUpon>AdminWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubWindow\RoomWindow.resx">
+      <DependentUpon>RoomWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubWindow\ProductWindow.resx">
+      <DependentUpon>ProductWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubWindow\ProductTypeWindow.resx">
+      <DependentUpon>ProductTypeWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\RoomControl.resx">
+      <DependentUpon>RoomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="OybabSoft.snk" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OybabDAL\OybabDAL.csproj">
+      <Project>{0410fd27-6456-4780-8854-5205b6cd8bbd}</Project>
+      <Name>OybabDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OybabReport\OybabReport.csproj">
+      <Project>{4a3dcc30-4346-47a0-874b-5674ab86f7bf}</Project>
+      <Name>OybabReport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OybabRes\OybabRes.csproj">
+      <Project>{195011a0-f46f-46e8-93d1-48b9ed5bfde3}</Project>
+      <Name>OybabRes</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="..\OybabServiceTablet\Resources\Styles\PublicStyle.xaml">
+      <Link>Pos\Styles\PublicStyle.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pos\Controls\LoadingControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pos\Controls\CheckoutControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pos\Controls\MsgControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pos\Controls\ProductControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pos\Controls\SelectControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pos\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pos\Styles\CheckoutControlStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pos\Styles\LoadingControlStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pos\Styles\MsgControlStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pos\Styles\SelectControlStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pos\Styles\MainWindowStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TradingSystem.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pos\Pos.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

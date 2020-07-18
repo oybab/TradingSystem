@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:view="clr-namespace:Oybab.TradingSystemX.Pages.Controls" xmlns:forms="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.Core"
+             Title="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=SoftServiceName}"
+             x:Name="page" 
+             x:Class="Oybab.TradingSystemX.Pages.Controls.SelectedPage" BackgroundColor="{DynamicResource PageBackgroundColor}">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <ControlTemplate x:Key="SelectedListTemplate" x:Name="SelectedListTemplate">
+                <Grid Padding="10" HorizontalOptions="FillAndExpand">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="80"/>
+                        <ColumnDefinition Width="82"/>
+                        <ColumnDefinition Width="78"/>
+                    </Grid.ColumnDefinitions>
+                    <StackLayout Grid.Column="0" HorizontalOptions="StartAndExpand" Orientation="Vertical" VerticalOptions="Fill">
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="{TemplateBinding BindingContext.No}" HorizontalOptions="Fill" InputTransparent="True"/>
+                            <Label Text="." HorizontalOptions="Fill" InputTransparent="True"/>
+
+                        </StackLayout>
+                        <Label Text="*" TextColor="Red" IsVisible="False">
+                            <Label.Triggers>
+                                <DataTrigger TargetType="Label" Binding="{TemplateBinding BindingContext.IsNew}" Value="True">
+                                    <Setter Property="IsVisible" Value="True"/>
+                                </DataTrigger>
+                            </Label.Triggers>
+                        </Label>
+                    </StackLayout>
+                    <Label Grid.Column="1" Text="{TemplateBinding BindingContext.ProductName}" LineBreakMode="WordWrap" VerticalOptions="FillAndExpand" HorizontalOptions="StartAndExpand"/>
+                    <StackLayout Grid.Column="2" HorizontalOptions="StartAndExpand" >
+                        <Grid>
+                            <Label Text="{TemplateBinding BindingContext.CountStr}"  InputTransparent="True" />
+                            <Button Text="　" HorizontalOptions="Fill" VerticalOptions="Fill" Command="{TemplateBinding BindingContext.ChangeCount}" CommandParameter="{TemplateBinding BindingContext }"  BackgroundColor="Transparent">
+
+                            </Button>
+                            
+
+
+                        </Grid>
+
+                        <Grid>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Converter={StaticResource PC}}"  InputTransparent="True"/>
+                                <Label Text="{TemplateBinding BindingContext.TotalPrice}" InputTransparent="True" />
+                            </StackLayout>
+                            <Button HorizontalOptions="Fill" Command="{TemplateBinding BindingContext.ChangePriceCommand}"  CommandParameter="{TemplateBinding BindingContext }" IsVisible="False" BackgroundColor="Transparent">
+                                <Button.Triggers>
+                                    <DataTrigger TargetType="Button" Binding="{TemplateBinding BindingContext.IsChangePrice}" Value="True">
+                                        <Setter Property="IsVisible" Value="True"/>
+                                    </DataTrigger>
+
+                                </Button.Triggers>
+                            </Button>
+                            
+                        </Grid>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="3">
+                        <Button Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Request}" Margin="3, 0" Command="{TemplateBinding BindingContext.Request}" CommandParameter="{TemplateBinding BindingContext }">
+                            <Button.Triggers>
+                                <DataTrigger TargetType="Button" Binding="{TemplateBinding BindingContext.IsShowRequest}" Value="False">
+                                    <Setter Property="IsVisible" Value="False"/>
+                                </DataTrigger>
+                                <DataTrigger TargetType="Button" Binding="{TemplateBinding BindingContext.IsNew}" Value="False">
+                                    <Setter Property="IsVisible" Value="False"/>
+                                </DataTrigger>
+                            </Button.Triggers>
+                        </Button>
+                        <Button Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Delete}" Margin="3, 0" Command="{TemplateBinding BindingContext.Delete}" CommandParameter="{TemplateBinding BindingContext }" HorizontalOptions="Center">
+                            <Button.Triggers>
+                                <DataTrigger TargetType="Button" Binding="{TemplateBinding BindingContext.IsDeleted}" Value="True">
+                                    <Setter  Property="IsVisible" Value="False"/>
+                                </DataTrigger>
+                                <DataTrigger TargetType="Button" Binding="{TemplateBinding BindingContext.IsDeleteProduct}" Value="False">
+                                    <Setter  Property="IsVisible" Value="False"/>
+                                </DataTrigger>
+                            </Button.Triggers>
+                        </Button>
+                        <Label Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Canceld}" IsVisible="False">
+                            <Label.Triggers>
+                                <DataTrigger TargetType="Label" Binding="{TemplateBinding BindingContext.IsDeleted}" Value="True">
+                                    <Setter Property="IsVisible" Value="True"/>
+                                </DataTrigger>
+                            </Label.Triggers>
+                        </Label>
+                    </StackLayout>
+                    <StackLayout Grid.Column="4">
+                        <Button Text="+" Margin="5, 0" Command="{TemplateBinding BindingContext.AddCount}" CommandParameter="{TemplateBinding BindingContext }">
+                            <Button.Triggers>
+                                <DataTrigger TargetType="Button" Binding="{TemplateBinding BindingContext.IsNew}" Value="False">
+                                    <Setter Property="IsVisible" Value="False"/>
+                                </DataTrigger>
+                            </Button.Triggers>
+                        </Button>
+                        <Button Text="-" Margin="5, 0" Command="{TemplateBinding BindingContext.SubtractCount}" CommandParameter="{TemplateBinding BindingContext }">
+                            <Button.Triggers>
+                                <DataTrigger TargetType="Button" Binding="{TemplateBinding BindingContext.IsNew}" Value="False">
+                                    <Setter Property="IsVisible" Value="False"/>
+                                </DataTrigger>
+                            </Button.Triggers>
+                        </Button>
+                    </StackLayout>
+                </Grid>
+            </ControlTemplate>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid>
+        <Grid>
+            <Grid  Margin="0, 10, 0, 0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" Margin="6,10,6,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" VerticalOptions="CenterAndExpand" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Selected}"  HorizontalOptions="Start" />
+                    <Button Grid.Column="1" Text="{Binding LanguageName}"  VerticalOptions="CenterAndExpand" Command="{Binding GoCommand}" CommandParameter="Lang" HorizontalOptions="Center" >
+                        <Button.Triggers>
+                            <DataTrigger TargetType="Button" Binding="{Binding IsImport}" Value="True">
+                                <Setter Property="IsVisible" Value="False"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Button" Binding="{Binding LanguageModeNo}" Value="1">
+                                <Setter Property="TextColor" Value="Red"/>
+                            </DataTrigger >
+                        </Button.Triggers>
+                    </Button>
+                    <Button Grid.Column="2" VerticalOptions="CenterAndExpand" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Products}"  HorizontalOptions="End" Command="{Binding GoCommand}" CommandParameter="Products1" />
+                </Grid>
+
+                <ScrollView Grid.Row="1" Margin="0,10,0,0" VerticalOptions="FillAndExpand" BackgroundColor="{DynamicResource ItemBackgroundColor}">
+                    <StackLayout x:Name="lvList">
+
+                    </StackLayout>
+                </ScrollView>
+                <StackLayout Grid.Row="2">
+                    <Grid  HeightRequest="40" Padding="0" Margin="5"  VerticalOptions="CenterAndExpand" IsVisible="False">
+                        <Grid.Triggers>
+                            <DataTrigger TargetType="Grid" Binding="{Binding RoomDisplay}" Value="True">
+                                <Setter Property="IsVisible" Value="True"/>
+                            </DataTrigger>
+                        </Grid.Triggers>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.5*"/>
+                            <ColumnDefinition Width="0.8*"/>
+                            <ColumnDefinition Width="0.8*"/>
+                            <ColumnDefinition Width="2.5*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label  VerticalOptions="CenterAndExpand" Grid.Column="0"  Text="{Binding RoomNo}"/>
+                        <StackLayout Grid.Column="1" Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                            <Label  Text="{Binding Converter={StaticResource PC}}"/>
+                            <Label  Text="{Binding RoomPrice}"/>
+
+                            <StackLayout.Triggers>
+                                <DataTrigger TargetType="StackLayout" Binding="{Binding TempUnlimitedTime}" Value="True">
+                                    <Setter Property="IsVisible" Value="False"/>
+                                </DataTrigger>
+                                <DataTrigger TargetType="StackLayout" Binding="{Binding TempUnlimitedTime}" Value="False">
+                                    <Setter Property="IsVisible" Value="True"/>
+                                </DataTrigger>
+                            </StackLayout.Triggers>
+                        </StackLayout>
+
+                        <StackLayout Grid.Column="1" Orientation="Horizontal" HorizontalOptions="Start" VerticalOptions="CenterAndExpand">
+                            <Label  Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=UnlimitedTime}"/>
+
+                            <StackLayout.Triggers>
+                                <DataTrigger TargetType="StackLayout" Binding="{Binding TempUnlimitedTime}" Value="False">
+                                    <Setter Property="IsVisible" Value="False"/>
+                                </DataTrigger>
+                                <DataTrigger TargetType="StackLayout" Binding="{Binding TempUnlimitedTime}" Value="True">
+                                    <Setter Property="IsVisible" Value="True"/>
+                                </DataTrigger>
+                            </StackLayout.Triggers>
+                        </StackLayout>
+                        <Label Grid.Column="2"   Text="{Binding RoomTime}" VerticalOptions="CenterAndExpand"/>
+                        <Grid VerticalOptions="CenterAndExpand" Grid.Column="3" >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="20"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Button Grid.Column="0" HorizontalOptions="StartAndExpand"  Command="{Binding ChangeTime}" CommandParameter="{Binding }"  Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Time}" IsVisible ="True">
+                                <Button.Triggers>
+                                    <DataTrigger TargetType="Button" Binding="{Binding RoomType}" Value="0">
+                                        <Setter Property="IsVisible" Value="False"/>
+                                    </DataTrigger>
+
+                                </Button.Triggers>
+                            </Button>
+                            <Button Grid.Column="1" HorizontalOptions="Start"   Command="{Binding ChangePaidPrice}" CommandParameter="{Binding }"  Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Paid}" IsVisible="False">
+                                <Button.Triggers>
+                                    <DataTrigger TargetType="Button" Binding="{Binding AllowPaid}" Value="True">
+                                        <Setter Property="IsVisible" Value="True"/>
+                                    </DataTrigger>
+                                </Button.Triggers>
+                            </Button>
+                            <Label Grid.Column="2"  VerticalOptions="CenterAndExpand" Text="*" TextColor="Red" IsVisible="False" HorizontalOptions="Start">
+                                <Label.Triggers>
+                                    <DataTrigger TargetType="Label" Binding="{Binding RoomTimeChange}" Value="True">
+                                        <Setter Property="IsVisible" Value="True"/>
+                                    </DataTrigger>
+                                    <DataTrigger TargetType="Label" Binding="{Binding RoomPaidPriceChanged}" Value="True">
+                                        <Setter Property="IsVisible" Value="True"/>
+                                    </DataTrigger>
+                                    <DataTrigger TargetType="Label" Binding="{Binding RemarkChanged}" Value="True">
+                                        <Setter Property="IsVisible" Value="True"/>
+                                    </DataTrigger>
+                                </Label.Triggers>
+                            </Label>
+
+                        </Grid>
+                    </Grid>
+
+
+                    <StackLayout HorizontalOptions="Start" HeightRequest="30">
+
+                        <StackLayout Orientation="Horizontal"  VerticalOptions="FillAndExpand">
+                            <StackLayout  Margin="20, 0, 0, 0" Orientation="Horizontal" VerticalOptions="FillAndExpand">
+
+                                <Label Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=TotalPrice}"  VerticalOptions="Center"/>
+                                <Label Text="："  VerticalOptions="Center"/>
+                                <Label Text="{Binding Converter={StaticResource PC}}" VerticalOptions="Center" />
+                                <Label Text="{Binding TotalPrice}" VerticalOptions="Center"/>
+                            </StackLayout>
+                            <StackLayout  Margin="20, 0, 0, 0" Orientation="Horizontal"  VerticalOptions="Center">
+                                <Label Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=SelectedCount}"  />
+                                <Label Text="："  VerticalOptions="Center" />
+                                <Label Text="{Binding CurrentSelectedList.Count}" VerticalOptions="Center"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+                    <Grid  HeightRequest="40" Margin="0, 0, 5, 5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Margin="20,0,0,0" Grid.Column="0" Orientation="Horizontal" HorizontalOptions="Start" VerticalOptions="CenterAndExpand">
+                            <StackLayout.Triggers>
+                                <DataTrigger TargetType="StackLayout" Binding="{Binding PaidPrice}" Value="0">
+                                    <Setter Property="IsVisible" Value="False"/>
+                                </DataTrigger>
+                            </StackLayout.Triggers>
+                            <Label Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=PaidPrice}"  VerticalOptions="Center"/>
+                            <Label Text="："  VerticalOptions="Center"/>
+                            <Label Text="{Binding Converter={StaticResource PC}}" VerticalOptions="Center" />
+                            <Label Text="{Binding PaidPrice}" VerticalOptions="Center"/>
+
+
+                            <StackLayout Margin="10,0,0,0" Grid.Column="0" Orientation="Horizontal" HorizontalOptions="Start" VerticalOptions="CenterAndExpand">
+                                <Label Text="("  VerticalOptions="Center"/>
+                                <Label Text="{Binding Converter={StaticResource PC}}" VerticalOptions="Center" />
+                                <Label Text="{Binding BalancePrice}" VerticalOptions="Center">
+                                    <Label.Triggers>
+                                        <DataTrigger TargetType="Label" Binding="{Binding BalanceMode}" Value="1">
+                                            <Setter Property="TextColor" Value="Blue"/>
+                                        </DataTrigger >
+                                        <DataTrigger TargetType="Label" Binding="{Binding BalanceMode}" Value="2">
+                                            <Setter Property="TextColor" Value="Red"/>
+                                        </DataTrigger >
+                                    </Label.Triggers>
+                                </Label>
+                                <Label Text=")"  VerticalOptions="Center"/>
+                                <StackLayout.Triggers>
+                                    <DataTrigger TargetType="StackLayout" Binding="{Binding BalanceMode}" Value="0">
+                                        <Setter Property="IsVisible" Value="False"/>
+                                    </DataTrigger>
+                                </StackLayout.Triggers>
+                            </StackLayout>
+                        </StackLayout>
+                        <StackLayout Grid.Column="1" HorizontalOptions="End"  Orientation="Horizontal">
+                            <Button Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Save}" Command="{Binding SaveCommand}" IsVisible="False">
+                                <Button.Triggers>
+                                    <DataTrigger TargetType="Button" Binding="{Binding SaveMode}" Value="1">
+                                        <Setter Property="IsVisible" Value="True"/>
+                                    </DataTrigger>
+                                </Button.Triggers>
+                            </Button>
+                            <Button Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=CheckoutOrder}" Command="{Binding CheckoutCommand}" IsVisible="False">
+                                <Button.Triggers>
+                                    <DataTrigger TargetType="Button" Binding="{Binding IsImport}" Value="True">
+                                        <Setter Property="Text" Value="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=CheckoutImport}"/>
+                                    </DataTrigger>
+                                    <DataTrigger TargetType="Button" Binding="{Binding SaveMode}" Value="2">
+                                        <Setter Property="IsVisible" Value="True"/>
+                                    </DataTrigger>
+                                </Button.Triggers>
+                            </Button>
+                            <Button  TextColor="Red" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Refresh}" Command="{Binding RefreshCommand}" IsVisible="False">
+                                <Button.Triggers>
+                                    <DataTrigger TargetType="Button" Binding="{Binding IsRefresh}" Value="True">
+                                        <Setter Property="IsVisible" Value="True"/>
+                                    </DataTrigger>
+                                </Button.Triggers>
+                            </Button>
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+            </Grid>
+        </Grid>
+        <!-- 请求 -->
+        <view:RequestView x:Name="requestView" IsVisible="False" BindingContext="{Binding RequestView}" >
+            <view:RequestView.Triggers>
+                <DataTrigger TargetType="ContentView" Binding="{Binding IsShow}" Value="True">
+                    <Setter Property="IsVisible" Value="True"/>
+                </DataTrigger>
+            </view:RequestView.Triggers>
+        </view:RequestView>
+        <!-- 更改数量 -->
+        <view:ChangeCountView IsVisible="False" BindingContext="{Binding ChangeCountView}" >
+            <view:ChangeCountView.Triggers>
+                <DataTrigger TargetType="ContentView" Binding="{Binding IsShow}" Value="True">
+                    <Setter Property="IsVisible" Value="True"/>
+                </DataTrigger>
+            </view:ChangeCountView.Triggers>
+        </view:ChangeCountView>
+        <!-- 更改价格 -->
+        <view:ChangePriceView IsVisible="False" BindingContext="{Binding ChangePriceView}" >
+            <view:ChangePriceView.Triggers>
+                <DataTrigger TargetType="ContentView" Binding="{Binding IsShow}" Value="True">
+                    <Setter Property="IsVisible" Value="True"/>
+                </DataTrigger>
+            </view:ChangePriceView.Triggers>
+        </view:ChangePriceView>
+        <!-- 更改支付价格 -->
+        <view:ChangePaidPriceView x:Name="balanceView" IsVisible="False" BindingContext="{Binding ChangePaidPriceView}" >
+            <view:ChangePaidPriceView.Triggers>
+                <DataTrigger TargetType="ContentView" Binding="{Binding IsShow}" Value="True">
+                    <Setter Property="IsVisible" Value="True"/>
+                </DataTrigger>
+            </view:ChangePaidPriceView.Triggers>
+        </view:ChangePaidPriceView>
+        <!-- 更改时间 -->
+        <view:ChangeTimeView IsVisible="False" BindingContext="{Binding ChangeTimeView}" >
+            <view:ChangeTimeView.Triggers>
+                <DataTrigger TargetType="ContentView" Binding="{Binding IsShow}" Value="True">
+                    <Setter Property="IsVisible" Value="True"/>
+                </DataTrigger>
+            </view:ChangeTimeView.Triggers>
+        </view:ChangeTimeView>
+        <Grid IsVisible="{Binding IsLoading}"  Style="{StaticResource LoadingBackground}">
+            <ActivityIndicator IsRunning="{Binding IsLoading}" />
+        </Grid>
+    </Grid>
+</ContentPage>

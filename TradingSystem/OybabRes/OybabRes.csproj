@@ -1,0 +1,1045 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{195011A0-F46F-46E8-93D1-48B9ED5BFDE3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Oybab.Res</RootNamespace>
+    <AssemblyName>Res</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseIntermediateOutputPath>Y:\NET\TradingSystem\obj\OybabRes\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Y:\NET\TradingSystem\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <IntermediateOutputPath>Y:\NET\TradingSystem\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Y:\NET\TradingSystem\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <IntermediateOutputPath>Y:\NET\TradingSystem\Release\</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>OybabSoft.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\TradingSystemX\TradingSystemX\TradingSystemX\Exception\OybabException.cs">
+      <Link>Exceptions\OybabException.cs</Link>
+    </Compile>
+    <Compile Include="..\Application\ShardAssemblyInfo.cs">
+      <Link>Properties\ShardAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\OybabServerManager\Model\Models\BakModel.cs">
+      <Link>Server\Model\BakModel.cs</Link>
+    </Compile>
+    <Compile Include="..\OybabServerManager\Model\Models\ExtendInfo.cs">
+      <Link>Server\Model\ExtendInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\OybabServerManager\Model\Models\PrintInfo.cs">
+      <Link>Server\Model\PrintInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\OybabServerManager\Model\Models\ProductWithCount.cs">
+      <Link>Server\Model\ProductWithCount.cs</Link>
+    </Compile>
+    <Compile Include="..\OybabServerManager\Resource.en-US.Designer.cs">
+      <Link>Resource.en-US.Designer.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="..\OybabServerManager\Resource.ug-CN.Designer.cs">
+      <Link>Resource.ug-CN.Designer.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.ug-CN.resx</DependentUpon>
+    </Compile>
+    <Compile Include="..\OybabServerManager\Resource.zh-CN.Designer.cs">
+      <Link>Resource.zh-CN.Designer.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.zh-CN.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Exceptions\ExceptionPro.cs" />
+    <Compile Include="Exceptions\Logger.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\Print.cs" />
+    <Compile Include="Resources.cs" />
+    <Compile Include="Server\Model\NotificationAlert.cs" />
+    <Compile Include="Server\Model\NotificationCache.cs" />
+    <Compile Include="Server\Model\NotificationModel.cs" />
+    <Compile Include="Server\Model\ResultModel.cs" />
+    <Compile Include="Server\Model\RoomModel.cs" />
+    <Compile Include="Server\Model\ToServerSessionRoomInfo.cs" />
+    <Compile Include="Server\Notification.cs" />
+    <Compile Include="Server\NotificationService.cs" />
+    <Compile Include="Server\OperatesService.cs" />
+    <Compile Include="Service References\Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\CommonOperates.cs" />
+    <Compile Include="Tools\Common.cs" />
+    <Compile Include="Tools\Config.cs" />
+    <Compile Include="Tools\CustomerDisplay.cs" />
+    <Compile Include="Tools\Ext.cs" />
+    <Compile Include="Tools\ExtX.cs" />
+    <Compile Include="Tools\FontSmoothing.cs" />
+    <Compile Include="Tools\FullScreenMonitor.cs" />
+    <Compile Include="Tools\ImageCache.cs" />
+    <Compile Include="Tools\PrinterMsg.cs" />
+    <Compile Include="Tools\Session.cs" />
+    <Compile Include="Tools\NavigateSoundManager.cs" />
+    <Compile Include="Tools\OperatePC.cs" />
+    <Compile Include="Tools\OSCheck.cs" />
+    <Compile Include="Tools\Path.cs" />
+    <Compile Include="Tools\Restore.cs" />
+    <Compile Include="Tools\SyncTime.cs" />
+    <Compile Include="Tools\Taskbar.cs" />
+    <Compile Include="Tools\Update.cs" />
+    <Compile Include="View\Commands\RelayCommand.cs" />
+    <Compile Include="View\Component\KeyBoardHook.cs" />
+    <Compile Include="View\Component\MControl.xaml.cs">
+      <DependentUpon>MControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Component\RemarkEvent.cs" />
+    <Compile Include="View\Converters\BorderConverter.cs" />
+    <Compile Include="View\Converters\PriceConverter.cs" />
+    <Compile Include="View\Converters\ColorConverter.cs" />
+    <Compile Include="View\Converters\LangConverter.cs" />
+    <Compile Include="View\Converters\NullImageConverter.cs" />
+    <Compile Include="View\Converters\ProductImageConverter.cs" />
+    <Compile Include="View\Converters\ProductNameConverter.cs" />
+    <Compile Include="View\Enums\BoxType.cs" />
+    <Compile Include="View\Enums\PopupType.cs" />
+    <Compile Include="View\Enums\PageType.cs" />
+    <Compile Include="View\EventArgs\ForwardRoutedEventArgs.cs" />
+    <Compile Include="View\EventArgs\BoxRoutedEventArgs.cs" />
+    <Compile Include="View\EventArgs\PopupRoutedEventArgscs.cs" />
+    <Compile Include="View\Events\PublicEvents.cs" />
+    <Compile Include="View\Models\BillDetailsModel.cs" />
+    <Compile Include="View\Models\BillModel.cs" />
+    <Compile Include="View\Models\CommonPayModel.cs" />
+    <Compile Include="View\Models\LangItemModel.cs" />
+    <Compile Include="View\Models\DetailsModel.cs" />
+    <Compile Include="View\Models\ProductTypeStateModel.cs" />
+    <Compile Include="View\Models\ProductStateModel.cs" />
+    <Compile Include="View\Models\RoomInfoModel.cs" />
+    <Compile Include="View\Models\RequestModel.cs" />
+    <Compile Include="View\Models\BalanceItemModel.cs" />
+    <Compile Include="View\Models\RoomStateModel.cs" />
+    <Compile Include="View\ViewModels\Controls\AddMemberViewModel.cs" />
+    <Compile Include="View\ViewModels\Controls\RemarkViewModel.cs" />
+    <Compile Include="View\ViewModels\Controls\ChangeCountViewModel.cs" />
+    <Compile Include="View\ViewModels\Controls\AddressViewModel.cs" />
+    <Compile Include="View\ViewModels\Controls\ChangeMemberPriceViewModel.cs" />
+    <Compile Include="View\ViewModels\Controls\ChangePaidPriceViewModel.cs" />
+    <Compile Include="View\ViewModels\Controls\SearchViewModel.cs" />
+    <Compile Include="View\ViewModels\Controls\ChangeTimeViewModel.cs" />
+    <Compile Include="View\ViewModels\Controls\ChangePriceViewModel.cs" />
+    <Compile Include="View\ViewModels\Controls\KeyboardLittleFullViewModel.cs" />
+    <Compile Include="View\ViewModels\Controls\SettingViewModel.cs" />
+    <Compile Include="View\ViewModels\Controls\RequestViewModel.cs" />
+    <Compile Include="View\ViewModels\Controls\ReplaceViewModel.cs" />
+    <Compile Include="View\ViewModels\Controls\ChangePasswordViewModel.cs" />
+    <Compile Include="View\ViewModels\Controls\AboutViewModel.cs" />
+    <Compile Include="View\ViewModels\Controls\KeyViewModel.cs" />
+    <Compile Include="View\ViewModels\Controls\AnimationViewModel.cs" />
+    <Compile Include="View\ViewModels\Controls\OperateViewModel.cs" />
+    <Compile Include="View\ViewModels\Controls\LanguageViewModel.cs" />
+    <Compile Include="View\ViewModels\Controls\ProductsViewModel.cs" />
+    <Compile Include="View\ViewModels\Controls\SelectedViewModel.cs" />
+    <Compile Include="View\ViewModels\Controls\MsgViewModel.cs" />
+    <Compile Include="View\ViewModels\Controls\KeyboardLittleViewModel.cs" />
+    <Compile Include="View\ViewModels\Pages\ImportCheckoutViewModel.cs" />
+    <Compile Include="View\ViewModels\Pages\TakeoutCheckoutViewModel.cs" />
+    <Compile Include="View\ViewModels\Pages\ImportViewModel.cs" />
+    <Compile Include="View\ViewModels\Pages\TakeoutViewModel.cs" />
+    <Compile Include="View\ViewModels\Pages\SystemViewModel.cs" />
+    <Compile Include="View\ViewModels\Pages\CheckoutViewModel.cs" />
+    <Compile Include="View\ViewModels\Pages\OrderViewModel.cs" />
+    <Compile Include="View\ViewModels\Pages\RoomViewModel.cs" />
+    <Compile Include="View\ViewModels\Pages\MainViewModel.cs" />
+    <Compile Include="View\ViewModels\Pages\RegViewModel.cs" />
+    <Compile Include="View\ViewModels\Pages\LoginViewModel.cs" />
+    <Compile Include="View\ViewModels\Pos\TakeoutCheckoutViewModel.cs" />
+    <Compile Include="View\ViewModels\Pos\ProductsViewModel.cs" />
+    <Compile Include="View\ViewModels\Pos\SelectedViewModel.cs" />
+    <Compile Include="View\ViewModels\Pos\TakeoutViewModel.cs" />
+    <Compile Include="View\ViewModels\ViewModelBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="BsUI\bootstrap\css\bootstrap-theme.css.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BsUI\bootstrap\css\bootstrap.css.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BsUI\bootstrap\fonts\glyphicons-halflings-regular.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BsUI\bootstrap\fonts\glyphicons-halflings-regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BsUI\bootstrap\fonts\glyphicons-halflings-regular.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="OybabSoft.snk" />
+    <None Include="Service References\Service\Arrays.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceAddAdmin.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceAddAdminLog.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceAddAdminPay.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceAddBalance.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceAddBalancePay.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceAddDevice.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceAddMember.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceAddMemberPay.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceAddOrderDetail.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceAddPrinter.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceAddProduct.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceAddProductType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceAddRequest.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceAddRoom.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceAddSupplier.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceAddSupplierPay.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceChangePWD.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceClose.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceDelAdmin.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceDelAdminLog.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceDelAdminPay.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceDelBalance.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceDelBalancePay.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceDelDevice.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceDelMember.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceDelMemberPay.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceDelOrderDetail.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceDelPrinter.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceDelProduct.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceDelProductType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceDelRequest.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceDelRoom.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceDelSupplier.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceDelSupplierPay.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceDelTakeoutDetail.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceEditAdmin.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceEditAdminLog.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceEditBalance.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceEditDevice.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceEditImport.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceEditMember.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceEditOrder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceEditPrinter.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceEditProduct.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceEditProductType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceEditRequest.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceEditRoom.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceEditSupplier.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceEditTakeout.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceGetAdminLog.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceGetAdminPay.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceGetAllProduct.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceGetbak.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceGetBalance.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceGetBalancePay.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceGetImportDetail.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceGetImportPay.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceGetImports.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceGetLog.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceGetMember.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceGetMemberPay.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceGetModel.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceGetOrderDetail.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceGetOrderPay.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceGetOrders.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceGetSupplier.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceGetSupplierPay.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceGetTakeoutDetail.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceGetTakeoutPay.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceGetTakeouts.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceLock.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceNewImport.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceNewOrder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceNewRequest.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceNewTakeout.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServicePrint.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceRegCount.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceRegTime.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceReplaceOrder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceRequestCountCode.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceRequestTimeCode.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceResetAdmin.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceSaveOrderDetail.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceSaveTakeoutDetail.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceSend.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceSession.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceSetbak.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceSetCon.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceSetContent.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceTransferBalancePay.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.Res.Service.ToClientServiceUID.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service\Oybab.ServerManager.Model.Models.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service\Oybab.ServerManager.Model.Service.Admin.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service\Oybab.ServerManager.Model.Service.AdminLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service\Oybab.ServerManager.Model.Service.AdminPay.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service\Oybab.ServerManager.Model.Service.Balance.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service\Oybab.ServerManager.Model.Service.BalancePay.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service\Oybab.ServerManager.Model.Service.Common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service\Oybab.ServerManager.Model.Service.Device.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service\Oybab.ServerManager.Model.Service.Import.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service\Oybab.ServerManager.Model.Service.ImportDetail.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service\Oybab.ServerManager.Model.Service.Log.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service\Oybab.ServerManager.Model.Service.Member.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service\Oybab.ServerManager.Model.Service.MemberPay.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service\Oybab.ServerManager.Model.Service.Order.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service\Oybab.ServerManager.Model.Service.OrderDetail.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service\Oybab.ServerManager.Model.Service.Printer.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service\Oybab.ServerManager.Model.Service.Product.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service\Oybab.ServerManager.Model.Service.ProductType.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service\Oybab.ServerManager.Model.Service.Request.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service\Oybab.ServerManager.Model.Service.Room.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service\Oybab.ServerManager.Model.Service.Supplier.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service\Oybab.ServerManager.Model.Service.SupplierPay.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service\Oybab.ServerManager.Model.Service.Takeout.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service\Oybab.ServerManager.Model.Service.TakeoutDetail.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service\Oybab.ServerManager.Model.Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service\service.wsdl" />
+    <None Include="Service References\Service\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BsUI\bootstrap\css\bootstrap-theme.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BsUI\bootstrap\css\bootstrap-theme.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BsUI\bootstrap\css\bootstrap.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BsUI\bootstrap\css\bootstrap.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BsUI\bootstrap\css\font-awesome.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BsUI\bootstrap\fonts\glyphicons-halflings-regular.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BsUI\bootstrap\js\bootstrap.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BsUI\bootstrap\js\bootstrap.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BsUI\bootstrap\js\npm.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BsUI\js\html5shiv.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BsUI\js\jquery-1.12.4.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BsUI\js\modernizr.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BsUI\js\respond.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="Config.txt">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Resources\Images\PC\ShoppingCart.ico" />
+    <Resource Include="Resources\Images\Tablet\outerbill.png" />
+    <Resource Include="Resources\Images\Tablet\outerbill_selected.png" />
+    <Resource Include="Resources\Images\Tablet\spend.png" />
+    <Resource Include="Resources\Images\Tablet\spend_selected.png" />
+    <EmbeddedResource Include="Resources\Images\PC\Listview.png" />
+    <EmbeddedResource Include="Resources\Images\PC\Pos.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\Pos.png" />
+    <EmbeddedResource Include="Resources\Images\PC\ShoppingCart.png" />
+    <Resource Include="Resources\Images\Tablet\about_button.png" />
+    <Resource Include="Resources\Images\Tablet\about_button_selected.png" />
+    <Resource Include="Resources\Images\Tablet\fire.png" />
+    <Resource Include="Resources\Images\Tablet\fire_selected.png" />
+    <Resource Include="Resources\Images\Tablet\changePriceLittle.png" />
+    <Resource Include="Resources\Images\Tablet\changePrice_selectedLittle.png" />
+    <Resource Include="Resources\Images\Tablet\changeTimeLittle.png" />
+    <Resource Include="Resources\Images\Tablet\changeTime_selectedLittle.png" />
+    <Resource Include="Resources\Images\Pos\TempSave_Black.png" />
+    <Resource Include="Resources\Images\Pos\TempSave_White.png" />
+    <Resource Include="Resources\Images\Pos\Load\17.png" />
+    <Resource Include="Resources\Images\Pos\Load\18.png" />
+    <Resource Include="Resources\Images\Pos\Load\19.png" />
+    <Resource Include="Resources\Images\Pos\Load\20.png" />
+    <Resource Include="Resources\Images\Pos\Load\21.png" />
+    <Resource Include="Resources\Images\Pos\Load\22.png" />
+    <Resource Include="Resources\Images\Pos\Load\23.png" />
+    <Resource Include="Resources\Images\Pos\Load\24.png" />
+    <Resource Include="Resources\Images\Pos\Load\25.png" />
+    <Resource Include="Resources\Images\Pos\Load\26.png" />
+    <Resource Include="Resources\Images\Pos\Load\27.png" />
+    <Resource Include="Resources\Images\Pos\Load\28.png" />
+    <Resource Include="Resources\Images\Pos\Load\29.png" />
+    <Resource Include="Resources\Images\Pos\Money.png" />
+    <Resource Include="Resources\Images\Pos\Load\1.png" />
+    <Resource Include="Resources\Images\Pos\Load\10.png" />
+    <Resource Include="Resources\Images\Pos\Load\11.png" />
+    <Resource Include="Resources\Images\Pos\Load\12.png" />
+    <Resource Include="Resources\Images\Pos\Load\13.png" />
+    <Resource Include="Resources\Images\Pos\Load\14.png" />
+    <Resource Include="Resources\Images\Pos\Load\15.png" />
+    <Resource Include="Resources\Images\Pos\Load\16.png" />
+    <Resource Include="Resources\Images\Pos\Load\2.png" />
+    <Resource Include="Resources\Images\Pos\Load\3.png" />
+    <Resource Include="Resources\Images\Pos\Load\4.png" />
+    <Resource Include="Resources\Images\Pos\Load\5.png" />
+    <Resource Include="Resources\Images\Pos\Load\6.png" />
+    <Resource Include="Resources\Images\Pos\Load\7.png" />
+    <Resource Include="Resources\Images\Pos\Load\8.png" />
+    <Resource Include="Resources\Images\Pos\Load\9.png" />
+    <Resource Include="Resources\Images\Pos\Bind_Black.png" />
+    <Resource Include="Resources\Images\Pos\Bind_White.png" />
+    <Resource Include="Resources\Images\Pos\Checkout_Black.png" />
+    <Resource Include="Resources\Images\Pos\Checkout_White.png" />
+    <Resource Include="Resources\Images\Pos\Searchlittle_Black.png" />
+    <Resource Include="Resources\Images\Pos\Searchlittle_White.png" />
+    <Resource Include="Resources\Images\Pos\Search_Black.png" />
+    <Resource Include="Resources\Images\Pos\Search_White.png" />
+    <Resource Include="Resources\Images\Pos\Error.png" />
+    <Resource Include="Resources\Images\Pos\Information.png" />
+    <Resource Include="Resources\Images\Pos\Language_Black.png" />
+    <Resource Include="Resources\Images\Pos\Language_White.png" />
+    <Resource Include="Resources\Images\Pos\Question.png" />
+    <Resource Include="Resources\Images\Pos\ShoppingCart_Black.png" />
+    <Resource Include="Resources\Images\Pos\ShoppingCart_White.png" />
+    <Resource Include="Resources\Images\Pos\User_Black.png" />
+    <Resource Include="Resources\Images\Pos\User_White.png" />
+    <Resource Include="Resources\Images\Pos\Warn.png" />
+    <Resource Include="Resources\Images\Tablet\locationLarge.png" />
+    <Resource Include="Resources\Images\Tablet\location.png" />
+    <Resource Include="Resources\Images\Tablet\location_selected.png" />
+    <Resource Include="Resources\Images\Tablet\location_using.png" />
+    <EmbeddedResource Include="..\OybabServerManager\Resource.en-US.resx">
+      <Link>Resource.en-US.resx</Link>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.en-US.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\OybabServerManager\Resource.ug-CN.resx">
+      <Link>Resource.ug-CN.resx</Link>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.ug-CN.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\OybabServerManager\Resource.zh-CN.resx">
+      <Link>Resource.zh-CN.resx</Link>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.zh-CN.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\BsUI\index.css" />
+    <EmbeddedResource Include="Resources\BsUI\index.html" />
+    <EmbeddedResource Include="Resources\BsUI\index.js" />
+    <Resource Include="Resources\Images\Tablet\moneyLarge2.png" />
+    <Resource Include="Resources\Images\Tablet\moneyLarge_selected.png" />
+    <EmbeddedResource Include="Resources\Images\PC\ProductType22.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\ProductType22.png" />
+    <EmbeddedResource Include="Resources\Images\PC\BalanceManager.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\BalanceManager.png" />
+    <EmbeddedResource Include="Resources\Images\PC\ChangeExpiredTime.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\ChangeExpiredTime.png" />
+    <EmbeddedResource Include="Resources\Images\PC\CheckoutReturn.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\CheckoutReturn.png" />
+    <EmbeddedResource Include="Resources\Images\PC\NewReturn.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\NewReturn.png" />
+    <EmbeddedResource Include="Resources\Images\PC\PrintBarcode.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\PrintBarcode.png" />
+    <EmbeddedResource Include="Resources\Images\PC\PrintMessage.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\PrintMessage.png" />
+    <EmbeddedResource Include="Resources\Images\PC\ProductType2.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\ProductType2.png" />
+    <EmbeddedResource Include="Resources\Images\PC\ReturnManager.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\ReturnManager.png" />
+    <EmbeddedResource Include="Resources\Images\PC\ShowReturn.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\ShowReturn.png" />
+    <Resource Include="Resources\Images\Tablet\alarm.png" />
+    <Resource Include="Resources\Images\Tablet\countLarge.png" />
+    <Resource Include="Resources\Images\Tablet\moneyLarge.png" />
+    <Resource Include="Resources\Images\Tablet\scan.png" />
+    <Resource Include="Resources\Images\Tablet\scanLarge.png" />
+    <Resource Include="Resources\Images\Tablet\scan_selected.png" />
+    <Resource Include="Resources\Images\Tablet\search.png" />
+    <Resource Include="Resources\Images\Tablet\searchLarge.png" />
+    <Resource Include="Resources\Images\Tablet\search_selected.png" />
+    <Resource Include="Resources\Images\Tablet\timeLarge.png" />
+    <Resource Include="Resources\Images\Tablet\setting2.png" />
+    <Resource Include="Resources\Images\Tablet\setting2_selected.png" />
+    <Resource Include="Resources\Images\Tablet\request2.png" />
+    <Resource Include="Resources\Images\Tablet\option.png" />
+    <Resource Include="Resources\Images\Tablet\option_selected.png" />
+    <EmbeddedResource Include="Resources\Images\PC\Request.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\Request.png" />
+    <Resource Include="Resources\Images\Tablet\operate.png" />
+    <Resource Include="Resources\Images\Tablet\operate_button.png" />
+    <Resource Include="Resources\Images\Tablet\operate_button_selected.png" />
+    <Resource Include="Resources\Images\Tablet\operate_checkout.png" />
+    <Resource Include="Resources\Images\Tablet\operate_close.png" />
+    <Resource Include="Resources\Images\Tablet\operate_ignore.png" />
+    <Resource Include="Resources\Images\Tablet\operate_new.png" />
+    <Resource Include="Resources\Images\Tablet\operate_replace.png" />
+    <Resource Include="Resources\Images\Tablet\operate_show.png" />
+    <Resource Include="Resources\Images\Tablet\replace.png" />
+    <Resource Include="Resources\Images\Tablet\dialog_cancel.png" />
+    <Resource Include="Resources\Images\Tablet\dialog_cancel_selected.png" />
+    <Resource Include="Resources\Images\Tablet\dialog_confirm.png" />
+    <Resource Include="Resources\Images\Tablet\dialog_confirm_selected.png" />
+    <Resource Include="Resources\Images\Tablet\passwordC.png" />
+    <Resource Include="Resources\Images\Tablet\passwordCLarge.png" />
+    <Resource Include="Resources\Images\Tablet\passwordC_selected.png" />
+    <Resource Include="Resources\Images\Tablet\turnLeft_selected.png" />
+    <Resource Include="Resources\Images\Tablet\turnRight_selected.png" />
+    <Resource Include="Resources\Images\Tablet\originalPic.png" />
+    <Resource Include="Resources\Images\Tablet\lang.png" />
+    <Resource Include="Resources\Images\Tablet\lang_big.png" />
+    <Resource Include="Resources\Images\Tablet\lang_selected.png" />
+    <Resource Include="Resources\Images\Tablet\removeMiddle.png" />
+    <Resource Include="Resources\Images\Tablet\keyMiddle.png" />
+    <Resource Include="Resources\Images\Tablet\keyMiddle_selected.png" />
+    <Resource Include="Resources\Images\Tablet\question.png" />
+    <Resource Include="Resources\Images\Tablet\tableTimeup.png" />
+    <Resource Include="Resources\Images\Tablet\tableTimeup_selected.png" />
+    <Resource Include="Resources\Images\Tablet\new.png" />
+    <Resource Include="Resources\Images\Tablet\radioButton2.png" />
+    <Resource Include="Resources\Images\Tablet\turnLeft.png" />
+    <Resource Include="Resources\Images\Tablet\turnRight.png" />
+    <Resource Include="Resources\Images\Tablet\key.png" />
+    <Resource Include="Resources\Images\Tablet\machine.png" />
+    <Resource Include="Resources\Images\Tablet\update.png" />
+    <Resource Include="Resources\Images\Tablet\confirm_cancel.png" />
+    <Resource Include="Resources\Images\Tablet\confirm_cancel_selected.png" />
+    <Resource Include="Resources\Images\Tablet\confirm_ok.png" />
+    <Resource Include="Resources\Images\Tablet\confirm_ok_selected.png" />
+    <Resource Include="Resources\Images\Tablet\removeLarge.png" />
+    <Resource Include="Resources\Images\Tablet\removeLittle.png" />
+    <Resource Include="Resources\Images\Tablet\password.png" />
+    <Resource Include="Resources\Images\Tablet\user.png" />
+    <Resource Include="Resources\Images\Tablet\warnLittle.png" />
+    <Resource Include="Resources\Images\Tablet\about.png" />
+    <Resource Include="Resources\Images\Tablet\about_selected.png" />
+    <Resource Include="Resources\Images\Tablet\add.png" />
+    <Resource Include="Resources\Images\Tablet\add_selected.png" />
+    <Resource Include="Resources\Images\Tablet\back.png" />
+    <Resource Include="Resources\Images\Tablet\back_selected.png" />
+    <Resource Include="Resources\Images\Tablet\bind.png" />
+    <Resource Include="Resources\Images\Tablet\bind_selected.png" />
+    <Resource Include="Resources\Images\Tablet\cancel.png" />
+    <Resource Include="Resources\Images\Tablet\cancel_selected.png" />
+    <Resource Include="Resources\Images\Tablet\cardPanel.png" />
+    <Resource Include="Resources\Images\Tablet\cardPanel_selected.png" />
+    <Resource Include="Resources\Images\Tablet\cashPanel.png" />
+    <Resource Include="Resources\Images\Tablet\cashPanel_selected.png" />
+    <Resource Include="Resources\Images\Tablet\changeTime.png" />
+    <Resource Include="Resources\Images\Tablet\changeTime_selected.png" />
+    <Resource Include="Resources\Images\Tablet\checkout.png" />
+    <Resource Include="Resources\Images\Tablet\checkout_selected.png" />
+    <Resource Include="Resources\Images\Tablet\close.png" />
+    <Resource Include="Resources\Images\Tablet\close_selected.png" />
+    <Resource Include="Resources\Images\Tablet\delete.png" />
+    <Resource Include="Resources\Images\Tablet\delete_selected.png" />
+    <Resource Include="Resources\Images\Tablet\error.png" />
+    <Resource Include="Resources\Images\Tablet\exit.png" />
+    <Resource Include="Resources\Images\Tablet\exit_selected.png" />
+    <Resource Include="Resources\Images\Tablet\hold.png" />
+    <Resource Include="Resources\Images\Tablet\info.png" />
+    <Resource Include="Resources\Images\Tablet\keyLarge.png" />
+    <Resource Include="Resources\Images\Tablet\keyLarge_selected.png" />
+    <Resource Include="Resources\Images\Tablet\keySmall.png" />
+    <Resource Include="Resources\Images\Tablet\keySmall_selected.png" />
+    <Resource Include="Resources\Images\Tablet\languageButton.png" />
+    <Resource Include="Resources\Images\Tablet\languageButton_selected.png" />
+    <Resource Include="Resources\Images\Tablet\loading1.png" />
+    <Resource Include="Resources\Images\Tablet\loading2.png" />
+    <Resource Include="Resources\Images\Tablet\loading3.png" />
+    <Resource Include="Resources\Images\Tablet\loading4.png" />
+    <Resource Include="Resources\Images\Tablet\loading5.png" />
+    <Resource Include="Resources\Images\Tablet\loading6.png" />
+    <Resource Include="Resources\Images\Tablet\login.png" />
+    <Resource Include="Resources\Images\Tablet\login_selected.png" />
+    <Resource Include="Resources\Images\Tablet\logo.png" />
+    <Resource Include="Resources\Images\Tablet\memberBox.png" />
+    <Resource Include="Resources\Images\Tablet\memberBox_selected.png" />
+    <Resource Include="Resources\Images\Tablet\memberPanel.png" />
+    <Resource Include="Resources\Images\Tablet\memberPanel_selected.png" />
+    <Resource Include="Resources\Images\Tablet\ok.png" />
+    <Resource Include="Resources\Images\Tablet\ok_selected.png" />
+    <Resource Include="Resources\Images\Tablet\other.png" />
+    <Resource Include="Resources\Images\Tablet\other_selected.png" />
+    <Resource Include="Resources\Images\Tablet\owner.png" />
+    <Resource Include="Resources\Images\Tablet\package.png" />
+    <Resource Include="Resources\Images\Tablet\package_selected.png" />
+    <Resource Include="Resources\Images\Tablet\productListPanel.png" />
+    <Resource Include="Resources\Images\Tablet\productListPanel_selected.png" />
+    <Resource Include="Resources\Images\Tablet\quit.png" />
+    <Resource Include="Resources\Images\Tablet\quit_selected.png" />
+    <Resource Include="Resources\Images\Tablet\radioButton.png" />
+    <Resource Include="Resources\Images\Tablet\radioButton_selected.png" />
+    <Resource Include="Resources\Images\Tablet\request.png" />
+    <Resource Include="Resources\Images\Tablet\request_selected.png" />
+    <Resource Include="Resources\Images\Tablet\reset.png" />
+    <Resource Include="Resources\Images\Tablet\reset_selected.png" />
+    <Resource Include="Resources\Images\Tablet\save.png" />
+    <Resource Include="Resources\Images\Tablet\save_selected.png" />
+    <Resource Include="Resources\Images\Tablet\selectedListPanel.png" />
+    <Resource Include="Resources\Images\Tablet\selectedListPanel_selected.png" />
+    <Resource Include="Resources\Images\Tablet\setting.png" />
+    <Resource Include="Resources\Images\Tablet\settingLarge.png" />
+    <Resource Include="Resources\Images\Tablet\settingLarge_selected.png" />
+    <Resource Include="Resources\Images\Tablet\setting_selected.png" />
+    <Resource Include="Resources\Images\Tablet\subtract.png" />
+    <Resource Include="Resources\Images\Tablet\subtract_selected.png" />
+    <Resource Include="Resources\Images\Tablet\success.png" />
+    <Resource Include="Resources\Images\Tablet\tableNotUsed.png" />
+    <Resource Include="Resources\Images\Tablet\tableNotUsed_selected.png" />
+    <Resource Include="Resources\Images\Tablet\tablePrice.png" />
+    <Resource Include="Resources\Images\Tablet\tableUsed.png" />
+    <Resource Include="Resources\Images\Tablet\tableUsed_selected.png" />
+    <Resource Include="Resources\Images\Tablet\textbox_member.png" />
+    <Resource Include="Resources\Images\Tablet\textbox_member_selected.png" />
+    <Resource Include="Resources\Images\Tablet\textbox_selected.png" />
+    <Resource Include="Resources\Images\Tablet\unbind.png" />
+    <Resource Include="Resources\Images\Tablet\unbind_selected.png" />
+    <Resource Include="Resources\Images\Tablet\warn.png" />
+    <EmbeddedResource Include="Resources\Images\PC\BalancePay.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\BalancePay.png" />
+    <EmbeddedResource Include="Resources\Images\PC\FinanceLog.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\FinanceLog.png" />
+    <EmbeddedResource Include="Resources\Images\PC\Occupied_timeup.png" />
+    <EmbeddedResource Include="Resources\Images\PC\AdminLog.png" />
+    <EmbeddedResource Include="Resources\Images\PC\OperateList.png" />
+    <EmbeddedResource Include="Resources\Images\PC\Suppliers.png" />
+    <EmbeddedResource Include="Resources\Images\PC\AddSupplier.png" />
+    <EmbeddedResource Include="Resources\Images\PC\AdminPay.png" />
+    <EmbeddedResource Include="Resources\Images\PC\SupplierPay.png" />
+    <EmbeddedResource Include="Resources\Images\PC\AdminPay.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\Suppliers.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\AddSupplier.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\AdminLog.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\OperateList.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\SupplierPay.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\ImageMode.png" />
+    <EmbeddedResource Include="Resources\Images\PC\ListMode.png" />
+    <EmbeddedResource Include="Resources\Images\PC\CustomerCall.png" />
+    <EmbeddedResource Include="Resources\Images\PC\Empty.png" />
+    <EmbeddedResource Include="Resources\Images\PC\NewOrderAlert.png" />
+    <EmbeddedResource Include="Resources\Images\PC\Occupied.png" />
+    <EmbeddedResource Include="Resources\Images\PC\About.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\About.png" />
+    <EmbeddedResource Include="Resources\Images\PC\Add.png" />
+    <EmbeddedResource Include="Resources\Images\PC\AddMember.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\AddMember.png" />
+    <EmbeddedResource Include="Resources\Images\PC\Admin.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\Admin.png" />
+    <EmbeddedResource Include="Resources\Images\PC\Barcode.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\Barcode.png" />
+    <EmbeddedResource Include="Resources\Images\PC\CancelOrder.png" />
+    <EmbeddedResource Include="Resources\Images\PC\ChangePassword.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\ChangePassword.png" />
+    <EmbeddedResource Include="Resources\Images\PC\ChangePrice.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\ChangePrice.png" />
+    <EmbeddedResource Include="Resources\Images\PC\ChangeSet.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\ChangeSet.png" />
+    <EmbeddedResource Include="Resources\Images\PC\ChangeTime.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\ChangeTime.png" />
+    <EmbeddedResource Include="Resources\Images\PC\CheckoutOrder.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\CheckoutOrder.png" />
+    <EmbeddedResource Include="Resources\Images\PC\Delete.png" />
+    <EmbeddedResource Include="Resources\Images\PC\Device.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\Device.png" />
+    <EmbeddedResource Include="Resources\Images\PC\Exit.png" />
+    <EmbeddedResource Include="Resources\Images\PC\ExpendCheckout.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\ExpendCheckout.png" />
+    <EmbeddedResource Include="Resources\Images\PC\ExpendDetails.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\ExpendDetails.png" />
+    <EmbeddedResource Include="Resources\Images\PC\Expenditure.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\Expenditure.png" />
+    <EmbeddedResource Include="Resources\Images\PC\FastGrid.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\FastGrid.png" />
+    <EmbeddedResource Include="Resources\Images\PC\LangEN.png" />
+    <EmbeddedResource Include="Resources\Images\PC\LangUG.png" />
+    <EmbeddedResource Include="Resources\Images\PC\LangZH.png" />
+    <EmbeddedResource Include="Resources\Images\PC\Login.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\Login.png" />
+    <EmbeddedResource Include="Resources\Images\PC\logo.png" />
+    <EmbeddedResource Include="Resources\Images\PC\logou.png" />
+    <EmbeddedResource Include="Resources\Images\PC\Main.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\Main.png" />
+    <EmbeddedResource Include="Resources\Images\PC\MemberPay.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\MemberPay.png" />
+    <EmbeddedResource Include="Resources\Images\PC\Members.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\Members.png" />
+    <EmbeddedResource Include="Resources\Images\PC\MenuList.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\MenuList.png" />
+    <EmbeddedResource Include="Resources\Images\PC\moveFirst.png" />
+    <EmbeddedResource Include="Resources\Images\PC\moveLast.png" />
+    <EmbeddedResource Include="Resources\Images\PC\NewImportDetails.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\NewImportDetails.png" />
+    <EmbeddedResource Include="Resources\Images\PC\NewOrder.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\NewOrder.png" />
+    <EmbeddedResource Include="Resources\Images\PC\next.png" />
+    <EmbeddedResource Include="Resources\Images\PC\Order.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\Order.png" />
+    <EmbeddedResource Include="Resources\Images\PC\OrderDetails.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\OrderDetails.png" />
+    <EmbeddedResource Include="Resources\Images\PC\TradingSystem.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\previous.png" />
+    <EmbeddedResource Include="Resources\Images\PC\Print.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\Print.png" />
+    <EmbeddedResource Include="Resources\Images\PC\Printer.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\Printer.png" />
+    <EmbeddedResource Include="Resources\Images\PC\PrinterList.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\PrinterList.png" />
+    <EmbeddedResource Include="Resources\Images\PC\Product.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\Product.png" />
+    <EmbeddedResource Include="Resources\Images\PC\ProductType.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\ProductType.png" />
+    <EmbeddedResource Include="Resources\Images\PC\RegCount.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\RegCount.png" />
+    <EmbeddedResource Include="Resources\Images\PC\RegTime.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\RegTime.png" />
+    <EmbeddedResource Include="Resources\Images\PC\ReplaceRoom.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\ReplaceRoom.png" />
+    <EmbeddedResource Include="Resources\Images\PC\Reset.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\Reset.png" />
+    <EmbeddedResource Include="Resources\Images\PC\Restart.png" />
+    <EmbeddedResource Include="Resources\Images\PC\Room.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\Room.png" />
+    <EmbeddedResource Include="Resources\Images\PC\Save.png" />
+    <EmbeddedResource Include="Resources\Images\PC\select.png" />
+    <EmbeddedResource Include="Resources\Images\PC\ShowOrder.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\ShowOrder.png" />
+    <EmbeddedResource Include="Resources\Images\PC\Shutdown.png" />
+    <EmbeddedResource Include="Resources\Images\PC\Statistic.ico" />
+    <EmbeddedResource Include="Resources\Images\PC\Statistic.png" />
+    <None Include="Service References\Service\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\Service\configuration.svcinfo" />
+    <None Include="Service References\Service\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OybabDAL\OybabDAL.csproj">
+      <Project>{0410fd27-6456-4780-8854-5205b6cd8bbd}</Project>
+      <Name>OybabDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OybabReport\OybabReport.csproj">
+      <Project>{4a3dcc30-4346-47a0-874b-5674ab86f7bf}</Project>
+      <Name>OybabReport</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\Service\" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Page Include="View\Component\MControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

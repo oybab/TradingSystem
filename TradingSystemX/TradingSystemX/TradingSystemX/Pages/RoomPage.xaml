@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=SoftServiceName}"
+             x:Class="Oybab.TradingSystemX.Pages.RoomPage" BackgroundColor="{DynamicResource PageBackgroundColor}">
+
+    <Grid>
+        <Grid>
+            <StackLayout Margin="0, 10, 0, 10"  Orientation="Vertical">
+
+                <StackLayout>
+                    <Label Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=MainPage}"/>
+
+                    <Button Text="GoBack" Clicked="Goback"/>
+
+                    <ListView Margin="0,10,0,0" ItemsSource="{Binding RoomList}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Button Text="{Binding DisplayName}" Command="{Binding GoCommand}"/>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+
+    </Grid>
+</ContentPage>

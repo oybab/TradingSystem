@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.Core"
+
+             x:Class="Oybab.TradingSystemX.Pages.Controls.AddMemberView" BackgroundColor="{DynamicResource PageBackgroundColor}">
+
+    <Grid>
+        <Grid>
+            <StackLayout Margin="10, 10, 10, 10"  Orientation="Vertical">
+
+                <Label HorizontalOptions="Start"  Margin="6,10,0,0" Text="{Binding Title}"/>
+
+                <StackLayout>
+                    <StackLayout Margin="0,20,0,10"  HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                        <Label Text="{Binding MemberNo}" VerticalOptions="Center"/>
+                        <Label Text=":" VerticalOptions="Center"/>
+                        <Entry Text="{Binding MemberNoValue, Mode=TwoWay}" HorizontalOptions="FillAndExpand"/>
+                    </StackLayout>
+                    <Grid Margin="0,50,0,10"  HorizontalOptions="Center">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="0.5*"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Grid.Column="0" HorizontalOptions="End" Command="{Binding CancelCommand}" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Back}"  />
+                        <Button Grid.Column="2" HorizontalOptions="Start" Command="{Binding OKCommand}" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=OK2}" >
+                            <Button.Triggers>
+                                <DataTrigger TargetType="Button" Binding="{Binding IsSave}" Value="False">
+                                    <Setter Property="IsVisible" Value="False"/>
+                                </DataTrigger>
+                            </Button.Triggers>
+                        </Button>
+                    </Grid>
+
+
+                </StackLayout>
+
+            </StackLayout>
+        </Grid>
+        <Grid IsVisible="{Binding IsLoading}"  Style="{StaticResource LoadingBackground}">
+            <ActivityIndicator IsRunning="{Binding IsLoading}" />
+        </Grid>
+    </Grid>
+</ContentView>

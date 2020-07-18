@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ae83ffff0a0e4bb992151fd8b5b243bf" Name="Diagram1">
+        <EntityTypeShape EntityType="TradingSystemModel.Admin" Width="1.5" PointX="0.75" PointY="30.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradingSystemModel.AdminLog" Width="1.5" PointX="3" PointY="34.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradingSystemModel.AdminPay" Width="1.5" PointX="6" PointY="33.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradingSystemModel.Balance" Width="1.5" PointX="0.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradingSystemModel.BalancePay" Width="1.5" PointX="3" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradingSystemModel.Database" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradingSystemModel.Device" Width="1.5" PointX="0.75" PointY="42.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradingSystemModel.Import" Width="1.5" PointX="5.25" PointY="45.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradingSystemModel.ImportDetail" Width="1.5" PointX="8.5" PointY="33.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradingSystemModel.ImportPay" Width="1.5" PointX="10.5" PointY="49.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradingSystemModel.Log" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradingSystemModel.Member" Width="1.5" PointX="3" PointY="48.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradingSystemModel.MemberPay" Width="1.5" PointX="5.25" PointY="39.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradingSystemModel.Order" Width="1.5" PointX="8.25" PointY="39.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradingSystemModel.OrderDetail" Width="1.5" PointX="13.5" PointY="36.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradingSystemModel.OrderPay" Width="1.5" PointX="13.5" PointY="43.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradingSystemModel.Ppr" Width="1.5" PointX="8.5" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradingSystemModel.Printer" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradingSystemModel.Printlog" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradingSystemModel.Product" Width="1.5" PointX="6.25" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradingSystemModel.ProductType" Width="1.5" PointX="4" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradingSystemModel.Request" Width="1.5" PointX="4.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradingSystemModel.Room" Width="1.5" PointX="1.5" PointY="65.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradingSystemModel.Supplier" Width="1.5" PointX="3" PointY="57.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradingSystemModel.SupplierPay" Width="1.5" PointX="8.25" PointY="48.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradingSystemModel.Takeout" Width="1.5" PointX="11.25" PointY="39" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradingSystemModel.TakeoutDetail" Width="1.5" PointX="16.5" PointY="36.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradingSystemModel.TakeoutPay" Width="1.5" PointX="16.5" PointY="44.25" IsExpanded="true" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_adminlog_1_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_adminpay_2_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_adminpay_3_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_balancepay_2_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_import_2_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_importdetail_1_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_importpay_3_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_member_0_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_memberpay_2_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_order_1_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_order_4_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_orderdetail_1_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_orderdetail_3_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_orderpay_3_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_supplier_0_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_supplierpay_2_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_takeout_1_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_takeout_2_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_takeout_5_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_takeoutdetail_1_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_takeoutdetail_3_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_takeoutpay_3_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_adminlog_0_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_adminpay_0_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_adminpay_1_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_balancepay_0_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_importpay_1_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_memberpay_0_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_orderpay_1_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_supplierpay_0_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_takeoutpay_1_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_balancepay_1_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_device_0_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_import_1_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_importdetail_0_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_importpay_2_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_memberpay_1_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_order_0_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_order_3_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_orderdetail_0_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_orderdetail_2_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_orderpay_2_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_supplierpay_1_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_takeout_0_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_takeout_4_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_takeoutdetail_0_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_takeoutdetail_2_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_takeoutpay_2_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_import_0_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_importdetail_2_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_importpay_0_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_importdetail_3_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_importpay_4_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_memberpay_3_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_order_2_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_orderpay_4_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_takeout_3_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_takeoutpay_4_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_order_5_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_orderdetail_5_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_orderpay_0_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_orderdetail_4_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_Ppr_0_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_Ppr_1_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_product_0_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_product_1_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_takeoutdetail_4_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_producttype_0_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_supplierpay_3_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_takeoutdetail_5_0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradingSystemModel.FK_tb_takeoutpay_0_0" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Takeout" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Takeout" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" />
+  <xs:complexType name="ToServerServiceNewTakeout">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q1:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Takeout" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TakeoutDetails" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TakeoutPays" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TakeoutStateSession" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceNewTakeout" nillable="true" type="tns:ToServerServiceNewTakeout" />
+  <xs:complexType name="ToClientServiceNewTakeout">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q2:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Takeout" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TakeoutDetails" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TakeoutPays" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TakeoutSessionId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UpdateTime" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceNewTakeout" nillable="true" type="tns:ToClientServiceNewTakeout" />
+  <xs:complexType name="ToServerServiceEditTakeout">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q3:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Rechecked" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Takeout" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TakeoutStateSession" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceEditTakeout" nillable="true" type="tns:ToServerServiceEditTakeout" />
+  <xs:complexType name="ToClientServiceEditTakeout">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q4:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Takeout" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TakeoutStateSession" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UpdateTime" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceEditTakeout" nillable="true" type="tns:ToClientServiceEditTakeout" />
+  <xs:complexType name="ToServerServiceGetTakeouts">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q5:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AddTimeEnd" type="xs:long" />
+          <xs:element minOccurs="0" name="AddTimeStart" type="xs:long" />
+          <xs:element minOccurs="0" name="AdminId" type="xs:long" />
+          <xs:element minOccurs="0" name="CardNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FinishAdminId" type="xs:long" />
+          <xs:element minOccurs="0" name="FinishTime" type="xs:long" />
+          <xs:element minOccurs="0" name="IsFromCacheOnly" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsIncludeRef" type="xs:boolean" />
+          <xs:element minOccurs="0" name="MemberNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SendAdminId" type="xs:long" />
+          <xs:element minOccurs="0" name="State" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceGetTakeouts" nillable="true" type="tns:ToServerServiceGetTakeouts" />
+  <xs:complexType name="ToClientServiceGetTakeouts">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q6:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Takeouts" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceGetTakeouts" nillable="true" type="tns:ToClientServiceGetTakeouts" />
+  <xs:complexType name="ToClientServiceTakeoutUpdateNotification">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q7:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="TakeoutNotification" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceTakeoutUpdateNotification" nillable="true" type="tns:ToClientServiceTakeoutUpdateNotification" />
+</xs:schema>

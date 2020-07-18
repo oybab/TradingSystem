@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Order" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Order" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" />
+  <xs:complexType name="ToServerServiceNewOrder">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q1:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Order" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrderDetails" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrderPays" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RoomStateSession" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceNewOrder" nillable="true" type="tns:ToServerServiceNewOrder" />
+  <xs:complexType name="ToClientServiceNewOrder">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q2:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Order" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrderDetails" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrderPays" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+          <xs:element minOccurs="0" name="RoomSessionId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UpdateTime" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceNewOrder" nillable="true" type="tns:ToClientServiceNewOrder" />
+  <xs:complexType name="ToServerServiceEditOrder">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q3:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Order" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrderPays" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Rechecked" type="xs:boolean" />
+          <xs:element minOccurs="0" name="RoomStateSession" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceEditOrder" nillable="true" type="tns:ToServerServiceEditOrder" />
+  <xs:complexType name="ToClientServiceEditOrder">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q4:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Order" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+          <xs:element minOccurs="0" name="RoomStateSession" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UpdateTime" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceEditOrder" nillable="true" type="tns:ToClientServiceEditOrder" />
+  <xs:complexType name="ToServerServiceReplaceOrder">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q5:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="NewOrder" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NewRoomId" type="xs:long" />
+          <xs:element minOccurs="0" name="NewRoomSession" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OldOrder" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OldRoomId" type="xs:long" />
+          <xs:element minOccurs="0" name="OldRoomSession" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceReplaceOrder" nillable="true" type="tns:ToServerServiceReplaceOrder" />
+  <xs:complexType name="ToClientServiceReplaceOrder">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q6:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="NewOrder" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NewRoomSession" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OldOrder" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OldRoomSession" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceReplaceOrder" nillable="true" type="tns:ToClientServiceReplaceOrder" />
+  <xs:complexType name="ToServerServiceGetOrders">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q7:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AddTimeEnd" type="xs:long" />
+          <xs:element minOccurs="0" name="AddTimeStart" type="xs:long" />
+          <xs:element minOccurs="0" name="AdminId" type="xs:long" />
+          <xs:element minOccurs="0" name="CardNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EndTime" type="xs:long" />
+          <xs:element minOccurs="0" name="FinishAdminId" type="xs:long" />
+          <xs:element minOccurs="0" name="FinishTime" type="xs:long" />
+          <xs:element minOccurs="0" name="IsIncludeRef" type="xs:boolean" />
+          <xs:element minOccurs="0" name="MemberNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RoomId" type="xs:long" />
+          <xs:element minOccurs="0" name="StartTime" type="xs:long" />
+          <xs:element minOccurs="0" name="State" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceGetOrders" nillable="true" type="tns:ToServerServiceGetOrders" />
+  <xs:complexType name="ToClientServiceGetOrders">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q8:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Orders" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceGetOrders" nillable="true" type="tns:ToClientServiceGetOrders" />
+  <xs:complexType name="ToClientServiceOrderUpdateNotification">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q9:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="OrderNotification" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceOrderUpdateNotification" nillable="true" type="tns:ToClientServiceOrderUpdateNotification" />
+</xs:schema>

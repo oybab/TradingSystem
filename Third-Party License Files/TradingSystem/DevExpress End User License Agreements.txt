@@ -1,0 +1,368 @@
+DEVELOPER EXPRESS INC END USER LICENSE AGREEMENT
+DevExpress ASP.NET Subscription SOFTWARE COMPONENT PRODUCT
+DevExpress Dashboard(tm) SOFTWARE COMPONENT PRODUCT
+DevExpress Document Server SOFTWARE COMPONENT PRODUCT
+DevExpress Reports Subscription SOFTWARE COMPONENT PRODUCT
+DevExpress Windows 8 XAML Subscription
+DevExpress WinForms Subscription SOFTWARE COMPONENT PRODUCT
+DevExpress WPF Subscription SOFTWARE COMPONENT PRODUCT
+eXpressApp Framework(tm)
+Copyright (C) 2000-2015 Developer Express Inc.
+
+END-USER LICENSE AGREEMENT 
+FOR ALL SOFTWARE DEVELOPMENT PRODUCT(S) INCLUDED IN THIS DISTRIBUTION
+
+IMPORTANT- READ CAREFULLY: This DEVELOPER EXPRESS INC ("DEVEXPRESS") End-User License Agreement ("EULA") is a legal agreement between you, a developer of software applications, ("Developer End User") and DEVEXPRESS for all DEVEXPRESS products, frameworks, components, source code, demos, intermediate files, media, printed materials, and "online" or electronic documentation ("SOFTWARE DEVELOPMENT PRODUCT(S)") contained in this distribution.
+
+By installing, copying, or otherwise using the SOFTWARE DEVELOPMENT PRODUCT(S), you agree to be bound by the terms of this EULA. If you do not agree to any part of the terms of this EULA, DO NOT INSTALL, COPY, USE, EVALUATE, OR REPLICATE IN ANY MANNER, ANY PART, FILE OR PORTION OF THE SOFTWARE DEVELOPMENT PRODUCT(S).
+
+All SOFTWARE DEVELOPMENT PRODUCT(S) is licensed, not sold. 
+
+RIGOROUS ENFORCEMENT OF INTELLECTUAL PROPERTY RIGHTS.  If the licensed right of use for this SOFTWARE DEVELOPMENT PRODUCT(S) is purchased by you with any intent to reverse engineer, decompile, create derivative works, and the exploitation or unauthorized transfer of, any DEVEXPRESS intellectual property and trade secrets, to include any exposed methods or source code where provided, no licensed right of use shall exist, and any PRODUCT(s) created as a result shall be judged illegal by definition of all applicable law. Any sale or resale of intellectual property or created derivatives so obtained will be prosecuted to the fullest extent of all local, federal and international law.
+
+1. GRANT OF LICENSE.
+
+Subject to all the terms and conditions of this EULA, DEVEXPRESS grants Developer End User a non-exclusive, non-transferable license to install and use the SOFTWARE DEVELOPMENT PRODUCT(S) included in this distribution as authorized below:
+
+1.1 INDIVIDUAL USE LICENSE.
+
+If you are an individual and are using the SOFTWARE DEVELOPMENT PRODUCT(S), you may install, copy, and use the SOFTWARE DEVELOPMENT PRODUCT(S) by purchasing a 12 month subscription from DEVEXPRESS or its authorized resellers. Refer to Section 9 of this EULA for more information. 
+
+
+1.2 BUSINESS AND GOVERNMENT USE LICENSE.
+
+DEVEXPRESS licenses the SOFTWARE DEVELOPMENT PRODUCT(S) on a per-developer basis. If you are a business or government entity, your employees may install, copy, and use the SOFTWARE DEVELOPMENT PRODUCT(S) by purchasing a 12 month subscription from DEVEXPRESS or its authorized resellers for each developer using the SOFTWARE DEVELOPMENT PRODUCT(S). Refer to Section 9 of this EULA for more information. 
+
+1.3 THIRTY (30) DAY EVALUATION (TRIAL) USE LICENSE.
+
+If the SOFTWARE DEVELOPMENT PRODUCT(S) you have obtained is marked as a "TRIAL" or "EVALUATION," you may install one copy of the SOFTWARE DEVELOPMENT PRODUCT(S) for evaluation purposes only, for a period of 30 calendar days from the date of installation ("Evaluation Period"). Upon expiration of the Evaluation Period, the SOFTWARE DEVELOPMENT PRODUCT(S) must be uninstalled and all copies destroyed. 
+
+You MAY NOT CREATE applications or begin software projects using the SOFTWARE DEVELOPMENT PRODUCT(S) under the terms of the THIRTY (30) DAY EVALUATION (TRIAL) USE LICENSE.
+
+You MAY NOT REDISTRIBUTE files in the SOFTWARE DEVELOPMENT PRODUCT(S) distribution if using an evaluation or trial version of the SOFTWARE DEVELOPMENT PRODUCT(S).
+
+2. LIMITATIONS ON REVERSE ENGINEERING, DECOMPILATION, AND DISASSEMBLY.
+ 
+You may not reverse engineer, decompile, create derivative works or disassemble the SOFTWARE DEVELOPMENT PRODUCT(S). If the SOFTWARE DEVELOPMENT PRODUCT(S) is purchased by you with the intent to reverse engineer, decompile, create derivative works, or the exploitation and unauthorized transfer of any DEVEXPRESS intellectual property and trade secrets, to include any exposed methods or source code where provided, no licensed right of use shall exist and any PRODUCT(s) created as a result shall be judged illegal by definition. Any sale or resale of intellectual property or created derivatives so obtained will be prosecuted to the fullest extent of all local, federal and international law.
+
+3. SEPARATION OF COMPONENTS.
+ 
+The SOFTWARE DEVELOPMENT PRODUCT(S) is licensed as a single PRODUCT(s). The SOFTWARE DEVELOPMENT PRODUCT(S) and its constituent parts and any provided redistributables may not be reverse engineered, decompiled, disassembled or separated for use on more than one computer, nor placed for distribution, sale, or resale as individual creations by Developer End User. The provision of source code, if included with the SOFTWARE DEVELOPMENT PRODUCT(S), does not constitute transfer of any legal rights to such code, and resale or distribution of all or any portion of all source code and intellectual property will be prosecuted to the fullest extent of all applicable local, federal and international laws. All DEVEXPRESS libraries, source code, redistributables and other files remain DEVEXPRESS's exclusive property. You may not distribute any files, except those that DEVEXPRESS has expressly designated as Redistributable.
+
+4. RENTAL.
+ 
+You may not rent, lease, or lend the SOFTWARE DEVELOPMENT PRODUCT(S).
+
+5. TRANSFER.
+ 
+You may NOT permanently or temporarily transfer ANY of your rights under this EULA to any individual or business or government entity without prior written approval from DEVEXPRESS. Regardless of any modifications which you make and regardless of how you might compile, link, and/or package your programs, under no circumstances may the libraries, Redistributables, and/or files included in the SOFTWARE DEVELOPMENT PRODUCT(S) (including any portions thereof) be used for developing programs by anyone other than you. Only you as the licensed Developer End User have the right to use the libraries, redistributables, or other files of the SOFTWARE DEVELOPMENT PRODUCT(S) (or any portions thereof) for developing programs created with the SOFTWARE DEVELOPMENT PRODUCT(S). You may not share copies of the Redistributables with other co-developers. You may not reproduce or distribute any DEVEXPRESS documentation without the permission of DEVEXPRESS.
+
+6. REDISTRIBUTION.
+ 
+The SOFTWARE DEVELOPMENT PRODUCT(s) may include certain files ("REDISTRIBUTABLE(s)") intended for distribution by you to the users of software applications which you create. Redistributables include, for example, those files identified in printed or on-line documentation as redistributable files or those files preselected for deployment by an install utility provided with the SOFTWARE DEVELOPMENT PRODUCT(S) (if any). In all circumstances, the REDISTRIBUTABLES for the SOFTWARE DEVELOPMENT PRODUCT(S) are only those files specifically designated as such by DEVEXPRESS.
+
+AT NO TIME MAY DEVELOPER END USER CREATE ANY TOOL, REDISTRIBUTABLE, OR PRODUCT THAT DIRECTLY OR INDIRECTLY COMPETES WITH THE SOFTWARE DEVELOPMENT PRODUCT(S) BY UTILIZING ALL OR ANY PORTION OF THE DEVEXPRESS SOFTWARE DEVELOPMENT PRODUCT(S).
+ 
+Distribution by the Developer End User of any design-time tools (EXE's or DLL's), executables, and source code distributed to Developer End User by DEVEXPRESS as part of this SOFTWARE DEVELOPMENT PRODUCT(S) and not explicitly identified as a redistributable file is strictly prohibited. The Developer End User shall not develop software applications that provide an application programming interface to the SOFTWARE DEVELOPMENT PRODUCT(S) or the SOFTWARE DEVELOPMENT PRODUCT(S) as modified.
+ 
+The Developer End User may NOT distribute the SOFTWARE DEVELOPMENT PRODUCT(S), in any format, to others for development or application compilation purposes. 
+
+If you are an individual, business or government entity and are using the SOFTWARE DEVELOPMENT PRODUCT(S) and have purchased a 12 month subscription as described in Section 9 of this EULA, you may reproduce and distribute copies of the REDISTRIBUTABLES, provided that such copies are made from the original copy of the REDISTRIBUTABLES included with the SOFTWARE DEVELOPMENT PRODUCT(S) or modified versions of the REDISTRIBUTABLES which are provided to you by DEVEXPRESS or those which you create. Copies of REDISTRIBUTABLES may only be distributed with and for the sole purpose of executing application programs permitted under this EULA that you have created using the SOFTWARE DEVELOPMENT PRODUCT(S).
+
+REDISTRIBUTABLES.  The following installed file(s) or installed folder(s) are considered redistributables under this EULA. Refer to Section 9 of this EULA for licensing and subscription terms:
+DBUpdater.v15.1.exe
+DevExpress.BonusSkins.v15.1.dll
+DevExpress.Charts.v15.1.Core.dll
+DevExpress.CodeParser.v15.1.dll
+DevExpress.Controls\15.1\Redist
+DevExpress.Controls\15.1\References
+DevExpress.Core\15.1\Redist
+DevExpress.Core\15.1\References
+DevExpress.Dashboard.v15.1.Core.dll
+DevExpress.Dashboard.v15.1.Web.dll
+DevExpress.Dashboard.v15.1.Web.Mvc.dll
+DevExpress.Dashboard.v15.1.Web.Mvc5.dll
+DevExpress.Dashboard.v15.1.Win.dll
+DevExpress.Data.v15.1.dll
+DevExpress.Data\15.1\Redist
+DevExpress.Data\15.1\References
+DevExpress.DataAccess.v15.1.dll
+DevExpress.DataAccess.v15.1.UI.dll
+DevExpress.Docs.v15.1.dll
+DevExpress.EasyTest.v15.1.dll
+DevExpress.ExpressApp.AuditTrail.v15.1.dll
+DevExpress.ExpressApp.Chart.v15.1.dll
+DevExpress.ExpressApp.Chart.Web.v15.1.dll
+DevExpress.ExpressApp.Chart.Win.v15.1.dll
+DevExpress.ExpressApp.CloneObject.v15.1.dll
+DevExpress.ExpressApp.ConditionalAppearance.v15.1.dll
+DevExpress.ExpressApp.EasyTest.WebAdapter.v15.1.dll
+DevExpress.ExpressApp.EasyTest.WinAdapter.v15.1.dll
+DevExpress.ExpressApp.EF.45.v15.1.dll
+DevExpress.ExpressApp.EF.v15.1.dll
+DevExpress.ExpressApp.FileAttachment.Web.v15.1.dll
+DevExpress.ExpressApp.FileAttachment.Win.v15.1.dll
+DevExpress.ExpressApp.HtmlPropertyEditor.Web.v15.1.dll
+DevExpress.ExpressApp.HtmlPropertyEditor.Win.v15.1.dll
+DevExpress.ExpressApp.Images.v15.1.dll
+DevExpress.ExpressApp.Kpi.v15.1.dll
+DevExpress.ExpressApp.ModelEditor.v15.1.exe
+DevExpress.ExpressApp.Notifications.v15.1.dll
+DevExpress.ExpressApp.Notifications.Web.v15.1.dll
+DevExpress.ExpressApp.Notifications.Win.v15.1.dll
+DevExpress.ExpressApp.Objects.v15.1.dll
+DevExpress.ExpressApp.PivotChart.v15.1.dll
+DevExpress.ExpressApp.PivotChart.Web.v15.1.dll
+DevExpress.ExpressApp.PivotChart.Win.v15.1.dll
+DevExpress.ExpressApp.PivotGrid.v15.1.dll
+DevExpress.ExpressApp.PivotGrid.Web.v15.1.dll
+DevExpress.ExpressApp.PivotGrid.Win.v15.1.dll
+DevExpress.ExpressApp.Reports.v15.1.dll
+DevExpress.ExpressApp.Reports.Web.v15.1.dll
+DevExpress.ExpressApp.Reports.Win.v15.1.dll
+DevExpress.ExpressApp.ReportsV2.v15.1.dll
+DevExpress.ExpressApp.ReportsV2.Web.v15.1.dll
+DevExpress.ExpressApp.ReportsV2.Win.v15.1.dll
+DevExpress.ExpressApp.Scheduler.v15.1.dll
+DevExpress.ExpressApp.Scheduler.Web.v15.1.dll
+DevExpress.ExpressApp.Scheduler.Win.v15.1.dll
+DevExpress.ExpressApp.ScriptRecorder.v15.1.dll
+DevExpress.ExpressApp.ScriptRecorder.Web.v15.1.dll
+DevExpress.ExpressApp.ScriptRecorder.Win.v15.1.dll
+DevExpress.ExpressApp.Security.v15.1.dll
+DevExpress.ExpressApp.StateMachine.v15.1.dll
+DevExpress.ExpressApp.TreeListEditors.v15.1.dll
+DevExpress.ExpressApp.TreeListEditors.Web.v15.1.dll
+DevExpress.ExpressApp.TreeListEditors.Win.v15.1.dll
+DevExpress.ExpressApp.Updater.v15.1.exe
+DevExpress.ExpressApp.v15.1.dll
+DevExpress.ExpressApp.Validation.v15.1.dll
+DevExpress.ExpressApp.Validation.Win.v15.1.dll
+DevExpress.ExpressApp.ViewVariantsModule.v15.1.dll
+DevExpress.ExpressApp.Web.v15.1.dll
+DevExpress.ExpressApp.Win.v15.1.dll
+DevExpress.ExpressApp.Workflow.v15.1.dll
+DevExpress.ExpressApp.Workflow.Win.v15.1.dll
+DevExpress.ExpressApp.Xpo.v15.1.dll
+DevExpress.Images.v15.1.dll
+DevExpress.Map.v15.1.Core.dll
+DevExpress.Mvvm.v15.1.dll
+DevExpress.Office.v15.1.Core.dll
+DevExpress.Pdf.v15.1.Core.dll
+DevExpress.Pdf.v15.1.Drawing.dll
+DevExpress.Persistent.Base.v15.1.dll
+DevExpress.Persistent.BaseImpl.EF.v15.1.dll
+DevExpress.Persistent.BaseImpl.v15.1.dll
+DevExpress.PivotGrid.v15.1.Core.dll
+DevExpress.Printing.v15.1.Core.dll
+DevExpress.RichEdit.v15.1.Core.dll
+DevExpress.SharePoint.2013.v15.1.dll
+DevExpress.Snap.v15.1.Core.dll
+DevExpress.Snap.v15.1.dll
+DevExpress.Snap.v15.1.Extensions.dll
+DevExpress.Sparkline.v15.1.Core.dll
+DevExpress.SpellChecker.v15.1.Core.dll
+DevExpress.Spreadsheet.v15.1.Core.dll
+DevExpress.Utils.v15.1.dll
+DevExpress.Utils.v15.1.UI.dll
+DevExpress.Visualization\15.1\Redist
+DevExpress.Visualization\15.1\References
+DevExpress.Web.ASPxHtmlEditor.v15.1.dll
+DevExpress.Web.ASPxPivotGrid.v15.1.dll
+DevExpress.Web.ASPxRichEdit.v15.1.dll
+DevExpress.Web.ASPxScheduler.v15.1.dll
+DevExpress.Web.ASPxSpellChecker.v15.1.dll
+DevExpress.Web.ASPxSpreadsheet.v15.1.dll
+DevExpress.Web.ASPxThemes.v15.1.dll
+DevExpress.Web.ASPxTreeList.v15.1.dll
+DevExpress.Web.Mvc.v15.1.dll
+DevExpress.Web.Mvc5.v15.1.dll
+DevExpress.Web.v15.1.dll
+DevExpress.Workflow.Activities.v15.1.Design.dll
+DevExpress.Workflow.Activities.v15.1.dll
+DevExpress.Xpf.Carousel.v15.1.dll
+DevExpress.Xpf.Charts.v15.1.dll
+DevExpress.Xpf.Controls.v15.1.dll
+DevExpress.Xpf.Core.v15.1.dll
+DevExpress.Xpf.Core.v15.1.Extensions.dll
+DevExpress.Xpf.Docking.v15.1.dll
+DevExpress.Xpf.Docking.v15.1.Extensions.dll
+DevExpress.Xpf.Gauges.v15.1.dll
+DevExpress.Xpf.Grid.v15.1.Core.dll
+DevExpress.Xpf.Grid.v15.1.dll
+DevExpress.Xpf.Grid.v15.1.Extensions.dll
+DevExpress.Xpf.Layout.v15.1.Core.dll
+DevExpress.Xpf.LayoutControl.v15.1.dll
+DevExpress.Xpf.Map.v15.1.dll
+DevExpress.Xpf.NavBar.v15.1.dll
+DevExpress.Xpf.PdfViewer.v15.1.dll
+DevExpress.Xpf.PivotGrid.v15.1.dll
+DevExpress.Xpf.Printing.v15.1.dll
+DevExpress.Xpf.Printing.v15.1.Service.dll
+DevExpress.Xpf.PropertyGrid.v15.1.dll
+DevExpress.Xpf.ReportDesigner.v15.1.dll
+DevExpress.Xpf.Ribbon.v15.1.dll
+DevExpress.Xpf.RichEdit.v15.1.dll
+DevExpress.Xpf.Scheduler.v15.1.dll
+DevExpress.Xpf.SpellChecker.v15.1.dll
+DevExpress.Xpf.Spreadsheet.v15.1.dll
+DevExpress.Xpf.Themes.DXStyle.v15.1.dll
+DevExpress.Xpf.Themes.HybridApp.v15.1.dll
+DevExpress.Xpf.Themes.LightGray.v15.1.dll
+DevExpress.Xpf.Themes.MetropolisDark.v15.1.dll
+DevExpress.Xpf.Themes.MetropolisLight.v15.1.dll
+DevExpress.Xpf.Themes.Office2007Black.v15.1.dll
+DevExpress.Xpf.Themes.Office2007Blue.v15.1.dll
+DevExpress.Xpf.Themes.Office2007Silver.v15.1.dll
+DevExpress.Xpf.Themes.Office2010Black.v15.1.dll
+DevExpress.Xpf.Themes.Office2010Blue.v15.1.dll
+DevExpress.Xpf.Themes.Office2010Silver.v15.1.dll
+DevExpress.Xpf.Themes.Office2013.v15.1.dll
+DevExpress.Xpf.Themes.Office2013DarkGray.v15.1.dll
+DevExpress.Xpf.Themes.Office2013LightGray.v15.1.dll
+DevExpress.Xpf.Themes.Seven.v15.1.dll
+DevExpress.Xpf.Themes.TouchlineDark.v15.1.dll
+DevExpress.Xpf.Themes.VS2010.v15.1.dll
+DevExpress.Xpo.v15.1.dll
+DevExpress.Xpo.v15.1.Extensions.dll
+DevExpress.Xpo.v15.1.Web.dll
+DevExpress.XtraBars.v15.1.dll
+DevExpress.XtraCharts.v15.1.dll
+DevExpress.XtraCharts.v15.1.Extensions.dll
+DevExpress.XtraCharts.v15.1.UI.dll
+DevExpress.XtraCharts.v15.1.Web.dll
+DevExpress.XtraCharts.v15.1.Wizard.dll
+DevExpress.XtraEditors.v15.1.dll
+DevExpress.XtraGauges.v15.1.Core.dll
+DevExpress.XtraGauges.v15.1.Presets.dll
+DevExpress.XtraGauges.v15.1.Win.dll
+DevExpress.XtraGrid.v15.1.dll
+DevExpress.XtraLayout.v15.1.dll
+DevExpress.XtraMap.v15.1.dll
+DevExpress.XtraNavBar.v15.1.dll
+DevExpress.XtraPdfViewer.v15.1.dll
+DevExpress.XtraPivotGrid.v15.1.dll
+DevExpress.XtraPrinting.v15.1.dll
+DevExpress.XtraReports.v15.1.dll
+DevExpress.XtraReports.v15.1.Extensions.dll
+DevExpress.XtraReports.v15.1.Service.dll
+DevExpress.XtraReports.v15.1.Web.dll
+DevExpress.XtraRichEdit.v15.1.dll
+DevExpress.XtraRichEdit.v15.1.Extensions.dll
+DevExpress.XtraScheduler.v15.1.Core.dll
+DevExpress.XtraScheduler.v15.1.dll
+DevExpress.XtraScheduler.v15.1.Extensions.dll
+DevExpress.XtraScheduler.v15.1.Reporting.dll
+DevExpress.XtraScheduler.v15.1.Reporting.Extensions.dll
+DevExpress.XtraSpellChecker.v15.1.dll
+DevExpress.XtraSpreadsheet.v15.1.dll
+DevExpress.XtraTreeList.v15.1.dll
+DevExpress.XtraVerticalGrid.v15.1.dll
+DevExpress.XtraWizard.v15.1.dll
+TestExecutor.v15.1.exe
+
+Developer End User MAY NOT REDISTRIBUTE any files in the SOFTWARE DEVELOPMENT PRODUCT(S) distribution if using an evaluation, trial, Not for Resale, or demo version of the SOFTWARE DEVELOPMENT PRODUCT(S).
+
+7. COPYRIGHT.
+ 
+All title and copyrights in and to the SOFTWARE DEVELOPMENT PRODUCT(S) (including but not limited to any DEVEXPRESS trademarks, copywritten images, demos, source code, intermediate files, packages, photographs, redistributables, animations, video, audio, music, text, and "applets" incorporated into the SOFTWARE DEVELOPMENT PRODUCT(S) the accompanying printed materials, and any copies of the SOFTWARE DEVELOPMENT PRODUCT(S)) are owned by DEVEXPRESS or its subsidiaries. 
+
+The SOFTWARE DEVELOPMENT PRODUCT(S) is protected by copyright laws and international treaty provisions and therefore, you must treat the SOFTWARE DEVELOPMENT PRODUCT(S) like any other copyrighted material except that you may install and use the SOFTWARE DEVELOPMENT PRODUCT(S) as described in this EULA.
+
+8. OPEN SOURCE LIBRARIES.
+
+The following open source libraries are used and included within this SOFTWARE DEVELOPMENT PRODUCT(S):
+
+jQuery JavaScript Library (Open Source - MIT License)
+Copyright (c) jQuery Foundation and other contributors
+http://jquery.com/ 
+
+jQueryUI JavaScript Library (Open Source - MIT License)
+Copyright (c) jQuery Foundation and other contributors
+http://jqueryui.com/ 
+
+Knockout JavaScript Library (Open Source - MIT License)
+Copyright (c) Knockoutjs.com
+http://knockoutjs.com/ 
+http://opensource.org/licenses/mit-license.php 
+
+Globalize JavaScript Library (Open Source - MIT License) 
+Copyright (c) Software Freedom Conservancy, Inc.
+http://jquery.org/license 
+
+Ace (Ajax.org Cloud9 Editor) (Open Source - BSD License)
+Copyright (c) 2010, Ajax.org B.V. 
+https://github.com/ajaxorg/ace/blob/master/LICENSE
+
+The open source libraries included in the SOFTWARE DEVELOPMENT PRODUCT(S) are done so pursuant to each individual open source library license and subject to the disclaimers and limitations on liability set forth in each open source library license.
+
+9. TWELVE (12) MONTH SUBSCRIPTION AND UPDATES
+
+DEVEXPRESS licenses the SOFTWARE DEVELOPMENT PRODUCT(S) on a subscription basis. A subscription lasts for a 12 month period from the date of purchase. Developer End User will be eligible to receive all major and minor updates for the SOFTWARE DEVELOPMENT PRODUCT(S) during this 12 month period. Upon expiration of a subscription (12 months, plus 1 day after original purchase date), Developer End User can optionally renew the SOFTWARE DEVELOPMENT PRODUCT(S) subscription for an additional 12 month period (and each subsequent year thereafter) in order to continue receiving major and minor updates of the SOFTWARE DEVELOPMENT PRODUCT(S) from DEVEXPRESS. 
+
+If the SOFTWARE DEVELOPMENT PRODUCT(S) is labeled as an update, you must be properly licensed to obtain the updated SOFTWARE DEVELOPMENT PRODUCT(S). A SOFTWARE DEVELOPMENT PRODUCT(S) labeled as an update replaces and/or supplements the SOFTWARE DEVELOPMENT PRODUCT(S) that formed the basis for your eligibility for the update, and together constitutes a single PRODUCT(S). You may only use the updated PRODUCT(S) in accordance with all the terms of this EULA.
+
+Pricing for the 12 month SOFTWARE DEVELOPMENT PRODUCT(S) subscription and any subsequent renewal of the subscription are listed on devexpress.com and subject to change with or without notice.
+
+REDISTRIBUTABLES listed in this EULA are dependent upon the type of 12 month subscription purchased from DEVEXPRESS. 
+
+DEVEXPRESS reserves the right to discontinue the SOFTWARE DEVELOPMENT PRODUCT(S) or its constituents, at any time.
+
+10. DOWNLOAD of SOFTWARE DEVELOPMENT PRODUCT(S).
+ 
+The SOFTWARE DEVELOPMENT PRODUCT(S) will be made available for download from DevExpress.com exclusively.
+
+11. EXPORT RESTRICTIONS.
+ 
+DEVEXPRESS expressly complies with all export restrictions imposed by the government of the United States of America. You, as Developer End User, must agree not to export or re-export the SOFTWARE DEVELOPMENT PRODUCT(S) within any created application to any country, person, entity or end user subject to U.S.A. export restrictions. Restricted countries currently include, but are not necessarily limited to Cuba, Iran, North Korea, Sudan, and Syria. You warrant and represent that neither the U.S.A. Bureau of Export Administration nor any other federal agency has suspended, revoked or denied your export privileges.
+ 
+12. DISCLAIMER OF WARRANTY.
+ 
+DEVEXPRESS expressly disclaims any warranty for the SOFTWARE DEVELOPMENT PRODUCT(S). THE SOFTWARE DEVELOPMENT PRODUCT(S) AND ANY RELATED DOCUMENTATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NONINFRINGEMENT. DEVEXPRESS DOES NOT WARRANT, GUARANTEE, OR MAKE ANY REPRESENTATIONS REGARDING THE USE, OR THE RESULTS OF THE USE, OF THE SOFTWARE DEVELOPMENT PRODUCT(S) IN TERMS OF CORRECTNESS, ACCURACY, RELIABILITY, OR OTHERWISE. THE ENTIRE RISK ARISING OUT OF USE OR PERFORMANCE OF THE SOFTWARE DEVELOPMENT PRODUCT(S) REMAINS WITH YOU. No oral or written information or advice given by DEVEXPRESS or its employees shall create a warranty or in any way increase the scope of this warranty.
+ 
+13. LIMITATIONS ON LIABILITY.
+ 
+To the maximum extent permitted by applicable law, in no event shall DEVEXPRESS be liable for any special, incidental, indirect, or consequential damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or any other pecuniary loss) arising out of the use of or inability to use the SOFTWARE DEVELOPMENT PRODUCT(S) or the provision of or failure to provide Support Services, even if DEVEXPRESS has been advised of the possibility of such damages.
+ 
+Developer End User understands that the SOFTWARE DEVELOPMENT PRODUCT(S) may produce inaccurate results because of a failure or fault within the SOFTWARE DEVELOPMENT PRODUCT(S) or failure by Developer End User to properly use and or deploy the SOFTWARE DEVELOPMENT PRODUCT(S). Developer End User assumes full and sole responsibility for any use of the SOFTWARE DEVELOPMENT PRODUCT(S), and bears the entire risk for failures or faults within the SOFTWARE DEVELOPMENT PRODUCT(S). You agree that regardless of the cause of failure or fault or the form of any claim, YOUR SOLE REMEDY AND DEVEXPRESS'S SOLE OBLIGATION SHALL BE GOVERNED BY THIS AGREEMENT AND IN NO EVENT SHALL DEVEXPRESS'S LIABILITY EXCEED THE PRICE PAID TO DEVEXPRESS FOR THE SOFTWARE DEVELOPMENT PRODUCT(S). This Limited Warranty is void if failure of the SOFTWARE DEVELOPMENT PRODUCT(S) has resulted from accident, abuse, alteration, unauthorized use or misapplication of the SOFTWARE DEVELOPMENT PRODUCT(S).
+ 
+14. INDEMNIFICATION.
+ 
+You hereby agree to indemnify DEVEXPRESS and its officers, directors, employees, agents, and representatives from each and every demand, claim, loss, liability, or damage of any kind, including actual attorney's fees, whether in tort or contract, that it or any of them may incur by reason of, or arising out of, any claim which is made by any third party with respect to any breach or violation of this Agreement by you or any claims based on the Applications and the SOFTWARE DEVELOPMENT PRODUCT(S) included herein.
+ 
+15. SUPPORT SERVICES.
+ 
+DEVEXPRESS may provide you with support services related to the SOFTWARE DEVELOPMENT PRODUCT(S) ("Support Services"). Use of Support Services is governed by DEVEXPRESS policies and programs described in the user manual, in "on line" documentation and/or other DEVEXPRESS provided materials. Any supplemental SOFTWARE DEVELOPMENT PRODUCT(S) provided to you as part of the Support Services shall be considered part of the SOFTWARE DEVELOPMENT PRODUCT(S) and subject to the terms and conditions of this EULA. With respect to technical information you provide to DEVEXPRESS as part of the Support Services, DEVEXPRESS may use such information for its business purposes, including for SOFTWARE DEVELOPMENT PRODUCT(S) support and development. 
+ 
+16. TERMINATION.
+ 
+Without prejudice to any other rights or remedies, DEVEXPRESS will terminate this EULA upon your failure to comply with all the terms and conditions of this EULA. In such events, Developer End User must destroy all copies of the SOFTWARE DEVELOPMENT PRODUCT(S) and all of its component parts including any related documentation, and must remove ANY and ALL use of DEVEXPRESS intellectual property from any applications distributed by Developer End User, whether in native, altered or compiled states.
+ 
+17. TAX.
+ 
+DEVEXPRESS delivers its software electronically and does not collect sales or use tax for residents of US states in which it operates. You should confirm that your local, state, or federal government does not impose any sales or use tax on electronically delivered software. You are entirely liable for any such sales or use tax.
+ 
+18. MISCELLANEOUS.
+ 
+DEVEXPRESS CodedUI Extensions are licensed as part of the DEVEXPRESS Universal Subscription. No right of use or license is granted to DEVEXPRESS CodedUI Extensions unless Developer End User obtains a Subscription for DEVEXPRESS Universal as outlined in Section 9 of this EULA.
+
+No right of use or license is granted for the Map providers available in the SOFTWARE DEVELOPMENT PRODUCT. Developer End User must obtain and follow the appropriate licensing terms and right of use set forth by each map provider. 
+
+When using OpenStreetMap data, you must read and understand the OpenStreetMap terms of use. Read the OpenStreetMap Legal FAQ. http://wiki.openstreetmap.org/wiki/Legal_FAQ
+
+If using OpenStreetMap Tiles, you must read and understand the OpenStreetMaps Tile Usage Policy. Read the OpenStreetMap Tile Policy. http://wiki.openstreetmap.org/wiki/Tile_usage_policy
+
+When using Bing Maps, you must read and understand Microsoft's terms of use. Read the Bing Maps Licensing and Pricing Information. http://www.microsoft.com/maps/product/licensing.aspx
+
+This EULA shall be construed, interpreted and governed by the laws of the State of Nevada, U.S.A. This EULA gives you specific legal rights; you may have others that vary from state to state and from country to country.
+ 
+This EULA may only be modified in writing signed by you and an authorized officer of DEVELOPER EXPRESS INC. If any provision of this EULA is found void or unenforceable, the remainder will remain valid and enforceable according to its terms. If any remedy provided is determined to have failed for its essential purpose, all limitations of liability and exclusions of damages set forth in the Limited Warranty shall remain in effect.
+ 
+DEVEXPRESS reserves all rights not specifically granted in this EULA.
+ 
+YOU ACKNOWLEDGE THAT YOU HAVE READ AND UNDERSTAND THIS AGREEMENT AND YOU AGREE TO BE BOUND BY THE TERMS OF THIS AGREEMENT UPON INSTALLATION AND/OR USE of ALL SOFTWARE DEVELOPMENT PRODUCT(S) INCLUDED IN THIS DISTRIBUTION.
+ 
+Copyright (C) 2000-2015 Developer Express Inc.
+All trademarks and registered trademarks are property of their respective owners.
+
+Should you have any questions concerning this EULA, contact us directly in the United States at +1 (818) 844 3383, or write: Developer Express Inc. Legal department / 505 N. Brand Blvd Suite 1600, Glendale CA 91203.

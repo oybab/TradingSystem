@@ -1,0 +1,15 @@
+﻿#提示:此配置文件用于配置系统功能,除非了解如何使用并有修改要求否则请勿随意修改.
+
+
+
+BackupFolderPath=y:\backup
+
+DbKey=wvT-$sZDS_!%f2g643^J8VNlcXu)7oAh
+
+UID=JocdzwFW1Q6qgIXKSnaRv3VlEAbNUxej
+
+IsPrintAfterBuy=0
+
+IsPrintAfterCheckout=0
+
+PrintInfo=

@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="Oybab.ServiceTablet.Resources.Controls.KeyboardLargeControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d"
+             x:Name="control">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary  Source="/ServiceTablet;component/Resources/Styles/Controls/KeyboardLargeControlStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid Style="{StaticResource grdParentStyle}">
+        <Grid Style="{StaticResource grdBlackBackStyle}" Height="{Binding ElementName=control, Path=ActualHeight}" Width="{Binding ElementName=control, Path=ActualWidth}"/>
+        <WrapPanel Style="{StaticResource wpKeyboardParentStyle}">
+            <StackPanel Style="{StaticResource spKeyboardSperateParentLeftStyle}">
+                <WrapPanel>
+                    <Button x:Name="btn7" Style="{StaticResource btnKeyboardLittleStyle}" Content="7" Command="{Binding No7Command}"/>
+                    <Button x:Name="btn8" Style="{StaticResource btnKeyboardLittleStyle}" Content="8" Command="{Binding No8Command}"/>
+                    <Button x:Name="btn9" Style="{StaticResource btnKeyboardLittleStyle}" Content="9" Command="{Binding No9Command}"/>
+                </WrapPanel>
+                <WrapPanel>
+                    <Button x:Name="btn4" Style="{StaticResource btnKeyboardLittleStyle}" Content="4" Command="{Binding No4Command}"/>
+                    <Button x:Name="btn5" Style="{StaticResource btnKeyboardLittleStyle}" Content="5" Command="{Binding No5Command}"/>
+                    <Button x:Name="btn6" Style="{StaticResource btnKeyboardLittleStyle}" Content="6" Command="{Binding No6Command}"/>
+                </WrapPanel>
+                <WrapPanel>
+                    <Button x:Name="btn1" Style="{StaticResource btnKeyboardLittleStyle}" Content="1" Command="{Binding No1Command}"/>
+                    <Button x:Name="btn2" Style="{StaticResource btnKeyboardLittleStyle}" Content="2" Command="{Binding No2Command}"/>
+                    <Button x:Name="btn3" Style="{StaticResource btnKeyboardLittleStyle}" Content="3" Command="{Binding No3Command}"/>
+                </WrapPanel>
+                <WrapPanel>
+                    <Button x:Name="btn0" Style="{StaticResource btnKeyboardLittleStyle}" Content="0" Command="{Binding No0Command}"/>
+                    <Button x:Name="btnPoint" Style="{StaticResource btnKeyboardLittleStyle}" Content="." Command="{Binding NoPointCommand}"/>
+                    <Button x:Name="btnDel" Style="{StaticResource btnKeyboardLittleDelStyle}" Command="{Binding DelCommand}"/>
+                </WrapPanel>
+            </StackPanel>
+        </WrapPanel>
+    </Grid>
+</UserControl>

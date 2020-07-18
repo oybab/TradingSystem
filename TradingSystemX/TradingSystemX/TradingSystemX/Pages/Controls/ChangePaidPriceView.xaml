@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:view="clr-namespace:Oybab.TradingSystemX.Pages.Controls" x:Class="Oybab.TradingSystemX.Pages.Controls.ChangePaidPriceView" BackgroundColor="{DynamicResource PageBackgroundColor}">
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <ControlTemplate x:Key="BalanceListTemplate" x:Name="BalanceListTemplate">
+                <Grid HorizontalOptions="Start"  Margin="10, 0">
+                    <StackLayout HorizontalOptions="Start" Orientation="Horizontal">
+                        <Label  VerticalOptions="Center" Text="{TemplateBinding BindingContext.Text}"  />
+                        <Switch VerticalOptions="Center">
+                            <Switch.Triggers>
+                                <DataTrigger TargetType="Switch" Binding="{TemplateBinding BindingContext.UseState}" Value="True">
+                                    <Setter Property="IsToggled" Value="True"/>
+                                </DataTrigger>
+                                <DataTrigger TargetType="Switch" Binding="{TemplateBinding BindingContext.UseState}" Value="False">
+                                    <Setter Property="IsToggled" Value="False"/>
+                                </DataTrigger>
+                            </Switch.Triggers>
+                        </Switch>
+                    </StackLayout>
+                    <Button CommandParameter="{TemplateBinding BindingContext }" Command="{TemplateBinding BindingContext.SelectCommand}" VerticalOptions="Fill"  HorizontalOptions="Fill" BackgroundColor="Transparent"></Button>
+                </Grid>
+            </ControlTemplate>
+        </ResourceDictionary>
+    </ContentView.Resources>
+    <Grid>
+        <StackLayout Margin="0, 10, 0, 10"  >
+            <ScrollView >
+                <StackLayout Margin="10, 10, 10, 10"  Orientation="Vertical">
+                    <StackLayout Margin="0,50, 0, 0">
+                        <StackLayout.Triggers>
+                            <DataTrigger TargetType="StackLayout" Binding="{Binding IsCheckout}" Value="False">
+                                <Setter Property="IsVisible" Value="False"/>
+                            </DataTrigger>
+                        </StackLayout.Triggers>
+                    </StackLayout>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Grid.Column="0"  HorizontalOptions="Fill" Orientation="Horizontal">
+                            <Label Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Change}" VerticalOptions="Center"/>
+                            <Label Text=":" VerticalOptions="Center"/>
+                        </StackLayout>
+                        <StackLayout Margin="0,20,0,0" Grid.Column="1" HorizontalOptions="Fill" Orientation="Horizontal">
+                            <Label VerticalOptions="Center" Margin="0"  Text="＋"  />
+                            <Switch VerticalOptions="Center" Margin="0" x:Name="swAdd" Toggled="switcherAdd_Toggled">
+                                <Switch.Triggers>
+                                    <DataTrigger TargetType="Switch" Binding="{Binding Mode}" Value="1">
+                                        <Setter Property="IsToggled" Value="True"/>
+                                        <Setter Property="InputTransparent" Value="True"/>
+                                    </DataTrigger>
+                                    <DataTrigger TargetType="Switch" Binding="{Binding Mode}" Value="2">
+                                        <Setter Property="IsToggled" Value="False"/>
+                                    </DataTrigger>
+
+                                </Switch.Triggers>
+                            </Switch>
+                            <Label VerticalOptions="Center" Margin="0" Text="-" />
+                            <Switch VerticalOptions="Center" Margin="0" x:Name="swSub"  Toggled="switcherSubtract_Toggled">
+                                <Switch.Triggers>
+                                    <DataTrigger TargetType="Switch" Binding="{Binding Mode}" Value="2">
+                                        <Setter Property="IsToggled" Value="True"/>
+                                        <Setter Property="InputTransparent" Value="True"/>
+                                    </DataTrigger>
+                                    <DataTrigger TargetType="Switch" Binding="{Binding Mode}" Value="1">
+                                        <Setter Property="IsToggled" Value="False"/>
+                                    </DataTrigger>
+                                </Switch.Triggers>
+                            </Switch>
+                        </StackLayout>
+                    </Grid>
+                    <StackLayout Margin="0,20,0,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                        <Label VerticalOptions="Center" Text="{Binding MemberName}" x:Name="lbMemberName" />
+                        <Label VerticalOptions="Center" Text=":"/>
+                        <Label VerticalOptions="Center" Text="{Binding MemberNameValue}">
+                            <Label.Triggers>
+                                <DataTrigger TargetType="Label" Binding="{Binding IsMemberNameValueShow}" Value="False">
+                                    <Setter Property="IsVisible" Value="False"/>
+                                </DataTrigger>
+                            </Label.Triggers>
+                        </Label>
+                        <Button VerticalOptions="Center" Text=" + " Command="{Binding AddMemberCommand}">
+                            <Button.Triggers>
+                                <DataTrigger TargetType="Button" Binding="{Binding IsMemberAdd}" Value="False">
+                                    <Setter Property="IsVisible" Value="False"/>
+                                </DataTrigger>
+                            </Button.Triggers>
+                        </Button>
+                        <Button VerticalOptions="Center" Text=" - " Command="{Binding RemoveMemberCommand}">
+                            <Button.Triggers>
+                                <DataTrigger TargetType="Button" Binding="{Binding IsMemberRemove}" Value="False">
+                                    <Setter Property="IsVisible" Value="False"/>
+                                </DataTrigger>
+                            </Button.Triggers>
+                        </Button>
+                    </StackLayout>
+                    <StackLayout Margin="0,20,0,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                        <Label Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=TotalPrice}"/>
+                        <Label Text=":"/>
+                        <Label Text="{Binding TotalPrice}"/>
+                    </StackLayout>
+                    <StackLayout Margin="0,20,0,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                        <Label Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=BalancePay}"/>
+                        <Label Text=":"/>
+                    </StackLayout>
+                    <ScrollView  Orientation="Horizontal" BackgroundColor="{DynamicResource ItemBackgroundColor}">
+                        <StackLayout Margin="10"  x:Name="spBalanceList" Orientation="Horizontal" HorizontalOptions="Start" VerticalOptions="Center">
+
+                        </StackLayout>
+                    </ScrollView>
+                    <StackLayout Margin="0,20,0,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                        <Label Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=PaidPrice}"/>
+                        <Label Text=":"/>
+                        <Label Text="{Binding Converter={StaticResource PC}}" VerticalOptions="Center"/>
+                        <Label Text="{Binding PaidPrice}"/>
+                    </StackLayout>
+                    <StackLayout Margin="0,20,0,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                        <Label Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=ChangePrice}" VerticalOptions="Center">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding FinishPriceCommand}" CommandParameter="1" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <Label Text=":" VerticalOptions="Center"/>
+                        <Label Text="{Binding Converter={StaticResource PC}}" VerticalOptions="Center"/>
+                        <Entry Keyboard="Numeric" Text="{Binding ChangePrice, Mode=TwoWay}" TextChanged="Entry_TextChanged" HorizontalOptions="FillAndExpand"/>
+                    </StackLayout>
+                    <StackLayout Margin="0,20,0,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                        <Label Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=BalancePrice}"/>
+                        <Label Text=":"/>
+                        <Label Text="{Binding BalancePrice}">
+                            <Label.Triggers>
+                                <DataTrigger TargetType="Label" Binding="{Binding BalanceMode}" Value="1">
+                                    <Setter Property="TextColor" Value="Blue"/>
+                                </DataTrigger >
+                                <DataTrigger TargetType="Label" Binding="{Binding BalanceMode}" Value="2">
+                                    <Setter Property="TextColor" Value="Red"/>
+                                </DataTrigger >
+                            </Label.Triggers>
+                        </Label>
+                    </StackLayout>
+                    <StackLayout Margin="0,30,0,0"  HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                        <Label Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Remark}" VerticalOptions="Center"/>
+                        <Label Text=":" VerticalOptions="Center"/>
+                        <Entry Text="{Binding DisplayRemark, Mode=TwoWay}" HorizontalOptions="FillAndExpand"/>
+                    </StackLayout>
+
+                </StackLayout>
+            </ScrollView>
+            <Grid   Margin="0, 10, 0, 5"  VerticalOptions="End">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/> <!--Width="0.6*"-->
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Margin="0,0,10,0" HorizontalOptions="End" Command="{Binding CancelCommand}" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Back}"  />
+                <Button Grid.Column="1" HorizontalOptions="Center" Command="{Binding AddCommand}" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Add}" >
+                    <Button.Triggers>
+                        <DataTrigger TargetType="Button" Binding="{Binding IsSave}" Value="False">
+                            <Setter Property="IsVisible" Value="False"/>
+                        </DataTrigger>
+                    </Button.Triggers>
+                </Button>
+                <Button Grid.Column="2" HorizontalOptions="Start" Command="{Binding OKCommand}" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Change}"  Margin="0,0,0,0" >
+                    <Button.Triggers>
+                        <DataTrigger TargetType="Button" Binding="{Binding IsSave}" Value="False">
+                            <Setter Property="IsVisible" Value="False"/>
+                        </DataTrigger>
+                    </Button.Triggers>
+                </Button>
+            </Grid>
+        </StackLayout>
+        <view:AddMemberView IsVisible="False" BindingContext="{Binding AddMemberView}">
+            <view:AddMemberView.Triggers>
+                <DataTrigger TargetType="ContentView" Binding="{Binding IsShow}" Value="True">
+                    <Setter Property="IsVisible" Value="True"/>
+                </DataTrigger>
+            </view:AddMemberView.Triggers>
+        </view:AddMemberView>
+        <Grid IsVisible="{Binding IsLoading}"  Style="{StaticResource LoadingBackground}">
+            <ActivityIndicator IsRunning="{Binding IsLoading}" />
+        </Grid>
+    </Grid>
+</ContentView>

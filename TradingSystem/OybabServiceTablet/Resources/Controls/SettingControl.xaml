@@ -1,0 +1,166 @@
+﻿<UserControl x:Class="Oybab.ServiceTablet.Resources.Controls.SettingControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+              xmlns:component="clr-namespace:Oybab.ServiceTablet.Resources.Component"
+            xmlns:control="clr-namespace:Oybab.ServiceTablet.Resources.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="800"
+             x:Name="control">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary  Source="/ServiceTablet;component/Resources/Styles/Controls/SettingControlStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <Grid Style="{StaticResource grdMessageboxParentBackgroundStyle}"/>
+        <Border Style="{StaticResource bdMessageboxBorderStyle}" Margin="0, 0, 0, 0">
+            <Grid x:Name="grdParent">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="120"/>
+                </Grid.RowDefinitions>
+                <WrapPanel Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <Image Style="{StaticResource imgTitleImageStyle}"/>
+                    <Label Style="{StaticResource lbTitleInfo}"/>
+                </WrapPanel>
+                <Line Grid.Row="1"  Style="{StaticResource lSpliteLineStyle}" X2="{Binding ElementName=grdParent, Path=ActualWidth}" Margin="0, 4"/>
+                <Grid Grid.Row="2" Margin="30, 20">
+                    <Grid x:Name="grdReplaceParent">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="340"/>
+                        </Grid.ColumnDefinitions>
+                        <WrapPanel Grid.Row="0" Grid.Column="0" Style="{StaticResource wpInfoWrapStyle}">
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=ServerIpAddress2}"/>
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content=":"/>
+                        </WrapPanel>
+                        <WrapPanel Grid.Row="0" Grid.Column="1" Style="{StaticResource wpInfoWrapStyle}">
+                            <TextBox Style="{StaticResource tbServerIdInputTextboxStyle}" Text="{Binding ServerIP, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+                        </WrapPanel>
+
+                        <WrapPanel Grid.Row="1" Grid.Column="0" Style="{StaticResource wpInfoWrapStyle}">
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LocalPrint}"/>
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content=":"/>
+                        </WrapPanel>
+                        <WrapPanel Grid.Row="1" Grid.Column="1" Style="{StaticResource wpInfoWrapStyle}">
+                            <CheckBox Style="{StaticResource cbIsLocalPrintStyle}" Click="CheckBox_Click"/>
+                        </WrapPanel>
+                        <WrapPanel Grid.Row="2" Grid.Column="0" Style="{StaticResource wpInfoWrapStyle}">
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=CashDrawer}"/>
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content=":"/>
+                            <Button Style="{StaticResource btnOpenStyle}" Command="{Binding OpenCommand}"/>
+                        </WrapPanel>
+                        <WrapPanel Grid.Row="2" Grid.Column="1" Style="{StaticResource wpInfoWrapStyle}" x:Name="wpParent" VerticalAlignment="Stretch">
+                            <component:MScrollViewer x:Name="svCashDrawerList" Height="{Binding ElementName=wpParent, Path=ActualHeight}" HorizontalScrollBarVisibility="Hidden" FocusVisualStyle="{x:Null}">
+                                <WrapPanel x:Name="ugCashDrawerList" HorizontalAlignment="Left" VerticalAlignment="Top"  Height="{Binding ElementName=wpParent, Path=ActualHeight}">
+                                    <!--<CheckBox Style="{StaticResource cbSelectStyle}"/>
+                                    <CheckBox Style="{StaticResource cbSelectStyle}"/>
+                                    <CheckBox Style="{StaticResource cbSelectStyle}"/>
+                                    <CheckBox Style="{StaticResource cbSelectStyle}"/>
+                                    <CheckBox Style="{StaticResource cbSelectStyle}"/>
+                                    <CheckBox Style="{StaticResource cbSelectStyle}"/>
+                                    <CheckBox Style="{StaticResource cbSelectStyle}"/>
+                                    <CheckBox Style="{StaticResource cbSelectStyle}"/>
+                                    <CheckBox Style="{StaticResource cbSelectStyle}"/>-->
+                                </WrapPanel>
+                            </component:MScrollViewer>
+                        </WrapPanel>
+                        <WrapPanel Grid.Row="3" Grid.Column="0" Style="{StaticResource wpInfoWrapStyle}">
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=PriceMonitor}"/>
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content=":"/>
+                            <Button Style="{StaticResource btnTestStyle}" Command="{Binding TestCommand}"/>
+                        </WrapPanel>
+                        <WrapPanel Grid.Row="3" Grid.Column="1" Style="{StaticResource wpInfoWrapStyle}" x:Name="wpPriceMonitorParent" VerticalAlignment="Stretch">
+                            <component:MScrollViewer x:Name="svPriceMonitorsList" Height="{Binding ElementName=wpParent, Path=ActualHeight}" HorizontalScrollBarVisibility="Hidden" FocusVisualStyle="{x:Null}">
+                                <WrapPanel x:Name="ugPriceMonitorList" HorizontalAlignment="Left" VerticalAlignment="Top"  Height="{Binding ElementName=wpParent, Path=ActualHeight}">
+                                    <!--<CheckBox Style="{StaticResource cbSelectStyle}"/>
+                                    <CheckBox Style="{StaticResource cbSelectStyle}"/>
+                                    <CheckBox Style="{StaticResource cbSelectStyle}"/>
+                                    <CheckBox Style="{StaticResource cbSelectStyle}"/>
+                                    <CheckBox Style="{StaticResource cbSelectStyle}"/>
+                                    <CheckBox Style="{StaticResource cbSelectStyle}"/>
+                                    <CheckBox Style="{StaticResource cbSelectStyle}"/>
+                                    <CheckBox Style="{StaticResource cbSelectStyle}"/>
+                                    <CheckBox Style="{StaticResource cbSelectStyle}"/>-->
+                                </WrapPanel>
+                            </component:MScrollViewer>
+                        </WrapPanel>
+                        <WrapPanel Grid.Row="4" Grid.Column="0" Style="{StaticResource wpInfoWrapStyle}">
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=BarcodeReader}"/>
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content=":"/>
+                        </WrapPanel>
+                        <WrapPanel Grid.Row="4" Grid.Column="1" Style="{StaticResource wpInfoWrapStyle}" x:Name="wpParent2" VerticalAlignment="Stretch">
+                            <component:MScrollViewer x:Name="svbarcodeReaderList" Height="{Binding ElementName=wpParent2, Path=ActualHeight}" HorizontalScrollBarVisibility="Hidden" FocusVisualStyle="{x:Null}">
+                                <WrapPanel x:Name="ugBarcodeReaderList" HorizontalAlignment="Left" VerticalAlignment="Top"  Height="{Binding ElementName=wpParent, Path=ActualHeight}">
+                                    <!--<CheckBox Style="{StaticResource cbSelectStyle}"/>
+                                    <CheckBox Style="{StaticResource cbSelectStyle}"/>
+                                    <CheckBox Style="{StaticResource cbSelectStyle}"/>
+                                    <CheckBox Style="{StaticResource cbSelectStyle}"/>
+                                    <CheckBox Style="{StaticResource cbSelectStyle}"/>
+                                    <CheckBox Style="{StaticResource cbSelectStyle}"/>
+                                    <CheckBox Style="{StaticResource cbSelectStyle}"/>
+                                    <CheckBox Style="{StaticResource cbSelectStyle}"/>
+                                    <CheckBox Style="{StaticResource cbSelectStyle}"/>-->
+                                </WrapPanel>
+                            </component:MScrollViewer>
+                        </WrapPanel>
+
+                        <WrapPanel Grid.Row="5" Grid.Column="0" Style="{StaticResource wpInfoWrapStyle}">
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=CardReader}"/>
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content=":"/>
+                        </WrapPanel>
+                        <WrapPanel Grid.Row="5" Grid.Column="1" Style="{StaticResource wpInfoWrapStyle}" x:Name="wpParent3" VerticalAlignment="Stretch">
+                            <component:MScrollViewer x:Name="svcardReaderList" Height="{Binding ElementName=wpParent3, Path=ActualHeight}" HorizontalScrollBarVisibility="Hidden" FocusVisualStyle="{x:Null}">
+                                <WrapPanel x:Name="ugCardReaderList" HorizontalAlignment="Left" VerticalAlignment="Top"  Height="{Binding ElementName=wpParent, Path=ActualHeight}">
+                                    <!--<CheckBox Style="{StaticResource cbSelectStyle}"/>
+                                    <CheckBox Style="{StaticResource cbSelectStyle}"/>
+                                    <CheckBox Style="{StaticResource cbSelectStyle}"/>
+                                    <CheckBox Style="{StaticResource cbSelectStyle}"/>
+                                    <CheckBox Style="{StaticResource cbSelectStyle}"/>
+                                    <CheckBox Style="{StaticResource cbSelectStyle}"/>
+                                    <CheckBox Style="{StaticResource cbSelectStyle}"/>
+                                    <CheckBox Style="{StaticResource cbSelectStyle}"/>
+                                    <CheckBox Style="{StaticResource cbSelectStyle}"/>-->
+                                </WrapPanel>
+                            </component:MScrollViewer>
+                        </WrapPanel>
+
+                        <WrapPanel Grid.Row="6" Grid.Column="0" Style="{StaticResource wpInfoWrapStyle}">
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=Language}"/>
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content=":"/>
+                        </WrapPanel>
+                        <WrapPanel Grid.Row="6" Grid.Column="1" Style="{StaticResource wpInfoWrapStyle}" x:Name="wpLanguageParent" VerticalAlignment="Stretch">
+                            <component:MScrollViewer x:Name="svLanguageDrawerList" Height="{Binding ElementName=wpLanguageParent, Path=ActualHeight}" HorizontalScrollBarVisibility="Hidden" FocusVisualStyle="{x:Null}">
+                                <WrapPanel x:Name="ugLanguageDrawerList" HorizontalAlignment="Left" VerticalAlignment="Top"  Height="{Binding ElementName=wpLanguageParent, Path=ActualHeight}">
+                                </WrapPanel>
+                            </component:MScrollViewer>
+                        </WrapPanel>
+                    </Grid>
+                    
+                </Grid>
+                <WrapPanel Grid.Row="3" Style="{StaticResource wpInfoWrapStyle}" HorizontalAlignment="Center">
+                    <Button Style="{StaticResource btnCancelStyle}" Command="{Binding CancelCommand}"/>
+                    <Button Style="{StaticResource btnOkStyle}" Command="{Binding OKCommand}"/>
+                </WrapPanel>
+            </Grid>
+        </Border>
+        
+        <!-- Keyboard -->
+        <control:KeyboardLittleControl x:Name="keyboard" Style="{StaticResource ctrKeyboardStyle}"  DataContext="{Binding KeyboardLittle}"/>
+    </Grid>
+</UserControl>

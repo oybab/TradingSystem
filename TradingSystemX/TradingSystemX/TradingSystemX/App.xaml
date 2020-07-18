@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:converter="clr-namespace:Oybab.TradingSystemX.VM.Converters"
+             x:Class="Oybab.TradingSystemX.App">
+    <Application.Resources>
+
+
+        <ResourceDictionary Source="Pages/Themes/LightTheme.xaml" />
+
+
+        <!--<Style TargetType="NavigationPage">
+            <Setter Property="BarBackgroundColor" Value="{DynamicResource NavigationBarColor}" />
+            <Setter Property="BarTextColor" Value="{DynamicResource SecondaryColor}" />
+            <Setter Property="BackgroundColor" Value="{DynamicResource PageBackgroundColor}" />
+        </Style>
+
+        <Style TargetType="ContentPage">
+            <Setter Property="BackgroundColor" Value="{DynamicResource PageBackgroundColor}" />
+        </Style>
+
+        <Style TargetType="MasterDetailPage">
+            <Setter Property="BackgroundColor" Value="{DynamicResource PageBackgroundColor}" />
+        </Style>-->
+
+
+        <Style TargetType="ContentView">
+            <Setter Property="BackgroundColor" Value="{DynamicResource PageBackgroundColor}" />
+        </Style>
+
+
+
+
+
+
+        <!-- 语言转换器 -->
+        <converter:LangConverter x:Key="LC"/>
+        <!-- 数字转换器 -->
+        <converter:DecimalConverter x:Key="DC"/>
+        <!-- 价格符号转换器 -->
+        <converter:PriceConverter x:Key="PC"/>
+        <!-- 已选索引转换器 -->
+        <converter:ListViewIndexConverter x:Key="LVIC"/>
+
+
+      
+
+
+
+
+
+        <!-- Loading背景 -->
+        <Style x:Key="LoadingBackground" TargetType="Grid">
+            <!--<Setter Property="BackgroundColor" Value="Black"/>
+        <Setter Property="Opacity" Value="0.5"/>
+        <Setter Property="BackgroundColor" Value="Transparent"/>-->
+        </Style>
+
+
+
+
+
+
+        <OnPlatform x:TypeArguments="x:String" x:Key="NormalFont">
+            <On Platform="Android" Value="OybabTuz.ttf#Oybab Tuz" />
+            <On Platform="UWP" Value="/Assets/OybabTuz.ttf#Oybab Tuz" />
+            <On Platform="iOS" Value="Oybab Tuz" />
+        </OnPlatform>
+        
+        
+        
+
+        <OnPlatform x:TypeArguments="x:Double" x:Key="ActivityIndicatorSize">
+            <On Platform="Android" Value="0.2" />
+            <On Platform="UWP" Value="1" />
+            <On Platform="iOS" Value="1" />
+        </OnPlatform>
+
+
+        <OnPlatform x:TypeArguments="Color" x:Key="ActivityIndicatorColor">
+            <On Platform="Android" Value="#2196F3" />
+
+            <On Platform="iOS" Value="Black" />
+        </OnPlatform>
+
+
+        <!--<Style TargetType="NavigationPage">
+            <Setter Property="BarBackgroundColor" Value="#67D967"/>
+        </Style>-->
+
+
+
+
+        <Style TargetType="ActivityIndicator">
+            <Setter Property="Color" Value="{StaticResource ActivityIndicatorColor}"/>
+            <Setter Property="Scale" Value="{StaticResource ActivityIndicatorSize}"/>
+        </Style>
+
+
+        <!--<OnPlatform x:TypeArguments="x:String" x:Key="NormalFont">
+                <On Platform="Android" Value="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=CustomFont_Android}" />
+                <On Platform="UWP" Value="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=CustomFont_UWP}" />
+                <On Platform="iOS" Value="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=CustomFont_iOS}" />
+            </OnPlatform>-->
+
+        <Style TargetType="Button">
+            <Setter Property="FontFamily" Value="{StaticResource NormalFont}"/>
+            <Setter Property="TextColor" Value="{DynamicResource ButtonColor}"/>
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource NormalFont}"/>
+            <Setter Property="TextColor" Value="{DynamicResource LabelColor}"/>
+        </Style>
+
+        <Style TargetType="Picker">
+            <Setter Property="FontFamily" Value="{StaticResource NormalFont}"/>
+        </Style>
+
+        <Style TargetType="Editor">
+            <Setter Property="FontFamily" Value="{StaticResource NormalFont}"/>
+        </Style>
+
+        <Style TargetType="Entry">
+            <Setter Property="FontFamily" Value="{StaticResource NormalFont}"/>
+        </Style>
+
+
+
+        <Style TargetType="DatePicker">
+            <Setter Property="FontFamily" Value="{StaticResource NormalFont}"/>
+        </Style>
+
+        <Style TargetType="TimePicker">
+            <Setter Property="FontFamily" Value="{StaticResource NormalFont}"/>
+        </Style>
+
+
+
+
+    </Application.Resources>
+</Application>

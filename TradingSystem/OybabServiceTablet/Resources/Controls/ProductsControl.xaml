@@ -1,0 +1,152 @@
+﻿<UserControl x:Class="Oybab.ServiceTablet.Resources.Controls.ProductsControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" MinHeight="400" MinWidth="400"
+             xmlns:component="clr-namespace:Oybab.ServiceTablet.Resources.Component"
+             x:Name="control">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary  Source="/ServiceTablet;component/Resources/Styles/Controls/ProductsControlStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="65"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <!-- product types list -->
+        <Grid Grid.Row="1" x:Name="grdProductTypeParent">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="60"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Button Style="{StaticResource btnTurnLeftStyle}" Command="{Binding TurnLeft}"/>
+            </Grid>
+            <Grid Grid.Column="1" ClipToBounds="True" x:Name="grdProductType">
+                <component:MScrollViewer HorizontalScrollBarVisibility="Hidden" FocusVisualStyle="{x:Null}">
+                    <StackPanel x:Name="spProductType" HorizontalAlignment="Left" VerticalAlignment="Center" Orientation="Horizontal">
+               
+                
+                </StackPanel>
+                </component:MScrollViewer>
+            </Grid>
+            <Grid Grid.Column="2">
+                <Button Style="{StaticResource btnTurnRightStyle}" Command="{Binding TurnRight}"/>
+            </Grid>
+        </Grid>
+        <!-- products lists -->
+        <component:MScrollViewer Grid.Row="3" x:Name="svProductList" Width="{Binding ElementName=control, Path=ActualWidth}" FocusVisualStyle="{x:Null}">
+            <ListBox x:Name="lbList" Style="{StaticResource lvProductList}"  ItemsSource="{Binding ProductList}" ItemContainerStyle="{StaticResource ListBoxItemNonFucasStyle}">
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <component:AlignableWrapPanel x:Name="wpProductList" HorizontalAlignment="Center" VerticalAlignment="Top" HorizontalContentAlignment="Center">
+
+                        </component:AlignableWrapPanel>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+                <!-- 不加这个无法长按, IsPressed也无法在平板执行(自从改用listbox以后) -->
+                <ListBox.Template>
+                    <ControlTemplate TargetType="ItemsControl">
+                        <Border>
+                            <ItemsPresenter />
+                        </Border>
+                    </ControlTemplate>
+                </ListBox.Template>
+                <ListBox.ItemTemplate>
+                    <DataTemplate DataType="ListBoxItem">
+                        <DataTemplate.Triggers>
+                        </DataTemplate.Triggers>
+                        <Grid Width="300" Height="270" Background="Transparent">
+                            <Grid IsHitTestVisible="False">
+                                <StackPanel IsHitTestVisible="False">
+                                    <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 20, 0, 0"  Width="256" Height="174">
+                                        <Image  VerticalAlignment="Top" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/originalPic.png"  Width="256" Height="174">
+                                        </Image>
+                                        <Image VerticalAlignment="Top" HorizontalAlignment="Center" Stretch="Fill" Source="{Binding ImagePath, Converter={StaticResource NullImageConverter}}"  Width="256" Height="174">
+                                        </Image>
+                                        <Grid HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="35">
+                                            <Grid.Background>
+                                                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                                    <GradientStop  Color="#7D121111" Offset="0"/>
+                                                    <GradientStop  Color="#BF121111" Offset="0.8"/>
+                                                </LinearGradientBrush>
+                                            </Grid.Background>
+                                            <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                                                <Label Padding="0" Margin="0,0,2,0"  VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Converter={StaticResource PriceConverter}}" Foreground="White" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleKeyboardFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                                                <Label Padding="0"  VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Price}" Foreground="White" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleKeyboardFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+
+                                                <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                                                    <Label Padding="0" Margin="0,0,2,0"  VerticalAlignment="Center" HorizontalAlignment="Center" Content=" × (" Foreground="White" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleKeyboardFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                                                    <Label Padding="0"  VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding DetailsModel.CountStr}" Foreground="White" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleKeyboardFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                                                    <Label Padding="0" Margin="0,0,2,0"  VerticalAlignment="Center" HorizontalAlignment="Center" Content=")" Foreground="White" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleKeyboardFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                                                    <WrapPanel.Style>
+                                                        <Style TargetType="WrapPanel">
+                                                            <Style.Triggers>
+                                                                <DataTrigger Binding="{Binding DetailsModel}" Value="{x:Null}">
+                                                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                                                </DataTrigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </WrapPanel.Style>
+                                                </WrapPanel>
+                                            </WrapPanel>
+                                        </Grid>
+                                        <Border x:Name="backgroundSelectImage" VerticalAlignment="Top" HorizontalAlignment="Center"  Width="256" Height="174" BorderBrush="White" BorderThickness="2">
+                                            <Border.Style>
+                                                <Style TargetType="Border">
+                                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding IsSelected}" Value="True">
+                                                            <Setter Property="Visibility" Value="Visible"/>
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Border.Style>
+                                        </Border>
+                                    </Grid>
+                                    <Grid Width="256" Margin="0, 20"  IsHitTestVisible="False">
+                                        <TextBlock  FlowDirection="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=DirectionMode}" x:Name="lbContent" Margin="0" Padding="0, 0, 0, 14" VerticalAlignment="Bottom" HorizontalAlignment="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=HorizontalModel}" Text="{Binding ProductName}" TextWrapping="Wrap" Foreground="White" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleMediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                                    </Grid>
+                                </StackPanel>
+                                <Grid x:Name="backgroundSelectImage2" IsHitTestVisible="False">
+                                    <Image VerticalAlignment="Top" HorizontalAlignment="Left" Stretch="None" Source="/Res;component/Resources/Images/Tablet/radioButton2.png"  Width="55" Height="55">
+                                    </Image>
+                                    <Grid.Style>
+                                        <Style TargetType="Grid">
+                                            <Setter Property="Visibility" Value="Collapsed"/>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsSelected}" Value="True">
+                                                    <Setter Property="Visibility" Value="Visible"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Grid.Style>
+                                </Grid>
+                            </Grid>
+                            <Button Style="{StaticResource btnProductSelectStyle}" Content="-" HorizontalAlignment="Left" Margin="22,20,0,0" Height="174" VerticalAlignment="Top" Width="85" Command="{Binding RemoveProduct}" CommandParameter="{Binding}"/>
+                            <Button Style="{StaticResource btnProductSelectStyle}" Content="+" HorizontalAlignment="Right" Margin="0,20,22,0"  Height="174" VerticalAlignment="Top" Width="170" Command="{Binding AddProduct}" CommandParameter="{Binding}"/>
+                        </Grid>
+
+
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+                <ListBox.Items>
+                    <!--<Button/>
+                        <Button/>
+                        <Button/>
+                        <Button/>
+                        <Button/>
+                        <Button/>-->
+                </ListBox.Items>
+            </ListBox>
+        </component:MScrollViewer>
+    </Grid>
+</UserControl>

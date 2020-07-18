@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.ProductType" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.ProductType" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" />
+  <xs:complexType name="ToServerServiceAddProductType">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q1:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ProductType" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceAddProductType" nillable="true" type="tns:ToServerServiceAddProductType" />
+  <xs:complexType name="ToClientServiceAddProductType">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q2:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ProductType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceAddProductType" nillable="true" type="tns:ToClientServiceAddProductType" />
+  <xs:complexType name="ToServerServiceEditProductType">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q3:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ProductType" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceEditProductType" nillable="true" type="tns:ToServerServiceEditProductType" />
+  <xs:complexType name="ToClientServiceEditProductType">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q4:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ProductType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceEditProductType" nillable="true" type="tns:ToClientServiceEditProductType" />
+  <xs:complexType name="ToServerServiceDelProductType">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q5:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ProductType" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceDelProductType" nillable="true" type="tns:ToServerServiceDelProductType" />
+  <xs:complexType name="ToClientServiceDelProductType">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q6:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceDelProductType" nillable="true" type="tns:ToClientServiceDelProductType" />
+</xs:schema>

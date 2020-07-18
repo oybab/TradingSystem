@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Device" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Device" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Models" />
+  <xs:complexType name="ToServerServiceAddDevice">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q1:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Device" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceAddDevice" nillable="true" type="tns:ToServerServiceAddDevice" />
+  <xs:complexType name="ToClientServiceAddDevice">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q2:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Device" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceAddDevice" nillable="true" type="tns:ToClientServiceAddDevice" />
+  <xs:complexType name="ToServerServiceEditDevice">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q3:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Device" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceEditDevice" nillable="true" type="tns:ToServerServiceEditDevice" />
+  <xs:complexType name="ToClientServiceEditDevice">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q4:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Device" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceEditDevice" nillable="true" type="tns:ToClientServiceEditDevice" />
+  <xs:complexType name="ToServerServiceDelDevice">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q5:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Device" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceDelDevice" nillable="true" type="tns:ToServerServiceDelDevice" />
+  <xs:complexType name="ToClientServiceDelDevice">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q6:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceDelDevice" nillable="true" type="tns:ToClientServiceDelDevice" />
+  <xs:complexType name="ToClientServiceDeviceModeUpdateNotification">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q7:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Devices" nillable="true" type="xs:string" />
+          <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Models" minOccurs="0" name="ServiceType" type="q8:ServiceType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceDeviceModeUpdateNotification" nillable="true" type="tns:ToClientServiceDeviceModeUpdateNotification" />
+</xs:schema>

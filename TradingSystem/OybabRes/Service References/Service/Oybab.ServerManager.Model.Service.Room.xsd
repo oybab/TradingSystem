@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Room" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Room" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" />
+  <xs:complexType name="ToServerServiceAddRoom">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q1:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Room" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceAddRoom" nillable="true" type="tns:ToServerServiceAddRoom" />
+  <xs:complexType name="ToClientServiceAddRoom">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q2:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Room" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RoomStateSession" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceAddRoom" nillable="true" type="tns:ToClientServiceAddRoom" />
+  <xs:complexType name="ToServerServiceEditRoom">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q3:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Room" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RoomStateSession" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceEditRoom" nillable="true" type="tns:ToServerServiceEditRoom" />
+  <xs:complexType name="ToClientServiceEditRoom">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q4:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Room" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RoomStateSession" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceEditRoom" nillable="true" type="tns:ToClientServiceEditRoom" />
+  <xs:complexType name="ToServerServiceDelRoom">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q5:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Room" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceDelRoom" nillable="true" type="tns:ToServerServiceDelRoom" />
+  <xs:complexType name="ToClientServiceDelRoom">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q6:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceDelRoom" nillable="true" type="tns:ToClientServiceDelRoom" />
+</xs:schema>

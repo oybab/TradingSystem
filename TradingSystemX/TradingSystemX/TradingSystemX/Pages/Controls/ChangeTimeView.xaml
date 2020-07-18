@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Oybab.TradingSystemX.Pages.Controls.ChangeTimeView" BackgroundColor="{DynamicResource PageBackgroundColor}">
+    <StackLayout>
+        <ScrollView>
+            <StackLayout Margin="10, 10, 10, 10"  Orientation="Vertical">
+
+                <Label HorizontalOptions="Start" Margin="6,10,0,0" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=ChangeTime}"/>
+
+                <StackLayout Margin="0,20,0,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Label Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=StartTime}"/>
+                    <Label Text=":"/>
+                    <Label Text="{Binding StartTime}"/>
+                </StackLayout>
+                <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Label Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=EndTime}"/>
+                    <Label Text=":"/>
+                    <Label Text="{Binding EndTime}"/>
+                </StackLayout>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <StackLayout Grid.Column="0"  HorizontalOptions="Fill" Orientation="Horizontal">
+                        <Label Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Change}" VerticalOptions="Center"/>
+                        <Label Text=":" VerticalOptions="Center"/>
+                    </StackLayout>
+                    <StackLayout Grid.Column="1" HorizontalOptions="Fill" Orientation="Horizontal">
+                        <Label Margin="0"  Text="＋" VerticalOptions="Center" />
+                        <Switch  VerticalOptions="Center" Margin="0" x:Name="swAdd" Toggled="switcherAdd_Toggled">
+                            <Switch.Triggers>
+                                <DataTrigger TargetType="Switch" Binding="{Binding Mode}" Value="1">
+                                    <Setter Property="IsToggled" Value="True"/>
+                                    <Setter Property="InputTransparent" Value="True"/>
+                                </DataTrigger>
+                                <DataTrigger TargetType="Switch" Binding="{Binding Mode}" Value="2">
+                                    <Setter Property="IsToggled" Value="False"/>
+                                </DataTrigger>
+
+                            </Switch.Triggers>
+                        </Switch>
+                        <Label Margin="0" Text="-" VerticalOptions="Center" />
+                        <Switch  VerticalOptions="Center"  Margin="0" x:Name="swSub"  Toggled="switcherSubtract_Toggled">
+                            <Switch.Triggers>
+                                <DataTrigger TargetType="Switch" Binding="{Binding Mode}" Value="2">
+                                    <Setter Property="IsToggled" Value="True"/>
+                                    <Setter Property="InputTransparent" Value="True"/>
+                                </DataTrigger>
+                                <DataTrigger TargetType="Switch" Binding="{Binding Mode}" Value="1">
+                                    <Setter Property="IsToggled" Value="False"/>
+                                </DataTrigger>
+                            </Switch.Triggers>
+                        </Switch>
+                    </StackLayout>
+
+                </Grid>
+
+                <StackLayout Margin="100, 0, 0,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Label Text="{Binding HourName}" VerticalOptions="Center"/>
+                    <Entry Keyboard="Numeric" WidthRequest="70" Text="{Binding Hour, Mode=TwoWay}" TextChanged="EntryHour_TextChanged" />
+                    <Label Text="{Binding MinuteName}" VerticalOptions="Center"/>
+                    <Entry Keyboard="Numeric" WidthRequest="70" Text="{Binding Minute, Mode=TwoWay}" TextChanged="EntryMinute_TextChanged" />
+                </StackLayout>
+
+                <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Label Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=TotalTime}"/>
+                    <Label Text=":"/>
+                    <Label Text="{Binding TotalTime}"/>
+                </StackLayout>
+                <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Label Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=RemainingTime}"/>
+                    <Label Text=":"/>
+                    <Label Text="{Binding RemainingTime}"/>
+                </StackLayout>
+
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Margin="0, 20, 0, 0" >
+
+                    <Label Margin="0"  Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=UnlimitedTime}" VerticalOptions="Center" />
+                    <Switch Margin="0" IsToggled="{Binding UnlimitedTime}"  x:Name="swUnlimitedTime"   >
+                    </Switch>
+                    <StackLayout.Triggers>
+                        <DataTrigger TargetType="StackLayout" Binding="{Binding IsDisplayUnlimitedTime}" Value="True">
+                            <Setter Property="IsVisible" Value="True"/>
+                        </DataTrigger>
+                        <DataTrigger TargetType="StackLayout" Binding="{Binding IsDisplayUnlimitedTime}" Value="False">
+                            <Setter Property="IsVisible" Value="False"/>
+                        </DataTrigger>
+                    </StackLayout.Triggers>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+        <Grid  HorizontalOptions="Center"  Margin="0, 50, 0, 10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0" HorizontalOptions="End" Command="{Binding CancelCommand}" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Back}"  />
+            <Button Grid.Column="2" HorizontalOptions="Start" Command="{Binding OKCommand}" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Change}"/>
+        </Grid>
+    </StackLayout>
+</ContentView>

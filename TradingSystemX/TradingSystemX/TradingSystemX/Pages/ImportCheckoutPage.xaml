@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=SoftServiceName}"
+             xmlns:view="clr-namespace:Oybab.TradingSystemX.Pages.Controls"  xmlns:forms="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.Core"
+             x:Class="Oybab.TradingSystemX.Pages.Controls.ImportCheckoutPage" BackgroundColor="{DynamicResource PageBackgroundColor}">
+    <Grid>
+        <Grid>
+            <StackLayout Margin="10, 30, 10, 10"  Orientation="Vertical">
+
+                <StackLayout>
+                    <Label HorizontalOptions="Start" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=CheckoutImport}"  Margin="6,10,0,0" />
+
+                    <ScrollView  Margin="0,20,0,0">
+                        <StackLayout Padding="5, 0">
+
+                            <StackLayout Margin="0,10,0,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                                <Label Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=TotalPrice}"/>
+                                <Label Text=":"/>
+                                <Label Text="{Binding Converter={StaticResource PC}}"/>
+                                <Label Text="{Binding TotalPrice}"/>
+                            </StackLayout>
+
+                            <StackLayout Margin="0,10,0,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                                <Label Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=SupplierPaidPrice}" VerticalOptions="Center"/>
+                                <Label Text=":" VerticalOptions="Center"/>
+                                <Label Text="{Binding Converter={StaticResource PC}}" VerticalOptions="Center"/>
+                                <Label Text="{Binding SupplierPaidPrice}"/>
+                            </StackLayout>
+                            <StackLayout Margin="0,10,0,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                                <Label x:Name="lbPaidPrice"  Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=PaidPrice}" VerticalOptions="Center"/>
+                                <Label Text=":" VerticalOptions="Center"/>
+                                <Label Text="{Binding Converter={StaticResource PC}}" VerticalOptions="Center"/>
+                                <Label Text="{Binding PaidPrice}" VerticalOptions="Center"/>
+                                <Button Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Change}" HorizontalOptions="Start" Command="{Binding ChangePriceCommand}"/>
+                            </StackLayout>
+                            <StackLayout Margin="0,10,0,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                                <Label Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=TotalPaidPrice}" VerticalOptions="Center"/>
+                                <Label Text=":" VerticalOptions="Center"/>
+                                <Label Text="{Binding Converter={StaticResource PC}}" VerticalOptions="Center"/>
+                                <Label Text="{Binding TotalPaidPrice}" />
+                            </StackLayout>
+
+
+                            <StackLayout Margin="0,10,0,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                                <Label Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=OwedPrice}"/>
+                                <Label Text=":"/>
+                                <Label Text="{Binding Converter={StaticResource PC}}"/>
+                                <Label Text="{Binding BorrowPrice}">
+                                    <Label.Triggers>
+                                        <DataTrigger TargetType="Label" Binding="{Binding BalanceMode}" Value="2">
+                                            <Setter Property="TextColor" Value="Red"/>
+                                        </DataTrigger >
+                                    </Label.Triggers>
+                                </Label>
+                            </StackLayout>
+                            <StackLayout Margin="0,10,0,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                                <Label Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=KeepPrice}"/>
+                                <Label Text=":"/>
+                                <Label Text="{Binding Converter={StaticResource PC}}"/>
+                                <Label Text="{Binding KeepPrice}">
+                                    <Label.Triggers>
+                                        <DataTrigger TargetType="Label" Binding="{Binding BalanceMode}" Value="1">
+                                            <Setter Property="TextColor" Value="Blue"/>
+                                        </DataTrigger >
+                                    </Label.Triggers>
+                                </Label>
+                            </StackLayout>
+                        </StackLayout>
+                    </ScrollView>
+                    <Grid  Margin="6,20,6,10" HorizontalOptions="Center" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="0.5*"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Grid.Column="0" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Back}" HorizontalOptions="End" Command="{Binding BackCommand}"/>
+                        <Button Grid.Column="2" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=CheckoutImport}" HorizontalOptions="Start" Command="{Binding CheckoutCommand}"/>
+                    </Grid>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+        <!-- 更改支付价格 -->
+        <view:ChangePaidPriceView x:Name="balanceView" IsVisible="False" BindingContext="{Binding ChangePaidPrice}" >
+            <view:ChangePaidPriceView.Triggers>
+                <DataTrigger TargetType="ContentView" Binding="{Binding IsShow}" Value="True">
+                    <Setter Property="IsVisible" Value="True"/>
+                </DataTrigger>
+            </view:ChangePaidPriceView.Triggers>
+        </view:ChangePaidPriceView>
+        <Grid IsVisible="{Binding IsLoading}"  Style="{StaticResource LoadingBackground}">
+            <ActivityIndicator IsRunning="{Binding IsLoading}" />
+        </Grid>
+
+    </Grid>
+</ContentPage>

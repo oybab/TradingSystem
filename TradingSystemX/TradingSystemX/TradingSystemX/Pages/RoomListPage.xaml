@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.Core"
+             Title="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=SoftServiceName}"
+             x:Class="Oybab.TradingSystemX.Pages.RoomListPage" BackgroundColor="{DynamicResource PageBackgroundColor}">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <ControlTemplate x:Key="ListTemplate" x:Name="ListTemplate">
+                <Grid>
+                    <Grid Padding="10" HorizontalOptions="FillAndExpand">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="{TemplateBinding BindingContext.RoomNo}" HorizontalOptions="Start" />
+
+                        <StackLayout Grid.Column="1" Orientation="Horizontal" HorizontalOptions="Center" >
+
+                            <Label Text="{Binding Converter={StaticResource PC}}"  VerticalOptions="Center" />
+                            <Label Text="{TemplateBinding BindingContext.BalancePrice}" VerticalOptions="Center">
+                                <Label.Triggers>
+                                    <DataTrigger TargetType="Label" Binding="{TemplateBinding BindingContext.BalanceMode}" Value="1">
+                                        <Setter Property="IsVisible" Value="True"/>
+                                        <Setter Property="TextColor" Value="Blue"/>
+                                    </DataTrigger >
+                                    <DataTrigger TargetType="Label" Binding="{TemplateBinding BindingContext.BalanceMode}" Value="2">
+                                        <Setter Property="IsVisible" Value="True"/>
+                                        <Setter Property="TextColor" Value="Red"/>
+                                    </DataTrigger >
+                                </Label.Triggers>
+                            </Label>
+
+                            <StackLayout.Triggers>
+                                <DataTrigger TargetType="StackLayout" Binding="{TemplateBinding BindingContext.BalanceMode}" Value="0">
+                                    <Setter Property="IsVisible" Value="False"/>
+                                </DataTrigger>
+                            </StackLayout.Triggers>
+                        </StackLayout>
+                        <StackLayout  Grid.Column="2" Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+
+                            <Label Text="{TemplateBinding BindingContext.RoomTime}"  Margin="0,0,10,0">
+                                <Label.Triggers>
+                                    <DataTrigger TargetType="Label" Binding="{TemplateBinding BindingContext.TimeMode}" Value="0">
+                                        <Setter Property="IsVisible" Value="False"/>
+                                    </DataTrigger >
+                                    <DataTrigger TargetType="Label" Binding="{TemplateBinding BindingContext.TimeMode}" Value="1">
+                                        <Setter Property="IsVisible" Value="True"/>
+                                    </DataTrigger >
+                                    <DataTrigger TargetType="Label" Binding="{TemplateBinding BindingContext.TimeMode}" Value="2">
+                                        <Setter Property="IsVisible" Value="True"/>
+                                        <Setter Property="TextColor" Value="Orange"/>
+                                    </DataTrigger >
+                                    <DataTrigger TargetType="Label" Binding="{TemplateBinding BindingContext.TimeMode}" Value="3">
+                                        <Setter Property="IsVisible" Value="True"/>
+                                        <Setter Property="TextColor" Value="Red"/>
+                                    </DataTrigger >
+                                </Label.Triggers>
+                            </Label>
+                        </StackLayout>
+                    </Grid>
+                    <Button Command="{TemplateBinding BindingContext.GoCommand}" CommandParameter="{TemplateBinding BindingContext }" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent"></Button>
+                </Grid>
+            </ControlTemplate>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid>
+        <Grid>
+            <StackLayout Margin="10, 10, 10, 10"  Orientation="Vertical">
+
+                <StackLayout>
+                    <Label HorizontalOptions="Start" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=InnerBill}"  Margin="6,10,0,0" />
+
+                    <ScrollView Margin="0,20,0,0" BackgroundColor="{DynamicResource ItemBackgroundColor}">
+                        <StackLayout x:Name="lvList">
+
+                        </StackLayout>
+                    </ScrollView>
+
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+
+        <Grid IsVisible="{Binding IsLoading}"  Style="{StaticResource LoadingBackground}">
+            <ActivityIndicator IsRunning="{Binding IsLoading}" />
+        </Grid>
+
+    </Grid>
+</ContentPage>

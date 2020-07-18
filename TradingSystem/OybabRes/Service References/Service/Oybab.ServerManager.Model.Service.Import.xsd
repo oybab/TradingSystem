@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Import" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Import" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" />
+  <xs:complexType name="ToServerServiceNewImport">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q1:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Import" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ImportDetails" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ImportPays" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Rechecked" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceNewImport" nillable="true" type="tns:ToServerServiceNewImport" />
+  <xs:complexType name="ToClientServiceNewImport">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q2:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Import" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ImportDetails" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ImportPays" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+          <xs:element minOccurs="0" name="UpdateTime" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceNewImport" nillable="true" type="tns:ToClientServiceNewImport" />
+  <xs:complexType name="ToServerServiceEditImport">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q3:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Import" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ImportSessionId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Rechecked" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceEditImport" nillable="true" type="tns:ToServerServiceEditImport" />
+  <xs:complexType name="ToClientServiceEditImport">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q4:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Import" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ImportSessionId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+          <xs:element minOccurs="0" name="UpdateTime" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceEditImport" nillable="true" type="tns:ToClientServiceEditImport" />
+  <xs:complexType name="ToServerServiceGetImports">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q5:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AddTimeEnd" type="xs:long" />
+          <xs:element minOccurs="0" name="AddTimeStart" type="xs:long" />
+          <xs:element minOccurs="0" name="CardNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FinishAdminId" type="xs:long" />
+          <xs:element minOccurs="0" name="ImportTimeEnd" type="xs:long" />
+          <xs:element minOccurs="0" name="ImportTimeStart" type="xs:long" />
+          <xs:element minOccurs="0" name="IsIncludeRef" type="xs:boolean" />
+          <xs:element minOccurs="0" name="SupplierNo" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceGetImports" nillable="true" type="tns:ToServerServiceGetImports" />
+  <xs:complexType name="ToClientServiceGetImports">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q6:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Imports" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceGetImports" nillable="true" type="tns:ToClientServiceGetImports" />
+</xs:schema>

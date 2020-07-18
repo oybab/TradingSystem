@@ -1,0 +1,109 @@
+﻿<UserControl x:Class="Oybab.ServicePC.Pos.Controls.CheckoutControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d"
+             d:DesignHeight="768" d:DesignWidth="900"
+             x:Name="control">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary  Source="/ServicePC;component/Pos/Styles/CheckoutControlStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <Grid Style="{StaticResource grdMessageboxParentBackgroundStyle}" Opacity="0.7"/>
+        <Border Style="{StaticResource bdCheckoutBorderStyle}" Width="600">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="62"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Border Grid.Row="0" Style="{StaticResource bdTitleBackgroundStyle}" Height="62">
+                    <WrapPanel VerticalAlignment="Center">
+                        <Image Style="{StaticResource imgTopTitleStyleStyle}"/>
+                        <Label Style="{StaticResource lbTopTitleStyle}"/>
+                    </WrapPanel>
+                </Border>
+                <Grid x:Name="grdParent" Grid.Row="1" Margin="40, 20, 40, 40">
+                    <StackPanel Style="{StaticResource spListStyle}" >
+                        <WrapPanel Style="{StaticResource wpInfoMemberWrapStyle}">
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MemberName}"/>
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content=":"/>
+                            <Label  Style="{StaticResource lbInfoHeadStyle}" Content="{Binding MemberName}" />
+
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Margin="5,0,0,0" Content="("/>
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Padding="0" Margin="0"  Content="{Binding Converter={StaticResource PriceConverter}}"/>
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Padding="0" Margin="0" Content="{Binding MemberBalance}"/>
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Margin="0" Content=")"/>
+
+                        </WrapPanel>
+                        <WrapPanel Style="{StaticResource wpInfoWrapStyle}">
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=TotalPrice}"/>
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content=":"/>
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Padding="0" Margin="0"  Content="{Binding Converter={StaticResource PriceConverter}}"/>
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content="{Binding TotalPrice}"/>
+                        </WrapPanel>
+
+                        
+                        <WrapPanel Style="{StaticResource wpInfoWrapStyle}">
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=PaidPrice}"/>
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content=":"/>
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Padding="0" Margin="0"  Content="{Binding Converter={StaticResource PriceConverter}}"/>
+                            <Label x:Name="tbPaid" Style="{StaticResource lbInfoHeadStyle}" Content="{Binding TotalPaidPrice}"/>
+                        </WrapPanel>
+                        <WrapPanel Style="{StaticResource wpInfoWrapStyle}">
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=BalancePay}"/>
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content=":"/>
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Padding="0" Margin="0"  Content=" "/>
+                            <Label x:Name="tbBalance" Style="{StaticResource lbBalanceLabelStyle}" Content="{Binding CurrentBalance.Text}"/>
+                        </WrapPanel>
+                        <WrapPanel Style="{StaticResource wpInfoWrapStyle}">
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=ChangePrice}"/>
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content=":"/>
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Padding="0" Margin="0"  Content="{Binding Converter={StaticResource PriceConverter}}"/>
+                            <Label x:Name="tbChange" Style="{StaticResource lbCashInputTextboxStyle}" Content="{Binding ChangePrice}"/>
+                        </WrapPanel>
+                        <WrapPanel Style="{StaticResource wpInfoWrapStyle}">
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=ReturnPrice}"/>
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content=":"/>
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Padding="0" Margin="0"  Content="{Binding Converter={StaticResource PriceConverter}}"/>
+                            <Label Style="{StaticResource lbInfoHeadKeepStyle}" Content="{Binding ReturnPrice}"/>
+                        </WrapPanel>
+                        <WrapPanel Style="{StaticResource wpInfoWrapStyle}">
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=OwedPrice}"/>
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content=":"/>
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Padding="0" Margin="0"  Content="{Binding Converter={StaticResource PriceConverter}}"/>
+                            <Label Style="{StaticResource lbInfoHeadBorrowStyle}" Content="{Binding BorrowPrice}"/>
+                        </WrapPanel>
+                       
+                    </StackPanel>
+
+                    <StackPanel  VerticalAlignment="Center" Style="{StaticResource spBindStyle}">
+                        <WrapPanel Style="{StaticResource wpInfoWrapStyle}" HorizontalAlignment="Center">
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MemberNo}"/>
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content=":"/>
+                            <Label Style="{StaticResource lbMemberNoInputTextboxStyle}" Content="{Binding MemberNo}"/>
+                        </WrapPanel>
+                    </StackPanel>
+                    <StackPanel  VerticalAlignment="Center" Style="{StaticResource spMemberPayStyle}">
+                        <WrapPanel Style="{StaticResource wpInfoWrapStyle}">
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=TypeName}"/>
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content=":"/>
+                            <Label Style="{StaticResource lbInfoMemberPayCashStyle}" Margin="40, 0, 10, 0" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=Cash}"/>
+                            <Label Style="{StaticResource lbInfoMemberPayCardStyle}" Margin="20, 0, 10, 0"  Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=Card}"/>
+                        </WrapPanel>
+                        <WrapPanel Style="{StaticResource wpInfoWrapStyle}">
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=AddPrice}"/>
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Content=":"/>
+                            <Label Style="{StaticResource lbInfoHeadStyle}" Padding="0" Margin="0"  Content="{Binding Converter={StaticResource PriceConverter}}"/>
+                            <Label Style="{StaticResource lbMemberPayPriceInputTextboxStyle}" Content="{Binding AddPrice}"/>
+                        </WrapPanel>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

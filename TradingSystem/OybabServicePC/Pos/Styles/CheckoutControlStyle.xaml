@@ -1,0 +1,309 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    >
+
+
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary  Source="/ServicePC;component/Pos/Styles/PublicStyle.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+
+    <Style x:Key="bdCheckoutBorderStyle" TargetType="Border">
+        <Setter Property="CornerRadius" Value="15"/>
+        <Setter Property="BorderBrush" Value="White"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Background" Value="#1D3551"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+
+    <!-- 顶部标题 -->
+    <Style x:Key="bdTitleBackgroundStyle" TargetType="Border">
+        <Setter Property="Background" Value="#EAB938"/>
+        <Setter Property="CornerRadius" Value="15, 15, 0, 0"/>
+    </Style>
+
+
+
+    <!-- 系统标题 -->
+    <Style x:Key="lbTopTitleStyle" TargetType="{x:Type Label}">
+        <Setter Property="Margin" Value="20,0"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="Content" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=CheckoutOrder}"/>
+        <Setter Property="FontSize" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=PosCountFontSize}"/>
+        <Setter Property="FontFamily" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding DisplayMode}" Value="3">
+                <Setter Property="Content" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=Bind}"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding DisplayMode}" Value="9">
+                <Setter Property="Content" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=AddMemberBalancePrice}"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="imgTopTitleStyleStyle" TargetType="Image">
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Stretch" Value="None"/>
+        <Setter Property="Margin" Value="20,0,0,0"/>
+        <Setter Property="Width" Value="39"/>
+        <Setter Property="Height" Value="33"/>
+        <Setter Property="Source" Value="pack://application:,,,/Res;component/Resources/Images/Pos/Checkout_Black.png"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding DisplayMode}" Value="3">
+                <Setter Property="Width" Value="43"/>
+                <Setter Property="Height" Value="43"/>
+                <Setter Property="Source" Value="pack://application:,,,/Res;component/Resources/Images/Pos/Bind_Black.png"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding DisplayMode}" Value="9">
+                <Setter Property="Width" Value="33"/>
+                <Setter Property="Height" Value="43"/>
+                <Setter Property="Source" Value="pack://application:,,,/Res;component/Resources/Images/Pos/Money.png"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+
+    <!-- 所有其他内容 -->
+    <Style x:Key="spListStyle" TargetType="StackPanel">
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding DisplayMode}" Value="3">
+                <Setter Property="Visibility" Value="Collapsed"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding DisplayMode}" Value="9">
+                <Setter Property="Visibility" Value="Collapsed"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- 绑定会员 内容 -->
+    <Style x:Key="spBindStyle" TargetType="StackPanel">
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding DisplayMode}" Value="3">
+                <Setter Property="Visibility" Value="Visible"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- 会员支付 内容 -->
+    <Style x:Key="spMemberPayStyle" TargetType="StackPanel">
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding DisplayMode}" Value="9">
+                <Setter Property="Visibility" Value="Visible"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+    
+
+    <!-- 文字 -->
+    <Style x:Key="lbInfoHeadStyle" TargetType="Label">
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Margin" Value="5, 0"/>
+        <Setter Property="FontSize" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=PosCountFontSize}"/>
+        <Setter Property="FontFamily" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+    </Style>
+
+
+
+    <!-- 会员输入框 -->
+    <Style x:Key="lbMemberNoInputTextboxStyle" TargetType="{x:Type Label}">
+        <Setter Property="Width" Value="255"/>
+        <Setter Property="Height" Value="50"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <Border x:Name="border"  BorderThickness="1" BorderBrush="#EAB72F" CornerRadius="5">
+                        <Label x:Name="lbContent" Margin="5,0,5,0" HorizontalAlignment="Left" Content="{TemplateBinding Content}" VerticalAlignment="Center" Foreground="#EAB72F" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=PosCountFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+    <!-- 余额显示 -->
+    <Style x:Key="lbBalanceLabelStyle" TargetType="{x:Type Label}">
+        <Setter Property="ClipToBounds" Value="True" />
+        <Setter Property="Width" Value="190"/>
+        <Setter Property="Height" Value="45"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <Grid>
+                        <Label x:Name="lbContent" Margin="5,0,5,0" HorizontalAlignment="Left" Content="{TemplateBinding Content}" VerticalAlignment="Center" Foreground="White" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=PosCountFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                    </Grid>
+
+                    <ControlTemplate.Triggers>
+                        <DataTrigger Binding="{Binding DisplayMode}" Value="2">
+                            <Setter TargetName="lbContent" Property="Foreground" Value="#EAB72F"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- 现金输入框 -->
+    <Style x:Key="lbCashInputTextboxStyle" TargetType="{x:Type Label}">
+        <Setter Property="ClipToBounds" Value="True" />
+        <Setter Property="Width" Value="190"/>
+        <Setter Property="Height" Value="45"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <Grid>
+                        <Border x:Name="border" BorderThickness="2" BorderBrush="#EAB72F" CornerRadius="5" Visibility="Hidden"/>
+                        <Label x:Name="lbContent" Margin="5,0,5,0" HorizontalAlignment="Left" Content="{TemplateBinding Content}" VerticalAlignment="Center" Foreground="#EAB72F" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=PosCountFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                    </Grid>
+                   
+                    <ControlTemplate.Triggers>
+                        <DataTrigger Binding="{Binding DisplayMode}" Value="1">
+                            <Setter TargetName="border" Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+
+   
+
+
+   
+
+
+    <!-- 会员支付输入框 -->
+    <Style x:Key="lbMemberPayPriceInputTextboxStyle" TargetType="{x:Type Label}">
+        <Setter Property="ClipToBounds" Value="True" />
+        <Setter Property="Width" Value="190"/>
+        <Setter Property="Height" Value="45"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <Grid>
+                        <Border x:Name="border" BorderThickness="2" BorderBrush="#EAB72F" CornerRadius="5" Visibility="Hidden"/>
+                        <Label x:Name="lbContent" Margin="5,0,5,0" HorizontalAlignment="Left" Content="{TemplateBinding Content}" VerticalAlignment="Center" Foreground="#EAB72F" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=PosCountFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                    </Grid>
+
+                    <ControlTemplate.Triggers>
+                        <DataTrigger Binding="{Binding DisplayMode}" Value="9">
+                            <Setter TargetName="border" Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="lbInfoMemberPayCashStyle" TargetType="Label">
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Margin" Value="5, 0"/>
+        <Setter Property="FontSize" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=PosCountFontSize}"/>
+        <Setter Property="FontFamily" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding PayType}" Value="1">
+                <Setter Property="Foreground" Value="#EAB72F"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+
+    <Style x:Key="lbInfoMemberPayCardStyle" TargetType="Label">
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Margin" Value="5, 0"/>
+        <Setter Property="FontSize" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=PosCountFontSize}"/>
+        <Setter Property="FontFamily" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding PayType}" Value="2">
+                <Setter Property="Foreground" Value="#EAB72F"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+
+
+    <!-- 文字显示父级布局 -->
+    <Style x:Key="wpInfoWrapStyle" TargetType="{x:Type WrapPanel}">
+        <Setter Property="Margin" Value="5"/>
+    </Style>
+
+
+
+   
+
+    <!-- 文字显示父级布局(有会员才显示) -->
+    <Style x:Key="wpInfoMemberWrapStyle" TargetType="{x:Type WrapPanel}">
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding IsMember}" Value="True">
+                <Setter Property="Visibility" Value="Visible"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+
+
+   
+
+
+
+
+
+
+    <!-- 文字(保留) -->
+    <Style x:Key="lbInfoHeadKeepStyle" TargetType="Label">
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="Blue"/>
+        <Setter Property="Margin" Value="5, 0"/>
+        <Setter Property="FontSize" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=PosCountFontSize}"/>
+        <Setter Property="FontFamily" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding KeepPrice}" Value="0">
+                <Setter Property="Foreground" Value="White"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+
+
+    <!-- 文字(欠款) -->
+    <Style x:Key="lbInfoHeadBorrowStyle" TargetType="Label">
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="Red"/>
+        <Setter Property="Margin" Value="5, 0"/>
+        <Setter Property="FontSize" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=PosCountFontSize}"/>
+        <Setter Property="FontFamily" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding BorrowPrice}" Value="0">
+                <Setter Property="Foreground" Value="White"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+
+
+
+
+
+
+
+</ResourceDictionary>

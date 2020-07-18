@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.Core"
+             Title="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=SoftServiceName}"
+             x:Class="Oybab.TradingSystemX.Pages.Controls.AddressPage" BackgroundColor="{DynamicResource PageBackgroundColor}">
+    <Grid>
+        <Grid>
+            <StackLayout Margin="10, 10, 10, 10"  Orientation="Vertical">
+
+                <Label HorizontalOptions="Start" Margin="6,20,0,0" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Address}"/>
+
+                <StackLayout Orientation="Horizontal"  Margin="6,20,6,0" HorizontalOptions="FillAndExpand">
+                    <Label Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=MultiLanguage}" HorizontalOptions="FillAndExpand" />
+                    <Switch IsToggled="{Binding MultiLanguage}" />
+                </StackLayout>
+
+                <ScrollView VerticalOptions="FillAndExpand">
+                    <StackLayout>
+                        <StackLayout Margin="0,10,0,10"  HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                            <Label Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Remark}" VerticalOptions="Center"/>
+                            <Label Text=":" VerticalOptions="Center"/>
+                            <Entry Text="{Binding Remark, Mode=TwoWay}" HorizontalOptions="FillAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Margin="0,10,0,0">
+                            <Label Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Phone}"/>
+                            <Entry Text="{Binding Phone, Mode=TwoWay}"/>
+                        </StackLayout>
+
+                        <StackLayout Margin="0,10,0,0" IsVisible="{Binding LangMode0}" VerticalOptions="FillAndExpand">
+                            <Label Text="{Binding PersonName0Label}"/>
+                            <Entry Text="{Binding PersonName0, Mode=TwoWay}"/>
+                            <Label Text="{Binding Address0Label}"/>
+                            <Entry Text="{Binding Address0, Mode=TwoWay}"/>
+
+                        </StackLayout>
+
+                        <StackLayout Margin="0,10,0,0" IsVisible="{Binding LangMode1}" VerticalOptions="FillAndExpand">
+                            <Label Text="{Binding PersonName1Label}"/>
+                            <Entry Text="{Binding PersonName1, Mode=TwoWay}"/>
+                            <Label Text="{Binding Address1Label}"/>
+                            <Entry Text="{Binding Address1, Mode=TwoWay}"/>
+
+                        </StackLayout>
+
+                        <StackLayout Margin="0,10,0,0" IsVisible="{Binding LangMode2}" VerticalOptions="FillAndExpand">
+                            <Label Text="{Binding PersonName2Label}"/>
+                            <Entry Text="{Binding PersonName2, Mode=TwoWay}"/>
+                            <Label Text="{Binding Address2Label}"/>
+                            <Entry Text="{Binding Address2, Mode=TwoWay}"/>
+
+
+                        </StackLayout>
+
+                    </StackLayout>
+                </ScrollView>
+
+            </StackLayout>
+        </Grid>
+
+
+    </Grid>
+</ContentPage>

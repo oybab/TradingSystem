@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4A3DCC30-4346-47A0-874B-5674AB86F7BF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Oybab.Report</RootNamespace>
+    <AssemblyName>Report</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <BaseIntermediateOutputPath>Y:\NET\TradingSystem\obj\OybabReport\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Y:\NET\TradingSystem\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <IntermediateOutputPath>Y:\NET\TradingSystem\Debug\</IntermediateOutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Y:\NET\TradingSystem\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <IntermediateOutputPath>Y:\NET\TradingSystem\Release\</IntermediateOutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>OybabSoft.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Work\Program\Component Factory\Krypton Toolkit 4.4.0\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\Work\Program\DevExpress 15.1\Components\Bin\Framework\DevExpress.Charts.v15.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\Work\Program\DevExpress 15.1\Components\Bin\Framework\DevExpress.Data.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\Work\Program\DevExpress 15.1\Components\Bin\Framework\DevExpress.DataAccess.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\Work\Program\DevExpress 15.1\Components\Bin\Framework\DevExpress.Office.v15.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\Work\Program\DevExpress 15.1\Components\Bin\Framework\DevExpress.PivotGrid.v15.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\Work\Program\DevExpress 15.1\Components\Bin\Framework\DevExpress.Printing.v15.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\Work\Program\DevExpress 15.1\Components\Bin\Framework\DevExpress.RichEdit.v15.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\Work\Program\DevExpress 15.1\Components\Bin\Framework\DevExpress.Sparkline.v15.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\Work\Program\DevExpress 15.1\Components\Bin\Framework\DevExpress.Utils.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\Work\Program\DevExpress 15.1\Components\Bin\Framework\DevExpress.Xpo.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\Work\Program\DevExpress 15.1\Components\Bin\Framework\DevExpress.XtraBars.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\Work\Program\DevExpress 15.1\Components\Bin\Framework\DevExpress.XtraCharts.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.1.UI, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\Work\Program\DevExpress 15.1\Components\Bin\Framework\DevExpress.XtraCharts.v15.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\Work\Program\DevExpress 15.1\Components\Bin\Framework\DevExpress.XtraEditors.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\Work\Program\DevExpress 15.1\Components\Bin\Framework\DevExpress.XtraGauges.v15.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\Work\Program\DevExpress 15.1\Components\Bin\Framework\DevExpress.XtraLayout.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\Work\Program\DevExpress 15.1\Components\Bin\Framework\DevExpress.XtraPrinting.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\Work\Program\DevExpress 15.1\Components\Bin\Framework\DevExpress.XtraReports.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\Work\Program\DevExpress 15.1\Components\Bin\Framework\DevExpress.XtraTreeList.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Application\ShardAssemblyInfo.cs">
+      <Link>Properties\ShardAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Common\BackstageReportNoRequest.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\BackstageReportNoRequest.designer.cs">
+      <DependentUpon>BackstageReportNoRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\BackstageReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\BackstageReport.Designer.cs">
+      <DependentUpon>BackstageReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\BackstageTakeoutReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\BackstageTakeoutReport.Designer.cs">
+      <DependentUpon>BackstageTakeoutReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ImportMiddleReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\ImportMiddleReport.designer.cs">
+      <DependentUpon>ImportMiddleReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ImportReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\ImportReport.Designer.cs">
+      <DependentUpon>ImportReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\OrderCheckoutMiddleRepor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\OrderCheckoutMiddleRepor.Designer.cs">
+      <DependentUpon>OrderCheckoutMiddleRepor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\OrderCheckoutReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\OrderCheckoutReport.designer.cs">
+      <DependentUpon>OrderCheckoutReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\OrderPayReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\OrderPayReport.Designer.cs">
+      <DependentUpon>OrderPayReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ProductLabelMedium.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\ProductLabelMedium.designer.cs">
+      <DependentUpon>ProductLabelMedium.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ProductLabelSmall.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\ProductLabelSmall.Designer.cs">
+      <DependentUpon>ProductLabelSmall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\SummaryReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\SummaryReport.Designer.cs">
+      <DependentUpon>SummaryReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\TakeoutCheckoutMiddleReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\TakeoutCheckoutMiddleReport.designer.cs">
+      <DependentUpon>TakeoutCheckoutMiddleReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\TakeoutCheckoutReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\TakeoutCheckoutReport.Designer.cs">
+      <DependentUpon>TakeoutCheckoutReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interop\COLORREF.cs" />
+    <Compile Include="Interop\Gdi32.cs" />
+    <Compile Include="Interop\RECT.cs" />
+    <Compile Include="Interop\User32.cs" />
+    <Compile Include="Model\ProductLabel.cs" />
+    <Compile Include="Model\ProductRequest.cs" />
+    <Compile Include="Model\RecordChart.cs" />
+    <Compile Include="Model\RecordChartStack.cs" />
+    <Compile Include="Model\RecordProducts.cs" />
+    <Compile Include="Model\RecordProfitProducts.cs" />
+    <Compile Include="Model\RecordReturnProducts.cs" />
+    <Compile Include="Model\RecordTime.cs" />
+    <Compile Include="Model\ReportPrinter.cs" />
+    <Compile Include="Model\ReportModel.cs" />
+    <Compile Include="Model\StatisticModel.cs" />
+    <Compile Include="Model\SummaryModel.cs" />
+    <Compile Include="PrinterMsg.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportExt.cs" />
+    <Compile Include="StatisticsForm\StatisticAdminSaleProductReportWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsForm\StatisticAdminSaleProductReportWindow.Designer.cs">
+      <DependentUpon>StatisticAdminSaleProductReportWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticsForm\StatisticCharWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsForm\StatisticCharWindow.Designer.cs">
+      <DependentUpon>StatisticCharWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticsForm\StatisticProductProfitReportWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsForm\StatisticProductProfitReportWindow.Designer.cs">
+      <DependentUpon>StatisticProductProfitReportWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticsForm\StatisticProductReportWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsForm\StatisticProductReportWindow.Designer.cs">
+      <DependentUpon>StatisticProductReportWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticsForm\StatisticReturnProductReportWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsForm\StatisticReturnProductReportWindow.Designer.cs">
+      <DependentUpon>StatisticReturnProductReportWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticsForm\StatisticSummaryReportWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsForm\StatisticSummaryReportWindow.Designer.cs">
+      <DependentUpon>StatisticSummaryReportWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticsForm\StatisticXYDiagramWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsForm\StatisticXYDiagramWindow.Designer.cs">
+      <DependentUpon>StatisticXYDiagramWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\AdminSaleProductReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\AdminSaleProductReport.designer.cs">
+      <DependentUpon>AdminSaleProductReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\ProductProfitReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\ProductProfitReport.designer.cs">
+      <DependentUpon>ProductProfitReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\ProductReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\ProductReport.designer.cs">
+      <DependentUpon>ProductReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\ReturnProductReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\ReturnProductReport.designer.cs">
+      <DependentUpon>ReturnProductReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\SummaryReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\SummaryReport.designer.cs">
+      <DependentUpon>SummaryReport.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OybabDAL\OybabDAL.csproj">
+      <Project>{0410fd27-6456-4780-8854-5205b6cd8bbd}</Project>
+      <Name>OybabDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\BackstageReportNoRequest.resx">
+      <DependentUpon>BackstageReportNoRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\BackstageReport.resx">
+      <DependentUpon>BackstageReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\BackstageTakeoutReport.resx">
+      <DependentUpon>BackstageTakeoutReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\ImportMiddleReport.resx">
+      <DependentUpon>ImportMiddleReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\ImportReport.resx">
+      <DependentUpon>ImportReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\OrderCheckoutMiddleRepor.resx">
+      <DependentUpon>OrderCheckoutMiddleRepor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\OrderCheckoutReport.resx">
+      <DependentUpon>OrderCheckoutReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\OrderPayReport.resx">
+      <DependentUpon>OrderPayReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\ProductLabelMedium.resx">
+      <DependentUpon>ProductLabelMedium.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\ProductLabelSmall.resx">
+      <DependentUpon>ProductLabelSmall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\SummaryReport.resx">
+      <DependentUpon>SummaryReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\TakeoutCheckoutMiddleReport.resx">
+      <DependentUpon>TakeoutCheckoutMiddleReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\TakeoutCheckoutReport.resx">
+      <DependentUpon>TakeoutCheckoutReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="StatisticsForm\StatisticAdminSaleProductReportWindow.resx">
+      <DependentUpon>StatisticAdminSaleProductReportWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsForm\StatisticCharWindow.resx">
+      <DependentUpon>StatisticCharWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsForm\StatisticProductProfitReportWindow.resx">
+      <DependentUpon>StatisticProductProfitReportWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsForm\StatisticProductReportWindow.resx">
+      <DependentUpon>StatisticProductReportWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsForm\StatisticReturnProductReportWindow.resx">
+      <DependentUpon>StatisticReturnProductReportWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsForm\StatisticSummaryReportWindow.resx">
+      <DependentUpon>StatisticSummaryReportWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsForm\StatisticXYDiagramWindow.resx">
+      <DependentUpon>StatisticXYDiagramWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\AdminSaleProductReport.resx">
+      <DependentUpon>AdminSaleProductReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\ProductProfitReport.resx">
+      <DependentUpon>ProductProfitReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\ProductReport.resx">
+      <DependentUpon>ProductReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\ReturnProductReport.resx">
+      <DependentUpon>ReturnProductReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\SummaryReport.resx">
+      <DependentUpon>SummaryReport.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\..\..\..\..\..\Work\Program\DevExpress 15.1\Components\Bin\Framework\DevExpress.Office.v15.1.Core.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OybabSoft.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

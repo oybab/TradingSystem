@@ -1,0 +1,1941 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_IService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.AdminLog" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Member" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.MemberPay" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Supplier" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.SupplierPay" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Printer" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Request" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Device" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Log" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Models" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Room" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Product" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.ProductType" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Order" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.OrderDetail" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Takeout" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.TakeoutDetail" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Import" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.ImportDetail" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Admin" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.AdminPay" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Balance" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.BalancePay" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService_ServiceEditAdminLog_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceEditAdminLog" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceEditAdminLog_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceEditAdminLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelAdminLog_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelAdminLog" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelAdminLog_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelAdminLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetAdminLog_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetAdminLog" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetAdminLog_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetAdminLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddMember_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddMember" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddMember_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddMemberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceEditMember_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceEditMember" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceEditMember_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceEditMemberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelMember_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelMember" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelMember_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelMemberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetMembers_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetMembers" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetMembers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetMembersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddMemberPay_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddMemberPay" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddMemberPay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddMemberPayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelMemberPay_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelMemberPay" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelMemberPay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelMemberPayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetMemberPay_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetMemberPay" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetMemberPay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetMemberPayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddSupplier_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddSupplier" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddSupplier_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddSupplierResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceEditSupplier_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceEditSupplier" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceEditSupplier_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceEditSupplierResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelSupplier_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelSupplier" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelSupplier_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelSupplierResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetSupplier_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetSupplier" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetSupplier_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetSupplierResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddSupplierPay_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddSupplierPay" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddSupplierPay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddSupplierPayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelSupplierPay_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelSupplierPay" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelSupplierPay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelSupplierPayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetSupplierPay_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetSupplierPay" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetSupplierPay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetSupplierPayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddPrinter_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddPrinter" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddPrinter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddPrinterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceEditPrinter_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceEditPrinter" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceEditPrinter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceEditPrinterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelPrinter_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelPrinter" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelPrinter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelPrinterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddRequest" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceEditRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceEditRequest" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceEditRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceEditRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelRequest" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddDevice_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddDevice" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddDevice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddDeviceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceEditDevice_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceEditDevice" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceEditDevice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceEditDeviceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelDevice_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelDevice" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelDevice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelDeviceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetLog_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetLog" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetLog_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceNewRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceNewRequest" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceNewRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceNewRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceChangePWD_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceChangePWD" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceChangePWD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceChangePWDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceUID_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceUID" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceUID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceUIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceSetCon_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceSetCon" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceSetCon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceSetConResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceSend_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceSend" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceSend_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceSendResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServicePrint_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServicePrint" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServicePrint_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServicePrintResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceLock_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceLock" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceLock_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceLockResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceClose_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceClose" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceClose_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceCloseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetbak_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetbak" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetbak_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetbakResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceSetbak_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceSetbak" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceSetbak_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceSetbakResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceSetContent_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceSetContent" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceSetContent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceSetContentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceTimeRequestCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceTimeRequestCode" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceTimeRequestCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceTimeRequestCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceRegTime_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceRegTime" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceRegTime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceRegTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceCountRequestCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceCountRequestCode" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceCountRequestCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceCountRequestCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceRegCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceRegCount" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceRegCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceRegCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetModel_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetModel" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetModel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetModelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceSession_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceSession" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceSession_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddRoom_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddRoom" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddRoom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddRoomResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceEditRoom_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceEditRoom" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceEditRoom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceEditRoomResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelRoom_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelRoom" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelRoom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelRoomResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetAllProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetAllProduct" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetAllProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetAllProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddProduct" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceEditProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceEditProduct" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceEditProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceEditProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelProduct" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddProductType_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddProductType" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddProductType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddProductTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceEditProductType_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceEditProductType" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceEditProductType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceEditProductTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelProductType_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelProductType" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelProductType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelProductTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddOrder" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceEditOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceEditOrder" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceEditOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceEditOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceReplaceOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceReplaceOrder" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceReplaceOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceReplaceOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetOrders" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddOrderDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddOrderDetail" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddOrderDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddOrderDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceSaveOrderDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceSaveOrderDetail" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceSaveOrderDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceSaveOrderDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelOrderDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelOrderDetail" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelOrderDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelOrderDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetOrderDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetOrderDetail" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetOrderDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetOrderDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetOrderPay_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetOrderPay" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetOrderPay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetOrderPayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddTakeout_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddTakeout" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddTakeout_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddTakeoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceEditTakeout_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceEditTakeout" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceEditTakeout_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceEditTakeoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetTakeout_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetTakeout" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetTakeout_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetTakeoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceSaveTakeoutDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceSaveTakeoutDetail" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceSaveTakeoutDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceSaveTakeoutDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelTakeoutDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelTakeoutDetail" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelTakeoutDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelTakeoutDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetTakeoutDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetTakeoutDetail" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetTakeoutDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetTakeoutDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetTakeoutPay_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetTakeoutPay" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetTakeoutPay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetTakeoutPayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddImportWithDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddImportWithDetail" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddImportWithDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddImportWithDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceEditImport_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceEditImport" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceEditImport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceEditImportResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetImports_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetImports" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetImports_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetImportsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGeImportDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGeImportDetail" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGeImportDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGeImportDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetImportPay_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetImportPay" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetImportPay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetImportPayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddAdmin" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceEditAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceEditAdmin" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceEditAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceEditAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceResetAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceResetAdmin" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceResetAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceResetAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelAdmin" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddAdminPay_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddAdminPay" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddAdminPay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddAdminPayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelAdminPay_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelAdminPay" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelAdminPay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelAdminPayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetAdminPay_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetAdminPay" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetAdminPay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetAdminPayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddBalance_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddBalance" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddBalance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddBalanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceEditBalance_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceEditBalance" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceEditBalance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceEditBalanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelBalance_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelBalance" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelBalance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelBalanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetBalances_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetBalances" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetBalances_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetBalancesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddBalancePay_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddBalancePay" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddBalancePay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddBalancePayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceTransferBalancePay_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceTransferBalancePay" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceTransferBalancePay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceTransferBalancePayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelBalancePay_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelBalancePay" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDelBalancePay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDelBalancePayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetBalancePay_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetBalancePay" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceGetBalancePay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceGetBalancePayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddAdminLog_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddAdminLog" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceAddAdminLog_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceAddAdminLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceSendNotification_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ServiceSendNotification" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceSendNotification_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ServiceSendNotificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceOrderUpdateNotification_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ServiceOrderUpdateNotification" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceOrderUpdateNotification_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ServiceOrderUpdateNotificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceTakeoutUpdateNotification_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ServiceTakeoutUpdateNotification" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceTakeoutUpdateNotification_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ServiceTakeoutUpdateNotificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceProductCountUpdateNotification_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ServiceProductCountUpdateNotification" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceProductCountUpdateNotification_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ServiceProductCountUpdateNotificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDeviceModeUpdateNotification_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDeviceModeUpdateNotification" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceDeviceModeUpdateNotification_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ServiceDeviceModeUpdateNotificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceOrderDetailsAddNotification_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ServiceOrderDetailsAddNotification" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceOrderDetailsAddNotification_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ServiceOrderDetailsAddNotificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceTakeoutAddNotification_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ServiceTakeoutAddNotification" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceTakeoutAddNotification_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ServiceTakeoutAddNotificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceModelUpdateNotification_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ServiceModelUpdateNotification" />
+  </wsdl:message>
+  <wsdl:message name="IService_ServiceModelUpdateNotification_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ServiceModelUpdateNotificationResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService">
+    <wsdl:operation name="ServiceEditAdminLog">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceEditAdminLog" message="tns:IService_ServiceEditAdminLog_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceEditAdminLogResponse" message="tns:IService_ServiceEditAdminLog_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelAdminLog">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceDelAdminLog" message="tns:IService_ServiceDelAdminLog_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceDelAdminLogResponse" message="tns:IService_ServiceDelAdminLog_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetAdminLog">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceGetAdminLog" message="tns:IService_ServiceGetAdminLog_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceGetAdminLogResponse" message="tns:IService_ServiceGetAdminLog_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddMember">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceAddMember" message="tns:IService_ServiceAddMember_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceAddMemberResponse" message="tns:IService_ServiceAddMember_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceEditMember">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceEditMember" message="tns:IService_ServiceEditMember_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceEditMemberResponse" message="tns:IService_ServiceEditMember_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelMember">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceDelMember" message="tns:IService_ServiceDelMember_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceDelMemberResponse" message="tns:IService_ServiceDelMember_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetMembers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceGetMembers" message="tns:IService_ServiceGetMembers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceGetMembersResponse" message="tns:IService_ServiceGetMembers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddMemberPay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceAddMemberPay" message="tns:IService_ServiceAddMemberPay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceAddMemberPayResponse" message="tns:IService_ServiceAddMemberPay_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelMemberPay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceDelMemberPay" message="tns:IService_ServiceDelMemberPay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceDelMemberPayResponse" message="tns:IService_ServiceDelMemberPay_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetMemberPay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceGetMemberPay" message="tns:IService_ServiceGetMemberPay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceGetMemberPayResponse" message="tns:IService_ServiceGetMemberPay_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddSupplier">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceAddSupplier" message="tns:IService_ServiceAddSupplier_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceAddSupplierResponse" message="tns:IService_ServiceAddSupplier_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceEditSupplier">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceEditSupplier" message="tns:IService_ServiceEditSupplier_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceEditSupplierResponse" message="tns:IService_ServiceEditSupplier_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelSupplier">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceDelSupplier" message="tns:IService_ServiceDelSupplier_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceDelSupplierResponse" message="tns:IService_ServiceDelSupplier_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetSupplier">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceGetSupplier" message="tns:IService_ServiceGetSupplier_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceGetSupplierResponse" message="tns:IService_ServiceGetSupplier_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddSupplierPay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceAddSupplierPay" message="tns:IService_ServiceAddSupplierPay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceAddSupplierPayResponse" message="tns:IService_ServiceAddSupplierPay_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelSupplierPay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceDelSupplierPay" message="tns:IService_ServiceDelSupplierPay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceDelSupplierPayResponse" message="tns:IService_ServiceDelSupplierPay_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetSupplierPay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceGetSupplierPay" message="tns:IService_ServiceGetSupplierPay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceGetSupplierPayResponse" message="tns:IService_ServiceGetSupplierPay_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddPrinter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceAddPrinter" message="tns:IService_ServiceAddPrinter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceAddPrinterResponse" message="tns:IService_ServiceAddPrinter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceEditPrinter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceEditPrinter" message="tns:IService_ServiceEditPrinter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceEditPrinterResponse" message="tns:IService_ServiceEditPrinter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelPrinter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceDelPrinter" message="tns:IService_ServiceDelPrinter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceDelPrinterResponse" message="tns:IService_ServiceDelPrinter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceAddRequest" message="tns:IService_ServiceAddRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceAddRequestResponse" message="tns:IService_ServiceAddRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceEditRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceEditRequest" message="tns:IService_ServiceEditRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceEditRequestResponse" message="tns:IService_ServiceEditRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceDelRequest" message="tns:IService_ServiceDelRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceDelRequestResponse" message="tns:IService_ServiceDelRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddDevice">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceAddDevice" message="tns:IService_ServiceAddDevice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceAddDeviceResponse" message="tns:IService_ServiceAddDevice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceEditDevice">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceEditDevice" message="tns:IService_ServiceEditDevice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceEditDeviceResponse" message="tns:IService_ServiceEditDevice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelDevice">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceDelDevice" message="tns:IService_ServiceDelDevice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceDelDeviceResponse" message="tns:IService_ServiceDelDevice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetLog">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceGetLog" message="tns:IService_ServiceGetLog_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceGetLogResponse" message="tns:IService_ServiceGetLog_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceNewRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceNewRequest" message="tns:IService_ServiceNewRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceNewRequestResponse" message="tns:IService_ServiceNewRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceChangePWD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceChangePWD" message="tns:IService_ServiceChangePWD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceChangePWDResponse" message="tns:IService_ServiceChangePWD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceUID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceUID" message="tns:IService_ServiceUID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceUIDResponse" message="tns:IService_ServiceUID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceSetCon">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceSetCon" message="tns:IService_ServiceSetCon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceSetConResponse" message="tns:IService_ServiceSetCon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceSend">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceSend" message="tns:IService_ServiceSend_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceSendResponse" message="tns:IService_ServiceSend_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServicePrint">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServicePrint" message="tns:IService_ServicePrint_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServicePrintResponse" message="tns:IService_ServicePrint_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceLock">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceLock" message="tns:IService_ServiceLock_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceLockResponse" message="tns:IService_ServiceLock_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceClose">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceClose" message="tns:IService_ServiceClose_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceCloseResponse" message="tns:IService_ServiceClose_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetbak">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceGetbak" message="tns:IService_ServiceGetbak_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceGetbakResponse" message="tns:IService_ServiceGetbak_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceSetbak">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceSetbak" message="tns:IService_ServiceSetbak_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceSetbakResponse" message="tns:IService_ServiceSetbak_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceSetContent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceSetContent" message="tns:IService_ServiceSetContent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceSetContentResponse" message="tns:IService_ServiceSetContent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceTimeRequestCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceTimeRequestCode" message="tns:IService_ServiceTimeRequestCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceTimeRequestCodeResponse" message="tns:IService_ServiceTimeRequestCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceRegTime">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceRegTime" message="tns:IService_ServiceRegTime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceRegTimeResponse" message="tns:IService_ServiceRegTime_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceCountRequestCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceCountRequestCode" message="tns:IService_ServiceCountRequestCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceCountRequestCodeResponse" message="tns:IService_ServiceCountRequestCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceRegCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceRegCount" message="tns:IService_ServiceRegCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceRegCountResponse" message="tns:IService_ServiceRegCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetModel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceGetModel" message="tns:IService_ServiceGetModel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceGetModelResponse" message="tns:IService_ServiceGetModel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceSession">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceSession" message="tns:IService_ServiceSession_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceSessionResponse" message="tns:IService_ServiceSession_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddRoom">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceAddRoom" message="tns:IService_ServiceAddRoom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceAddRoomResponse" message="tns:IService_ServiceAddRoom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceEditRoom">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceEditRoom" message="tns:IService_ServiceEditRoom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceEditRoomResponse" message="tns:IService_ServiceEditRoom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelRoom">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceDelRoom" message="tns:IService_ServiceDelRoom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceDelRoomResponse" message="tns:IService_ServiceDelRoom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetAllProduct">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceGetAllProduct" message="tns:IService_ServiceGetAllProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceGetAllProductResponse" message="tns:IService_ServiceGetAllProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddProduct">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceAddProduct" message="tns:IService_ServiceAddProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceAddProductResponse" message="tns:IService_ServiceAddProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceEditProduct">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceEditProduct" message="tns:IService_ServiceEditProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceEditProductResponse" message="tns:IService_ServiceEditProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelProduct">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceDelProduct" message="tns:IService_ServiceDelProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceDelProductResponse" message="tns:IService_ServiceDelProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddProductType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceAddProductType" message="tns:IService_ServiceAddProductType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceAddProductTypeResponse" message="tns:IService_ServiceAddProductType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceEditProductType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceEditProductType" message="tns:IService_ServiceEditProductType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceEditProductTypeResponse" message="tns:IService_ServiceEditProductType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelProductType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceDelProductType" message="tns:IService_ServiceDelProductType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceDelProductTypeResponse" message="tns:IService_ServiceDelProductType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceAddOrder" message="tns:IService_ServiceAddOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceAddOrderResponse" message="tns:IService_ServiceAddOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceEditOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceEditOrder" message="tns:IService_ServiceEditOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceEditOrderResponse" message="tns:IService_ServiceEditOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceReplaceOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceReplaceOrder" message="tns:IService_ServiceReplaceOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceReplaceOrderResponse" message="tns:IService_ServiceReplaceOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetOrders">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceGetOrders" message="tns:IService_ServiceGetOrders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceGetOrdersResponse" message="tns:IService_ServiceGetOrders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddOrderDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceAddOrderDetail" message="tns:IService_ServiceAddOrderDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceAddOrderDetailResponse" message="tns:IService_ServiceAddOrderDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceSaveOrderDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceSaveOrderDetail" message="tns:IService_ServiceSaveOrderDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceSaveOrderDetailResponse" message="tns:IService_ServiceSaveOrderDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelOrderDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceDelOrderDetail" message="tns:IService_ServiceDelOrderDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceDelOrderDetailResponse" message="tns:IService_ServiceDelOrderDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetOrderDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceGetOrderDetail" message="tns:IService_ServiceGetOrderDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceGetOrderDetailResponse" message="tns:IService_ServiceGetOrderDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetOrderPay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceGetOrderPay" message="tns:IService_ServiceGetOrderPay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceGetOrderPayResponse" message="tns:IService_ServiceGetOrderPay_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddTakeout">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceAddTakeout" message="tns:IService_ServiceAddTakeout_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceAddTakeoutResponse" message="tns:IService_ServiceAddTakeout_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceEditTakeout">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceEditTakeout" message="tns:IService_ServiceEditTakeout_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceEditTakeoutResponse" message="tns:IService_ServiceEditTakeout_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetTakeout">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceGetTakeout" message="tns:IService_ServiceGetTakeout_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceGetTakeoutResponse" message="tns:IService_ServiceGetTakeout_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceSaveTakeoutDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceSaveTakeoutDetail" message="tns:IService_ServiceSaveTakeoutDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceSaveTakeoutDetailResponse" message="tns:IService_ServiceSaveTakeoutDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelTakeoutDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceDelTakeoutDetail" message="tns:IService_ServiceDelTakeoutDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceDelTakeoutDetailResponse" message="tns:IService_ServiceDelTakeoutDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetTakeoutDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceGetTakeoutDetail" message="tns:IService_ServiceGetTakeoutDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceGetTakeoutDetailResponse" message="tns:IService_ServiceGetTakeoutDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetTakeoutPay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceGetTakeoutPay" message="tns:IService_ServiceGetTakeoutPay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceGetTakeoutPayResponse" message="tns:IService_ServiceGetTakeoutPay_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddImportWithDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceAddImportWithDetail" message="tns:IService_ServiceAddImportWithDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceAddImportWithDetailResponse" message="tns:IService_ServiceAddImportWithDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceEditImport">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceEditImport" message="tns:IService_ServiceEditImport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceEditImportResponse" message="tns:IService_ServiceEditImport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetImports">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceGetImports" message="tns:IService_ServiceGetImports_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceGetImportsResponse" message="tns:IService_ServiceGetImports_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGeImportDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceGeImportDetail" message="tns:IService_ServiceGeImportDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceGeImportDetailResponse" message="tns:IService_ServiceGeImportDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetImportPay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceGetImportPay" message="tns:IService_ServiceGetImportPay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceGetImportPayResponse" message="tns:IService_ServiceGetImportPay_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddAdmin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceAddAdmin" message="tns:IService_ServiceAddAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceAddAdminResponse" message="tns:IService_ServiceAddAdmin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceEditAdmin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceEditAdmin" message="tns:IService_ServiceEditAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceEditAdminResponse" message="tns:IService_ServiceEditAdmin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceResetAdmin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceResetAdmin" message="tns:IService_ServiceResetAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceResetAdminResponse" message="tns:IService_ServiceResetAdmin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelAdmin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceDelAdmin" message="tns:IService_ServiceDelAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceDelAdminResponse" message="tns:IService_ServiceDelAdmin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddAdminPay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceAddAdminPay" message="tns:IService_ServiceAddAdminPay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceAddAdminPayResponse" message="tns:IService_ServiceAddAdminPay_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelAdminPay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceDelAdminPay" message="tns:IService_ServiceDelAdminPay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceDelAdminPayResponse" message="tns:IService_ServiceDelAdminPay_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetAdminPay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceGetAdminPay" message="tns:IService_ServiceGetAdminPay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceGetAdminPayResponse" message="tns:IService_ServiceGetAdminPay_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddBalance">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceAddBalance" message="tns:IService_ServiceAddBalance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceAddBalanceResponse" message="tns:IService_ServiceAddBalance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceEditBalance">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceEditBalance" message="tns:IService_ServiceEditBalance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceEditBalanceResponse" message="tns:IService_ServiceEditBalance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelBalance">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceDelBalance" message="tns:IService_ServiceDelBalance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceDelBalanceResponse" message="tns:IService_ServiceDelBalance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetBalances">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceGetBalances" message="tns:IService_ServiceGetBalances_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceGetBalancesResponse" message="tns:IService_ServiceGetBalances_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddBalancePay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceAddBalancePay" message="tns:IService_ServiceAddBalancePay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceAddBalancePayResponse" message="tns:IService_ServiceAddBalancePay_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceTransferBalancePay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceTransferBalancePay" message="tns:IService_ServiceTransferBalancePay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceTransferBalancePayResponse" message="tns:IService_ServiceTransferBalancePay_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelBalancePay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceDelBalancePay" message="tns:IService_ServiceDelBalancePay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceDelBalancePayResponse" message="tns:IService_ServiceDelBalancePay_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetBalancePay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceGetBalancePay" message="tns:IService_ServiceGetBalancePay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceGetBalancePayResponse" message="tns:IService_ServiceGetBalancePay_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddAdminLog">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceAddAdminLog" message="tns:IService_ServiceAddAdminLog_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceAddAdminLogResponse" message="tns:IService_ServiceAddAdminLog_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceSendNotification">
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceSendNotification" message="tns:IService_ServiceSendNotification_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceSendNotificationResponse" message="tns:IService_ServiceSendNotification_InputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceOrderUpdateNotification">
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceOrderUpdateNotification" message="tns:IService_ServiceOrderUpdateNotification_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceOrderUpdateNotificationResponse" message="tns:IService_ServiceOrderUpdateNotification_InputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceTakeoutUpdateNotification">
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceTakeoutUpdateNotification" message="tns:IService_ServiceTakeoutUpdateNotification_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceTakeoutUpdateNotificationResponse" message="tns:IService_ServiceTakeoutUpdateNotification_InputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceProductCountUpdateNotification">
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceProductCountUpdateNotification" message="tns:IService_ServiceProductCountUpdateNotification_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceProductCountUpdateNotificationResponse" message="tns:IService_ServiceProductCountUpdateNotification_InputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDeviceModeUpdateNotification">
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceDeviceModeUpdateNotification" message="tns:IService_ServiceDeviceModeUpdateNotification_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceDeviceModeUpdateNotificationResponse" message="tns:IService_ServiceDeviceModeUpdateNotification_InputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceOrderDetailsAddNotification">
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceOrderDetailsAddNotification" message="tns:IService_ServiceOrderDetailsAddNotification_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceOrderDetailsAddNotificationResponse" message="tns:IService_ServiceOrderDetailsAddNotification_InputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceTakeoutAddNotification">
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceTakeoutAddNotification" message="tns:IService_ServiceTakeoutAddNotification_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceTakeoutAddNotificationResponse" message="tns:IService_ServiceTakeoutAddNotification_InputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceModelUpdateNotification">
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ServiceModelUpdateNotification" message="tns:IService_ServiceModelUpdateNotification_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ServiceModelUpdateNotificationResponse" message="tns:IService_ServiceModelUpdateNotification_InputCallbackMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NetTcpBinding_IService" type="tns:IService">
+    <wsp:PolicyReference URI="#NetTcpBinding_IService_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="ServiceEditAdminLog">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceEditAdminLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelAdminLog">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceDelAdminLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetAdminLog">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceGetAdminLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddMember">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceAddMember" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceEditMember">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceEditMember" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelMember">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceDelMember" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetMembers">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceGetMembers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddMemberPay">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceAddMemberPay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelMemberPay">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceDelMemberPay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetMemberPay">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceGetMemberPay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddSupplier">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceAddSupplier" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceEditSupplier">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceEditSupplier" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelSupplier">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceDelSupplier" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetSupplier">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceGetSupplier" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddSupplierPay">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceAddSupplierPay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelSupplierPay">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceDelSupplierPay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetSupplierPay">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceGetSupplierPay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddPrinter">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceAddPrinter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceEditPrinter">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceEditPrinter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelPrinter">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceDelPrinter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddRequest">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceAddRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceEditRequest">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceEditRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelRequest">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceDelRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddDevice">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceAddDevice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceEditDevice">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceEditDevice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelDevice">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceDelDevice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetLog">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceGetLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceNewRequest">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceNewRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceChangePWD">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceChangePWD" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceUID">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceUID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceSetCon">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceSetCon" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceSend">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceSend" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServicePrint">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServicePrint" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceLock">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceLock" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceClose">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceClose" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetbak">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceGetbak" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceSetbak">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceSetbak" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceSetContent">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceSetContent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceTimeRequestCode">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceTimeRequestCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceRegTime">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceRegTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceCountRequestCode">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceCountRequestCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceRegCount">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceRegCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetModel">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceGetModel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceSession">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceSession" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddRoom">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceAddRoom" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceEditRoom">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceEditRoom" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelRoom">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceDelRoom" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetAllProduct">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceGetAllProduct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddProduct">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceAddProduct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceEditProduct">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceEditProduct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelProduct">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceDelProduct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddProductType">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceAddProductType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceEditProductType">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceEditProductType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelProductType">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceDelProductType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddOrder">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceAddOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceEditOrder">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceEditOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceReplaceOrder">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceReplaceOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetOrders">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceGetOrders" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddOrderDetail">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceAddOrderDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceSaveOrderDetail">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceSaveOrderDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelOrderDetail">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceDelOrderDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetOrderDetail">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceGetOrderDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetOrderPay">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceGetOrderPay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddTakeout">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceAddTakeout" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceEditTakeout">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceEditTakeout" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetTakeout">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceGetTakeout" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceSaveTakeoutDetail">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceSaveTakeoutDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelTakeoutDetail">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceDelTakeoutDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetTakeoutDetail">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceGetTakeoutDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetTakeoutPay">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceGetTakeoutPay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddImportWithDetail">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceAddImportWithDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceEditImport">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceEditImport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetImports">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceGetImports" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGeImportDetail">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceGeImportDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetImportPay">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceGetImportPay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddAdmin">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceAddAdmin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceEditAdmin">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceEditAdmin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceResetAdmin">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceResetAdmin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelAdmin">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceDelAdmin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddAdminPay">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceAddAdminPay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelAdminPay">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceDelAdminPay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetAdminPay">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceGetAdminPay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddBalance">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceAddBalance" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceEditBalance">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceEditBalance" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelBalance">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceDelBalance" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetBalances">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceGetBalances" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddBalancePay">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceAddBalancePay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceTransferBalancePay">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceTransferBalancePay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDelBalancePay">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceDelBalancePay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceGetBalancePay">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceGetBalancePay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceAddAdminLog">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceAddAdminLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceSendNotification">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceSendNotification" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceOrderUpdateNotification">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceOrderUpdateNotification" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceTakeoutUpdateNotification">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceTakeoutUpdateNotification" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceProductCountUpdateNotification">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceProductCountUpdateNotification" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceDeviceModeUpdateNotification">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceDeviceModeUpdateNotification" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceOrderDetailsAddNotification">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceOrderDetailsAddNotification" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceTakeoutAddNotification">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceTakeoutAddNotification" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceModelUpdateNotification">
+      <soap12:operation soapAction="http://tempuri.org/IService/ServiceModelUpdateNotification" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="NetTcpBinding_IService" binding="tns:NetTcpBinding_IService">
+      <soap12:address location="net.tcp://localhost:19998/OybabService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:19998/OybabService</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

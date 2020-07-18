@@ -1,0 +1,333 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <RootNamespace>Oybab.TradingSystemX</RootNamespace>
+    <BaseOutputPath>Y:\NET\TradingSystemX\bin</BaseOutputPath>
+    <BaseIntermediateOutputPath>Y:\NET\TradingSystemX\obj</BaseIntermediateOutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>Y:\NET\TradingSystemX\bin\Debug\TradingSystemX\</OutputPath>
+    <IntermediateOutputPath>Y:\NET\TradingSystemX\obj\TradingSystemX\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>Y:\NET\TradingSystemX\bin\Release\TradingSystemX\</OutputPath>
+    <IntermediateOutputPath>Y:\NET\TradingSystemX\obj\TradingSystemX\Release\</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <UserSecretsId>6b584437-3274-4cfd-81b0-2165c918f149</UserSecretsId>
+    <Authors>Oybab Co., Ltd.</Authors>
+    <Company>Oybab Co., Ltd.</Company>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>OybabSoft.snk</AssemblyOriginatorKeyFile>
+    <Product>Oybab Trading System v1.0</Product>
+    <Copyright>Copyright © Oybab 2013 - 2020</Copyright>
+    <PackageId>com.oybab.tradingSystem</PackageId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="obj\**" />
+    <EmbeddedResource Remove="obj\**" />
+    <None Remove="obj\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Tools\Session2.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Directory.Build.props" />
+    <None Remove="Directory.Build.props.bak" />
+    <None Remove="Directory.Build.props0" />
+    <None Remove="TradingSystemX.csproj.bak" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\TradingSystem\OybabRes\Server\Model\NotificationAlert.cs" Link="Server\Model\NotificationAlert.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabRes\Server\Model\NotificationCache.cs" Link="Server\Model\NotificationCache.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabRes\Server\Model\ResultModel.cs" Link="Server\Model\ResultModel.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabRes\Server\Model\RoomModel.cs" Link="Server\Model\RoomModel.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabRes\Server\Model\ToServerSessionRoomInfo.cs" Link="Server\Model\ToServerSessionRoomInfo.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabRes\Server\Notification.cs" Link="Server\Notification.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabRes\Tools\Ext.cs" Link="Tools\Ext.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Models\ExtendInfo.cs" Link="VM\Models\ServerModel\ExtendInfo.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Models\PrintInfo.cs" Link="VM\Models\ServerModel\PrintInfo.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Models\ProductModel.cs" Link="VM\Models\ServerModel\ProductModel.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Models\ProductTypeModel.cs" Link="VM\Models\ServerModel\ProductTypeModel.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Models\ProductWithCount.cs" Link="VM\Models\ServerModel\ProductWithCount.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Models\SendType.cs" Link="VM\Models\ServerModel\SendType.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Models\ServiceType.cs" Link="VM\Models\ServerModel\ServiceType.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Models\TakeoutModel.cs" Link="VM\Models\ServerModel\TakeoutModel.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Models\ToClientServiceModelUpdateNotification.cs" Link="VM\Models\ServerModel\ToClientServiceModelUpdateNotification.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\AdminLog\ToClientServiceAddAdminLog.cs" Link="VM\Models\Server\AdminLog\ToClientServiceAddAdminLog.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\AdminLog\ToClientServiceDelAdminLog.cs" Link="VM\Models\Server\AdminLog\ToClientServiceDelAdminLog.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\AdminLog\ToClientServiceEditAdminLog.cs" Link="VM\Models\Server\AdminLog\ToClientServiceEditAdminLog.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\AdminLog\ToClientServiceGetAdminLog.cs" Link="VM\Models\Server\AdminLog\ToClientServiceGetAdminLog.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\AdminLog\ToServerServiceAddAdminLog.cs" Link="VM\Models\Server\AdminLog\ToServerServiceAddAdminLog.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\AdminLog\ToServerServiceDelAdminLog.cs" Link="VM\Models\Server\AdminLog\ToServerServiceDelAdminLog.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\AdminLog\ToServerServiceEditAdminLog.cs" Link="VM\Models\Server\AdminLog\ToServerServiceEditAdminLog.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\AdminLog\ToServerServiceGetAdminLog.cs" Link="VM\Models\Server\AdminLog\ToServerServiceGetAdminLog.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\AdminPay\ToClientServiceAddAdminPay.cs" Link="VM\Models\Server\AdminPay\ToClientServiceAddAdminPay.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\AdminPay\ToClientServiceDelAdminPay.cs" Link="VM\Models\Server\AdminPay\ToClientServiceDelAdminPay.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\AdminPay\ToClientServiceGetAdminPay.cs" Link="VM\Models\Server\AdminPay\ToClientServiceGetAdminPay.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\AdminPay\ToServerServiceAddAdminPay.cs" Link="VM\Models\Server\AdminPay\ToServerServiceAddAdminPay.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\AdminPay\ToServerServiceDelAdminPay.cs" Link="VM\Models\Server\AdminPay\ToServerServiceDelAdminPay.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\AdminPay\ToServerServiceGetAdminPay.cs" Link="VM\Models\Server\AdminPay\ToServerServiceGetAdminPay.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Admin\ToClientServiceAddAdmin.cs" Link="VM\Models\Server\Admin\ToClientServiceAddAdmin.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Admin\ToClientServiceDelAdmin.cs" Link="VM\Models\Server\Admin\ToClientServiceDelAdmin.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Admin\ToClientServiceEditAdmin.cs" Link="VM\Models\Server\Admin\ToClientServiceEditAdmin.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Admin\ToClientServiceResetAdmin.cs" Link="VM\Models\Server\Admin\ToClientServiceResetAdmin.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Admin\ToServerServiceAddAdmin.cs" Link="VM\Models\Server\Admin\ToServerServiceAddAdmin.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Admin\ToServerServiceDelAdmin.cs" Link="VM\Models\Server\Admin\ToServerServiceDelAdmin.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Admin\ToServerServiceEditAdmin.cs" Link="VM\Models\Server\Admin\ToServerServiceEditAdmin.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Admin\ToServerServiceResetAdmin.cs" Link="VM\Models\Server\Admin\ToServerServiceResetAdmin.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\BalancePay\ToClientServiceAddBalancePay.cs" Link="VM\Models\Server\BalancePay\ToClientServiceAddBalancePay.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\BalancePay\ToClientServiceDelBalancePay.cs" Link="VM\Models\Server\BalancePay\ToClientServiceDelBalancePay.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\BalancePay\ToClientServiceGetBalancePay.cs" Link="VM\Models\Server\BalancePay\ToClientServiceGetBalancePay.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\BalancePay\ToClientServiceTransferBalancePay.cs" Link="VM\Models\Server\BalancePay\ToClientServiceTransferBalancePay.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\BalancePay\ToServerServiceAddBalancePay.cs" Link="VM\Models\Server\BalancePay\ToServerServiceAddBalancePay.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\BalancePay\ToServerServiceDelBalancePay.cs" Link="VM\Models\Server\BalancePay\ToServerServiceDelBalancePay.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\BalancePay\ToServerServiceGetBalancePay.cs" Link="VM\Models\Server\BalancePay\ToServerServiceGetBalancePay.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\BalancePay\ToServerServiceTransferBalancePay.cs" Link="VM\Models\Server\BalancePay\ToServerServiceTransferBalancePay.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Balance\ToClientServiceAddBalance.cs" Link="VM\Models\Server\Balance\ToClientServiceAddBalance.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Balance\ToClientServiceDelBalance.cs" Link="VM\Models\Server\Balance\ToClientServiceDelBalance.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Balance\ToClientServiceEditBalance.cs" Link="VM\Models\Server\Balance\ToClientServiceEditBalance.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Balance\ToClientServiceGetBalance.cs" Link="VM\Models\Server\Balance\ToClientServiceGetBalance.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Balance\ToServerServiceAddBalance.cs" Link="VM\Models\Server\Balance\ToServerServiceAddBalance.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Balance\ToServerServiceDelBalance.cs" Link="VM\Models\Server\Balance\ToServerServiceDelBalance.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Balance\ToServerServiceEditBalance.cs" Link="VM\Models\Server\Balance\ToServerServiceEditBalance.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Balance\ToServerServiceGetBalance.cs" Link="VM\Models\Server\Balance\ToServerServiceGetBalance.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToClientServiceChangePWD.cs" Link="VM\Models\Server\Common\ToClientServiceChangePWD.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToClientServiceClose.cs" Link="VM\Models\Server\Common\ToClientServiceClose.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToClientServiceGetbak.cs" Link="VM\Models\Server\Common\ToClientServiceGetbak.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToClientServiceGetModel.cs" Link="VM\Models\Server\Common\ToClientServiceGetModel.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToClientServiceLock.cs" Link="VM\Models\Server\Common\ToClientServiceLock.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToClientServiceNewRequest.cs" Link="VM\Models\Server\Common\ToClientServiceNewRequest.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToClientServicePrint.cs" Link="VM\Models\Server\Common\ToClientServicePrint.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToClientServiceRegCount.cs" Link="VM\Models\Server\Common\ToClientServiceRegCount.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToClientServiceRegTime.cs" Link="VM\Models\Server\Common\ToClientServiceRegTime.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToClientServiceRequestCountCode.cs" Link="VM\Models\Server\Common\ToClientServiceRequestCountCode.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToClientServiceRequestTimeCode.cs" Link="VM\Models\Server\Common\ToClientServiceRequestTimeCode.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToClientServiceSend.cs" Link="VM\Models\Server\Common\ToClientServiceSend.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToClientServiceSendNotification.cs" Link="VM\Models\Server\Common\ToClientServiceSendNotification.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToClientServiceSession.cs" Link="VM\Models\Server\Common\ToClientServiceSession.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToClientServiceSetbak.cs" Link="VM\Models\Server\Common\ToClientServiceSetbak.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToClientServiceSetCon.cs" Link="VM\Models\Server\Common\ToClientServiceSetCon.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToClientServiceSetContent.cs" Link="VM\Models\Server\Common\ToClientServiceSetContent.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToClientServiceUID.cs" Link="VM\Models\Server\Common\ToClientServiceUID.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToServerServiceChangePWD.cs" Link="VM\Models\Server\Common\ToServerServiceChangePWD.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToServerServiceClose.cs" Link="VM\Models\Server\Common\ToServerServiceClose.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToServerServiceGetbak.cs" Link="VM\Models\Server\Common\ToServerServiceGetbak.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToServerServiceGetModel.cs" Link="VM\Models\Server\Common\ToServerServiceGetModel.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToServerServiceLock.cs" Link="VM\Models\Server\Common\ToServerServiceLock.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToServerServiceNewRequest.cs" Link="VM\Models\Server\Common\ToServerServiceNewRequest.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToServerServicePrint.cs" Link="VM\Models\Server\Common\ToServerServicePrint.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToServerServiceRegCount.cs" Link="VM\Models\Server\Common\ToServerServiceRegCount.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToServerServiceRegTime.cs" Link="VM\Models\Server\Common\ToServerServiceRegTime.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToServerServiceRequestCountCode.cs" Link="VM\Models\Server\Common\ToServerServiceRequestCountCode.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToServerServiceRequestTimeCode.cs" Link="VM\Models\Server\Common\ToServerServiceRequestTimeCode.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToServerServiceSend.cs" Link="VM\Models\Server\Common\ToServerServiceSend.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToServerServiceSession.cs" Link="VM\Models\Server\Common\ToServerServiceSession.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToServerServiceSetbak.cs" Link="VM\Models\Server\Common\ToServerServiceSetbak.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToServerServiceSetCon.cs" Link="VM\Models\Server\Common\ToServerServiceSetCon.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToServerServiceSetContent.cs" Link="VM\Models\Server\Common\ToServerServiceSetContent.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToServerServiceUID.cs" Link="VM\Models\Server\Common\ToServerServiceUID.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Common\ToServerSessionRoomInfo.cs" Link="VM\Models\Server\Common\ToServerSessionRoomInfo.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Device\ToClientServiceAddDevice.cs" Link="VM\Models\Server\Device\ToClientServiceAddDevice.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Device\ToClientServiceDelDevice.cs" Link="VM\Models\Server\Device\ToClientServiceDelDevice.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Device\ToClientServiceDeviceModeUpdateNotification.cs" Link="VM\Models\Server\Device\ToClientServiceDeviceModeUpdateNotification.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Device\ToClientServiceEditDevice.cs" Link="VM\Models\Server\Device\ToClientServiceEditDevice.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Device\ToServerServiceAddDevice.cs" Link="VM\Models\Server\Device\ToServerServiceAddDevice.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Device\ToServerServiceDelDevice.cs" Link="VM\Models\Server\Device\ToServerServiceDelDevice.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Device\ToServerServiceEditDevice.cs" Link="VM\Models\Server\Device\ToServerServiceEditDevice.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\ImportDetail\ToClientServiceAddImportDetail.cs" Link="VM\Models\Server\ImportDetail\ToClientServiceAddImportDetail.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\ImportDetail\ToClientServiceDelImportDetail.cs" Link="VM\Models\Server\ImportDetail\ToClientServiceDelImportDetail.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\ImportDetail\ToClientServiceEditImportDetail.cs" Link="VM\Models\Server\ImportDetail\ToClientServiceEditImportDetail.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\ImportDetail\ToClientServiceGetImportDetail.cs" Link="VM\Models\Server\ImportDetail\ToClientServiceGetImportDetail.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\ImportDetail\ToServerServiceAddImportDetail.cs" Link="VM\Models\Server\ImportDetail\ToServerServiceAddImportDetail.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\ImportDetail\ToServerServiceDelImportDetail.cs" Link="VM\Models\Server\ImportDetail\ToServerServiceDelImportDetail.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\ImportDetail\ToServerServiceEditImportDetail.cs" Link="VM\Models\Server\ImportDetail\ToServerServiceEditImportDetail.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\ImportDetail\ToServerServiceGetImportDetail.cs" Link="VM\Models\Server\ImportDetail\ToServerServiceGetImportDetail.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Import\ToClientServiceEditImport.cs" Link="VM\Models\Server\Import\ToClientServiceEditImport.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Import\ToClientServiceGetImports.cs" Link="VM\Models\Server\Import\ToClientServiceGetImports.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Import\ToClientServiceNewImport.cs" Link="VM\Models\Server\Import\ToClientServiceNewImport.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Import\ToServerServiceEditImport.cs" Link="VM\Models\Server\Import\ToServerServiceEditImport.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Import\ToServerServiceGetImports.cs" Link="VM\Models\Server\Import\ToServerServiceGetImports.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Import\ToServerServiceNewImport.cs" Link="VM\Models\Server\Import\ToServerServiceNewImport.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Log\ToClientServiceGetLog.cs" Link="VM\Models\Server\Log\ToClientServiceGetLog.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Log\ToServerServiceGetLog.cs" Link="VM\Models\Server\Log\ToServerServiceGetLog.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\MemberPay\ToClientServiceAddMemberPay.cs" Link="VM\Models\Server\MemberPay\ToClientServiceAddMemberPay.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\MemberPay\ToClientServiceDelMemberPay.cs" Link="VM\Models\Server\MemberPay\ToClientServiceDelMemberPay.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\MemberPay\ToClientServiceGetMemberPay.cs" Link="VM\Models\Server\MemberPay\ToClientServiceGetMemberPay.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\MemberPay\ToServerServiceAddMemberPay.cs" Link="VM\Models\Server\MemberPay\ToServerServiceAddMemberPay.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\MemberPay\ToServerServiceDelMemberPay.cs" Link="VM\Models\Server\MemberPay\ToServerServiceDelMemberPay.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\MemberPay\ToServerServiceGetMemberPay.cs" Link="VM\Models\Server\MemberPay\ToServerServiceGetMemberPay.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Member\ToClientServiceAddMember.cs" Link="VM\Models\Server\Member\ToClientServiceAddMember.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Member\ToClientServiceDelMember.cs" Link="VM\Models\Server\Member\ToClientServiceDelMember.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Member\ToClientServiceEditMember.cs" Link="VM\Models\Server\Member\ToClientServiceEditMember.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Member\ToClientServiceGetMember.cs" Link="VM\Models\Server\Member\ToClientServiceGetMember.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Member\ToServerServiceAddMember.cs" Link="VM\Models\Server\Member\ToServerServiceAddMember.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Member\ToServerServiceDelMember.cs" Link="VM\Models\Server\Member\ToServerServiceDelMember.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Member\ToServerServiceEditMember.cs" Link="VM\Models\Server\Member\ToServerServiceEditMember.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Member\ToServerServiceGetMember.cs" Link="VM\Models\Server\Member\ToServerServiceGetMember.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\OrderDetail\ToClientServiceAddOrderDetail.cs" Link="VM\Models\Server\OrderDetail\ToClientServiceAddOrderDetail.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\OrderDetail\ToClientServiceDelOrderDetail.cs" Link="VM\Models\Server\OrderDetail\ToClientServiceDelOrderDetail.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\OrderDetail\ToClientServiceGetOrderDetail.cs" Link="VM\Models\Server\OrderDetail\ToClientServiceGetOrderDetail.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\OrderDetail\ToClientServiceOrderTakeoutAddNotification.cs" Link="VM\Models\Server\OrderDetail\ToClientServiceOrderTakeoutAddNotification.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\OrderDetail\ToClientServiceSaveOrderDetail.cs" Link="VM\Models\Server\OrderDetail\ToClientServiceSaveOrderDetail.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\OrderDetail\ToServerServiceAddOrderDetail.cs" Link="VM\Models\Server\OrderDetail\ToServerServiceAddOrderDetail.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\OrderDetail\ToServerServiceDelOrderDetail.cs" Link="VM\Models\Server\OrderDetail\ToServerServiceDelOrderDetail.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\OrderDetail\ToServerServiceGetOrderDetail.cs" Link="VM\Models\Server\OrderDetail\ToServerServiceGetOrderDetail.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\OrderDetail\ToServerServiceSaveOrderDetail.cs" Link="VM\Models\Server\OrderDetail\ToServerServiceSaveOrderDetail.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Order\ToClientServiceEditOrder.cs" Link="VM\Models\Server\Order\ToClientServiceEditOrder.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Order\ToClientServiceGetOrders.cs" Link="VM\Models\Server\Order\ToClientServiceGetOrders.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Order\ToClientServiceNewOrder.cs" Link="VM\Models\Server\Order\ToClientServiceNewOrder.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Order\ToClientServiceOrderUpdateNotification.cs" Link="VM\Models\Server\Order\ToClientServiceOrderUpdateNotification.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Order\ToClientServiceReplaceOrder.cs" Link="VM\Models\Server\Order\ToClientServiceReplaceOrder.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Order\ToServerServiceEditOrder.cs" Link="VM\Models\Server\Order\ToServerServiceEditOrder.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Order\ToServerServiceGetOrders.cs" Link="VM\Models\Server\Order\ToServerServiceGetOrders.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Order\ToServerServiceNewOrder.cs" Link="VM\Models\Server\Order\ToServerServiceNewOrder.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Order\ToServerServiceReplaceOrder.cs" Link="VM\Models\Server\Order\ToServerServiceReplaceOrder.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Printer\ToClientServiceAddPrinter.cs" Link="VM\Models\Server\Printer\ToClientServiceAddPrinter.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Printer\ToClientServiceDelPrinter.cs" Link="VM\Models\Server\Printer\ToClientServiceDelPrinter.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Printer\ToClientServiceEditPrinter.cs" Link="VM\Models\Server\Printer\ToClientServiceEditPrinter.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Printer\ToServerServiceAddPrinter.cs" Link="VM\Models\Server\Printer\ToServerServiceAddPrinter.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Printer\ToServerServiceDelPrinter.cs" Link="VM\Models\Server\Printer\ToServerServiceDelPrinter.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Printer\ToServerServiceEditPrinter.cs" Link="VM\Models\Server\Printer\ToServerServiceEditPrinter.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\ProductType\ToClientServiceAddProductType.cs" Link="VM\Models\Server\ProductType\ToClientServiceAddProductType.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\ProductType\ToClientServiceDelProductType.cs" Link="VM\Models\Server\ProductType\ToClientServiceDelProductType.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\ProductType\ToClientServiceEditProductType.cs" Link="VM\Models\Server\ProductType\ToClientServiceEditProductType.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\ProductType\ToServerServiceAddProductType.cs" Link="VM\Models\Server\ProductType\ToServerServiceAddProductType.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\ProductType\ToServerServiceDelProductType.cs" Link="VM\Models\Server\ProductType\ToServerServiceDelProductType.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\ProductType\ToServerServiceEditProductType.cs" Link="VM\Models\Server\ProductType\ToServerServiceEditProductType.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Product\ToClientServiceAddProduct.cs" Link="VM\Models\Server\Product\ToClientServiceAddProduct.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Product\ToClientServiceDelProduct.cs" Link="VM\Models\Server\Product\ToClientServiceDelProduct.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Product\ToClientServiceEditProduct.cs" Link="VM\Models\Server\Product\ToClientServiceEditProduct.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Product\ToClientServiceGetAllProduct.cs" Link="VM\Models\Server\Product\ToClientServiceGetAllProduct.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Product\ToClientServiceProductCountUpdateNotification.cs" Link="VM\Models\Server\Product\ToClientServiceProductCountUpdateNotification.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Product\ToServerServiceAddProduct.cs" Link="VM\Models\Server\Product\ToServerServiceAddProduct.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Product\ToServerServiceDelProduct.cs" Link="VM\Models\Server\Product\ToServerServiceDelProduct.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Product\ToServerServiceEditProduct.cs" Link="VM\Models\Server\Product\ToServerServiceEditProduct.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Product\ToServerServiceGetAllProduct.cs" Link="VM\Models\Server\Product\ToServerServiceGetAllProduct.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Request\ToClientServiceAddRequest.cs" Link="VM\Models\Server\Request\ToClientServiceAddRequest.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Request\ToClientServiceDelRequest.cs" Link="VM\Models\Server\Request\ToClientServiceDelRequest.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Request\ToClientServiceEditRequest.cs" Link="VM\Models\Server\Request\ToClientServiceEditRequest.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Request\ToServerServiceAddRequest.cs" Link="VM\Models\Server\Request\ToServerServiceAddRequest.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Request\ToServerServiceDelRequest.cs" Link="VM\Models\Server\Request\ToServerServiceDelRequest.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Request\ToServerServiceEditRequest.cs" Link="VM\Models\Server\Request\ToServerServiceEditRequest.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Room\ToClientServiceAddRoom.cs" Link="VM\Models\Server\Room\ToClientServiceAddRoom.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Room\ToClientServiceDelRoom.cs" Link="VM\Models\Server\Room\ToClientServiceDelRoom.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Room\ToClientServiceEditRoom.cs" Link="VM\Models\Server\Room\ToClientServiceEditRoom.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Room\ToServerServiceAddRoom.cs" Link="VM\Models\Server\Room\ToServerServiceAddRoom.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Room\ToServerServiceDelRoom.cs" Link="VM\Models\Server\Room\ToServerServiceDelRoom.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Room\ToServerServiceEditRoom.cs" Link="VM\Models\Server\Room\ToServerServiceEditRoom.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\ServiceExceptionType.cs" Link="VM\Models\Server\ServiceExceptionType.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\SupplierPay\ToClientServiceAddSupplierPay.cs" Link="VM\Models\Server\SupplierPay\ToClientServiceAddSupplierPay.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\SupplierPay\ToClientServiceDelSupplierPay.cs" Link="VM\Models\Server\SupplierPay\ToClientServiceDelSupplierPay.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\SupplierPay\ToClientServiceGetSupplierPay.cs" Link="VM\Models\Server\SupplierPay\ToClientServiceGetSupplierPay.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\SupplierPay\ToServerServiceAddSupplierPay.cs" Link="VM\Models\Server\SupplierPay\ToServerServiceAddSupplierPay.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\SupplierPay\ToServerServiceDelSupplierPay.cs" Link="VM\Models\Server\SupplierPay\ToServerServiceDelSupplierPay.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\SupplierPay\ToServerServiceGetSupplierPay.cs" Link="VM\Models\Server\SupplierPay\ToServerServiceGetSupplierPay.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Supplier\ToClientServiceAddSupplier.cs" Link="VM\Models\Server\Supplier\ToClientServiceAddSupplier.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Supplier\ToClientServiceDelSupplier.cs" Link="VM\Models\Server\Supplier\ToClientServiceDelSupplier.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Supplier\ToClientServiceEditSupplier.cs" Link="VM\Models\Server\Supplier\ToClientServiceEditSupplier.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Supplier\ToClientServiceGetSupplier.cs" Link="VM\Models\Server\Supplier\ToClientServiceGetSupplier.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Supplier\ToServerServiceAddSupplier.cs" Link="VM\Models\Server\Supplier\ToServerServiceAddSupplier.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Supplier\ToServerServiceDelSupplier.cs" Link="VM\Models\Server\Supplier\ToServerServiceDelSupplier.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Supplier\ToServerServiceEditSupplier.cs" Link="VM\Models\Server\Supplier\ToServerServiceEditSupplier.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Supplier\ToServerServiceGetSupplier.cs" Link="VM\Models\Server\Supplier\ToServerServiceGetSupplier.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\TakeoutDetail\ToClientServiceAddTakeoutDetail.cs" Link="VM\Models\Server\TakeoutDetail\ToClientServiceAddTakeoutDetail.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\TakeoutDetail\ToClientServiceDelTakeoutDetail.cs" Link="VM\Models\Server\TakeoutDetail\ToClientServiceDelTakeoutDetail.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\TakeoutDetail\ToClientServiceGetTakeoutDetail.cs" Link="VM\Models\Server\TakeoutDetail\ToClientServiceGetTakeoutDetail.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\TakeoutDetail\ToClientServiceSaveTakeoutDetail.cs" Link="VM\Models\Server\TakeoutDetail\ToClientServiceSaveTakeoutDetail.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\TakeoutDetail\ToClientServiceTakeoutDetailsAddNotification.cs" Link="VM\Models\Server\TakeoutDetail\ToClientServiceTakeoutDetailsAddNotification.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\TakeoutDetail\ToServerServiceAddTakeoutDetail.cs" Link="VM\Models\Server\TakeoutDetail\ToServerServiceAddTakeoutDetail.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\TakeoutDetail\ToServerServiceDelTakeoutDetail.cs" Link="VM\Models\Server\TakeoutDetail\ToServerServiceDelTakeoutDetail.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\TakeoutDetail\ToServerServiceGetTakeoutDetail.cs" Link="VM\Models\Server\TakeoutDetail\ToServerServiceGetTakeoutDetail.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\TakeoutDetail\ToServerServiceSaveTakeoutDetail.cs" Link="VM\Models\Server\TakeoutDetail\ToServerServiceSaveTakeoutDetail.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Takeout\ToClientServiceEditTakeout.cs" Link="VM\Models\Server\Takeout\ToClientServiceEditTakeout.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Takeout\ToClientServiceGetTakeouts.cs" Link="VM\Models\Server\Takeout\ToClientServiceGetTakeouts.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Takeout\ToClientServiceNewTakeout.cs" Link="VM\Models\Server\Takeout\ToClientServiceNewTakeout.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Takeout\ToClientServiceTakeoutUpdateNotification.cs" Link="VM\Models\Server\Takeout\ToClientServiceTakeoutUpdateNotification.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Takeout\ToServerServiceEditTakeout.cs" Link="VM\Models\Server\Takeout\ToServerServiceEditTakeout.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Takeout\ToServerServiceGetTakeouts.cs" Link="VM\Models\Server\Takeout\ToServerServiceGetTakeouts.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Takeout\ToServerServiceNewTakeout.cs" Link="VM\Models\Server\Takeout\ToServerServiceNewTakeout.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\ToClientService.cs" Link="VM\Models\Server\ToClientService.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\ToServerService.cs" Link="VM\Models\Server\ToServerService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\..\TradingSystem\OybabServerManager\Resource.en-US.resx" Link="Res\Resource.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\TradingSystem\OybabServerManager\Resource.ug-CN.resx" Link="Res\Resource.ug-CN.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\TradingSystem\OybabServerManager\Resource.zh-CN.resx" Link="Res\Resource.zh-CN.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.SignalR.Client" Version="2.4.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="System.Globalization" Version="4.3.0" />
+    <PackageReference Include="Xamarin.Forms" Version="4.7.0.1142" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+    <PackageReference Include="ZXing.Net.Mobile" Version="2.4.1" />
+    <PackageReference Include="ZXing.Net.Mobile.Forms" Version="2.4.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="MainPageOld.xaml.cs">
+      <DependentUpon>MainPageOld.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\Navigations\MasterDetailNPage.xaml.cs">
+      <DependentUpon>MasterDetailNPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\ImportPage.xaml.cs">
+      <DependentUpon>ImportPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\ImportCheckoutPage.xaml.cs">
+      <DependentUpon>ImportCheckoutPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\Themes\PublicTheme.xaml.cs">
+      <DependentUpon>PublicTheme.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pages\Styles\" />
+    <Folder Include="Server\Model\" />
+    <Folder Include="VM\Models\Server\Admin\" />
+    <Folder Include="VM\Models\Server\AdminLog\" />
+    <Folder Include="VM\Models\Server\AdminPay\" />
+    <Folder Include="VM\Models\Server\Balance\" />
+    <Folder Include="VM\Models\Server\BalancePay\" />
+    <Folder Include="VM\Models\Server\Common\" />
+    <Folder Include="VM\Models\Server\Device\" />
+    <Folder Include="VM\Models\Server\Import\" />
+    <Folder Include="VM\Models\Server\ImportDetail\" />
+    <Folder Include="VM\Models\Server\Log\" />
+    <Folder Include="VM\Models\Server\Member\" />
+    <Folder Include="VM\Models\Server\MemberPay\" />
+    <Folder Include="VM\Models\Server\Order\" />
+    <Folder Include="VM\Models\Server\OrderDetail\" />
+    <Folder Include="VM\Models\Server\Printer\" />
+    <Folder Include="VM\Models\Server\Product\" />
+    <Folder Include="VM\Models\Server\ProductType\" />
+    <Folder Include="VM\Models\Server\Request\" />
+    <Folder Include="VM\Models\Server\Room\" />
+    <Folder Include="VM\Models\Server\Supplier\" />
+    <Folder Include="VM\Models\Server\SupplierPay\" />
+    <Folder Include="VM\Models\Server\Takeout\" />
+    <Folder Include="VM\Models\Server\TakeoutDetail\" />
+    <Folder Include="VM\Models\ServerModel\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Pages\Themes\PublicTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\Themes\DarkTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\Themes\LightTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

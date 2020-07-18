@@ -1,0 +1,130 @@
+﻿<Window x:Class="Oybab.ServiceTablet.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:control="clr-namespace:Oybab.ServiceTablet.Resources.Controls"
+        Width="1024" Height="768" WindowState="Normal"  UseLayoutRounding="True" x:Name="window" Title="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=SoftServiceName}" WindowStyle="None" AllowsTransparency="True" Background="{x:Null}" WindowStartupLocation="CenterScreen" Icon="/ServiceTablet;component/TradingSystem.ico">
+    <Window.InputBindings>
+        <KeyBinding Key="Enter" Command="{Binding EnterCommand}" />
+    </Window.InputBindings>
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary  Source="/ServiceTablet;component/Resources/Styles/Pages/LoginWindowStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Grid Style="{StaticResource grdCommonBackgroundStyle}" Height="{Binding ElementName=window, Path=ActualHeight}" Width="{Binding ElementName=window, Path=ActualWidth}">
+            <!-- Company name -->
+            <Label Style="{StaticResource lbTopCompanyNameStyle}"/>
+            <!-- Top Warn -->
+            <Grid Style="{StaticResource grdTopWarnStyle}" x:Name="grdTopWarn">
+                <Grid Style="{StaticResource grdTopWarnBackStyle}" Width="{Binding ElementName=window, Path=ActualWidth}"/>
+                <WrapPanel Style="{StaticResource wpTopWarnWrapStyle}">
+                    <Image Style="{StaticResource imgTopWarnImageStyle}"/>
+                    <Label Style="{StaticResource lbTopWarnContentStyle}" x:Name="lbTopWarnContent" Content="{Binding Msg}"/>
+                </WrapPanel>
+            </Grid>
+            <!-- Center logo -->
+            <StackPanel Style="{StaticResource wpCenterLogoStackStyle}">
+                <WrapPanel Style="{StaticResource wpTopWarnWrapStyle}">
+                    <Image Style="{StaticResource imgLogoImageStyle}"/>
+                    <WrapPanel Style="{StaticResource wpCenterLogoContentWrapStyle}">
+                        <Label Style="{StaticResource lbLogoTitleStyle}" />
+                        <Label Style="{StaticResource lbLogoVersionStyle}" />
+                    </WrapPanel>
+                </WrapPanel>
+                <Grid>
+                    <!-- loading animation -->
+                    <Grid x:Name="grdOperateLoading" Style="{StaticResource grdOperateLoadingStyle}">
+                        <Image x:Name="imgLoading" Style="{StaticResource imgOperateLoadingImageStyle}">
+                            <Image.RenderTransform>
+                                <RotateTransform x:Name="AnimatedRotateTransform"/>
+                            </Image.RenderTransform>
+                            
+                        </Image>
+                    </Grid>
+                    <!-- textbox and pass -->
+                    <Grid x:Name="grdInputParent" Style="{StaticResource grdOperateLoginStyle}">
+                        <StackPanel>
+                            <Border Style="{StaticResource bdOperateLoginBorderStyle}">
+                                <StackPanel Style="{StaticResource spOperateLoginBorderChildStyle}">
+                                    <WrapPanel Style="{StaticResource wpOperateLoginContentParentStyle}">
+                                        <Image Style="{StaticResource imgOperateLoginContentUserImageStyle}"/>
+                                        <TextBox x:Name="tbAdminNo" Style="{StaticResource tbOperateLoginContentUserTextboxStyle}"  Text="{Binding AdminNo, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" GotFocus="tbAdminNo_GotFocus"/>
+                                    </WrapPanel>
+                                    <Line X1="90" X2="615" Stroke="#FEFEFD" StrokeThickness="2"/>
+                                    <WrapPanel Style="{StaticResource wpOperateLoginContentParentStyle}">
+                                        <Image Style="{StaticResource imgOperateLoginContentPasswordImageStyle}"/>
+                                        <TextBox x:Name="pbPassword" Style="{StaticResource pbOperateLoginContentPasswordboxStyle}" Tag="{Binding TempPassword, UpdateSourceTrigger=PropertyChanged}" Text="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" GotFocus="pbPassword_GotFocus"/>
+                                    </WrapPanel>
+                                </StackPanel>
+                            </Border>
+                            <!-- Login buttons -->
+                            <WrapPanel Style="{StaticResource wpOperateLoginBtnsParentStyle}">
+                                <Button x:Name="btnLogin" Style="{StaticResource btnLoginStyle}" Command="{Binding LoginCommand}"/>
+                                <Button x:Name="btnReset" Style="{StaticResource btnResetStyle}" Command="{Binding ResetCommand}"/>
+                                <Button x:Name="btnExit" Style="{StaticResource btnExitStyle}" Command="{Binding ExitCommand}"/>
+                            </WrapPanel>
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+            </StackPanel>
+
+            <WrapPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0, 0, 30, 30" Style="{StaticResource wpSettingButtonParentStyle}">
+                <Button Style="{StaticResource btnSettingStyle}" Command="{Binding SettingCommand}"/>
+            </WrapPanel>
+        </Grid>
+
+        <!-- Change Setting -->
+        <Grid Style="{StaticResource grdSettingParentStyle}" DataContext="{Binding Setting}">
+            <control:SettingControl x:Name="crlSetting"/>
+        </Grid>
+
+        <!-- Keyboard -->
+        <control:KeyboardLittleControl x:Name="keyboard" Style="{StaticResource ctrKeyboardStyle}"  DataContext="{Binding KeyboardLittle}"/>
+
+
+
+        <!-- Message for expired -->
+
+        <Grid Style="{StaticResource grdMessageboxParentStyle}">
+            <Grid Style="{StaticResource grdMessageboxParentBackgroundStyle}"/>
+            <Border Style="{StaticResource bdMessageboxBorderStyle}" >
+                <Grid Margin="80, 50">
+                    <StackPanel>
+                        <WrapPanel Style="{StaticResource wpMessageboxWrapStyle}">
+                            <Image Style="{StaticResource imgMessageboxWarnStyle}"/>
+                            <TextBlock Style="{StaticResource tbMessageboxWarnContentStyle}" Text="{Binding AlertMsg, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+                        </WrapPanel>
+                        <!-- Buttons for expire in 30 days -->
+                        <WrapPanel Style="{StaticResource wpMessagebox30ButtonWrapStyle}">
+                            <Button Style="{StaticResource btnMsgNoStyle}" Command="{Binding NoCommand}"/>
+                            <Button Style="{StaticResource btnMsgYesStyle}" Command="{Binding YesCommand}"/>
+                        </WrapPanel>
+                        <!-- Buttons for expire in 7 days -->
+                        <WrapPanel Style="{StaticResource wpMessagebox7ButtonWrapStyle}">
+                            <Button Style="{StaticResource btnMsgOKStyle}"  Command="{Binding NoCommand}"/>
+                        </WrapPanel>
+                        <!-- Buttons for already expired -->
+                        <WrapPanel Style="{StaticResource wpMessagebox0ButtonWrapStyle}">
+                            <Button Style="{StaticResource btnMsgExitStyle}" Command="{Binding ExitCommand}"/>
+                            <Button Style="{StaticResource btnMsgYesStyle}" Command="{Binding YesCommand}"/>
+                        </WrapPanel>
+                        <!-- Buttons for exit -->
+                        <WrapPanel Style="{StaticResource wpMessageboxExitButtonWrapStyle}">
+                            <Button Style="{StaticResource btnMsgExitStyle}" Command="{Binding ExitCommand}"/>
+                        </WrapPanel>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </Grid>
+
+
+        <!-- Alert Msg -->
+        <Grid Style="{StaticResource grdMessageboxParentStyle2}" DataContext="{Binding Msgs}">
+            <control:MsgControl x:Name="ctrMsg"/>
+        </Grid>
+
+    </Grid>
+</Window>

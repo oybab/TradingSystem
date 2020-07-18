@@ -1,0 +1,300 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary  Source="/ServicePC;component/Pos/Styles/PublicStyle.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+
+
+    <!-- 背景 -->
+    <Style x:Key="grdCommonBackgroundStyle" TargetType="{x:Type Grid}">
+        <Setter Property="Background" Value="#000000"/>
+    </Style>
+
+
+    <!-- 顶部背景 -->
+    <Style x:Key="grdTopStyle" TargetType="{x:Type Grid}">
+        <Setter Property="Background" Value="#1D3551"/>
+    </Style>
+
+
+    <!-- 左边顶部logo 系统标题 -->
+    <Style x:Key="lbTopLogoTitleStyle" TargetType="{x:Type Label}">
+        <Setter Property="Margin" Value="20,0"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Content" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=SoftServiceName}"/>
+        <Setter Property="FontSize" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=PosTopTitleFontSize}"/>
+        <Setter Property="FontFamily" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+    </Style>
+
+    <!-- 左边顶部logo 系统版本 -->
+    <Style x:Key="lbTopLogoVersionStyle" TargetType="{x:Type Label}">
+        <Setter Property="Margin" Value="3,0,0,0"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Content" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=SoftServiceVersion}"/>
+        <Setter Property="FontSize" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=PosTopTitleFontSize}"/>
+        <Setter Property="FontFamily" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+    </Style>
+
+
+
+
+
+    <!-- 拥有者标题 -->
+    <Style x:Key="tbOwenerNameStyle" TargetType="TextBlock">
+        <Setter Property="TextWrapping" Value="Wrap"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="FlowDirection" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=DirectionMode}"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontSize" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=PosTopTitleFontSize}"/>
+        <Setter Property="FontFamily" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+        <Setter Property="Margin" Value="20,0"/>
+    </Style>
+
+
+
+
+
+    <!-- 价格信息背景 -->
+    <Style x:Key="bdListStyle" TargetType="{x:Type Border}">
+        <Setter Property="Background" Value="#1D3551"/>
+        <Setter Property="CornerRadius" Value="20"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Margin" Value="4,0"/>
+    </Style>
+
+    <!-- 价格信息背景 -->
+    <Style x:Key="bdPriceStyle" TargetType="{x:Type Border}" BasedOn="{StaticResource bdListStyle}">
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding DisplayMode}" Value="1">
+                <Setter Property="Visibility" Value="Collapsed"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding DisplayMode}" Value="3">
+                <Setter Property="Visibility" Value="Collapsed"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+
+
+    <Style x:Key="lbTotalPriceStyle" TargetType="{x:Type Label}">
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="Padding" Value="0"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontSize" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=PosTotalPriceFontSize}"/>
+        <Setter Property="FontFamily" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+    </Style>
+
+    <Style x:Key="lbCountPriceStyle" TargetType="{x:Type Label}">
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="Padding" Value="0"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontSize" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=PosCountFontSize}"/>
+        <Setter Property="FontFamily" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+    </Style>
+
+
+    <Style x:Key="tbKeyStyle" TargetType="TextBlock">
+        <Setter Property="TextWrapping" Value="Wrap"/>
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="FlowDirection" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=DirectionMode}"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontSize" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=PosDescriptionFontSize}"/>
+        <Setter Property="FontFamily" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+        <Setter Property="Margin" Value="18"/>
+    </Style>
+
+
+  
+
+
+    <!-- 用户图 -->
+    <Style x:Key="imgUserImageStyle" TargetType="Image">
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Width" Value="25"/>
+        <Setter Property="Height" Value="25"/>
+        <Setter Property="Source" Value="pack://application:,,,/Res;component/Resources/Images/Pos/User_White.png"/>
+        <Setter Property="Stretch" Value="None"/>
+    </Style>
+    <Style x:Key="imgSearchImageStyle" TargetType="Image">
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Width" Value="23"/>
+        <Setter Property="Height" Value="23"/>
+        <Setter Property="Source" Value="pack://application:,,,/Res;component/Resources/Images/Pos/Searchlittle_White.png"/>
+        <Setter Property="Stretch" Value="None"/>
+    </Style>
+    <Style x:Key="imgSelectedImageStyle" TargetType="Image">
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Width" Value="24"/>
+        <Setter Property="Height" Value="22"/>
+        <Setter Property="Source" Value="pack://application:,,,/Res;component/Resources/Images/Pos/ShoppingCart_White.png"/>
+        <Setter Property="Stretch" Value="None"/>
+    </Style>
+    <Style x:Key="imgLanguageImageStyle" TargetType="Image">
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Width" Value="26"/>
+        <Setter Property="Height" Value="26"/>
+        <Setter Property="Source" Value="pack://application:,,,/Res;component/Resources/Images/Pos/Language_White.png"/>
+        <Setter Property="Stretch" Value="None"/>
+    </Style>
+
+
+    <Style x:Key="lbListIconTitleStyle" TargetType="{x:Type Label}">
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="Padding" Value="0"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontSize" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=PosDescriptionFontSize}"/>
+        <Setter Property="FontFamily" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+    </Style>
+
+    <Style x:Key="lbListIconLanguageTitleStyle" TargetType="{x:Type Label}" BasedOn="{StaticResource lbListIconTitleStyle}">
+    </Style>
+
+    <!-- product and search title -->
+    <Style x:Key="wpSelectedStyle" TargetType="WrapPanel">
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding DisplayMode}" Value="2">
+                <Setter Property="Visibility" Value="Visible"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="wpProductStyle" TargetType="WrapPanel">
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding DisplayMode}" Value="1">
+                <Setter Property="Visibility" Value="Visible"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding DisplayMode}" Value="3">
+                <Setter Property="Visibility" Value="Visible"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- display product and list control -->
+    <Style x:Key="grdSelectedStyle" TargetType="Grid">
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding DisplayMode}" Value="2">
+                <Setter Property="Visibility" Value="Visible"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="grdProductStyle" TargetType="Grid">
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding DisplayMode}" Value="1">
+                <Setter Property="Visibility" Value="Visible"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding DisplayMode}" Value="3">
+                <Setter Property="Visibility" Value="Visible"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- 搜索输入框 -->
+    <Style x:Key="lbSearchTextInputTextboxStyle" TargetType="{x:Type Label}">
+        <Setter Property="ClipToBounds" Value="True" />
+        <Setter Property="Width" Value="230"/>
+        <Setter Property="Height" Value="30"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Margin" Value="10,0,0,0" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <Border x:Name="border"  BorderThickness="1" BorderBrush="#E7B83D" CornerRadius="5">
+                        <Grid ClipToBounds="True">
+                            <Label x:Name="lbContent" Margin="20,0,20,0" Padding="0" HorizontalAlignment="Left" Content="{TemplateBinding Content}" VerticalAlignment="Center" Foreground="#E7B83D" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=PosContentFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <DataTrigger Binding="{Binding DisplayMode}" Value="1">
+                            <Setter TargetName="border" Property="BorderThickness" Value="0"/>
+                            <Setter TargetName="lbContent" Property="Foreground" Value="White"/>
+                        </DataTrigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <!-- 结账弹出框父容器 -->
+    <Style x:Key="grdCheckoutParentStyle" TargetType="Grid">
+        <Setter Property="Panel.ZIndex" Value="8"/>
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding IsDisplay}" Value="True">
+                <Setter Property="Visibility" Value="Visible"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- 动画弹出框父容器 -->
+    <Style x:Key="grdAnimationParentStyle" TargetType="Grid">
+        <Setter Property="Panel.ZIndex" Value="18"/>
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding IsDisplay}" Value="True">
+                <Setter Property="Visibility" Value="Visible"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- 消息弹出框父容器 -->
+    <Style x:Key="grdMessageboxParentStyle" TargetType="Grid">
+        <Setter Property="Panel.ZIndex" Value="58"/>
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding AlertMsgMode}" Value="True">
+                <Setter Property="Visibility" Value="Visible"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+
+    <!-- 临时保存 图标 -->
+    <Style x:Key="imgTempSaveImageStyle" TargetType="Image">
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Setter Property="HorizontalAlignment" Value="Right"/>
+        <Setter Property="VerticalAlignment" Value="Bottom"/>
+        <Setter Property="Margin" Value="20,0,20,20"/>
+        <Setter Property="Width" Value="25"/>
+        <Setter Property="Height" Value="25"/>
+        <Setter Property="Source" Value="pack://application:,,,/Res;component/Resources/Images/Pos/TempSave_White.png"/>
+        <Setter Property="Stretch" Value="None"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding IsSave}" Value="True">
+                <Setter Property="Visibility" Value="Visible"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding ElementName=tbDesc,Path=FlowDirection}" Value="RightToLeft">
+                <Setter Property="HorizontalAlignment" Value="Left"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+
+
+</ResourceDictionary>

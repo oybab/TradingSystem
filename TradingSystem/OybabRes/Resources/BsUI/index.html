@@ -1,0 +1,1474 @@
+﻿<!DOCTYPE html>
+<html lang='zh-cn'>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="Y:\NET\TradingSystem\Debug\BsUI\bootstrap\css\bootstrap.css" ><link href="Y:\NET\TradingSystem\Debug\BsUI\bootstrap\css\bootstrap-theme.css" type="text/css"  rel="stylesheet" /><style type="text/css" > @charset "utf-8";
+*,html,body,div,p,dl,dt,dd,h1,h2,h3,h4,h5,form,input,table,tr,td,ul,ol,li,span,img,a{
+	margin:0;
+	padding:0;
+	margin-left:auto; margin-right:auto;/*兼容ie9，还需*/
+	color: #666;
+	letter-spacing: normal;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;/*去除边距的宽度*/
+	
+}
+*, *:before, *:after {box-sizing: inherit;}
+body{
+	letter-spacing: normal;
+	/*font-family: "Microsoft Yahei","Arial","Georgia","serif","sans-serif";*/
+}
+ul li{list-style: none;}
+img{border:none;}
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+a:focus{text-decoration: none;}
+.clearfix{clear:both;}
+/*以上是公共样式*/
+
+
+.top{
+	height: 60px;
+	line-height: 60px;
+	background-image: linear-gradient(to right, #1D7295 0%, #39C6B2 100%);/* W3C Markup, IE10 Release Preview */ 
+	background:-webkit-linear-gradient(left,#1D7295,#39C6B2);/*new gradient for Webkit*/
+	background:-moz-linear-gradient(left,#1D7295,#39C6B2);/*Mozilla*/
+	background:-webkit-gradient(linear,0 50%,100% 50%,from(#1D7295),to(#39C6B2));/*Old gradient for webkit*/
+	background:-o-linear-gradient(left,#1D7295,#39C6B2); /*Opera11*/
+
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#1D7295, endColorstr=39C6B2);/*IE<9>*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=1, startColorstr=#1D7295, endColorstr=#39C6B2)";/*IE8+*/
+}
+.SoftwareName,.OwnerName{
+	text-align: center;
+	color: #fff;
+	padding:0 50px;
+}
+.SoftwareName{float: left; direction:ltr}
+.SoftwareName1{float: none;width:100%;text-align: center; direction:ltr}
+.OwnerName{float: right;}
+/*banner*/
+
+/* .item{height: 300px;}
+.item1{height: 630px;} */
+
+
+/*订单*/
+.table{margin-bottom: 0;overflow: hidden;} /* 去掉了后面这个, 有问题加上(不知道为什么加的) max-height: 350px; */
+.table tr td{color: #333;}
+.table tr td span{color: #333;padding:0 2px;}
+
+.yuan{font-weight: bold;}
+.orderTable tr:nth-child(2n+0){background: #ddd;}
+.orderTabletr:nth-child(2n+1){background: #f5f5f5;}
+.table .listValue tr:nth-child(1) td{color: #1e7290;}
+.page{float: right; height:30px; line-height: 30px;}
+.page span{color: #333;}
+.checkNum,.nextPage{
+	float: left;
+	width: 180px;
+	text-align: center;
+	font-size: 1.6rem;
+	/*padding:5px 0;*/
+	cursor: pointer;
+}
+
+/*底部*/
+.footer{
+	clear: both;
+	overflow: hidden;
+	padding: 10px 0;
+	background: #1D7193;
+	min-height: 60px;
+}
+.footer-table tr td span{
+	color: #fff;
+	font-size: 1.6rem;
+}
+.footer .info-value{color: #f9c700;}
+.TotalPrice{padding: 20px 0 0 20px;}
+.footer-shop{overflow:hidden;}
+.SoftwareName1{
+	width: 100%;
+	text-align: center;
+	color: #fff;
+}
+.SoftwareName11{
+		height:60px;
+		line-height:60px;
+		background:#1D7193;
+}
+
+.footer-table > tbody > tr > td{border-top: 0;}
+.footer-table .FullPrice>span{font-size: 2rem;}
+.footer-table-tr{border-bottom: 1px dashed #888;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*没有小于768px，是因为bootstrap以移动端优先设计，以上都是为移动端小于768px的默认设计样式*/
+
+/*小屏幕（平板、大于等于768px）*/
+@media (min-width: 768px){
+
+}
+
+/*中屏幕（桌面显示器、大于等于992px）*/
+@media (min-width: 992px){
+
+}
+
+/*大屏幕（大桌面显示器、大于等于1200px）*/
+@media (min-width: 1200px){
+	
+}
+
+
+
+
+html,
+body {
+    height: 100%;
+}
+
+/*.carousel,
+.item,
+.active {
+    height: 100%;
+	width: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+	width: 100%;
+}*/
+
+.full{
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    /*IE8会居中显示,难看  background-repeat: no-repeat;*/
+}
+
+
+/* 为了能够在JS那里设置tbody高度 */
+tbody {
+    display:block;
+
+}
+
+thead, tbody tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;/* even columns width , fix width of table too*/
+}
+thead {
+    width: calc( 100% - 1em );/* scrollbar is average 1em/16px width, remove it from thead width */
+}
+table {
+    width:100%;
+}
+
+/* IE8-9行高必须设置*/
+tbody tr{
+    height:40px;
+    line-height: 40px;
+    margin:0px;
+    padding: 0px;
+}
+
+thead tr td span, thead tr td .glyphicon{
+    height:45px;
+    line-height: 45px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+
+
+/* 子弹彼此之间多点空间 */
+.carousel-indicators li, .carousel-indicators .active{
+    margin: 0px 4px 0px 4px;
+}
+
+/* 解决IE7下有问题, 图片子弹竖直显示,  同时解决总给HTML页面显示不存在的数值滚动条 */
+.carousel-indicators li{ display:inline-block; _zoom:1;*display:inline;}
+
+/* 又得加这个为了居中 
+.carousel-indicators{
+  width:100%;
+  left:0px;
+margin-left:0px;
+}
+
+/* IE7一直显示滚动条,虽然是没有滚动 */
+html, body{
+overflow:hidden;
+}
+
+/* 
+html,body{
+   height:100%;
+   width:100%
+}
+.carousel,.item,.active{
+   height:100%;
+   width:100%
+ }
+.carousel-inner{
+    height:100%;
+	width:100%
+} */
+
+
+
+
+
+
+
+
+/* 解决IE7 不显示图标 */
+@font-face {
+  font-family: 'Glyphicons Halflings';
+
+  src: local('Glyphicons Halflings');
+}
+
+
+.glyphicon {
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  text-decoration: inherit;
+  line-height: normal;
+padding-right:4px;
+}
+.glyphicon-glass {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe001;');
+}
+.glyphicon-music {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe002;');
+}
+.glyphicon-search {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe003;');
+}
+.glyphicon-envelope {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x2709;');
+}
+.glyphicon-heart {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe005;');
+}
+.glyphicon-star {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe006;');
+}
+.glyphicon-star-empty {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe007;');
+}
+.glyphicon-user {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe008;');
+}
+.glyphicon-film {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe009;');
+}
+.glyphicon-th-large {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe010;');
+}
+.glyphicon-th {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe011;');
+}
+.glyphicon-th-list {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe012;');
+}
+.glyphicon-ok {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe013;');
+}
+.glyphicon-remove {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe014;');
+}
+.glyphicon-zoom-in {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe015;');
+}
+.glyphicon-zoom-out {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe016;');
+}
+.glyphicon-off {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe017;');
+}
+.glyphicon-signal {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe018;');
+}
+.glyphicon-cog {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe019;');
+}
+.glyphicon-trash {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe020;');
+}
+.glyphicon-home {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe021;');
+}
+.glyphicon-file {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe022;');
+}
+.glyphicon-time {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe023;');
+}
+.glyphicon-road {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe024;');
+}
+.glyphicon-download-alt {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe025;');
+}
+.glyphicon-download {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe026;');
+}
+.glyphicon-upload {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe027;');
+}
+.glyphicon-inbox {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe028;');
+}
+.glyphicon-play-circle {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe029;');
+}
+.glyphicon-repeat {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe030;');
+}
+.glyphicon-refresh {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe031;');
+}
+.glyphicon-list-alt {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe032;');
+}
+.glyphicon-lock {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe033;');
+}
+.glyphicon-flag {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe034;');
+}
+.glyphicon-headphones {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe035;');
+}
+.glyphicon-volume-off {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe036;');
+}
+.glyphicon-volume-down {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe037;');
+}
+.glyphicon-volume-up {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe038;');
+}
+.glyphicon-qrcode {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe039;');
+}
+.glyphicon-barcode {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe040;');
+}
+.glyphicon-tag {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe041;');
+}
+.glyphicon-tags {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe042;');
+}
+.glyphicon-book {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe043;');
+}
+.glyphicon-bookmark {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe044;');
+}
+.glyphicon-print {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe045;');
+}
+.glyphicon-camera {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe046;');
+}
+.glyphicon-font {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe047;');
+}
+.glyphicon-bold {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe048;');
+}
+.glyphicon-italic {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe049;');
+}
+.glyphicon-text-height {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe050;');
+}
+.glyphicon-text-width {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe051;');
+}
+.glyphicon-align-left {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe052;');
+}
+.glyphicon-align-center {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe053;');
+}
+.glyphicon-align-right {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe054;');
+}
+.glyphicon-align-justify {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe055;');
+}
+.glyphicon-list {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe056;');
+}
+.glyphicon-indent-left {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe057;');
+}
+.glyphicon-indent-right {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe058;');
+}
+.glyphicon-facetime-video {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe059;');
+}
+.glyphicon-picture {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe060;');
+}
+.glyphicon-pencil {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x270f;');
+}
+.glyphicon-map-marker {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe062;');
+}
+.glyphicon-adjust {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe063;');
+}
+.glyphicon-tint {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe064;');
+}
+.glyphicon-edit {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe065;');
+}
+.glyphicon-share {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe066;');
+}
+.glyphicon-check {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe067;');
+}
+.glyphicon-move {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe068;');
+}
+.glyphicon-step-backward {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe069;');
+}
+.glyphicon-fast-backward {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe070;');
+}
+.glyphicon-backward {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe071;');
+}
+.glyphicon-play {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe072;');
+}
+.glyphicon-pause {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe073;');
+}
+.glyphicon-stop {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe074;');
+}
+.glyphicon-forward {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe075;');
+}
+.glyphicon-fast-forward {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe076;');
+}
+.glyphicon-step-forward {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe077;');
+}
+.glyphicon-eject {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe078;');
+}
+.glyphicon-chevron-left {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe079;');
+}
+.glyphicon-chevron-right {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe080;');
+}
+.glyphicon-plus-sign {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe081;');
+}
+.glyphicon-minus-sign {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe082;');
+}
+.glyphicon-remove-sign {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe083;');
+}
+.glyphicon-ok-sign {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe084;');
+}
+.glyphicon-question-sign {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe085;');
+}
+.glyphicon-info-sign {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe086;');
+}
+.glyphicon-screenshot {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe087;');
+}
+.glyphicon-remove-circle {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe088;');
+}
+.glyphicon-ok-circle {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe089;');
+}
+.glyphicon-ban-circle {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe090;');
+}
+.glyphicon-arrow-left {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe091;');
+}
+.glyphicon-arrow-right {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe092;');
+}
+.glyphicon-arrow-up {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe093;');
+}
+.glyphicon-arrow-down {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe094;');
+}
+.glyphicon-share-alt {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe095;');
+}
+.glyphicon-resize-full {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe096;');
+}
+.glyphicon-resize-small {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe097;');
+}
+.glyphicon-plus {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x002b;');
+}
+.glyphicon-minus {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x2212;');
+}
+.glyphicon-asterisk {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x002a;');
+}
+.glyphicon-exclamation-sign {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe101;');
+}
+.glyphicon-gift {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe102;');
+}
+.glyphicon-leaf {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe103;');
+}
+.glyphicon-fire {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe104;');
+}
+.glyphicon-eye-open {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe105;');
+}
+.glyphicon-eye-close {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe106;');
+}
+.glyphicon-warning-sign {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe107;');
+}
+.glyphicon-plane {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe108;');
+}
+.glyphicon-calendar {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe109;');
+}
+.glyphicon-random {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe110;');
+}
+.glyphicon-comment {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe111;');
+}
+.glyphicon-magnet {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe112;');
+}
+.glyphicon-chevron-up {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe113;');
+}
+.glyphicon-chevron-down {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe114;');
+}
+.glyphicon-retweet {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe115;');
+}
+.glyphicon-shopping-cart {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe116;');
+}
+.glyphicon-folder-close {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe117;');
+}
+.glyphicon-folder-open {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe118;');
+}
+.glyphicon-resize-vertical {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe119;');
+}
+.glyphicon-resize-horizontal {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe120;');
+}
+.glyphicon-hdd {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe121;');
+}
+.glyphicon-bullhorn {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe122;');
+}
+.glyphicon-bell {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe123;');
+}
+.glyphicon-certificate {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe124;');
+}
+.glyphicon-thumbs-up {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe125;');
+}
+.glyphicon-thumbs-down {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe126;');
+}
+.glyphicon-hand-right {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe127;');
+}
+.glyphicon-hand-left {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe128;');
+}
+.glyphicon-hand-up {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe129;');
+}
+.glyphicon-hand-down {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe130;');
+}
+.glyphicon-circle-arrow-right {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe131;');
+}
+.glyphicon-circle-arrow-left {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe132;');
+}
+.glyphicon-circle-arrow-up {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe133;');
+}
+.glyphicon-circle-arrow-down {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe134;');
+}
+.glyphicon-globe {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe135;');
+}
+.glyphicon-wrench {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe136;');
+}
+.glyphicon-tasks {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe137;');
+}
+.glyphicon-filter {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe138;');
+}
+.glyphicon-briefcase {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe139;');
+}
+.glyphicon-fullscreen {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe140;');
+}
+.glyphicon-dashboard {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe141;');
+}
+.glyphicon-paperclip {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe142;');
+}
+.glyphicon-heart-empty {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe143;');
+}
+.glyphicon-link {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe144;');
+}
+.glyphicon-phone {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe145;');
+}
+.glyphicon-pushpin {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe146;');
+}
+.glyphicon-euro {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x20ac;');
+}
+.glyphicon-usd {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe148;');
+}
+.glyphicon-gbp {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe149;');
+}
+.glyphicon-sort {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe150;');
+}
+.glyphicon-sort-by-alphabet {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe151;');
+}
+.glyphicon-sort-by-alphabet-alt {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe152;');
+}
+.glyphicon-sort-by-order {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe153;');
+}
+.glyphicon-sort-by-order-alt {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe154;');
+}
+.glyphicon-sort-by-attributes {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe155;');
+}
+.glyphicon-sort-by-attributes-alt {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe156;');
+}
+.glyphicon-unchecked {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe157;');
+}
+.glyphicon-expand {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe158;');
+}
+.glyphicon-collapse {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe159;');
+}
+.glyphicon-collapse-top {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe160;');
+}
+.glyphicon-cloud {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x2601;');
+}
+.glyphicon-cloud-download {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe197;');
+}
+.glyphicon-cloud-upload {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe198;');
+}
+.glyphicon-collapse-down {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe159;');
+}
+.glyphicon-collapse-up {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe160;');
+}
+.glyphicon-compressed {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe181;');
+}
+.glyphicon-copyright-mark {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe194;');
+}
+.glyphicon-credit-card {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe177;');
+}
+.glyphicon-cutlery {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe179;');
+}
+.glyphicon-earphone {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe182;');
+}
+.glyphicon-flash {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe162;');
+}
+.glyphicon-floppy-disk {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe172;');
+}
+.glyphicon-floppy-open {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe176;');
+}
+.glyphicon-floppy-remove {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe174;');
+}
+.glyphicon-floppy-save {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe175;');
+}
+.glyphicon-floppy-saved {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe173;');
+}
+.glyphicon-hd-video {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe187;');
+}
+.glyphicon-header {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe180;');
+}
+.glyphicon-import {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe169;');
+}
+.glyphicon-log-in {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe161;');
+}
+.glyphicon-log-out {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe163;');
+}
+.glyphicon-open {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe167;');
+}
+.glyphicon-new-window {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe164;');
+}
+.glyphicon-registration-mark {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe195;');
+}
+.glyphicon-save {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe166;');
+}
+.glyphicon-saved {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe168;');
+}
+.glyphicon-sd-video {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe186;');
+}
+.glyphicon-send {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe171;');
+}
+.glyphicon-sound-5-1 {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe191;');
+}
+.glyphicon-sound-6-1 {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe192;');
+}
+.glyphicon-sound-7-1 {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe193;');
+}
+.glyphicon-sound-dolby {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe190;');
+}
+.glyphicon-sound-stereo {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe189;');
+}
+.glyphicon-stats {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe185;');
+}
+.glyphicon-tower {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe184;');
+}
+.glyphicon-transfer {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe178;');
+}
+.glyphicon-tree-conifer {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe199;');
+}
+.glyphicon-tree-deciduous {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe200;');
+}
+.glyphicon-record {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe165;');
+}
+.glyphicon-subtitles {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe188;');
+}
+.glyphicon-export {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe170;');
+}
+.glyphicon-phone-alt {
+  zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe183;');
+}</style>
+	<title></title>
+</head>
+<body>
+	
+	<div class="header">
+		<div class="top">
+			<div id="SoftwareName" class="SoftwareName">梦胜交易系统v1.0</div>
+			<div id="OwnerName" class="OwnerName"></div>
+		</div>
+		
+		<!--轮播-->
+		<div id="carousel" class="carousel slide container-build" data-ride="carousel">
+		</div>
+				<div class="footer-shop">
+			<div id="SoftwareName1" class="SoftwareName1 SoftwareName11"></div>
+		</div>
+	</div>	
+	<!-- 订单 -->
+	<div class="order">
+		<div class="">
+			<table id="datas" class="table table-condensed text-center orderTable">
+				<thead class="Thead">
+                    <tr>
+                        <td><span class="glyphicon glyphicon-th-list"></span><span id="num">编号</span></td>
+                        <td><span class="glyphicon glyphicon-copyright-mark"></span><span id="ProductName">产品名称</span></td>
+                        <td><span class="glyphicon glyphicon-calendar"></span><span id="Count">数量</span></td>
+                        <td><span class="yuan" id="Money">￥</span><span id="Price">价格（元）</span></td>
+                        <td><span class="glyphicon glyphicon-credit-card"></span><span id="TotalPrice">总格（元）</span></td>
+                    </tr>
+                </thead>
+				<tbody class="listValue">
+				</tbody>
+			</table>
+			<div class="page">
+				<div class="checkNum"><span id="selectedCount">选择数量</span> <span>: </span><span id="selectedCountValue">0</span></div>
+				<!--<div class="nextPage">下一页</div>-->
+			</div>
+		</div>
+	</div>
+
+	<!-- 底部 -->
+	<div class="footer">
+		<table class="table table-condensed text-center footer-table">
+			<tr id="trRoomPrices" class="footer-table-tr">
+				<td colspan="2" class="Member"><span id="Member"></span><span class="info-value">：</span><span class="info-value" id="MemberV"></span></td>
+				<td class="RoomNo"><span id="RoomNo"></span><span class="info-value">：</span><span class="info-value" id="RoomNoV"></span></td>   		<!-- 雅座编号 -->
+				<td class="RoomPrice"><span id="RoomPrice"></span><span class="info-value">：</span><span class="info-value" id="RoomPriceV"></span></td>
+				<td class="TotalTime"><span id="TotalTime" ></span><span class="info-value">：</span><span class="info-value" id="TotalTimeV"></span></td>
+			</tr>
+            <tr id="trTotalDeailsActualPrices">
+                <td rowspan="2" class="FullPrice"><span id="Amount"></span><span class="info-value">：</span><span class="info-value" id="AmountV"></span></td>
+                <!--<td class="MemberDealsPrice"><span id="MemberDealsPrice"></span><span class="info-value">：</span><span class="info-value" id="MemberDealsPriceV"></span></td>
+    <td class="DealsPrice"><span id="DealsPrice"></span><span class="info-value">：</span><span class="info-value" id="DealsPriceV"></span></td>
+    <td class="ActualPrice"><span id="ActualPrice"></span><span class="info-value">：</span><span class="info-value" id="ActualPriceV"></span></td>-->
+                <td class="MemberPaidPrice"><span id="MemberPaidPrice"></span><span class="info-value">：</span><span class="info-value" id="MemberPaidPriceV"></span></td>
+                <td class="PaidPrice"><span id="PaidPrice"></span><span class="info-value">：</span><span class="info-value" id="PaidPriceV"></span></td>
+            </tr>
+			<!--<tr id="trPaidReturnPrices">
+				<td class="MemberPaidPrice"><span id="MemberPaidPrice"></span><span class="info-value">：</span><span class="info-value" id="MemberPaidPriceV"></span></td>
+				<td class="PaidPrice"><span id="PaidPrice"></span><span class="info-value">：</span><span class="info-value" id="PaidPriceV"></span></td>
+				<td class="CardPaidPrice"><span id="CardPaidPrice"></span><span class="info-value">：</span><span class="info-value" id="CardPaidPriceV"></span></td>
+				<td class="ReturnPrice"><span id="ReturnPrice"></span><span class="info-value">：</span><span class="info-value" id="ReturnPriceV"></span></td>
+			</tr>-->
+		</table>
+	</div>
+    <script type="text/javascript" src="Y:\NET\TradingSystem\Debug\BsUI\js/jquery-1.12.4.min.js"></script><script type="text/javascript" src="Y:\NET\TradingSystem\Debug\BsUI\bootstrap/js/bootstrap.js" ></script> <script type="text/javascript" > 
+//$(function () {
+
+
+	//字体样式，大小设置
+    var fontName0 = "微软雅黑";
+	var fontName1 = "Oybab tuz, 微软雅黑";    
+	var fontName2 = "微软雅黑";
+	var fontSize0 = 12;   
+	var fontSize1 = 16;  
+	var fontSize2 = 12;
+	
+
+
+
+	
+	
+
+    /*店铺图片，名称更新*/
+	var shop;
+	
+    //刷新列表和价格信息.
+	var list;
+    
+    //切换语言: 切换列表标题和价格信息的名称Label的显示语言.还有顶部的软件名和餐厅名.
+	var Language0, Language1, Language2;
+   
+    var ListModeImgHeightScale = 40; // 列表模式图片高度比例%
+    var PageCount = 0;
+    var CurrentPage = 0;
+
+
+
+
+    /* 检查string空或null */
+    function isEmpty(value) {
+        return typeof value == 'string' && !value.trim() || typeof value == 'undefined' || value === null;
+    }
+
+    /* 让IE8支持trim() */
+    if (typeof String.prototype.trim !== 'function') {
+        String.prototype.trim = function () {
+            return this.replace(/^\s+|\s+$/g, '');
+        }
+    }
+
+
+
+
+    /* 初始化(测试) */
+	function LoadImgList(shop) {
+
+
+	    ChangeFontSize(fontSize1, fontName1);/*切换字体大小，字体样式*/
+
+	    ChangeTheme(shop.ThemeIndex);/*加载主题*/
+
+	    ChangeLanguage(shop.LangIndex);/*更改语言*/
+
+	    ChangeMode(shop.ModeIndex); /*修改模式*/
+
+	    CalculateHeighAndDisplayList(shop.ModeIndex, shop.LangIndex); /* 计算高度并显示列表 */
+
+	    ChangeListAndPriceInfo(list);/*刷新列表和价格信息*/
+	    
+
+	    //NextPage(trNum, list); /*下一页*/
+
+	    //自动轮播时间设置
+	    $('#carousel').carousel({ interval: 5000 });
+
+
+	}
+
+
+    /* 从外部初始化 */
+	function LoadAllInfo(shopX, Language0X, Language1X, Language2X) {
+	    shop = jQuery.parseJSON(shopX);
+	    Language0 = jQuery.parseJSON(Language0X);
+	    Language1 = jQuery.parseJSON(Language1X);
+	    Language2 = jQuery.parseJSON(Language2X);
+
+
+	    ChangeFontSize(fontSize1, fontName1);/*切换字体大小，字体样式*/
+
+	    ChangeTheme(shop.ThemeIndex);/*加载主题*/
+
+	    ChangeLanguage(shop.LangIndex);/*更改语言*/
+
+	    ChangeMode(shop.ModeIndex); /*修改模式*/
+
+	    CalculateHeighAndDisplayList(shop.ModeIndex, shop.LangIndex); /* 计算高度并显示列表 */
+
+
+	    //自动轮播时间设置
+	    $('#carousel').carousel({ interval: 5000 });
+
+
+	}
+
+
+    /* 从外部修改账单 */
+	function ChangeListAndPriceInfo(listXX) {
+
+	    list = jQuery.parseJSON(listXX);
+
+	    ChangeLanguageInfo(shop.LangIndex);
+	}
+
+
+    /* 从外部修改语言 */
+	function ChangeLanguageInfo(index, modeIndex) {
+
+	    shop.LangIndex = parseInt(index);
+
+	    ChangeLanguage(shop.LangIndex);/*更改语言*/
+
+	    CalculateHeighAndDisplayList(shop.ModeIndex, shop.LangIndex); /* 计算高度并显示列表 */
+    }
+
+
+	
+
+
+    /* 更改模式 */ 		
+    function ChangeMode(ModeNo) {   //列表 模式1  
+        var imgList0 = shop.imgList0;  // 模式1 图片列表
+        var imgList1 = shop.imgList1;  // 模式2 图片列表
+
+        // 总共有多少个滚动动画和当前是第几个
+        var totalItems = $('.item').length;
+        var currentIndex = $('div.active').index() + 1;
+
+        // 清空DIV
+        $("#carousel").empty();
+        var ol = $('<ol/>', { "class": "carousel-indicators" });
+        var listDiv = $('<div/>', { "class": "carousel-inner", role: "listbox" });
+
+        if (ModeNo == 0) {
+          
+          
+
+            jQuery.each(imgList0, function (index, item) {
+               
+                ol.append($('<li/>', { "data-target": "#carousel", "data-slide-to": index }));
+                
+                var itemClass = "item";
+                if (index == 0)
+                    itemClass = "item active";
+                
+                listDiv.append($('<div/>', { "class": itemClass }).append($('<div/>', { "class": "full", "style": 'background-image:url(' + item + ')' })).append($('<div/>', { "class": "carousel-caption" })));
+            });
+
+
+          
+            // 创建弹出框
+            $("#carousel").append(ol).append(listDiv);
+
+
+            $('.order').show();
+            $('.item').addClass('item');
+            $('.footer-shop').hide();
+
+           
+
+
+        } else if (ModeNo == 1) {    //全屏 模式2
+            
+           
+            
+            jQuery.each(imgList1, function (index, item) {
+              
+                ol.append($('<li/>', { "data-target": "#carousel", "data-slide-to": index }));
+
+                var itemClass = "item";
+                if (index == 0)
+                    itemClass = "item active";
+
+                listDiv.append($('<div/>', { "class": itemClass }).append($('<div/>', { "class": "full", "style": 'background-image:url(' + item + ')' })).append($('<div/>', { "class": "carousel-caption" })));
+            });
+
+
+            // 创建弹出框
+            $("#carousel").append(ol).append(listDiv);
+
+            $('.order').hide();
+            $('.item').addClass('item1');
+            $('.footer').hide();
+            $('.SoftwareName').hide();
+            $('.OwnerName').toggleClass('SoftwareName1');
+
+
+        }
+
+        // 定位到当前的位置
+        $('.carousel').carousel(currentIndex);
+    }
+
+    //语言名称切换
+    function ChangeLanguage(index) {
+        // 根据索引选择当前语言
+        var data = null;
+        var ownerName = "";
+
+        if (index == Language0.LangIndex) {
+            data = Language0;
+            ownerName = shop.OwnerName0;
+        }
+        else if (index == Language1.LangIndex) {
+            data = Language1;
+            ownerName = shop.OwnerName1;
+        }
+        else if (index == Language2.LangIndex) {
+            data = Language2;
+            ownerName = shop.OwnerName2;
+        }
+        $('#Money').text(shop.PriceSymbol);
+
+        $("html").attr("dir", data.Dir);
+        $("html").attr("lang", data.Culcure);
+
+        $('body').css({ 'font-size': shop.fontSize1, 'font-family': data.FontName });
+        $('#SoftwareName').text(data.SoftwareName);
+        $('#OwnerName').text(ownerName);
+        $('#SoftwareName1').text(data.SoftwareName);
+        $('#num').text(data.Id);
+        $('#ProductName').text(data.ProductName);
+
+        $('#Count').text(data.Count);
+        $('#Price').text(data.Price);
+        $('#TotalPrice').text(data.TotalPrice);
+        
+
+
+        $('#Member').text(data.Member);
+        $('#MemberDealsPrice').text(data.MemberDealsPrice);
+        $('#MemberPaidPrice').text(data.MemberPaidPrice);
+        $('#PaidPrice').text(data.PaidPrice);
+        $('#CardPaidPrice').text(data.CardPaidPrice);
+        $('#ReturnPrice').text(data.ReturnPrice);
+        $('#BorrowPrice').text(data.BorrowPrice);
+        $('#RoomNo').text(data.RoomNo);
+        $('#RoomPrice').text(data.RoomPrice);
+        $('#TotalTime').text(data.TotalTime);
+        $('#selectedCount').text(data.SelectedCount);
+        $('#SelectedCountV').text(0);
+        $('#Amount').text(data.TotalPrice);
+        $('#DealsPrice').text(data.DealsPrice);
+        $('#CardPaidPrice').text(data.CardPaidPrice);
+        $('#ActualPrice').text(data.ActualPrice);
+
+
+
+        if (list == null) {
+            $('.Member').hide();
+            $('.MemberDealsPrice').hide();
+            $('.MemberPaidPrice').hide();
+            $('.PaidPrice').hide();
+            $('.CardPaidPrice').hide();
+            $('.ReturnPrice').hide();
+            $('.BorrowPrice').hide();
+            $('.RoomNo').hide();
+            $('.RoomPrice').hide();
+            $('.TotalTime').hide();
+            $('#SelectedCount').text(0);
+            $('#AmountV').text(PutItRight(data.Dir, shop.PriceSymbol , 0));
+            $('.DealsPrice').hide();
+            $('.CardPaidPrice').hide();
+            $('.ActualPrice').hide();
+
+            $('#trPaidReturnPrices').hide();
+            $('#trTotalDeailsActualPrices').show();
+            $('#trRoomPrices').hide();
+
+            
+        } else {
+
+            var IsRoomMemberTr = false;
+            var IsPaidReturnTr = false;
+
+            //让会员名的值，可以语言切换
+            if (list.tb_member == null) {
+                $('.Member').hide();
+                $('.MemberDealsPrice').hide();
+                $('.MemberPaidPrice').hide();
+            }
+            else {
+                $('.Member').show();
+                IsRoomMemberTr = true;
+
+                if (index == 0)
+                    $('#MemberV').text(list.tb_member.MemberName0);
+                else if (index == 1)
+                    $('#MemberV').text(list.tb_member.MemberName1);
+                else if (index == 2)
+                    $('#MemberV').text(list.tb_member.MemberName2);
+
+                // 会员优惠价
+                if (list.MemberDealsPrice == 0) {
+                    $('.MemberDealsPrice').hide();
+                } else {
+                    $('.MemberDealsPrice').show();
+                    $('#MemberDealsPriceV').text(PutItRight(data.Dir, shop.PriceSymbol , list.MemberDealsPrice));
+                    
+                }
+
+               
+            };
+
+            // 会员支付
+            if (list.MemberPaidPrice == 0) {
+                $('.MemberPaidPrice').hide();
+            } else {
+                $('.MemberPaidPrice').show();
+                $('#MemberPaidPriceV').text(PutItRight(data.Dir, shop.PriceSymbol, list.MemberPaidPrice));
+
+                IsPaidReturnTr = true;
+
+            }
+
+
+
+            // 现金支付
+            if (list.PaidPrice == 0) {
+                $('.PaidPrice').hide();
+            } else {
+                $('.PaidPrice').show();
+                $('#PaidPriceV').text(PutItRight(data.Dir, shop.PriceSymbol , list.PaidPrice));
+
+                IsPaidReturnTr = true;
+                
+            }
+
+            // 刷卡支付
+            if (list.CardPaidPrice == 0) {
+                $('.CardPaidPrice').hide();
+            } else {
+                $('.CardPaidPrice').show();
+                $('#CardPaidPriceV').text(PutItRight(data.Dir, shop.PriceSymbol , list.CardPaidPrice));
+
+                IsPaidReturnTr = true;
+                
+            }
+
+            // 退回金额
+            if (list.ReturnPrice == 0) {
+                $('.ReturnPrice').hide();
+            } else {
+                $('.ReturnPrice').show();
+                $('#ReturnPriceV').text(PutItRight(data.Dir, shop.PriceSymbol , list.ReturnPrice));
+
+                IsPaidReturnTr = true;
+                
+            }
+
+            //// 借款金额(目前先不显示这个)
+            $('.BorrowPrice').hide();
+         
+
+
+            // 检查雅座信息
+            if (list.RoomInfo == null) {
+                $('.RoomNo').hide();
+                $('.RoomPrice').hide();
+                $('.TotalTime').hide();
+            } else {
+                // 检查雅座编号
+                if (isEmpty(list.RoomInfo.RoomNo)) {
+                    $('.RoomNo').hide();
+                } else {
+                    $('.RoomNo').show();
+                    $('#RoomNoV').text(list.RoomInfo.RoomNo);
+                    
+                    IsRoomMemberTr = true;
+                }
+
+                // 检查雅座价格
+                if (list.RoomInfo.RoomPrice == 0) {
+                    $('.RoomPrice').hide();
+                } else {
+                    $('.RoomPrice').show();
+                    $('#RoomPriceV').text(PutItRight(data.Dir, shop.PriceSymbol , list.RoomInfo.RoomPrice));
+
+                    IsRoomMemberTr = true;
+                    
+                }
+                // 检查雅座时间
+                if (isEmpty(list.RoomInfo.TotalTime)) {
+                    $('.TotalTime').hide();
+                } else {
+                    $('.TotalTime').show();
+                    $('#TotalTimeV').text(list.RoomInfo.TotalTime);
+                    
+                    IsRoomMemberTr = true;
+                }
+            }
+
+
+
+            
+
+            
+            $('#AmountV').text(PutItRight(data.Dir, shop.PriceSymbol , list.TotalPrice));
+
+            // 优惠价
+            if (list.DealsPrice == 0) {
+                $('.DealsPrice').hide();
+            } else {
+                $('.DealsPrice').show();
+                $('#DealsPriceV').text(PutItRight(data.Dir, shop.PriceSymbol , list.DealsPrice));
+                
+            }
+
+            // 实际价格
+            if (list.ActualPrice == 0) {
+                $('.ActualPrice').hide();
+            } else {
+
+                if (list.MemberDealsPrice == 0 && list.DealsPrice == 0)
+                    $('.ActualPrice').hide();
+                else {
+                    $('.ActualPrice').show();
+                    $('#ActualPriceV').text(PutItRight(data.Dir, shop.PriceSymbol, list.ActualPrice));
+                }
+            }
+
+            // 显示雅座和会员名
+            if (IsRoomMemberTr)
+                $('#trRoomPrices').show();
+
+            // 总是显示总价以及优惠实际
+            $('#trTotalDeailsActualPrices').show();
+
+            // 显示支付和退还
+            if (IsPaidReturnTr)
+                $('#trPaidReturnPrices').show();
+
+        }
+
+
+    }
+
+    /* 解决语言问题导致的顺序不一致 */
+function PutItRight(langDirection, first, second) {
+    if (langDirection == "rtl")
+            return second + first;
+        else
+            return first + second;
+    }
+
+
+    /* 计算高度以及显示列表 */
+    function CalculateHeighAndDisplayList(ModeNo, langIndex) {
+
+        if (ModeNo == 0) // 列表模式
+        {
+
+            // 计算图片高度
+            $('.full').height($(window).height() / 100 * ListModeImgHeightScale);
+            
+
+            // 计算列表高度
+            $('#datas').height($(window).height() - ($('.header').height() + $('.footer').height() + $('.page').height() + 20)); // 20是底部footer的padding
+            var listValue = $('#datas').height() - 55; // ie 无法获取thead.手动设置45+10
+
+            //初始化刷新列表信息
+            var listCount = Math.floor(listValue / 40);
+
+           
+
+            $('.listValue').empty(); // IE不行用这种 $('#datas tbody').empty();
+            if (null == list || list.BillDetailsModelList == null || list.BillDetailsModelList.length == 0) {
+                $("#selectedCountValue").text(0);
+
+            } else {
+
+                PageCount = Math.ceil(list.BillDetailsModelList.length > listCount ? (list.BillDetailsModelList.length / listCount + (list.BillDetailsModelList.length % listCount)) : 1)
+                CurrentPage = 1;
+
+                var l = list.BillDetailsModelList.length;
+                var j = list.BillDetailsModelList.length;
+                for (var i = 0; i < listCount; i++) {
+                    if (i >= l) {
+                        //$('.listValue').append($("<tr></td></tr>"));
+                        break;
+                    }
+                    else {
+                        var ProductName = "";
+                        if (langIndex == Language0.LangIndex) {
+                            ProductName = list.BillDetailsModelList[i].ProductName0;
+                        } else if (langIndex == Language1.LangIndex) {
+                            ProductName = list.BillDetailsModelList[i].ProductName1;
+                        } else if (langIndex == Language2.LangIndex) {
+                            ProductName = list.BillDetailsModelList[i].ProductName2;
+                        }
+                        $('.listValue').append($("<tr><td>" + (j) + "</td><td>" + ProductName + "</td><td>" + list.BillDetailsModelList[i].Count + "</td><td>" + shop.PriceSymbol + list.BillDetailsModelList[i].Price + "</td><td>" + shop.PriceSymbol + list.BillDetailsModelList[i].TotalPrice + "</td></tr>"));
+                        
+                    }
+                    --j;
+                }
+
+                if (list.BillDetailsModelList == null || list.BillDetailsModelList.length == 0)
+                    $("#selectedCountValue").text(0);
+                else
+                    $("#selectedCountValue").text(l);
+            }
+
+        }
+        else if (ModeNo == 1) { // 全屏模式
+
+            // 计算图片高度
+            $('.full').height($(window).height() - 120);
+        }
+
+        
+    }
+
+
+
+
+    /* 设置字体大小 */
+    function ChangeFontSize(fs, ff) {
+        $('body').css({ 'font-size': fs, 'font-family': ff });
+    }
+
+    /* 设置当前主题 */
+    function ChangeTheme(themeIndex) {
+        if (themeIndex == 1) {           //暗色
+            $('.top').css('background', '#f9c700');
+            //if ($.browser.msie && $.browser.version < 10 && $.browser.version > 8) {
+            $(".top").css("filter", "none");
+            $(".top").css("-ms - filter", "none");
+            
+            //}
+            $('.SoftwareName').css({ 'background': '#333', 'color': '#f9c700' });
+            $('.OwnerName').css('color', '#333');
+            $('.footer').css('background', '#333');
+            $('.SoftwareName11').css('background', '#f9c700').css('color', '#000');
+        } else if (themeIndex == 0) {
+        }    //亮色		
+    }
+
+</script>
+</body>
+</html>

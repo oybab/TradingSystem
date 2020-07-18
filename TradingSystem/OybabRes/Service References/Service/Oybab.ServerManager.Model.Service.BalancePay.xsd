@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.BalancePay" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.BalancePay" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" />
+  <xs:complexType name="ToServerServiceAddBalancePay">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q1:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BalancePay" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceAddBalancePay" nillable="true" type="tns:ToServerServiceAddBalancePay" />
+  <xs:complexType name="ToClientServiceAddBalancePay">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q2:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Balance" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BalancePay" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceAddBalancePay" nillable="true" type="tns:ToClientServiceAddBalancePay" />
+  <xs:complexType name="ToServerServiceTransferBalancePay">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q3:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BalancePay1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BalancePay2" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceTransferBalancePay" nillable="true" type="tns:ToServerServiceTransferBalancePay" />
+  <xs:complexType name="ToClientServiceTransferBalancePay">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q4:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Balance1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Balance2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BalancePay1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BalancePay2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceTransferBalancePay" nillable="true" type="tns:ToClientServiceTransferBalancePay" />
+  <xs:complexType name="ToServerServiceDelBalancePay">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q5:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BalancePay" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceDelBalancePay" nillable="true" type="tns:ToServerServiceDelBalancePay" />
+  <xs:complexType name="ToClientServiceDelBalancePay">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q6:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceDelBalancePay" nillable="true" type="tns:ToClientServiceDelBalancePay" />
+  <xs:complexType name="ToServerServiceGetBalancePay">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q7:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AddTimeEnd" type="xs:long" />
+          <xs:element minOccurs="0" name="AddTimeStart" type="xs:long" />
+          <xs:element minOccurs="0" name="AdminId" type="xs:long" />
+          <xs:element minOccurs="0" name="BalanceId" type="xs:long" />
+          <xs:element minOccurs="0" name="BalanceType" type="xs:long" />
+          <xs:element minOccurs="0" name="NotAdminId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceGetBalancePay" nillable="true" type="tns:ToServerServiceGetBalancePay" />
+  <xs:complexType name="ToClientServiceGetBalancePay">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q8:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AdminPays" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BalancePays" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ImportPays" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MemberPays" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrderPays" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+          <xs:element minOccurs="0" name="SupplierPays" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TakeoutPays" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceGetBalancePay" nillable="true" type="tns:ToClientServiceGetBalancePay" />
+</xs:schema>

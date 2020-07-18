@@ -1,0 +1,137 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary  Source="/ServicePC;component/Pos/Styles/PublicStyle.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+
+    <!-- 弹出框边框 -->
+    <Style x:Key="bdMessageboxBorderStyle" TargetType="Border">
+        <Setter Property="Width" Value="422"/>
+        <Setter Property="Height" Value="160"/>
+        <Setter Property="CornerRadius" Value="10"/>
+        <Setter Property="BorderBrush" Value="White"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Background" Value="#1D3551"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+
+
+    <!-- 弹出框提醒图片问文字容器 -->
+    <Style x:Key="wpMessageboxWrapStyle" TargetType="WrapPanel">
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Orientation" Value="Horizontal"/>
+        
+    </Style>
+
+
+
+    <!-- 内容 -->
+    <!-- 居中loading图 -->
+    <Style x:Key="lbLoadingImageStyle" TargetType="Label">
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Width" Value="328"/>
+        <Setter Property="Height" Value="19"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Label">
+                    <Grid>
+                        <Image x:Name="img30" Stretch="None" Source="/Res;component/Resources/Images/Pos/Load/1.png"  Width="328" Height="19"/>
+                        <Image x:Name="img29" Stretch="None" Source="/Res;component/Resources/Images/Pos/Load/29.png"  Width="328" Height="19"/>
+                        <Image x:Name="img28" Stretch="None" Source="/Res;component/Resources/Images/Pos/Load/28.png"  Width="328" Height="19"/>
+                        <Image x:Name="img27" Stretch="None" Source="/Res;component/Resources/Images/Pos/Load/27.png"  Width="328" Height="19"/>
+                        <Image x:Name="img26" Stretch="None" Source="/Res;component/Resources/Images/Pos/Load/26.png"  Width="328" Height="19"/>
+                        <Image x:Name="img25" Stretch="None" Source="/Res;component/Resources/Images/Pos/Load/25.png"  Width="328" Height="19"/>
+                        <Image x:Name="img24" Stretch="None" Source="/Res;component/Resources/Images/Pos/Load/24.png"  Width="328" Height="19"/>
+                        <Image x:Name="img23" Stretch="None" Source="/Res;component/Resources/Images/Pos/Load/23.png"  Width="328" Height="19"/>
+                        <Image x:Name="img22" Stretch="None" Source="/Res;component/Resources/Images/Pos/Load/22.png"  Width="328" Height="19"/>
+                        <Image x:Name="img21" Stretch="None" Source="/Res;component/Resources/Images/Pos/Load/21.png"  Width="328" Height="19"/>
+                        <Image x:Name="img20" Stretch="None" Source="/Res;component/Resources/Images/Pos/Load/20.png"  Width="328" Height="19"/>
+                        <Image x:Name="img19" Stretch="None" Source="/Res;component/Resources/Images/Pos/Load/19.png"  Width="328" Height="19"/>
+                        <Image x:Name="img18" Stretch="None" Source="/Res;component/Resources/Images/Pos/Load/18.png"  Width="328" Height="19"/>
+                        <Image x:Name="img17" Stretch="None" Source="/Res;component/Resources/Images/Pos/Load/17.png"  Width="328" Height="19"/>
+                        <Image x:Name="img16" Stretch="None" Source="/Res;component/Resources/Images/Pos/Load/16.png"  Width="328" Height="19"/>
+                        <Image x:Name="img15" Stretch="None" Source="/Res;component/Resources/Images/Pos/Load/15.png"  Width="328" Height="19"/>
+                        <Image x:Name="img14" Stretch="None" Source="/Res;component/Resources/Images/Pos/Load/14.png"  Width="328" Height="19"/>
+                        <Image x:Name="img13" Stretch="None" Source="/Res;component/Resources/Images/Pos/Load/13.png"  Width="328" Height="19"/>
+                        <Image x:Name="img12" Stretch="None" Source="/Res;component/Resources/Images/Pos/Load/12.png"  Width="328" Height="19"/>
+                        <Image x:Name="img11" Stretch="None" Source="/Res;component/Resources/Images/Pos/Load/11.png"  Width="328" Height="19"/>
+                        <Image x:Name="img10" Stretch="None" Source="/Res;component/Resources/Images/Pos/Load/10.png"  Width="328" Height="19"/>
+                        <Image x:Name="img9" Stretch="None" Source="/Res;component/Resources/Images/Pos/Load/9.png"  Width="328" Height="19"/>
+                        <Image x:Name="img8" Stretch="None" Source="/Res;component/Resources/Images/Pos/Load/8.png"  Width="328" Height="19"/>
+                        <Image x:Name="img7" Stretch="None" Source="/Res;component/Resources/Images/Pos/Load/7.png"  Width="328" Height="19"/>
+                        <Image x:Name="img6" Stretch="None" Source="/Res;component/Resources/Images/Pos/Load/6.png"  Width="328" Height="19"/>
+                        <Image x:Name="img5" Stretch="None" Source="/Res;component/Resources/Images/Pos/Load/5.png"  Width="328" Height="19"/>
+                        <Image x:Name="img4" Stretch="None" Source="/Res;component/Resources/Images/Pos/Load/4.png"  Width="328" Height="19"/>
+                        <Image x:Name="img3" Stretch="None" Source="/Res;component/Resources/Images/Pos/Load/3.png"  Width="328" Height="19"/>
+                        <Image x:Name="img2" Stretch="None" Source="/Res;component/Resources/Images/Pos/Load/2.png"  Width="328" Height="19"/>
+                        <Image x:Name="img1" Stretch="None" Source="/Res;component/Resources/Images/Pos/Load/1.png"  Width="328" Height="19"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <DataTrigger Binding="{Binding RelativeSource={x:Static RelativeSource.Self}, Path=IsVisible}" 
+                         Value="True">
+                            <DataTrigger.EnterActions>
+                                <BeginStoryboard x:Name="LoadingStoryboard">
+                                    <Storyboard Duration="0:0:2.9" RepeatBehavior="Forever" FillBehavior="Stop" Timeline.DesiredFrameRate="15">
+                                        <!-- Timeline.DesiredFrameRate="30" -->
+
+                                        <DoubleAnimation BeginTime="0:0:0" Duration="0:0:0.1" Storyboard.TargetName="img1" Storyboard.TargetProperty="Opacity" To="0"/>
+                                        <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="img2" Storyboard.TargetProperty="Opacity" To="0"/>
+                                        <DoubleAnimation BeginTime="0:0:0.2" Duration="0:0:0.1" Storyboard.TargetName="img3" Storyboard.TargetProperty="Opacity" To="0"/>
+                                        <DoubleAnimation BeginTime="0:0:0.3" Duration="0:0:0.1" Storyboard.TargetName="img4" Storyboard.TargetProperty="Opacity" To="0"/>
+                                        <DoubleAnimation BeginTime="0:0:0.4" Duration="0:0:0.1" Storyboard.TargetName="img5" Storyboard.TargetProperty="Opacity" To="0"/>
+                                        <DoubleAnimation BeginTime="0:0:0.5" Duration="0:0:0.1" Storyboard.TargetName="img6" Storyboard.TargetProperty="Opacity" To="0"/>
+                                        <DoubleAnimation BeginTime="0:0:0.6" Duration="0:0:0.1" Storyboard.TargetName="img7" Storyboard.TargetProperty="Opacity" To="0"/>
+                                        <DoubleAnimation BeginTime="0:0:0.7" Duration="0:0:0.1" Storyboard.TargetName="img8" Storyboard.TargetProperty="Opacity" To="0"/>
+                                        <DoubleAnimation BeginTime="0:0:0.8" Duration="0:0:0.1" Storyboard.TargetName="img9" Storyboard.TargetProperty="Opacity" To="0"/>
+                                        <DoubleAnimation BeginTime="0:0:0.9" Duration="0:0:0.1" Storyboard.TargetName="img10" Storyboard.TargetProperty="Opacity" To="0"/>
+                                        <DoubleAnimation BeginTime="0:0:1.0" Duration="0:0:0.1" Storyboard.TargetName="img11" Storyboard.TargetProperty="Opacity" To="0"/>
+                                        <DoubleAnimation BeginTime="0:0:1.1" Duration="0:0:0.1" Storyboard.TargetName="img12" Storyboard.TargetProperty="Opacity" To="0"/>
+                                        <DoubleAnimation BeginTime="0:0:1.2" Duration="0:0:0.1" Storyboard.TargetName="img13" Storyboard.TargetProperty="Opacity" To="0"/>
+                                        <DoubleAnimation BeginTime="0:0:1.3" Duration="0:0:0.1" Storyboard.TargetName="img14" Storyboard.TargetProperty="Opacity" To="0"/>
+                                        <DoubleAnimation BeginTime="0:0:1.4" Duration="0:0:0.1" Storyboard.TargetName="img15" Storyboard.TargetProperty="Opacity" To="0"/>
+                                        <DoubleAnimation BeginTime="0:0:1.5" Duration="0:0:0.1" Storyboard.TargetName="img16" Storyboard.TargetProperty="Opacity" To="0"/>
+                                        <DoubleAnimation BeginTime="0:0:1.6" Duration="0:0:0.1" Storyboard.TargetName="img17" Storyboard.TargetProperty="Opacity" To="0"/>
+                                        <DoubleAnimation BeginTime="0:0:1.7" Duration="0:0:0.1" Storyboard.TargetName="img18" Storyboard.TargetProperty="Opacity" To="0"/>
+                                        <DoubleAnimation BeginTime="0:0:1.8" Duration="0:0:0.1" Storyboard.TargetName="img19" Storyboard.TargetProperty="Opacity" To="0"/>
+                                        <DoubleAnimation BeginTime="0:0:1.9" Duration="0:0:0.1" Storyboard.TargetName="img20" Storyboard.TargetProperty="Opacity" To="0"/>
+                                        <DoubleAnimation BeginTime="0:0:2.0" Duration="0:0:0.1" Storyboard.TargetName="img21" Storyboard.TargetProperty="Opacity" To="0"/>
+                                        <DoubleAnimation BeginTime="0:0:2.1" Duration="0:0:0.1" Storyboard.TargetName="img22" Storyboard.TargetProperty="Opacity" To="0"/>
+                                        <DoubleAnimation BeginTime="0:0:2.2" Duration="0:0:0.1" Storyboard.TargetName="img23" Storyboard.TargetProperty="Opacity" To="0"/>
+                                        <DoubleAnimation BeginTime="0:0:2.3" Duration="0:0:0.1" Storyboard.TargetName="img24" Storyboard.TargetProperty="Opacity" To="0"/>
+                                        <DoubleAnimation BeginTime="0:0:2.4" Duration="0:0:0.1" Storyboard.TargetName="img25" Storyboard.TargetProperty="Opacity" To="0"/>
+                                        <DoubleAnimation BeginTime="0:0:2.5" Duration="0:0:0.1" Storyboard.TargetName="img26" Storyboard.TargetProperty="Opacity" To="0"/>
+                                        <DoubleAnimation BeginTime="0:0:2.6" Duration="0:0:0.1" Storyboard.TargetName="img27" Storyboard.TargetProperty="Opacity" To="0"/>
+                                        <DoubleAnimation BeginTime="0:0:2.7" Duration="0:0:0.1" Storyboard.TargetName="img28" Storyboard.TargetProperty="Opacity" To="0"/>
+                                        <DoubleAnimation BeginTime="0:0:2.8" Duration="0:0:0.1" Storyboard.TargetName="img29" Storyboard.TargetProperty="Opacity" To="0"/>
+                                        
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </DataTrigger.EnterActions>
+                            <DataTrigger.ExitActions>
+                                <StopStoryboard BeginStoryboardName="LoadingStoryboard"></StopStoryboard>
+                            </DataTrigger.ExitActions>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="lbContentStyle" TargetType="{x:Type Label}">
+        <Setter Property="Margin" Value="50,0,50,0"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="Content" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=OperatingWait}"/>
+        <Setter Property="FontSize" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MediumButtonFontSize}"/>
+        <Setter Property="FontFamily" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+    </Style>
+
+</ResourceDictionary>

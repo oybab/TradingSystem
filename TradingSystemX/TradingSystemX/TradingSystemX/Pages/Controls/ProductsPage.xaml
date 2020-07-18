@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.Core"
+             Title="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=SoftServiceName}"
+              
+             x:Class="Oybab.TradingSystemX.Pages.Controls.ProductsPage" BackgroundColor="{DynamicResource PageBackgroundColor}"><!--xmlns:behaviors="clr-namespace:Oybab.TradingSystemX.VM.Commands"-->
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <ControlTemplate x:Key="ProductListTemplate" x:Name="ProductListTemplate">
+                <Grid>
+                    <Grid Padding="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="180"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Text="{TemplateBinding BindingContext.ProductName}" VerticalOptions="FillAndExpand"  HorizontalOptions="StartAndExpand" LineBreakMode="WordWrap"/>
+                        <Grid Grid.Column="1" >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="1.5*"/>
+                            </Grid.ColumnDefinitions>
+                            <StackLayout  Grid.Column="0"  Orientation="Horizontal" >
+                                <Label Text="{Binding Converter={StaticResource PC}}"/>
+                                <Label Text="{TemplateBinding BindingContext.Price}" />
+                            </StackLayout>
+                            <StackLayout Grid.Column="1"  Orientation="Horizontal" HorizontalOptions="StartAndExpand" Opacity="0">
+                                <Label Text=" × ("  />
+                                <Label Text="{TemplateBinding BindingContext.DetailsModel.CountStr}" />
+                                <Label Text=" ) " />
+                                <Label Text="*" TextColor="Red"/>
+                                <StackLayout.Triggers>
+                                    <DataTrigger TargetType="StackLayout" Binding="{TemplateBinding BindingContext.IsSelected}" Value="True">
+                                        <Setter Property="Opacity" Value="1"/>
+                                    </DataTrigger>
+                                </StackLayout.Triggers>
+                            </StackLayout>
+                        </Grid>
+                    </Grid>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="2*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" Command="{TemplateBinding BindingContext.RemoveProduct}" CommandParameter="{TemplateBinding BindingContext }" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent"></Button>
+                        <Button Grid.Column="1" Command="{TemplateBinding BindingContext.AddProduct}" CommandParameter="{TemplateBinding BindingContext }" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  BackgroundColor="Transparent"></Button>
+                    </Grid>
+                </Grid>
+            </ControlTemplate>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid>
+        <Grid>
+            <Grid Margin="0, 10, 0, 10" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="45"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" Margin="6,10,6,0" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" VerticalOptions="CenterAndExpand"  Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Products}"  HorizontalOptions="Start"/>
+                    <Button Grid.Column="1" VerticalOptions="CenterAndExpand"  Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Barcode}"  HorizontalOptions="Center" Command="{Binding GoCommand}" CommandParameter="Barcode" >
+                        <!--<Button.Behaviors>
+                            <behaviors:LongPressBehavior  Command="{Binding ButtonLongCommand}" />
+                        </Button.Behaviors>-->
+                    </Button>
+                    <Button Grid.Column="2" VerticalOptions="CenterAndExpand"  Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Selected}"  HorizontalOptions="End"  Command="{Binding GoCommand}" CommandParameter="Selected1" />
+                </Grid>
+                <SearchBar   Grid.Row="1" Margin="5,5,5,5" Placeholder="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=IndexNameOrBarcode}" SearchCommand="{Binding SearchCommand}" Text="{Binding SearchKey, Mode=TwoWay}" />
+                <ScrollView  Grid.Row="2" Orientation="Horizontal" BackgroundColor="{DynamicResource ItemBackgroundColor}">
+                    <StackLayout Margin="10"  x:Name="spProductTypeList" Orientation="Horizontal" HorizontalOptions="Start" VerticalOptions="Center">
+
+                    </StackLayout>
+                </ScrollView>
+
+                <ScrollView Grid.Row="3"  Margin="0,10,0,0" VerticalOptions="FillAndExpand" BackgroundColor="{DynamicResource ItemBackgroundColor}">
+                    <StackLayout x:Name="lvList">
+
+                    </StackLayout>
+                </ScrollView>
+
+            </Grid>
+        </Grid>
+        <Grid IsVisible="{Binding IsLoading}"  Style="{StaticResource LoadingBackground}">
+            <ActivityIndicator IsRunning="{Binding IsLoading}" />
+        </Grid>
+    </Grid>
+</ContentPage>

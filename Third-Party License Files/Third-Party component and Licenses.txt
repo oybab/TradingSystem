@@ -1,0 +1,41 @@
+If any component licence not include in here or missing, please remind us. Thanks.
+For check the complete License detail files, please check the sub directories.
+
+
+-----------------TradingSystem---------------------:
+
+-ComponentFactory-Krypton:
+     BSD-3-Clause License
+
+-Json.NET - Newtonsoft:
+-Bootstrap:
+     MIT license 
+
+-Apache log4net:
+-SignalR:
+     Apache License, Version 2.0
+
+-System.Data.SQLite:
+-DotNetZip:
+     Microsoft Public License (MS-PL)
+
+-EntityFramework6:
+     Entity Framework 6 Runtime License (ENU)
+
+-DevExpress:
+     DevExpress End User License Agreements
+
+
+
+
+
+
+-----------------TradingSystemX---------------------:
+
+-Xamarin.Forms:
+-Xamarin.Essentials:
+-Json.NET - Newtonsoft:
+     MIT license 
+
+-SignalR:
+     Apache License, Version 2.0

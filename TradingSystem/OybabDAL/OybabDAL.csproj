@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0410FD27-6456-4780-8854-5205B6CD8BBD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Oybab.DAL</RootNamespace>
+    <AssemblyName>DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseIntermediateOutputPath>Y:\NET\TradingSystem\obj\OybabDAL\</BaseIntermediateOutputPath>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Y:\NET\TradingSystem\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <IntermediateOutputPath>Y:\NET\TradingSystem\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Y:\NET\TradingSystem\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+    <IntermediateOutputPath>Y:\NET\TradingSystem\Release\</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>OybabSoft.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.98.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.98.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.98.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Application\ShardAssemblyInfo.cs">
+      <Link>Properties\ShardAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <DependentUpon>TradingSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLog.cs">
+      <DependentUpon>TradingSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPay.cs">
+      <DependentUpon>TradingSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Balance.cs">
+      <DependentUpon>TradingSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BalancePay.cs">
+      <DependentUpon>TradingSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database.cs">
+      <DependentUpon>TradingSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Device.cs">
+      <DependentUpon>TradingSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Import.cs">
+      <DependentUpon>TradingSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ImportDetail.cs">
+      <DependentUpon>TradingSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ImportPay.cs">
+      <DependentUpon>TradingSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Log.cs">
+      <DependentUpon>TradingSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Member.cs">
+      <DependentUpon>TradingSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MemberPay.cs">
+      <DependentUpon>TradingSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Metadatas\Balance.cs" />
+    <Compile Include="Metadatas\AdminLog.cs" />
+    <Compile Include="Metadatas\AdminPay.cs" />
+    <Compile Include="Metadatas\BalancePay.cs" />
+    <Compile Include="Metadatas\ImportPay.cs" />
+    <Compile Include="Metadatas\TakeoutPay.cs" />
+    <Compile Include="Metadatas\OrderPay.cs" />
+    <Compile Include="Metadatas\SupplierPay.cs" />
+    <Compile Include="Metadatas\Supplier.cs" />
+    <Compile Include="Metadatas\Ppr.cs" />
+    <Compile Include="Metadatas\TakeoutDetail.cs" />
+    <Compile Include="Metadatas\Takeout.cs" />
+    <Compile Include="Metadatas\Room.cs" />
+    <Compile Include="Metadatas\ProductType.cs" />
+    <Compile Include="Metadatas\Product.cs" />
+    <Compile Include="Metadatas\Printer.cs" />
+    <Compile Include="Metadatas\OrderDetail.cs" />
+    <Compile Include="Metadatas\Order.cs" />
+    <Compile Include="Metadatas\MemberPay.cs" />
+    <Compile Include="Metadatas\Member.cs" />
+    <Compile Include="Metadatas\ImportDetail.cs" />
+    <Compile Include="Metadatas\Import.cs" />
+    <Compile Include="Metadatas\Device.cs" />
+    <Compile Include="Metadatas\Admin.cs" />
+    <Compile Include="ModelMetadata.cs" />
+    <Compile Include="Order.cs">
+      <DependentUpon>TradingSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderDetail.cs">
+      <DependentUpon>TradingSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderPay.cs">
+      <DependentUpon>TradingSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Ppr.cs">
+      <DependentUpon>TradingSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Printer.cs">
+      <DependentUpon>TradingSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Printlog.cs">
+      <DependentUpon>TradingSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <DependentUpon>TradingSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductType.cs">
+      <DependentUpon>TradingSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Request.cs">
+      <DependentUpon>TradingSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Room.cs">
+      <DependentUpon>TradingSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier.cs">
+      <DependentUpon>TradingSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierPay.cs">
+      <DependentUpon>TradingSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Takeout.cs">
+      <DependentUpon>TradingSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TakeoutDetail.cs">
+      <DependentUpon>TradingSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TakeoutPay.cs">
+      <DependentUpon>TradingSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TradingSystemModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TradingSystemModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TradingSystemModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TradingSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TradingSystemModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TradingSystemModel.edmx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OybabSoft.snk" />
+    <None Include="packages.config" />
+    <EntityDeploy Include="TradingSystemModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>TradingSystemModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="TradingSystemModel.edmx.diagram">
+      <DependentUpon>TradingSystemModel.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TradingSystemModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TradingSystemModel.edmx</DependentUpon>
+      <LastGenOutput>TradingSystemModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="TradingSystemModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TradingSystemModel.edmx</DependentUpon>
+      <LastGenOutput>TradingSystemModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

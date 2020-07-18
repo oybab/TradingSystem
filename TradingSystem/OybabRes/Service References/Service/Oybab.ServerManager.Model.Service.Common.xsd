@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Models" />
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ToServerServiceNewRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q1:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AdminNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CI" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CM" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CurrentVersion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DeviceId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DeviceType" type="xs:long" />
+          <xs:element minOccurs="0" name="IsLocalPrintCustomOrder" type="xs:boolean" />
+          <xs:element minOccurs="0" name="PWD" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Soft_Service_Mobile_Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Soft_Service_PC_Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Soft_Service_Tablet_Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Time" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceNewRequest" nillable="true" type="tns:ToServerServiceNewRequest" />
+  <xs:complexType name="ToClientServiceNewRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q2:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Admin" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Admins" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Balances" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ChangePassword" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Config" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Device" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DeviceCount" type="xs:int" />
+          <xs:element minOccurs="0" name="Devices" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ExpiredRemaningDays" type="xs:int" />
+          <xs:element minOccurs="0" name="ExtendInfo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="HoursIntervalTime" type="xs:int" />
+          <xs:element minOccurs="0" name="IsAdminUsing" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsExpired" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsFireAlarmEnable" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Members" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MinutesIntervalTime" type="xs:int" />
+          <xs:element minOccurs="0" name="Name_0" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name_1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name_2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Pprs" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PrintInfo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Printers" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProductTypes" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Products" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RegTimeRequestCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Requests" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+          <xs:element minOccurs="0" name="RoomCount" type="xs:int" />
+          <xs:element minOccurs="0" name="Rooms" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RoomsModel" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Services" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SessionId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TakeoutModel" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ValidResult" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceNewRequest" nillable="true" type="tns:ToClientServiceNewRequest" />
+  <xs:complexType name="ToServerServiceChangePWD">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q3:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Admin" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NewPWD" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OldPWD" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceChangePWD" nillable="true" type="tns:ToServerServiceChangePWD" />
+  <xs:complexType name="ToClientServiceChangePWD">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q4:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Admin" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+          <xs:element minOccurs="0" name="ValidResult" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceChangePWD" nillable="true" type="tns:ToClientServiceChangePWD" />
+  <xs:complexType name="ToServerServiceUID">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q5:ToServerService">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceUID" nillable="true" type="tns:ToServerServiceUID" />
+  <xs:complexType name="ToClientServiceUID">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q6:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="UID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceUID" nillable="true" type="tns:ToClientServiceUID" />
+  <xs:complexType name="ToServerServiceSetCon">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q7:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AdminId" type="xs:long" />
+          <xs:element minOccurs="0" name="Config" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceSetCon" nillable="true" type="tns:ToServerServiceSetCon" />
+  <xs:complexType name="ToClientServiceSetCon">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q8:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceSetCon" nillable="true" type="tns:ToClientServiceSetCon" />
+  <xs:complexType name="ToServerServiceSend">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q9:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AdminId" type="xs:long" />
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MessageExt" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Model" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModelExt" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RoomsId" nillable="true" type="xs:string" />
+          <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Models" minOccurs="0" name="SendType" type="q10:SendType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceSend" nillable="true" type="tns:ToServerServiceSend" />
+  <xs:complexType name="ToClientServiceSend">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q11="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q11:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceSend" nillable="true" type="tns:ToClientServiceSend" />
+  <xs:complexType name="ToServerServicePrint">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q12="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q12:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AdminId" type="xs:long" />
+          <xs:element minOccurs="0" name="IsLocalPrint" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Lang" type="xs:long" />
+          <xs:element minOccurs="0" name="Model" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModelRef" nillable="true" type="xs:string" />
+          <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Models" minOccurs="0" name="ModelType" type="q13:ModelType" />
+          <xs:element minOccurs="0" name="Printer" nillable="true" type="xs:string" />
+          <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Models" minOccurs="0" name="StatisticType" type="q14:StatisticType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServicePrint" nillable="true" type="tns:ToServerServicePrint" />
+  <xs:complexType name="ToClientServicePrint">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q15="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q15:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServicePrint" nillable="true" type="tns:ToClientServicePrint" />
+  <xs:complexType name="ToServerServiceLock">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q16="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q16:ToServerService">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceLock" nillable="true" type="tns:ToServerServiceLock" />
+  <xs:complexType name="ToClientServiceLock">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q17="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q17:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsSuccessLock" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceLock" nillable="true" type="tns:ToClientServiceLock" />
+  <xs:complexType name="ToServerServiceClose">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q18="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q18:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AdminId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceClose" nillable="true" type="tns:ToServerServiceClose" />
+  <xs:complexType name="ToClientServiceClose">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q19="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q19:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceClose" nillable="true" type="tns:ToClientServiceClose" />
+  <xs:complexType name="ToServerServiceGetbak">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q20="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q20:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AdminId" type="xs:long" />
+          <xs:element minOccurs="0" name="ModelType" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceGetbak" nillable="true" type="tns:ToServerServiceGetbak" />
+  <xs:complexType name="ToClientServiceGetbak">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q21="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q21:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Key" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Model" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModelRef" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Token" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceGetbak" nillable="true" type="tns:ToClientServiceGetbak" />
+  <xs:complexType name="ToServerServiceSetbak">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q22="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q22:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AdminId" type="xs:long" />
+          <xs:element minOccurs="0" name="Key" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Model" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModelRef" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Token" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceSetbak" nillable="true" type="tns:ToServerServiceSetbak" />
+  <xs:complexType name="ToClientServiceSetbak">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q23="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q23:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceSetbak" nillable="true" type="tns:ToClientServiceSetbak" />
+  <xs:complexType name="ToServerServiceSetContent">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q24="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q24:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AdminId" type="xs:long" />
+          <xs:element minOccurs="0" name="Key" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Token" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceSetContent" nillable="true" type="tns:ToServerServiceSetContent" />
+  <xs:complexType name="ToClientServiceSetContent">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q25="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q25:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Content" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceSetContent" nillable="true" type="tns:ToClientServiceSetContent" />
+  <xs:complexType name="ToServerServiceRequestTimeCode">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q26="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q26:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AdminId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceRequestTimeCode" nillable="true" type="tns:ToServerServiceRequestTimeCode" />
+  <xs:complexType name="ToClientServiceRequestTimeCode">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q27="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q27:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="RequestCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceRequestTimeCode" nillable="true" type="tns:ToClientServiceRequestTimeCode" />
+  <xs:complexType name="ToServerServiceRegTime">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q28="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q28:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AdminId" type="xs:long" />
+          <xs:element minOccurs="0" name="RegCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceRegTime" nillable="true" type="tns:ToServerServiceRegTime" />
+  <xs:complexType name="ToClientServiceRegTime">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q29="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q29:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceRegTime" nillable="true" type="tns:ToClientServiceRegTime" />
+  <xs:complexType name="ToServerServiceRequestCountCode">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q30="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q30:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AdminId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceRequestCountCode" nillable="true" type="tns:ToServerServiceRequestCountCode" />
+  <xs:complexType name="ToClientServiceRequestCountCode">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q31="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q31:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="RequestCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceRequestCountCode" nillable="true" type="tns:ToClientServiceRequestCountCode" />
+  <xs:complexType name="ToServerServiceRegCount">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q32="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q32:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AdminId" type="xs:long" />
+          <xs:element minOccurs="0" name="RegCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceRegCount" nillable="true" type="tns:ToServerServiceRegCount" />
+  <xs:complexType name="ToClientServiceRegCount">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q33="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q33:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceRegCount" nillable="true" type="tns:ToClientServiceRegCount" />
+  <xs:complexType name="ToServerServiceGetModel">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q34="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q34:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AdminId" type="xs:long" />
+          <xs:element minOccurs="0" name="Key" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Token" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceGetModel" nillable="true" type="tns:ToServerServiceGetModel" />
+  <xs:complexType name="ToClientServiceGetModel">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q35="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q35:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Model" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModelRef" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModelRef2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceGetModel" nillable="true" type="tns:ToClientServiceGetModel" />
+  <xs:complexType name="ToServerServiceSession">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q36="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q36:ToServerService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ConfirmToken" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsNeedConfirm" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsNew" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsSignalRMode" type="xs:boolean" />
+          <xs:element minOccurs="0" name="RefreshService" type="xs:boolean" />
+          <xs:element xmlns:q37="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="RoomsId" nillable="true" type="q37:ArrayOflong" />
+          <xs:element minOccurs="0" name="RoomsInfoModel" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToServerServiceSession" nillable="true" type="tns:ToServerServiceSession" />
+  <xs:complexType name="ToClientServiceSession">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q38="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q38:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ConfirmToken" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsNeedConfirm" type="xs:boolean" />
+          <xs:element minOccurs="0" name="NewSessionId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Not" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+          <xs:element minOccurs="0" name="RoomsModel" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ServiceModel" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceSession" nillable="true" type="tns:ToClientServiceSession" />
+  <xs:complexType name="ToClientServiceSendNotification">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q39="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" base="q39:ToClientService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AdminId" type="xs:long" />
+          <xs:element minOccurs="0" name="DeviceId" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="Identity" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Model" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModelExt" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RoomId" nillable="true" type="xs:long" />
+          <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Models" minOccurs="0" name="SendType" type="q40:SendType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ToClientServiceSendNotification" nillable="true" type="tns:ToClientServiceSendNotification" />
+</xs:schema>

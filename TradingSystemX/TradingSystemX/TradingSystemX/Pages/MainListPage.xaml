@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.Core"
+             Title="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=SoftServiceName}"  NavigationPage.BackButtonTitle="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Back}"
+             x:Class="Oybab.TradingSystemX.Pages.MainListPage" BackgroundColor="{DynamicResource PageBackgroundColor}">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <ControlTemplate x:Key="ListTemplate" x:Name="ListTemplate">
+                <Grid>
+                    <Grid Padding="5, 10, 5, 10" HorizontalOptions="FillAndExpand">
+                        <Label Text="{TemplateBinding BindingContext.DisplayName}" HorizontalOptions="StartAndExpand" />
+                    </Grid>
+                    <Button Command="{TemplateBinding BindingContext.GoCommand}" CommandParameter="{TemplateBinding BindingContext }" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent"></Button>
+                </Grid>
+            </ControlTemplate>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid VerticalOptions="FillAndExpand">
+        <Grid VerticalOptions="FillAndExpand">
+            <StackLayout Margin="10, 10, 10, 10"  Orientation="Vertical" VerticalOptions="FillAndExpand">
+
+                <StackLayout VerticalOptions="FillAndExpand">
+                    <Label HorizontalOptions="Start" Text="{Binding OwnerName}"  Margin="6,10,0,0" />
+
+                    <ScrollView Margin="0,20,0,0" BackgroundColor="{DynamicResource ItemBackgroundColor}" VerticalOptions="FillAndExpand">
+                        <StackLayout x:Name="lvList">
+
+                        </StackLayout>
+                    </ScrollView>
+
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+
+        <Grid IsVisible="{Binding IsLoading}" Style="{StaticResource LoadingBackground}">
+            <ActivityIndicator IsRunning="{Binding IsLoading}" />
+        </Grid>
+
+    </Grid>
+</ContentPage>

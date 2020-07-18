@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.Core" 
+             Title="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=BalanceManager}"
+             x:Class="Oybab.TradingSystemX.Pages.BalancePage" BackgroundColor="{DynamicResource PageBackgroundColor}">
+    <Grid>
+        <Grid>
+            <StackLayout  Orientation="Vertical" Margin="10,10,10,10">
+                <Label HorizontalOptions="Start" Margin="6,10,0,0" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=BalanceManager}"/>
+                <ScrollView>
+                    <StackLayout  Margin="10, 20, 10, 10"  Orientation="Vertical">
+                        <StackLayout Margin="6,20,0,0" HorizontalOptions="Fill" Orientation="Horizontal">
+                            <Label VerticalOptions="Center" HorizontalOptions="Start" Margin="0"  Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=BalancePay}"  />
+                            <Switch VerticalOptions="Center" Margin="0" x:Name="swBalancePay" Toggled="switcherAdd_Toggled2">
+                                <Switch.Triggers>
+                                    <DataTrigger TargetType="Switch" Binding="{Binding BalanceMode}" Value="False">
+                                        <Setter Property="IsToggled" Value="True"/>
+                                        <Setter Property="InputTransparent" Value="True"/>
+                                    </DataTrigger>
+                                    <DataTrigger TargetType="Switch" Binding="{Binding BalanceMode}" Value="True">
+                                        <Setter Property="IsToggled" Value="False"/>
+                                    </DataTrigger>
+
+                                </Switch.Triggers>
+                            </Switch>
+                            <Label VerticalOptions="Center" HorizontalOptions="Start" Margin="10, 0, 0, 0" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=BalanceTransfer}" />
+                            <Switch VerticalOptions="Center" Margin="0" x:Name="swBalanceTransfer"  Toggled="switcherSubtract_Toggled2">
+                                <Switch.Triggers>
+                                    <DataTrigger TargetType="Switch" Binding="{Binding BalanceMode}" Value="True">
+                                        <Setter Property="IsToggled" Value="True"/>
+                                        <Setter Property="InputTransparent" Value="True"/>
+                                    </DataTrigger>
+                                    <DataTrigger TargetType="Switch" Binding="{Binding BalanceMode}" Value="False">
+                                        <Setter Property="IsToggled" Value="False"/>
+                                    </DataTrigger>
+                                </Switch.Triggers>
+                            </Switch>
+                        </StackLayout>
+                        <StackLayout Margin="0,10,0,0">
+                            <Label VerticalOptions="Center" HorizontalOptions="Start" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=BalanceName}">
+                                <Label.Triggers>
+                                    <DataTrigger TargetType="Label" Binding="{Binding BalanceMode}" Value="True">
+                                        <Setter Property="Text" Value="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=OldBalance}"/>
+                                    </DataTrigger>
+                                </Label.Triggers>
+                            </Label>
+                            <Picker VerticalOptions="Center" HorizontalOptions="CenterAndExpand"  ItemsSource="{Binding OldBalanceList}" SelectedItem="{Binding SelectedOldBalance}" ItemDisplayBinding="{Binding Name}" />
+                        </StackLayout>
+                        <StackLayout Margin="0,10,0,0" IsVisible="{Binding BalanceMode}">
+                            <Label VerticalOptions="Center" HorizontalOptions="Start" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=NewBalance}"/>
+                            <Picker VerticalOptions="Center" HorizontalOptions="CenterAndExpand" ItemsSource="{Binding NewBalanceList}" SelectedItem="{Binding SelectedNewBalance}" ItemDisplayBinding="{Binding Name}"  />
+                        </StackLayout>
+                        <StackLayout Margin="0,10,0,0" HorizontalOptions="Fill" Orientation="Horizontal">
+                            <Label VerticalOptions="Center" Margin="0"  Text="＋"  />
+                            <Switch VerticalOptions="Center" Margin="0" x:Name="swAdd" Toggled="switcherAdd_Toggled">
+                                <Switch.Triggers>
+                                    <DataTrigger TargetType="Switch" Binding="{Binding Mode}" Value="1">
+                                        <Setter Property="IsToggled" Value="True"/>
+                                        <Setter Property="InputTransparent" Value="True"/>
+                                    </DataTrigger>
+                                    <DataTrigger TargetType="Switch" Binding="{Binding Mode}" Value="2">
+                                        <Setter Property="IsToggled" Value="False"/>
+                                    </DataTrigger>
+
+                                </Switch.Triggers>
+                            </Switch>
+                            <Label VerticalOptions="Center" Margin="10, 0, 0, 0" Text="-" />
+                            <Switch VerticalOptions="Center" Margin="0" x:Name="swSub"  Toggled="switcherSubtract_Toggled">
+                                <Switch.Triggers>
+                                    <DataTrigger TargetType="Switch" Binding="{Binding Mode}" Value="2">
+                                        <Setter Property="IsToggled" Value="True"/>
+                                        <Setter Property="InputTransparent" Value="True"/>
+                                    </DataTrigger>
+                                    <DataTrigger TargetType="Switch" Binding="{Binding Mode}" Value="1">
+                                        <Setter Property="IsToggled" Value="False"/>
+                                    </DataTrigger>
+                                </Switch.Triggers>
+                            </Switch>
+                            <StackLayout.Triggers>
+                                <DataTrigger TargetType="StackLayout" Binding="{Binding BalanceMode}" Value="True">
+                                    <Setter Property="IsVisible" Value="False"/>
+                                </DataTrigger>
+                            </StackLayout.Triggers>
+                        </StackLayout>
+                        
+                        <StackLayout Margin="0,20,0,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                            <Label Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=ChangePrice}" VerticalOptions="Center">
+                                <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding FinishPriceCommand}" CommandParameter="1" />
+                                </Label.GestureRecognizers>
+                            </Label>
+                            <Label Text=":" VerticalOptions="Center"/>
+                            <Label Text="{Binding Converter={StaticResource PC}}" VerticalOptions="Center"/>
+                            <Entry Keyboard="Numeric" Text="{Binding ChangePrice, Mode=TwoWay}" TextChanged="Entry_TextChanged" HorizontalOptions="FillAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Margin="0,30,0,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                            <Label HorizontalOptions="Start" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Remark}" VerticalOptions="Center"/>
+                            <Label Text=":" VerticalOptions="Center"/>
+                            <Entry Text="{Binding Remark, Mode=TwoWay}" HorizontalOptions="FillAndExpand"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </ScrollView>
+
+                <Grid  HorizontalOptions="Center"  Margin="0, 10, 0, 5" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Grid.Column="0" HorizontalOptions="End" Command="{Binding BackCommand}" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Back}"  />
+                    <Button Grid.Column="2" HorizontalOptions="Start" Command="{Binding ChangeCommand}" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Change}"  />
+                </Grid>
+            </StackLayout>
+        </Grid>
+
+        <Grid IsVisible="{Binding IsLoading}" Style="{StaticResource LoadingBackground}">
+            <ActivityIndicator IsRunning="{Binding IsLoading}" />
+        </Grid>
+
+    </Grid>
+</ContentPage>

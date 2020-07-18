@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="Oybab.ServiceTablet.Resources.Controls.MsgControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Focusable="True"
+             x:Name="control">
+    <UserControl.InputBindings>
+        <KeyBinding Key="Enter" Command="{Binding EnterCommand}" />
+    </UserControl.InputBindings>
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary  Source="/ServiceTablet;component/Resources/Styles/Controls/MsgControlStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <Grid Style="{StaticResource grdMessageboxParentBackgroundStyle}"/>
+        <Border Style="{StaticResource bdMessageboxBorderStyle}" >
+            <Grid Margin="80, 50">
+                <StackPanel>
+                    <WrapPanel Style="{StaticResource wpMessageboxWrapStyle}">
+                        <Image Style="{StaticResource imgMessageboxWarnStyle}"/>
+                        <TextBlock Style="{StaticResource tbMessageboxWarnContentStyle}" Text="{Binding AlertMsg, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    </WrapPanel>
+                    <!-- Buttons for success and exit -->
+                    <WrapPanel Style="{StaticResource wpMessageboxButtonWrapStyle}">
+                        <Button Style="{StaticResource btnMsgOKStyle}"  Command="{Binding OKCommand}"/>
+
+                        <Button Style="{StaticResource btnMsgNoStyle}"  Command="{Binding NoCommand}"/>
+                        <Button Style="{StaticResource btnMsgYesStyle}"  Command="{Binding YesCommand}"/>
+                    </WrapPanel>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

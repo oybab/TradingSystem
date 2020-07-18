@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4F231DE9-EE14-428C-86F3-3321357A6ABA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Oybab.ServerManager</RootNamespace>
+    <AssemblyName>ServerManager</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <BaseIntermediateOutputPath>Y:\NET\TradingSystem\obj\OybabServerManager\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Y:\NET\TradingSystem\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <IntermediateOutputPath>Y:\NET\TradingSystem\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Y:\NET\TradingSystem\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <IntermediateOutputPath>Y:\NET\TradingSystem\Release\</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>OybabSoft.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotNetZip, Version=1.13.7.0, Culture=neutral, PublicKeyToken=6583c7c814667745, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\DotNetZip.1.13.7\lib\net40\DotNetZip.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Libraries\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Core, Version=2.4.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.SignalR.Core.2.4.1\lib\net45\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Owin.4.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Cors, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Owin.Cors.4.1.0\lib\net45\Microsoft.Owin.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Diagnostics, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Owin.Diagnostics.4.1.0\lib\net45\Microsoft.Owin.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.HttpListener, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Owin.Host.HttpListener.4.1.0\lib\net45\Microsoft.Owin.Host.HttpListener.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Hosting, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Owin.Hosting.4.1.0\lib\net45\Microsoft.Owin.Hosting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Owin.Security.4.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.98.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.98.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.98.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Cors, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.Cors.5.2.7\lib\net45\System.Web.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Application\ShardAssemblyInfo.cs">
+      <Link>Properties\ShardAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Model\Service\ImportDetail\ToClientServiceGetImportPay.cs" />
+    <Compile Include="Model\Service\ImportDetail\ToServerServiceGetImportPay.cs" />
+    <Compile Include="Model\Service\OrderDetail\ToClientServiceGetOrderPay.cs" />
+    <Compile Include="Model\Service\OrderDetail\ToServerServiceGetOrderPay.cs" />
+    <Compile Include="Model\Service\TakeoutDetail\ToClientServiceGetTakeoutPay.cs" />
+    <Compile Include="Model\Service\TakeoutDetail\ToServerServiceGetTakeoutPay.cs" />
+    <Compile Include="Exceptions\ExceptionPro.cs" />
+    <Compile Include="Exceptions\Logger.cs" />
+    <Compile Include="Exceptions\OybabException.cs" />
+    <Compile Include="Key.cs" />
+    <Compile Include="Model\Models\BackgroundJobSchedueller.cs" />
+    <Compile Include="Model\Models\Client.cs" />
+    <Compile Include="Model\Models\DatabaseUpdateModel.cs" />
+    <Compile Include="Model\Models\IServiceCallback.cs" />
+    <Compile Include="Model\Models\ExtendInfo.cs" />
+    <Compile Include="Model\Models\PasswordErrorModel.cs" />
+    <Compile Include="Model\Models\PrintInfo.cs" />
+    <Compile Include="Model\Models\ToClientServiceModelUpdateNotification.cs" />
+    <Compile Include="Model\Models\ProductModel.cs" />
+    <Compile Include="Model\Models\ProductTypeModel.cs" />
+    <Compile Include="Model\Models\ProductWithCount.cs" />
+    <Compile Include="Model\Models\Service.cs" />
+    <Compile Include="Model\Models\ServiceType.cs" />
+    <Compile Include="Model\Models\TakeoutModel.cs" />
+    <Compile Include="Model\Models\RoomModel.cs" />
+    <Compile Include="Model\Models\SendType.cs" />
+    <Compile Include="Model\Service\AdminLog\ToClientServiceGetAdminLog.cs" />
+    <Compile Include="Model\Service\AdminLog\ToServerServiceGetAdminLog.cs" />
+    <Compile Include="Model\Service\BalancePay\ToClientServiceTransferBalancePay.cs" />
+    <Compile Include="Model\Service\BalancePay\ToClientServiceAddBalancePay.cs" />
+    <Compile Include="Model\Service\BalancePay\ToClientServiceDelBalancePay.cs" />
+    <Compile Include="Model\Service\BalancePay\ToClientServiceGetBalancePay.cs" />
+    <Compile Include="Model\Service\BalancePay\ToServerServiceTransferBalancePay.cs" />
+    <Compile Include="Model\Service\BalancePay\ToServerServiceAddBalancePay.cs" />
+    <Compile Include="Model\Service\BalancePay\ToServerServiceDelBalancePay.cs" />
+    <Compile Include="Model\Service\BalancePay\ToServerServiceGetBalancePay.cs" />
+    <Compile Include="Model\Service\Common\ToClientServiceSetContent.cs" />
+    <Compile Include="Model\Service\Common\ToServerServiceSetContent.cs" />
+    <Compile Include="Model\Service\Log\ToClientServiceGetLog.cs" />
+    <Compile Include="Model\Service\Log\ToServerServiceGetLog.cs" />
+    <Compile Include="Model\Service\Admin\ToServerServiceResetAdmin.cs" />
+    <Compile Include="Model\Service\Admin\ToClientServiceResetAdmin.cs" />
+    <Compile Include="Model\Models\BakModel.cs" />
+    <Compile Include="Model\Service\Common\ToClientServiceGetModel.cs" />
+    <Compile Include="Model\Service\Common\ToClientServiceGetbak.cs" />
+    <Compile Include="Model\Service\Common\ToClientServiceSetbak.cs" />
+    <Compile Include="Model\Service\Common\ToClientServiceRegCount.cs" />
+    <Compile Include="Model\Service\Common\ToClientServiceRegTime.cs" />
+    <Compile Include="Model\Service\Common\ToClientServiceRequestCountCode.cs" />
+    <Compile Include="Model\Service\Common\ToClientServiceRequestTimeCode.cs" />
+    <Compile Include="Model\Service\Common\ToClientServicePrint.cs" />
+    <Compile Include="Model\Service\Common\ToServerServiceGetModel.cs" />
+    <Compile Include="Model\Service\Common\ToServerServiceSetbak.cs" />
+    <Compile Include="Model\Service\Common\ToServerServiceGetbak.cs" />
+    <Compile Include="Model\Service\Common\ToServerServiceRegCount.cs" />
+    <Compile Include="Model\Service\Common\ToServerServiceRegTime.cs" />
+    <Compile Include="Model\Service\Common\ToServerServiceRequestCountCode.cs" />
+    <Compile Include="Model\Service\Common\ToServerServiceRequestTimeCode.cs" />
+    <Compile Include="Model\Service\Common\ToServerServicePrint.cs" />
+    <Compile Include="Model\Service\Device\ToClientServiceDeviceModeUpdateNotification.cs" />
+    <Compile Include="Model\Service\AdminLog\ToClientServiceAddAdminLog.cs" />
+    <Compile Include="Model\Service\AdminLog\ToClientServiceDelAdminLog.cs" />
+    <Compile Include="Model\Service\AdminLog\ToClientServiceEditAdminLog.cs" />
+    <Compile Include="Model\Service\AdminLog\ToServerServiceAddAdminLog.cs" />
+    <Compile Include="Model\Service\AdminLog\ToServerServiceDelAdminLog.cs" />
+    <Compile Include="Model\Service\AdminLog\ToServerServiceEditAdminLog.cs" />
+    <Compile Include="Model\Service\AdminPay\ToClientServiceAddAdminPay.cs" />
+    <Compile Include="Model\Service\AdminPay\ToClientServiceDelAdminPay.cs" />
+    <Compile Include="Model\Service\AdminPay\ToClientServiceGetAdminPay.cs" />
+    <Compile Include="Model\Service\AdminPay\ToServerServiceAddAdminPay.cs" />
+    <Compile Include="Model\Service\AdminPay\ToServerServiceDelAdminPay.cs" />
+    <Compile Include="Model\Service\AdminPay\ToServerServiceGetAdminPay.cs" />
+    <Compile Include="Model\Service\Balance\ToClientServiceAddBalance.cs" />
+    <Compile Include="Model\Service\Balance\ToClientServiceDelBalance.cs" />
+    <Compile Include="Model\Service\Balance\ToClientServiceEditBalance.cs" />
+    <Compile Include="Model\Service\Balance\ToClientServiceGetBalance.cs" />
+    <Compile Include="Model\Service\Balance\ToServerServiceAddBalance.cs" />
+    <Compile Include="Model\Service\Balance\ToServerServiceDelBalance.cs" />
+    <Compile Include="Model\Service\Balance\ToServerServiceEditBalance.cs" />
+    <Compile Include="Model\Service\Balance\ToServerServiceGetBalance.cs" />
+    <Compile Include="Model\Service\Request\ToClientServiceAddRequest.cs" />
+    <Compile Include="Model\Service\Request\ToClientServiceDelRequest.cs" />
+    <Compile Include="Model\Service\Request\ToClientServiceEditRequest.cs" />
+    <Compile Include="Model\Service\Request\ToServerServiceAddRequest.cs" />
+    <Compile Include="Model\Service\Request\ToServerServiceDelRequest.cs" />
+    <Compile Include="Model\Service\Request\ToServerServiceEditRequest.cs" />
+    <Compile Include="Model\Service\SupplierPay\ToClientServiceAddSupplierPay.cs" />
+    <Compile Include="Model\Service\SupplierPay\ToClientServiceDelSupplierPay.cs" />
+    <Compile Include="Model\Service\SupplierPay\ToClientServiceGetSupplierPay.cs" />
+    <Compile Include="Model\Service\SupplierPay\ToServerServiceAddSupplierPay.cs" />
+    <Compile Include="Model\Service\SupplierPay\ToServerServiceDelSupplierPay.cs" />
+    <Compile Include="Model\Service\SupplierPay\ToServerServiceGetSupplierPay.cs" />
+    <Compile Include="Model\Service\Supplier\ToClientServiceAddSupplier.cs" />
+    <Compile Include="Model\Service\Supplier\ToClientServiceDelSupplier.cs" />
+    <Compile Include="Model\Service\Supplier\ToClientServiceEditSupplier.cs" />
+    <Compile Include="Model\Service\Supplier\ToClientServiceGetSupplier.cs" />
+    <Compile Include="Model\Service\Supplier\ToServerServiceAddSupplier.cs" />
+    <Compile Include="Model\Service\Supplier\ToServerServiceDelSupplier.cs" />
+    <Compile Include="Model\Service\Supplier\ToServerServiceEditSupplier.cs" />
+    <Compile Include="Model\Service\Supplier\ToServerServiceGetSupplier.cs" />
+    <Compile Include="Model\Service\Member\ToClientServiceGetMember.cs" />
+    <Compile Include="Model\Service\Member\ToClientServiceAddMember.cs" />
+    <Compile Include="Model\Service\Member\ToClientServiceDelMember.cs" />
+    <Compile Include="Model\Service\Member\ToClientServiceEditMember.cs" />
+    <Compile Include="Model\Service\Member\ToServerServiceGetMember.cs" />
+    <Compile Include="Model\Service\Member\ToServerServiceAddMember.cs" />
+    <Compile Include="Model\Service\Member\ToServerServiceDelMember.cs" />
+    <Compile Include="Model\Service\Member\ToServerServiceEditMember.cs" />
+    <Compile Include="Model\Service\Common\ToClientServiceChangePWD.cs" />
+    <Compile Include="Model\Service\Common\ToClientServiceClose.cs" />
+    <Compile Include="Model\Service\Common\ToClientServiceLock.cs" />
+    <Compile Include="Model\Service\Common\ToClientServiceSession.cs" />
+    <Compile Include="Model\Service\Common\ToClientServiceSendNotification.cs" />
+    <Compile Include="Model\Service\Common\ToClientServiceSetCon.cs" />
+    <Compile Include="Model\Service\Common\ToClientServiceUID.cs" />
+    <Compile Include="Model\Service\Common\ToServerServiceChangePWD.cs" />
+    <Compile Include="Model\Service\Common\ToServerServiceClose.cs" />
+    <Compile Include="Model\Service\Common\ToServerServiceLock.cs" />
+    <Compile Include="Model\Service\Common\ToServerServiceSession.cs" />
+    <Compile Include="Model\Service\Common\ToServerServiceSetCon.cs" />
+    <Compile Include="Model\Service\Common\ToServerServiceUID.cs" />
+    <Compile Include="Model\Service\Common\ToServerSessionRoomInfo.cs" />
+    <Compile Include="Model\Service\ImportDetail\ToClientServiceAddImportDetail.cs" />
+    <Compile Include="Model\Service\ImportDetail\ToClientServiceDelImportDetail.cs" />
+    <Compile Include="Model\Service\ImportDetail\ToClientServiceEditImportDetail.cs" />
+    <Compile Include="Model\Service\ImportDetail\ToClientServiceGetImportDetail.cs" />
+    <Compile Include="Model\Service\ImportDetail\ToServerServiceAddImportDetail.cs" />
+    <Compile Include="Model\Service\ImportDetail\ToServerServiceDelImportDetail.cs" />
+    <Compile Include="Model\Service\ImportDetail\ToServerServiceEditImportDetail.cs" />
+    <Compile Include="Model\Service\ImportDetail\ToServerServiceGetImportDetail.cs" />
+    <Compile Include="Model\Service\Import\ToClientServiceEditImport.cs" />
+    <Compile Include="Model\Service\Import\ToClientServiceGetImports.cs" />
+    <Compile Include="Model\Service\Import\ToClientServiceNewImport.cs" />
+    <Compile Include="Model\Service\Import\ToServerServiceEditImport.cs" />
+    <Compile Include="Model\Service\Import\ToServerServiceGetImports.cs" />
+    <Compile Include="Model\Service\Import\ToServerServiceNewImport.cs" />
+    <Compile Include="Model\Service\MemberPay\ToClientServiceAddMemberPay.cs" />
+    <Compile Include="Model\Service\MemberPay\ToClientServiceDelMemberPay.cs" />
+    <Compile Include="Model\Service\MemberPay\ToClientServiceGetMemberPay.cs" />
+    <Compile Include="Model\Service\MemberPay\ToServerServiceAddMemberPay.cs" />
+    <Compile Include="Model\Service\MemberPay\ToServerServiceDelMemberPay.cs" />
+    <Compile Include="Model\Service\MemberPay\ToServerServiceGetMemberPay.cs" />
+    <Compile Include="Model\Service\Product\ToClientServiceProductCountUpdateNotification.cs" />
+    <Compile Include="Model\Service\TakeoutDetail\ToClientServiceAddTakeoutDetail.cs" />
+    <Compile Include="Model\Service\TakeoutDetail\ToClientServiceDelTakeoutDetail.cs" />
+    <Compile Include="Model\Service\TakeoutDetail\ToClientServiceGetTakeoutDetail.cs" />
+    <Compile Include="Model\Service\TakeoutDetail\ToClientServiceTakeoutDetailsAddNotification.cs" />
+    <Compile Include="Model\Service\TakeoutDetail\ToClientServiceSaveTakeoutDetail.cs" />
+    <Compile Include="Model\Service\TakeoutDetail\ToServerServiceAddTakeoutDetail.cs" />
+    <Compile Include="Model\Service\TakeoutDetail\ToServerServiceDelTakeoutDetail.cs" />
+    <Compile Include="Model\Service\TakeoutDetail\ToServerServiceGetTakeoutDetail.cs" />
+    <Compile Include="Model\Service\TakeoutDetail\ToServerServiceSaveTakeoutDetail.cs" />
+    <Compile Include="Model\Service\Takeout\ToClientServiceEditTakeout.cs" />
+    <Compile Include="Model\Service\Takeout\ToClientServiceGetTakeouts.cs" />
+    <Compile Include="Model\Service\Takeout\ToClientServiceNewTakeout.cs" />
+    <Compile Include="Model\Service\Takeout\ToClientServiceTakeoutUpdateNotification.cs" />
+    <Compile Include="Model\Service\Takeout\ToServerServiceEditTakeout.cs" />
+    <Compile Include="Model\Service\Takeout\ToServerServiceGetTakeouts.cs" />
+    <Compile Include="Model\Service\Takeout\ToServerServiceNewTakeout.cs" />
+    <Compile Include="Model\Service\OrderDetail\ToClientServiceDelOrderDetail.cs" />
+    <Compile Include="Model\Service\OrderDetail\ToClientServiceGetOrderDetail.cs" />
+    <Compile Include="Model\Service\OrderDetail\ToClientServiceSaveOrderDetail.cs" />
+    <Compile Include="Model\Service\OrderDetail\ToClientServiceAddOrderDetail.cs" />
+    <Compile Include="Model\Service\OrderDetail\ToServerServiceDelOrderDetail.cs" />
+    <Compile Include="Model\Service\OrderDetail\ToServerServiceGetOrderDetail.cs" />
+    <Compile Include="Model\Service\OrderDetail\ToClientServiceOrderTakeoutAddNotification.cs" />
+    <Compile Include="Model\Service\OrderDetail\ToServerServiceSaveOrderDetail.cs" />
+    <Compile Include="Model\Service\OrderDetail\ToServerServiceAddOrderDetail.cs" />
+    <Compile Include="Model\Service\Order\ToClientServiceOrderUpdateNotification.cs" />
+    <Compile Include="Model\Service\Order\ToClientServiceEditOrder.cs" />
+    <Compile Include="Model\Service\Order\ToClientServiceGetOrders.cs" />
+    <Compile Include="Model\Service\Order\ToClientServiceNewOrder.cs" />
+    <Compile Include="Model\Service\Order\ToClientServiceReplaceOrder.cs" />
+    <Compile Include="Model\Service\Order\ToServerServiceEditOrder.cs" />
+    <Compile Include="Model\Service\Order\ToServerServiceGetOrders.cs" />
+    <Compile Include="Model\Service\Order\ToServerServiceNewOrder.cs" />
+    <Compile Include="Model\Service\Order\ToServerServiceReplaceOrder.cs" />
+    <Compile Include="Model\Service\Admin\ToClientServiceAddAdmin.cs" />
+    <Compile Include="Model\Service\Admin\ToClientServiceDelAdmin.cs" />
+    <Compile Include="Model\Service\Admin\ToClientServiceEditAdmin.cs" />
+    <Compile Include="Model\Service\Admin\ToServerServiceAddAdmin.cs" />
+    <Compile Include="Model\Service\Admin\ToServerServiceDelAdmin.cs" />
+    <Compile Include="Model\Service\Admin\ToServerServiceEditAdmin.cs" />
+    <Compile Include="Model\Service\Device\ToClientServiceAddDevice.cs" />
+    <Compile Include="Model\Service\Device\ToClientServiceDelDevice.cs" />
+    <Compile Include="Model\Service\Device\ToClientServiceEditDevice.cs" />
+    <Compile Include="Model\Service\Device\ToServerServiceAddDevice.cs" />
+    <Compile Include="Model\Service\Device\ToServerServiceDelDevice.cs" />
+    <Compile Include="Model\Service\Device\ToServerServiceEditDevice.cs" />
+    <Compile Include="Model\Service\Printer\ToClientServiceAddPrinter.cs" />
+    <Compile Include="Model\Service\Printer\ToClientServiceDelPrinter.cs" />
+    <Compile Include="Model\Service\Printer\ToClientServiceEditPrinter.cs" />
+    <Compile Include="Model\Service\Printer\ToServerServiceAddPrinter.cs" />
+    <Compile Include="Model\Service\Printer\ToServerServiceDelPrinter.cs" />
+    <Compile Include="Model\Service\Printer\ToServerServiceEditPrinter.cs" />
+    <Compile Include="Model\Service\ProductType\ToClientServiceDelProductType.cs" />
+    <Compile Include="Model\Service\ProductType\ToClientServiceEditProductType.cs" />
+    <Compile Include="Model\Service\ProductType\ToClientServiceAddProductType.cs" />
+    <Compile Include="Model\Service\ProductType\ToServerServiceDelProductType.cs" />
+    <Compile Include="Model\Service\ProductType\ToServerServiceEditProductType.cs" />
+    <Compile Include="Model\Service\ProductType\ToServerServiceAddProductType.cs" />
+    <Compile Include="Model\Service\Product\ToClientServiceDelProduct.cs" />
+    <Compile Include="Model\Service\Product\ToClientServiceEditProduct.cs" />
+    <Compile Include="Model\Service\Product\ToClientServiceAddProduct.cs" />
+    <Compile Include="Model\Service\Product\ToClientServiceGetAllProduct.cs" />
+    <Compile Include="Model\Service\Product\ToServerServiceDelProduct.cs" />
+    <Compile Include="Model\Service\Product\ToServerServiceEditProduct.cs" />
+    <Compile Include="Model\Service\Product\ToServerServiceAddProduct.cs" />
+    <Compile Include="Model\Service\Product\ToServerServiceGetAllProduct.cs" />
+    <Compile Include="Model\Service\Room\ToClientServiceDelRoom.cs" />
+    <Compile Include="Model\Service\Room\ToClientServiceEditRoom.cs" />
+    <Compile Include="Model\Service\Room\ToServerServiceDelRoom.cs" />
+    <Compile Include="Model\Service\Room\ToServerServiceEditRoom.cs" />
+    <Compile Include="Model\Service\Common\ToClientServiceSend.cs" />
+    <Compile Include="Model\Service\Common\ToServerServiceSend.cs" />
+    <Compile Include="Model\Service\ServiceExceptionType.cs" />
+    <Compile Include="Model\Service\ToClientService.cs" />
+    <Compile Include="Model\Service\Room\ToClientServiceAddRoom.cs" />
+    <Compile Include="Model\Service\Common\ToClientServiceNewRequest.cs" />
+    <Compile Include="Model\Service\ToServerService.cs" />
+    <Compile Include="Model\Models\UpdateModel.cs" />
+    <Compile Include="Model\Service\Room\ToServerServiceAddRoom.cs" />
+    <Compile Include="Model\Service\Common\ToServerServiceNewRequest.cs" />
+    <Compile Include="Operate\Common.cs" />
+    <Compile Include="Operate\Config.cs" />
+    <Compile Include="Operate\DBOperate.cs" />
+    <Compile Include="Operate\DBUpdate.cs" />
+    <Compile Include="Operate\Backup.cs" />
+    <Compile Include="Operate\Detection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operate\OperateLog.cs" />
+    <Compile Include="Operate\OperatePC.cs" />
+    <Compile Include="Operate\OSCheck.cs" />
+    <Compile Include="Operate\ServiceOperate.cs" />
+    <Compile Include="Operate\Session.cs" />
+    <Compile Include="Operate\SignalRSession.cs" />
+    <Compile Include="Operate\Time.cs" />
+    <Compile Include="Operate\Update.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Operate\Print.cs" />
+    <Compile Include="Resource.en-US.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resource.ug-CN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.ug-CN.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resource.zh-CN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.zh-CN.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.en-US.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource.ug-CN.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.ug-CN.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource.zh-CN.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.zh-CN.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="log4net.config" />
+    <EmbeddedResource Include="Resources\Database\ts.db" />
+    <None Include="OybabSoft.snk" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ServerConfig.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OybabDAL\OybabDAL.csproj">
+      <Project>{0410fd27-6456-4780-8854-5205b6cd8bbd}</Project>
+      <Name>OybabDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OybabReport\OybabReport.csproj">
+      <Project>{4a3dcc30-4346-47a0-874b-5674ab86f7bf}</Project>
+      <Name>OybabReport</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

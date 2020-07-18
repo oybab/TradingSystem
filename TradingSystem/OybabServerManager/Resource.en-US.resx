@@ -1,0 +1,1947 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="About" xml:space="preserve">
+    <value>About</value>
+  </data>
+	<data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+	<data name="Change" xml:space="preserve">
+    <value>Change</value>
+  </data>
+	<data name="ChangeFaild" xml:space="preserve">
+    <value>Change faild</value>
+  </data>
+	<data name="ChangePassword" xml:space="preserve">
+    <value>Change password</value>
+  </data>
+	<data name="ChangeSuccess" xml:space="preserve">
+    <value>Change success !</value>
+  </data>
+	<data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+	<data name="Company" xml:space="preserve">
+    <value>Hotan Oybab Information Technology Co., Ltd.</value>
+  </data>
+	<data name="ConfirmPassword" xml:space="preserve">
+    <value>Confirm Again</value>
+  </data>
+	<data name="Copyright" xml:space="preserve">
+    <value>Copyright Oybab. All Rights Reserved.</value>
+  </data>
+	<data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+	<data name="DeleteFailt" xml:space="preserve">
+    <value>Delete failed!</value>
+  </data>
+	<data name="DeleteSuccess" xml:space="preserve">
+    <value>Delete Success</value>
+  </data>
+	<data name="Exit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+	<data name="FontName" xml:space="preserve">
+    <value>微软雅黑, Oybab Tuz</value>
+  </data>
+	<data name="FontSize" xml:space="preserve">
+    <value>9</value>
+  </data>
+	<data name="Id" xml:space="preserve">
+    <value>ID</value>
+  </data>
+	<data name="Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+	<data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+	<data name="LoginValid" xml:space="preserve">
+    <value>Please enter the correct {0} Information!</value>
+  </data>
+	<data name="NewPassword" xml:space="preserve">
+    <value>New Password</value>
+  </data>
+	<data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+	<data name="OldPassword" xml:space="preserve">
+    <value>Old Password</value>
+  </data>
+	<data name="OldPasswordFaild" xml:space="preserve">
+    <value>Old password is wrong, please re-enter!</value>
+  </data>
+	<data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+	<data name="PwdError" xml:space="preserve">
+    <value>Password is incorrect!</value>
+  </data>
+	<data name="Refresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+	<data name="Retry" xml:space="preserve">
+    <value>Retry</value>
+  </data>
+	<data name="RightToLeft" xml:space="preserve">
+    <value>0</value>
+  </data>
+	<data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+	<data name="SaveFailt" xml:space="preserve">
+    <value>Save failed!</value>
+  </data>
+	<data name="SaveSuccess" xml:space="preserve">
+    <value>Successfully saved!</value>
+  </data>
+	<data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+	<data name="Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+	<data name="TwoNewPasswordNotEqual" xml:space="preserve">
+    <value>The two new passwords inconsistencies, please re-enter!</value>
+  </data>
+	<data name="UpdateInfo" xml:space="preserve">
+    <value>Discover new version</value>
+  </data>
+	<data name="USBKey_Warn" xml:space="preserve">
+    <value>Please Inser the USB-KEY and click【Retry】to continue，or click【Exit】to exit the system!</value>
+  </data>
+	<data name="UserLogin" xml:space="preserve">
+    <value>User Login</value>
+  </data>
+	<data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+	<data name="Abort" xml:space="preserve">
+    <value>Abort</value>
+  </data>
+	<data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+	<data name="Ignore" xml:space="preserve">
+    <value>Ignore</value>
+  </data>
+	<data name="UserName" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+	<data name="Warn" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+	<data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+	<data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+	<data name="CurrentKeyName" xml:space="preserve">
+    <value>Current USB-KEY name is：{0}.</value>
+  </data>
+	<data name="Exception_CheckSqlAndNet" xml:space="preserve">
+    <value>Database connection error, please check your network or database connection configuration!</value>
+  </data>
+	<data name="Exception_LoadCacheError" xml:space="preserve">
+    <value>Load cache failed.</value>
+  </data>
+	<data name="Exception_LoadMediaRoot" xml:space="preserve">
+    <value>Load songs root path failed, please check the configuration file!</value>
+  </data>
+	<data name="Exception_NotSupprtKey" xml:space="preserve">
+    <value>Can not connect to the database, does not support this USB-KEY.</value>
+  </data>
+	<data name="InputData" xml:space="preserve">
+    <value>Import Data</value>
+  </data>
+	<data name="OutputData" xml:space="preserve">
+    <value>Output Data</value>
+  </data>
+	<data name="UpdateNonReturnOrCantRead" xml:space="preserve">
+    <value>Updates return data is empty or resolution failed!</value>
+  </data>
+	<data name="UpdateUnableError" xml:space="preserve">
+    <value>Update unknown error, Code: {0}.</value>
+  </data>
+	<data name="CompanyLogoImage" xml:space="preserve">
+    <value>logo.png</value>
+  </data>
+	<data name="Exception_ReadResourceStrError" xml:space="preserve">
+    <value>Read Resource characters fail!</value>
+  </data>
+	<data name="Exception_InputData" xml:space="preserve">
+    <value>Import data failed!</value>
+  </data>
+	<data name="Exception_InputReadData" xml:space="preserve">
+    <value>Import and read data failed!</value>
+  </data>
+	<data name="Exception_OutputData" xml:space="preserve">
+    <value>Output data failed!</value>
+  </data>
+	<data name="InputDataSuccess" xml:space="preserve">
+    <value>Import data success!</value>
+  </data>
+	<data name="OutputDataSuccess" xml:space="preserve">
+    <value>Output data success!</value>
+  </data>
+	<data name="File" xml:space="preserve">
+    <value>File</value>
+  </data>
+	<data name="Tools" xml:space="preserve">
+    <value>Tools</value>
+  </data>
+	<data name="All" xml:space="preserve">
+    <value>All</value>
+  </data>
+	<data name="FolderName" xml:space="preserve">
+    <value>Folder Name</value>
+  </data>
+	<data name="IgnoreData" xml:space="preserve">
+    <value>Confirm ignore unsaved data?</value>
+  </data>
+	<data name="ImageName" xml:space="preserve">
+    <value>Image Name</value>
+  </data>
+	<data name="More" xml:space="preserve">
+    <value>More</value>
+  </data>
+	<data name="Page" xml:space="preserve">
+    <value>Page</value>
+  </data>
+	<data name="AddDescription" xml:space="preserve">
+    <value>Add a new data.</value>
+  </data>
+	<data name="DeleteDescription" xml:space="preserve">
+    <value>Delete current data.</value>
+  </data>
+	<data name="PleaseEditBefore" xml:space="preserve">
+    <value>Please finish edit first.</value>
+  </data>
+	<data name="SaveDescription" xml:space="preserve">
+    <value>Save the current added or altered data.</value>
+  </data>
+	<data name="SureDelete" xml:space="preserve">
+    <value>Confirm to delete?</value>
+  </data>
+	<data name="FileName" xml:space="preserve">
+    <value>File Name</value>
+  </data>
+	<data name="Exception_NotFound" xml:space="preserve">
+    <value>Not find this {0}!</value>
+  </data>
+	<data name="ErrorBig" xml:space="preserve">
+    <value>Find Bug</value>
+  </data>
+	<data name="Select" xml:space="preserve">
+    <value>Select</value>
+  </data>
+	<data name="System" xml:space="preserve">
+    <value>System</value>
+  </data>
+	<data name="AllPage" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+	<data name="AllPage2" xml:space="preserve">
+    <value>Page</value>
+  </data>
+	<data name="CurrentPage" xml:space="preserve">
+    <value>Current: </value>
+  </data>
+	<data name="CurrentPage2" xml:space="preserve">
+    <value>Page</value>
+  </data>
+	<data name="LastPage" xml:space="preserve">
+    <value>Last Page</value>
+  </data>
+	<data name="NextPage" xml:space="preserve">
+    <value>Next Page</value>
+  </data>
+	<data name="CompanyUrlStr" xml:space="preserve">
+    <value>Website</value>
+  </data>
+	<data name="ExitPassword" xml:space="preserve">
+    <value>Exit Password</value>
+  </data>
+	<data name="MobileNoStr" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+	<data name="Reset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+	<data name="NotFoundUSBKEY" xml:space="preserve">
+    <value>Not Found USB-KEY!</value>
+  </data>
+	<data name="Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+	<data name="MuteRestore" xml:space="preserve">
+    <value>Restore</value>
+  </data>
+	<data name="UpdateAlert" xml:space="preserve">
+    <value>Find the new version of system, please download the updated!</value>
+  </data>
+	<data name="Exception_CheckSqlAndFile" xml:space="preserve">
+    <value>Database connection error, check the database file or database connection configuration!</value>
+  </data>
+	<data name="CompanyShortName" xml:space="preserve">
+    <value>OYBAB</value>
+  </data>
+	<data name="CompleteInput" xml:space="preserve">
+    <value>Please complete input the data !</value>
+  </data>
+	<data name="VersionNo" xml:space="preserve">
+    <value>Version No</value>
+  </data>
+	<data name="SoftPlayerDescription" xml:space="preserve">
+    <value>Any comments or suggestions, please contact us, contact details on "System --- About" page.</value>
+  </data>
+	<data name="ChangeLanguage" xml:space="preserve">
+    <value>Change language</value>
+  </data>
+	<data name="ChangeLanguageFailt" xml:space="preserve">
+    <value>Change language faild !</value>
+  </data>
+	<data name="ChangeLanguageSuccess" xml:space="preserve">
+    <value>Change language success, Will changing when system next startup！</value>
+  </data>
+	<data name="Exception_InvalidLanguage" xml:space="preserve">
+    <value>System language is invalid or does not exist, please check the configuration file!</value>
+  </data>
+	<data name="Exception_LogError" xml:space="preserve">
+    <value>load log failed!</value>
+  </data>
+	<data name="FontName2" xml:space="preserve">
+    <value>宋体</value>
+  </data>
+	<data name="Help" xml:space="preserve">
+    <value>Help</value>
+  </data>
+	<data name="Exception_InvalidDB" xml:space="preserve">
+    <value>Database file is invalid!</value>
+  </data>
+	<data name="Exception_KeyKeyError" xml:space="preserve">
+    <value>USB-KEY get Key failed. Error:{0},{1}.</value>
+  </data>
+	<data name="Exception_ApplicationCheckFaild" xml:space="preserve">
+    <value>Application authentication failed!</value>
+  </data>
+	<data name="Exception_CloseRequestFaild" xml:space="preserve">
+    <value>Send  close the session request failed!</value>
+  </data>
+	<data name="Exception_EncryptedRequestFaild" xml:space="preserve">
+    <value>Send encrypted request exception!</value>
+  </data>
+	<data name="Exception_LockRequestFaild" xml:space="preserve">
+    <value>Send lock request faild!</value>
+  </data>
+	<data name="Exception_NewRequestFailt" xml:space="preserve">
+    <value>Send new session request failed! {0}Error code: 101</value>
+  </data>
+	<data name="Exception_OutClientLimitFaild" xml:space="preserve">
+    <value>Client connection limit exceeded! {0}Error code: 102</value>
+  </data>
+	<data name="Exception_RemoteServerConn" xml:space="preserve">
+    <value>Unable to connect remote server!</value>
+  </data>
+	<data name="Exception_ServerCantCorrConn" xml:space="preserve">
+    <value>Unable to maintain a normal conversation with the server! Please click【Retry】to continue，or click【Exit】to exit the system!</value>
+  </data>
+	<data name="Exception_ServerCheckFaild" xml:space="preserve">
+    <value>Check the server KEY failed!</value>
+  </data>
+	<data name="Exception_ServerFaild" xml:space="preserve">
+    <value>Server operate failed!</value>
+  </data>
+	<data name="Exception_ServerKeyFaild" xml:space="preserve">
+    <value>Server KEY failed！</value>
+  </data>
+	<data name="Exception_SessionExpiredRetry" xml:space="preserve">
+    <value>Session expired, please retry!</value>
+  </data>
+	<data name="Exception_SessionFaildAndTry" xml:space="preserve">
+    <value>Session expired, trying to get!</value>
+  </data>
+	<data name="Exception_SessionRequestFaild" xml:space="preserve">
+    <value>Send keep session request failed!</value>
+  </data>
+	<data name="Exception_SessionUpdateFaild" xml:space="preserve">
+    <value>Session Update failed!</value>
+  </data>
+	<data name="Exception_UIDRequestFaild" xml:space="preserve">
+    <value>Send Get UID request failed!</value>
+  </data>
+	<data name="SessionUpdateSuccess" xml:space="preserve">
+    <value>Session updated successfully.</value>
+  </data>
+	<data name="Exception_SetClientTimeFailt" xml:space="preserve">
+    <value>Calibration server time to the client failed!</value>
+  </data>
+	<data name="IsHidden" xml:space="preserve">
+    <value>Hidden</value>
+  </data>
+	<data name="Exception_CheckDataFaild" xml:space="preserve">
+    <value>Remote server access to data failed!</value>
+  </data>
+	<data name="Exception_DataNotReady" xml:space="preserve">
+    <value>Remote server data is not ready! Please try again later! Error code: 107</value>
+  </data>
+	<data name="Exception_ChangePWDRequestFaild" xml:space="preserve">
+    <value>Send change password request failed!</value>
+  </data>
+	<data name="Exception_ValidPWDRequestFaild" xml:space="preserve">
+    <value>Send verify password request failed!</value>
+  </data>
+	<data name="ContactUs" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+	<data name="Consumption" xml:space="preserve">
+    <value>Consumption</value>
+  </data>
+	<data name="DealerContactWay" xml:space="preserve">
+    <value>Contact Dealer</value>
+  </data>
+	<data name="Mode" xml:space="preserve">
+    <value>Mode</value>
+  </data>
+	<data name="Remark" xml:space="preserve">
+    <value>Remark</value>
+  </data>
+	<data name="Other" xml:space="preserve">
+    <value>Other</value>
+  </data>
+	<data name="Exception_IPConflict" xml:space="preserve">
+    <value>IP Address Conflict, Please Restart!</value>
+  </data>
+	<data name="Exception_SessionInvalid" xml:space="preserve">
+    <value>Invalid Session, Please Restart!</value>
+  </data>
+	<data name="Exception_InvalidPending" xml:space="preserve">
+    <value>Invalid Mode!</value>
+  </data>
+	<data name="Exception_IPInvalid" xml:space="preserve">
+    <value>IP address invalid, Please contact customer service!</value>
+  </data>
+	<data name="Exception_OrderExpired" xml:space="preserve">
+    <value>Bill expired, Please contact customer service!</value>
+  </data>
+	<data name="Exception_OrderInvalid" xml:space="preserve">
+    <value>Bill invalid, Please contact customer service!</value>
+  </data>
+	<data name="Exception_SendRequestFaild" xml:space="preserve">
+    <value>Send Notification request failed!</value>
+  </data>
+	<data name="Exception_SetConRequestFaild" xml:space="preserve">
+    <value>Send set feature request failed!</value>
+  </data>
+	<data name="Exception_OperateRequestFaild" xml:space="preserve">
+    <value>Send operate request failed!</value>
+  </data>
+	<data name="ChangeSet" xml:space="preserve">
+    <value>Change Setting</value>
+  </data>
+	<data name="ExpenditureManager" xml:space="preserve">
+    <value>Expend Manager</value>
+  </data>
+	<data name="MainPage" xml:space="preserve">
+    <value>Main Page</value>
+  </data>
+	<data name="OrderManager" xml:space="preserve">
+    <value>Bill Manager</value>
+  </data>
+	<data name="ProductManager" xml:space="preserve">
+    <value>Product Manager</value>
+  </data>
+	<data name="ProductTypeManager" xml:space="preserve">
+    <value>Product Type Manager</value>
+  </data>
+	<data name="RoomManager" xml:space="preserve">
+    <value>Table Manager</value>
+  </data>
+	<data name="SoftServiceName" xml:space="preserve">
+    <value>Oybab Trading System v1.0</value>
+  </data>
+	<data name="OperateFaild" xml:space="preserve">
+    <value>{0} failed!</value>
+  </data>
+	<data name="ActualPrice" xml:space="preserve">
+    <value>Actual Price</value>
+  </data>
+	<data name="AddTime" xml:space="preserve">
+    <value>Add Time</value>
+  </data>
+	<data name="Backstage" xml:space="preserve">
+    <value>Backstage</value>
+  </data>
+	<data name="Count" xml:space="preserve">
+    <value>Count</value>
+  </data>
+	<data name="DealsPrice" xml:space="preserve">
+    <value>Deals Price</value>
+  </data>
+	<data name="Display" xml:space="preserve">
+    <value>Display</value>
+  </data>
+	<data name="DisplayType" xml:space="preserve">
+    <value>Display Type</value>
+  </data>
+	<data name="EndTime" xml:space="preserve">
+    <value>End Time</value>
+  </data>
+	<data name="FinishTime" xml:space="preserve">
+    <value>Finish Time</value>
+  </data>
+	<data name="Hide" xml:space="preserve">
+    <value>Hide</value>
+  </data>
+	<data name="ImportTime" xml:space="preserve">
+    <value>Expend Time</value>
+  </data>
+	<data name="IpAddress" xml:space="preserve">
+    <value>Ip Address</value>
+  </data>
+	<data name="Order" xml:space="preserve">
+    <value>Order</value>
+  </data>
+	<data name="ProductName" xml:space="preserve">
+    <value>Product Name</value>
+  </data>
+	<data name="ProductTypeName" xml:space="preserve">
+    <value>Product Type Name</value>
+  </data>
+	<data name="RoomNo" xml:space="preserve">
+    <value>Table No</value>
+  </data>
+	<data name="StartTime" xml:space="preserve">
+    <value>Start Time</value>
+  </data>
+	<data name="State" xml:space="preserve">
+    <value>State</value>
+  </data>
+	<data name="TotalPrice" xml:space="preserve">
+    <value>Total Price</value>
+  </data>
+	<data name="UnitPrice" xml:space="preserve">
+    <value>Unit Price</value>
+  </data>
+	<data name="PropertyUsed" xml:space="preserve">
+    <value>Please modify or delete data associated with this data!</value>
+  </data>
+	<data name="Exception_CountOutOfIPRequestLimit" xml:space="preserve">
+    <value>Excessive number of duplicate requests, please try again later! Error Code: 103</value>
+  </data>
+	<data name="Exception_ExceptionSource" xml:space="preserve">
+    <value>{0} {1} Exception source: {2}</value>
+  </data>
+	<data name="PropertyExists" xml:space="preserve">
+    <value>{0} already exists, please do not re-enter!</value>
+  </data>
+	<data name="Checkout" xml:space="preserve">
+    <value>Checkout</value>
+  </data>
+	<data name="Invalid" xml:space="preserve">
+    <value>Invalid</value>
+  </data>
+	<data name="Confirmed" xml:space="preserve">
+    <value>Confirmed</value>
+  </data>
+	<data name="GetFailed" xml:space="preserve">
+    <value>Get Failed!</value>
+  </data>
+	<data name="OrderDetails" xml:space="preserve">
+    <value>Bill Details</value>
+  </data>
+	<data name="OrderNo" xml:space="preserve">
+    <value>Bill No</value>
+  </data>
+	<data name="PropertyError" xml:space="preserve">
+    <value>{0} is incomplete or inaccurate!</value>
+  </data>
+	<data name="Requesting" xml:space="preserve">
+    <value>Requesting</value>
+  </data>
+	<data name="Show" xml:space="preserve">
+    <value>Display</value>
+  </data>
+	<data name="ShowDescription" xml:space="preserve">
+    <value>Display Details</value>
+  </data>
+	<data name="Time" xml:space="preserve">
+    <value>Time</value>
+  </data>
+	<data name="TimeLimit" xml:space="preserve">
+    <value>Time Search Interval must be in {0} days!</value>
+  </data>
+	<data name="ImportDetails" xml:space="preserve">
+    <value>Expend Details</value>
+  </data>
+	<data name="ImportId" xml:space="preserve">
+    <value>Expend No</value>
+  </data>
+	<data name="Print" xml:space="preserve">
+    <value>Print</value>
+  </data>
+	<data name="PrintDescription" xml:space="preserve">
+    <value>Print Content</value>
+  </data>
+	<data name="AddImport" xml:space="preserve">
+    <value>Add Expend</value>
+  </data>
+	<data name="LineDataError" xml:space="preserve">
+    <value>The {0}-line data is incomplete or inaccurate!</value>
+  </data>
+	<data name="BalanceCount" xml:space="preserve">
+    <value>Remainder Count</value>
+  </data>
+	<data name="Exception_ProductCountRefreshExpiredRetry" xml:space="preserve">
+    <value>The product count expired, please retry!</value>
+  </data>
+	<data name="Exception_ProductCountRefreshFailed" xml:space="preserve">
+    <value>The product update failed!</value>
+  </data>
+	<data name="Exception_ProductCountRefreshRetry" xml:space="preserve">
+    <value>The product count not enough, trying to get!</value>
+  </data>
+	<data name="IsBindCount" xml:space="preserve">
+    <value>Bind Count</value>
+  </data>
+	<data name="ProductCountRefreshSuccess" xml:space="preserve">
+    <value>The product updated successfully.</value>
+  </data>
+	<data name="WarningCount" xml:space="preserve">
+    <value>Warning Count</value>
+  </data>
+	<data name="Call" xml:space="preserve">
+    <value>Call</value>
+  </data>
+	<data name="ConsumptionType" xml:space="preserve">
+    <value>Consumer Control</value>
+  </data>
+	<data name="ControlType" xml:space="preserve">
+    <value>Remote Control</value>
+  </data>
+	<data name="CostPrice" xml:space="preserve">
+    <value>Cost Price</value>
+  </data>
+	<data name="New" xml:space="preserve">
+    <value>New</value>
+  </data>
+	<data name="Offline" xml:space="preserve">
+    <value>Offline</value>
+  </data>
+	<data name="Online" xml:space="preserve">
+    <value>Online</value>
+  </data>
+	<data name="PaidPrice" xml:space="preserve">
+    <value>Paid Price</value>
+  </data>
+	<data name="PermissionDenied" xml:space="preserve">
+    <value>Permission denied!</value>
+  </data>
+	<data name="BalancePrice" xml:space="preserve">
+    <value>Remaining Price</value>
+  </data>
+	<data name="ChangePrice" xml:space="preserve">
+    <value>Change Price</value>
+  </data>
+	<data name="ChangeTime" xml:space="preserve">
+    <value>Change Time</value>
+  </data>
+	<data name="Disable" xml:space="preserve">
+    <value>Disable</value>
+  </data>
+	<data name="Enable" xml:space="preserve">
+    <value>Enable</value>
+  </data>
+	<data name="Hour" xml:space="preserve">
+    <value>Hour</value>
+  </data>
+	<data name="InvalidIt" xml:space="preserve">
+    <value>Invalid</value>
+  </data>
+	<data name="Minute" xml:space="preserve">
+    <value>Minute</value>
+  </data>
+	<data name="RemainingTime" xml:space="preserve">
+    <value>Remaining Time</value>
+  </data>
+	<data name="TotalTime" xml:space="preserve">
+    <value>Total Time</value>
+  </data>
+	<data name="BalanceCountNotEnough" xml:space="preserve">
+    <value>The operation fails, Remaining number of this product is only {0}!</value>
+  </data>
+	<data name="CancelOrder" xml:space="preserve">
+    <value>Cancel Bill</value>
+  </data>
+	<data name="CancelOrderDescription" xml:space="preserve">
+    <value>Cancel current bill.</value>
+  </data>
+	<data name="CheckoutOrder" xml:space="preserve">
+    <value>Checkout Bill</value>
+  </data>
+	<data name="CheckoutOrderDescription" xml:space="preserve">
+    <value>Checkout current bill.</value>
+  </data>
+	<data name="ConfirmCancelOrder" xml:space="preserve">
+    <value>Confirm cancel current bill?</value>
+  </data>
+	<data name="FaildThenRefreshModel" xml:space="preserve">
+    <value>Operate Failed, ready to try to update the bill information!</value>
+  </data>
+	<data name="Locked" xml:space="preserve">
+    <value>Locked</value>
+  </data>
+	<data name="NewOrder" xml:space="preserve">
+    <value>New Bill</value>
+  </data>
+	<data name="NewOrderDescription" xml:space="preserve">
+    <value>Create a new Bill.</value>
+  </data>
+	<data name="OperateSuccess" xml:space="preserve">
+    <value>{0} Success!</value>
+  </data>
+	<data name="RefreshOrderFailed" xml:space="preserve">
+    <value>Current bill updated failed!</value>
+  </data>
+	<data name="ReplaceRoom" xml:space="preserve">
+    <value>Replace Table</value>
+  </data>
+	<data name="ReplaceRoomDescription" xml:space="preserve">
+    <value>Replace table to another table.</value>
+  </data>
+	<data name="Request" xml:space="preserve">
+    <value>Request</value>
+  </data>
+	<data name="Restart" xml:space="preserve">
+    <value>Restart</value>
+  </data>
+	<data name="RestartDescription" xml:space="preserve">
+    <value>Restart the Hosts.</value>
+  </data>
+	<data name="SaveBeforeDelete" xml:space="preserve">
+    <value>Please save data!</value>
+  </data>
+	<data name="ShowOrder" xml:space="preserve">
+    <value>Show Bill</value>
+  </data>
+	<data name="ShowOrderDescription" xml:space="preserve">
+    <value>Show bill Details.</value>
+  </data>
+	<data name="Shutdown" xml:space="preserve">
+    <value>Shutdown</value>
+  </data>
+	<data name="ShutdownDescription" xml:space="preserve">
+    <value>Shutdown the Hosts.</value>
+  </data>
+	<data name="UnevenBalance" xml:space="preserve">
+    <value>Uneven Balance!</value>
+  </data>
+	<data name="Confirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+	<data name="NewRoom" xml:space="preserve">
+    <value>New Table</value>
+  </data>
+	<data name="SendFireAlarm" xml:space="preserve">
+    <value>Send Fire Alarm</value>
+  </data>
+	<data name="Barcode" xml:space="preserve">
+    <value>Barcode</value>
+  </data>
+	<data name="Disabled" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+	<data name="Price" xml:space="preserve">
+		<value>Price</value>
+	</data>
+	<data name="IsPayByTime" xml:space="preserve">
+		<value>Is By Time</value>
+	</data>
+	<data name="PriceHour" xml:space="preserve">
+		<value>Time Price</value>
+	</data>
+	<data name="IsAutoExtendTime" xml:space="preserve">
+		<value>Is Auto Extend Time</value>
+	</data>
+	<data name="PropertyUnSame" xml:space="preserve">
+		<value>Data inconsistencies, please restart and try again!</value>
+	</data>
+	<data name="AdminName" xml:space="preserve">
+		<value>Admin Name</value>
+	</data>
+	<data name="AdminManager" xml:space="preserve">
+		<value>Admin Manager</value>
+	</data>
+	<data name="AdminNo" xml:space="preserve">
+		<value>Admin No</value>
+	</data>
+	<data name="Sex" xml:space="preserve">
+		<value>Sex</value>
+	</data>
+	<data name="IDNumber" xml:space="preserve">
+		<value>ID Number</value>
+	</data>
+	<data name="Menu" xml:space="preserve">
+		<value>Menu</value>
+	</data>
+	<data name="IsOnlyOwn" xml:space="preserve">
+		<value>Limit Manage</value>
+	</data>
+	<data name="IsEnable" xml:space="preserve">
+		<value>Is Enable</value>
+	</data>
+	<data name="Guest" xml:space="preserve">
+		<value>Guest</value>
+	</data>
+	<data name="Employee" xml:space="preserve">
+		<value>Employee</value>
+	</data>
+	<data name="Admin" xml:space="preserve">
+		<value>Admin</value>
+	</data>
+	<data name="DeviceNo" xml:space="preserve">
+		<value>Device No</value>
+	</data>
+	<data name="DeviceType" xml:space="preserve">
+		<value>Device Type</value>
+	</data>
+	<data name="DeviceManager" xml:space="preserve">
+		<value>Device Manager</value>
+	</data>
+	<data name="Computer" xml:space="preserve">
+		<value>Computer</value>
+	</data>
+	<data name="Tablet" xml:space="preserve">
+		<value>Tablet</value>
+	</data>
+	<data name="PrinterManager" xml:space="preserve">
+		<value>Printer Manager</value>
+	</data>
+	<data name="PrinterName" xml:space="preserve">
+		<value>Printer Name</value>
+	</data>
+	<data name="PrinterDeviceName" xml:space="preserve">
+		<value>Printer Device Name</value>
+	</data>
+	<data name="PrintType" xml:space="preserve">
+		<value>Print Type</value>
+	</data>
+	<data name="Customer" xml:space="preserve">
+		<value>Customer</value>
+	</data>
+	<data name="Kitchen" xml:space="preserve">
+		<value>Kitchen</value>
+	</data>
+	<data name="MemberNo" xml:space="preserve">
+		<value>Member No</value>
+	</data>
+	<data name="MemberManager" xml:space="preserve">
+		<value>Member Manager</value>
+	</data>
+	<data name="MemberName" xml:space="preserve">
+		<value>Member Name</value>
+	</data>
+	<data name="Occupation" xml:space="preserve">
+		<value>Occupation</value>
+	</data>
+	<data name="Mobile" xml:space="preserve">
+		<value>Mobile</value>
+	</data>
+	<data name="Phone" xml:space="preserve">
+		<value>Phone</value>
+	</data>
+	<data name="Address" xml:space="preserve">
+		<value>Address</value>
+	</data>
+	<data name="OfferRate" xml:space="preserve">
+		<value>Sales Rate/100%</value>
+	</data>
+	<data name="SpendPrice" xml:space="preserve">
+		<value>Spend Price</value>
+	</data>
+	<data name="FavorablePrice" xml:space="preserve">
+		<value>Favorable Price</value>
+	</data>
+	<data name="ExpiredTime" xml:space="preserve">
+		<value>Expired Time</value>
+	</data>
+	<data name="Male" xml:space="preserve">
+		<value>Male</value>
+	</data>
+	<data name="Female" xml:space="preserve">
+		<value>Female</value>
+	</data>
+	<data name="Register" xml:space="preserve">
+		<value>Register</value>
+	</data>
+	<data name="MachineNo" xml:space="preserve">
+		<value>Machine No</value>
+	</data>
+	<data name="RegisterNo" xml:space="preserve">
+		<value>Register No</value>
+	</data>
+	<data name="SoftwareExpired" xml:space="preserve">
+		<value>System has expired, do you want to re-register?</value>
+	</data>
+	<data name="SoftwareSoonExpired" xml:space="preserve">
+		<value>System will expired after {0}days later, {1}do you want to re-register now?</value>
+	</data>
+	<data name="SoftwareExpiredWarn" xml:space="preserve">
+		<value>In order not to affect the normal operation, we recommend you contact us 7 days ago before the system expired!</value>
+	</data>
+	<data name="RegisterSuccess" xml:space="preserve">
+		<value>Registration is success, please restart the system!</value>
+	</data>
+	<data name="MemberPay" xml:space="preserve">
+		<value>Member Pay</value>
+	</data>
+	<data name="MemberPayDescription" xml:space="preserve">
+		<value>Display Member Pay Details</value>
+	</data>
+	<data name="MemberPayNo" xml:space="preserve">
+		<value>Member Pay No</value>
+	</data>
+	<data name="MemberBalanceNotEnough" xml:space="preserve">
+		<value>Member Balance Price Not Enough!</value>
+	</data>
+	<data name="AddMember" xml:space="preserve">
+		<value>Add Member</value>
+	</data>
+	<data name="PropertyNotFound" xml:space="preserve">
+		<value>Not Found {0} !</value>
+	</data>
+	<data name="CheckoutImport" xml:space="preserve">
+		<value>Checkout Expend</value>
+	</data>
+	<data name="RoomPrice" xml:space="preserve">
+		<value>Table Price</value>
+	</data>
+	<data name="CountOfoffLimit" xml:space="preserve">
+		<value>The count can not exceeds the specified limit !</value>
+	</data>
+	<data name="MemberExpired" xml:space="preserve">
+		<value>Current member has expired</value>
+	</data>
+	<data name="MemberExpiredDescription" xml:space="preserve">
+		<value>Change member expired time!</value>
+	</data>
+	<data name="Unknown" xml:space="preserve">
+		<value>Unknown</value>
+	</data>
+	<data name="NotFoundProperty_Number" xml:space="preserve">
+		<value>The {0} {1} not found!</value>
+	</data>
+	<data name="Exception_UnknownDevice" xml:space="preserve">
+		<value>Device does not exist or is disabled ! {0}Error code: 111</value>
+	</data>
+	<data name="Exception_RoomCountOutOfLimit" xml:space="preserve">
+		<value>Table count limit exceeded! {0}Error code: 104</value>
+	</data>
+	<data name="ResetDescription" xml:space="preserve">
+		<value>Reset admin password</value>
+	</data>
+	<data name="SureReset" xml:space="preserve">
+		<value>Confirm to reset?</value>
+	</data>
+	<data name="Exception_UnknownAdmin" xml:space="preserve">
+		<value>Admin does not exist or is disabled ! {0}Error code: 112</value>
+	</data>
+	<data name="ReturnPrice" xml:space="preserve">
+		<value>Return Price</value>
+	</data>
+	<data name="BorrowPrice" xml:space="preserve">
+		<value>Borrow Price</value>
+	</data>
+	<data name="KeepPrice" xml:space="preserve">
+		<value>Remaining Price</value>
+	</data>
+	<data name="RemainingDays" xml:space="preserve">
+		<value>Remaining days</value>
+	</data>
+	<data name="Device" xml:space="preserve">
+		<value>Device</value>
+	</data>
+	<data name="Table" xml:space="preserve">
+		<value>Table</value>
+	</data>
+	<data name="Package" xml:space="preserve">
+		<value>Package</value>
+	</data>
+	<data name="MemberDealsPrice" xml:space="preserve">
+		<value>Member Deals Price</value>
+	</data>
+	<data name="MemberPaidPrice" xml:space="preserve">
+		<value>Member Paid Price</value>
+	</data>
+	<data name="TotalPaidPrice" xml:space="preserve">
+		<value>Total Paid Price</value>
+	</data>
+	<data name="MemberBalancePrice" xml:space="preserve">
+		<value>Member Balance Price</value>
+	</data>
+	<data name="RegisterCount" xml:space="preserve">
+		<value>Register Count</value>
+	</data>
+	<data name="Expenditure" xml:space="preserve">
+		<value>Expend</value>
+	</data>
+	<data name="PrintTypeLimit" xml:space="preserve">
+		<value>Can not add the same type of printer!</value>
+	</data>
+	<data name="SameEnabledPrinterFailed" xml:space="preserve">
+		<value>Bill types of printers can only enable one!</value>
+	</data>
+	<data name="Server" xml:space="preserve">
+		<value>Server</value>
+	</data>
+	<data name="PrintAfterBuy" xml:space="preserve">
+		<value>Print After Buy</value>
+	</data>
+	<data name="PrintAfterCheckout" xml:space="preserve">
+		<value>PrintAfterCheckout</value>
+	</data>
+	<data name="LocalPrint" xml:space="preserve">
+		<value>Local Print</value>
+	</data>
+	<data name="ServerIpAddress" xml:space="preserve">
+		<value>Server IP Address</value>
+	</data>
+	<data name="OperateChangeNextStartup" xml:space="preserve">
+		<value>{0} success, Will changing when system next startup！</value>
+	</data>
+	<data name="BarcodeNo" xml:space="preserve">
+		<value>Barcode No</value>
+	</data>
+	<data name="OnlyDisplaySelected" xml:space="preserve">
+		<value>Only Display Selected</value>
+	</data>
+	<data name="CurrentProductAlreadyExists" xml:space="preserve">
+		<value>Current product already exists!</value>
+	</data>
+	<data name="Statistic" xml:space="preserve">
+		<value>Statistic</value>
+	</data>
+	<data name="Exception_InvalidMediaRoot" xml:space="preserve">
+		<value>The server image path is invalid or does not exist, please check the folder or the network!  Error code: 100</value>
+	</data>
+	<data name="Canceld" xml:space="preserve">
+		<value>Canceld</value>
+	</data>
+	<data name="Exception_Relogin" xml:space="preserve">
+		<value>Session expired, please exit the system and login again!</value>
+	</data>
+	<data name="InputNotValid" xml:space="preserve">
+		<value>Please enter the correct Information!</value>
+	</data>
+	<data name="Bill" xml:space="preserve">
+		<value>Bill</value>
+	</data>
+	<data name="IncomeManager" xml:space="preserve">
+		<value>Income Manager</value>
+	</data>
+	<data name="ExpendBill" xml:space="preserve">
+		<value>Expend Bill</value>
+	</data>
+	<data name="OwedPrice" xml:space="preserve">
+		<value>Owed Price</value>
+	</data>
+	<data name="IncomeStatistic" xml:space="preserve">
+		<value>Income Statistics</value>
+	</data>
+	<data name="SpendStatistic" xml:space="preserve">
+		<value>Expend Statistics</value>
+	</data>
+	<data name="SellProductsStatistic" xml:space="preserve">
+		<value>Sell Products Statistics</value>
+	</data>
+	<data name="SpendProductsStatistic" xml:space="preserve">
+		<value>Purchase Products Statistics</value>
+	</data>
+	<data name="NotFoundAnyRecords" xml:space="preserve">
+		<value>Not found any records!</value>
+	</data>
+	<data name="Proportion" xml:space="preserve">
+		<value>Proportion</value>
+	</data>
+	<data name="PermissionsMenu" xml:space="preserve">
+		<value>Permissions Menu</value>
+	</data>
+	<data name="Exception_MemberDisabled" xml:space="preserve">
+		<value>Member is disabled !</value>
+	</data>
+	<data name="Income" xml:space="preserve">
+		<value>Income</value>
+	</data>
+	<data name="ImageMode" xml:space="preserve">
+		<value>Image Mode</value>
+	</data>
+	<data name="Exception_DeviceCountOutOfLimit" xml:space="preserve">
+		<value>Device count limit exceeded! {0}Error code: 105</value>
+	</data>
+	<data name="NewPasswordSizeLimit" xml:space="preserve">
+		<value>The new password at least {0} characters!</value>
+	</data>
+	<data name="AdminLog" xml:space="preserve">
+		<value>Admin Log</value>
+	</data>
+	<data name="LogTitle" xml:space="preserve">
+		<value>Log Title</value>
+	</data>
+	<data name="LogContent" xml:space="preserve">
+		<value>Log Content</value>
+	</data>
+	<data name="AdminPay" xml:space="preserve">
+		<value>Admin Pay</value>
+	</data>
+	<data name="AdminPayDescription" xml:space="preserve">
+		<value>Admin Pay Details</value>
+	</data>
+	<data name="AdminPayNo" xml:space="preserve">
+		<value>Admin Pay No</value>
+	</data>
+	<data name="SupplierManager" xml:space="preserve">
+		<value>Supplier Manager</value>
+	</data>
+	<data name="SupplierPay" xml:space="preserve">
+		<value>Supplier Pay</value>
+	</data>
+	<data name="SupplierPayDescription" xml:space="preserve">
+		<value>Supplier Pay Details</value>
+	</data>
+	<data name="SupplierPayNo" xml:space="preserve">
+		<value>Supplier Pay No</value>
+	</data>
+	<data name="SupplierNo" xml:space="preserve">
+		<value>Supplier No</value>
+	</data>
+	<data name="SupplierExpiredDescription" xml:space="preserve">
+		<value>Change supplier expired time!</value>
+	</data>
+	<data name="SupplierName" xml:space="preserve">
+		<value>Supplier Name</value>
+	</data>
+	<data name="AddSupplier" xml:space="preserve">
+		<value>AddSupplier</value>
+	</data>
+	<data name="SupplierExpired" xml:space="preserve">
+		<value>Current supplier has expired</value>
+	</data>
+	<data name="Exception_SupplierDisabled" xml:space="preserve">
+		<value>Supplier is disabled !</value>
+	</data>
+	<data name="SupplierBalancePrice" xml:space="preserve">
+		<value>Supplier Balance Price</value>
+	</data>
+	<data name="SupplierBalanceNotEnough" xml:space="preserve">
+		<value>Supplier Balance Price Not Enough!</value>
+	</data>
+	<data name="SupplierDealsPrice" xml:space="preserve">
+		<value>Supplier Deals Price</value>
+	</data>
+	<data name="SupplierPaidPrice" xml:space="preserve">
+		<value>Supplier Paid Price</value>
+	</data>
+	<data name="PleaseWait" xml:space="preserve">
+		<value>Please wait...</value>
+	</data>
+	<data name="CreatingTheDocument" xml:space="preserve">
+		<value>Creating the document...</value>
+	</data>
+	<data name="TableUsed" xml:space="preserve">
+		<value>Current table is used!</value>
+	</data>
+	<data name="Exception_InvalidType" xml:space="preserve">
+		<value>Please enter the correct Information!</value>
+	</data>
+	<data name="ChangeCostPrice" xml:space="preserve">
+		<value>Change Cost Price</value>
+	</data>
+	<data name="IndexName" xml:space="preserve">
+		<value>Index Name</value>
+	</data>
+	<data name="FinanceLog" xml:space="preserve">
+		<value>Finance Log</value>
+	</data>
+	<data name="OperateName" xml:space="preserve">
+		<value>Operate Name</value>
+	</data>
+	<data name="CashDrawer" xml:space="preserve">
+		<value>Cash Drawer</value>
+	</data>
+	<data name="Open" xml:space="preserve">
+		<value>Open</value>
+	</data>
+	<data name="IsPayByCard" xml:space="preserve">
+		<value>Is Pay By Card</value>
+	</data>
+	<data name="CardPaidPrice" xml:space="preserve">
+		<value>Card Paid Price</value>
+	</data>
+	<data name="SpendPaysStatistic" xml:space="preserve">
+		<value>Pays Spend Statistic</value>
+	</data>
+	<data name="SalePaysStatistic" xml:space="preserve">
+		<value>Pays Sale Statistic</value>
+	</data>
+	<data name="BalancePay" xml:space="preserve">
+		<value>Balance Pay</value>
+	</data>
+	<data name="BalancePayDescription" xml:space="preserve">
+		<value>Balance Pay Details</value>
+	</data>
+	<data name="BalancePayNo" xml:space="preserve">
+		<value>Balance Pay No</value>
+	</data>
+	<data name="SoftServiceNameWithoutVersion" xml:space="preserve">
+		<value>Oybab Trading System</value>
+	</data>
+	<data name="MediumLabelFontSize" xml:space="preserve">
+		<value>22</value>
+	</data>
+	<data name="LogoTitleLabelFontSize" xml:space="preserve">
+		<value>40</value>
+	</data>
+	<data name="SoftServiceVersion" xml:space="preserve">
+		<value>V1.0</value>
+	</data>
+	<data name="DirectionMode" xml:space="preserve">
+		<value>LeftToRight</value>
+	</data>
+	<data name="LoginUserInputMsg" xml:space="preserve">
+		<value>Please input admin no</value>
+	</data>
+	<data name="LoginPasswordInputMsg" xml:space="preserve">
+		<value>Please input password no</value>
+	</data>
+	<data name="Reset2" xml:space="preserve">
+		<value>Reset</value>
+	</data>
+	<data name="MediumButtonFontSize" xml:space="preserve">
+		<value>26</value>
+	</data>
+	<data name="OK2" xml:space="preserve">
+		<value>OK</value>
+	</data>
+	<data name="LittleKeyboardFontSize" xml:space="preserve">
+		<value>18</value>
+	</data>
+	<data name="HorizontalModel" xml:space="preserve">
+		<value>Left</value>
+	</data>
+	<data name="CompanyLogoName" xml:space="preserve">
+		<value>Oybab Technology</value>
+	</data>
+	<data name="RegNoInputMessage" xml:space="preserve">
+		<value>Please input reg no</value>
+	</data>
+	<data name="RegCountInputMessage" xml:space="preserve">
+		<value>Please input count reg no</value>
+	</data>
+	<data name="TopLogoTitleLabelFontSize" xml:space="preserve">
+		<value>25</value>
+	</data>
+	<data name="LittleMediumLabelFontSize" xml:space="preserve">
+		<value>20</value>
+	</data>
+	<data name="Exception_AdminExists" xml:space="preserve">
+		<value>Current administrator is using !{0}Error code: 113</value>
+	</data>
+	<data name="IncomeTradingManage" xml:space="preserve">
+		<value>Income Trading Manage</value>
+	</data>
+	<data name="Permission" xml:space="preserve">
+		<value>Permission</value>
+	</data>
+	<data name="Day" xml:space="preserve">
+		<value>Day</value>
+	</data>
+	<data name="Empty" xml:space="preserve">
+		<value>Empty</value>
+	</data>
+	<data name="Selected" xml:space="preserve">
+		<value>Selected</value>
+	</data>
+	<data name="Products" xml:space="preserve">
+		<value>Products</value>
+	</data>
+	<data name="Operate" xml:space="preserve">
+		<value>Operate</value>
+	</data>
+	<data name="SelectedCount" xml:space="preserve">
+		<value>Selected count</value>
+	</data>
+	<data name="OperatingWait" xml:space="preserve">
+		<value>Please wait.....</value>
+	</data>
+	<data name="Cash" xml:space="preserve">
+		<value>Cash</value>
+	</data>
+	<data name="Card" xml:space="preserve">
+		<value>Card</value>
+	</data>
+	<data name="Member" xml:space="preserve">
+		<value>Member</value>
+	</data>
+	<data name="Bind" xml:space="preserve">
+		<value>Bind</value>
+	</data>
+	<data name="Unbind" xml:space="preserve">
+		<value>Unbind</value>
+	</data>
+	<data name="MediumLargeButtonFontSize" xml:space="preserve">
+		<value>35</value>
+	</data>
+	<data name="OldRoomNo" xml:space="preserve">
+		<value>Old Table No</value>
+	</data>
+	<data name="NewRoomNo" xml:space="preserve">
+		<value>New Table No</value>
+	</data>
+	<data name="IpAddress2" xml:space="preserve">
+		<value>Ip Address</value>
+	</data>
+	<data name="RequestManager" xml:space="preserve">
+		<value>Request Manager</value>
+	</data>
+	<data name="RequestName" xml:space="preserve">
+		<value>Request Name</value>
+	</data>
+	<data name="Request2" xml:space="preserve">
+		<value>Request</value>
+	</data>
+	<data name="RequestDescription" xml:space="preserve">
+		<value>Add request to current data.</value>
+	</data>
+	<data name="IsDisplayAll" xml:space="preserve">
+		<value>Display All</value>
+	</data>
+	<data name="CheckoutBy" xml:space="preserve">
+		<value>Checkout By</value>
+	</data>
+	<data name="OrderPhoneNo" xml:space="preserve">
+		<value>Bill Phone No</value>
+	</data>
+	<data name="PersonName" xml:space="preserve">
+		<value>Name</value>
+	</data>
+	<data name="BillTypeInner" xml:space="preserve">
+		<value>Internal</value>
+	</data>
+	<data name="BillTypeOuter" xml:space="preserve">
+		<value>External</value>
+	</data>
+	<data name="BillType" xml:space="preserve">
+		<value>Bill Type</value>
+	</data>
+	<data name="AddOuterBill" xml:space="preserve">
+		<value>Add External Bill</value>
+	</data>
+	<data name="SuccessAndFailProperty" xml:space="preserve">
+		<value>Success: {0}, Fail: {1}.</value>
+	</data>
+	<data name="ConfirmSaveAll" xml:space="preserve">
+		<value>Confirm Save All ?</value>
+	</data>
+	<data name="Profit" xml:space="preserve">
+		<value>Profit</value>
+	</data>
+	<data name="TypeName" xml:space="preserve">
+		<value>Type Name</value>
+	</data>
+	<data name="Summary" xml:space="preserve">
+		<value>Summary</value>
+	</data>
+	<data name="SystemTimeInvalid" xml:space="preserve">
+		<value>System time and the server time inconsistent ! {0}Error code: 106</value>
+	</data>
+	<data name="UnrecordedPrice" xml:space="preserve">
+		<value>Unrecorded Price</value>
+	</data>
+	<data name="ReceivedPrice" xml:space="preserve">
+		<value>Received Price</value>
+	</data>
+	<data name="Prefix" xml:space="preserve">
+		<value>Prefix</value>
+	</data>
+	<data name="MultiLanguage" xml:space="preserve">
+		<value>Multi-Language</value>
+	</data>
+	<data name="Exception_DatabaseNotFound" xml:space="preserve">
+		<value>Remote server database is not found! Please check! Error code: 108</value>
+	</data>
+	<data name="Exception_DatabaseLoadFailed" xml:space="preserve">
+		<value>Remote server database load failed! ! Error code:  109</value>
+	</data>
+	<data name="NoLimit" xml:space="preserve">
+		<value>No Limit</value>
+	</data>
+	<data name="ProductExpiredDescription" xml:space="preserve">
+		<value>Change product expired time!</value>
+	</data>
+	<data name="None" xml:space="preserve">
+		<value>None</value>
+	</data>
+	<data name="BarcodeReader" xml:space="preserve">
+		<value>Barcode Reader</value>
+	</data>
+	<data name="PrintBarcodeDescription" xml:space="preserve">
+		<value>Print Barcode</value>
+	</data>
+	<data name="Size" xml:space="preserve">
+		<value>Size</value>
+	</data>
+	<data name="BarcodeLengthLimit" xml:space="preserve">
+		<value>Barcode length must be 8 or 13 !</value>
+	</data>
+	<data name="BillWide" xml:space="preserve">
+		<value>Bill-Wide</value>
+	</data>
+	<data name="PrintAll" xml:space="preserve">
+		<value>Print All</value>
+	</data>
+	<data name="ConfirmBalanceInjustice" xml:space="preserve">
+		<value>Balance injustice! confirmed ?</value>
+	</data>
+	<data name="ProductParentName" xml:space="preserve">
+		<value>Product Parent Name</value>
+	</data>
+	<data name="ProductParentCount" xml:space="preserve">
+		<value>Product Parent Count</value>
+	</data>
+	<data name="Borrow" xml:space="preserve">
+		<value>Borrow</value>
+	</data>
+	<data name="CanNotExceed" xml:space="preserve">
+		<value>Total paid price is ￥{0} !</value>
+	</data>
+	<data name="ChangeCount" xml:space="preserve">
+		<value>Change Count</value>
+	</data>
+	<data name="Information" xml:space="preserve">
+		<value>Information</value>
+	</data>
+	<data name="InnerBill" xml:space="preserve">
+		<value>Internal Bill</value>
+	</data>
+	<data name="OuterBill" xml:space="preserve">
+		<value>External Bill</value>
+	</data>
+	<data name="IndexNameOrBarcode" xml:space="preserve">
+		<value>Please input index name or barcode no</value>
+	</data>
+	<data name="Exception_DeviceExists" xml:space="preserve">
+		<value>Current device is using !{0}Error code: 115</value>
+	</data>
+	<data name="ReturnId" xml:space="preserve">
+		<value>Return No</value>
+	</data>
+	<data name="ReturnBill" xml:space="preserve">
+		<value>Return Bill</value>
+	</data>
+	<data name="BalanceManager" xml:space="preserve">
+		<value>Balance Manager</value>
+	</data>
+	<data name="BalanceName" xml:space="preserve">
+		<value>BalanceName</value>
+	</data>
+	<data name="IsBind" xml:space="preserve">
+		<value>Bind</value>
+	</data>
+	<data name="CardOnlyCouldBindOnce" xml:space="preserve">
+		<value>You can only bind one card !</value>
+	</data>
+	<data name="AccountBank" xml:space="preserve">
+		<value>Account Bank</value>
+	</data>
+	<data name="AccountName" xml:space="preserve">
+		<value>Account Name</value>
+	</data>
+	<data name="AccountNo" xml:space="preserve">
+		<value>Account No</value>
+	</data>
+	<data name="ReturnType" xml:space="preserve">
+		<value>ReturnType</value>
+	</data>
+	<data name="ReturnManager" xml:space="preserve">
+		<value>Return Manager</value>
+	</data>
+	<data name="FromCustomer" xml:space="preserve">
+		<value>From Customer</value>
+	</data>
+	<data name="ToSupplier" xml:space="preserve">
+		<value>To Supplier</value>
+	</data>
+	<data name="ReturnDetails" xml:space="preserve">
+		<value>Return Details</value>
+	</data>
+	<data name="IsChange" xml:space="preserve">
+		<value>Replace</value>
+	</data>
+	<data name="CheckoutReturn" xml:space="preserve">
+		<value>Checkout Return</value>
+	</data>
+	<data name="BalancePaysIncomeStatistic" xml:space="preserve">
+		<value>Balance Pays Income Statistic</value>
+	</data>
+	<data name="BalancePaysSpendStatistic" xml:space="preserve">
+		<value>Balance Pays Spend Statistic</value>
+	</data>
+	<data name="BalancePayByCash" xml:space="preserve">
+		<value>Balance Pay(Cash)</value>
+	</data>
+	<data name="BalancePayByCard" xml:space="preserve">
+		<value>Balance Pay(Card)</value>
+	</data>
+	<data name="MemberPayByCash" xml:space="preserve">
+		<value>Member Pay(Cash)</value>
+	</data>
+	<data name="MemberPayByCard" xml:space="preserve">
+		<value>Member Pay(Card)</value>
+	</data>
+	<data name="SupplierPayByCash" xml:space="preserve">
+		<value>Supplier Pay(Cash)</value>
+	</data>
+	<data name="SupplierPayByCard" xml:space="preserve">
+		<value>Supplier Pay(Card)</value>
+	</data>
+	<data name="AdminPayByCash" xml:space="preserve">
+		<value>Admin Pay(Cash)</value>
+	</data>
+	<data name="AdminPayByCard" xml:space="preserve">
+		<value>Admin Pay(Card)</value>
+	</data>
+	<data name="ReturnStatistic" xml:space="preserve">
+		<value>Return Statistic</value>
+	</data>
+	<data name="AdminSaleStatistic" xml:space="preserve">
+		<value>Admin Sale Statistic</value>
+	</data>
+	<data name="ReturnProductsStatistic" xml:space="preserve">
+		<value>Return Products Statistic</value>
+	</data>
+	<data name="ReplaceCount" xml:space="preserve">
+		<value>Replace Count</value>
+	</data>
+	<data name="RecordCount" xml:space="preserve">
+		<value>Record Count</value>
+	</data>
+	<data name="Return" xml:space="preserve">
+		<value>Return</value>
+	</data>
+	<data name="CardPrice" xml:space="preserve">
+		<value>Card Price</value>
+	</data>
+	<data name="CardBalancePrice" xml:space="preserve">
+		<value>Card Balance Price</value>
+	</data>
+	<data name="OtherPrice" xml:space="preserve">
+		<value>Other Price</value>
+	</data>
+	<data name="Supplier" xml:space="preserve">
+		<value>Supplier</value>
+	</data>
+	<data name="PrintInfo" xml:space="preserve">
+		<value>Bill Message</value>
+	</data>
+	<data name="Test" xml:space="preserve">
+		<value>Test</value>
+	</data>
+	<data name="InputPhoneNoFirst" xml:space="preserve">
+		<value>If you enter bill message, please enter the phone number first !</value>
+	</data>
+	<data name="PriceMonitor" xml:space="preserve">
+		<value>Price Monitor</value>
+	</data>
+	<data name="ProductProfitStatistic" xml:space="preserve">
+		<value>Product Profit Statistic</value>
+	</data>
+	<data name="IsBindWeigh" xml:space="preserve">
+		<value>Bind Weight</value>
+	</data>
+	<data name="PageHeight" xml:space="preserve">
+		<value>Page Height</value>
+	</data>
+	<data name="CancelAndDelete" xml:space="preserve">
+		<value>Cancel And Delete</value>
+	</data>
+	<data name="CashWithCard" xml:space="preserve">
+		<value>Cash: ￥{0}. Card: ￥{1}.</value>
+	</data>
+	<data name="AdminCantCreateAnAdmin" xml:space="preserve">
+		<value>Admin can't create an Admin!</value>
+	</data>
+	<data name="IncomePermission" xml:space="preserve">
+		<value>Income Permission</value>
+	</data>
+	<data name="ExpenditurePermission" xml:space="preserve">
+		<value>Expend Permission</value>
+	</data>
+	<data name="TemporaryChangePrice" xml:space="preserve">
+		<value>Temporary Change Price</value>
+	</data>
+	<data name="ChangeUnitPrice" xml:space="preserve">
+		<value>Change Unit Price</value>
+	</data>
+	<data name="AddPrice" xml:space="preserve">
+		<value>Add Price</value>
+	</data>
+	<data name="AddMemberBalancePrice" xml:space="preserve">
+		<value>Add Member Remaining Price</value>
+	</data>
+	<data name="PosTopTitleFontSize" xml:space="preserve">
+		<value>24</value>
+	</data>
+	<data name="PosTotalPriceFontSize" xml:space="preserve">
+		<value>32</value>
+	</data>
+	<data name="PosCountFontSize" xml:space="preserve">
+		<value>20</value>
+	</data>
+	<data name="PosDescriptionFontSize" xml:space="preserve">
+		<value>18</value>
+	</data>
+	<data name="User" xml:space="preserve">
+		<value>User</value>
+	</data>
+	<data name="PosContentFontSize" xml:space="preserve">
+		<value>16</value>
+	</data>
+	<data name="PosDescription" xml:space="preserve">
+		<value>Search products: F3, Save: F7, Restore: F8, Bind member: F10, Exit: F12, Change language: TAB, Open cash drawer: Alt + Z, Locate: ↑ ↓ ← →, Change page: PgUp/PgDn, Increase count: +, Decrease count: -, Select / OK: Enter, Delete selected: Del, Cancel / Return : Esc.</value>
+	</data>
+	<data name="Restore" xml:space="preserve">
+		<value>Restore</value>
+	</data>
+	<data name="CardReader" xml:space="preserve">
+		<value>Card Reader</value>
+	</data>
+	<data name="CardNo" xml:space="preserve">
+		<value>Card No</value>
+	</data>
+	<data name="CardNoExists" xml:space="preserve">
+		<value>The card no already exists, confirm to replacet?</value>
+	</data>
+	<data name="SuccessReadBarcode" xml:space="preserve">
+		<value>Successfully read the bar code!</value>
+	</data>
+	<data name="SuccessReadCardNo" xml:space="preserve">
+		<value>Successfully read the card no!</value>
+	</data>
+	<data name="ServerIpAddress2" xml:space="preserve">
+		<value>Server Address</value>
+	</data>
+	<data name="BindMemberByNo" xml:space="preserve">
+		<value>Bind Member By No</value>
+	</data>
+	<data name="BindSupplierByNo" xml:space="preserve">
+		<value>Bind Supplier By No</value>
+	</data>
+	<data name="BarcodeScales" xml:space="preserve">
+		<value>Barcode Scales</value>
+	</data>
+	<data name="SendData" xml:space="preserve">
+		<value>Send data</value>
+	</data>
+	<data name="IncorrectProductData" xml:space="preserve">
+		<value>Product info contains an incorrect data!</value>
+	</data>
+	<data name="IncorrectProductName" xml:space="preserve">
+		<value>Product name contains an incorrect data!</value>
+	</data>
+	<data name="UnableToConnectIPAddress" xml:space="preserve">
+		<value>Unable to connect the IP address!</value>
+	</data>
+	<data name="ConfirmNotPay" xml:space="preserve">
+		<value>Comfirmed do not pay?</value>
+	</data>
+	<data name="ReadResourceStrError" xml:space="preserve">
+		<value>Resource read error!</value>
+	</data>
+	<data name="FreeRoomPriceLimit" xml:space="preserve">
+		<value>Free Room Price Limit</value>
+	</data>
+	<data name="CancelFireAlarm" xml:space="preserve">
+		<value>Cancel Fire Alarm</value>
+	</data>
+	<data name="ConfirmOperate" xml:space="preserve">
+		<value>Confirm {0}?</value>
+	</data>
+	<data name="DeleteProduct" xml:space="preserve">
+		<value>Delete Product</value>
+	</data>
+	<data name="OpenCashDrawer" xml:space="preserve">
+		<value>Open Cash Drawer</value>
+	</data>
+	<data name="Paid" xml:space="preserve">
+		<value>Paid</value>
+	</data>
+	<data name="Platform" xml:space="preserve">
+		<value>Platform</value>
+	</data>
+	<data name="UnlimitedTime" xml:space="preserve">
+		<value>Unlimited time</value>
+	</data>
+	<data name="Enabled" xml:space="preserve">
+		<value>Enabled</value>
+	</data>
+	<data name="DecreaseProductCount" xml:space="preserve">
+		<value>Decrease Product Count</value>
+	</data>
+	<data name="FaildThenWaitRetry" xml:space="preserve">
+		<value>Operate Failed, operating too fast, please retry!</value>
+	</data>
+	<data name="RemovePrice" xml:space="preserve">
+		<value>Remove Price</value>
+	</data>
+	<data name="Exception_ServerClientVersionMisalignment" xml:space="preserve">
+		<value>Remote server and client version misalignment, please update to the same version !</value>
+	</data>
+	<data name="Exception_ServerClientTimeMisalignment" xml:space="preserve">
+		<value>Remote server and client time misalignment, please update current system time to the same time !</value>
+	</data>
+	<data name="ConfirmAddPay" xml:space="preserve">
+		<value>Confirm add {0}{1} from {2} to {3}?</value>
+	</data>
+	<data name="BalanceTransfer" xml:space="preserve">
+		<value>Balance Transfer </value>
+	</data>
+	<data name="OldBalance" xml:space="preserve">
+		<value>Old balance</value>
+	</data>
+	<data name="NewBalance" xml:space="preserve">
+		<value>New balance</value>
+	</data>
+	<data name="BalanceTransferDescription" xml:space="preserve">
+		<value>Transfer money bitween blances</value>
+	</data>
+	<data name="LangName" xml:space="preserve">
+		<value>English</value>
+	</data>
+	<data name="HightFix" xml:space="preserve">
+		<value>0</value>
+	</data>
+	<data name="Culcure" xml:space="preserve">
+		<value>en-US</value>
+	</data>
+	<data name="Dir" xml:space="preserve">
+		<value>ltr</value>
+	</data>
+	<data name="LargeFont" xml:space="preserve">
+		<value>0</value>
+	</data>
+	<data name="EnableAntialiasing" xml:space="preserve">
+		<value>0</value>
+	</data>
+	<data name="GlobalSetting" xml:space="preserve">
+		<value>Global Setting</value>
+	</data>
+	<data name="PriceSymbol" xml:space="preserve">
+		<value>Price Symbol</value>
+	</data>
+	<data name="Main" xml:space="preserve">
+		<value>Main</value>
+	</data>
+	<data name="SystemLanguage" xml:space="preserve">
+		<value>System Language</value>
+	</data>
+	<data name="SystemLanguageCantSame" xml:space="preserve">
+		<value>System Languages Can't Same!</value>
+	</data>
+	<data name="SystemLanguageChangeWarn" xml:space="preserve">
+		<value>Changing the system language may affect the system. Confirm the change?</value>
+	</data>
+	<data name="PermissionsMenuDescription" xml:space="preserve">
+		<value>Change Admin Permissions</value>
+	</data>
+	<data name="ReturnMoney" xml:space="preserve">
+		<value>Return Money</value>
+	</data>
+	<data name="CanNotExceedConfirm" xml:space="preserve">
+		<value>Total paid price is ￥{0} ! Confirm to return ?</value>
+	</data>
+	<data name="Exception_PasswordErrorCountLimit" xml:space="preserve">
+		<value>Password wrong too many times, please try later !</value>
+	</data>
+	<data name="CompanyName" xml:space="preserve">
+		<value>Company Name</value>
+	</data>
+	<data name="CustomFont_Android" xml:space="preserve">
+		<value>OybabTuz.ttf#Oybab Tuz</value>
+	</data>
+	<data name="CustomFont_iOS" xml:space="preserve">
+		<value>OybabTuz</value>
+	</data>
+	<data name="CustomFont_UWP" xml:space="preserve">
+		<value>/Assets/OybabTuz.ttf#Oybab Tuz</value>
+	</data>
+	<data name="SavePassword" xml:space="preserve">
+		<value>Save password</value>
+	</data>
+	<data name="Tsmi_Lang_Icon" xml:space="preserve">
+		<value>LangEN.png</value>
+	</data>
+	<data name="IncomeTypeStatistic" xml:space="preserve">
+		<value>Income Type Statistics</value>
+	</data>
+	<data name="SpendTypeStatistic" xml:space="preserve">
+		<value>Spend Type Statistic</value>
+	</data>
+	<data name="Settings" xml:space="preserve">
+		<value>Settings</value>
+	</data>
+	<data name="Agree" xml:space="preserve">
+		<value>Agree</value>
+	</data>
+	<data name="PrivacyPolicy" xml:space="preserve">
+		<value>Privacy Policy</value>
+	</data>
+	<data name="Exception_AdminUsing" xml:space="preserve">
+		<value>Current administrator is using ! If it is not you operation, please change the password in time!</value>
+	</data>
+	<data name="UserAgreement" xml:space="preserve">
+		<value>User Agreement</value>
+	</data>
+	<data name="And" xml:space="preserve">
+		<value>And</value>
+	</data>
+	<data name="History" xml:space="preserve">
+		<value>History</value>
+	</data>
+	<data name="HistoryDescription" xml:space="preserve">
+		<value>Check current data history.</value>
+	</data>
+	<data name="CompanyAbbreviation" xml:space="preserve">
+		<value>Oybab Co., Ltd.</value>
+	</data>
+	<data name="License" xml:space="preserve">
+		<value>License</value>
+	</data>
+	<data name="Donate" xml:space="preserve">
+		<value>Donate</value>
+	</data>
+	<data name="SourceCode" xml:space="preserve">
+		<value>Source Code</value>
+	</data>
+	<data name="ConfirmItemBalanceNotEnough" xml:space="preserve">
+		<value>{0} balance price not enought, confirm?</value>
+	</data>
+</root>

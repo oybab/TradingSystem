@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    x:Class="Oybab.TradingSystemX.Pages.Themes.LightTheme">
+
+
+
+    <Color x:Key="PageBackgroundColor">#F1F1F3</Color>
+    <Color x:Key="ItemBackgroundColor">#f9f9f9</Color>
+    <!--last #fbfcf9-->
+
+    <Color x:Key="TransparentColor">Transparent</Color>
+    <Color x:Key="LabelColor">Black</Color>
+    <Color x:Key="ButtonColor">#027DFF</Color>
+
+</ResourceDictionary>

@@ -1,0 +1,179 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+
+    <!-- 产品类型按钮 -->
+    <Style x:Key="cbProductTypeStyle" TargetType="{x:Type CheckBox}" BasedOn="{StaticResource CheckBoxBase}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type CheckBox}">
+                    <Grid Height="65" Margin="15,0,15,0" Background="Transparent">
+                        <Grid IsHitTestVisible="False">
+                            <StackPanel x:Name="backgroundImage" Height="53" Opacity="0.4" VerticalAlignment="Top">
+                                <Border Width="{Binding ElementName=grdContent, Path=ActualWidth}" Height="53" CornerRadius="15" Background="Black"/>
+                            </StackPanel>
+                            <StackPanel x:Name="backgroundSelectImage" Height="65"  Opacity="0.6" Visibility="Collapsed">
+                                <Border Width="{Binding ElementName=grdContent, Path=ActualWidth}" Height="53" CornerRadius="15" Background="DarkRed"/>
+                                <Polygon HorizontalAlignment="Center" VerticalAlignment="Center" Width="18" Height="12" Points="0,0 2,0 1,1" Fill="DarkRed" Stretch="Fill" />
+                            </StackPanel>
+                        </Grid>
+                        <Grid x:Name="grdContent">
+                            <Label Padding="0" Margin="30,0,30,15" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding ProductTypeName}" Foreground="White" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleMediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                        </Grid>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <DataTrigger Binding="{Binding IsSelected}" Value="True">
+                            <Setter Property="IsChecked" Value="True"/>
+                            <Setter TargetName="backgroundImage" Property="Visibility" Value="Collapsed"/>
+                            <Setter TargetName="backgroundSelectImage" Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+
+    <!-- 产品列表往左按钮 -->
+    <Style x:Key="btnTurnLeftStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonBase}">
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid Width="26" Height="42" Margin="17,0,17,0" Background="Transparent">
+                        <Grid>
+                            <Image x:Name="backgroundImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/turnLeft.png"  Width="26" Height="42"/>
+                            <Image x:Name="backgroundSelectImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/turnLeft_selected.png"  Width="26" Height="42" Visibility="Collapsed"/>
+                        </Grid>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="backgroundImage" Property="Visibility" Value="Collapsed"/>
+                            <Setter TargetName="backgroundSelectImage" Property="Visibility" Value="Visible"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+    <!-- 产品列表往右按钮 -->
+    <Style x:Key="btnTurnRightStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonBase}">
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid Width="26" Height="42" Margin="17,0,17,0" Background="Transparent">
+                        <Grid>
+                            <Image x:Name="backgroundImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/turnRight.png"  Width="26" Height="42"/>
+                            <Image x:Name="backgroundSelectImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/turnRight_selected.png"  Width="26" Height="42" Visibility="Collapsed"/>
+                        </Grid>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="backgroundImage" Property="Visibility" Value="Collapsed"/>
+                            <Setter TargetName="backgroundSelectImage" Property="Visibility" Value="Visible"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+
+
+
+
+
+
+
+    <Style x:Key="btnProductSelectStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonBase}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid x:Name="grdParent" Background="Transparent">
+                        <Grid x:Name="grd" Visibility="Collapsed">
+                            <Grid Background="White" Opacity="0.2">
+                            </Grid>
+                            <Label Opacity="0.5" Padding="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{TemplateBinding Content}" Foreground="White" FontSize="60" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                        </Grid>
+                    </Grid>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="grd" Property="Visibility" Value="Visible"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+    <!-- 产品 -->
+    <Style x:Key="btnProductStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonBase}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid Width="300" Height="270" Background="Transparent">
+                        <StackPanel IsHitTestVisible="False">
+                            <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 20, 0, 0"  Width="256" Height="174">
+                                <Image  VerticalAlignment="Top" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/originalPic.png"  Width="256" Height="174">
+                                </Image>
+                                <Image VerticalAlignment="Top" HorizontalAlignment="Center" Stretch="Fill" Source="{Binding ImagePath, Converter={StaticResource NullImageConverter}}"  Width="256" Height="174">
+                                </Image>
+                                <Grid HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="35">
+                                    <Grid.Background>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                            <GradientStop  Color="#7D121111" Offset="0"/>
+                                            <GradientStop  Color="#BF121111" Offset="0.8"/>
+                                        </LinearGradientBrush>
+                                    </Grid.Background>
+                                    <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        <Label Padding="0" Margin="0,0,2,0"  VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Converter={StaticResource PriceConverter}}" Foreground="White" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleKeyboardFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                                        <Label Padding="0"  VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Price}" Foreground="White" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleKeyboardFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                                    </WrapPanel>
+                                </Grid>
+                                <Border x:Name="backgroundSelectImage" VerticalAlignment="Top" HorizontalAlignment="Center"  Width="256" Height="174" BorderBrush="White" BorderThickness="2" Visibility="Collapsed"/>
+                            </Grid>
+                            <Grid Width="256" Margin="0, 20"  IsHitTestVisible="False">
+                                <TextBlock  FlowDirection="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=DirectionMode}" x:Name="lbContent" Margin="0" Padding="0, 0, 0, 14" VerticalAlignment="Bottom" HorizontalAlignment="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=HorizontalModel}" Text="{Binding ProductName}" TextWrapping="Wrap" Foreground="White" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleMediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                            </Grid>
+                        </StackPanel>
+                        <Grid x:Name="backgroundSelectImage2" Visibility="Collapsed"  IsHitTestVisible="False">
+                            <Image VerticalAlignment="Top" HorizontalAlignment="Left" Stretch="None" Source="/Res;component/Resources/Images/Tablet/radioButton2.png"  Width="55" Height="55">
+                            </Image>
+                        </Grid>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <DataTrigger Binding="{Binding IsSelected}" Value="True">
+                            <Setter TargetName="backgroundSelectImage" Property="Visibility" Value="Visible"/>
+                            <Setter TargetName="backgroundSelectImage2" Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="backgroundSelectImage" Property="Visibility" Value="Visible"/>
+                            <Setter TargetName="backgroundSelectImage" Property="Opacity" Value="0.5"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+
+</ResourceDictionary>

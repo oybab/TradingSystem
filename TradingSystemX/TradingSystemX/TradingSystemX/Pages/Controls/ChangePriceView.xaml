@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Oybab.TradingSystemX.Pages.Controls.ChangePriceView" BackgroundColor="{DynamicResource PageBackgroundColor}">
+    <Grid>
+        <Grid>
+            <StackLayout Margin="10, 10, 10, 10"  Orientation="Vertical">
+
+                <Label  Margin="6,10,0,0" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=ChangePrice}"/>
+
+                <StackLayout Margin="0,20,0,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Label Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=UnitPrice}"/>
+                    <Label Text=":"/>
+                    <Label Text="{Binding OldPrice}"/>
+                </StackLayout>
+                <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Label Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=ChangePrice}" VerticalOptions="Center"/>
+                    <Label Text=":" VerticalOptions="Center"/>
+                    <Label Text="{Binding Converter={StaticResource PC}}" VerticalOptions="Center"/>
+                    <Entry Keyboard="Numeric" Text="{Binding NewPrice, Mode=TwoWay}" TextChanged="Entry_TextChanged" HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+
+
+                <Grid  HorizontalOptions="Center"  Margin="0, 50, 0, 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Grid.Column="0" HorizontalOptions="End" Command="{Binding CancelCommand}" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Back}"  />
+                    <Button Grid.Column="2" HorizontalOptions="Start" Command="{Binding OKCommand}" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Change}"/>
+                </Grid>
+
+            </StackLayout>
+        </Grid>
+    </Grid>
+</ContentView>

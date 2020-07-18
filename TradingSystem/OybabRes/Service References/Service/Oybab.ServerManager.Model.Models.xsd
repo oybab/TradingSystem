@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Models" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Models" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="SendType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Unknow" />
+      <xs:enumeration value="Shutdown" />
+      <xs:enumeration value="ShutdownServer" />
+      <xs:enumeration value="Restart" />
+      <xs:enumeration value="KeyLock" />
+      <xs:enumeration value="KeyUnlock" />
+      <xs:enumeration value="RestartServer" />
+      <xs:enumeration value="FireOn" />
+      <xs:enumeration value="Lock" />
+      <xs:enumeration value="Unlock" />
+      <xs:enumeration value="Call" />
+      <xs:enumeration value="Message" />
+      <xs:enumeration value="Printer" />
+      <xs:enumeration value="Online" />
+      <xs:enumeration value="Offline" />
+      <xs:enumeration value="FireOff" />
+      <xs:enumeration value="ExtendInfo" />
+      <xs:enumeration value="OpenCashDrawer" />
+      <xs:enumeration value="Custom1" />
+      <xs:enumeration value="Custom2" />
+      <xs:enumeration value="Custom3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SendType" nillable="true" type="tns:SendType" />
+  <xs:simpleType name="ModelType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Room" />
+      <xs:enumeration value="Product" />
+      <xs:enumeration value="ProductType" />
+      <xs:enumeration value="Admin" />
+      <xs:enumeration value="Member" />
+      <xs:enumeration value="Printer" />
+      <xs:enumeration value="Ppr" />
+      <xs:enumeration value="Device" />
+      <xs:enumeration value="Order" />
+      <xs:enumeration value="Import" />
+      <xs:enumeration value="OrderDetail" />
+      <xs:enumeration value="ImportDetail" />
+      <xs:enumeration value="Takeout" />
+      <xs:enumeration value="TakeoutDetail" />
+      <xs:enumeration value="MemberPay" />
+      <xs:enumeration value="Config" />
+      <xs:enumeration value="Supplier" />
+      <xs:enumeration value="SupplierPay" />
+      <xs:enumeration value="AdminLog" />
+      <xs:enumeration value="AdminPay" />
+      <xs:enumeration value="Request" />
+      <xs:enumeration value="Balance" />
+      <xs:enumeration value="BalancePay" />
+      <xs:enumeration value="Statistic" />
+      <xs:enumeration value="CallBack" />
+      <xs:enumeration value="Custom1" />
+      <xs:enumeration value="Custom2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ModelType" nillable="true" type="tns:ModelType" />
+  <xs:simpleType name="StatisticType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Summary" />
+      <xs:enumeration value="Sale" />
+      <xs:enumeration value="Spend" />
+      <xs:enumeration value="SaleProduct" />
+      <xs:enumeration value="SpendProduct" />
+      <xs:enumeration value="SaleAdmin" />
+      <xs:enumeration value="SpendAdmin" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="StatisticType" nillable="true" type="tns:StatisticType" />
+  <xs:simpleType name="ServiceType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Login" />
+      <xs:enumeration value="Close" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ServiceType" nillable="true" type="tns:ServiceType" />
+  <xs:complexType name="ToClientServiceModelUpdateNotification">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Model" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModelRef" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModelRef2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModelType" type="tns:ModelType" />
+      <xs:element minOccurs="0" name="OperateType" type="tns:OperateType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ToClientServiceModelUpdateNotification" nillable="true" type="tns:ToClientServiceModelUpdateNotification" />
+  <xs:simpleType name="OperateType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Add" />
+      <xs:enumeration value="Edit" />
+      <xs:enumeration value="Delete" />
+      <xs:enumeration value="Replace" />
+      <xs:enumeration value="Save" />
+      <xs:enumeration value="Get" />
+      <xs:enumeration value="Reset" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="OperateType" nillable="true" type="tns:OperateType" />
+</xs:schema>

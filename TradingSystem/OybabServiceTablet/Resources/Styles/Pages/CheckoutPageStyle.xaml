@@ -1,0 +1,480 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    >
+
+
+    <!-- 现金 -->
+    <Style x:Key="cbCashStyle" TargetType="{x:Type CheckBox}" BasedOn="{StaticResource CheckBoxBase}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type CheckBox}">
+                    <Grid Width="145" Height="65" Margin="3, 0">
+                        <Grid>
+                            <Image x:Name="backgroundImage" VerticalAlignment="Top" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/cashPanel.png"  Width="145" Height="65"/>
+                            <Image x:Name="backgroundSelectImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/cashPanel_selected.png"  Width="145" Height="65" Visibility="Collapsed"/>
+                        </Grid>
+                        <WrapPanel x:Name="wpContent" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="15,0,0,15">
+                            <Label Padding="0"  VerticalAlignment="Center"  HorizontalAlignment="Center" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=Cash}" Foreground="White" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleMediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                        </WrapPanel>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <DataTrigger Binding="{Binding DisplayMode}" Value="1">
+                            <Setter Property="IsChecked" Value="True"/>
+                            <Setter TargetName="backgroundImage" Property="Visibility" Value="Collapsed"/>
+                            <Setter TargetName="backgroundSelectImage" Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+    <!-- 刷卡 -->
+    <Style x:Key="cbCardStyle" TargetType="{x:Type CheckBox}" BasedOn="{StaticResource CheckBoxBase}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type CheckBox}">
+                    <Grid Width="145" Height="65" Margin="3,0">
+                        <Grid>
+                            <Image x:Name="backgroundImage" VerticalAlignment="Top" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/cardPanel.png"  Width="145" Height="53"/>
+                            <Image x:Name="backgroundSelectImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/cardPanel_selected.png"  Width="145" Height="65" Visibility="Collapsed"/>
+                        </Grid>
+                        <WrapPanel x:Name="wpContent" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="25,0,0,15">
+                            <Label Padding="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=Card}" Foreground="White" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleMediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                        </WrapPanel>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <DataTrigger Binding="{Binding DisplayMode}" Value="2">
+                            <Setter Property="IsChecked" Value="True"/>
+                            <Setter TargetName="backgroundImage" Property="Visibility" Value="Collapsed"/>
+                            <Setter TargetName="backgroundSelectImage" Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <!-- 会员输入 -->
+    <Style x:Key="wpMemberInputStyle" TargetType="{x:Type WrapPanel}">
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Style.Triggers>
+            <MultiDataTrigger>
+                <MultiDataTrigger.Conditions>
+                    <Condition Binding="{Binding BindMemberByNo}" Value="True"/>
+                    <Condition Binding="{Binding IsMember}" Value="False"/>
+                </MultiDataTrigger.Conditions>
+                <Setter Property="Visibility" Value="Visible"/>
+            </MultiDataTrigger>
+        </Style.Triggers>
+    </Style>
+
+
+
+    <!-- 会员 -->
+    <Style x:Key="cbMemberStyle" TargetType="{x:Type CheckBox}" BasedOn="{StaticResource CheckBoxBase}">
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type CheckBox}">
+                    <Grid Width="145" Height="65" Margin="3,0">
+                        <Grid>
+                            <Image x:Name="backgroundImage" VerticalAlignment="Top" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/memberPanel.png"  Width="145" Height="53"/>
+                            <Image x:Name="backgroundSelectImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/memberPanel_selected.png"  Width="145" Height="65" Visibility="Collapsed"/>
+                        </Grid>
+                        <WrapPanel x:Name="wpContent" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,0,15">
+                            <Label Padding="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=Member}" Foreground="White" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleMediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                        </WrapPanel>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <DataTrigger Binding="{Binding DisplayMode}" Value="4">
+                            <Setter Property="IsChecked" Value="True"/>
+                            <Setter TargetName="backgroundImage" Property="Visibility" Value="Collapsed"/>
+                            <Setter TargetName="backgroundSelectImage" Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding IsMember}" Value="True">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+    <!-- 绑定会员 -->
+    <Style x:Key="btnBindMemberStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonBase}">
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid Width="125" Height="53" Margin="5,0">
+                        <Grid>
+                            <Image x:Name="backgroundImage" VerticalAlignment="Top" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/bind.png"  Width="125" Height="53"/>
+                            <Image x:Name="backgroundSelectImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/bind_selected.png"  Width="125" Height="53" Visibility="Collapsed"/>
+                        </Grid>
+                        <WrapPanel x:Name="wpContent" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20,0,0,5">
+                            <Label Padding="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=Bind}" Foreground="White" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleMediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                        </WrapPanel>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="backgroundImage" Property="Visibility" Value="Collapsed"/>
+                            <Setter TargetName="backgroundSelectImage" Property="Visibility" Value="Visible"/>
+                        </Trigger>
+                        <DataTrigger Binding="{Binding IsMember}" Value="False">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <!-- 解绑会员 -->
+    <Style x:Key="btnUnbindMemberStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonBase}">
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid Width="125" Height="53" Margin="5,0">
+                        <Grid>
+                            <Image x:Name="backgroundImage" VerticalAlignment="Top" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/unbind.png"  Width="125" Height="53"/>
+                            <Image x:Name="backgroundSelectImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/unbind_selected.png"  Width="125" Height="65" Visibility="Collapsed"/>
+                        </Grid>
+                        <WrapPanel x:Name="wpContent" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20,0,0,5">
+                            <Label Padding="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=Unbind}" Foreground="White" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleMediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                        </WrapPanel>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="backgroundImage" Property="Visibility" Value="Collapsed"/>
+                            <Setter TargetName="backgroundSelectImage" Property="Visibility" Value="Visible"/>
+                        </Trigger>
+                        <DataTrigger Binding="{Binding IsMember}" Value="True">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <!-- 文字 -->
+    <Style x:Key="lbInfoHeadStyle" TargetType="Label">
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Margin" Value="5, 0"/>
+        <Setter Property="FontSize" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleMediumLabelFontSize}"/>
+        <Setter Property="FontFamily" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+    </Style>
+
+
+    <!-- 现金支付文字 -->
+    <Style x:Key="lbInfoHeadPayStyle" TargetType="Label" BasedOn="{StaticResource lbInfoHeadStyle}">
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Background" Value="Transparent"/>
+    </Style>
+
+    <!-- 会员输入框 -->
+    <Style x:Key="tbMemberNoInputTextboxStyle" TargetType="{x:Type TextBox}">
+        <Setter Property="MaxLength" Value="16" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="ClipToBounds" Value="True" />
+        <Setter Property="Width" Value="330"/>
+        <Setter Property="Height" Value="53"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border x:Name="border"  BorderThickness="2" BorderBrush="White" CornerRadius="15" Background="Transparent">
+                        <Grid ClipToBounds="True">
+                            <Label x:Name="lbContent" Margin="20,0,20,0" HorizontalAlignment="Left" Content="{TemplateBinding Text}" VerticalAlignment="Center" Foreground="White" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleMediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <DataTrigger Binding="{Binding DisplayMode}" Value="3">
+                            <Setter TargetName="border" Property="BorderBrush" Value="#FF4800"/>
+                            <Setter TargetName="lbContent" Property="Foreground" Value="#FF4800"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+    <!-- 现金输入框 -->
+    <Style x:Key="tbCashInputTextboxStyle" TargetType="{x:Type TextBox}">
+        <Setter Property="MaxLength" Value="10" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="ClipToBounds" Value="True" />
+        <Setter Property="Width" Value="330"/>
+        <Setter Property="Height" Value="53"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border x:Name="border" BorderThickness="2" BorderBrush="White" CornerRadius="15" Background="Transparent">
+                        <Grid ClipToBounds="True">
+                            <Label x:Name="lbContent" Margin="20,0,20,0" HorizontalAlignment="Left" Content="{TemplateBinding Text}" VerticalAlignment="Center" Foreground="White" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleMediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <DataTrigger Binding="{Binding DisplayMode}" Value="1">
+                            <Setter TargetName="border" Property="BorderBrush" Value="#FF4800"/>
+                            <Setter TargetName="lbContent" Property="Foreground" Value="#FF4800"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <!-- 刷卡输入框 -->
+    <Style x:Key="tbCardInputTextboxStyle" TargetType="{x:Type TextBox}">
+        <Setter Property="MaxLength" Value="10" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="ClipToBounds" Value="True" />
+        <Setter Property="Width" Value="330"/>
+        <Setter Property="Height" Value="53"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border x:Name="border" BorderThickness="2" BorderBrush="White" CornerRadius="15" Background="Transparent">
+                        <Grid ClipToBounds="True">
+                            <Label x:Name="lbContent" Margin="20,0,20,0" HorizontalAlignment="Left" Content="{TemplateBinding Text}" VerticalAlignment="Center" Foreground="White" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleMediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <DataTrigger Binding="{Binding DisplayMode}" Value="2">
+                            <Setter TargetName="border" Property="BorderBrush" Value="#FF4800"/>
+                            <Setter TargetName="lbContent" Property="Foreground" Value="#FF4800"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <!-- 会员支付输入框 -->
+    <Style x:Key="tbMemberPaidInputTextboxStyle" TargetType="{x:Type TextBox}">
+        <Setter Property="MaxLength" Value="10" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="ClipToBounds" Value="True" />
+        <Setter Property="Width" Value="330"/>
+        <Setter Property="Height" Value="53"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border x:Name="border"  BorderThickness="2" BorderBrush="White" CornerRadius="15" Background="Transparent">
+                        <Grid ClipToBounds="True">
+                            <Label x:Name="lbContent" Margin="20,0,20,0" HorizontalAlignment="Left" Content="{TemplateBinding Text}" VerticalAlignment="Center" Foreground="White" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleMediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <DataTrigger Binding="{Binding DisplayMode}" Value="4">
+                            <Setter TargetName="border" Property="BorderBrush" Value="#FF4800"/>
+                            <Setter TargetName="lbContent" Property="Foreground" Value="#FF4800"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <!-- 优惠付输入框 -->
+    <Style x:Key="tbDealsPriceInputTextboxStyle" TargetType="{x:Type TextBox}">
+        <Setter Property="MaxLength" Value="10" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="ClipToBounds" Value="True" />
+        <Setter Property="Width" Value="330"/>
+        <Setter Property="Height" Value="53"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border x:Name="border" BorderThickness="2" BorderBrush="White" CornerRadius="15" Background="Transparent">
+                        <Grid ClipToBounds="True">
+                            <Label x:Name="lbContent" Margin="20,0,20,0" HorizontalAlignment="Left" Content="{TemplateBinding Text}" VerticalAlignment="Center" Foreground="White" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleMediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <DataTrigger Binding="{Binding DisplayMode}" Value="5">
+                            <Setter TargetName="border" Property="BorderBrush" Value="#FF4800"/>
+                            <Setter TargetName="lbContent" Property="Foreground" Value="#FF4800"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+
+    <!-- 文字显示父级布局 -->
+    <Style x:Key="wpInfoWrapStyle" TargetType="{x:Type WrapPanel}">
+        <Setter Property="Margin" Value="5"/>
+    </Style>
+    <Style x:Key="wpInfoNewWrapStyle" TargetType="{x:Type WrapPanel}">
+        <Setter Property="Margin" Value="10"/>
+    </Style>
+
+
+    <!-- 文字显示父级布局(如果是时间无关的包厢就别显示剩余时间) -->
+    <Style x:Key="wpInfoWrapTimeStyle" TargetType="{x:Type WrapPanel}">
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="Visibility" Value="Visible"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding IsPayByTime}" Value="0">
+                <Setter Property="Visibility" Value="Collapsed"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+
+    <!-- 文字显示父级布局(有会员才显示) -->
+    <Style x:Key="wpInfoMemberWrapStyle" TargetType="{x:Type WrapPanel}">
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding IsMember}" Value="True">
+                <Setter Property="Visibility" Value="Visible"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+
+
+    <!-- 底部按钮 -->
+    <Style x:Key="btnCheckoutStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonBase}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid Width="235" Height="73" Margin="4,0,4,0">
+                        <Grid>
+                            <Image x:Name="backgroundImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/checkout.png"  Width="235" Height="73"/>
+                            <Image x:Name="backgroundSelectImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/checkout_selected.png"  Width="235" Height="73" Visibility="Collapsed"/>
+                        </Grid>
+                        <Label Padding="0" Margin="70, 0, 0, 0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=CheckoutOrder}" Foreground="White" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="backgroundImage" Property="Visibility" Value="Collapsed"/>
+                            <Setter TargetName="backgroundSelectImage" Property="Visibility" Value="Visible"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <Style x:Key="btnCheckoutImportStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonBase}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid Width="235" Height="73" Margin="4,0,4,0">
+                        <Grid>
+                            <Image x:Name="backgroundImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/checkout.png"  Width="235" Height="73"/>
+                            <Image x:Name="backgroundSelectImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/checkout_selected.png"  Width="235" Height="73" Visibility="Collapsed"/>
+                        </Grid>
+                        <Label Padding="0" Margin="70, 0, 0, 0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=CheckoutImport}" Foreground="White" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=MediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="backgroundImage" Property="Visibility" Value="Collapsed"/>
+                            <Setter TargetName="backgroundSelectImage" Property="Visibility" Value="Visible"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+
+
+    <!-- 语言弹出框 -->
+    <Style x:Key="ctrControlStyle" TargetType="Control">
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding IsLanguageDisplay}" Value="True">
+                <Setter Property="Visibility" Value="Visible"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+
+
+    <!-- 文字(保留) -->
+    <Style x:Key="lbInfoHeadKeepStyle" TargetType="Label">
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="Blue"/>
+        <Setter Property="Margin" Value="5, 0"/>
+        <Setter Property="FontSize" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleMediumLabelFontSize}"/>
+        <Setter Property="FontFamily" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding KeepPrice}" Value="0">
+                <Setter Property="Foreground" Value="White"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+
+
+    <!-- 文字(欠款) -->
+    <Style x:Key="lbInfoHeadBorrowStyle" TargetType="Label">
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="Red"/>
+        <Setter Property="Margin" Value="5, 0"/>
+        <Setter Property="FontSize" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleMediumLabelFontSize}"/>
+        <Setter Property="FontFamily" Value="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding BorrowPrice}" Value="0">
+                <Setter Property="Foreground" Value="White"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+
+
+
+    <!-- 修改支付金额弹出框 -->
+    <Style x:Key="ctrChangePaidPriceControlStyle" TargetType="Control">
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding IsDisplay}" Value="True">
+                <Setter Property="Visibility" Value="Visible"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+
+
+</ResourceDictionary>

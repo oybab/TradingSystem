@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=SoftServiceName}" NavigationPage.BackButtonTitle="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Back}"
+             x:Class="Oybab.TradingSystemX.Pages.LoginPage" xmlns:forms="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.Core"
+             BackgroundColor="{DynamicResource PageBackgroundColor}">
+
+
+    <Grid>
+        <Grid Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            <Label x:Name="lbCompanyName" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=CompanyLogoName}"  VerticalOptions="Start"  HorizontalOptions="Start" Margin="6,10,0,0" />
+
+            <ScrollView Grid.Row="1" >
+                <StackLayout Margin="0, 50, 0, 50"  Orientation="Vertical">
+
+                    <StackLayout>
+
+                        <Label HorizontalOptions="Start" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Login}"  Margin="6,0,0,0" />
+                        <!--Style="{DynamicResource TitleStyle}"-->
+
+                        <Label HorizontalOptions="Start" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=AdminNo}" />
+                        <Entry Keyboard="Numeric" Text="{Binding AdminNo, Mode=TwoWay}" Placeholder="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=LoginUserInputMsg}">
+                            <Entry.Triggers>
+                                <DataTrigger TargetType="Entry" Binding="{Binding HideSetting}" Value="True">
+                                    <Setter Property="IsEnabled" Value="False"/>
+                                    <Setter Property="Opacity" Value="0.3"/>
+                                </DataTrigger >
+                            </Entry.Triggers>
+                        </Entry>
+                        <Label HorizontalOptions="Start" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Password}"/>
+                        <Entry IsPassword="True"  Text="{Binding Password, Mode=TwoWay}" Placeholder="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=LoginPasswordInputMsg}"/>
+                    </StackLayout>
+                    <StackLayout HorizontalOptions="Start" Margin="0,5,0,0" Orientation="Horizontal">
+                        <Label HorizontalOptions="Start" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=SavePassword}"  />
+                        <Switch HorizontalOptions="Start" IsToggled="{Binding IsSavePassword, Mode=TwoWay}" Margin="20,0,0,0"/>
+                    </StackLayout>
+
+
+                    <Grid  HorizontalOptions="Center"  Margin="0, 20, 0, 0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" HorizontalOptions="End" Command="{Binding LoginCommand}" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Login}"  />
+
+                        <Button Grid.Column="1" HorizontalOptions="Center" Command="{Binding ResetCommand}" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Reset2}" />
+
+                        <Button Margin="10,0,0,0" HorizontalOptions="Start"  Grid.Column="2" Command="{Binding SettingCommand}" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Settings}"  >
+                            <Button.Triggers >
+                                <DataTrigger TargetType="Button" Binding="{Binding HideSetting}" Value="True">
+                                    <Setter Property="IsEnabled" Value="False"/>
+                                    <Setter Property="Opacity" Value="0.3"/>
+                                </DataTrigger >
+                            </Button.Triggers>
+                        </Button>
+                    </Grid>
+                </StackLayout>
+            </ScrollView>
+            <StackLayout Grid.Row="2"  HorizontalOptions="End" Orientation="Horizontal" IsVisible="False">
+                <Button Margin="0,0,5,0" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Close}" Command="{Binding CloseCommand}"></Button>
+                <StackLayout.Triggers>
+                    <DataTrigger TargetType="StackLayout" Binding="{Binding HideSetting}" Value="True">
+                        <Setter Property="IsVisible" Value="True"/>
+                    </DataTrigger > 
+                </StackLayout.Triggers>
+            </StackLayout>
+            <StackLayout Grid.Row="2"  HorizontalOptions="CenterAndExpand"  Orientation="Horizontal" IsVisible="True">
+                <CheckBox IsChecked="{Binding IsAgreeRequirements}"/>
+                <Label FontSize="Caption" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Agree}" Margin="3" VerticalOptions="Center"/>
+                <Label FontSize="Caption" VerticalOptions="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=PrivacyPolicy}" TextColor="{DynamicResource ButtonColor}" TextDecorations="Underline">
+                                <!--<Span.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding PrivacyPolicyCommand}" CommandParameter="1" />
+                                </Span.GestureRecognizers>-->
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding PrivacyPolicyCommand}" CommandParameter="1" />
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label FontSize="Caption" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=And}" Margin="3" VerticalOptions="Center"/>
+                <Label FontSize="Caption" VerticalOptions="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=UserAgreement}" TextColor="{DynamicResource ButtonColor}" TextDecorations="Underline">
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding UserAgreementCommand}" CommandParameter="1" />
+                    </Label.GestureRecognizers>
+                </Label>
+                <StackLayout.Triggers>
+                    <DataTrigger TargetType="StackLayout" Binding="{Binding HideSetting}" Value="True">
+                        <Setter Property="IsVisible" Value="False"/>
+                    </DataTrigger >
+                </StackLayout.Triggers>
+            </StackLayout>
+        </Grid>
+
+        <Grid IsVisible="{Binding IsLoading}"  Style="{StaticResource LoadingBackground}">
+            <ActivityIndicator IsRunning="{Binding IsLoading}" />
+        </Grid>
+    </Grid>
+</ContentPage>

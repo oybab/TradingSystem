@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=SoftServiceName}"
+             xmlns:forms="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.Core"
+             x:Class="Oybab.TradingSystemX.Pages.Controls.SettingPage" BackgroundColor="{DynamicResource PageBackgroundColor}">
+
+    <Grid>
+        <Grid>
+            <StackLayout Margin="10, 20, 10, 10"  Orientation="Vertical">
+
+                <StackLayout>
+                    <Label HorizontalOptions="Start" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=ChangeSet}"  Margin="6,0,0,0" />
+
+                    <Label HorizontalOptions="Start" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=ServerIpAddress2}" Margin="0,20,0,0"/>
+                    <Entry Text="{Binding ServerIP, Mode=TwoWay}"/>
+
+                    <Label HorizontalOptions="Start" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Language}"/>
+                    <Picker HorizontalOptions="CenterAndExpand" ItemsSource="{Binding AllLang}" SelectedItem="{Binding SelectedLang}" ItemDisplayBinding="{Binding Name}" />
+
+                    <!--<Label HorizontalOptions="Start" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Mode}"/>
+                    <Picker HorizontalOptions="CenterAndExpand" ItemsSource="{Binding AllMode}" SelectedItem="{Binding SelectedMode}" ItemDisplayBinding="{Binding Name}" />-->
+
+                    <Grid  HorizontalOptions="Center"  VerticalOptions="End" Margin="0, 20, 0, 50">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="0.5*"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" HorizontalOptions="End" Command="{Binding BackCommand}" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Back}"  />
+                        <Button Grid.Column="2" HorizontalOptions="Start" Command="{Binding ChangeCommand}" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Change}"/>
+                    </Grid>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+
+        <Grid IsVisible="{Binding IsLoading}"  Style="{StaticResource LoadingBackground}">
+            <ActivityIndicator IsRunning="{Binding IsLoading}" />
+        </Grid>
+
+    </Grid>
+</ContentPage>

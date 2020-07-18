@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ToServerService">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="SessionId" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ToServerService" nillable="true" type="tns:ToServerService" />
+  <xs:complexType name="ToClientService">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ExceptionType" type="tns:ServiceExceptionType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ToClientService" nillable="true" type="tns:ToClientService" />
+  <xs:simpleType name="ServiceExceptionType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="ServerFaild" />
+      <xs:enumeration value="KeyCheckFaild" />
+      <xs:enumeration value="ApplicationValidFaild" />
+      <xs:enumeration value="DataNotReady" />
+      <xs:enumeration value="KeyFaild" />
+      <xs:enumeration value="DataFaild" />
+      <xs:enumeration value="CountOutOfLimit" />
+      <xs:enumeration value="CountOutOfIPRequestLimit" />
+      <xs:enumeration value="DataHasRefrence" />
+      <xs:enumeration value="RefreshSessionModel" />
+      <xs:enumeration value="RefreshSessionModelForSameTimeOperate" />
+      <xs:enumeration value="UpdateModel" />
+      <xs:enumeration value="UpdateRefModel" />
+      <xs:enumeration value="ProductCountLimit" />
+      <xs:enumeration value="IPConflict" />
+      <xs:enumeration value="IPInvalid" />
+      <xs:enumeration value="SessionExpired" />
+      <xs:enumeration value="SessionUpdate" />
+      <xs:enumeration value="SessionInvalid" />
+      <xs:enumeration value="Relogin" />
+      <xs:enumeration value="UnknownDevice" />
+      <xs:enumeration value="RoomCountOutOfLimit" />
+      <xs:enumeration value="DeviceCountOutOfLimit" />
+      <xs:enumeration value="UnknownAdmin" />
+      <xs:enumeration value="AdminExists" />
+      <xs:enumeration value="DeviceExists" />
+      <xs:enumeration value="DatabaseNotFound" />
+      <xs:enumeration value="DatabaseLoadFailed" />
+      <xs:enumeration value="AdminUsing" />
+      <xs:enumeration value="RequestOverload" />
+      <xs:enumeration value="ServerClientTimeMisalignment" />
+      <xs:enumeration value="ServerClientVersionMisalignment" />
+      <xs:enumeration value="PasswordErrorCountLimit" />
+      <xs:enumeration value="Custom1" />
+      <xs:enumeration value="Custom2" />
+      <xs:enumeration value="Custom3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ServiceExceptionType" nillable="true" type="tns:ServiceExceptionType" />
+</xs:schema>

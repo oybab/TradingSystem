@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    x:Class="Oybab.TradingSystemX.Pages.Themes.DarkTheme">
+
+
+
+    <!--iOS nav #3E3E3E-->
+    <Color x:Key="PageBackgroundColor">#313131</Color>
+    <Color x:Key="ItemBackgroundColor">#3E3E3E</Color>
+
+    <!--微信, 但是弹出窗口冲突-->
+    <!--<Color x:Key="PageBackgroundColor">#191919</Color>
+    <Color x:Key="ItemBackgroundColor">#232323</Color>-->
+
+    <Color x:Key="TransparentColor">Transparent</Color>
+    <!--<Color x:Key="LabelColor">White</Color>
+    <Color x:Key="ButtonColor">#0784FD</Color>-->
+    
+    <Color x:Key="LabelColor">#D3D3D3</Color>
+    <Color x:Key="ButtonColor">#4493F7</Color>
+</ResourceDictionary>
+
+

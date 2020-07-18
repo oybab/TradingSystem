@@ -1,0 +1,1397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.AdminLog" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Member" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.MemberPay" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Supplier" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.SupplierPay" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Printer" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Request" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Device" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Log" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Room" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Product" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.ProductType" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Order" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.OrderDetail" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Takeout" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.TakeoutDetail" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Import" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.ImportDetail" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Admin" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.AdminPay" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Balance" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.BalancePay" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Models" />
+  <xs:element name="ServiceEditAdminLog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.AdminLog" minOccurs="0" name="toServer" nillable="true" type="q1:ToServerServiceEditAdminLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceEditAdminLogResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.AdminLog" minOccurs="0" name="ServiceEditAdminLogResult" nillable="true" type="q2:ToClientServiceEditAdminLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelAdminLog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.AdminLog" minOccurs="0" name="toServer" nillable="true" type="q3:ToServerServiceDelAdminLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelAdminLogResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.AdminLog" minOccurs="0" name="ServiceDelAdminLogResult" nillable="true" type="q4:ToClientServiceDelAdminLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetAdminLog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.AdminLog" minOccurs="0" name="toServer" nillable="true" type="q5:ToServerServiceGetAdminLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetAdminLogResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.AdminLog" minOccurs="0" name="ServiceGetAdminLogResult" nillable="true" type="q6:ToClientServiceGetAdminLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddMember">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Member" minOccurs="0" name="toServer" nillable="true" type="q7:ToServerServiceAddMember" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddMemberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Member" minOccurs="0" name="ServiceAddMemberResult" nillable="true" type="q8:ToClientServiceAddMember" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceEditMember">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Member" minOccurs="0" name="toServer" nillable="true" type="q9:ToServerServiceEditMember" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceEditMemberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Member" minOccurs="0" name="ServiceEditMemberResult" nillable="true" type="q10:ToClientServiceEditMember" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelMember">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Member" minOccurs="0" name="toServer" nillable="true" type="q11:ToServerServiceDelMember" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelMemberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Member" minOccurs="0" name="ServiceDelMemberResult" nillable="true" type="q12:ToClientServiceDelMember" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetMembers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Member" minOccurs="0" name="toServer" nillable="true" type="q13:ToServerServiceGetMember" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetMembersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Member" minOccurs="0" name="ServiceGetMembersResult" nillable="true" type="q14:ToClientServiceGetMember" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddMemberPay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.MemberPay" minOccurs="0" name="toServer" nillable="true" type="q15:ToServerServiceAddMemberPay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddMemberPayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.MemberPay" minOccurs="0" name="ServiceAddMemberPayResult" nillable="true" type="q16:ToClientServiceAddMemberPay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelMemberPay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.MemberPay" minOccurs="0" name="toServer" nillable="true" type="q17:ToServerServiceDelMemberPay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelMemberPayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.MemberPay" minOccurs="0" name="ServiceDelMemberPayResult" nillable="true" type="q18:ToClientServiceDelMemberPay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetMemberPay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.MemberPay" minOccurs="0" name="toServer" nillable="true" type="q19:ToServerServiceGetMemberPay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetMemberPayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.MemberPay" minOccurs="0" name="ServiceGetMemberPayResult" nillable="true" type="q20:ToClientServiceGetMemberPay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddSupplier">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Supplier" minOccurs="0" name="toServer" nillable="true" type="q21:ToServerServiceAddSupplier" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddSupplierResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Supplier" minOccurs="0" name="ServiceAddSupplierResult" nillable="true" type="q22:ToClientServiceAddSupplier" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceEditSupplier">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Supplier" minOccurs="0" name="toServer" nillable="true" type="q23:ToServerServiceEditSupplier" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceEditSupplierResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Supplier" minOccurs="0" name="ServiceEditSupplierResult" nillable="true" type="q24:ToClientServiceEditSupplier" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelSupplier">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Supplier" minOccurs="0" name="toServer" nillable="true" type="q25:ToServerServiceDelSupplier" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelSupplierResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Supplier" minOccurs="0" name="ServiceDelSupplierResult" nillable="true" type="q26:ToClientServiceDelSupplier" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetSupplier">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Supplier" minOccurs="0" name="toServer" nillable="true" type="q27:ToServerServiceGetSupplier" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetSupplierResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Supplier" minOccurs="0" name="ServiceGetSupplierResult" nillable="true" type="q28:ToClientServiceGetSupplier" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddSupplierPay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.SupplierPay" minOccurs="0" name="toServer" nillable="true" type="q29:ToServerServiceAddSupplierPay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddSupplierPayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.SupplierPay" minOccurs="0" name="ServiceAddSupplierPayResult" nillable="true" type="q30:ToClientServiceAddSupplierPay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelSupplierPay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.SupplierPay" minOccurs="0" name="toServer" nillable="true" type="q31:ToServerServiceDelSupplierPay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelSupplierPayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.SupplierPay" minOccurs="0" name="ServiceDelSupplierPayResult" nillable="true" type="q32:ToClientServiceDelSupplierPay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetSupplierPay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.SupplierPay" minOccurs="0" name="toServer" nillable="true" type="q33:ToServerServiceGetSupplierPay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetSupplierPayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.SupplierPay" minOccurs="0" name="ServiceGetSupplierPayResult" nillable="true" type="q34:ToClientServiceGetSupplierPay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddPrinter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Printer" minOccurs="0" name="toServer" nillable="true" type="q35:ToServerServiceAddPrinter" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddPrinterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Printer" minOccurs="0" name="ServiceAddPrinterResult" nillable="true" type="q36:ToClientServiceAddPrinter" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceEditPrinter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Printer" minOccurs="0" name="toServer" nillable="true" type="q37:ToServerServiceEditPrinter" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceEditPrinterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Printer" minOccurs="0" name="ServiceEditPrinterResult" nillable="true" type="q38:ToClientServiceEditPrinter" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelPrinter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Printer" minOccurs="0" name="toServer" nillable="true" type="q39:ToServerServiceDelPrinter" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelPrinterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Printer" minOccurs="0" name="ServiceDelPrinterResult" nillable="true" type="q40:ToClientServiceDelPrinter" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Request" minOccurs="0" name="toServer" nillable="true" type="q41:ToServerServiceAddRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddRequestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Request" minOccurs="0" name="ServiceAddRequestResult" nillable="true" type="q42:ToClientServiceAddRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceEditRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Request" minOccurs="0" name="toServer" nillable="true" type="q43:ToServerServiceEditRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceEditRequestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Request" minOccurs="0" name="ServiceEditRequestResult" nillable="true" type="q44:ToClientServiceEditRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Request" minOccurs="0" name="toServer" nillable="true" type="q45:ToServerServiceDelRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelRequestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Request" minOccurs="0" name="ServiceDelRequestResult" nillable="true" type="q46:ToClientServiceDelRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddDevice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Device" minOccurs="0" name="toServer" nillable="true" type="q47:ToServerServiceAddDevice" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddDeviceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Device" minOccurs="0" name="ServiceAddDeviceResult" nillable="true" type="q48:ToClientServiceAddDevice" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceEditDevice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Device" minOccurs="0" name="toServer" nillable="true" type="q49:ToServerServiceEditDevice" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceEditDeviceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Device" minOccurs="0" name="ServiceEditDeviceResult" nillable="true" type="q50:ToClientServiceEditDevice" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelDevice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Device" minOccurs="0" name="toServer" nillable="true" type="q51:ToServerServiceDelDevice" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelDeviceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Device" minOccurs="0" name="ServiceDelDeviceResult" nillable="true" type="q52:ToClientServiceDelDevice" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetLog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Log" minOccurs="0" name="toServer" nillable="true" type="q53:ToServerServiceGetLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetLogResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Log" minOccurs="0" name="ServiceGetLogResult" nillable="true" type="q54:ToClientServiceGetLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceNewRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="toServer" nillable="true" type="q55:ToServerServiceNewRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceNewRequestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q56="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="ServiceNewRequestResult" nillable="true" type="q56:ToClientServiceNewRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceChangePWD">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="toServer" nillable="true" type="q57:ToServerServiceChangePWD" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceChangePWDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="ServiceChangePWDResult" nillable="true" type="q58:ToClientServiceChangePWD" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceUID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="toServer" nillable="true" type="q59:ToServerServiceUID" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceUIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="ServiceUIDResult" nillable="true" type="q60:ToClientServiceUID" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceSetCon">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="toServer" nillable="true" type="q61:ToServerServiceSetCon" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceSetConResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q62="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="ServiceSetConResult" nillable="true" type="q62:ToClientServiceSetCon" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceSend">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q63="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="toServer" nillable="true" type="q63:ToServerServiceSend" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceSendResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q64="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="ServiceSendResult" nillable="true" type="q64:ToClientServiceSend" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServicePrint">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q65="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="toServer" nillable="true" type="q65:ToServerServicePrint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServicePrintResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q66="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="ServicePrintResult" nillable="true" type="q66:ToClientServicePrint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceLock">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q67="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="toServer" nillable="true" type="q67:ToServerServiceLock" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceLockResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q68="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="ServiceLockResult" nillable="true" type="q68:ToClientServiceLock" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceClose">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q69="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="toServer" nillable="true" type="q69:ToServerServiceClose" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceCloseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q70="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="ServiceCloseResult" nillable="true" type="q70:ToClientServiceClose" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetbak">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q71="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="toServer" nillable="true" type="q71:ToServerServiceGetbak" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetbakResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q72="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="ServiceGetbakResult" nillable="true" type="q72:ToClientServiceGetbak" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceSetbak">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q73="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="toServer" nillable="true" type="q73:ToServerServiceSetbak" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceSetbakResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q74="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="ServiceSetbakResult" nillable="true" type="q74:ToClientServiceSetbak" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceSetContent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q75="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="toServer" nillable="true" type="q75:ToServerServiceSetContent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceSetContentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q76="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="ServiceSetContentResult" nillable="true" type="q76:ToClientServiceSetContent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceTimeRequestCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q77="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="toServer" nillable="true" type="q77:ToServerServiceRequestTimeCode" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceTimeRequestCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q78="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="ServiceTimeRequestCodeResult" nillable="true" type="q78:ToClientServiceRequestTimeCode" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceRegTime">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q79="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="toServer" nillable="true" type="q79:ToServerServiceRegTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceRegTimeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q80="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="ServiceRegTimeResult" nillable="true" type="q80:ToClientServiceRegTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceCountRequestCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q81="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="toServer" nillable="true" type="q81:ToServerServiceRequestCountCode" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceCountRequestCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q82="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="ServiceCountRequestCodeResult" nillable="true" type="q82:ToClientServiceRequestCountCode" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceRegCount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q83="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="toServer" nillable="true" type="q83:ToServerServiceRegCount" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceRegCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q84="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="ServiceRegCountResult" nillable="true" type="q84:ToClientServiceRegCount" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetModel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q85="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="toServer" nillable="true" type="q85:ToServerServiceGetModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetModelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q86="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="ServiceGetModelResult" nillable="true" type="q86:ToClientServiceGetModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceSession">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q87="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="toServer" nillable="true" type="q87:ToServerServiceSession" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceSessionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q88="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="ServiceSessionResult" nillable="true" type="q88:ToClientServiceSession" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddRoom">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q89="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Room" minOccurs="0" name="toServer" nillable="true" type="q89:ToServerServiceAddRoom" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddRoomResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q90="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Room" minOccurs="0" name="ServiceAddRoomResult" nillable="true" type="q90:ToClientServiceAddRoom" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceEditRoom">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q91="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Room" minOccurs="0" name="toServer" nillable="true" type="q91:ToServerServiceEditRoom" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceEditRoomResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q92="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Room" minOccurs="0" name="ServiceEditRoomResult" nillable="true" type="q92:ToClientServiceEditRoom" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelRoom">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q93="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Room" minOccurs="0" name="toServer" nillable="true" type="q93:ToServerServiceDelRoom" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelRoomResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q94="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Room" minOccurs="0" name="ServiceDelRoomResult" nillable="true" type="q94:ToClientServiceDelRoom" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetAllProduct">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q95="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Product" minOccurs="0" name="toServer" nillable="true" type="q95:ToServerServiceGetAllProduct" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetAllProductResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q96="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Product" minOccurs="0" name="ServiceGetAllProductResult" nillable="true" type="q96:ToClientServiceGetAllProduct" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddProduct">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q97="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Product" minOccurs="0" name="toServer" nillable="true" type="q97:ToServerServiceAddProduct" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddProductResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q98="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Product" minOccurs="0" name="ServiceAddProductResult" nillable="true" type="q98:ToClientServiceAddProduct" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceEditProduct">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q99="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Product" minOccurs="0" name="toServer" nillable="true" type="q99:ToServerServiceEditProduct" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceEditProductResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q100="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Product" minOccurs="0" name="ServiceEditProductResult" nillable="true" type="q100:ToClientServiceEditProduct" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelProduct">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q101="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Product" minOccurs="0" name="toServer" nillable="true" type="q101:ToServerServiceDelProduct" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelProductResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q102="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Product" minOccurs="0" name="ServiceDelProductResult" nillable="true" type="q102:ToClientServiceDelProduct" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddProductType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q103="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.ProductType" minOccurs="0" name="toServer" nillable="true" type="q103:ToServerServiceAddProductType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddProductTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q104="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.ProductType" minOccurs="0" name="ServiceAddProductTypeResult" nillable="true" type="q104:ToClientServiceAddProductType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceEditProductType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q105="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.ProductType" minOccurs="0" name="toServer" nillable="true" type="q105:ToServerServiceEditProductType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceEditProductTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q106="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.ProductType" minOccurs="0" name="ServiceEditProductTypeResult" nillable="true" type="q106:ToClientServiceEditProductType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelProductType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q107="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.ProductType" minOccurs="0" name="toServer" nillable="true" type="q107:ToServerServiceDelProductType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelProductTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q108="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.ProductType" minOccurs="0" name="ServiceDelProductTypeResult" nillable="true" type="q108:ToClientServiceDelProductType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q109="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Order" minOccurs="0" name="toServer" nillable="true" type="q109:ToServerServiceNewOrder" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q110="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Order" minOccurs="0" name="ServiceAddOrderResult" nillable="true" type="q110:ToClientServiceNewOrder" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceEditOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q111="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Order" minOccurs="0" name="toServer" nillable="true" type="q111:ToServerServiceEditOrder" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceEditOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q112="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Order" minOccurs="0" name="ServiceEditOrderResult" nillable="true" type="q112:ToClientServiceEditOrder" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceReplaceOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q113="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Order" minOccurs="0" name="toServer" nillable="true" type="q113:ToServerServiceReplaceOrder" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceReplaceOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q114="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Order" minOccurs="0" name="ServiceReplaceOrderResult" nillable="true" type="q114:ToClientServiceReplaceOrder" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetOrders">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q115="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Order" minOccurs="0" name="toServer" nillable="true" type="q115:ToServerServiceGetOrders" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetOrdersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q116="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Order" minOccurs="0" name="ServiceGetOrdersResult" nillable="true" type="q116:ToClientServiceGetOrders" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddOrderDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q117="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.OrderDetail" minOccurs="0" name="toServer" nillable="true" type="q117:ToServerServiceAddOrderDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddOrderDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q118="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.OrderDetail" minOccurs="0" name="ServiceAddOrderDetailResult" nillable="true" type="q118:ToClientServiceAddOrderDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceSaveOrderDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q119="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.OrderDetail" minOccurs="0" name="toServer" nillable="true" type="q119:ToServerServiceSaveOrderDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceSaveOrderDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q120="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.OrderDetail" minOccurs="0" name="ServiceSaveOrderDetailResult" nillable="true" type="q120:ToClientServiceSaveOrderDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelOrderDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q121="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.OrderDetail" minOccurs="0" name="toServer" nillable="true" type="q121:ToServerServiceDelOrderDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelOrderDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q122="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.OrderDetail" minOccurs="0" name="ServiceDelOrderDetailResult" nillable="true" type="q122:ToClientServiceDelOrderDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetOrderDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q123="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.OrderDetail" minOccurs="0" name="toServer" nillable="true" type="q123:ToServerServiceGetOrderDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetOrderDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q124="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.OrderDetail" minOccurs="0" name="ServiceGetOrderDetailResult" nillable="true" type="q124:ToClientServiceGetOrderDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetOrderPay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q125="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.OrderDetail" minOccurs="0" name="toServer" nillable="true" type="q125:ToServerServiceGetOrderPay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetOrderPayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q126="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.OrderDetail" minOccurs="0" name="ServiceGetOrderPayResult" nillable="true" type="q126:ToClientServiceGetOrderPay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddTakeout">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q127="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Takeout" minOccurs="0" name="toServer" nillable="true" type="q127:ToServerServiceNewTakeout" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddTakeoutResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q128="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Takeout" minOccurs="0" name="ServiceAddTakeoutResult" nillable="true" type="q128:ToClientServiceNewTakeout" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceEditTakeout">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q129="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Takeout" minOccurs="0" name="toServer" nillable="true" type="q129:ToServerServiceEditTakeout" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceEditTakeoutResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q130="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Takeout" minOccurs="0" name="ServiceEditTakeoutResult" nillable="true" type="q130:ToClientServiceEditTakeout" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetTakeout">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q131="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Takeout" minOccurs="0" name="toServer" nillable="true" type="q131:ToServerServiceGetTakeouts" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetTakeoutResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q132="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Takeout" minOccurs="0" name="ServiceGetTakeoutResult" nillable="true" type="q132:ToClientServiceGetTakeouts" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceSaveTakeoutDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q133="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.TakeoutDetail" minOccurs="0" name="toServer" nillable="true" type="q133:ToServerServiceSaveTakeoutDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceSaveTakeoutDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q134="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.TakeoutDetail" minOccurs="0" name="ServiceSaveTakeoutDetailResult" nillable="true" type="q134:ToClientServiceSaveTakeoutDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelTakeoutDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q135="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.TakeoutDetail" minOccurs="0" name="toServer" nillable="true" type="q135:ToServerServiceDelTakeoutDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelTakeoutDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q136="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.TakeoutDetail" minOccurs="0" name="ServiceDelTakeoutDetailResult" nillable="true" type="q136:ToClientServiceDelTakeoutDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetTakeoutDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q137="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.TakeoutDetail" minOccurs="0" name="toServer" nillable="true" type="q137:ToServerServiceGetTakeoutDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetTakeoutDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q138="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.TakeoutDetail" minOccurs="0" name="ServiceGetTakeoutDetailResult" nillable="true" type="q138:ToClientServiceGetTakeoutDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetTakeoutPay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q139="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.TakeoutDetail" minOccurs="0" name="toServer" nillable="true" type="q139:ToServerServiceGetTakeoutPay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetTakeoutPayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q140="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.TakeoutDetail" minOccurs="0" name="ServiceGetTakeoutPayResult" nillable="true" type="q140:ToClientServiceGetTakeoutPay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddImportWithDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q141="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Import" minOccurs="0" name="toServer" nillable="true" type="q141:ToServerServiceNewImport" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddImportWithDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q142="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Import" minOccurs="0" name="ServiceAddImportWithDetailResult" nillable="true" type="q142:ToClientServiceNewImport" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceEditImport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q143="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Import" minOccurs="0" name="toServer" nillable="true" type="q143:ToServerServiceEditImport" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceEditImportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q144="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Import" minOccurs="0" name="ServiceEditImportResult" nillable="true" type="q144:ToClientServiceEditImport" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetImports">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q145="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Import" minOccurs="0" name="toServer" nillable="true" type="q145:ToServerServiceGetImports" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetImportsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q146="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Import" minOccurs="0" name="ServiceGetImportsResult" nillable="true" type="q146:ToClientServiceGetImports" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGeImportDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q147="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.ImportDetail" minOccurs="0" name="toServer" nillable="true" type="q147:ToServerServiceGetImportDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGeImportDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q148="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.ImportDetail" minOccurs="0" name="ServiceGeImportDetailResult" nillable="true" type="q148:ToClientServiceGetImportDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetImportPay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q149="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.ImportDetail" minOccurs="0" name="toServer" nillable="true" type="q149:ToServerServiceGetImportPay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetImportPayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q150="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.ImportDetail" minOccurs="0" name="ServiceGetImportPayResult" nillable="true" type="q150:ToClientServiceGetImportPay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddAdmin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q151="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Admin" minOccurs="0" name="toServer" nillable="true" type="q151:ToServerServiceAddAdmin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddAdminResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q152="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Admin" minOccurs="0" name="ServiceAddAdminResult" nillable="true" type="q152:ToClientServiceAddAdmin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceEditAdmin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q153="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Admin" minOccurs="0" name="toServer" nillable="true" type="q153:ToServerServiceEditAdmin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceEditAdminResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q154="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Admin" minOccurs="0" name="ServiceEditAdminResult" nillable="true" type="q154:ToClientServiceEditAdmin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceResetAdmin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q155="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Admin" minOccurs="0" name="toServer" nillable="true" type="q155:ToServerServiceResetAdmin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceResetAdminResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q156="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Admin" minOccurs="0" name="ServiceResetAdminResult" nillable="true" type="q156:ToClientServiceResetAdmin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelAdmin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q157="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Admin" minOccurs="0" name="toServer" nillable="true" type="q157:ToServerServiceDelAdmin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelAdminResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q158="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Admin" minOccurs="0" name="ServiceDelAdminResult" nillable="true" type="q158:ToClientServiceDelAdmin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddAdminPay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q159="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.AdminPay" minOccurs="0" name="toServer" nillable="true" type="q159:ToServerServiceAddAdminPay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddAdminPayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q160="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.AdminPay" minOccurs="0" name="ServiceAddAdminPayResult" nillable="true" type="q160:ToClientServiceAddAdminPay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelAdminPay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q161="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.AdminPay" minOccurs="0" name="toServer" nillable="true" type="q161:ToServerServiceDelAdminPay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelAdminPayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q162="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.AdminPay" minOccurs="0" name="ServiceDelAdminPayResult" nillable="true" type="q162:ToClientServiceDelAdminPay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetAdminPay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q163="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.AdminPay" minOccurs="0" name="toServer" nillable="true" type="q163:ToServerServiceGetAdminPay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetAdminPayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q164="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.AdminPay" minOccurs="0" name="ServiceGetAdminPayResult" nillable="true" type="q164:ToClientServiceGetAdminPay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddBalance">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q165="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Balance" minOccurs="0" name="toServer" nillable="true" type="q165:ToServerServiceAddBalance" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddBalanceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q166="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Balance" minOccurs="0" name="ServiceAddBalanceResult" nillable="true" type="q166:ToClientServiceAddBalance" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceEditBalance">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q167="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Balance" minOccurs="0" name="toServer" nillable="true" type="q167:ToServerServiceEditBalance" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceEditBalanceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q168="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Balance" minOccurs="0" name="ServiceEditBalanceResult" nillable="true" type="q168:ToClientServiceEditBalance" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelBalance">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q169="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Balance" minOccurs="0" name="toServer" nillable="true" type="q169:ToServerServiceDelBalance" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelBalanceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q170="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Balance" minOccurs="0" name="ServiceDelBalanceResult" nillable="true" type="q170:ToClientServiceDelBalance" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetBalances">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q171="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Balance" minOccurs="0" name="toServer" nillable="true" type="q171:ToServerServiceGetBalance" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetBalancesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q172="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Balance" minOccurs="0" name="ServiceGetBalancesResult" nillable="true" type="q172:ToClientServiceGetBalance" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddBalancePay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q173="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.BalancePay" minOccurs="0" name="toServer" nillable="true" type="q173:ToServerServiceAddBalancePay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddBalancePayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q174="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.BalancePay" minOccurs="0" name="ServiceAddBalancePayResult" nillable="true" type="q174:ToClientServiceAddBalancePay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceTransferBalancePay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q175="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.BalancePay" minOccurs="0" name="toServer" nillable="true" type="q175:ToServerServiceTransferBalancePay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceTransferBalancePayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q176="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.BalancePay" minOccurs="0" name="ServiceTransferBalancePayResult" nillable="true" type="q176:ToClientServiceTransferBalancePay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelBalancePay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q177="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.BalancePay" minOccurs="0" name="toServer" nillable="true" type="q177:ToServerServiceDelBalancePay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDelBalancePayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q178="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.BalancePay" minOccurs="0" name="ServiceDelBalancePayResult" nillable="true" type="q178:ToClientServiceDelBalancePay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetBalancePay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q179="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.BalancePay" minOccurs="0" name="toServer" nillable="true" type="q179:ToServerServiceGetBalancePay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceGetBalancePayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q180="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.BalancePay" minOccurs="0" name="ServiceGetBalancePayResult" nillable="true" type="q180:ToClientServiceGetBalancePay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddAdminLog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q181="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.AdminLog" minOccurs="0" name="toServer" nillable="true" type="q181:ToServerServiceAddAdminLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceAddAdminLogResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q182="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.AdminLog" minOccurs="0" name="ServiceAddAdminLogResult" nillable="true" type="q182:ToClientServiceAddAdminLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceSendNotification">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q183="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Common" minOccurs="0" name="toClient" nillable="true" type="q183:ToClientServiceSendNotification" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceSendNotificationResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceOrderUpdateNotification">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q184="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Order" minOccurs="0" name="toClient" nillable="true" type="q184:ToClientServiceOrderUpdateNotification" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceOrderUpdateNotificationResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceTakeoutUpdateNotification">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q185="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Takeout" minOccurs="0" name="toClient" nillable="true" type="q185:ToClientServiceTakeoutUpdateNotification" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceTakeoutUpdateNotificationResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceProductCountUpdateNotification">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q186="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Product" minOccurs="0" name="toClient" nillable="true" type="q186:ToClientServiceProductCountUpdateNotification" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceProductCountUpdateNotificationResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDeviceModeUpdateNotification">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q187="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.Device" minOccurs="0" name="toClient" nillable="true" type="q187:ToClientServiceDeviceModeUpdateNotification" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceDeviceModeUpdateNotificationResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceOrderDetailsAddNotification">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q188="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.OrderDetail" minOccurs="0" name="toClient" nillable="true" type="q188:ToClientServiceOrderDetailsAddNotification" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceOrderDetailsAddNotificationResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceTakeoutAddNotification">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q189="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Service.TakeoutDetail" minOccurs="0" name="toClient" nillable="true" type="q189:ToClientServiceTakeoutAddNotification" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceTakeoutAddNotificationResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceModelUpdateNotification">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q190="http://schemas.datacontract.org/2004/07/Oybab.ServerManager.Model.Models" minOccurs="0" name="toClient" nillable="true" type="q190:ToClientServiceModelUpdateNotification" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceModelUpdateNotificationResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

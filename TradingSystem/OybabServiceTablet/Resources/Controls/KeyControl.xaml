@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="Oybab.ServiceTablet.Resources.Controls.KeyControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d"
+             x:Name="control">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary  Source="/ServiceTablet;component/Resources/Styles/Controls/KeyControlStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <Grid Style="{StaticResource grdMessageboxParentBackgroundStyle}"/>
+        <Border Style="{StaticResource bdMessageboxBorderStyle}" >
+            <Grid Margin="80, 50">
+                <StackPanel>
+                    <WrapPanel Style="{StaticResource wpMessageboxWrapStyle}">
+                        <Image Style="{StaticResource imgMessageboxWarnStyle}"/>
+                        <TextBlock Style="{StaticResource tbMessageboxWarnContentStyle}" Text="{Binding KeyMsg, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    </WrapPanel>
+                    <!-- Buttons for success and exit -->
+                    <WrapPanel Style="{StaticResource wpMessageboxButtonWrapStyle}">
+                        <Button Style="{StaticResource btnMsgExitStyle}"  Command="{Binding ExitCommand}"/>
+                        <Button Style="{StaticResource btnMsgRetryStyle}"  Command="{Binding RetryCommand}"/>
+                    </WrapPanel>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

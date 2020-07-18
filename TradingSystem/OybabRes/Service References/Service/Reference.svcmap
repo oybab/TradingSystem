@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="32f97bac-6e94-44f5-9a35-c9d2260897c3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>true</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="net.tcp://localhost:19998/OybabService/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="2fda31ff-6cbc-4341-a70c-e1d4472094fb" SourceId="1" SourceUrl="net.tcp://localhost:19998/OybabService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="bfa5c9a4-1430-4058-87d5-d323b8c95507" SourceId="1" SourceUrl="net.tcp://localhost:19998/OybabService/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="10407529-39dd-4542-90c2-4eee32486ef1" SourceId="1" SourceUrl="net.tcp://localhost:19998/OybabService/mex" />
+    <MetadataFile FileName="Oybab.ServerManager.Model.Service.AdminLog.xsd" MetadataType="Schema" ID="1e6f554b-3dad-45ab-b5a3-856ba2b84ede" SourceId="1" SourceUrl="net.tcp://localhost:19998/OybabService/mex" />
+    <MetadataFile FileName="Oybab.ServerManager.Model.Service.xsd" MetadataType="Schema" ID="9ce582a2-a2c5-421d-a22c-ce5030fc330d" SourceId="1" SourceUrl="net.tcp://localhost:19998/OybabService/mex" />
+    <MetadataFile FileName="Oybab.ServerManager.Model.Service.Member.xsd" MetadataType="Schema" ID="97b1084a-7f51-46d3-9226-727dafe83c8c" SourceId="1" SourceUrl="net.tcp://localhost:19998/OybabService/mex" />
+    <MetadataFile FileName="Oybab.ServerManager.Model.Service.MemberPay.xsd" MetadataType="Schema" ID="f9b63a68-6dc8-4aeb-a208-454d675b57db" SourceId="1" SourceUrl="net.tcp://localhost:19998/OybabService/mex" />
+    <MetadataFile FileName="Oybab.ServerManager.Model.Service.Supplier.xsd" MetadataType="Schema" ID="2ff21470-e4bc-4047-8a86-0cbcde295f54" SourceId="1" SourceUrl="net.tcp://localhost:19998/OybabService/mex" />
+    <MetadataFile FileName="Oybab.ServerManager.Model.Service.SupplierPay.xsd" MetadataType="Schema" ID="ec038942-a61b-4f90-831c-a74223a93947" SourceId="1" SourceUrl="net.tcp://localhost:19998/OybabService/mex" />
+    <MetadataFile FileName="Oybab.ServerManager.Model.Service.Printer.xsd" MetadataType="Schema" ID="425c9f16-715c-4f25-9073-f81c9df1ef27" SourceId="1" SourceUrl="net.tcp://localhost:19998/OybabService/mex" />
+    <MetadataFile FileName="Oybab.ServerManager.Model.Service.Request.xsd" MetadataType="Schema" ID="acd82211-cb5b-4d95-901a-5d3f2a7b349c" SourceId="1" SourceUrl="net.tcp://localhost:19998/OybabService/mex" />
+    <MetadataFile FileName="Oybab.ServerManager.Model.Service.Device.xsd" MetadataType="Schema" ID="e7348f8c-92f6-4f08-a12c-13b87375a325" SourceId="1" SourceUrl="net.tcp://localhost:19998/OybabService/mex" />
+    <MetadataFile FileName="Oybab.ServerManager.Model.Service.Log.xsd" MetadataType="Schema" ID="493777d9-bc35-4415-b026-e9bd315e30a9" SourceId="1" SourceUrl="net.tcp://localhost:19998/OybabService/mex" />
+    <MetadataFile FileName="Oybab.ServerManager.Model.Service.Common.xsd" MetadataType="Schema" ID="1703bed1-6319-4f4b-8653-aecb73c761b3" SourceId="1" SourceUrl="net.tcp://localhost:19998/OybabService/mex" />
+    <MetadataFile FileName="Oybab.ServerManager.Model.Models.xsd" MetadataType="Schema" ID="da963e27-63ff-4c7a-9c74-ac3ae530299c" SourceId="1" SourceUrl="net.tcp://localhost:19998/OybabService/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="0df3dd9a-fa87-470e-911b-876d550edd00" SourceId="1" SourceUrl="net.tcp://localhost:19998/OybabService/mex" />
+    <MetadataFile FileName="Oybab.ServerManager.Model.Service.Room.xsd" MetadataType="Schema" ID="091dd7a1-1dcb-493a-b8d1-5adcf032ec5a" SourceId="1" SourceUrl="net.tcp://localhost:19998/OybabService/mex" />
+    <MetadataFile FileName="Oybab.ServerManager.Model.Service.Product.xsd" MetadataType="Schema" ID="f1d5a2a1-0ade-44d5-83d9-080616fe22a1" SourceId="1" SourceUrl="net.tcp://localhost:19998/OybabService/mex" />
+    <MetadataFile FileName="Oybab.ServerManager.Model.Service.ProductType.xsd" MetadataType="Schema" ID="f0c77cfe-37ba-4edb-84ac-ee79ceaf54bf" SourceId="1" SourceUrl="net.tcp://localhost:19998/OybabService/mex" />
+    <MetadataFile FileName="Oybab.ServerManager.Model.Service.Order.xsd" MetadataType="Schema" ID="f11a367e-9295-4aeb-94a0-2c244b58e6f9" SourceId="1" SourceUrl="net.tcp://localhost:19998/OybabService/mex" />
+    <MetadataFile FileName="Oybab.ServerManager.Model.Service.OrderDetail.xsd" MetadataType="Schema" ID="a207d0ca-a4bd-429f-8ed9-789b5385ed63" SourceId="1" SourceUrl="net.tcp://localhost:19998/OybabService/mex" />
+    <MetadataFile FileName="Oybab.ServerManager.Model.Service.Takeout.xsd" MetadataType="Schema" ID="466da3ff-aeb8-4d89-a4a7-64b08b3324db" SourceId="1" SourceUrl="net.tcp://localhost:19998/OybabService/mex" />
+    <MetadataFile FileName="Oybab.ServerManager.Model.Service.TakeoutDetail.xsd" MetadataType="Schema" ID="f627b45d-fd2c-4e1d-ab6e-2c6b3ea43e60" SourceId="1" SourceUrl="net.tcp://localhost:19998/OybabService/mex" />
+    <MetadataFile FileName="Oybab.ServerManager.Model.Service.Import.xsd" MetadataType="Schema" ID="9775b27e-5117-4d07-a7d0-f044d1d8348b" SourceId="1" SourceUrl="net.tcp://localhost:19998/OybabService/mex" />
+    <MetadataFile FileName="Oybab.ServerManager.Model.Service.ImportDetail.xsd" MetadataType="Schema" ID="03a2b288-d06f-4837-a970-524b095f8e17" SourceId="1" SourceUrl="net.tcp://localhost:19998/OybabService/mex" />
+    <MetadataFile FileName="Oybab.ServerManager.Model.Service.Admin.xsd" MetadataType="Schema" ID="abf18e36-e513-4bec-a54d-7f2e248b1c24" SourceId="1" SourceUrl="net.tcp://localhost:19998/OybabService/mex" />
+    <MetadataFile FileName="Oybab.ServerManager.Model.Service.AdminPay.xsd" MetadataType="Schema" ID="7cb2cd7f-b7ed-40e2-8181-3fb61ebcc42f" SourceId="1" SourceUrl="net.tcp://localhost:19998/OybabService/mex" />
+    <MetadataFile FileName="Oybab.ServerManager.Model.Service.Balance.xsd" MetadataType="Schema" ID="8be4342a-d321-49b0-ab86-9833a059bb8e" SourceId="1" SourceUrl="net.tcp://localhost:19998/OybabService/mex" />
+    <MetadataFile FileName="Oybab.ServerManager.Model.Service.BalancePay.xsd" MetadataType="Schema" ID="d7597fc5-cf9f-49dd-9e75-e05b1a2e5649" SourceId="1" SourceUrl="net.tcp://localhost:19998/OybabService/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

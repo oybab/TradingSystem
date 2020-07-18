@@ -1,0 +1,21 @@
+﻿#Warning: This configuration file is used to configure system functions.Do not modify it unless you know how to use it and have modification requirements.
+
+
+
+Server=192.168.1.200
+
+AutoSyncClientTime=0
+
+DisplaySecondMonitor=0
+
+IsLocalPrintCustomOrder=0
+
+CashDrawer=
+
+PriceMonitor=
+
+BarcodeReader=
+
+CardReader=
+
+Language=-1

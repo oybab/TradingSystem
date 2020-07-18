@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             IsPresented="{Binding IsPresented, Mode=TwoWay}" MasterBehavior="Popover" xmlns:forms="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.Core"
+             x:Class="Oybab.TradingSystemX.Pages.ImportPage" BackgroundColor="{DynamicResource PageBackgroundColor}">
+
+    <MasterDetailPage.Master>
+        <ContentPage Title="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Back}" BackgroundColor="{DynamicResource PageBackgroundColor}">
+            <Grid>
+                <StackLayout Orientation="Vertical" Margin="10">
+                    <ScrollView VerticalOptions="FillAndExpand">
+                        <StackLayout>
+                            <Label Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=ExpenditureManager}"  Margin="6,20,0,0" />
+                            <StackLayout VerticalOptions="FillAndExpand"  Margin="0,20,0,0"  HorizontalOptions="FillAndExpand">
+                                <Button Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Products}" Command="{Binding GoCommand}" CommandParameter="Products"  HorizontalOptions="FillAndExpand" />
+                                <Button Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Selected}" Command="{Binding GoCommand}" CommandParameter="Selected"  HorizontalOptions="FillAndExpand" />
+                            </StackLayout>
+
+                        </StackLayout>
+                    </ScrollView>
+                    <Button Margin="0,20,0,50" VerticalOptions="End" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Back}" Command="{Binding GoCommand}" CommandParameter="Back" HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+                <Grid IsVisible="{Binding IsLoading}"  Style="{StaticResource LoadingBackground}">
+                    <ActivityIndicator IsRunning="{Binding IsLoading}" />
+                </Grid>
+            </Grid>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+
+</MasterDetailPage>

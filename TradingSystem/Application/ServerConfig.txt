@@ -1,0 +1,11 @@
+﻿#Warning: This configuration file is used to configure system functions.Do not modify it unless you know how to use it and have modification requirements.
+
+
+
+BackupFolderPath=C:\backup
+
+DbKey=
+
+UID=
+
+PrintInfo=
