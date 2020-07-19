@@ -22,6 +22,12 @@ namespace Oybab.TradingSystemX.Pages.Controls
 
             InitializeComponent ();
 
+            // iOS暂时不显示捐助, Apple要求使用内置购买功能.....
+            if (Device.RuntimePlatform == Device.iOS)
+            {
+                columnDonate.Width = new GridLength(0);
+            }
+
             lbSoftware.GestureRecognizers.Add(new TapGestureRecognizer
             {
                 Command = new Command(() =>

@@ -73,7 +73,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages.Controls
             get { return _oldPassword; }
             set
             {
-                if (_oldPassword.Length < 16)
+                if (value.Length <= 16)
                 {
                     _oldPassword = value;
                     OnPropertyChanged("OldPassword");
@@ -93,7 +93,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages.Controls
             get { return _newPassword; }
             set
             {
-                if (_newPassword.Length < 16)
+                if (value.Length <= 16)
                 {
                     _newPassword = value;
                     OnPropertyChanged("NewPassword");
@@ -115,7 +115,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages.Controls
             get { return _confirmPassword; }
             set
             {
-                if (_confirmPassword.Length < 16)
+                if (value.Length <= 16)
                 {
                     _confirmPassword = value;
                     OnPropertyChanged("ConfirmPassword");

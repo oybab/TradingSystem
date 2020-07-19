@@ -88,7 +88,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
             get { return _password; }
             set
             {
-                if (_password.Length < 16)
+                if (value.Length <= 16)
                 {
                 _password = value;
                 OnPropertyChanged("Password");

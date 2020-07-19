@@ -33,7 +33,7 @@
                             </Entry.Triggers>
                         </Entry>
                         <Label HorizontalOptions="Start" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Password}"/>
-                        <Entry IsPassword="True"  Text="{Binding Password, Mode=TwoWay}" Placeholder="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=LoginPasswordInputMsg}"/>
+                        <Entry IsPassword="True" MaxLength="16"  Text="{Binding Password, Mode=TwoWay}" Placeholder="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=LoginPasswordInputMsg}"/>
                     </StackLayout>
                     <StackLayout HorizontalOptions="Start" Margin="0,5,0,0" Orientation="Horizontal">
                         <Label HorizontalOptions="Start" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=SavePassword}"  />

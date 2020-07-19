@@ -89,7 +89,7 @@
                     <Grid  Margin="0, 5, 0, 5">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
-                            <ColumnDefinition/>
+                            <ColumnDefinition x:Name="columnDonate"/>
                         </Grid.ColumnDefinitions>
                         <Label Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center">
                             <Label.FormattedText>

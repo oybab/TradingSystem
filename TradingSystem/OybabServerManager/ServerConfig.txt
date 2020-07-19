@@ -5,7 +5,7 @@
 BackupFolderPath=y:\backup
 
 DbKey=wvT-$sZDS_!%f2g643^J8VNlcXu)7oAh
-
+     
 UID=JocdzwFW1Q6qgIXKSnaRv3VlEAbNUxej
 
 IsPrintAfterBuy=0
