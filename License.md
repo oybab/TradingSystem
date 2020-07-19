@@ -16,7 +16,7 @@ You could download and install the final binary files of Oybab Trading System an
 
 ### 2. For source code  
 
-You could also download and use the source code of Oybab Trading System, but need to following conditions like:
+You could also download and use [the source code of Oybab Trading System](https://github.com/oybab/TradingSystem), but need to following conditions like:
 
 #### 2.1 For non-commercial
 
