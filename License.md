@@ -12,7 +12,7 @@ If you decide to use our product source code / binary, this agreement shall info
 
 ### 1. For binary
 
-You could download and install the final binary files of Oybab Trading System and use it for free with no any limitation. But we don't allow you modify the final binary code or crack it for any reason.
+You could download and install the final binary files of Oybab Trading System and use it for free with no any limitation. But you are not allowed modify the final binary code or crack it for any reason.
 
 ### 2. For source code  
 
