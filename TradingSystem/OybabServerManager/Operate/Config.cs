@@ -49,7 +49,7 @@ namespace Oybab.ServerManager.Operate
                         {
                             try
                             {
-                                temp = line.Trim().Split('=')[1];
+                                temp = line.Trim().TrimStart("BackupFolderPath=");
                                 Resources.GetRes().BackupFolderPath = temp;
                                 IsSuccessBackupFolder = true;
                             }
@@ -62,7 +62,7 @@ namespace Oybab.ServerManager.Operate
                         {
                             try
                             {
-                                temp = line.Trim().Split('=')[1];
+                                temp = line.Trim().TrimStart("DbKey=");
                                 if (string.IsNullOrWhiteSpace(Resources.GetRes().DB_KEY))
                                     Resources.GetRes().DB_KEY = temp;
                                 IsSuccessDbKey = true;
@@ -76,7 +76,7 @@ namespace Oybab.ServerManager.Operate
                         {
                             try
                             {
-                                temp = line.Trim().Split('=')[1];
+                                temp = line.Trim().TrimStart("UID=");
                                 if (string.IsNullOrWhiteSpace(Resources.GetRes().UID))
                                     Resources.GetRes().UID = temp;
                                 IsSuccessUID = true;
