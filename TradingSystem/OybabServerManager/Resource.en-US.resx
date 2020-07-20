@@ -130,7 +130,7 @@
     <value>Change faild</value>
   </data>
 	<data name="ChangePassword" xml:space="preserve">
-    <value>Change password</value>
+    <value>Change Password</value>
   </data>
 	<data name="ChangeSuccess" xml:space="preserve">
     <value>Change success !</value>
@@ -415,7 +415,7 @@
     <value>Any comments or suggestions, please contact us, contact details on "System --- About" page.</value>
   </data>
 	<data name="ChangeLanguage" xml:space="preserve">
-    <value>Change language</value>
+    <value>Change Language</value>
   </data>
 	<data name="ChangeLanguageFailt" xml:space="preserve">
     <value>Change language faild !</value>

@@ -96,7 +96,7 @@ namespace Oybab.ServerManager.Operate
                     IsNotFoundDatabase = false;
 
 
-                    ExceptionPro.ExpErrorLog("Successflully created a new database!");
+                    ExceptionPro.ExpInfoLog("Successflully created a new database!");
                 }
 
 
@@ -468,7 +468,7 @@ namespace Oybab.ServerManager.Operate
 
             internal void CreateNewDB(string Conn, string dbNewPassword, string adminNewPassword)
             {
-                ExceptionPro.ExpErrorLog("Database not found, creating a new database!");
+                ExceptionPro.ExpInfoLog("Database not found, creating a new database!");
 
 
                 string osPath = Path.GetTempFileName();

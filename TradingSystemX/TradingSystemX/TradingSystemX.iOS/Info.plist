@@ -27,7 +27,7 @@
 	<key>CFBundleIdentifier</key>
 	<string>com.oybab.tradingSystem</string>
 	<key>CFBundleVersion</key>
-	<string>1.0.10</string>
+	<string>1.0.12</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
@@ -41,6 +41,6 @@
 		<string>OybabTuz.ttf</string>
 	</array>
 	<key>NSCameraUsageDescription</key>
-	<string></string>
+	<string>Allow the app to scan product barcode</string>
 </dict>
 </plist>
