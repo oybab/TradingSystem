@@ -3,16 +3,16 @@
 
 OYBAB
 
-**Effective Date：2020-07-18**
+**Effective Date：2020-07-21**
 
 Oybab Trading System（And "we", "our" or "this app/software source code/binary" mentioned below.）is composed of main body The company Oybab Co., Ltd. The network product that offers。  
 The product name： Oybab Trading System  
 Product category：app/software source code/ binary  
 If you decide to use our product source code / binary, this agreement shall inform us you already read this and completely understand it.
 
-### 1. For binary
+### 1. For binary / assembly
 
-You could download and install the final binary files of Oybab Trading System and use it for free with no any limitation. But you are not allowed modify the final binary code or crack it for any reason.
+You could download and install the final binary/assembly files of Oybab Trading System and use it for free with no any limitation. But you are not allowed modify the final binary code or crack it for any reason.
 
 ### 2. For source code  
 
