@@ -81,13 +81,7 @@ namespace Oybab.ServerManager.Operate
                 // 2秒等待免得不停发送请求
                 System.Threading.Thread.Sleep(2000);
 
-                //验证程序
-                if (toServer.Soft_Service_Mobile_Name != Resources.GetRes().SOFT_SERVICE_MOBILE_NAME || toServer.Soft_Service_Tablet_Name != Resources.GetRes().SOFT_SERVICE_TABLET_NAME || toServer.Soft_Service_PC_Name != Resources.GetRes().SOFT_SERVICE_PC_NAME || toServer.DeviceType == 0)
-                {
-                    return new ToClientServiceNewRequest() { ExceptionType = ServiceExceptionType.ApplicationValidFaild };
-                }
-
-
+            
                 if (Math.Abs((toServer.Time - DateTime.Now).TotalMinutes) > 3)
                 {
                     return new ToClientServiceNewRequest() { ExceptionType = ServiceExceptionType.ServerClientTimeMisalignment };
@@ -95,7 +89,7 @@ namespace Oybab.ServerManager.Operate
 
 
                 // 目前暂时针对PC版和平板版做个不一致提醒要求, 后续增加手机版版本对比. (目前暂时用=对比,后续再考虑是否用<来代替)
-                if (toServer.DeviceType <= 2 && null != toServer.CurrentVersion && toServer.CurrentVersion != GetVersion())
+                if (null != toServer.CurrentVersion && toServer.CurrentVersion != GetVersion())
                 {
                     return new ToClientServiceNewRequest() { ExceptionType = ServiceExceptionType.ServerClientVersionMisalignment };
                 }

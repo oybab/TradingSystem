@@ -1,8 +1,8 @@
-﻿#Warning: This configuration file is used to configure system functions.Do not modify it unless you know how to use it and have modification requirements.
+﻿#Warning: This configuration file is used to configure system functions. Do not modify it unless you know how to use it and have modification requirements.
 
 
 
-Server=192.168.1.200
+Server=127.0.0.1
 
 AutoSyncClientTime=0
 

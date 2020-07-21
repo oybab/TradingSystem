@@ -9,6 +9,7 @@ using System.Data.Entity.Infrastructure;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Transactions;
 
@@ -45,14 +46,23 @@ namespace Oybab.ServerManager.Operate
                 // 如果获取到的备份位置不是空的, 则继续
                 if (!string.IsNullOrWhiteSpace(Resources.GetRes().BackupFolderPath))
                 {
-                    string drive = Path.GetPathRoot(Resources.GetRes().BackupFolderPath);  
 
-                    if (!Directory.Exists(drive))
+                    if (new Regex(@"^(([a-zA-Z]:\\)|(//)).*").Match((Resources.GetRes().BackupFolderPath)).Success)
                     {
-                        ExceptionPro.ExpErrorLog("Backup failed! backup path not exists!");
-                        return;
+                        string disk = Path.GetPathRoot(Resources.GetRes().BackupFolderPath);
+                        if (!Directory.Exists(disk))
+                        {
+                            ExceptionPro.ExpErrorLog("Backup failed! backup path disk name not exists!");
+                            return;
+                        }
+
+                    }
+                    else
+                    {
+                        Resources.GetRes().BackupFolderPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, Resources.GetRes().BackupFolderPath.Replace('/','\\').TrimStart("\\"));
                     }
 
+                  
                     // 没有文件夹就先创建
                     if (!Directory.Exists(Resources.GetRes().BackupFolderPath))
                     {

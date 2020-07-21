@@ -2,7 +2,7 @@
 
 
 
-BackupFolderPath=C:\backup
+BackupFolderPath=\backup
 
 DbKey=
 

@@ -1,8 +1,8 @@
-﻿#提示:此配置文件用于配置系统功能,除非了解如何使用并有修改要求否则请勿随意修改.
+﻿#Warning: This configuration file is used to configure system functions. Do not modify it unless you know how to use it and have modification requirements.
 
 
 
-BackupFolderPath=y:\backup
+BackupFolderPath=\backup
 
 DbKey=wvT-$sZDS_!%f2g643^J8VNlcXu)7oAh
      
