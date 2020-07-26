@@ -616,9 +616,6 @@
     <None Include="BsUI\bootstrap\js\bootstrap.min.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="BsUI\bootstrap\js\npm.js">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Include="BsUI\js\html5shiv.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
