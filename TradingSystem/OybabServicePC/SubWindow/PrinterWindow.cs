@@ -467,7 +467,7 @@ namespace Oybab.ServicePC.SubWindow
         /// </summary>
         private void Add(){
             OpenPageTo(1);
-            AddToGrid("*", "-1", "", "", "", "", GetPrintType(0), 0, 0, GetLanguage(9), 0, 1);
+            AddToGrid("*", "-1", "", "", "", "", GetPrintType(0), 0, 0, GetLanguage(-1), 0, 1);
             krpdgList.FirstDisplayedScrollingRowIndex = 0;
         }
 

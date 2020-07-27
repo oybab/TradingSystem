@@ -43,7 +43,7 @@ namespace Oybab.Reports.Common
 
             long lang = Printer.Lang;
 
-            if (9 == lang)
+            if (-1 == lang)
             {
                 lang = Order.Lang;
             }
