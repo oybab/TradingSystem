@@ -103,7 +103,7 @@ namespace Oybab.ServicePC.DialogWindow
             }
 
 
-            Print.Instance.PrintBarcode(models, krpcSize.SelectedIndex);
+            Print.Instance.PrintBarcode(models, krpcSize.SelectedIndex, krpcLanguage.SelectedIndex);
 
             Resources.GetRes().DefaultPrintLang = krpcLanguage.SelectedIndex;
             Resources.GetRes().DefaultBarcodePrintSize = krpcSize.SelectedIndex;

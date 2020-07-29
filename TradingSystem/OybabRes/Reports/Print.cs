@@ -28,7 +28,7 @@ namespace Oybab.Res.Reports
         /// <param name="model"></param>
         /// <param name="Lang"></param>
         /// <returns></returns>
-        public void PrintBarcode(List<ProductLabel> models, int sizeMode)
+        public void PrintBarcode(List<ProductLabel> models, int sizeMode, int langIndex)
         {
             object report = null;
             if (sizeMode == 0) //4cmX3cm
@@ -45,7 +45,7 @@ namespace Oybab.Res.Reports
             reportModel.DataSource = models;
 
 
-            ReportSettings(-1, reportModel, null);
+            ReportSettings(langIndex, reportModel, null);
            
 
             if (models.FirstOrDefault().BarcodeNo.Length > 8)

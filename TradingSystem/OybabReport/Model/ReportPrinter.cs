@@ -14,8 +14,8 @@ namespace Oybab.Report.Model
 
             XtraReport report = xtraReport as XtraReport;
 
-
-            report.PageHeight = reportModel.PageHeight;
+            if (reportModel.PageHeight != 0)
+                report.PageHeight = reportModel.PageHeight;
 
             if (reportModel.IsEAN13Generator)
             {
@@ -60,9 +60,14 @@ namespace Oybab.Report.Model
 
 
             if (null != PrinterDeviceName)
+            {
                 tool.Print(PrinterDeviceName);
+            }
             else
-                tool.Print();
+            {
+                tool.PrintDialog();
+            }
+                
 
         }
     }
