@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>Product Label Small</title>
+	<meta charset="UTF-8">
+	<meta HTTP-EQUIV='Content-Type' CONTENT='text/html; charset=utf-8'/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="Generator" content="Oybab Trading System">
+	<meta name="Author" content="Oybab">
+	<style type="text/css">
+		.xrcsFont4 {color:#000000;font-family:'Microsoft YaHei'; font-size:5px;}
+		.xrcsFont5 {color:#000000;font-family:'Microsoft YaHei'; font-size:7px;}
+		.xrcsFont6 {color:#000000;font-family:'Microsoft YaHei'; font-size:8px;}
+		.xrcsFont7 {color:#000000;font-family:'Microsoft YaHei'; font-size:9px;}
+		.xrcsFont8 {color:#000000;font-family:'Microsoft YaHei'; font-size:11px;}
+		.xrcsFont9 {color:#000000;font-family:'Microsoft YaHei'; font-size:12px;}
+		.xrcsFont10 {color:#000000;font-family:'Microsoft YaHei'; font-size:13px;}
+
+		.FixIE7 {height:0px;width:0px;overflow:hidden;font-size:0px;line-height:0px;}
+        .Line{ border-bottom: #000000 1px dashed; width:30mm;}
+
+        /* This place replace dynamically if needed */
+		/*${DynamicStyles}*/
+
+        /* For display tr border and fixed table size */ 
+		table{ border-collapse:collapse; table-layout:fixed;}
+		/* For fixed td size */ 
+		td{word-wrap:break-word; overflow-wrap: break-word; word-break: break-word;}
+        /* For fix pdf margin */
+		body{ max-width:30mm; max-height:20mm; margin:0px; }
+	</style>
+</head>
+<body style="background-color:#FFFFFF">
+	<div id="BarcodeDiv">
+		<!-- Table for Barcode -->
+<table cellpadding="0" cellspacing="0" border="0" style="border-width:0px;empty-cells:show;width:30mm;height:20mm;position:relative;">
+<tr style="vertical-align:top;">
+		<td class="xrcsFont6" style="width:113px;overflow:hidden;text-align:center;vertical-align:middle;height:23px;display:flex;flex-direction:column;justify-content:center;">${ProductName}</td>
+	</tr>
+	<tr style="vertical-align:top;">
+		<td class="xrcsFont7" style="width:113px;height:12px;line-height:12px;text-align:center;vertical-align:middle;">${Price}</td>
+	</tr>
+	<tr style="vertical-align:top;">
+		<td class="xrcsFont9" style="width:113px;height:40px;text-align:center;vertical-align:top;">${Image}</td>
+	</tr>
+</table>
+	</div>
+
+	<!--${DynamicImportJquery}-->
+	<!--${DynamicImportJsBarcode}-->
+	<script type="text/javascript">
+
+
+		var parameters = null;
+		var dataSource = null;
+		var isGenerated = false;
+
+		/* This place replace dynamically if needed */
+		/*${DynamicDataSource}*/
+		/*${DynamicIsGenerated}*/
+
+
+	
+
+
+	if (null != dataSource && isGenerated == true) {
+
+		// get the Table for display
+		var TheTable = $("#BarcodeDiv:first-child").html();
+		// Remove the original table
+		$('#BarcodeDiv').find('table:first').remove();
+
+		var dataSourceObj = JSON.parse(dataSource);
+		for (var item in dataSourceObj) {
+			var ojbInItem = dataSourceObj[item];
+
+			var newTable = new String(TheTable);
+
+			newTable = newTable.replace('${ProductName}', ojbInItem["ProductName"] ).replace('${Price}', ojbInItem["Price"] );
+			//var newImg = $('<img  height="40" width="113" />');
+			//var newImg = document.createElement("IMG");
+
+			var newImg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+
+			newImg.width=113;
+			newImg.height=40;
+			var format = "EAN8";
+			var barcodeWidth = 1.64;
+			var barcodeHeight = 20;
+
+			if (ojbInItem["BarcodeNo"].length > 8)
+			{
+				format = "EAN13";
+				barcodeWidth = 1.0;
+				barcodeHeight = 26 ;
+				newImg.width=109;
+			}
+
+			JsBarcode(newImg, ojbInItem["BarcodeNo"], {
+				  format:  format,
+				  displayValue: true,
+				  height:barcodeHeight,
+				  width:barcodeWidth,
+				  margin:1,
+			});
+
+
+
+			//newTable = newTable.replace('${Image}', newImg.outerHTML);
+			newTable = newTable.replace('${Image}', new XMLSerializer().serializeToString(newImg));
+
+			$("#BarcodeDiv").append(newTable);
+		}
+	}
+
+
+
+
+	</script>
+</body>
+</html>

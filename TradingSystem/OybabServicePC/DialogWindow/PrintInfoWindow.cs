@@ -92,12 +92,12 @@ namespace Oybab.ServicePC.DialogWindow
             }
 
 
-            if (printInfo.PageHeight == 1400)
-                krpcPageHeight.SelectedIndex = 1;
-            else if (printInfo.PageHeight == 1300)
+            if (printInfo.PageHeight == 93)
                 krpcPageHeight.SelectedIndex = 0;
-            else
+            else if (printInfo.PageHeight == 140)
                 krpcPageHeight.SelectedIndex = 1;
+            else if (printInfo.PageHeight == 280)
+                krpcPageHeight.SelectedIndex = 2;
 
         }
 
@@ -131,10 +131,7 @@ namespace Oybab.ServicePC.DialogWindow
                 printInfo.Msg1 = GetValueOrNull(krpt1.Text);
                 printInfo.Msg0 = GetValueOrNull(krpt0.Text);
 
-                if (krpcPageHeight.SelectedIndex == 1)
-                    printInfo.PageHeight = 1400;
-                else if (krpcPageHeight.SelectedIndex == 0)
-                    printInfo.PageHeight = 1300;
+                printInfo.PageHeight = int.Parse(krpcPageHeight.Text);
 
                 this.ReturnValue = printInfo;
 

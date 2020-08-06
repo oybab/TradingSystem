@@ -1,7 +1,7 @@
 ﻿using Oybab.DAL;
+using Oybab.Report;
+using Oybab.Report.CommonHWP;
 using Oybab.Report.Model;
-using Oybab.Reports;
-using Oybab.Reports.Common;
 using Oybab.ServerManager.Exceptions;
 using Oybab.ServerManager.Model.Models;
 using System;
@@ -403,7 +403,7 @@ namespace Oybab.ServerManager.Operate
                                 if (item.Key.PrintType == 0)
                                     report = new ImportReport(import, Resources.GetRes().PRODUCTS, item.Key, Resources.GetRes().PrintInfo.PriceSymbol, Lang);
                                 else if (item.Key.PrintType == 2)
-                                    report = new ImportMiddleReport(import, Resources.GetRes().PRODUCTS, item.Key, Resources.GetRes().PrintInfo.PriceSymbol, Lang);
+                                    report = new ImportMiddleReport(import, Resources.GetRes().PRODUCTS, item.Key, Resources.GetRes().PrintInfo.PageHeight, Resources.GetRes().PrintInfo.PriceSymbol, Lang);
 
                                 ReportModel reportModel = new ReportModel();
 
@@ -499,8 +499,7 @@ namespace Oybab.ServerManager.Operate
                                     reportModel.Parameters.Add("BorrowPriceValue", import.BorrowPrice);
                                 }
 
-                                ReportPrinter rp = new ReportPrinter();
-                                rp.PrintReport(report, reportModel, item.Key.PrinterDeviceName);
+                                ReportProcess.Instance.PrintReport(report, reportModel, item.Key.PrinterDeviceName);
                              
 
                                 // 打印完毕后记录一下最后一次使用的可用打印机
@@ -566,7 +565,7 @@ namespace Oybab.ServerManager.Operate
                                 object report = null;
 
                                 if (item.PrintType == 0)
-                                    report = new SummaryReport();
+                                    report = new SummaryReport(Resources.GetRes().PrintInfo.PriceSymbol);
                                 else if (item.PrintType == 2)
                                     continue;
 
@@ -615,8 +614,7 @@ namespace Oybab.ServerManager.Operate
                                 reportModel.DetailReport2 = Package.Records2;
 
 
-                                ReportPrinter rp = new ReportPrinter();
-                                rp.PrintReport(report, reportModel, item.PrinterDeviceName);
+                                ReportProcess.Instance.PrintReport(report, reportModel, item.PrinterDeviceName);
 
                                 // 打印完毕后记录一下最后一次使用的可用打印机
                                 LastOrderPrinter = item;
@@ -780,7 +778,7 @@ namespace Oybab.ServerManager.Operate
                     if (item.Key.PrintType == 0)
                         report = new TakeoutCheckoutReport(takeout, Resources.GetRes().PRODUCTS, item.Key, Resources.GetRes().PrintInfo.PriceSymbol, Lang);
                     else if (item.Key.PrintType == 2)
-                        report = new TakeoutCheckoutMiddleReport(takeout, Resources.GetRes().PRODUCTS, item.Key, Resources.GetRes().PrintInfo.PriceSymbol, Lang);
+                        report = new TakeoutCheckoutMiddleReport(takeout, Resources.GetRes().PRODUCTS, item.Key, Resources.GetRes().PrintInfo.PageHeight, Resources.GetRes().PrintInfo.PriceSymbol, Lang);
 
 
                     ReportModel reportModel = new ReportModel();
@@ -933,8 +931,7 @@ namespace Oybab.ServerManager.Operate
 
 
 
-                    ReportPrinter rp = new ReportPrinter();
-                    rp.PrintReport(report, reportModel, item.Key.PrinterDeviceName);
+                    ReportProcess.Instance.PrintReport(report, reportModel, item.Key.PrinterDeviceName);
 
                     // 打印完毕后记录一下最后一次使用的可用打印机
                     LastOrderPrinter = item.Key;
@@ -994,8 +991,7 @@ namespace Oybab.ServerManager.Operate
                 }
 
 
-                ReportPrinter rp = new ReportPrinter();
-                rp.PrintReport(report, reportModel, printer.PrinterDeviceName);
+                ReportProcess.Instance.PrintReport(report, reportModel, printer.PrinterDeviceName);
             }
             catch (Exception ex)
             {
@@ -1052,8 +1048,7 @@ namespace Oybab.ServerManager.Operate
                 }
 
 
-                ReportPrinter rp = new ReportPrinter();
-                rp.PrintReport(report, reportModel, printer.PrinterDeviceName);
+                ReportProcess.Instance.PrintReport(report, reportModel, printer.PrinterDeviceName);
             }
             catch (Exception ex)
             {
@@ -1078,7 +1073,7 @@ namespace Oybab.ServerManager.Operate
                 if (printer.PrintType == 0)
                     report = new OrderPayReport(order, Resources.GetRes().PRODUCTS, printer, Resources.GetRes().PrintInfo.PriceSymbol);
                 else if (printer.PrintType == 2)
-                    report = new OrderCheckoutMiddleRepor(order, Resources.GetRes().PRODUCTS, printer, Resources.GetRes().PrintInfo.PriceSymbol);
+                    report = new OrderCheckoutMiddleReport(order, Resources.GetRes().PRODUCTS, printer, Resources.GetRes().PrintInfo.PageHeight, Resources.GetRes().PrintInfo.PriceSymbol);
 
                 ReportModel reportModel = new ReportModel();
 
@@ -1130,45 +1125,54 @@ namespace Oybab.ServerManager.Operate
                     }
                 }
 
-
                 Room room = Resources.GetRes().ROOMS.Where(x => x.RoomId == order.RoomId).FirstOrDefault();
 
                 //// 写入打印信息
 
-                reportModel.Parameters.Add("RoomPrice", Resources.GetRes().GetString("RoomPrice", ci));
 
                 // 第二次打印
-                if (null != oldOrder && (order.RoomPrice - oldOrder.RoomPrice > 0))
+                if (null != oldOrder)
                 {
-                    if (null != order.StartTime && null != order.EndTime)
+                    // 价格有变化就写, 没有就不写
+                    if (order.RoomPrice - oldOrder.RoomPrice > 0)
                     {
-                        DateTime oldOrderEndTime = DateTime.ParseExact(oldOrder.EndTime.ToString(), "yyyyMMddHHmmss", null);
-                        DateTime orderEndTime = DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", null);
-
-                        TimeSpan leftTime = (orderEndTime - oldOrderEndTime);
-
-
-                        if (room.IsPayByTime == 1)
+                        reportModel.Parameters.Add("RoomPrice", Resources.GetRes().GetString("RoomPrice", ci));
+                        if (null != order.StartTime && null != order.EndTime)
                         {
-                            reportModel.Parameters.Add("RoomTime", string.Format("+{0}:{1}", (int)leftTime.TotalHours, leftTime.Minutes));
+                            DateTime oldOrderEndTime = DateTime.ParseExact(oldOrder.EndTime.ToString(), "yyyyMMddHHmmss", null);
+                            DateTime orderEndTime = DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", null);
+
+                            TimeSpan leftTime = (orderEndTime - oldOrderEndTime);
+
+
+                            if (room.IsPayByTime == 1)
+                            {
+                                reportModel.Parameters.Add("RoomTime", string.Format("+{0}:{1}", (int)leftTime.TotalHours, leftTime.Minutes));
+                            }
+                            else if (room.IsPayByTime == 2)
+                            {
+                                reportModel.Parameters.Add("RoomTime", string.Format("+{0}/{1}", (int)leftTime.TotalDays, leftTime.Hours));
+                            }
                         }
-                        else if (room.IsPayByTime == 2)
-                        {
-                            reportModel.Parameters.Add("RoomTime", string.Format("+{0}/{1}", (int)leftTime.TotalDays, leftTime.Hours));
-                        }
+
+                        double roomPrice = order.RoomPrice - oldOrder.RoomPrice;
+                        reportModel.Parameters.Add("RoomPriceValue", roomPrice);
+
+                        if (null != items && items.Count > 0)
+                            reportModel.Parameters.Add("TotalPriceValue", Math.Round((items.Sum(x => x.TotalPrice)) + roomPrice, 2));
+                        else
+                            reportModel.Parameters.Add("TotalPriceValue", roomPrice);
                     }
-
-                    double roomPrice = order.RoomPrice - oldOrder.RoomPrice;
-                    reportModel.Parameters.Add("RoomPriceValue", roomPrice);
-
-                    if (null != items && items.Count > 0)
-                        reportModel.Parameters.Add("TotalPriceValue", Math.Round((items.Sum(x => x.TotalPrice)) + roomPrice, 2));
                     else
-                        reportModel.Parameters.Add("TotalPriceValue", roomPrice);
+                    {
+                        if (null != items && items.Count > 0)
+                            reportModel.Parameters.Add("TotalPriceValue", Math.Round((items.Sum(x => x.TotalPrice)), 2));
+                    }
                 }
                 //  首次打印
                 else
                 {
+                    reportModel.Parameters.Add("RoomPrice", Resources.GetRes().GetString("RoomPrice", ci));
                     if (null != order.StartTime && null != order.EndTime)
                     {
                         DateTime orderStartTime = DateTime.ParseExact(order.StartTime.ToString(), "yyyyMMddHHmmss", null);
@@ -1196,8 +1200,7 @@ namespace Oybab.ServerManager.Operate
                 IsSuccessProcessRoomPrice = true;
 
 
-                ReportPrinter rp = new ReportPrinter();
-                rp.PrintReport(report, reportModel, printer.PrinterDeviceName);
+                ReportProcess.Instance.PrintReport(report, reportModel, printer.PrinterDeviceName);
 
                 // 打印完毕后记录一下最后一次使用的可用打印机
                 LastOrderPrinter = printer;
@@ -1229,7 +1232,7 @@ namespace Oybab.ServerManager.Operate
                 if (printer.PrintType == 0)
                     report = new OrderCheckoutReport(order, Resources.GetRes().PRODUCTS, printer, Resources.GetRes().PrintInfo.PriceSymbol, Lang);
                 else if (printer.PrintType == 2)
-                    report = new OrderCheckoutMiddleRepor(order, Resources.GetRes().PRODUCTS, printer, Resources.GetRes().PrintInfo.PriceSymbol, Lang);
+                    report = new OrderCheckoutMiddleReport(order, Resources.GetRes().PRODUCTS, printer, Resources.GetRes().PrintInfo.PageHeight, Resources.GetRes().PrintInfo.PriceSymbol);
 
                 ReportModel reportModel = new ReportModel();
 
@@ -1365,8 +1368,7 @@ namespace Oybab.ServerManager.Operate
 
 
 
-                ReportPrinter rp = new ReportPrinter();
-                rp.PrintReport(report, reportModel, printer.PrinterDeviceName);
+                ReportProcess.Instance.PrintReport(report, reportModel, printer.PrinterDeviceName);
 
                 // 打印完毕后记录一下最后一次使用的可用打印机
                 LastOrderPrinter = printer;
@@ -1450,32 +1452,32 @@ namespace Oybab.ServerManager.Operate
 
             if (Resources.GetRes().GetString("LargeFont", mainLang.Culture) == "1")
             {
-                report.Font.Add("xrcsFont10", new System.Drawing.Font(Resources.GetRes().GetString("FontName", mainLang.Culture).Split(',')[0], 10));
+                report.Fonts.Add("xrcsFont10", new System.Drawing.Font(Resources.GetRes().GetString("FontName", mainLang.Culture).Split(',')[0], 10));
 
                 if (null != item && item.PrintType == 2 && IsMiddle)
                 {
-                    report.Font.Add("xrcsFont9", new System.Drawing.Font(Resources.GetRes().GetString("FontName", mainLang.Culture).Split(',')[0], 11));
-                    report.Font.Add("xrcsFont8",new System.Drawing.Font(Resources.GetRes().GetString("FontName", mainLang.Culture).Split(',')[0], 10));
+                    report.Fonts.Add("xrcsFont9", new System.Drawing.Font(Resources.GetRes().GetString("FontName", mainLang.Culture).Split(',')[0], 11));
+                    report.Fonts.Add("xrcsFont8",new System.Drawing.Font(Resources.GetRes().GetString("FontName", mainLang.Culture).Split(',')[0], 10));
                 }
                 else
                 {
-                    report.Font.Add("xrcsFont9",new System.Drawing.Font(Resources.GetRes().GetString("FontName", mainLang.Culture).Split(',')[0], 9));
-                    report.Font.Add("xrcsFont8",new System.Drawing.Font(Resources.GetRes().GetString("FontName", mainLang.Culture).Split(',')[0], 8));
+                    report.Fonts.Add("xrcsFont9",new System.Drawing.Font(Resources.GetRes().GetString("FontName", mainLang.Culture).Split(',')[0], 9));
+                    report.Fonts.Add("xrcsFont8",new System.Drawing.Font(Resources.GetRes().GetString("FontName", mainLang.Culture).Split(',')[0], 8));
                 }
-                report.Font.Add("xrcsFont7",new System.Drawing.Font(Resources.GetRes().GetString("FontName", mainLang.Culture).Split(',')[0], 7));
-                report.Font.Add("xrcsFont6",new System.Drawing.Font(Resources.GetRes().GetString("FontName", mainLang.Culture).Split(',')[0], 6));
-                report.Font.Add("xrcsFont5",new System.Drawing.Font(Resources.GetRes().GetString("FontName", mainLang.Culture).Split(',')[0], 5));
-                report.Font.Add("xrcsFont4",new System.Drawing.Font(Resources.GetRes().GetString("FontName", mainLang.Culture).Split(',')[0], 4));
+                report.Fonts.Add("xrcsFont7",new System.Drawing.Font(Resources.GetRes().GetString("FontName", mainLang.Culture).Split(',')[0], 7));
+                report.Fonts.Add("xrcsFont6",new System.Drawing.Font(Resources.GetRes().GetString("FontName", mainLang.Culture).Split(',')[0], 6));
+                report.Fonts.Add("xrcsFont5",new System.Drawing.Font(Resources.GetRes().GetString("FontName", mainLang.Culture).Split(',')[0], 5));
+                report.Fonts.Add("xrcsFont4",new System.Drawing.Font(Resources.GetRes().GetString("FontName", mainLang.Culture).Split(',')[0], 4));
             }
             else
             {
-                report.Font.Add("xrcsFont10",new System.Drawing.Font(Resources.GetRes().GetString("FontName", mainLang.Culture).Split(',')[0], 10));
-                report.Font.Add("xrcsFont9",new System.Drawing.Font(Resources.GetRes().GetString("FontName", mainLang.Culture).Split(',')[0], 9));
-                report.Font.Add("xrcsFont8",new System.Drawing.Font(Resources.GetRes().GetString("FontName", mainLang.Culture).Split(',')[0], 8));
-                report.Font.Add("xrcsFont7",new System.Drawing.Font(Resources.GetRes().GetString("FontName", mainLang.Culture).Split(',')[0], 7));
-                report.Font.Add("xrcsFont6",new System.Drawing.Font(Resources.GetRes().GetString("FontName", mainLang.Culture).Split(',')[0], 6));
-                report.Font.Add("xrcsFont5",new System.Drawing.Font(Resources.GetRes().GetString("FontName", mainLang.Culture).Split(',')[0], 5));
-                report.Font.Add("xrcsFont4",new System.Drawing.Font(Resources.GetRes().GetString("FontName", mainLang.Culture).Split(',')[0], 4));
+                report.Fonts.Add("xrcsFont10",new System.Drawing.Font(Resources.GetRes().GetString("FontName", mainLang.Culture).Split(',')[0], 10));
+                report.Fonts.Add("xrcsFont9",new System.Drawing.Font(Resources.GetRes().GetString("FontName", mainLang.Culture).Split(',')[0], 9));
+                report.Fonts.Add("xrcsFont8",new System.Drawing.Font(Resources.GetRes().GetString("FontName", mainLang.Culture).Split(',')[0], 8));
+                report.Fonts.Add("xrcsFont7",new System.Drawing.Font(Resources.GetRes().GetString("FontName", mainLang.Culture).Split(',')[0], 7));
+                report.Fonts.Add("xrcsFont6",new System.Drawing.Font(Resources.GetRes().GetString("FontName", mainLang.Culture).Split(',')[0], 6));
+                report.Fonts.Add("xrcsFont5",new System.Drawing.Font(Resources.GetRes().GetString("FontName", mainLang.Culture).Split(',')[0], 5));
+                report.Fonts.Add("xrcsFont4",new System.Drawing.Font(Resources.GetRes().GetString("FontName", mainLang.Culture).Split(',')[0], 4));
             }
 
             return mainLang;

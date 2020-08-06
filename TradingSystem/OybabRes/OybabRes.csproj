@@ -108,7 +108,7 @@
     <Compile Include="Exceptions\ExceptionPro.cs" />
     <Compile Include="Exceptions\Logger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Reports\Print.cs" />
+    <Compile Include="Tools\Print.cs" />
     <Compile Include="Resources.cs" />
     <Compile Include="Server\Model\NotificationAlert.cs" />
     <Compile Include="Server\Model\NotificationCache.cs" />
@@ -614,9 +614,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="BsUI\bootstrap\js\bootstrap.min.js">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="BsUI\bootstrap\js\npm.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="BsUI\js\html5shiv.js">

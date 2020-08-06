@@ -36,9 +36,9 @@ namespace Oybab.ServerManager.Model.Models
         public int PageHeight
         {
             set { _pageHeight = value; }
-            get { if (_pageHeight == 0) return 1400; else return _pageHeight; }
+            get { return _pageHeight; }
         }
-        private int _pageHeight;
+        private int _pageHeight = 140; // 140mm
 
         [Newtonsoft.Json.JsonProperty(PropertyName = "IsPrintBillAfterBuy")]
         public bool IsPrintBillAfterBuy { get; set; } // 购买账单时打印

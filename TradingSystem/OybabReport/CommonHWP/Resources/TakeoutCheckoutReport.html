@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>Takeout Checkout Report</title>
+	<meta charset="UTF-8">
+	<meta HTTP-EQUIV='Content-Type' CONTENT='text/html; charset=utf-8'/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="Generator" content="Oybab Trading System">
+	<meta name="Author" content="Oybab">
+	<style type="text/css">
+		.xrcsFont4 {color:#000000;font-family:'Microsoft YaHei'; font-size:5px;}
+		.xrcsFont5 {color:#000000;font-family:'Microsoft YaHei'; font-size:7px;}
+		.xrcsFont6 {color:#000000;font-family:'Microsoft YaHei'; font-size:8px;}
+		.xrcsFont7 {color:#000000;font-family:'Microsoft YaHei'; font-size:9px;}
+		.xrcsFont8 {color:#000000;font-family:'Microsoft YaHei'; font-size:11px;}
+		.xrcsFont9 {color:#000000;font-family:'Microsoft YaHei'; font-size:12px;}
+		.xrcsFont10 {color:#000000;font-family:'Microsoft YaHei'; font-size:13px;}
+
+		.FixIE7 {height:0px;width:0px;overflow:hidden;font-size:0px;line-height:0px;}
+        .Line{ border-bottom: #000000 1px dashed; width:48mm;}
+
+        /* This place replace dynamically if needed */
+		/*${DynamicStyles}*/
+
+        /* For display tr border and fixed table size */ 
+		table{ border-collapse:collapse; table-layout:fixed;}
+		/* For fixed td size */ 
+		td{word-wrap:break-word; overflow-wrap: break-word; word-break: break-word;}
+        /* For fix pdf margin */
+		body{ max-width: 99%; margin:0px; }
+	</style>
+</head>
+<body  style="background-color:#FFFFFF">
+<div>
+<!-- Table for Head -->
+<table id="Head" cellpadding="0" cellspacing="0" border="0" style="empty-cells:show;position:relative;">
+<!-- Company and Title -->
+	<tr style="vertical-align:top">
+		<td class="xrcsFont9" colspan="8" style="width:48mm;height:23px;line-height:16px;text-align:center;vertical-align:middle;">${CompanyName}</td>
+	</tr>
+	<!-- Line -->
+	<tr style="vertical-align:top;width:48mm;height:2px;">
+		<td class="xrcsFont9 Line" colspan="8"/>
+	</tr>
+	<tr style="vertical-align:top;width:48mm;height:1px;">
+		<td class="xrcsFont9" colspan="8"/>
+	</tr>
+    <!-- Head info -->
+	<tr>
+		<td style="width:0px;height:17px;"></td>
+		<td class="xrcsFont8" style="width:50px;height:17px;line-height:14px;text-align:right;vertical-align:middle;">${OrderId}</td>
+		<td class="xrcsFont8" colspan="6" style="width:131px;height:17px;line-height:14px;text-align:left;vertical-align:middle;">${OrderIdValue}</td>
+
+	</tr>
+	<tr>
+		<td style="width:0px;height:17px;"></td>
+		<td class="xrcsFont8" style="width:50px;line-height:14px;text-align:right;vertical-align:middle;">${Time}</td>
+		<td class="xrcsFont8" colspan="6" style="width:131px;height:17px;line-height:14px;text-align:left;vertical-align:middle;">${TimeValue}</td>
+	</tr>
+	<tr>
+		<td style="width:0px;height:17px;"></td>
+		<td class="xrcsFont8" style="width:50px;line-height:14px;text-align:right;vertical-align:middle;">${PersonName}</td>
+		<td class="xrcsFont8" colspan="6" style="width:131px;height:17px;line-height:14px;text-align:left;vertical-align:middle;">${PersonNameValue}</td>
+	</tr>
+	<tr>
+		<td style="width:0px;height:17px;"></td>
+		<td class="xrcsFont8" style="width:50px;line-height:14px;text-align:right;vertical-align:middle;">${PersonPhone}</td>
+		<td class="xrcsFont8" colspan="6" style="width:131px;height:17px;line-height:14px;text-align:left;vertical-align:middle;">${PersonPhoneValue}</td>
+	</tr>
+	<tr>
+		<td style="width:0px;height:17px;"></td>
+		<td class="xrcsFont8" style="width:50px;line-height:14px;text-align:right;vertical-align:middle;">${PersonAddress}</td>
+		<td class="xrcsFont8" style="width:3px;line-height:14px;text-align:right;vertical-align:middle;">: </td>
+		<td class="xrcsFont8" colspan="5" style="width:128px;height:17px;line-height:14px;text-align:left;vertical-align:middle;">${PersonAddressValue}</td>
+	</tr>
+<!-- Line -->
+	<tr style="vertical-align:top;width:48mm;height:2px;">
+		<td class="xrcsFont9 Line" colspan="8"/>
+	</tr>
+	<tr style="vertical-align:top;width:48mm;height:1px;">
+		<td class="xrcsFont9" colspan="8"/>
+	</tr>
+	</table>
+
+
+<!-- Table for DataSource -->
+<table id="DataSource" cellpadding="0" cellspacing="0" border="0" style="empty-cells:show;position:relative;">
+<!-- DataSource head -->
+	<tr>
+		<td style="width:0px;height:17px;"></td>
+		<td class="xrcsFont8" colspan="2" style="width:86px;height:17px;line-height:14px;text-align:left;vertical-align:middle;">${ProductName}</td>
+		<td class="xrcsFont8" style="width:42px;height:17px;line-height:14px;text-align:center;vertical-align:middle;">${Count}</td>
+		<td class="xrcsFont8" colspan="4" style="width:53px;height:17px;line-height:14px;text-align:right;vertical-align:middle;">${Price}</td>
+	</tr>
+	<!-- Line -->
+	<tr style="vertical-align:top;width:48mm;height:2px;">
+		<td class="xrcsFont9 Line" colspan="8"/>
+	</tr>
+	<tr style="vertical-align:top;width:48mm;height:1px;">
+		<td class="xrcsFont9" colspan="8"/>
+	</tr>
+	<!-- DataSource dynamically generate by background to a json and import by js -->
+</table>
+
+<!-- Table for Foot -->
+<table id="Foot" cellpadding="0" cellspacing="0" border="0" style="empty-cells:show;position:relative;">
+<!-- Line -->
+	<tr style="vertical-align:top;width:48mm;height:2px;">
+		<td class="xrcsFont9 Line" colspan="8"/>
+	</tr>
+	<tr style="vertical-align:top;width:48mm;height:1px;">
+		<td class="xrcsFont9" colspan="8"/>
+	</tr>
+	<tr>
+		<td style="width:0px;height:16px;"></td>
+		<td class="xrcsFont8" colspan="2" style="width:86px;height:16px;">${TotalPrice}</td>
+		<td class="xrcsFont8" style="width:42px;height:16px;"><!--[if lte IE 7]><div class="FixIE7"></div><![endif]--></td>
+		<td class="xrcsFont8" colspan="4" style="width:53px;height:16px;line-height:14px;text-align:right;vertical-align:middle;">${TotalPriceValue}</td>
+	</tr>
+	<!-- Line -->
+	<tr style="vertical-align:top;width:48mm;height:2px;">
+		<td class="xrcsFont9 Line" colspan="8"/>
+	</tr>
+	<tr style="vertical-align:top;width:48mm;height:1px;">
+		<td class="xrcsFont9" colspan="8"/>
+	</tr>
+	<tr>
+		<td style="width:0px;height:16px;"></td>
+		<td class="xrcsFont8" colspan="2" style="width:86px;height:16px;">${MemberId}</td>
+		<td class="xrcsFont8" style="width:42px;height:16px;"><!--[if lte IE 7]><div class="FixIE7"></div><![endif]--></td>
+		<td class="xrcsFont8" colspan="4" style="width:53px;height:16px;line-height:14px;text-align:right;vertical-align:middle;">${MemberIdValue}</td>
+	</tr>
+	<tr>
+		<td style="width:0px;height:16px;"></td>
+		<td class="xrcsFont8" colspan="2" style="width:86px;height:16px;">${MemberPaidPrice}</td>
+		<td class="xrcsFont8" style="width:42px;height:16px;"><!--[if lte IE 7]><div class="FixIE7"></div><![endif]--></td>
+		<td class="xrcsFont8" colspan="4" style="width:53px;height:16px;line-height:14px;text-align:right;vertical-align:middle;">${MemberPaidPriceValue}</td>
+	</tr>
+	<tr>
+		<td style="width:0px;height:16px;"></td>
+		<td class="xrcsFont8" colspan="2" style="width:86px;height:16px;">${PaidPrice}</td>
+		<td class="xrcsFont8" style="width:42px;height:16px;"><!--[if lte IE 7]><div class="FixIE7"></div><![endif]--></td>
+		<td class="xrcsFont8" colspan="4" style="width:53px;height:16px;line-height:14px;text-align:right;vertical-align:middle;">${PaidPriceValue}</td>
+	</tr>
+	<tr>
+		<td style="width:0px;height:16px;"></td>
+		<td class="xrcsFont8" colspan="2" style="width:86px;height:16px;">${TotalPaidPrice}</td>
+		<td class="xrcsFont8" style="width:42px;height:16px;"><!--[if lte IE 7]><div class="FixIE7"></div><![endif]--></td>
+		<td class="xrcsFont8" colspan="4" style="width:53px;height:16px;line-height:14px;text-align:right;vertical-align:middle;">${TotalPaidPriceValue}</td>
+	</tr>
+	<tr>
+		<td style="width:0px;height:16px;"></td>
+		<td class="xrcsFont8" colspan="2" style="width:86px;height:16px;">${BorrowPrice}</td>
+		<td class="xrcsFont8" style="width:42px;height:16px;"><!--[if lte IE 7]><div class="FixIE7"></div><![endif]--></td>
+		<td class="xrcsFont8" colspan="4" style="width:53px;height:16px;line-height:14px;text-align:right;vertical-align:middle;">${BorrowPriceValue}</td>
+	</tr>
+		<tr>
+		<td style="width:0px;height:16px;"></td>
+		<td class="xrcsFont8" colspan="2" style="width:86px;height:16px;">${KeepPrice}</td>
+		<td class="xrcsFont8" style="width:42px;height:16px;"><!--[if lte IE 7]><div class="FixIE7"></div><![endif]--></td>
+		<td class="xrcsFont8" colspan="4" style="width:53px;height:16px;line-height:14px;text-align:right;vertical-align:middle;">${KeepPriceValue}</td>
+	</tr>
+	<!-- Line -->
+	</tr>
+		<tr style="vertical-align:top;width:48mm;height:2px;">
+		<td class="xrcsFont9 Line" colspan="8"/>
+	</tr>
+	<tr style="vertical-align:top;width:48mm;height:1px;">
+		<td class="xrcsFont9" colspan="8"/>
+	</tr>
+	<tr>
+		<td style="width:0px;height:34px;"></td>
+		<td class="xrcsFont9" colspan="2" style="width:86px;height:34px;text-align:center;vertical-align:middle;">${PhoneNo}</td>
+		<td class="xrcsFont9" colspan="5" style="width:95px;height:34px;text-align:center;vertical-align:middle;">${PhoneNoValue}</td>
+	</tr>
+	<tr>
+		<td style="width:0px;height:34px;"></td>
+		<td class="xrcsFont9" colspan="7" style="width:181px;height:34px;text-align:center;vertical-align:middle;">${PrintMessage}</td>
+	</tr>
+	<tr>
+		<td style="width:0px;height:4px;"></td>
+		<td class="xrcsFont9" colspan="7" style="width:48mm;height:4px;"><!--[if lte IE 7]><div class="FixIE7"></div><![endif]--></td>
+	</tr>
+</table>
+</div>
+
+<!--${DynamicImportJquery}-->
+<script type="text/javascript">
+
+
+var parameters = null;
+var dataSource = null;
+var isGenerated = false;
+
+/* This place replace dynamically if needed */
+/*${DynamicParameter}*/
+/*${DynamicDataSource}*/
+/*${DynamicIsGenerated}*/
+
+
+if (null != parameters && isGenerated == true)
+{
+		var parametersObj = JSON.parse(parameters.replace("\r\n","<br/>"));
+	for(var item in parametersObj) {
+		var ojbInItem = parametersObj[item];
+		for(var key in ojbInItem)
+		{
+			// only replace first match
+			//document.body.innerHTML = document.body.innerHTML.replace('${' + key + '}', ojbInItem[key]);
+			var index = 0;
+			do {
+				document.body.innerHTML = document.body.innerHTML.replace('${' + key + '}', ojbInItem[key]);
+			} while((index = document.body.innerHTML.indexOf('${' + key + '}', index + 1)) > -1);
+
+		}
+	}
+	// remove unseded rows
+	var elems = $('td').each(function(){
+		var tdValue = $.trim(this.textContent);
+		
+		if (tdValue.indexOf("${") !== -1 && tdValue.indexOf("}") !== -1)
+		{
+			$(this).parent("tr:first").remove();
+		}
+	});
+
+}
+
+
+if (null != dataSource && isGenerated == true)
+{
+	var newTrList = "";
+	var dataSourceObj = JSON.parse(dataSource);
+	for(var item in dataSourceObj) {
+		var ojbInItem = dataSourceObj[item];
+			newTrList = newTrList + '<tr>'
+			+ '<td style="width:0px;height:17px;"></td>'
+			+ '<td class="xrcsFont8" colspan="2" style="width:86px;height:17px;line-height:14px;text-align:left;vertical-align:middle;">' + ojbInItem["ProductName"] + '</td>'
+			+ '<td class="xrcsFont8" style="width:42px;height:17px;line-height:14px;text-align:center;vertical-align:middle;">' + ojbInItem["Count"] + '</td>'
+			+ '<td class="xrcsFont8" colspan="4" style="width:53px;height:17px;line-height:14px;text-align:right;vertical-align:middle;">' +ojbInItem["Price"] + '</td>'
+			+	'</tr>';
+	}
+	
+	$('#DataSource:last').append(newTrList);
+}
+else if (isGenerated == true)
+{
+	$('#DataSource').remove();
+}
+
+</script>
+</body>
+</html>

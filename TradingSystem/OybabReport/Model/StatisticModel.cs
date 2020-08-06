@@ -6,12 +6,8 @@ using System.Text;
 
 namespace Oybab.Report.Model
 {
-    public class StatisticModel
+    public class StatisticModel : ReportModel
     {
-        public Dictionary<string, string> Parameters = new Dictionary<string, string>();
-        public Dictionary<string, Font> Fonts = new Dictionary<string, Font>();
- 
-
 
         public string Title { get; set; }
         public bool EnableAntialiasing { get; set; }

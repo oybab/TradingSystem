@@ -955,8 +955,8 @@ namespace Oybab.ServicePC.SubWindow
             statisticModel.Font = new System.Drawing.Font(Resources.GetRes().GetString("FontName2"), float.Parse(Resources.GetRes().GetString("FontSize")));
             statisticModel.EnableAntialiasing = Resources.GetRes().GetString("EnableAntialiasing") == "1";
 
-            StatisticXYDiagramWindow window = new StatisticXYDiagramWindow(records, statisticModel);
-            window.ShowDialog(this);
+            //StatisticXYDiagramWindow window = new StatisticXYDiagramWindow(records, statisticModel);
+            //window.ShowDialog(this);
         }
 
         private void kryptonButton1_Click(object sender, EventArgs e)

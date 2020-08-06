@@ -1127,10 +1127,10 @@ namespace Oybab.ServicePC.SubWindow
                                             SummaryModelPackage package = new SummaryModelPackage();
                                             package.Records = summarys;
                                             package.Records2 = summarys2;
-                                            package.Time = statisticModel.Parameters["Time"];
+                                            package.Time = statisticModel.Parameters["Time"].ToString();
                                             package.Lang = Lang;
 
-                                            bool result = Res.Reports.Print.Instance.PrintSummary(package, Lang);
+                                            bool result = Print.Instance.PrintSummary(package, Lang);
                                             window.BeginInvoke(new Action(() =>
                                             {
                                                 if (result)

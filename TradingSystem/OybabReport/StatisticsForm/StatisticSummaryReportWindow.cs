@@ -11,15 +11,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Oybab.DAL;
 using System.IO;
-using DevExpress.XtraCharts;
 using System.Collections;
 using System.Diagnostics;
-using DevExpress.XtraReports.Localization;
-using DevExpress.XtraPrinting.Localization;
-using DevExpress.XtraReports.UI;
 using System.Globalization;
 using Oybab.Report.Model;
-using Oybab.Report.Statistics;
+using Oybab.Report.StatisticsHWP;
 
 namespace Oybab.Report.StatisticsForm
 {
@@ -61,8 +57,6 @@ namespace Oybab.Report.StatisticsForm
             }
 
 
-            PreviewLocalizer.Active = new CutomPreviewLocalizer(this.Model);
-
             this.Text = Model.Title;
 
 
@@ -71,46 +65,19 @@ namespace Oybab.Report.StatisticsForm
 
             krpbPrint.Click += (x, y) => { Print(); };
 
-            SummaryReport report = new SummaryReport(Model.Parameters["PriceSymbol"]);
 
-            foreach (var item in Model.Parameters)
-            {
-                if (null != report.Parameters[item.Key])
-                    report.Parameters[item.Key].Value = item.Value;
-            }
+            Model.DetailReport = records;
+            Model.DetailReport2 = records2;
 
-
-            foreach (var item in Model.Fonts)
-            {
-                if (null != report.StyleSheet[item.Key])
-                    report.StyleSheet[item.Key].Font = item.Value;
-            }
+            SummaryReport report = new SummaryReport(Model.Parameters["PriceSymbol"].ToString());
 
 
 
 
+            webBrowser1.Refresh();
+            string htmlContent = report.ProcessHTMLContent(Model);
+            webBrowser1.DocumentText = htmlContent;
 
-            //report.DataSource = records;
-            DetailReportBand detailReportBand = (DetailReportBand)report.FindControl("DetailReport", false);
-            detailReportBand.DataSource = records;
-
-
-
-            DetailReportBand detailReportBand2 = (DetailReportBand)report.FindControl("DetailReport1", false);
-            ((DevExpress.DataAccess.ObjectBinding.ObjectDataSource)detailReportBand2.DataSource).DataSource = records2;
-            //detailReportBand2.DataSource = records2;
-
-
-
-
-
-            documentViewer1.DocumentSource = report;
-
-
-            report.PrintingSystem.RemoveService(typeof(DevExpress.XtraPrinting.Native.GraphicsModifier));
-            report.PrintingSystem.AddService(typeof(DevExpress.XtraPrinting.Native.GraphicsModifier), new GdiPlusFixedTextRenderingGraphicsModifier());
-
-            documentViewer1.ShowToolTips = false;
 
 
 
@@ -147,27 +114,6 @@ namespace Oybab.Report.StatisticsForm
         }
 
 
-    }
-
-
-    internal sealed class CutomPreviewLocalizer : PreviewLocalizer
-    {
-        public CutomPreviewLocalizer(StatisticModel Model)
-        {
-            this.Model = Model;
-        }
-
-        public override string Language { get { return "CustomLang"; } }
-        private StatisticModel Model { get; set; }
-        public override string GetLocalizedString(PreviewStringId id)
-        {
-            switch (id)
-            {
-                case PreviewStringId.WaitForm_Caption: return this.Model.Parameters["PleaseWait"];
-                case PreviewStringId.Msg_CreatingDocument: return this.Model.Parameters["CreatingTheDocument"];
-            }
-            return base.GetLocalizedString(id);
-        }
     }
 
 

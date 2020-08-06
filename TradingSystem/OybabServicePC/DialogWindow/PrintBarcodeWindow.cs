@@ -15,7 +15,6 @@ using Oybab.Res.Exceptions;
 using Oybab.Res.Server;
 using Oybab.Res.Server.Model;
 using System.IO;
-using Oybab.Res.Reports;
 using Oybab.Report.Model;
 
 namespace Oybab.ServicePC.DialogWindow
@@ -103,7 +102,7 @@ namespace Oybab.ServicePC.DialogWindow
             }
 
 
-            Print.Instance.PrintBarcode(models, krpcSize.SelectedIndex);
+            Res.Tools.Print.Instance.PrintBarcode(models, krpcSize.SelectedIndex, krpcLanguage.SelectedIndex);
 
             Resources.GetRes().DefaultPrintLang = krpcLanguage.SelectedIndex;
             Resources.GetRes().DefaultBarcodePrintSize = krpcSize.SelectedIndex;

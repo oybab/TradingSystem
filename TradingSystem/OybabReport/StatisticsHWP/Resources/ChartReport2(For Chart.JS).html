@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>Chart Report</title>
+	<meta charset="UTF-8">
+	<meta HTTP-EQUIV='Content-Type' CONTENT='text/html; charset=utf-8'/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="Generator" content="Oybab Trading System">
+	<meta name="Author" content="Oybab">
+	<style type="text/css">
+		.xrcsFont8 {color:#000000;font-family:'Microsoft YaHei'; font-size:11px;}
+		.xrcsFont9 {color:#000000;font-family:'Microsoft YaHei'; font-size:12px;}
+		.xrcsFont10 {color:#000000;font-family:'Microsoft YaHei'; font-size:13px;}
+		.xrcsFont11 {color:#000000;font-family:'Microsoft YaHei'; font-size:15px;}
+		.xrcsFont12 {color:#000000;font-family:'Microsoft YaHei'; font-size:16px;}
+		.xrcsFont13 {color:#000000;font-family:'Microsoft YaHei'; font-size:17px;}
+		.xrcsFont14 {color:#000000;font-family:'Microsoft YaHei'; font-size:18px;}
+		.xrcsFont15 {color:#000000;font-family:'Microsoft YaHei'; font-size:20px;}
+		.xrcsFont16 {color:#000000;font-family:'Microsoft YaHei'; font-size:21px;}
+		.xrcsFont17 {color:#000000;font-family:'Microsoft YaHei'; font-size:22px;}
+		.xrcsFont18 {color:#000000;font-family:'Microsoft YaHei'; font-size:23px;}
+
+		.FixIE7 {height:0px;width:0px;overflow:hidden;font-size:0px;line-height:0px;}
+        .Line{ border-bottom: #000000 1px dashed; width:200mm;}
+
+        /* This place replace dynamically if needed */
+		/*${DynamicStyles}*/
+
+        /* For display tr border and fixed table size */ 
+		table{ border-collapse:collapse; table-layout:fixed; }
+		/* For fixed td size */ 
+		td{word-wrap:break-word; overflow-wrap: break-word; word-break: break-word;}
+        /* For fix pdf margin */
+		body{ height:100%;width:100%; margin:0px; text-align:center}
+
+
+		.center-screen {
+		  display: inline-block;
+		}
+
+	</style>
+	<!--${DynamicImportExcanvas}-->
+</head>
+<body  style="background-color:#FFFFFF">
+<div class="center-screen" style="margin:20,10;width:100%;height:100%">
+	<canvas id="myChart" class="xrcsFont12"></canvas>
+</div>
+
+<!--${DynamicImportJquery}-->
+<!--${DynamicImportCharJs}-->
+
+<script type="text/javascript">
+
+var parameters = null;
+var dataSource = null;
+var isGenerated = false;
+
+/* This place replace dynamically if needed */
+/*${DynamicParameter}*/
+/*${DynamicDataSource}*/
+/*${DynamicIsGenerated}*/
+
+var maxValue = 0;
+var minValue = 0;
+
+if (null != parameters && isGenerated == true)
+{
+	var parametersObj = JSON.parse(parameters.replace("\r\n","<br/>"));
+	for(var item in parametersObj) {
+		var ojbInItem = parametersObj[item];
+		for(var key in ojbInItem)
+		{
+
+			if (key == "MaxValue")
+			{
+				maxValue =  parseFloat(ojbInItem[key]);
+			}
+			if (key == "MinValue")
+			{
+				minValue =  parseFloat(ojbInItem[key]);
+			}
+			
+		}
+	}
+
+}
+
+
+if (null != dataSource && isGenerated == true)
+{
+
+	$(function(){
+
+		var ctx = document.getElementById('myChart').getContext('2d');
+
+
+	window.myBar = new Chart(ctx, {
+				type: 'bar',
+				data:{
+					datasets: []
+				},
+				options: {
+					// remove animation
+					animation: {
+						duration: 0 // general animation time
+					},
+					hover: {
+						animationDuration: 0 // duration of animations when hovering an item
+					},
+					responsiveAnimationDuration: 0, // animation duration after a resize
+
+					responsive: true,
+
+					// hide title
+					legend: {
+						display: false,
+						position: 'right',
+						align:'start'
+					},
+					title: {
+						display: false,
+					},
+					
+					tooltips: { 
+						 //titleFontSize: 14
+						//bodyFontSize: 14,
+						//titleFontFamily:'',
+						//bodyFontFamily: '',
+
+
+						// Hide tooltip title
+						callbacks: { 
+							//title: function(tooltipItem, data) {},
+
+							label: function(tooltipItem, data) {
+								  return  data['datasets'][0]['data'][tooltipItem['index']];
+								},
+							}
+						},
+					// set max and min size
+					scales: {
+						yAxes: [{
+							ticks: {
+								min: minValue,
+								max: maxValue
+							}
+						}],
+					}
+				}
+			});
+
+
+			Chart.defaults.global.defaultFontFamily =  $("#myChart").css("font-family")
+			//Chart.defaults.global.defaultFontSize = parseInt($("#myChart").css("font-size"), 10);
+			//Chart.defaults.global.defaultFontStyle =  'normal';
+
+
+			window.myBar.options.tooltips.titleFontSize = parseInt($("#myChart").css("font-size"), 10)
+			window.myBar.options.tooltips.bodyFontSize = parseInt($("#myChart").css("font-size"), 10)
+			window.myBar.options.tooltips.titleFontFamily = $("#myChart").css("font-family");
+			window.myBar.options.tooltips.bodyFontFamily = $("#myChart").css("font-family");
+			window.myBar.options.tooltips.titleFontStyle = 'normal';
+
+
+
+			var newDataset = {
+				backgroundColor: [],
+				hoverBackgroundColor: [],
+				data: [],
+				label:''
+			};
+
+			var dynamicColors = function() {
+            var r = Math.floor(Math.random() * 255);
+            var g = Math.floor(Math.random() * 255);
+            var b = Math.floor(Math.random() * 255);
+            return "rgb(" + r + "," + g + "," + b + ")";
+         };
+
+			var newTrList = "";
+			var dataSourceObj = JSON.parse(dataSource);
+			var no = 1;
+			for(var item in dataSourceObj) {
+					var ojbInItem = dataSourceObj[item];
+
+					window.myBar.data.labels.push(ojbInItem["Name"]);
+					newDataset.label = ojbInItem["Name"];
+					var color = dynamicColors();
+					newDataset.backgroundColor.push(color);
+					newDataset.hoverBackgroundColor.push(color);
+					newDataset.data.push(ojbInItem["Value"]);
+
+			}
+			
+			
+
+			window.myBar.data.datasets.push(newDataset);
+	
+			window.myBar.update(); 
+
+
+	});
+
+}
+
+</script>
+</body>
+</html>	
