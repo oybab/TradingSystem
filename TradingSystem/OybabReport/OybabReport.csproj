@@ -55,7 +55,7 @@
     </Reference>
     <Reference Include="OpenHtmlToPdf, Version=1.12.0.0, Culture=neutral, PublicKeyToken=8998a9fd73c99053, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\OpenHtmlToPdf\OpenHtmlToPdf\bin\Release\OpenHtmlToPdf.dll</HintPath>
+      <HintPath>..\Libraries\OpenHtmlToPdf.dll</HintPath>
     </Reference>
     <Reference Include="PdfiumViewer, Version=2.13.0.0, Culture=neutral, PublicKeyToken=91e4789cfb0609e0, processorArchitecture=MSIL">
       <HintPath>..\..\packages\PdfiumViewer.2.13.0.0\lib\net20\PdfiumViewer.dll</HintPath>
