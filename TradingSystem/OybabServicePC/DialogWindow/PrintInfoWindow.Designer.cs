@@ -53,6 +53,7 @@
             this.krpcIsPrintAfterCheckout = new ComponentFactory.Krypton.Toolkit.KryptonCheckBox();
             this.krplIsPrintAfterBuy = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.krpcIsPrintAfterBuy = new ComponentFactory.Krypton.Toolkit.KryptonCheckBox();
+            this.lbPageHeightDescription = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.flOther.SuspendLayout();
             this.fl0.SuspendLayout();
             this.fl1.SuspendLayout();
@@ -272,8 +273,9 @@
             this.krpcPageHeight.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.krpcPageHeight.DropDownWidth = 121;
             this.krpcPageHeight.Items.AddRange(new object[] {
-            "1300",
-            "1400"});
+            "93",
+            "140",
+            "280"});
             this.krpcPageHeight.Location = new System.Drawing.Point(282, 126);
             this.krpcPageHeight.Name = "krpcPageHeight";
             this.krpcPageHeight.Size = new System.Drawing.Size(121, 21);
@@ -317,6 +319,14 @@
             this.krpcIsPrintAfterBuy.Text = "Yes";
             this.krpcIsPrintAfterBuy.Values.Text = "Yes";
             // 
+            // lbPageHeightDescription
+            // 
+            this.lbPageHeightDescription.Location = new System.Drawing.Point(409, 127);
+            this.lbPageHeightDescription.Name = "lbPageHeightDescription";
+            this.lbPageHeightDescription.Size = new System.Drawing.Size(32, 20);
+            this.lbPageHeightDescription.TabIndex = 20;
+            this.lbPageHeightDescription.Values.Text = "mm";
+            // 
             // PrintInfoWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -326,6 +336,7 @@
             this.Controls.Add(this.krpcIsPrintAfterCheckout);
             this.Controls.Add(this.krplIsPrintAfterBuy);
             this.Controls.Add(this.krpcIsPrintAfterBuy);
+            this.Controls.Add(this.lbPageHeightDescription);
             this.Controls.Add(this.krplPageHeight);
             this.Controls.Add(this.krpcPageHeight);
             this.Controls.Add(this.krpOther);
@@ -383,5 +394,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonCheckBox krpcIsPrintAfterCheckout;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel krplIsPrintAfterBuy;
         private ComponentFactory.Krypton.Toolkit.KryptonCheckBox krpcIsPrintAfterBuy;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel lbPageHeightDescription;
     }
 }

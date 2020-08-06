@@ -988,7 +988,7 @@ namespace Oybab.ServicePC.SubWindow
                     
 
                     this.order.tb_orderdetail = resultList;
-                    bool result = Res.Reports.Print.Instance.PrintOrder(order, Lang);
+                    bool result = Res.Tools.Print.Instance.PrintOrder(order, Lang);
                     this.BeginInvoke(new Action(() =>
                     {
                         if (result)

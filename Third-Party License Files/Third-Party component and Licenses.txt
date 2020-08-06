@@ -1,3 +1,4 @@
+Oybab Trading System use some components in it, They keep own copyrights, we have no guarantee and responsibility for these components.
 If any component licence not include in here or missing, please remind us. Thanks.
 For check the complete License detail files, please check the sub directories.
 
@@ -8,11 +9,21 @@ For check the complete License detail files, please check the sub directories.
      BSD-3-Clause License
 
 -Json.NET - Newtonsoft:
+-PDFsharp:
 -Bootstrap:
+-JQuery:
+-HTML5 Shiv:
+-Modernizr:
+-matchMedia:
+-Respond:
+-lindell/JsBarcode:
      MIT license 
 
 -Apache log4net:
 -SignalR:
+-PdfiumViewer:
+-PdfiumViewer.Native.x86:
+-ECharts:
      Apache License, Version 2.0
 
 -System.Data.SQLite:
@@ -22,9 +33,8 @@ For check the complete License detail files, please check the sub directories.
 -EntityFramework6:
      Entity Framework 6 Runtime License (ENU)
 
--DevExpress:
-     DevExpress End User License Agreements
-
+-vilppu/OpenHtmlToPdf:
+     Creative Commons Attribution 3.0 license
 
 
 

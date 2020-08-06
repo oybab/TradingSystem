@@ -11,15 +11,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Oybab.DAL;
 using System.IO;
-using DevExpress.XtraCharts;
 using System.Collections;
 using System.Diagnostics;
-using Oybab.Reports.Common;
-using DevExpress.XtraReports.Localization;
-using DevExpress.XtraPrinting.Localization;
 using System.Globalization;
 using Oybab.Report.Model;
-using Oybab.Report.Statistics;
+using Oybab.Report.StatisticsHWP;
 
 namespace Oybab.Report.StatisticsForm
 {
@@ -33,8 +29,6 @@ namespace Oybab.Report.StatisticsForm
            
             InitializeComponent();
 
-            PreviewLocalizer.Active = new CutomPreviewLocalizer(this.Model);
-
             this.Text = Model.Title;
 
 
@@ -42,38 +36,23 @@ namespace Oybab.Report.StatisticsForm
             this.Icon = new Icon(asm.GetManifestResourceStream(@"Oybab.Res.Resources.Images.PC.Statistic.ico"));
 
 
-            ProductReport report = new ProductReport(records.Max(x => x.TotalPrice), Model.Parameters["PriceSymbol"]);
-
-           
-
-            foreach (var item in Model.Parameters)
-            {
-                if (null != report.Parameters[item.Key])
-                    report.Parameters[item.Key].Value = item.Value;
-            }
+            Model.DataSource = records;
 
 
-            foreach (var item in Model.Fonts)
-            {
-                if (null != report.StyleSheet[item.Key])
-                    report.StyleSheet[item.Key].Font = item.Value;
-            }
+            ProductReport report = new ProductReport(Model.Parameters["PriceSymbol"].ToString());
 
 
-            report.DataSource = records;
-
-            documentViewer1.DocumentSource = report;
 
 
-            report.PrintingSystem.RemoveService(typeof(DevExpress.XtraPrinting.Native.GraphicsModifier));
-            report.PrintingSystem.AddService(typeof(DevExpress.XtraPrinting.Native.GraphicsModifier), new GdiPlusFixedTextRenderingGraphicsModifier());
+            webBrowser1.Refresh();
+            string htmlContent = report.ProcessHTMLContent(Model);
+            webBrowser1.DocumentText = htmlContent;
 
-            documentViewer1.ShowToolTips = false;
 
-           
-            
-                
 
+
+
+            //File.WriteAllText("y:\\test1111.html", htmlContent);
         }
 
        

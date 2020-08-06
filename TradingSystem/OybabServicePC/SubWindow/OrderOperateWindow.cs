@@ -18,7 +18,6 @@ using Oybab.Res.Exceptions;
 using Oybab.Res.Server;
 using Oybab.Res.Server.Model;
 using Oybab.Res.Tools;
-using Oybab.Res.Reports;
 using Oybab.ServicePC.Tools;
 using Oybab.Res.View.Models;
 
@@ -3086,7 +3085,7 @@ namespace Oybab.ServicePC.SubWindow
 
 
                     this.order.tb_orderdetail = resultList;
-                    bool result = Res.Reports.Print.Instance.PrintOrder(order, Lang);
+                    bool result = Print.Instance.PrintOrder(order, Lang);
                     this.BeginInvoke(new Action(() =>
                     {
                         if (result)

@@ -960,7 +960,7 @@ namespace Oybab.ServicePC.SubWindow
                     
 
                     this.takeout.tb_takeoutdetail = resultList;
-                    bool result = Res.Reports.Print.Instance.PrintTakeout(takeout, Lang);
+                    bool result = Res.Tools.Print.Instance.PrintTakeout(takeout, Lang);
                     this.BeginInvoke(new Action(() =>
                     {
                         if (result)

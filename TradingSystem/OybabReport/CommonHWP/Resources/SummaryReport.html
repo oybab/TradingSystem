@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>Summary Report</title>
+	<meta charset="UTF-8">
+	<meta HTTP-EQUIV='Content-Type' CONTENT='text/html; charset=utf-8'/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="Generator" content="Oybab Trading System">
+	<meta name="Author" content="Oybab">
+	<style type="text/css">
+		.xrcsFont4 {color:#000000;font-family:'Microsoft YaHei'; font-size:5px;}
+		.xrcsFont5 {color:#000000;font-family:'Microsoft YaHei'; font-size:7px;}
+		.xrcsFont6 {color:#000000;font-family:'Microsoft YaHei'; font-size:8px;}
+		.xrcsFont7 {color:#000000;font-family:'Microsoft YaHei'; font-size:9px;}
+		.xrcsFont8 {color:#000000;font-family:'Microsoft YaHei'; font-size:11px;}
+		.xrcsFont9 {color:#000000;font-family:'Microsoft YaHei'; font-size:12px;}
+		.xrcsFont10 {color:#000000;font-family:'Microsoft YaHei'; font-size:13px;}
+
+		.FixIE7 {height:0px;width:0px;overflow:hidden;font-size:0px;line-height:0px;}
+        .Line{ border-bottom: #000000 1px dashed; width:48mm;}
+
+        /* This place replace dynamically if needed */
+		/*${DynamicStyles}*/
+
+        /* For display tr border and fixed table size */ 
+		table{ border-collapse:collapse; table-layout:fixed;}
+		/* For fixed td size */ 
+		td{word-wrap:break-word; overflow-wrap: break-word; word-break: break-word;}
+        /* For fix pdf margin */
+		body{ max-width: 99%; margin:0px; }
+	</style>
+</head>
+<body  style="background-color:#FFFFFF">
+<div>
+<!-- Table for Head -->
+<table id="Head" cellpadding="0" cellspacing="0" border="0" style="empty-cells:show;position:relative;">
+<!-- Company and Title -->
+	<tr style="vertical-align:top">
+		<td class="xrcsFont9" colspan="6" style="width:48mm;height:46px;line-height:32px;text-align:center;vertical-align:middle;">${CompanyName}</td>
+	</tr>
+	<tr style="vertical-align:top">
+		<td class="xrcsFont8" colspan="6" style="width:48mm;height:38px;line-height:24px;text-align:center;vertical-align:middle;">${Time}</td>
+	</tr>
+	<!-- Line -->
+	<tr style="vertical-align:top;width:48mm;height:2px;">
+		<td class="xrcsFont9 Line" colspan="6"/>
+	</tr>
+	<tr style="vertical-align:top;width:48mm;height:1px;">
+		<td class="xrcsFont9" colspan="6"/>
+	</tr>
+	</table>
+
+
+<!-- Table for DataSource -->
+<table id="DataSource" cellpadding="0" cellspacing="0" border="0" style="empty-cells:show;position:relative;">
+<!-- DataSource head -->
+	<tr>
+		<td class="xrcsFont8" colspan="2" style="width:60px;height:30px;line-height:20px;text-align:center;vertical-align:middle;">${Income}</td>
+		<td class="xrcsFont8" colspan="2" style="width:61px;height:30px;line-height:20px;text-align:center;vertical-align:middle;">${Spend}</td>
+		<td class="xrcsFont8" colspan="2" style="width:60px;height:30px;line-height:20px;text-align:center;vertical-align:middle;">${Profit}</td>
+	</tr>
+	<!-- Line -->
+	<tr style="vertical-align:top;width:48mm;height:2px;">
+		<td class="xrcsFont9 Line" colspan="6"/>
+	</tr>
+	<tr style="vertical-align:top;width:48mm;height:1px;">
+		<td class="xrcsFont9" colspan="6"/>
+	</tr>
+	<!-- DataSource dynamically generate by background to a json and import by js -->
+</table>
+<!-- Table Foot for DataSource -->
+<table id="DataSourceFooter" cellpadding="0" cellspacing="0" border="0" style="empty-cells:show;position:relative;">
+	<tr style="vertical-align:top;width:48mm;height:30px">
+		<td class="xrcsFont9" style="width:48mm" colspan="6"><!--[if lte IE 7]><div class="FixIE7"></div><![endif]--></td>
+	</tr>
+	<!-- Line -->
+	<tr style="vertical-align:top;width:48mm;height:2px;">
+		<td class="xrcsFont9 Line" colspan="6"/>
+	</tr>
+	<tr style="vertical-align:top;width:48mm;height:1px;">
+		<td class="xrcsFont9" colspan="6"/>
+	</tr>
+</table>
+
+
+
+<!-- Table for DataSource2 -->
+<table id="DataSource2" cellpadding="0" cellspacing="0" border="0" style="empty-cells:show;position:relative;">
+<!-- DataSource head -->
+	<tr>
+		<td class="xrcsFont8" colspan="2" style="width:60px;height:30px;line-height:20px;text-align:center;vertical-align:middle;">${Income}</td>
+		<td class="xrcsFont8" colspan="2" style="width:61px;height:30px;line-height:20px;text-align:center;vertical-align:middle;">${Spend}</td>
+		<td class="xrcsFont8" colspan="2" style="width:60px;height:30px;line-height:20px;text-align:center;vertical-align:middle;">${Profit}</td>
+	</tr>
+	<!-- Line -->
+	<tr style="vertical-align:top;width:48mm;height:2px;">
+		<td class="xrcsFont9 Line" colspan="6"/>
+	</tr>
+	<tr style="vertical-align:top;width:48mm;height:1px;">
+		<td class="xrcsFont9" colspan="6"/>
+	</tr>
+	<!-- DataSource dynamically generate by background to a json and import by js -->
+</table>
+<!-- Table Foot for DataSource2 -->
+<table id="DataSourceFooter2" cellpadding="0" cellspacing="0" border="0" style="empty-cells:show;position:relative;">
+	<tr>
+				<td class="xrcsFont8" colspan="6" style="width:180px;height:30px;line-height:20px;text-align:left;vertical-align:middle;">${TotalPrice}</td>
+			</tr>
+			<tr>
+					<td class="xrcsFont8" colspan="2" style="width:60px;height:30px;line-height:20px;text-align:center;vertical-align:middle;">${CalcIncome}</td>
+					<td class="xrcsFont8" colspan="2" style="width:61px;height:30px;line-height:20px;text-align:center;vertical-align:middle;">${CalcSpend}</td>
+					<td class="xrcsFont8" colspan="2" style="width:60px;height:30px;line-height:20px;text-align:center;vertical-align:middle;">${CalcProfit}</td>
+			</tr>
+	<!-- Line -->
+	<tr style="vertical-align:top;width:48mm;height:2px;">
+		<td class="xrcsFont9 Line" colspan="6"/>
+	</tr>
+	<tr style="vertical-align:top;width:48mm;height:1px;">
+		<td class="xrcsFont9" colspan="6"/>
+	</tr>
+</table>
+
+</div>
+
+<!--${DynamicImportJquery}-->
+<script type="text/javascript">
+
+
+var parameters = null;
+var dataSource = null;
+var dataSource2 = null;
+var isGenerated = false;
+
+/* This place replace dynamically if needed */
+/*${DynamicParameter}*/
+/*${DynamicDataSource}*/
+/*${DynamicDataSource2}*/
+/*${DynamicIsGenerated}*/
+
+
+if (null != parameters && isGenerated == true)
+{
+		var parametersObj = JSON.parse(parameters.replace("\r\n","<br/>"));
+	for(var item in parametersObj) {
+		var ojbInItem = parametersObj[item];
+		for(var key in ojbInItem)
+		{
+			// only replace first match
+			//document.body.innerHTML = document.body.innerHTML.replace('${' + key + '}', ojbInItem[key]);
+			var index = 0;
+			do {
+				document.body.innerHTML = document.body.innerHTML.replace('${' + key + '}', ojbInItem[key]);
+			} while((index = document.body.innerHTML.indexOf('${' + key + '}', index + 1)) > -1);
+
+		}
+	}
+	// remove unseded rows
+	var elems = $('td').each(function(){
+		var tdValue = $.trim(this.textContent);
+		
+		if (tdValue.indexOf("${") !== -1 && tdValue.indexOf("}") !== -1)
+		{
+			$(this).parent("tr:first").remove();
+		}
+	});
+
+}
+
+
+if (null != dataSource && isGenerated == true)
+{
+	var newTrList = "";
+	var dataSourceObj = JSON.parse(dataSource);
+	for(var item in dataSourceObj) {
+		var ojbInItem = dataSourceObj[item];
+			newTrList = newTrList + '<tr>'
+				+ '<td class="xrcsFont8" colspan="6" style="width:180px;height:30px;line-height:20px;text-align:left;vertical-align:middle;">' + ojbInItem["TypeName"] + '</td>'
+			+	'</tr><tr>'
+				+ '<td class="xrcsFont8" colspan="2" style="width:60px;height:30px;line-height:20px;text-align:center;vertical-align:middle;">' + ojbInItem["Income"] + '</td>'
+				+ '<td class="xrcsFont8" colspan="2" style="width:61px;height:30px;line-height:20px;text-align:center;vertical-align:middle;">' + ojbInItem["Spend"] + '</td>'
+				+ '<td class="xrcsFont8" colspan="2" style="width:60px;height:30px;line-height:20px;text-align:center;vertical-align:middle;">' + ojbInItem["Profit"] + '</td>'
+			+	'</tr>';
+	}
+
+	$('#DataSource:last').append(newTrList);
+}
+else if (isGenerated == true)
+{
+	$('#DataSource').remove();
+	$('#DataSourceFooter').remove();
+}
+
+
+
+
+if (null != dataSource2 && isGenerated == true)
+{
+	var newTrList = "";
+	var dataSourceObj = JSON.parse(dataSource2);
+	for(var item in dataSourceObj) {
+		var ojbInItem = dataSourceObj[item];
+			newTrList = newTrList + '<tr>'
+			newTrList = newTrList + '<tr>'
+				+ '<td class="xrcsFont8" colspan="6" style="width:180px;height:30px;line-height:20px;text-align:left;vertical-align:middle;">' + ojbInItem["TypeName"] + '</td>'
+			+	'</tr><tr>'
+				+ '<td class="xrcsFont8" colspan="2" style="width:60px;height:30px;line-height:20px;text-align:center;vertical-align:middle;">' + ojbInItem["Income"] + '</td>'
+				+ '<td class="xrcsFont8" colspan="2" style="width:61px;height:30px;line-height:20px;text-align:center;vertical-align:middle;">' + ojbInItem["Spend"] + '</td>'
+				+ '<td class="xrcsFont8" colspan="2" style="width:60px;height:30px;line-height:20px;text-align:center;vertical-align:middle;">' + ojbInItem["Profit"] + '</td>'
+			+	'</tr>';
+	}
+
+	$('#DataSource2:last').append(newTrList);
+}
+else if (isGenerated == true)
+{
+	$('#DataSource2').remove();
+	$('#DataSourceFooter2').remove();
+}
+
+
+</script>
+</body>
+</html>

@@ -28,40 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.SuspendLayout();
             // 
-            // chartControl1
+            // webBrowser1
             // 
-            this.chartControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chartControl1.Location = new System.Drawing.Point(0, 0);
-            this.chartControl1.Name = "chartControl1";
-            this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
-            this.chartControl1.Size = new System.Drawing.Size(823, 548);
-            this.chartControl1.TabIndex = 0;
+            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.webBrowser1.Location = new System.Drawing.Point(0, 0);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(823, 548);
+            this.webBrowser1.TabIndex = 0;
             // 
             // StatisticCharWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F); this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(823, 548);
-            this.Controls.Add(this.chartControl1);
+            this.Controls.Add(this.webBrowser1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MinimizeBox = false;
             this.Name = "StatisticCharWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "StatisticCharWindow";
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
+
+
+
         #endregion
 
-        private DevExpress.XtraCharts.ChartControl chartControl1;
-
-
-
-
+        private System.Windows.Forms.WebBrowser webBrowser1;
     }
 }

@@ -754,7 +754,7 @@ namespace Oybab.ServicePC.SubWindow
                    
                     
                     this.import.tb_importdetail = resultList;
-                    bool result = Res.Reports.Print.Instance.PrintImport(import, Lang);
+                    bool result = Res.Tools.Print.Instance.PrintImport(import, Lang);
                     this.BeginInvoke(new Action(() =>
                     {
                         if (result)

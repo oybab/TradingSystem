@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.documentViewer1 = new DevExpress.XtraPrinting.Preview.DocumentViewer();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.krpbPrint = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.SuspendLayout();
             // 
-            // documentViewer1
+            // webBrowser1
             // 
-            this.documentViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.documentViewer1.IsMetric = true;
-            this.documentViewer1.Location = new System.Drawing.Point(0, 0);
-            this.documentViewer1.Name = "documentViewer1";
-            this.documentViewer1.Size = new System.Drawing.Size(886, 563);
-            this.documentViewer1.TabIndex = 0;
+            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.webBrowser1.Location = new System.Drawing.Point(0, 0);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(886, 563);
+            this.webBrowser1.TabIndex = 0;
             // 
             // krpbPrint
             // 
-            this.krpbPrint.Location = new System.Drawing.Point(1, 1);
+            this.krpbPrint.Location = new System.Drawing.Point(6, 4);
             this.krpbPrint.Name = "krpbPrint";
             this.krpbPrint.Size = new System.Drawing.Size(31, 25);
-            this.krpbPrint.TabIndex = 1;
+            this.krpbPrint.TabIndex = 2;
             this.krpbPrint.Values.Text = "P";
             // 
             // StatisticSummaryReportWindow
@@ -55,7 +55,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(886, 563);
             this.Controls.Add(this.krpbPrint);
-            this.Controls.Add(this.documentViewer1);
+            this.Controls.Add(this.webBrowser1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MinimizeBox = false;
             this.Name = "StatisticSummaryReportWindow";
@@ -67,7 +67,7 @@
 
         #endregion
 
-        private DevExpress.XtraPrinting.Preview.DocumentViewer documentViewer1;
+        private System.Windows.Forms.WebBrowser webBrowser1;
         private ComponentFactory.Krypton.Toolkit.KryptonButton krpbPrint;
     }
 }

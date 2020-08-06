@@ -10,13 +10,12 @@ namespace Oybab.Report.Model
     {
 
         public Dictionary<string, object> Parameters = new Dictionary<string, object>();
-        public Dictionary<string, Font> Font = new Dictionary<string, Font>();
+        public Dictionary<string, Font> Fonts = new Dictionary<string, Font>();
         public object DataSource { get; set; }
         public object DetailReport { get; set; }
         public object DetailReport2 { get; set; }
 
 
         public int PageHeight { get; set; }
-        public bool IsEAN13Generator { get; set; }
     }
 }

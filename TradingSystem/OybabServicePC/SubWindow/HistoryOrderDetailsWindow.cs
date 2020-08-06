@@ -1091,7 +1091,7 @@ namespace Oybab.ServicePC.SubWindow
                 try
                 {
                     this.CurrentOrder.tb_orderdetail = CurrentOrderDetails;
-                    bool result = Res.Reports.Print.Instance.PrintOrder(this.CurrentOrder, Lang);
+                    bool result = Res.Tools.Print.Instance.PrintOrder(this.CurrentOrder, Lang);
                     this.BeginInvoke(new Action(() =>
                     {
                         if (result)
