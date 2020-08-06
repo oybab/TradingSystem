@@ -1,0 +1,10 @@
+v.1.1.0:
+Update to new Report library.
+Fix some bugs.
+
+
+
+
+
+v1.0.0:
+Release on github.
