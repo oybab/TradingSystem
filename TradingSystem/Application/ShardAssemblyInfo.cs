@@ -7,7 +7,7 @@ using System;
 // 有关程序集的常规信息通过以下
 // 特性集控制。更改这些特性值可修改
 [assembly: AssemblyCompany("Oybab Co., Ltd.")]
-[assembly: AssemblyProduct("Oybab Trading System v1.0")]
+[assembly: AssemblyProduct("Oybab Trading System v1.1")]
 [assembly: AssemblyCopyright("Copyright © Oybab 2013 - 2020")]
 [assembly: AssemblyTrademark("")]
 

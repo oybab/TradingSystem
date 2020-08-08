@@ -577,7 +577,7 @@
     <value>Table Manager</value>
   </data>
 	<data name="SoftServiceName" xml:space="preserve">
-    <value>Oybab Trading System v1.0</value>
+    <value>Oybab Trading System v1.1</value>
   </data>
 	<data name="OperateFaild" xml:space="preserve">
     <value>{0} failed!</value>
@@ -1321,7 +1321,7 @@
 		<value>40</value>
 	</data>
 	<data name="SoftServiceVersion" xml:space="preserve">
-		<value>V1.0</value>
+		<value>V1.1</value>
 	</data>
 	<data name="DirectionMode" xml:space="preserve">
 		<value>LeftToRight</value>

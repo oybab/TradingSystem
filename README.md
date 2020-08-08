@@ -56,7 +56,7 @@ There are multiple part for this system(Download from Release page):
 Before you download the source code and use make sure installed the prerequisites or download the release page and install the binary version of this system first:
  - **.Net 4**: For PC or Tablet Client.
  - **.Net 4.5**: For Server.
- - **Visual C++ 2010 SP1 Redistributable x86**: For Report library and System.Data.SQLite.
+ - **Visual C++ 2010 SP1 Redistributable x86**: For System.Data.SQLite.
 
 ### apply
 

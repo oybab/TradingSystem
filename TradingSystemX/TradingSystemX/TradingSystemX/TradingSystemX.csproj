@@ -23,9 +23,10 @@
     <Company>Oybab Co., Ltd.</Company>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>OybabSoft.snk</AssemblyOriginatorKeyFile>
-    <Product>Oybab Trading System v1.0</Product>
+    <Product>Oybab Trading System v1.1</Product>
     <Copyright>Copyright © Oybab 2013 - 2020</Copyright>
     <PackageId>com.oybab.tradingSystem</PackageId>
+    <Version>1.1.0</Version>
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="obj\**" />

@@ -270,13 +270,11 @@ namespace Oybab.ServerManager
 
 
         // 用到的常量
-        internal string SOFT_SERVICE_MOBILE_NAME = "TradingSystemMobilesV1.0";
-        internal string SOFT_SERVICE_TABLET_NAME = "TradingSystemTabletV1.0";
-        internal string SOFT_SERVICE_PC_NAME = "TradingSystemPCV1.0";
-        internal string SOFT_SERVICE_NAME = "TradingSystemV1.0";
-        internal string KEY_X86_M = "dbc5742201f5f885dea7e932eb7319f6";
-        internal string KEY_X64_M = "11d3099b6ce514943421734ea33789f9";
-        internal string KEY_TC_M = "228c14223a06c858d18e811359177234";
+        internal string SOFT_SERVICE_MOBILE_NAME = "TradingSystemMobilesV1.1";
+        internal string SOFT_SERVICE_TABLET_NAME = "TradingSystemTabletV1.1";
+        internal string SOFT_SERVICE_PC_NAME = "TradingSystemPCV1.1";
+        internal string SOFT_SERVICE_NAME = "TradingSystemV1.1";
+
         public string IPAddress { internal set; get; } = "localhost";
         internal string DB_KEY = "";
         internal string UID = "";
