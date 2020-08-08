@@ -7,7 +7,7 @@ using System;
 // 有关程序集的常规信息通过以下
 // 特性集控制。更改这些特性值可修改
 [assembly: AssemblyCompany("Oybab Co., Ltd.")]
-[assembly: AssemblyProduct("Oybab Trading System v1.0")]
+[assembly: AssemblyProduct("Oybab Trading System v1.1")]
 [assembly: AssemblyCopyright("Copyright © Oybab 2013 - 2020")]
 [assembly: AssemblyTrademark("")]
 
@@ -29,5 +29,5 @@ using System;
 // 可以指定所有这些值，也可以使用“生成号”和“修订号”的默认值，
 // 方法是按如下所示使用“*”:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.1.0.0")]
+[assembly: AssemblyFileVersion("1.1.0.0")]
