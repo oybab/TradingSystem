@@ -199,7 +199,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages.Controls
 
                         // 保存设置
                         if (IsChangeLang || IsChangeServerIP)
-                            Common.Instance.SetBak();
+                            await Common.Instance.SetBak();
 
                         // 关闭连接(因为IP变了)
                         if (IsChangeServerIP)

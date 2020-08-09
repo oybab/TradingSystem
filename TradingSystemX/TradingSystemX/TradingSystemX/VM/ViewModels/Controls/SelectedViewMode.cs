@@ -15,6 +15,7 @@ using Oybab.TradingSystemX.VM.Converters;
 using Oybab.TradingSystemX.VM.ModelsForViews;
 using Oybab.TradingSystemX.Pages;
 using Oybab.DAL;
+using Oybab.Res.View.Models;
 
 namespace Oybab.TradingSystemX.VM.ViewModels.Pages.Controls
 {

@@ -332,7 +332,7 @@
             this.krpbIncomeStatistic.Size = new System.Drawing.Size(215, 30);
             this.krpbIncomeStatistic.TabIndex = 144;
             this.krpbIncomeStatistic.Values.Text = "Income Statistic";
-            this.krpbIncomeStatistic.Click += new System.EventHandler(this.krpbImcomeStatistic_Click);
+            this.krpbIncomeStatistic.Click += new System.EventHandler(this.krpbIncomeStatistic_Click);
             // 
             // StatisticWindow
             // 

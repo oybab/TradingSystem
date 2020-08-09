@@ -165,6 +165,7 @@
     <Compile Include="View\Events\PublicEvents.cs" />
     <Compile Include="View\Models\BillDetailsModel.cs" />
     <Compile Include="View\Models\BillModel.cs" />
+    <Compile Include="View\Models\BillModelExt.cs" />
     <Compile Include="View\Models\CommonPayModel.cs" />
     <Compile Include="View\Models\LangItemModel.cs" />
     <Compile Include="View\Models\DetailsModel.cs" />

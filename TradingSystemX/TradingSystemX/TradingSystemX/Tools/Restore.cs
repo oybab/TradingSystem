@@ -20,10 +20,9 @@ namespace Oybab.TradingSystemX.Tools
         /// <summary>
         ///  读取备份(读取完配置文件后)
         /// </summary>
-        internal void ReadBak()
+        internal async Task ReadBak()
         {
-            Task.Run( async () =>
-            {
+           
                 try
                 {
                     string langIndex = await Settings.Instance.GetValueOrDefault(Settings.SettingsLangKey, Settings.Instance.SettingsLangDefault.ToString());
@@ -47,7 +46,6 @@ namespace Oybab.TradingSystemX.Tools
                 {
                     ExceptionPro.ExpLog(ex);
                 }
-            }).Wait();
             
 
         }
@@ -56,11 +54,10 @@ namespace Oybab.TradingSystemX.Tools
         /// <summary>
         /// 写入备份
         /// </summary>
-        internal void WriteBak()
+        internal async Task WriteBak()
         {
-            Task.Run(async () =>
-            {
-                try
+
+            try
             {
                 await Settings.Instance.AddOrUpdateValue(Settings.SettingsLangKey, Res.Instance.CurrentLangIndex.ToString());
                 await Settings.Instance.AddOrUpdateValue(Settings.SettingsAdminKey, Resources.Instance.LastLoginAdminNo);
@@ -68,13 +65,12 @@ namespace Oybab.TradingSystemX.Tools
                 await Settings.Instance.AddOrUpdateValue(Settings.SettingsIsSavePassword, Resources.Instance.IsSavePassword.ToString());
                 await Settings.Instance.AddOrUpdateValue(Settings.SettingsIPKey, Resources.Instance.SERVER_ADDRESS);
 
-             
+
             }
             catch (Exception ex)
             {
                 ExceptionPro.ExpLog(ex);
             }
-            }).Wait();
         }
 
 

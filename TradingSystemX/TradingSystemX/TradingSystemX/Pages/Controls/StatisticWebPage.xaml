@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Statistic}"
+             xmlns:forms="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.Core"
+             x:Class="Oybab.TradingSystemX.Pages.Controls.StatisticWebPage" BackgroundColor="{DynamicResource PageBackgroundColor}">
+    <Grid>
+        <Grid>
+            <WebView x:Name="browser"  HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand"/>
+        </Grid>
+        <Grid IsVisible="{Binding IsLoading}"  Style="{StaticResource LoadingBackground}">
+            <ActivityIndicator IsRunning="{Binding IsLoading}" />
+        </Grid>
+    </Grid>
+</ContentPage>

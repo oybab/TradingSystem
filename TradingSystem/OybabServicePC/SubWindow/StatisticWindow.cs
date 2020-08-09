@@ -156,7 +156,7 @@ namespace Oybab.ServicePC.SubWindow
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void krpbImcomeStatistic_Click(object sender, EventArgs e)
+        private void krpbIncomeStatistic_Click(object sender, EventArgs e)
         {
             long addTimeFinal, finishTimeFinal;
             if (!CheckTime(out addTimeFinal, out finishTimeFinal))

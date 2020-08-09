@@ -43,17 +43,17 @@ namespace Oybab.TradingSystemX.Tools
         /// <summary>
         /// 读取还原
         /// </summary>
-        internal void ReadBak()
+        internal async Task ReadBak()
         {
-            Restore.Instance.ReadBak();
+            await Restore.Instance.ReadBak();
         }
 
         /// <summary>
         /// 写入还原
         /// </summary>
-        internal void SetBak()
+        internal async Task SetBak()
         {
-            Restore.Instance.WriteBak();
+            await Restore.Instance.WriteBak();
         }
 
 
@@ -250,7 +250,22 @@ namespace Oybab.TradingSystemX.Tools
 
         }
 
+        /// <summary>
+        /// 是否允许打开统计
+        /// </summary>
+        /// <returns></returns>
+        internal bool IsAllowStatistic()
+        {
+            Admin model = Resources.Instance.AdminModel;
 
+            if (model.Mode == 1 && (null == model.Menu || !model.Menu.Contains("3600")))
+                return false;
+            else if (model.Mode == 0)
+                return false;
+
+            return true;
+
+        }
 
         /// <summary>
         /// 是否允许收入交易管理
