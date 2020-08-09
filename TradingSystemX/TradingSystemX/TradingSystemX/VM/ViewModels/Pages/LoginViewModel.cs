@@ -60,6 +60,11 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
 
             ++InitCount;
 
+
+            // 自动开始登录
+            if (Resources.Instance.IsSavePassword)
+                LoginCommand.Execute(null);
+
         }
 
 
@@ -387,7 +392,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
                     });
                 }
 
-                Common.Instance.SetBak();
+                await Common.Instance.SetBak();
             });
         }
 
@@ -419,7 +424,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
                             NavigationPath.Instance.ChangePasswordPage = new ChangePasswordPage();
                             NavigationPath.Instance.AboutPage = new AboutPage();
                             NavigationPath.Instance.BalancePage = new BalancePage();
-
+                            NavigationPath.Instance.StatisticPage = new StatisticPage();
 
 
 

@@ -467,6 +467,9 @@ namespace Oybab.TradingSystemX.Tools
         internal AboutPage AboutPage { get; set; }
 
         internal BalancePage BalancePage { get; set; }
+        internal StatisticPage StatisticPage { get; set; }
+
+
 
 
 

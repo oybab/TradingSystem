@@ -37,6 +37,7 @@ using Oybab.ServerManager.Model.Service.SupplierPay;
 using Oybab.ServerManager.Model.Service.Balance;
 using Oybab.ServerManager.Model.Service.Import;
 using Oybab.ServerManager.Model.Service.Supplier;
+using Oybab.ServerManager.Model.Service.ImportDetail;
 
 namespace Oybab.TradingSystemX.Server
 {
@@ -1418,6 +1419,210 @@ namespace Oybab.TradingSystemX.Server
         }
 
         #endregion Add SupplierPay
+
+
+
+
+        #region Statistic
+
+
+        /// <summary>
+        /// 查找订单
+        /// </summary>
+        /// <param name="startTime"></param>
+        /// <param name="endTime"></param>
+        /// <param name="addTime"></param>
+        /// <param name="finishTime"></param>
+        /// <param name="roomId"></param>
+        /// <param name="state"></param>
+        /// <param name="IsIncludeRef"></param>
+        /// <param name="orders"></param>
+        /// <returns></returns>
+        public async Task<(bool result, List<Order> orders)> ServiceGetOrders(long startTime, long endTime, long addTimeStart, long addTimeEnd, long roomId, long state, bool IsIncludeRef, long AdminId, long FinishAdminId)
+        {
+            //打开通道并发送获取数据
+            await CheckConnectionAndConnection();
+            ToClientServiceGetOrders client = null;
+            try
+            {
+                client = await hubProxy.Invoke<ToClientServiceGetOrders>("ServiceGetOrders", new ToServerServiceGetOrders() { SessionId = Resources.Instance.SERVER_SESSION, StartTime = startTime, EndTime = endTime, RoomId = roomId, State = state, AddTimeStart = addTimeStart, AddTimeEnd = addTimeEnd, IsIncludeRef = IsIncludeRef, AdminId = AdminId, FinishAdminId = FinishAdminId });
+            }
+            catch (Exception ex)
+            {
+                await CommunicationExceptionHandle(ex);
+                throw new OybabException(Resources.Instance.GetString("Exception_OperateRequestFaild"), ex);
+            }
+            //处理错误
+            await HandleException(client.ExceptionType);
+
+
+            //返回值
+            return (client.Result, client.Orders.DeserializeObject<List<Order>>());
+        }
+
+        /// <summary>
+        /// 查找外卖
+        /// </summary>
+        /// <param name="sendAdminId"></param>
+        /// <param name="addTime"></param>
+        /// <param name="finishTime"></param>
+        /// <param name="state"></param>
+        /// <param name="name"></param>
+        /// <param name="phone"></param>
+        /// <param name="IsFromCacheOnly"></param>
+        /// <param name="takeouts"></param>
+        /// <returns></returns>
+        public async Task<(bool result, List<Takeout> takeouts)> ServiceGetTakeouts(long sendAdminId, long addTimeStart, long addTimeEnd, long state, string name, string phone, bool IsFromCacheOnly, bool IsIncludeRef, long AdminId, long FinishAdminId)
+        {
+            //打开通道并发送获取数据
+            await CheckConnectionAndConnection();
+            ToClientServiceGetTakeouts client = null;
+            try
+            {
+                client = await hubProxy.Invoke<ToClientServiceGetTakeouts>("ServiceGetTakeout", new ToServerServiceGetTakeouts() { SessionId = Resources.Instance.SERVER_SESSION, State = state, AddTimeStart = addTimeStart, AddTimeEnd = addTimeEnd, IsFromCacheOnly = IsFromCacheOnly, IsIncludeRef = IsIncludeRef, Name = name, Phone = phone, SendAdminId = sendAdminId, AdminId = AdminId, FinishAdminId = FinishAdminId });
+            }
+            catch (Exception ex)
+            {
+                await CommunicationExceptionHandle(ex);
+                throw new OybabException(Resources.Instance.GetString("Exception_OperateRequestFaild"), ex);
+            }
+            //处理错误
+            await HandleException(client.ExceptionType);
+
+
+
+            //返回值
+            return (client.Result, client.Takeouts.DeserializeObject<List<Takeout>>());
+        }
+
+
+
+        /// <summary>
+        /// 查找进货
+        /// </summary>
+        /// <param name="importTimeStart"></param>
+        /// <param name="importTimeEnd"></param>
+        /// <param name="IsIncludeRef"></param>
+        /// <param name="imports"></param>
+        /// <returns></returns>
+        public async Task<(bool result, List<Import> imports)> ServiceGetImports(long addTimeStart, long addTimeEnd, bool IsIncludeRef)
+        {
+            //打开通道并发送获取数据
+            await CheckConnectionAndConnection();
+            ToClientServiceGetImports client = null;
+            try
+            {
+                client = await hubProxy.Invoke<ToClientServiceGetImports>("ServiceGetImports", new ToServerServiceGetImports() { SessionId = Resources.Instance.SERVER_SESSION, AddTimeStart = addTimeStart, AddTimeEnd = addTimeEnd, IsIncludeRef = IsIncludeRef });
+            }
+            catch (Exception ex)
+            {
+                await CommunicationExceptionHandle(ex);
+                throw new OybabException(Resources.Instance.GetString("Exception_OperateRequestFaild"), ex);
+            }
+            //处理错误
+            await HandleException(client.ExceptionType);
+
+
+            //返回值
+            return (client.Result, client.Imports.DeserializeObject<List<Import>>());
+        }
+
+
+
+        /// <summary>
+        /// 查找订单支付
+        /// </summary>
+        /// <param name="addTimeStart"></param>
+        /// <param name="addTimeEnd"></param>
+        /// <param name="orderPays"></param>
+        /// <returns></returns>
+        public async Task<(bool result, List<OrderPay> orderPays)> ServiceGetOrderPay(long addTimeStart, long addTimeEnd)
+        {
+            //打开通道并发送获取数据
+            await CheckConnectionAndConnection();
+            ToClientServiceGetOrderPay client = null;
+            try
+            {
+                client = await hubProxy.Invoke<ToClientServiceGetOrderPay>("ServiceGetOrderPay", new ToServerServiceGetOrderPay() { SessionId = Resources.Instance.SERVER_SESSION, AddTimeStart = addTimeStart, AddTimeEnd = addTimeEnd });
+            }
+            catch (Exception ex)
+            {
+                await CommunicationExceptionHandle(ex);
+                throw new OybabException(Resources.Instance.GetString("Exception_OperateRequestFaild"), ex);
+            }
+            //处理错误
+            await HandleException(client.ExceptionType);
+
+
+            //返回值
+            return (client.Result, client.OrderPays.DeserializeObject<List<OrderPay>>());
+        }
+
+
+
+        /// <summary>
+        /// 查找外卖支付
+        /// </summary>
+        /// <param name="addTimeStart"></param>
+        /// <param name="addTimeEnd"></param>
+        /// <param name="takeoutPays"></param>
+        /// <returns></returns>
+        public async Task<(bool result, List<TakeoutPay> takeoutPays)> ServiceGetTakeoutPay(long addTimeStart, long addTimeEnd)
+        {
+            //打开通道并发送获取数据
+            await CheckConnectionAndConnection();
+            ToClientServiceGetTakeoutPay client = null;
+            try
+            {
+                client = await hubProxy.Invoke<ToClientServiceGetTakeoutPay>("ServiceGetTakeoutPay", new ToServerServiceGetTakeoutPay() { SessionId = Resources.Instance.SERVER_SESSION, AddTimeStart = addTimeStart, AddTimeEnd = addTimeEnd });
+            }
+            catch (Exception ex)
+            {
+                await CommunicationExceptionHandle(ex);
+                throw new OybabException(Resources.Instance.GetString("Exception_OperateRequestFaild"), ex);
+            }
+            //处理错误
+            await HandleException(client.ExceptionType);
+
+
+            //返回值
+            return (client.Result, client.TakeoutPays.DeserializeObject<List<TakeoutPay>>());
+        }
+
+
+
+
+        /// <summary>
+        /// 查找进货支付
+        /// </summary>
+        /// <param name="addTimeStart"></param>
+        /// <param name="addTimeEnd"></param>
+        /// <param name="importPays"></param>
+        /// <returns></returns>
+        public async Task<(bool result, List<ImportPay> importPays)> ServiceGetImportPay(long addTimeStart, long addTimeEnd)
+        {
+            //打开通道并发送获取数据
+            await CheckConnectionAndConnection();
+            ToClientServiceGetImportPay client = null;
+            try
+            {
+                client = await hubProxy.Invoke<ToClientServiceGetImportPay>("ServiceGetImportPay", new ToServerServiceGetImportPay() { SessionId = Resources.Instance.SERVER_SESSION, AddTimeStart = addTimeStart, AddTimeEnd = addTimeEnd });
+            }
+            catch (Exception ex)
+            {
+                await CommunicationExceptionHandle(ex);
+                throw new OybabException(Resources.Instance.GetString("Exception_OperateRequestFaild"), ex);
+            }
+            //处理错误
+            await HandleException(client.ExceptionType);
+
+
+            //返回值
+            return (client.Result, client.ImportPays.DeserializeObject<List<ImportPay>>());
+        }
+
+
+        #endregion Statistic
 
 
         #region Get Info

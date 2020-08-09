@@ -1,5 +1,7 @@
-v.1.1.0(2020.8.8):
+v.1.1.0(-):
 Update to new Report library. Remove all DevExpress report component.
+Add statistic for Phone client.
+Let Phone client auto login when startup.
 Fix some bugs.
 
 

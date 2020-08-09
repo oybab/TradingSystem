@@ -14,6 +14,7 @@ using Oybab.TradingSystemX.VM.ViewModels.Pages.Controls;
 using Oybab.TradingSystemX.Server;
 using Oybab.Res.Server.Model;
 using Oybab.Res.Exceptions;
+using Oybab.Res.View.Models;
 
 namespace Oybab.TradingSystemX.VM.ViewModels.Controls
 {

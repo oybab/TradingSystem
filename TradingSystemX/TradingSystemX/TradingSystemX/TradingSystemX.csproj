@@ -43,6 +43,8 @@
     <None Remove="TradingSystemX.csproj.bak" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\TradingSystem\OybabReport\Model\RecordChart.cs" Link="Report\RecordChart.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabReport\Model\RecordProducts.cs" Link="Report\RecordProducts.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabRes\Server\Model\NotificationAlert.cs" Link="Server\Model\NotificationAlert.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabRes\Server\Model\NotificationCache.cs" Link="Server\Model\NotificationCache.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabRes\Server\Model\ResultModel.cs" Link="Server\Model\ResultModel.cs" />
@@ -50,6 +52,8 @@
     <Compile Include="..\..\..\TradingSystem\OybabRes\Server\Model\ToServerSessionRoomInfo.cs" Link="Server\Model\ToServerSessionRoomInfo.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabRes\Server\Notification.cs" Link="Server\Notification.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabRes\Tools\Ext.cs" Link="Tools\Ext.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabRes\View\Models\BillModel.cs" Link="VM\ModelsForViews\BillModel.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabRes\View\Models\CommonPayModel.cs" Link="VM\ModelsForViews\CommonPayModel.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Models\ExtendInfo.cs" Link="VM\Models\ServerModel\ExtendInfo.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Models\PrintInfo.cs" Link="VM\Models\ServerModel\PrintInfo.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Models\ProductModel.cs" Link="VM\Models\ServerModel\ProductModel.cs" />
@@ -144,10 +148,12 @@
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\ImportDetail\ToClientServiceDelImportDetail.cs" Link="VM\Models\Server\ImportDetail\ToClientServiceDelImportDetail.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\ImportDetail\ToClientServiceEditImportDetail.cs" Link="VM\Models\Server\ImportDetail\ToClientServiceEditImportDetail.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\ImportDetail\ToClientServiceGetImportDetail.cs" Link="VM\Models\Server\ImportDetail\ToClientServiceGetImportDetail.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\ImportDetail\ToClientServiceGetImportPay.cs" Link="VM\Models\Server\ImportDetail\ToClientServiceGetImportPay.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\ImportDetail\ToServerServiceAddImportDetail.cs" Link="VM\Models\Server\ImportDetail\ToServerServiceAddImportDetail.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\ImportDetail\ToServerServiceDelImportDetail.cs" Link="VM\Models\Server\ImportDetail\ToServerServiceDelImportDetail.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\ImportDetail\ToServerServiceEditImportDetail.cs" Link="VM\Models\Server\ImportDetail\ToServerServiceEditImportDetail.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\ImportDetail\ToServerServiceGetImportDetail.cs" Link="VM\Models\Server\ImportDetail\ToServerServiceGetImportDetail.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\ImportDetail\ToServerServiceGetImportPay.cs" Link="VM\Models\Server\ImportDetail\ToServerServiceGetImportPay.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Import\ToClientServiceEditImport.cs" Link="VM\Models\Server\Import\ToClientServiceEditImport.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Import\ToClientServiceGetImports.cs" Link="VM\Models\Server\Import\ToClientServiceGetImports.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Import\ToClientServiceNewImport.cs" Link="VM\Models\Server\Import\ToClientServiceNewImport.cs" />
@@ -173,11 +179,13 @@
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\OrderDetail\ToClientServiceAddOrderDetail.cs" Link="VM\Models\Server\OrderDetail\ToClientServiceAddOrderDetail.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\OrderDetail\ToClientServiceDelOrderDetail.cs" Link="VM\Models\Server\OrderDetail\ToClientServiceDelOrderDetail.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\OrderDetail\ToClientServiceGetOrderDetail.cs" Link="VM\Models\Server\OrderDetail\ToClientServiceGetOrderDetail.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\OrderDetail\ToClientServiceGetOrderPay.cs" Link="VM\Models\Server\OrderDetail\ToClientServiceGetOrderPay.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\OrderDetail\ToClientServiceOrderTakeoutAddNotification.cs" Link="VM\Models\Server\OrderDetail\ToClientServiceOrderTakeoutAddNotification.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\OrderDetail\ToClientServiceSaveOrderDetail.cs" Link="VM\Models\Server\OrderDetail\ToClientServiceSaveOrderDetail.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\OrderDetail\ToServerServiceAddOrderDetail.cs" Link="VM\Models\Server\OrderDetail\ToServerServiceAddOrderDetail.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\OrderDetail\ToServerServiceDelOrderDetail.cs" Link="VM\Models\Server\OrderDetail\ToServerServiceDelOrderDetail.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\OrderDetail\ToServerServiceGetOrderDetail.cs" Link="VM\Models\Server\OrderDetail\ToServerServiceGetOrderDetail.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\OrderDetail\ToServerServiceGetOrderPay.cs" Link="VM\Models\Server\OrderDetail\ToServerServiceGetOrderPay.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\OrderDetail\ToServerServiceSaveOrderDetail.cs" Link="VM\Models\Server\OrderDetail\ToServerServiceSaveOrderDetail.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Order\ToClientServiceEditOrder.cs" Link="VM\Models\Server\Order\ToClientServiceEditOrder.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Order\ToClientServiceGetOrders.cs" Link="VM\Models\Server\Order\ToClientServiceGetOrders.cs" />
@@ -239,11 +247,13 @@
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\TakeoutDetail\ToClientServiceAddTakeoutDetail.cs" Link="VM\Models\Server\TakeoutDetail\ToClientServiceAddTakeoutDetail.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\TakeoutDetail\ToClientServiceDelTakeoutDetail.cs" Link="VM\Models\Server\TakeoutDetail\ToClientServiceDelTakeoutDetail.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\TakeoutDetail\ToClientServiceGetTakeoutDetail.cs" Link="VM\Models\Server\TakeoutDetail\ToClientServiceGetTakeoutDetail.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\TakeoutDetail\ToClientServiceGetTakeoutPay.cs" Link="VM\Models\Server\TakeoutDetail\ToClientServiceGetTakeoutPay.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\TakeoutDetail\ToClientServiceSaveTakeoutDetail.cs" Link="VM\Models\Server\TakeoutDetail\ToClientServiceSaveTakeoutDetail.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\TakeoutDetail\ToClientServiceTakeoutDetailsAddNotification.cs" Link="VM\Models\Server\TakeoutDetail\ToClientServiceTakeoutDetailsAddNotification.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\TakeoutDetail\ToServerServiceAddTakeoutDetail.cs" Link="VM\Models\Server\TakeoutDetail\ToServerServiceAddTakeoutDetail.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\TakeoutDetail\ToServerServiceDelTakeoutDetail.cs" Link="VM\Models\Server\TakeoutDetail\ToServerServiceDelTakeoutDetail.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\TakeoutDetail\ToServerServiceGetTakeoutDetail.cs" Link="VM\Models\Server\TakeoutDetail\ToServerServiceGetTakeoutDetail.cs" />
+    <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\TakeoutDetail\ToServerServiceGetTakeoutPay.cs" Link="VM\Models\Server\TakeoutDetail\ToServerServiceGetTakeoutPay.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\TakeoutDetail\ToServerServiceSaveTakeoutDetail.cs" Link="VM\Models\Server\TakeoutDetail\ToServerServiceSaveTakeoutDetail.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Takeout\ToClientServiceEditTakeout.cs" Link="VM\Models\Server\Takeout\ToClientServiceEditTakeout.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Takeout\ToClientServiceGetTakeouts.cs" Link="VM\Models\Server\Takeout\ToClientServiceGetTakeouts.cs" />
@@ -254,6 +264,10 @@
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\Takeout\ToServerServiceNewTakeout.cs" Link="VM\Models\Server\Takeout\ToServerServiceNewTakeout.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\ToClientService.cs" Link="VM\Models\Server\ToClientService.cs" />
     <Compile Include="..\..\..\TradingSystem\OybabServerManager\Model\Service\ToServerService.cs" Link="VM\Models\Server\ToServerService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\..\TradingSystem\OybabReport\StatisticsHWP\Resources\ChartReport.html" Link="Report\StatisticsHWP\Resources\ChartReport.html" />
+    <EmbeddedResource Include="..\..\..\TradingSystem\OybabReport\StatisticsHWP\Resources\ProductReport.html" Link="Report\StatisticsHWP\Resources\ProductReport.html" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="..\..\..\TradingSystem\OybabServerManager\Resource.en-US.resx" Link="Res\Resource.en-US.resx">
@@ -279,6 +293,12 @@
     <Compile Update="MainPageOld.xaml.cs">
       <DependentUpon>MainPageOld.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Pages\Controls\StatisticWebPage.xaml.cs">
+      <DependentUpon>StatisticWebPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\StatisticPage.xaml.cs">
+      <DependentUpon>StatisticPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Pages\Navigations\MasterDetailNPage.xaml.cs">
       <DependentUpon>MasterDetailNPage.xaml</DependentUpon>
     </Compile>
@@ -294,6 +314,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Pages\Styles\" />
+    <Folder Include="Report\StatisticsHWP\Resources\JS\" />
     <Folder Include="Server\Model\" />
     <Folder Include="VM\Models\Server\Admin\" />
     <Folder Include="VM\Models\Server\AdminLog\" />
@@ -319,6 +340,10 @@
     <Folder Include="VM\Models\Server\Takeout\" />
     <Folder Include="VM\Models\Server\TakeoutDetail\" />
     <Folder Include="VM\Models\ServerModel\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\..\TradingSystem\OybabReport\CommonHWP\Resources\JS\echarts.min.js" Link="Report\StatisticsHWP\Resources\JS\echarts.min.js" />
+    <EmbeddedResource Include="..\..\..\TradingSystem\OybabReport\CommonHWP\Resources\JS\jquery-1.12.4.min.js" Link="Report\StatisticsHWP\Resources\JS\jquery-1.12.4.min.js" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="Pages\Themes\PublicTheme.xaml">

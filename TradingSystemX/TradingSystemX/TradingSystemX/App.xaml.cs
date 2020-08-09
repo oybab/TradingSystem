@@ -37,7 +37,7 @@ namespace Oybab.TradingSystemX
 
 
             // 获取初始值
-            Common.Instance.ReadBak();
+            Task.Run(async () => { await Common.Instance.ReadBak(); }).Wait(); 
 
 
             // 初始化导航

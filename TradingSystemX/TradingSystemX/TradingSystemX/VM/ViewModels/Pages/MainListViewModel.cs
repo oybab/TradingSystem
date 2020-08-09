@@ -29,6 +29,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
         private MainListModel _addInnerBill;
         private MainListModel _addOuterBill;
         private MainListModel _importManager;
+        private MainListModel _statistic;
 
         private Xamarin.Forms.StackLayout _spList;
         private Xamarin.Forms.ControlTemplate _ctControlTemplate;
@@ -56,6 +57,8 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
             AddList(_openCashDrawer);
             _balanceManager = new MainListModel() { Name = "BalanceManager", GoCommand = this.GoCommand };
             AddList(_balanceManager);
+            _statistic = new MainListModel() { Name = "Statistic", GoCommand = this.GoCommand };
+            AddList(_statistic);
             AddList(new MainListModel() { Name = "ChangeLanguage", GoCommand = this.GoCommand });
             AddList(new MainListModel() { Name = "ChangePassword", GoCommand = this.GoCommand });
             AddList(new MainListModel() { Name = "About", GoCommand = this.GoCommand });
@@ -230,7 +233,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
                 if (!_financeLog.Visibility)
                 {
                     _financeLog.Visibility = true;
-                    AddList(_financeLog, 2);
+                    AddList(_financeLog, Lists.Count - 4);
                 }
             }
             else
@@ -250,7 +253,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
                 if (!_openCashDrawer.Visibility)
                 {
                     _openCashDrawer.Visibility = true;
-                    AddList(_openCashDrawer, 2);
+                    AddList(_openCashDrawer, Lists.Count - 4);
                 }
             }
             else
@@ -268,7 +271,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
                 if (!_balanceManager.Visibility)
                 {
                     _balanceManager.Visibility = true;
-                    AddList(_balanceManager, 2);
+                    AddList(_balanceManager, Lists.Count - 4);
                 }
             }
             else
@@ -281,6 +284,25 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
             }
 
 
+            // 根据权限显示统计
+            if (Common.Instance.IsAllowStatistic())
+            {
+                if (!_statistic.Visibility)
+                {
+                    _statistic.Visibility = true;
+                    AddList(_statistic, Lists.Count - 4);
+                }
+            }
+            else
+            {
+                if (_statistic.Visibility)
+                {
+                    _statistic.Visibility = false;
+                    RemoveSelected(_statistic);
+                }
+            }
+
+
 
             // 根据权限显示内部账单账单
             if (Resources.Instance.RoomCount > 0 && Common.Instance.IsAddInnerBill())
@@ -288,7 +310,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
                 if (!_addInnerBill.Visibility)
                 {
                     _addInnerBill.Visibility = true;
-                    AddList(_addInnerBill, 0);
+                    AddList(_addInnerBill, Lists.Count - 4);
                 }
             }
             else
@@ -306,7 +328,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
                 if (!_addOuterBill.Visibility)
                 {
                     _addOuterBill.Visibility = true;
-                    AddList(_addOuterBill, 1);
+                    AddList(_addOuterBill, Lists.Count - 4);
                 }
             }
             else
@@ -326,7 +348,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
                 if (!_importManager.Visibility)
                 {
                     _importManager.Visibility = true;
-                    AddList(_importManager, 1);
+                    AddList(_importManager, Lists.Count - 4);
                 }
             }
             else
@@ -572,8 +594,6 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
                                 break;
                             // 余额管理
                             case "BalanceManager":
-
-
                                 IsLoading = true;
 
                                 Task.Run(async () =>
@@ -588,6 +608,22 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
                                     });
                                 });
 
+                                break; 
+                            // 统计
+                            case "Statistic":
+                                IsLoading = true;
+
+                                Task.Run(async () =>
+                                {
+                                    await ExtX.Sleep(200);
+
+                                    Device.BeginInvokeOnMainThread(() =>
+                                    {
+                                        NavigationPath.Instance.StatisticPage.Init();
+                                        NavigationPath.Instance.GoNavigateNext(NavigationPath.Instance.StatisticPage);
+                                        IsLoading = false;
+                                    });
+                                });
 
 
                                 break;
@@ -616,7 +652,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
                                             LangConverter.Instance.ChangeCulture(langIndex);
                                             Notification.Instance.ActionLanguage(null, langIndex, null);
 
-                                            Common.Instance.SetBak();
+                                            await Common.Instance.SetBak();
 
                                             await ExtX.Sleep(500);
 
@@ -664,13 +700,27 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
                                 IsLoading = true;
                                 try
                                 {
-                                    Common.Instance.Exit();
+                                    Task.Run(async () =>
+                                    {
+                                        await ExtX.WaitForLoading();
+
+                                        Resources.Instance.IsSavePassword = false;
+                                        Resources.Instance.LastLoginPassword = null;
+                                        await Common.Instance.SetBak();
+
+                                        Device.BeginInvokeOnMainThread(() =>
+                                        {
+                                            Common.Instance.Exit();
+
+                                            IsLoading = false;
+                                        });
+                                    });
                                 }
                                 catch (Exception ex)
                                 {
                                     ExceptionPro.ExpLog(ex);
                                 }
-                                IsLoading = false;
+                                
                                 break;
                         }
                     }
