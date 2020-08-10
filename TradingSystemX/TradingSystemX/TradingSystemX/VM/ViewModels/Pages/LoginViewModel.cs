@@ -207,6 +207,43 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
 
 
         /// <summary>
+        /// 打开源代码
+        /// </summary>
+        private RelayCommand _sourceCodeCommand;
+        public Command SourceCodeCommand
+        {
+            get
+            {
+                return _sourceCodeCommand ?? (_sourceCodeCommand = new RelayCommand(param =>
+                {
+                    Xamarin.Essentials.Launcher.OpenAsync(new System.Uri("https://oybab.net/tradingsystem/sourcecode/" + Res.Instance.MainLang.Culture.Name));
+                }));
+            }
+        }
+
+
+
+
+
+        /// <summary>
+        /// 打开协议
+        /// </summary>
+        private RelayCommand _licenseCommand;
+        public Command LicenseCommand
+        {
+            get
+            {
+                return _licenseCommand ?? (_licenseCommand = new RelayCommand(param =>
+                {
+                   Xamarin.Essentials.Launcher.OpenAsync(new System.Uri("https://oybab.net/tradingsystem/license/" + Res.Instance.MainLang.Culture.Name));
+                }));
+            }
+        }
+
+
+
+
+        /// <summary>
         /// 退出
         /// </summary>
         private RelayCommand _loginCommand;

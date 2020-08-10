@@ -32,5 +32,7 @@ namespace Oybab.TradingSystemX.Pages.Controls
         {
             viewModel.Init();
         }
-	}
+
+
+    }
 }
