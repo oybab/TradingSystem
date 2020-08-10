@@ -33,10 +33,15 @@ namespace Oybab.TradingSystemX.Report.StatisticsHWP
             htmlContent = htmlContent.Replace(@"<!--${DynamicImportCharJs}-->", string.Format("<script type=\"text/javascript\" > {0}</script>", GetResourceFileContentAsString("JS.echarts.min.js")));
 
 
-
-
+            // add viewport for phone browser
+            htmlContent = htmlContent.Replace("<meta charset=\"UTF-8\">", "<meta charset=\"UTF-8\"><meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no'/>");
 
             StringBuilder newStr = new StringBuilder();
+
+
+            // 新增fong-face
+            newStr.Append(GetFont(reportModel));
+
 
             // 先处理字体
             foreach (var item in reportModel.Fonts)

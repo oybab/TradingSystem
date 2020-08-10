@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Text;
+using System.Linq;
+using Xamarin.Forms;
+using Oybab.Res.Tools;
 
 namespace Oybab.TradingSystemX.Report
 {
@@ -69,6 +72,45 @@ namespace Oybab.TradingSystemX.Report
                 }
             }
             return resource;
+        }
+
+
+
+        internal string GetFont(StatisticModel reportModel)
+        {
+
+
+
+            string fontFamilyName = reportModel.Fonts.FirstOrDefault().Value.FontFamily;
+            string fontAddress = "";
+
+            if (Device.RuntimePlatform == Device.iOS)
+            {
+                fontAddress = "src: url('" + Resources.Instance.GetString("CustomFont_iOS") + ".ttf');";
+            }
+            else if (Device.RuntimePlatform == Device.Android)
+            {
+                fontAddress = "src: url('file:///android_asset/" + Resources.Instance.GetString("CustomFont_Android").Split('#')[0] + "');";
+            }
+            else if (Device.RuntimePlatform == Device.UWP)
+            {
+                fontAddress = @"src: url('ms-appx-web://" + Resources.Instance.GetString("CustomFont_UWP").Split('#')[0] + "');";
+            }
+            else
+            {
+                fontAddress = "src:url('https://oybab.net/res/tradingsystem/fonts/" + fontFamilyName + ".eot');"
+                            + "src:url('https://oybab.net/res/tradingsystem/fonts/" + fontFamilyName + ".eot?#iefix') format('embedded-opentype'),url('https://oybab.net/res/tradingsystem/fonts/" + fontFamilyName + ".woff2') format('woff2'),url('https://oybab.net/res/tradingsystem/fonts/" + fontFamilyName + ".woff') format('woff'),url('https://oybab.net/res/tradingsystem/fonts/" + fontFamilyName + ".ttf') format('truetype'); ";
+            }
+
+
+            // 新增fong-face
+            return "@font-face {"
+                            + "font-family: '" + fontFamilyName + "';"
+                            + fontAddress
+                            + "font-weight: normal;"
+                            + "font-style: normal;"
+                            + "}";
+
         }
 
     }

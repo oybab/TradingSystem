@@ -12,13 +12,25 @@
                     <StackLayout  Margin="10, 20, 10, 10"  Orientation="Vertical">
                         <StackLayout Margin="0,10,0,0">
                             <Label VerticalOptions="Center" HorizontalOptions="Start" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=AddTime}"/>
-                            <DatePicker HorizontalOptions="CenterAndExpand" Date="{Binding AddDateStart}" Format="yyyy-MM-dd"/>
-                            <TimePicker HorizontalOptions="CenterAndExpand" Time="{Binding AddTimeStart}" Format="HH:mm:ss" />
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <DatePicker Grid.Column="0" HorizontalOptions="CenterAndExpand" Date="{Binding AddDateStart}" Format="yyyy-MM-dd"/>
+                                <TimePicker Grid.Column="1" HorizontalOptions="CenterAndExpand" Time="{Binding AddTimeStart}" Format="HH:mm:ss" />
+                            </Grid>
                         </StackLayout>
                         <StackLayout Margin="0,10,0,0">
                             <Label VerticalOptions="Center" HorizontalOptions="Start" Text="-"/>
-                            <DatePicker HorizontalOptions="CenterAndExpand" Date="{Binding AddDateEnd}" Format="yyyy-MM-dd"/>
-                            <TimePicker HorizontalOptions="CenterAndExpand" Time="{Binding AddTimeEnd}" Format="HH:mm:ss" />
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <DatePicker Grid.Column="0" HorizontalOptions="CenterAndExpand" Date="{Binding AddDateEnd}" Format="yyyy-MM-dd"/>
+                                <TimePicker Grid.Column="1" HorizontalOptions="CenterAndExpand" Time="{Binding AddTimeEnd}" Format="HH:mm:ss" />
+                            </Grid>
                         </StackLayout>
                         <StackLayout Margin="0,20,0,0" HorizontalOptions="Fill" Orientation="Horizontal">
                             <Label VerticalOptions="Center" Margin="0"  Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=BillType}"  />
