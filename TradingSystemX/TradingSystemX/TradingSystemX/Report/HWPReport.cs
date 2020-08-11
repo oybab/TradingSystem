@@ -82,7 +82,7 @@ namespace Oybab.TradingSystemX.Report
 
 
             string fontFamilyName = reportModel.Fonts.FirstOrDefault().Value.FontFamily;
-            string fontAddress = "";
+            string fontAddress = "https://oybab.net/res/tradingsystem/fonts/" + fontFamilyName + "/" + fontFamilyName;
 
             if (Device.RuntimePlatform == Device.iOS)
             {
@@ -98,8 +98,8 @@ namespace Oybab.TradingSystemX.Report
             }
             else
             {
-                fontAddress = "src:url('https://oybab.net/res/tradingsystem/fonts/" + fontFamilyName + ".eot');"
-                            + "src:url('https://oybab.net/res/tradingsystem/fonts/" + fontFamilyName + ".eot?#iefix') format('embedded-opentype'),url('https://oybab.net/res/tradingsystem/fonts/" + fontFamilyName + ".woff2') format('woff2'),url('https://oybab.net/res/tradingsystem/fonts/" + fontFamilyName + ".woff') format('woff'),url('https://oybab.net/res/tradingsystem/fonts/" + fontFamilyName + ".ttf') format('truetype'); ";
+                fontAddress = "src:url('" + fontAddress + ".eot');"
+                            + "src:url('" + fontAddress + ".eot?#iefix') format('embedded-opentype'),url('" + fontAddress + ".woff2') format('woff2'),url(" + fontAddress + ".woff') format('woff'),url('" + fontAddress + ".ttf') format('truetype'); ";
             }
 
 
