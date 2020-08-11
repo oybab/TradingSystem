@@ -53,7 +53,7 @@ There are multiple part for this system(Download from Release page):
 
 ## Developer
 
-Before you download the source code and use make sure installed the prerequisites or download the release page and install the binary version of this system first:
+Before you download the source code and use, make sure installed the prerequisites or go to release page , download and install the binary version of this system first:
  - **.Net 4**: For PC or Tablet Client.
  - **.Net 4.5**: For Server.
  - **Visual C++ 2010 SP1 Redistributable x86**: For System.Data.SQLite.
@@ -61,6 +61,6 @@ Before you download the source code and use make sure installed the prerequisite
 ### apply
 
  1. Download the source code and open with Visual Studio.
- 2. For developing more fast, the project setting all **bin** or **obj** files created in the Position: Y:\  . So you need to download a Ramdisk tools, create a new partition Y:\  . If you don't want to do that it's fine, but you should remove items like: **<BaseIntermediateOutputPath>**, **<OutputPath>**, **<IntermediateOutputPath>** from every **.csproj** files or **Directory.Build.props** files under the project.
+ 2. For developing more fast, the project setting all **bin** or **obj** files created on the Position: Y:\(Disk Name)  . So you need to download a Ramdisk tools, create a new partition Y:\  . If you don't want to do that it's fine, but you should remove items like: `<BaseIntermediateOutputPath>`, `<OutputPath>`, `<IntermediateOutputPath>` from every **.csproj** files or **Directory.Build.props** files under the project.
  3. Open solution with Visual Studio and restore all project Nuget Packages.
  4. Start your journey.
