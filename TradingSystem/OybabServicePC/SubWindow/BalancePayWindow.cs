@@ -322,6 +322,14 @@ namespace Oybab.ServicePC.SubWindow
                 krpdgList.Rows[krpdgList.Rows.Count - 1].Cells["krpcmPrice"].ReadOnly = true;
                 krpdgList.Rows[krpdgList.Rows.Count - 1].Cells["krpcmRemark"].ReadOnly = true;
                 krpdgList.Rows[krpdgList.Rows.Count - 1].Cells["krpcmBalanceType"].ReadOnly = true;
+
+                if (model.State == 3)
+                {
+                    for (int j = 0; j < krpdgList.Rows[krpdgList.Rows.Count - 1].Cells.Count; j++)
+                    {
+                        krpdgList.Rows[krpdgList.Rows.Count - 1].Cells[j].Style.ForeColor = krpdgList.Rows[krpdgList.Rows.Count - 1].Cells[j].Style.SelectionForeColor = Color.Gray;
+                    }
+                }
             }
         }
 

@@ -1824,9 +1824,9 @@ namespace Oybab.ServicePC.SubWindow
                     {
                         List<CommonPayModel> resultList = new List<CommonPayModel>();
                         if (OrderType == 0)
-                            resultList = orderPays.Select(x => new CommonPayModel(x)).OrderByDescending(x => x.PayId).ToList();
+                            resultList = orderPays.Where(x => x.State != 3).Select(x => new CommonPayModel(x)).OrderByDescending(x => x.PayId).ToList();
                         else if (OrderType == 1)
-                            resultList = takeoutPays.Select(x => new CommonPayModel(x)).OrderByDescending(x => x.PayId).ToList();
+                            resultList = takeoutPays.Where(x => x.State != 3).Select(x => new CommonPayModel(x)).OrderByDescending(x => x.PayId).ToList();
 
 
                         if (resultList.Count() > 0)
@@ -1948,7 +1948,7 @@ namespace Oybab.ServicePC.SubWindow
                     {
                         List<CommonPayModel> resultList = new List<CommonPayModel>();
 
-                        resultList = importPays.Select(x => new CommonPayModel(x)).OrderByDescending(x => x.PayId).ToList();
+                        resultList = importPays.Where(x => x.State != 3).Select(x => new CommonPayModel(x)).OrderByDescending(x => x.PayId).ToList();
   
 
 

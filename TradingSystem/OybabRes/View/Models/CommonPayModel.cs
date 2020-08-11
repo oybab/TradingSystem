@@ -24,6 +24,7 @@ namespace Oybab.Res.View.Models
 
         public long AddTime { get; set; }
 
+        public long State { get; set; }
 
 
 
@@ -72,6 +73,7 @@ namespace Oybab.Res.View.Models
             this.Remark = model.Remark;
             this.Type = "OrderPay";
             this.PayId = model.OrderPayId;
+            this.State = model.State;
         }
 
         public CommonPayModel(TakeoutPay model)
@@ -89,6 +91,7 @@ namespace Oybab.Res.View.Models
             this.Remark = model.Remark;
             this.Type = "TakeoutPay";
             this.PayId = model.TakeoutId;
+            this.State = model.State;
         }
 
        
@@ -108,6 +111,7 @@ namespace Oybab.Res.View.Models
             this.Remark = model.Remark;
             this.Type = "ImportPay";
             this.PayId = model.ImportPayId;
+            this.State = model.State;
         }
 
 
@@ -126,6 +130,7 @@ namespace Oybab.Res.View.Models
             model.AddTime = AddTime;
             model.Remark = Remark;
             model.OrderPayId = PayId;
+            model.State = State;
 
             return model;
         }
@@ -146,6 +151,7 @@ namespace Oybab.Res.View.Models
             model.AddTime = AddTime;
             model.Remark = Remark;
             model.TakeoutPayId = PayId;
+            model.State = State;
 
             return model;
         }
@@ -169,6 +175,7 @@ namespace Oybab.Res.View.Models
             model.AddTime = AddTime;
             model.Remark = Remark;
             model.ImportPayId = PayId;
+            model.State = State;
 
             return model;
         }
