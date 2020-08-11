@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OybabServiceTablet", "Oybab
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OybabReport", "OybabReport\OybabReport.csproj", "{4A3DCC30-4346-47A0-874B-5674AB86F7BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OybabServerConsoleHost", "OybabServerConsoleHost\OybabServerConsoleHost.csproj", "{6CA72759-9A8C-4A94-A102-A162AF53A629}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -115,6 +117,18 @@ Global
 		{4A3DCC30-4346-47A0-874B-5674AB86F7BF}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{4A3DCC30-4346-47A0-874B-5674AB86F7BF}.Release|x86.ActiveCfg = Release|Any CPU
 		{4A3DCC30-4346-47A0-874B-5674AB86F7BF}.Release|x86.Build.0 = Release|Any CPU
+		{6CA72759-9A8C-4A94-A102-A162AF53A629}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CA72759-9A8C-4A94-A102-A162AF53A629}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CA72759-9A8C-4A94-A102-A162AF53A629}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{6CA72759-9A8C-4A94-A102-A162AF53A629}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{6CA72759-9A8C-4A94-A102-A162AF53A629}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6CA72759-9A8C-4A94-A102-A162AF53A629}.Debug|x86.Build.0 = Debug|Any CPU
+		{6CA72759-9A8C-4A94-A102-A162AF53A629}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CA72759-9A8C-4A94-A102-A162AF53A629}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CA72759-9A8C-4A94-A102-A162AF53A629}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{6CA72759-9A8C-4A94-A102-A162AF53A629}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{6CA72759-9A8C-4A94-A102-A162AF53A629}.Release|x86.ActiveCfg = Release|Any CPU
+		{6CA72759-9A8C-4A94-A102-A162AF53A629}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -128,6 +142,7 @@ Global
 		{0410FD27-6456-4780-8854-5205B6CD8BBD} = {59E63CC3-CBB0-4B25-A910-BEBC970D83F4}
 		{9390936E-DBE6-4F03-9CBA-3DA571D5A439} = {C5D2B9BA-15DB-45AE-BBA7-E89830B4CDCD}
 		{4A3DCC30-4346-47A0-874B-5674AB86F7BF} = {59E63CC3-CBB0-4B25-A910-BEBC970D83F4}
+		{6CA72759-9A8C-4A94-A102-A162AF53A629} = {59E63CC3-CBB0-4B25-A910-BEBC970D83F4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {05D7E733-8C5C-4FA1-A2E6-5A76BA01EA8D}

@@ -36,6 +36,7 @@ namespace Oybab.Server
             Logger.Create();
             AppDomain.CurrentDomain.AssemblyResolve -= HandleAssemblyResolve;
             AppDomain.CurrentDomain.AssemblyResolve += HandleAssemblyResolve;
+            AppDomain.CurrentDomain.UnhandledException -= CurrentDomain_UnhandledException;
             AppDomain.CurrentDomain.UnhandledException += CurrentDomain_UnhandledException;
         }
 
@@ -168,7 +169,7 @@ namespace Oybab.Server
                     NetTcpBinding tcpb = new NetTcpBinding(SecurityMode.None);
 #else
                     NetTcpBinding tcpb = new NetTcpBinding(SecurityMode.Message);
-                tcpb.Security.Message.ClientCredentialType = MessageCredentialType.Certificate;
+                    tcpb.Security.Message.ClientCredentialType = MessageCredentialType.Certificate;
 #endif
 
                     //Updated: to enable file transefer of 64 MB(67108864) 655360000(Before);
@@ -187,7 +188,7 @@ namespace Oybab.Server
                     {
                         MaxConcurrentCalls = 30,
                         MaxConcurrentInstances = 30,
-                        MaxConcurrentSessions = 30 // Init32.MaxValue(2147483647)
+                        MaxConcurrentSessions = 100 // Init32.MaxValue(2147483647)
                     });
 
                    
@@ -211,10 +212,6 @@ namespace Oybab.Server
                     // For DDNS
                     ServiceBehaviorAttribute attribute = host.Description.Behaviors.Find<ServiceBehaviorAttribute>();
                     attribute.AddressFilterMode = AddressFilterMode.Any;
-
-                   
-
-                    Resources.GetRes().App = "thisisService";
 
 
 

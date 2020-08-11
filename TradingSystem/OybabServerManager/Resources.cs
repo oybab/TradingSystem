@@ -324,7 +324,6 @@ namespace Oybab.ServerManager
         internal string RegTimeRequestCode = ""; // 时间申请码
         internal string RegCountRequestCode = ""; // 数量申请码
 
-        public string App { internal get; set; }
         internal bool IsCreateMainCheckThread { get; set; }
 
         /// <summary>
