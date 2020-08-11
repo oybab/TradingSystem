@@ -89,6 +89,9 @@ namespace Oybab.ServicePC.Pattern
 
         public override System.Windows.Forms.Padding GetContentPadding(PaletteContentStyle style, PaletteState state)
         {
+            if (Resources.GetRes().MainLang.Culture.Name != "ug-CN" && Resources.GetRes().MainLang.Culture.Name != "zh-CN")
+                return base.GetContentPadding(style, state);
+
             // 按钮不显示问题
             if ((int)style < 19)
                 return new Padding(0, 0, 0, -4);

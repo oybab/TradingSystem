@@ -160,7 +160,7 @@
     <value>Exit</value>
   </data>
 	<data name="FontName" xml:space="preserve">
-    <value>微软雅黑, Oybab Tuz</value>
+    <value>Microsoft YaHei, Oybab Tuz</value>
   </data>
 	<data name="FontSize" xml:space="preserve">
     <value>9</value>
@@ -430,7 +430,7 @@
     <value>load log failed!</value>
   </data>
 	<data name="FontName2" xml:space="preserve">
-    <value>宋体</value>
+    <value>Arial</value>
   </data>
 	<data name="Help" xml:space="preserve">
     <value>Help</value>
