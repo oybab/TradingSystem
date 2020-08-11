@@ -65,4 +65,5 @@ Before you download the source code and use, make sure installed the prerequisit
  1. Download the source code and open with Visual Studio.
  2. For developing more fast, the project setting all **bin** or **obj** files created on the Position: Y:\(Disk Name)  . So you need to download a Ramdisk tools, create a new partition Y:\  . If you don't want to do that it's fine, but you should remove items like: `<BaseIntermediateOutputPath>`, `<OutputPath>`, `<IntermediateOutputPath>` from every **.csproj** files or **Directory.Build.props** files under the project.
  3. Open solution with Visual Studio and restore all project Nuget Packages.
- 4. Start your journey.
+ 4. We recommend you run 2 Visual Studio instance when developing.(1.run `OybabServiceConsoleHost` as a server service and debugging, another 1 run `PC`/`Table`/`Phone` Client project and debugging)
+ 5. Start your journey.
