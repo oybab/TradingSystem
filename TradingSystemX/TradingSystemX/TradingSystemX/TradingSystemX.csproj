@@ -290,9 +290,6 @@
     <PackageReference Include="ZXing.Net.Mobile.Forms" Version="2.4.1" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="MainPageOld.xaml.cs">
-      <DependentUpon>MainPageOld.xaml</DependentUpon>
-    </Compile>
     <Compile Update="Pages\Controls\StatisticWebPage.xaml.cs">
       <DependentUpon>StatisticWebPage.xaml</DependentUpon>
     </Compile>

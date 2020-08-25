@@ -78,5 +78,7 @@ namespace Oybab.ServerManager.Model.Service.Common
         
         public string ExtendInfo { get; set; }
 
+        public string ExtendMessage { get; set; }
+
     }
 }

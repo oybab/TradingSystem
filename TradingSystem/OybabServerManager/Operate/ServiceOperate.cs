@@ -88,7 +88,7 @@ namespace Oybab.ServerManager.Operate
                 }
 
 
-                // 目前暂时针对PC版和平板版做个不一致提醒要求, 后续增加手机版版本对比. (目前暂时用=对比,后续再考虑是否用<来代替)
+                // (目前暂时用=对比,后续再考虑是否用<来代替, 或者使用ExtendMessage, 只提示用户, 而不是禁止登陆), 如果不希望版本对比, 请让客服端发送数据时: CurrentVersion设置为Null. 
                 if (null != toServer.CurrentVersion && toServer.CurrentVersion != GetVersion())
                 {
                     return new ToClientServiceNewRequest() { ExceptionType = ServiceExceptionType.ServerClientVersionMisalignment };
