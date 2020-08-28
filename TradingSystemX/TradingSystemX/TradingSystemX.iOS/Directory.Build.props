@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project>
  <PropertyGroup>
-    <BaseOutputPath>Y:\NET\TradingSystemX\bin</BaseOutputPath>
-     <!-- <BaseIntermediateOutputPath>Y:NETTradingSystemXobj</BaseIntermediateOutputPath> -->
+	<!--<BaseIntermediateOutputPath>obj\$(Configuration)\$(Platform)\</BaseIntermediateOutputPath>-->
+    <!--<OutputPath>bin\$(Configuration)\$(Platform)\</OutputPath>-->
+
+	<!-- Visual Studio 2019 has a Bug, did not support absolute path for obj folder when create archive for iOS: https://developercommunity.visualstudio.com/content/problem/1166708/cant-create-ios-archive-or-run-simulator-if-the-in.html -->
+	<!--<BaseIntermediateOutputPath>Y:\NET\TradingSystemX\$(MSBuildProjectName)\$(Platform)\obj\$(Configuration)\</BaseIntermediateOutputPath>-->
+	<BaseIntermediateOutputPath>obj\$(Platform)\$(Configuration)\</BaseIntermediateOutputPath>
+    <OutputPath>Y:\NET\TradingSystemX\$(MSBuildProjectName)\$(Platform)\$(Configuration)\</OutputPath>
  </PropertyGroup>
 </Project>

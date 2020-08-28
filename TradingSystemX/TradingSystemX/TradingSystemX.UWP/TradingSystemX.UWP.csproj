@@ -10,7 +10,6 @@
     <RootNamespace>Oybab.TradingSystemX.UWP</RootNamespace>
     <AssemblyName>TradingSystemX.UWP</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
-    <BaseIntermediateOutputPath>Y:\NET\TradingSystemX\obj\TradingSystemX.UWP\</BaseIntermediateOutputPath>
     <AppxPackageDir>Y:\NET\TradingSystemX\Final\TradingSystemX.UWP\AppPackages</AppxPackageDir>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion>10.0.18362.0</TargetPlatformVersion>
@@ -34,8 +33,6 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
     <DebugSymbols>true</DebugSymbols>
-    <OutputPath>Y:\NET\TradingSystemX\Debug\ARM\</OutputPath>
-    <IntermediateOutputPath>Y:\NET\TradingSystemX\ARM\Debug\</IntermediateOutputPath>
     <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
     <NoWarn>;2008</NoWarn>
     <DebugType>full</DebugType>
@@ -45,8 +42,6 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
-    <OutputPath>Y:\NET\TradingSystemX\Release\ARM\</OutputPath>
-    <IntermediateOutputPath>Y:\NET\TradingSystemX\ARM\Release\</IntermediateOutputPath>
     <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
     <Optimize>true</Optimize>
     <NoWarn>;2008</NoWarn>
@@ -59,8 +54,6 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <DebugSymbols>true</DebugSymbols>
-    <OutputPath>Y:\NET\TradingSystemX\Debug\x64\</OutputPath>
-    <IntermediateOutputPath>Y:\NET\TradingSystemX\x64\Debug\</IntermediateOutputPath>
     <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
     <NoWarn>;2008</NoWarn>
     <DebugType>full</DebugType>
@@ -70,8 +63,6 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
-    <OutputPath>Y:\NET\TradingSystemX\Release\x64\</OutputPath>
-    <IntermediateOutputPath>Y:\NET\TradingSystemX\x64\Release\</IntermediateOutputPath>
     <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
     <Optimize>true</Optimize>
     <NoWarn>;2008</NoWarn>
@@ -84,8 +75,6 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
-    <OutputPath>Y:\NET\TradingSystemX\Debug\x86\</OutputPath>
-    <IntermediateOutputPath>Y:\NET\TradingSystemX\x86\Debug\</IntermediateOutputPath>
     <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
     <NoWarn>;2008</NoWarn>
     <DebugType>full</DebugType>
@@ -95,8 +84,6 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
-    <OutputPath>Y:\NET\TradingSystemX\Release\x86\</OutputPath>
-    <IntermediateOutputPath>Y:\NET\TradingSystemX\x86\Release\</IntermediateOutputPath>
     <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
     <Optimize>true</Optimize>
     <NoWarn>;2008</NoWarn>
@@ -108,6 +95,9 @@
     <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\TradingSystem\Application\ShardAssemblyInfo.cs">
+      <Link>Properties\ShardAssemblyInfo.cs</Link>
+    </Compile>
     <Compile Include="AllResources\Implements\CloseApplication.cs" />
     <Compile Include="AllResources\Renders\CustomSwitchRenderer.cs" />
     <Compile Include="AllResources\Renders\CustomTabRenderer.cs" />

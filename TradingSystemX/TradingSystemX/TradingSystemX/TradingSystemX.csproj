@@ -3,19 +3,15 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
     <RootNamespace>Oybab.TradingSystemX</RootNamespace>
-    <BaseOutputPath>Y:\NET\TradingSystemX\bin</BaseOutputPath>
-    <BaseIntermediateOutputPath>Y:\NET\TradingSystemX\obj</BaseIntermediateOutputPath>
+<!--     <BaseIntermediateOutputPath>Y:NETTradingSystemXobj</BaseIntermediateOutputPath> -->
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebugType>portable</DebugType>
     <DebugSymbols>true</DebugSymbols>
-    <OutputPath>Y:\NET\TradingSystemX\bin\Debug\TradingSystemX\</OutputPath>
-    <IntermediateOutputPath>Y:\NET\TradingSystemX\obj\TradingSystemX\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <OutputPath>Y:\NET\TradingSystemX\bin\Release\TradingSystemX\</OutputPath>
-    <IntermediateOutputPath>Y:\NET\TradingSystemX\obj\TradingSystemX\Release\</IntermediateOutputPath>
+
   </PropertyGroup>
   <PropertyGroup>
     <UserSecretsId>6b584437-3274-4cfd-81b0-2165c918f149</UserSecretsId>

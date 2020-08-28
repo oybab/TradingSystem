@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project>
  <PropertyGroup>
-      <BaseOutputPath>Y:\NET\TradingSystemX\bin</BaseOutputPath> 
-     <!-- <BaseIntermediateOutputPath>Y:NETTradingSystemXobj</BaseIntermediateOutputPath> -->
+	<!--<BaseIntermediateOutputPath>obj\$(Configuration)\$(Platform)\</BaseIntermediateOutputPath>-->
+    <!--<OutputPath>bin\$(Configuration)\$(Platform)\</OutputPath>-->
+	<BaseIntermediateOutputPath>Y:\NET\TradingSystemX\$(MSBuildProjectName)\$(Platform)\obj\$(Configuration)\</BaseIntermediateOutputPath>
+    <OutputPath>Y:\NET\TradingSystemX\$(MSBuildProjectName)\$(Platform)\$(Configuration)\</OutputPath>
  </PropertyGroup>
 </Project>

@@ -22,14 +22,11 @@
     <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <BaseIntermediateOutputPath>Y:\NET\TradingSystemX\obj\TradingSystemX.Droid</BaseIntermediateOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>portable</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>Y:\NET\TradingSystemX\Debug\TradingSystemX.Droid\</OutputPath>
-    <IntermediateOutputPath>Y:\NET\TradingSystemX\obj\TradingSystemX.Droid\Debug\</IntermediateOutputPath>
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -37,14 +34,14 @@
     <AndroidKeyStore>false</AndroidKeyStore>
     <AndroidSigningStorePass>MM00002619</AndroidSigningStorePass>
     <AndroidSigningKeyStore>E:\Project\Visual Studio 2013\Want\Digital Sign\OybabSoftKey.pfx</AndroidSigningKeyStore>
+    <IntermediateOutputPath>Y:\NET\TradingSystemX\$(MSBuildProjectName)\$(Platform)\obj\$(Configuration)\</IntermediateOutputPath>
+    <OutputPath>Y:\NET\TradingSystemX\$(MSBuildProjectName)\$(Platform)\$(Configuration)\</OutputPath>
     <MandroidI18n />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>false</DebugSymbols>
     <DebugType>portable</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>Y:\NET\TradingSystemX\Release\TradingSystemX.Droid\</OutputPath>
-    <IntermediateOutputPath>Y:\NET\TradingSystemX\obj\TradingSystemX.Droid\Release\</IntermediateOutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidManagedSymbols>true</AndroidManagedSymbols>
@@ -52,6 +49,8 @@
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
     <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
     <AndroidSupportedAbis>armeabi-v7a;x86;x86_64;arm64-v8a</AndroidSupportedAbis>
+    <IntermediateOutputPath>Y:\NET\TradingSystemX\$(MSBuildProjectName)\$(Platform)\obj\$(Configuration)\</IntermediateOutputPath>
+    <OutputPath>Y:\NET\TradingSystemX\$(MSBuildProjectName)\$(Platform)\$(Configuration)\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
@@ -82,6 +81,9 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\TradingSystem\Application\ShardAssemblyInfo.cs">
+      <Link>Properties\ShardAssemblyInfo.cs</Link>
+    </Compile>
     <Compile Include="AllResources\Implements\CloseApplication.cs" />
     <Compile Include="AllResources\Implements\DroidKeyboardHelper.cs" />
     <Compile Include="MainActivity.cs" />

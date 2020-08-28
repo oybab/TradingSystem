@@ -14,7 +14,6 @@
     <AssemblyName>TradingSystemX.iOS</AssemblyName>
     <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
-    <BaseIntermediateOutputPath>Y:\NET\TradingSystemX\obj\TradingSystemX.iOS</BaseIntermediateOutputPath>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <ProvisioningType>automatic</ProvisioningType>
   </PropertyGroup>
@@ -22,8 +21,6 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\iPhoneSimulator\Debug\</OutputPath>
-    <IntermediateOutputPath>bin\obj</IntermediateOutputPath>
     <DefineConstants>DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -38,8 +35,6 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\iPhoneSimulator\Release\</OutputPath>
-    <IntermediateOutputPath>bin\obj</IntermediateOutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <MtouchLink>None</MtouchLink>
@@ -52,8 +47,6 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\iphone\Debug</OutputPath>
-    <IntermediateOutputPath>bin\obj</IntermediateOutputPath>
     <DefineConstants>DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -74,8 +67,6 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\iphone\Release</OutputPath>
-    <IntermediateOutputPath>bin\iphone\obj</IntermediateOutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <MtouchArch>ARM64</MtouchArch>
@@ -94,6 +85,9 @@
     <AppExtensionDebugBundleId />
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\TradingSystem\Application\ShardAssemblyInfo.cs">
+      <Link>Properties\ShardAssemblyInfo.cs</Link>
+    </Compile>
     <Compile Include="AllResources\Implements\CloseApplication.cs" />
     <Compile Include="AllResources\Implements\iOSKeyboardHelper.cs" />
     <Compile Include="AllResources\Implements\PageRenderer.cs" />
