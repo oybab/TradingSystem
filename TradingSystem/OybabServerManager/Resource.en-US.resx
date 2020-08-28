@@ -1822,7 +1822,7 @@
 		<value>Confirm add {0}{1} from {2} to {3}?</value>
 	</data>
 	<data name="BalanceTransfer" xml:space="preserve">
-		<value>Balance Transfer </value>
+		<value>Balance Transfer</value>
 	</data>
 	<data name="OldBalance" xml:space="preserve">
 		<value>Old balance</value>

@@ -268,7 +268,7 @@
     <value>加载歌曲根路径错误, 请检查配置文件！</value>
   </data>
 	<data name="Exception_NotSupprtKey" xml:space="preserve">
-    <value>无法连接数据库, 不支持此USB-KEY</value>
+    <value>无法连接数据库, 不支持此USB-KEY.</value>
   </data>
 	<data name="InputData" xml:space="preserve">
     <value>导入数据</value>
@@ -1939,7 +1939,7 @@
 		<value>捐助</value>
 	</data>
 	<data name="SourceCode" xml:space="preserve">
-		<value> 源代码</value>
+		<value>源代码</value>
 	</data>
 	<data name="ConfirmItemBalanceNotEnough" xml:space="preserve">
 		<value>{0}余额不够, 确认?</value>
