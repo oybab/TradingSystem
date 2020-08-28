@@ -145,9 +145,6 @@ Global
 		{6CA72759-9A8C-4A94-A102-A162AF53A629} = {59E63CC3-CBB0-4B25-A910-BEBC970D83F4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		RESX_ConfirmAddLanguageFile = True
-		RESX_AutoCreateNewLanguageFiles = True
 		SolutionGuid = {05D7E733-8C5C-4FA1-A2E6-5A76BA01EA8D}
-		RESX_Rules = {"EnabledRules":["StringFormat","WhiteSpaceLead","WhiteSpaceTail","PunctuationLead"]}
 	EndGlobalSection
 EndGlobal
