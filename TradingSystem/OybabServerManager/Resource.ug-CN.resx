@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
+	<!-- 
     Microsoft ResX Schema 
     
     Version 2.0
@@ -59,1889 +59,1889 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
-  <resheader name="resmimetype">
-    <value>text/microsoft-resx</value>
-  </resheader>
-  <resheader name="version">
-    <value>2.0</value>
-  </resheader>
-  <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <data name="Abort" xml:space="preserve">
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Abort" xml:space="preserve">
     <value>چېكىنىش</value>
   </data>
-  <data name="About" xml:space="preserve">
+	<data name="About" xml:space="preserve">
     <value>ھەققىدە</value>
   </data>
-  <data name="Add" xml:space="preserve">
+	<data name="Add" xml:space="preserve">
     <value>قوشۇش</value>
   </data>
-  <data name="Cancel" xml:space="preserve">
+	<data name="Cancel" xml:space="preserve">
     <value>ئۆچۈرۈش</value>
   </data>
-  <data name="Change" xml:space="preserve">
+	<data name="Change" xml:space="preserve">
     <value>ئۆزگەرتىش</value>
   </data>
-  <data name="ChangeFaild" xml:space="preserve">
+	<data name="ChangeFaild" xml:space="preserve">
     <value>ئۆزگەرتىش مەغلۇپ بولدى !‏</value>
   </data>
-  <data name="ChangePassword" xml:space="preserve">
+	<data name="ChangePassword" xml:space="preserve">
     <value>شىفىر ئۆزگەرتىش</value>
   </data>
-  <data name="ChangeSuccess" xml:space="preserve">
+	<data name="ChangeSuccess" xml:space="preserve">
     <value>ئۆزگەرتىش مۇۋەپپىقىيەتلىك بولدى !‏</value>
   </data>
-  <data name="Close" xml:space="preserve">
+	<data name="Close" xml:space="preserve">
     <value>تاقاش</value>
   </data>
-  <data name="Company" xml:space="preserve">
+	<data name="Company" xml:space="preserve">
     <value>خوتەن ئويباب ئۇچۇر-تېخنىكا چەكلىك شىركىتى</value>
   </data>
-  <data name="ConfirmPassword" xml:space="preserve">
+	<data name="ConfirmPassword" xml:space="preserve">
     <value>قايتا كىرگۈزۈش</value>
   </data>
-  <data name="Copyright" xml:space="preserve">
+	<data name="Copyright" xml:space="preserve">
     <value>ئويباب شىركىتى  نەشىر ھوقوقىغا ئىگە ‏.‏</value>
   </data>
-  <data name="Delete" xml:space="preserve">
+	<data name="Delete" xml:space="preserve">
     <value>ئۆچۈرۈش</value>
   </data>
-  <data name="DeleteFailt" xml:space="preserve">
+	<data name="DeleteFailt" xml:space="preserve">
     <value>ئۆچۈرۈش  مەغلۇپ بولدى !‏</value>
   </data>
-  <data name="DeleteSuccess" xml:space="preserve">
+	<data name="DeleteSuccess" xml:space="preserve">
     <value>ئۆچۈرۈش ئۇتۇقلۇق بولدى !‏</value>
   </data>
-  <data name="Exit" xml:space="preserve">
+	<data name="Exit" xml:space="preserve">
     <value>چېكىنىش</value>
   </data>
-  <data name="FontName" xml:space="preserve">
+	<data name="FontName" xml:space="preserve">
     <value>Oybab Tuz, 微软雅黑</value>
   </data>
-  <data name="FontSize" xml:space="preserve">
+	<data name="FontSize" xml:space="preserve">
     <value>10.5</value>
   </data>
-  <data name="Id" xml:space="preserve">
+	<data name="Id" xml:space="preserve">
     <value>نومۇر</value>
   </data>
-  <data name="Ignore" xml:space="preserve">
+	<data name="Ignore" xml:space="preserve">
     <value>مەيلى</value>
   </data>
-  <data name="Language" xml:space="preserve">
+	<data name="Language" xml:space="preserve">
     <value>تىل</value>
   </data>
-  <data name="Login" xml:space="preserve">
+	<data name="Login" xml:space="preserve">
     <value>كىرىش</value>
   </data>
-  <data name="LoginValid" xml:space="preserve">
+	<data name="LoginValid" xml:space="preserve">
     <value>‏ {0} نى توغرا ۋە تۇلۇق كىرگۈزۈڭ !‏</value>
   </data>
-  <data name="NewPassword" xml:space="preserve">
+	<data name="NewPassword" xml:space="preserve">
     <value>يېڭى شىفىر</value>
   </data>
-  <data name="No" xml:space="preserve">
+	<data name="No" xml:space="preserve">
     <value>ياق</value>
   </data>
-  <data name="OldPassword" xml:space="preserve">
+	<data name="OldPassword" xml:space="preserve">
     <value>كونا شىفىر</value>
   </data>
-  <data name="OldPasswordFaild" xml:space="preserve">
+	<data name="OldPasswordFaild" xml:space="preserve">
     <value>كونا شىفىر توغرا ئەمەش،قايتا كىرگۈرۈڭ !‏</value>
   </data>
-  <data name="Password" xml:space="preserve">
+	<data name="Password" xml:space="preserve">
     <value>شىفىر</value>
   </data>
-  <data name="PwdError" xml:space="preserve">
+	<data name="PwdError" xml:space="preserve">
     <value>شىفىر خاتا !‏</value>
   </data>
-  <data name="Refresh" xml:space="preserve">
+	<data name="Refresh" xml:space="preserve">
     <value>يېڭىلاش</value>
   </data>
-  <data name="Retry" xml:space="preserve">
+	<data name="Retry" xml:space="preserve">
     <value>قايتا سىناش</value>
   </data>
-  <data name="RightToLeft" xml:space="preserve">
+	<data name="RightToLeft" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="Save" xml:space="preserve">
+	<data name="Save" xml:space="preserve">
     <value>ساقلاش</value>
   </data>
-  <data name="SaveFailt" xml:space="preserve">
+	<data name="SaveFailt" xml:space="preserve">
     <value>ساقلاش  مەغلۇپ بولدى !‏</value>
   </data>
-  <data name="SaveSuccess" xml:space="preserve">
+	<data name="SaveSuccess" xml:space="preserve">
     <value>ساقلاش ئۇتۇقلۇق بولدى !‏</value>
   </data>
-  <data name="Search" xml:space="preserve">
+	<data name="Search" xml:space="preserve">
     <value>ئىزدەش</value>
   </data>
-  <data name="Total" xml:space="preserve">
+	<data name="Total" xml:space="preserve">
     <value>جەمئىي</value>
   </data>
-  <data name="TwoNewPasswordNotEqual" xml:space="preserve">
+	<data name="TwoNewPasswordNotEqual" xml:space="preserve">
     <value>ئىككى قېتىم كىرگۈزگەن شىفىر ئوخشاش ئەمەش،قايتا كىرگۈرۈڭ !‏</value>
   </data>
-  <data name="UpdateInfo" xml:space="preserve">
+	<data name="UpdateInfo" xml:space="preserve">
     <value>يېڭى نۇسخا بايقالدى</value>
   </data>
-  <data name="USBKey_Warn" xml:space="preserve">
+	<data name="USBKey_Warn" xml:space="preserve">
     <value>USB-KEY نى كىرگۈزۈپ قايتا سىناڭ ، ياكى سېستىمىدىن چېكىنىڭ!‏</value>
   </data>
-  <data name="UserLogin" xml:space="preserve">
+	<data name="UserLogin" xml:space="preserve">
     <value>ئابونىت كىرىش</value>
   </data>
-  <data name="UserName" xml:space="preserve">
+	<data name="UserName" xml:space="preserve">
     <value>ئابونېنت</value>
   </data>
-  <data name="Warn" xml:space="preserve">
+	<data name="Warn" xml:space="preserve">
     <value>ئاگاھلاندۇرۇش</value>
   </data>
-  <data name="Yes" xml:space="preserve">
+	<data name="Yes" xml:space="preserve">
     <value>ھەئە</value>
   </data>
-  <data name="OK" xml:space="preserve">
+	<data name="OK" xml:space="preserve">
     <value>ماقۇل</value>
   </data>
-  <data name="Error" xml:space="preserve">
+	<data name="Error" xml:space="preserve">
     <value>خاتالىق</value>
   </data>
-  <data name="CurrentKeyName" xml:space="preserve">
+	<data name="CurrentKeyName" xml:space="preserve">
     <value>نۆۋەتتىكى‏‎ USB-KEY ئىسمى: {0}.‏</value>
   </data>
-  <data name="Exception_CheckSqlAndNet" xml:space="preserve">
+	<data name="Exception_CheckSqlAndNet" xml:space="preserve">
     <value>سانشىغىر ئامبىرىغا ئۇلۇنۇشتا خاتالىق كۈرۈلدى، تور ياكى  سانشىغىر ئامبىرى سەپلەش ھۆججىتىنى تەكشۈرۈڭ !‏</value>
   </data>
-  <data name="Exception_LoadCacheError" xml:space="preserve">
+	<data name="Exception_LoadCacheError" xml:space="preserve">
     <value>بۇففېرنى يۈكلەشدە خاتالىق كۆرۈلدى .‏</value>
   </data>
-  <data name="Exception_LoadMediaRoot" xml:space="preserve">
+	<data name="Exception_LoadMediaRoot" xml:space="preserve">
     <value>ناخشا باش ئادرىسىنى يۈكلەشدە خاتالىق كۈرۈلدى، سەپلەش ھۆججىتىنى تەكشۇرۈڭ !‏ ‏</value>
   </data>
-  <data name="Exception_NotSupprtKey" xml:space="preserve">
+	<data name="Exception_NotSupprtKey" xml:space="preserve">
     <value>سانشىغىر ئامبىرىغا ئولىنالمىدى ، بۇ USB-KEY‎ نى قوللىمايدۇ!‏</value>
   </data>
-  <data name="InputData" xml:space="preserve">
+	<data name="InputData" xml:space="preserve">
     <value>سانشىغىر كىرگۈزۈش</value>
   </data>
-  <data name="OutputData" xml:space="preserve">
+	<data name="OutputData" xml:space="preserve">
     <value>سانشىغىر چىقىرىش</value>
   </data>
-  <data name="UpdateNonReturnOrCantRead" xml:space="preserve">
+	<data name="UpdateNonReturnOrCantRead" xml:space="preserve">
     <value>يېڭىلىق قۇرۇغ قايتقان ياكى ئوقۇش مەغلۇپ بولدى .‏</value>
   </data>
-  <data name="UpdateUnableError" xml:space="preserve">
+	<data name="UpdateUnableError" xml:space="preserve">
     <value>.{0} : Code ،يېڭىلىقنى تەكشۈرۈش مەغلۇپ بولدى.</value>
   </data>
-  <data name="Exception_ReadResourceStrError" xml:space="preserve">
+	<data name="Exception_ReadResourceStrError" xml:space="preserve">
     <value>مەنبە ھەرپىنى ئوقۇش مەغلۇپ بولدى !‏</value>
   </data>
-  <data name="CompanyLogoImage" xml:space="preserve">
+	<data name="CompanyLogoImage" xml:space="preserve">
     <value>logou.png</value>
   </data>
-  <data name="Exception_OutputData" xml:space="preserve">
+	<data name="Exception_OutputData" xml:space="preserve">
     <value>سانشىغىر چىقىرىش مەغلۇپ بولدى !‏</value>
   </data>
-  <data name="Exception_InputData" xml:space="preserve">
+	<data name="Exception_InputData" xml:space="preserve">
     <value>سانشىغىر كىرگۈزۈش مەغلۇپ بولدى !‏</value>
   </data>
-  <data name="Exception_InputReadData" xml:space="preserve">
+	<data name="Exception_InputReadData" xml:space="preserve">
     <value>سانشىغىر كىرگۈزۈپ ئوقۇش مەغلۇپ بولدى !‏</value>
   </data>
-  <data name="InputDataSuccess" xml:space="preserve">
+	<data name="InputDataSuccess" xml:space="preserve">
     <value>سانشىغىر كىرگۈزۈش ئۇتۇقلۇق بولدى !‏</value>
   </data>
-  <data name="OutputDataSuccess" xml:space="preserve">
+	<data name="OutputDataSuccess" xml:space="preserve">
     <value>سانشىغىر چىقىرىش ئۇتۇقلۇق بولدى !‏</value>
   </data>
-  <data name="File" xml:space="preserve">
+	<data name="File" xml:space="preserve">
     <value>ھۆججەت</value>
   </data>
-  <data name="Tools" xml:space="preserve">
+	<data name="Tools" xml:space="preserve">
     <value>قۇرال</value>
   </data>
-  <data name="Page" xml:space="preserve">
+	<data name="Page" xml:space="preserve">
     <value>بەت</value>
   </data>
-  <data name="All" xml:space="preserve">
+	<data name="All" xml:space="preserve">
     <value>بارلىق</value>
   </data>
-  <data name="FolderName" xml:space="preserve">
+	<data name="FolderName" xml:space="preserve">
     <value>ھۆججەت قىسقۇچ نامى</value>
   </data>
-  <data name="IgnoreData" xml:space="preserve">
-    <value>بەزى سانشىفىرلار ساقلانماپتۇ، مەيلىمۇ !‏</value>
+	<data name="IgnoreData" xml:space="preserve">
+    <value>بەزى سانشىفىرلار ساقلانماپتۇ، مەيلىمۇ ؟‏</value>
   </data>
-  <data name="ImageName" xml:space="preserve">
+	<data name="ImageName" xml:space="preserve">
     <value>رەسىم نامى</value>
   </data>
-  <data name="More" xml:space="preserve">
+	<data name="More" xml:space="preserve">
     <value>تېخىمۇ كۆپ</value>
   </data>
-  <data name="AddDescription" xml:space="preserve">
-    <value>يېڭى بىر سانشىغىر قوشۇش‏</value>
+	<data name="AddDescription" xml:space="preserve">
+    <value>يېڭى بىر سانشىغىر قوشۇش‏.‏</value>
   </data>
-  <data name="DeleteDescription" xml:space="preserve">
-    <value>نۆۋەتتىكى سانشىغىرنى يۇيۇش‏</value>
+	<data name="DeleteDescription" xml:space="preserve">
+    <value>نۆۋەتتىكى سانشىغىرنى يۇيۇش‏.‏</value>
   </data>
-  <data name="SaveDescription" xml:space="preserve">
+	<data name="SaveDescription" xml:space="preserve">
     <value>نۆۋەتتىكى يېڭى قوشۇلغان ياكى ئۆزگەرتىلگەن سانشىغىرنى ساقلاش‏</value>
   </data>
-  <data name="FileName" xml:space="preserve">
+	<data name="FileName" xml:space="preserve">
     <value>ھۆججەت نامى</value>
   </data>
-  <data name="PleaseEditBefore" xml:space="preserve">
+	<data name="PleaseEditBefore" xml:space="preserve">
     <value>ئاۋال تەھرىرلەشنى ئايافلاشتۇرۇڭ !‏</value>
   </data>
-  <data name="SureDelete" xml:space="preserve">
+	<data name="SureDelete" xml:space="preserve">
     <value>ئۆچۈرۈشنى جەزىملەشتۈرەمسىز؟</value>
   </data>
-  <data name="Exception_NotFound" xml:space="preserve">
+	<data name="Exception_NotFound" xml:space="preserve">
     <value>بۇ {0} تېپىلمىدى !‏</value>
   </data>
-  <data name="ErrorBig" xml:space="preserve">
+	<data name="ErrorBig" xml:space="preserve">
     <value>يوچۇق بايقالدى</value>
   </data>
-  <data name="Select" xml:space="preserve">
+	<data name="Select" xml:space="preserve">
     <value>تاللاش</value>
   </data>
-  <data name="System" xml:space="preserve">
+	<data name="System" xml:space="preserve">
     <value>سېستىما</value>
   </data>
-  <data name="AllPage" xml:space="preserve">
+	<data name="AllPage" xml:space="preserve">
     <value>بەت</value>
   </data>
-  <data name="AllPage2" xml:space="preserve">
+	<data name="AllPage2" xml:space="preserve">
     <value>جەمئىي</value>
   </data>
-  <data name="CurrentPage" xml:space="preserve">
+	<data name="CurrentPage" xml:space="preserve">
     <value>‏-بەت</value>
   </data>
-  <data name="CurrentPage2" xml:space="preserve">
+	<data name="CurrentPage2" xml:space="preserve">
     <value>ھازىرقى</value>
   </data>
-  <data name="LastPage" xml:space="preserve">
+	<data name="LastPage" xml:space="preserve">
     <value>ئالدىنقى بەت</value>
   </data>
-  <data name="NextPage" xml:space="preserve">
+	<data name="NextPage" xml:space="preserve">
     <value>كىيىنكى بەت</value>
   </data>
-  <data name="CompanyUrlStr" xml:space="preserve">
+	<data name="CompanyUrlStr" xml:space="preserve">
     <value>تور ئادرېسى</value>
   </data>
-  <data name="ExitPassword" xml:space="preserve">
+	<data name="ExitPassword" xml:space="preserve">
     <value>چىكىنىش شىغىرى</value>
   </data>
-  <data name="MobileNoStr" xml:space="preserve">
+	<data name="MobileNoStr" xml:space="preserve">
     <value>تېلېغون نۇمۇرى</value>
   </data>
-  <data name="Reset" xml:space="preserve">
+	<data name="Reset" xml:space="preserve">
     <value>ئەسلىگە كەلتۈرۈش</value>
   </data>
-  <data name="NotFoundUSBKEY" xml:space="preserve">
-    <value>تېپىلمىدى ‏!‏‏‏‎ USB-KEY</value>
+	<data name="NotFoundUSBKEY" xml:space="preserve">
+    <value>USB-KEY تېپىلمىدى !‏</value>
   </data>
-  <data name="Back" xml:space="preserve">
+	<data name="Back" xml:space="preserve">
     <value>قايتىش</value>
   </data>
-  <data name="MuteRestore" xml:space="preserve">
+	<data name="MuteRestore" xml:space="preserve">
     <value>ئۈنلۈك</value>
   </data>
-  <data name="UpdateAlert" xml:space="preserve">
+	<data name="UpdateAlert" xml:space="preserve">
     <value>سېستىما يېڭى نۇسخىسى بايقالدى ، ۋاقتىدا يېڭىلىۋېلىڭ !‏</value>
   </data>
-  <data name="Exception_CheckSqlAndFile" xml:space="preserve">
+	<data name="Exception_CheckSqlAndFile" xml:space="preserve">
     <value>سانشىغىر ئامبىرىغا ئۇلۇنۇشتا خاتالىق كۈرۈلدى، سانشىغىر ھۆججىتى ياكى  سانشىغىر ئامبىرى سەپلەش ھۆججىتىنى تەكشۈرۈڭ !‏</value>
   </data>
-  <data name="CompanyShortName" xml:space="preserve">
+	<data name="CompanyShortName" xml:space="preserve">
     <value>ئويباب</value>
   </data>
-  <data name="CompleteInput" xml:space="preserve">
+	<data name="CompleteInput" xml:space="preserve">
     <value>سانشىفىرنى تۇلۇق كىرگۈزۈڭ !‏</value>
   </data>
-  <data name="VersionNo" xml:space="preserve">
+	<data name="VersionNo" xml:space="preserve">
     <value>نۇسخا نۇمۇرى</value>
   </data>
-  <data name="SoftPlayerDescription" xml:space="preserve">
+	<data name="SoftPlayerDescription" xml:space="preserve">
     <value>ھەرقانداق تەلەپ-پىكىر بولسا بىز بىلەن ئالاقىلىشىڭ، ئالاقىلىشىش ئۇسۇلىمىزنى: "سېستىما---ھەققىدە" ئارقىلىق كۆرۈڭ .‏</value>
   </data>
-  <data name="ChangeLanguage" xml:space="preserve">
+	<data name="ChangeLanguage" xml:space="preserve">
     <value>تىل ئالماشتۇرۇش</value>
   </data>
-  <data name="ChangeLanguageFailt" xml:space="preserve">
+	<data name="ChangeLanguageFailt" xml:space="preserve">
     <value>تىل ئالماشتۇرۇش مەغلۇپ بولدى !‏</value>
   </data>
-  <data name="ChangeLanguageSuccess" xml:space="preserve">
+	<data name="ChangeLanguageSuccess" xml:space="preserve">
     <value>تىل ئالماشتۇرۇش ئۇتۇقلۇق بولدى، سېستىمىنى قايتا قوزغاتقاندىن كېيىن ئۆزگىرەيدۇ  !‏</value>
   </data>
-  <data name="Exception_InvalidLanguage" xml:space="preserve">
+	<data name="Exception_InvalidLanguage" xml:space="preserve">
     <value>سېستىما تىلى ئىناۋەتسىز ياكى مەۋجۈت ئەمەس، سەپلەش ھۆججىتىنى تەكشۇرۈڭ !‏</value>
   </data>
-  <data name="Exception_LogError" xml:space="preserve">
+	<data name="Exception_LogError" xml:space="preserve">
     <value>خاتىرىنى يۈكلەش مەغلۇپ بولدى !‏</value>
   </data>
-  <data name="FontName2" xml:space="preserve">
+	<data name="FontName2" xml:space="preserve">
     <value>Oybab Tuz</value>
   </data>
-  <data name="Help" xml:space="preserve">
+	<data name="Help" xml:space="preserve">
     <value>ياردەم</value>
   </data>
-  <data name="Exception_InvalidDB" xml:space="preserve">
+	<data name="Exception_InvalidDB" xml:space="preserve">
     <value>سانشىغىر ئامبىرى ھۆججىتى ئىناۋەتسىز !‏</value>
   </data>
-  <data name="Exception_KeyKeyError" xml:space="preserve">
+	<data name="Exception_KeyKeyError" xml:space="preserve">
     <value>USB-KEY Key غا ئىرىشىشتا خاتالىق كۈرۈلدى. خاتالىق:‏{0},{1}‏.‏</value>
   </data>
-  <data name="Exception_ApplicationCheckFaild" xml:space="preserve">
+	<data name="Exception_ApplicationCheckFaild" xml:space="preserve">
     <value>پروگراممىنى تەكشۈرۈش مەغلۇپ بولدى !‏</value>
   </data>
-  <data name="Exception_CloseRequestFaild" xml:space="preserve">
+	<data name="Exception_CloseRequestFaild" xml:space="preserve">
     <value>ئۆچۈرۈش تەلىپىنى ئەۋەتىش مەغلۇپ بولدى !‏</value>
   </data>
-  <data name="Exception_EncryptedRequestFaild" xml:space="preserve">
+	<data name="Exception_EncryptedRequestFaild" xml:space="preserve">
     <value>شىفىرلاش تەلىپىنى ئەۋەتىش مەغلۇپ بولدى !‏</value>
   </data>
-  <data name="Exception_LockRequestFaild" xml:space="preserve">
+	<data name="Exception_LockRequestFaild" xml:space="preserve">
     <value>قۇلۇپلاش تەلىپىنى ئەۋەتىش مەغلۇپ بولدى !‏</value>
   </data>
-  <data name="Exception_NewRequestFailt" xml:space="preserve">
+	<data name="Exception_NewRequestFailt" xml:space="preserve">
     <value>يېڭى ئالاقە تەلىپىنى ئەۋەتىش مەغلۇپ بولدى !‏ {0}خاتالىق نۇمۇرى: 101</value>
   </data>
-  <data name="Exception_OutClientLimitFaild" xml:space="preserve">
+	<data name="Exception_OutClientLimitFaild" xml:space="preserve">
     <value>ئەڭ يۇقىرى ئۇلىنىش سانىدىن ئېشىپ كەتتى !‏ {0}خاتالىق نۇمۇرى: 102</value>
   </data>
-  <data name="Exception_RemoteServerConn" xml:space="preserve">
+	<data name="Exception_RemoteServerConn" xml:space="preserve">
     <value>يىراق مۇلازىمېتىرغا ئۇلىنىش مەغلۇپ بولدى !‏</value>
   </data>
-  <data name="Exception_ServerCantCorrConn" xml:space="preserve">
+	<data name="Exception_ServerCantCorrConn" xml:space="preserve">
     <value>يىراق مۇلازىمېتىر بىلەن نۇرمال ئالاقە ساقلاش مەغلۇپ بولدى ! ‏قايتا سىناڭ ياكى سېستىمىدىن چېكىنىڭ ‏!‏</value>
   </data>
-  <data name="Exception_ServerCheckFaild" xml:space="preserve">
+	<data name="Exception_ServerCheckFaild" xml:space="preserve">
     <value>مۇلازىمېتىر‏ KEY نى تەكشۈرۈشتە خاتالىق يۈز بەردى !</value>
   </data>
-  <data name="Exception_ServerFaild" xml:space="preserve">
+	<data name="Exception_ServerFaild" xml:space="preserve">
     <value>مۇلازىمېتىردا خاتالىق يۈز بەردى !‏</value>
   </data>
-  <data name="Exception_ServerKeyFaild" xml:space="preserve">
+	<data name="Exception_ServerKeyFaild" xml:space="preserve">
     <value>مۇلازىمېتىر KEY دە خاتالىق يۈز بەردى!‏</value>
   </data>
-  <data name="Exception_SessionExpiredRetry" xml:space="preserve">
+	<data name="Exception_SessionExpiredRetry" xml:space="preserve">
     <value>ئالاقە ئەمەلدىن قالدى، قايتا سىناڭ !‏</value>
   </data>
-  <data name="Exception_SessionFaildAndTry" xml:space="preserve">
+	<data name="Exception_SessionFaildAndTry" xml:space="preserve">
     <value>ئالاقە ئەمەلدىن قالدى، قايتا سىناشقا ئۇرۇنىۋاتىدۇ !‏</value>
   </data>
-  <data name="Exception_SessionRequestFaild" xml:space="preserve">
+	<data name="Exception_SessionRequestFaild" xml:space="preserve">
     <value>ئالاقىنى داۋاملاشتۇرۇش تەلىپىنى ئەۋەتىش مەغلۇپ بولدى !‏</value>
   </data>
-  <data name="Exception_SessionUpdateFaild" xml:space="preserve">
+	<data name="Exception_SessionUpdateFaild" xml:space="preserve">
     <value>ئالاقىنى يېڭىلاش ماغلۇپ بولدى !‏</value>
   </data>
-  <data name="Exception_UIDRequestFaild" xml:space="preserve">
+	<data name="Exception_UIDRequestFaild" xml:space="preserve">
     <value>UID گە ئىرىشىش تەلىپىنى ئەۋەتىش مەغلۇپ بولدى !‏</value>
   </data>
-  <data name="SessionUpdateSuccess" xml:space="preserve">
+	<data name="SessionUpdateSuccess" xml:space="preserve">
     <value>ئالاقىنى يېڭىلاش ئۇتۇقلۇق بولدى .‏</value>
   </data>
-  <data name="Exception_SetClientTimeFailt" xml:space="preserve">
+	<data name="Exception_SetClientTimeFailt" xml:space="preserve">
     <value>يىراق مۇلازىمېتىر ۋاقتىنى نۆۋەتتىكى ۋاقىتقا ئالماشتۇرۇش مەغلۇپ بولدى .‏</value>
   </data>
-  <data name="IsHidden" xml:space="preserve">
+	<data name="IsHidden" xml:space="preserve">
     <value>يوشۇرۇش</value>
   </data>
-  <data name="Exception_CheckDataFaild" xml:space="preserve">
+	<data name="Exception_CheckDataFaild" xml:space="preserve">
     <value>يىراق مۇلازىمېتىر سانشىغىرنى قۇبۇل قىلىشتا خاتالىق يۈز بەردى !‏</value>
   </data>
-  <data name="Exception_DataNotReady" xml:space="preserve">
+	<data name="Exception_DataNotReady" xml:space="preserve">
     <value>يىراق مۇلازىمېتىر سانشىغىرى تەييار بولمىدى ! بىرئازدىن كىيىن قايتا سىناڭ !‏ خاتالىق نۇمۇرى: 107</value>
   </data>
-  <data name="Exception_ChangePWDRequestFaild" xml:space="preserve">
+	<data name="Exception_ChangePWDRequestFaild" xml:space="preserve">
     <value>شىفىر ئۆزگەرتىش تەلىپىنى ئەۋەتىش مەغلۇپ بولدى !‏</value>
   </data>
-  <data name="Exception_ValidPWDRequestFaild" xml:space="preserve">
+	<data name="Exception_ValidPWDRequestFaild" xml:space="preserve">
     <value>شىفىر تەكشۈرۈش تەلىپىنى ئەۋەتىش مەغلۇپ بولدى !‏</value>
   </data>
-  <data name="ContactUs" xml:space="preserve">
+	<data name="ContactUs" xml:space="preserve">
     <value>ئالاقىلىشىش</value>
   </data>
-  <data name="Consumption" xml:space="preserve">
+	<data name="Consumption" xml:space="preserve">
     <value>ئىستىمال</value>
   </data>
-  <data name="DealerContactWay" xml:space="preserve">
+	<data name="DealerContactWay" xml:space="preserve">
     <value>سودىگەرنىڭ ئالاقىلىشىش ئۇسۇلى</value>
   </data>
-  <data name="Mode" xml:space="preserve">
+	<data name="Mode" xml:space="preserve">
     <value>تىپى</value>
   </data>
-  <data name="Remark" xml:space="preserve">
+	<data name="Remark" xml:space="preserve">
     <value>ئىزاھات</value>
   </data>
-  <data name="Other" xml:space="preserve">
+	<data name="Other" xml:space="preserve">
     <value>باشقا</value>
   </data>
-  <data name="Exception_IPConflict" xml:space="preserve">
+	<data name="Exception_IPConflict" xml:space="preserve">
     <value>IP ئادرېسى توقۇنۇشۇپ قالدى، قايتا قوزغۇتۇڭ !‏</value>
   </data>
-  <data name="Exception_SessionInvalid" xml:space="preserve">
+	<data name="Exception_SessionInvalid" xml:space="preserve">
     <value>ئالاقە ئىناۋەتسىز ، قايتا قوزغۇتۇڭ !‏</value>
   </data>
-  <data name="Exception_InvalidPending" xml:space="preserve">
+	<data name="Exception_InvalidPending" xml:space="preserve">
     <value>ئىناۋەتسىز تىپ !‏</value>
   </data>
-  <data name="Exception_IPInvalid" xml:space="preserve">
+	<data name="Exception_IPInvalid" xml:space="preserve">
     <value>IP ئادرېسى ئىناۋەتسىز ، مۇلازىم بىلەن ئالاقىلىشىڭ ‏!‏</value>
   </data>
-  <data name="Exception_OrderExpired" xml:space="preserve">
+	<data name="Exception_OrderExpired" xml:space="preserve">
     <value>تالون ۋاقتى توشۇپ قالدى ، مۇلازىم بىلەن ئالاقىلىشىڭ ‏!‏</value>
   </data>
-  <data name="Exception_OrderInvalid" xml:space="preserve">
+	<data name="Exception_OrderInvalid" xml:space="preserve">
     <value>تالون ئىناۋەتسىز ، مۇلازىم بىلەن ئالاقىلىشىڭ ‏!‏</value>
   </data>
-  <data name="Exception_SendRequestFaild" xml:space="preserve">
+	<data name="Exception_SendRequestFaild" xml:space="preserve">
     <value>ئۇقتۇرۇش تەلىپىنى ئەۋەتىش مەغلۇپ بولدى !‏</value>
   </data>
-  <data name="Exception_SetConRequestFaild" xml:space="preserve">
+	<data name="Exception_SetConRequestFaild" xml:space="preserve">
     <value>ئىقتىدارنى بېكىتىش تەلىپىنى ئەۋەتىش مەغلۇپ بولدى !‏</value>
   </data>
-  <data name="Exception_OperateRequestFaild" xml:space="preserve">
+	<data name="Exception_OperateRequestFaild" xml:space="preserve">
     <value>مەشغۇلات تەلىپىنى ئەۋەتىش مەغلۇپ بولدى !‏</value>
   </data>
-  <data name="ChangeSet" xml:space="preserve">
+	<data name="ChangeSet" xml:space="preserve">
     <value>ئىقتىدار ئۆزگەرتىش</value>
   </data>
-  <data name="ExpenditureManager" xml:space="preserve">
+	<data name="ExpenditureManager" xml:space="preserve">
     <value>چىقىم باشقۇرۇش</value>
   </data>
-  <data name="MainPage" xml:space="preserve">
+	<data name="MainPage" xml:space="preserve">
     <value>باش بەت</value>
   </data>
-  <data name="OrderManager" xml:space="preserve">
+	<data name="OrderManager" xml:space="preserve">
     <value>تالون باشقۇرۇش</value>
   </data>
-  <data name="ProductManager" xml:space="preserve">
+	<data name="ProductManager" xml:space="preserve">
     <value>مەھسۇلات باشقۇرۇش</value>
   </data>
-  <data name="ProductTypeManager" xml:space="preserve">
+	<data name="ProductTypeManager" xml:space="preserve">
     <value>مەھسۇلات تۈرى باشقۇرۇش</value>
   </data>
-  <data name="RoomManager" xml:space="preserve">
+	<data name="RoomManager" xml:space="preserve">
     <value>ئۈستەل باشقۇرۇش</value>
   </data>
-  <data name="SoftServiceName" xml:space="preserve">
+	<data name="SoftServiceName" xml:space="preserve">
     <value>v1.1‎ ئويباب سودا سېستىمىسى</value>
   </data>
-  <data name="OperateFaild" xml:space="preserve">
+	<data name="OperateFaild" xml:space="preserve">
     <value>{0} مەغلۇپ بولدى !‏</value>
   </data>
-  <data name="ActualPrice" xml:space="preserve">
+	<data name="ActualPrice" xml:space="preserve">
     <value>ئەمەلىي باھاسى</value>
   </data>
-  <data name="AddTime" xml:space="preserve">
+	<data name="AddTime" xml:space="preserve">
     <value>قوشۇلغان ۋاقتى</value>
   </data>
-  <data name="Backstage" xml:space="preserve">
+	<data name="Backstage" xml:space="preserve">
     <value>ئارقا سۇپا</value>
   </data>
-  <data name="Count" xml:space="preserve">
+	<data name="Count" xml:space="preserve">
     <value>سانى</value>
   </data>
-  <data name="DealsPrice" xml:space="preserve">
+	<data name="DealsPrice" xml:space="preserve">
     <value>ئىتىبار سوممىسى</value>
   </data>
-  <data name="Display" xml:space="preserve">
+	<data name="Display" xml:space="preserve">
     <value>كۆرسىتىش</value>
   </data>
-  <data name="DisplayType" xml:space="preserve">
+	<data name="DisplayType" xml:space="preserve">
     <value>كۆرسىتىش تۈرى</value>
   </data>
-  <data name="EndTime" xml:space="preserve">
+	<data name="EndTime" xml:space="preserve">
     <value>ئاياقلىشىش ۋاقتى</value>
   </data>
-  <data name="FinishTime" xml:space="preserve">
+	<data name="FinishTime" xml:space="preserve">
     <value>تاماملانغان ۋاقتى</value>
   </data>
-  <data name="Hide" xml:space="preserve">
+	<data name="Hide" xml:space="preserve">
     <value>يوشۇرۇش</value>
   </data>
-  <data name="ImportTime" xml:space="preserve">
+	<data name="ImportTime" xml:space="preserve">
     <value>چىقىم ۋاقتى</value>
   </data>
-  <data name="IpAddress" xml:space="preserve">
+	<data name="IpAddress" xml:space="preserve">
     <value>IP ئادرېسى</value>
   </data>
-  <data name="Order" xml:space="preserve">
+	<data name="Order" xml:space="preserve">
     <value>رەت-تەرتىپى</value>
   </data>
-  <data name="ProductName" xml:space="preserve">
+	<data name="ProductName" xml:space="preserve">
     <value>مەھسۇلات نامى</value>
   </data>
-  <data name="ProductTypeName" xml:space="preserve">
+	<data name="ProductTypeName" xml:space="preserve">
     <value>مەھسۇلات تۈرى نامى</value>
   </data>
-  <data name="RoomNo" xml:space="preserve">
+	<data name="RoomNo" xml:space="preserve">
     <value>ئۈستەل نومۇرى</value>
   </data>
-  <data name="StartTime" xml:space="preserve">
+	<data name="StartTime" xml:space="preserve">
     <value>باشلىنش ۋاقتى</value>
   </data>
-  <data name="State" xml:space="preserve">
+	<data name="State" xml:space="preserve">
     <value>ئەھۋالى</value>
   </data>
-  <data name="TotalPrice" xml:space="preserve">
+	<data name="TotalPrice" xml:space="preserve">
     <value>ئومۇمىي باھاسى</value>
   </data>
-  <data name="UnitPrice" xml:space="preserve">
+	<data name="UnitPrice" xml:space="preserve">
     <value>پارچە باھاسى</value>
   </data>
-  <data name="PropertyUsed" xml:space="preserve">
+	<data name="PropertyUsed" xml:space="preserve">
     <value>ئاۋال بۇ سانشىفىر بىلەن مۇناسىۋەتلىڭ سانشىفىرنى ئۆزگەرتىڭ ياكى ئۆچۈرۋىتىڭ !‏</value>
   </data>
-  <data name="Exception_CountOutOfIPRequestLimit" xml:space="preserve">
+	<data name="Exception_CountOutOfIPRequestLimit" xml:space="preserve">
     <value>تەكرار تەلەپ سانى بەك كۆپ بولۇپ كەتتى ، بىرئازدىن كىيىن قايتا سىناڭ !‏ خاتالىق نۇمۇرى: 103</value>
   </data>
-  <data name="Exception_ExceptionSource" xml:space="preserve">
+	<data name="Exception_ExceptionSource" xml:space="preserve">
     <value>{0} {1} خاتالىق مەنبەسى: {2}</value>
   </data>
-  <data name="PropertyExists" xml:space="preserve">
+	<data name="PropertyExists" xml:space="preserve">
     <value>{0} ئاللىقاچان مەۋجۈت، تەكرار كىرگۈزمەڭ !‏</value>
   </data>
-  <data name="Checkout" xml:space="preserve">
+	<data name="Checkout" xml:space="preserve">
     <value>ھېساب بوغۇلغان</value>
   </data>
-  <data name="Invalid" xml:space="preserve">
+	<data name="Invalid" xml:space="preserve">
     <value>بىكار قىلىنغان</value>
   </data>
-  <data name="Confirmed" xml:space="preserve">
+	<data name="Confirmed" xml:space="preserve">
     <value>تەستىقلاندى</value>
   </data>
-  <data name="GetFailed" xml:space="preserve">
+	<data name="GetFailed" xml:space="preserve">
     <value>ئېرىشىش مەغلۇپ بولدى !‏</value>
   </data>
-  <data name="OrderDetails" xml:space="preserve">
+	<data name="OrderDetails" xml:space="preserve">
     <value>تالون تەپسىلاتى</value>
   </data>
-  <data name="OrderNo" xml:space="preserve">
+	<data name="OrderNo" xml:space="preserve">
     <value>تالون نۇمۇرى</value>
   </data>
-  <data name="PropertyError" xml:space="preserve">
+	<data name="PropertyError" xml:space="preserve">
     <value>كىرگۈزۈلگەن {0} تۇلۇق ئەمەس ياكى خاتا !‏</value>
   </data>
-  <data name="Requesting" xml:space="preserve">
+	<data name="Requesting" xml:space="preserve">
     <value>تەلاپ قىلىندى</value>
   </data>
-  <data name="Show" xml:space="preserve">
+	<data name="Show" xml:space="preserve">
     <value>كۆرۈش</value>
   </data>
-  <data name="ShowDescription" xml:space="preserve">
+	<data name="ShowDescription" xml:space="preserve">
     <value>تەپسىلاتىنى كۆرۈش</value>
   </data>
-  <data name="Time" xml:space="preserve">
+	<data name="Time" xml:space="preserve">
     <value>ۋاقىت</value>
   </data>
-  <data name="TimeLimit" xml:space="preserve">
+	<data name="TimeLimit" xml:space="preserve">
     <value>ئىزدەلگەن ۋاقىت ئارلىقى {0} كۈن ئىچىدە بولۇشى كېرەك !‏</value>
   </data>
-  <data name="ImportDetails" xml:space="preserve">
+	<data name="ImportDetails" xml:space="preserve">
     <value>چىقىم تەپسىلاتى</value>
   </data>
-  <data name="ImportId" xml:space="preserve">
+	<data name="ImportId" xml:space="preserve">
     <value>چىقىم نۇمۇرى</value>
   </data>
-  <data name="Print" xml:space="preserve">
+	<data name="Print" xml:space="preserve">
     <value>بېسىش</value>
   </data>
-  <data name="PrintDescription" xml:space="preserve">
+	<data name="PrintDescription" xml:space="preserve">
     <value>مەزمۇنىنى بېسىش</value>
   </data>
-  <data name="AddImport" xml:space="preserve">
+	<data name="AddImport" xml:space="preserve">
     <value>چىقىم قوشۇش</value>
   </data>
-  <data name="LineDataError" xml:space="preserve">
+	<data name="LineDataError" xml:space="preserve">
     <value>نۆۋەتتىكى {0}-قۇردىكى سانشىفىر تۇلۇق كىرگۈزۈلمىگەن ياكى خاتا كىرگۈزۈلگەن !‏</value>
   </data>
-  <data name="BalanceCount" xml:space="preserve">
+	<data name="BalanceCount" xml:space="preserve">
     <value>قالدۇق سانى</value>
   </data>
-  <data name="Exception_ProductCountRefreshExpiredRetry" xml:space="preserve">
+	<data name="Exception_ProductCountRefreshExpiredRetry" xml:space="preserve">
     <value>مەھسۇلات سانى ئەمەلدىن قالدى، قايتا سىناڭ !‏</value>
   </data>
-  <data name="Exception_ProductCountRefreshFailed" xml:space="preserve">
+	<data name="Exception_ProductCountRefreshFailed" xml:space="preserve">
     <value>مەھسۇلاتنى يېڭىلاش مەغلۇپ بولدى !‏</value>
   </data>
-  <data name="Exception_ProductCountRefreshRetry" xml:space="preserve">
+	<data name="Exception_ProductCountRefreshRetry" xml:space="preserve">
     <value>مەھسۇلات قالدۇق سانى يەتمىدى، قايتا مەھسۇلات تىزىملىكىنى تەلەپ قىلىۋاتىدۇ !‏</value>
   </data>
-  <data name="IsBindCount" xml:space="preserve">
+	<data name="IsBindCount" xml:space="preserve">
     <value>سانى باغلىنىشلىق</value>
   </data>
-  <data name="ProductCountRefreshSuccess" xml:space="preserve">
+	<data name="ProductCountRefreshSuccess" xml:space="preserve">
     <value>مەھسۇلاتنى يېڭىلاش ئۇتۇقلۇق بولدى.‏</value>
   </data>
-  <data name="WarningCount" xml:space="preserve">
+	<data name="WarningCount" xml:space="preserve">
     <value>ئاگاھلاندۇرۇش سانى</value>
   </data>
-  <data name="Call" xml:space="preserve">
+	<data name="Call" xml:space="preserve">
     <value>چاقىرىش</value>
   </data>
-  <data name="ConsumptionType" xml:space="preserve">
+	<data name="ConsumptionType" xml:space="preserve">
     <value>ئىستىمال باشقۇرۇش</value>
   </data>
-  <data name="ControlType" xml:space="preserve">
+	<data name="ControlType" xml:space="preserve">
     <value>يىراقتىن باشقۇرۇش</value>
   </data>
-  <data name="CostPrice" xml:space="preserve">
+	<data name="CostPrice" xml:space="preserve">
     <value>تەننەرخ باھاسى</value>
   </data>
-  <data name="Disable" xml:space="preserve">
+	<data name="Disable" xml:space="preserve">
     <value>ئىتىش</value>
   </data>
-  <data name="Enable" xml:space="preserve">
+	<data name="Enable" xml:space="preserve">
     <value>ئېچىش</value>
   </data>
-  <data name="New" xml:space="preserve">
+	<data name="New" xml:space="preserve">
     <value>يېڭى</value>
   </data>
-  <data name="Offline" xml:space="preserve">
+	<data name="Offline" xml:space="preserve">
     <value>تورسىز</value>
   </data>
-  <data name="Online" xml:space="preserve">
+	<data name="Online" xml:space="preserve">
     <value>تورلۇق</value>
   </data>
-  <data name="PaidPrice" xml:space="preserve">
+	<data name="PaidPrice" xml:space="preserve">
     <value>تاپشۇرغان پۇل</value>
   </data>
-  <data name="PermissionDenied" xml:space="preserve">
+	<data name="PermissionDenied" xml:space="preserve">
     <value>ھوقوق يوق !‏</value>
   </data>
-  <data name="BalancePrice" xml:space="preserve">
+	<data name="BalancePrice" xml:space="preserve">
     <value>قالدۇق سوممىسى</value>
   </data>
-  <data name="ChangePrice" xml:space="preserve">
+	<data name="ChangePrice" xml:space="preserve">
     <value>باھا ئۆزگەرتىش</value>
   </data>
-  <data name="ChangeTime" xml:space="preserve">
+	<data name="ChangeTime" xml:space="preserve">
     <value>ۋاقىت ئۆزگەرتىش</value>
   </data>
-  <data name="Confirm" xml:space="preserve">
+	<data name="Confirm" xml:space="preserve">
     <value>تەستىقلاش</value>
   </data>
-  <data name="Hour" xml:space="preserve">
+	<data name="Hour" xml:space="preserve">
     <value>سائەت</value>
   </data>
-  <data name="InvalidIt" xml:space="preserve">
+	<data name="InvalidIt" xml:space="preserve">
     <value>ئىناۋەتسىز</value>
   </data>
-  <data name="Minute" xml:space="preserve">
+	<data name="Minute" xml:space="preserve">
     <value>مىنۇت</value>
   </data>
-  <data name="RemainingTime" xml:space="preserve">
+	<data name="RemainingTime" xml:space="preserve">
     <value>قالدۇق ۋاقىت</value>
   </data>
-  <data name="TotalTime" xml:space="preserve">
+	<data name="TotalTime" xml:space="preserve">
     <value>ئومۇمىي ۋاقىت</value>
   </data>
-  <data name="BalanceCountNotEnough" xml:space="preserve">
+	<data name="BalanceCountNotEnough" xml:space="preserve">
     <value>مەشغۇلات مەغلۇپ بولدى، بۇ مەھسۇلاتنىڭ قالدۇق سانى پەقەت {0} دانە !‏</value>
   </data>
-  <data name="CancelOrder" xml:space="preserve">
+	<data name="CancelOrder" xml:space="preserve">
     <value>تالوننى بېكار قىلىش</value>
   </data>
-  <data name="CancelOrderDescription" xml:space="preserve">
+	<data name="CancelOrderDescription" xml:space="preserve">
     <value>نۆۋەتتىكى تالوننى بېكار قىلىش .‏</value>
   </data>
-  <data name="CheckoutOrder" xml:space="preserve">
+	<data name="CheckoutOrder" xml:space="preserve">
     <value>ھېساپ بوغۇش</value>
   </data>
-  <data name="CheckoutOrderDescription" xml:space="preserve">
+	<data name="CheckoutOrderDescription" xml:space="preserve">
     <value>نۆۋەتتىكى ھېساپنى بوغۇش .‏</value>
   </data>
-  <data name="ConfirmCancelOrder" xml:space="preserve">
+	<data name="ConfirmCancelOrder" xml:space="preserve">
     <value>نۆۋەتتىكى تالوننى بېكار قىلىشنى جەزىملەشتۈرەمسىز ؟</value>
   </data>
-  <data name="FaildThenRefreshModel" xml:space="preserve">
+	<data name="FaildThenRefreshModel" xml:space="preserve">
     <value>مەشغۇلات مەغلۇپ بولدى، تالون ئۆزگەرتىلگەن، تالوننى يېڭىلاشقا ئۇرۇنىۋاتىدۇ !‏</value>
   </data>
-  <data name="Locked" xml:space="preserve">
+	<data name="Locked" xml:space="preserve">
     <value>قۇلۇپلۇق</value>
   </data>
-  <data name="NewOrder" xml:space="preserve">
+	<data name="NewOrder" xml:space="preserve">
     <value>يېڭى تالون</value>
   </data>
-  <data name="NewOrderDescription" xml:space="preserve">
+	<data name="NewOrderDescription" xml:space="preserve">
     <value>يېڭى تالون قۇرۇش .‏</value>
   </data>
-  <data name="OperateSuccess" xml:space="preserve">
+	<data name="OperateSuccess" xml:space="preserve">
     <value>{0} ئۇتۇقلۇق بولدى !‏</value>
   </data>
-  <data name="RefreshOrderFailed" xml:space="preserve">
+	<data name="RefreshOrderFailed" xml:space="preserve">
     <value>نۆۋەتتىكى تالوننى يېڭىلاش مەغلۇپ بولدى !‏</value>
   </data>
-  <data name="ReplaceRoom" xml:space="preserve">
+	<data name="ReplaceRoom" xml:space="preserve">
     <value>ئۈستەل ئالماشتۇرۇش</value>
   </data>
-  <data name="ReplaceRoomDescription" xml:space="preserve">
+	<data name="ReplaceRoomDescription" xml:space="preserve">
     <value>نۆۋەتتىكى ئۈستەلنى باشقا ئۈستەلگە ئالماشتۇرۇش .‏</value>
   </data>
-  <data name="Request" xml:space="preserve">
+	<data name="Request" xml:space="preserve">
     <value>تەلەپ</value>
   </data>
-  <data name="Restart" xml:space="preserve">
+	<data name="Restart" xml:space="preserve">
     <value>قايتا قوزغۇتۇش</value>
   </data>
-  <data name="RestartDescription" xml:space="preserve">
+	<data name="RestartDescription" xml:space="preserve">
     <value>ئاپىراتنى قايتا قوزغۇتۇش .‏</value>
   </data>
-  <data name="SaveBeforeDelete" xml:space="preserve">
+	<data name="SaveBeforeDelete" xml:space="preserve">
     <value>ئالدى بىلەن سانشىفىرنى ساقلاڭ !‏</value>
   </data>
-  <data name="ShowOrder" xml:space="preserve">
+	<data name="ShowOrder" xml:space="preserve">
     <value>تالون كۆرۈش</value>
   </data>
-  <data name="ShowOrderDescription" xml:space="preserve">
+	<data name="ShowOrderDescription" xml:space="preserve">
     <value>تالون تەپسىلاتىنى كۆرۈش .‏</value>
   </data>
-  <data name="Shutdown" xml:space="preserve">
+	<data name="Shutdown" xml:space="preserve">
     <value>ئۆچۈرۈش</value>
   </data>
-  <data name="ShutdownDescription" xml:space="preserve">
+	<data name="ShutdownDescription" xml:space="preserve">
     <value>ئاپىراتنى ئۆچۈرۈش .‏</value>
   </data>
-  <data name="UnevenBalance" xml:space="preserve">
+	<data name="UnevenBalance" xml:space="preserve">
     <value>قالدۇق تەمپۇڭ ئەمەس !‏</value>
   </data>
-  <data name="NewRoom" xml:space="preserve">
+	<data name="NewRoom" xml:space="preserve">
     <value>يېڭى ئۈستەل</value>
   </data>
-  <data name="SendFireAlarm" xml:space="preserve">
+	<data name="SendFireAlarm" xml:space="preserve">
     <value>ئوت سىگنالى ئەۋەتىش</value>
   </data>
-  <data name="Barcode" xml:space="preserve">
+	<data name="Barcode" xml:space="preserve">
     <value>سىزىقلىق كود</value>
   </data>
-  <data name="Disabled" xml:space="preserve">
+	<data name="Disabled" xml:space="preserve">
     <value>چەكلىۋىتىلدى</value>
   </data>
-  <data name="Price" xml:space="preserve">
+	<data name="Price" xml:space="preserve">
 		<value>باھاسى</value>
 	</data>
-  <data name="IsPayByTime" xml:space="preserve">
+	<data name="IsPayByTime" xml:space="preserve">
 		<value>ۋاقىتلىقمۇ</value>
 	</data>
-  <data name="PriceHour" xml:space="preserve">
+	<data name="PriceHour" xml:space="preserve">
 		<value>ۋاقىتلىق باھاسى</value>
 	</data>
-  <data name="IsAutoExtendTime" xml:space="preserve">
+	<data name="IsAutoExtendTime" xml:space="preserve">
 		<value>ۋاقىت ئاپتوماتىك ئۇزىرامدۇ</value>
 	</data>
-  <data name="PropertyUnSame" xml:space="preserve">
+	<data name="PropertyUnSame" xml:space="preserve">
 		<value>سانشىفىر ئوخشاش ئەمەس، قايتا قوزغۇتۇپ قايتا سناڭ !‏</value>
 	</data>
-  <data name="AdminName" xml:space="preserve">
+	<data name="AdminName" xml:space="preserve">
 		<value>باشقۇرغۇچى نامى</value>
 	</data>
-  <data name="AdminManager" xml:space="preserve">
+	<data name="AdminManager" xml:space="preserve">
 		<value>باشقۇرغۇچى باشقۇرۇش</value>
 	</data>
-  <data name="AdminNo" xml:space="preserve">
+	<data name="AdminNo" xml:space="preserve">
 		<value>باشقۇرغۇچى نومۇرى</value>
 	</data>
-  <data name="Sex" xml:space="preserve">
+	<data name="Sex" xml:space="preserve">
 		<value>جىنسىي</value>
 	</data>
-  <data name="IDNumber" xml:space="preserve">
+	<data name="IDNumber" xml:space="preserve">
 		<value>كىنىشكە نومۇرى</value>
 	</data>
-  <data name="Menu" xml:space="preserve">
+	<data name="Menu" xml:space="preserve">
 		<value>تىزىملىك</value>
 	</data>
-  <data name="IsOnlyOwn" xml:space="preserve">
+	<data name="IsOnlyOwn" xml:space="preserve">
 		<value>چەكلىك باشقۇرۇش</value>
 	</data>
-  <data name="IsEnable" xml:space="preserve">
+	<data name="IsEnable" xml:space="preserve">
 		<value>ئېچىۋىتىلەمدۇ</value>
 	</data>
-  <data name="Guest" xml:space="preserve">
+	<data name="Guest" xml:space="preserve">
 		<value>مېھمان</value>
 	</data>
-  <data name="Employee" xml:space="preserve">
+	<data name="Employee" xml:space="preserve">
 		<value>خىزمەتچى</value>
 	</data>
-  <data name="Admin" xml:space="preserve">
+	<data name="Admin" xml:space="preserve">
 		<value>باشقۇرغۇچى</value>
 	</data>
-  <data name="DeviceManager" xml:space="preserve">
+	<data name="DeviceManager" xml:space="preserve">
 		<value>ئۈسكۈنە باشقۇرۇش</value>
 	</data>
-  <data name="DeviceNo" xml:space="preserve">
+	<data name="DeviceNo" xml:space="preserve">
 		<value>ئۈسكۈنە نومۇرى</value>
 	</data>
-  <data name="DeviceType" xml:space="preserve">
+	<data name="DeviceType" xml:space="preserve">
 		<value>ئۈسكۈنە تۈرى</value>
 	</data>
-  <data name="Computer" xml:space="preserve">
+	<data name="Computer" xml:space="preserve">
 		<value>كومپيۇتېر</value>
 	</data>
-  <data name="Tablet" xml:space="preserve">
+	<data name="Tablet" xml:space="preserve">
 		<value>تاختىسىمان كومپيۇتېر</value>
 	</data>
-  <data name="PrinterManager" xml:space="preserve">
+	<data name="PrinterManager" xml:space="preserve">
 		<value>پرىنتېر باشقۇرۇش</value>
 	</data>
-  <data name="PrinterName" xml:space="preserve">
+	<data name="PrinterName" xml:space="preserve">
 		<value>پرىنتېر نامى</value>
 	</data>
-  <data name="PrinterDeviceName" xml:space="preserve">
+	<data name="PrinterDeviceName" xml:space="preserve">
 		<value>پرىنتېر ئۈسكىنە نامى</value>
 	</data>
-  <data name="PrintType" xml:space="preserve">
+	<data name="PrintType" xml:space="preserve">
 		<value>پرىنتېر تۈرى</value>
 	</data>
-  <data name="Customer" xml:space="preserve">
+	<data name="Customer" xml:space="preserve">
 		<value>خېرىدار</value>
 	</data>
-  <data name="Kitchen" xml:space="preserve">
+	<data name="Kitchen" xml:space="preserve">
 		<value>ئاشخانا</value>
 	</data>
-  <data name="MemberNo" xml:space="preserve">
+	<data name="MemberNo" xml:space="preserve">
 		<value>ئەزا نومۇرى</value>
 	</data>
-  <data name="MemberManager" xml:space="preserve">
+	<data name="MemberManager" xml:space="preserve">
 		<value>ئەزا باشقۇرۇش</value>
 	</data>
-  <data name="MemberName" xml:space="preserve">
+	<data name="MemberName" xml:space="preserve">
 		<value>ئەزا نامى</value>
 	</data>
-  <data name="Occupation" xml:space="preserve">
+	<data name="Occupation" xml:space="preserve">
 		<value>كەسىپ</value>
 	</data>
-  <data name="Mobile" xml:space="preserve">
+	<data name="Mobile" xml:space="preserve">
 		<value>يانفون</value>
 	</data>
-  <data name="Phone" xml:space="preserve">
+	<data name="Phone" xml:space="preserve">
 		<value>تېلېفون</value>
 	</data>
-  <data name="Address" xml:space="preserve">
+	<data name="Address" xml:space="preserve">
 		<value>ئادرېس</value>
 	</data>
-  <data name="OfferRate" xml:space="preserve">
+	<data name="OfferRate" xml:space="preserve">
 		<value>100%/سېتىلىش نىسبىتى</value>
 	</data>
-  <data name="SpendPrice" xml:space="preserve">
+	<data name="SpendPrice" xml:space="preserve">
 		<value>چىقىم سوممىسى</value>
 	</data>
-  <data name="FavorablePrice" xml:space="preserve">
+	<data name="FavorablePrice" xml:space="preserve">
 		<value>ئېتىبار سوممىسى</value>
 	</data>
-  <data name="ExpiredTime" xml:space="preserve">
+	<data name="ExpiredTime" xml:space="preserve">
 		<value>قەرەلى توشۇش ۋاقتى</value>
 	</data>
-  <data name="Male" xml:space="preserve">
+	<data name="Male" xml:space="preserve">
 		<value>ئەر</value>
 	</data>
-  <data name="Female" xml:space="preserve">
+	<data name="Female" xml:space="preserve">
 		<value>ئايال</value>
 	</data>
-  <data name="Register" xml:space="preserve">
+	<data name="Register" xml:space="preserve">
 		<value>تىزىملاش</value>
 	</data>
-  <data name="MachineNo" xml:space="preserve">
+	<data name="MachineNo" xml:space="preserve">
 		<value>ماشىنا نومۇرى</value>
 	</data>
-  <data name="RegisterNo" xml:space="preserve">
+	<data name="RegisterNo" xml:space="preserve">
 		<value>تىزىملاش نومۇرى</value>
 	</data>
-  <data name="SoftwareExpired" xml:space="preserve">
+	<data name="SoftwareExpired" xml:space="preserve">
 		<value>سېستىمىنىڭ ئىشلىتىش ۋاقتى توشتى، قايتا تىزىملامسىز؟</value>
 	</data>
-  <data name="SoftwareSoonExpired" xml:space="preserve">
+	<data name="SoftwareSoonExpired" xml:space="preserve">
 		<value>سېستىما {0} كۈندىن كىيىن {1}ئىشلىتىش ۋاقتى توشىدۇ، ھازىر تىزىملامسىز؟</value>
 	</data>
-  <data name="SoftwareExpiredWarn" xml:space="preserve">
+	<data name="SoftwareExpiredWarn" xml:space="preserve">
 		<value>نۇرمال ئىشلىتىشىڭىزگە تەسىر كۆرسەتمەسلىكى ئۈچۈن، بىز سىزنىڭ ئەڭ كىيىن بولغاندا 7 كۈن بۇرۇن بىز بىلەن ئالاقىلىشىپ سېستىمىنى تىزىملىشىڭىزنى تەۋسىيە قىلىمىز!‏</value>
 	</data>
-  <data name="RegisterSuccess" xml:space="preserve">
+	<data name="RegisterSuccess" xml:space="preserve">
 		<value>تىزىملاش ئۇتۇقلۇق بولدى، سېستىمىنى قايتا قوزغۇتۇڭ !‏</value>
 	</data>
-  <data name="MemberPay" xml:space="preserve">
+	<data name="MemberPay" xml:space="preserve">
 		<value>ئەزا تۆلەم</value>
 	</data>
-  <data name="MemberPayDescription" xml:space="preserve">
+	<data name="MemberPayDescription" xml:space="preserve">
 		<value>ئەزا تۆلەم تەپسىلاتىنى كۆرۈش</value>
 	</data>
-  <data name="MemberPayNo" xml:space="preserve">
+	<data name="MemberPayNo" xml:space="preserve">
 		<value>ئەزا تۆلەم نومۇرى</value>
 	</data>
-  <data name="MemberBalanceNotEnough" xml:space="preserve">
+	<data name="MemberBalanceNotEnough" xml:space="preserve">
 		<value>ئەزا قالدۇق سوممىسى يېتەرلىك ئەمەس!‏</value>
 	</data>
-  <data name="AddMember" xml:space="preserve">
+	<data name="AddMember" xml:space="preserve">
 		<value>ئەزا قوشۇش</value>
 	</data>
-  <data name="PropertyNotFound" xml:space="preserve">
+	<data name="PropertyNotFound" xml:space="preserve">
 		<value>{0} تېپىلمىدى ‏!‏‏</value>
 	</data>
-  <data name="CheckoutImport" xml:space="preserve">
+	<data name="CheckoutImport" xml:space="preserve">
 		<value>چىقىم بوغۇش</value>
 	</data>
-  <data name="RoomPrice" xml:space="preserve">
+	<data name="RoomPrice" xml:space="preserve">
 		<value>ئۈستەل باھاسى</value>
 	</data>
-  <data name="CountOfoffLimit" xml:space="preserve">
+	<data name="CountOfoffLimit" xml:space="preserve">
 		<value>سانى بەلگىلەنگەن چەكتىن ئېشىپ كەتسە بولمايدۇ !‏</value>
 	</data>
-  <data name="MemberExpired" xml:space="preserve">
+	<data name="MemberExpired" xml:space="preserve">
 		<value>نۆۋەتتىكى ئەزانىڭ ۋاقتى توشۇپ قالدى !‏</value>
 	</data>
-  <data name="MemberExpiredDescription" xml:space="preserve">
+	<data name="MemberExpiredDescription" xml:space="preserve">
 		<value>ئەزانىڭ ئىناۋەتلىك ۋاقتىنى ئۆزگەرتىش !‏</value>
 	</data>
-  <data name="Unknown" xml:space="preserve">
+	<data name="Unknown" xml:space="preserve">
 		<value>نامەلۇم</value>
 	</data>
-  <data name="NotFoundProperty_Number" xml:space="preserve">
+	<data name="NotFoundProperty_Number" xml:space="preserve">
 		<value>{0} - {1} تېپىلمىدى !</value>
 	</data>
-  <data name="Exception_UnknownDevice" xml:space="preserve">
+	<data name="Exception_UnknownDevice" xml:space="preserve">
 		<value>ئۈسكىنە مەۋجۈت ئەمەس ياكى چەكلەنگەن!‏{0} خاتالىق نۇمۇرى: 111</value>
 	</data>
-  <data name="Exception_RoomCountOutOfLimit" xml:space="preserve">
+	<data name="Exception_RoomCountOutOfLimit" xml:space="preserve">
 		<value>ئۈستەل بەلگىلەنگەن ئەڭ يۇقىرى سانىدىن ئېشىپ كەتتى !‏ {0}خاتالىق نۇمۇرى: 104</value>
 	</data>
-  <data name="ResetDescription" xml:space="preserve">
+	<data name="ResetDescription" xml:space="preserve">
 		<value>باشقۇرغۇچى شىفىرىنى ئەسلىگە كەلتۈرۈش</value>
 	</data>
-  <data name="SureReset" xml:space="preserve">
+	<data name="SureReset" xml:space="preserve">
 		<value>ئەسلىگە كەلتۈرۈشنى جەزىملەشتۈرەمسىز ؟‏</value>
 	</data>
-  <data name="Exception_UnknownAdmin" xml:space="preserve">
+	<data name="Exception_UnknownAdmin" xml:space="preserve">
 		<value>باشقۇرغۇچى مەۋجۈت ئەمەس ياكى چەكلەنگەن !‏ {0} خاتالىق نۇمۇرى: 112</value>
 	</data>
-  <data name="ReturnPrice" xml:space="preserve">
+	<data name="ReturnPrice" xml:space="preserve">
 		<value>قايتۇرۇلغان پۇل</value>
 	</data>
-  <data name="BorrowPrice" xml:space="preserve">
+	<data name="BorrowPrice" xml:space="preserve">
 		<value>ئارىيەت سوممىسى</value>
 	</data>
-  <data name="KeepPrice" xml:space="preserve">
+	<data name="KeepPrice" xml:space="preserve">
 		<value>قالدۇق سوممىسى</value>
 	</data>
-  <data name="RemainingDays" xml:space="preserve">
+	<data name="RemainingDays" xml:space="preserve">
 		<value>قالدۇق كۈن</value>
 	</data>
-  <data name="Device" xml:space="preserve">
+	<data name="Device" xml:space="preserve">
 		<value>ئۈسكۈنە</value>
 	</data>
-  <data name="Table" xml:space="preserve">
+	<data name="Table" xml:space="preserve">
 		<value>ئۈستەل</value>
 	</data>
-  <data name="Package" xml:space="preserve">
+	<data name="Package" xml:space="preserve">
 		<value>قاپلاش</value>
 	</data>
-  <data name="MemberDealsPrice" xml:space="preserve">
+	<data name="MemberDealsPrice" xml:space="preserve">
 		<value>ئەزا ئىتىبار سوممىسى</value>
 	</data>
-  <data name="MemberPaidPrice" xml:space="preserve">
+	<data name="MemberPaidPrice" xml:space="preserve">
 		<value>ئەزا تاپشۇرغان پۇل</value>
 	</data>
-  <data name="TotalPaidPrice" xml:space="preserve">
+	<data name="TotalPaidPrice" xml:space="preserve">
 		<value>ئومۇمىي تاپشۇرغان پۇل</value>
 	</data>
-  <data name="MemberBalancePrice" xml:space="preserve">
+	<data name="MemberBalancePrice" xml:space="preserve">
 		<value>ئەزا قالدۇق سوممىسى</value>
 	</data>
-  <data name="RegisterCount" xml:space="preserve">
+	<data name="RegisterCount" xml:space="preserve">
 		<value>سان تىزىملاش</value>
 	</data>
-  <data name="Expenditure" xml:space="preserve">
+	<data name="Expenditure" xml:space="preserve">
 		<value>چىقىم</value>
 	</data>
-  <data name="PrintTypeLimit" xml:space="preserve">
+	<data name="PrintTypeLimit" xml:space="preserve">
 		<value>ئوخشاش تۈردىكى پىرىنتىر قوشۇشقا بولمايدۇ !‏</value>
 	</data>
-  <data name="SameEnabledPrinterFailed" xml:space="preserve">
+	<data name="SameEnabledPrinterFailed" xml:space="preserve">
 		<value>تالون تۈرىدىكى پرىنتېردىن بىرنىلا ئېچىۋىتىشكە بولىدۇ !‏</value>
 	</data>
-  <data name="PrintAfterBuy" xml:space="preserve">
+	<data name="PrintAfterBuy" xml:space="preserve">
 		<value>سېتىۋالغاندا پرىنتلاش</value>
 	</data>
-  <data name="PrintAfterCheckout" xml:space="preserve">
+	<data name="PrintAfterCheckout" xml:space="preserve">
 		<value>ئاياقلاشقاندا پرىنتلاش</value>
 	</data>
-  <data name="Server" xml:space="preserve">
+	<data name="Server" xml:space="preserve">
 		<value>مۇلازىمېتىر</value>
 	</data>
-  <data name="LocalPrint" xml:space="preserve">
+	<data name="LocalPrint" xml:space="preserve">
 		<value>كومپيۇتېردا پرىنتلاش</value>
 	</data>
-  <data name="OperateChangeNextStartup" xml:space="preserve">
+	<data name="OperateChangeNextStartup" xml:space="preserve">
 		<value>{0} ئۇتۇقلۇق بولدى، سېستىمىنى قايتا قوزغاتقاندىن كېيىن ئۆزگىرەيدۇ  !‏</value>
 	</data>
-  <data name="ServerIpAddress" xml:space="preserve">
+	<data name="ServerIpAddress" xml:space="preserve">
 		<value>مۇلازىمېتىر IP ئادرېسى‏</value>
 	</data>
-  <data name="BarcodeNo" xml:space="preserve">
+	<data name="BarcodeNo" xml:space="preserve">
 		<value>سىزىقلىق كود نومۇرى</value>
 	</data>
-  <data name="OnlyDisplaySelected" xml:space="preserve">
+	<data name="OnlyDisplaySelected" xml:space="preserve">
 		<value>تاللانغىنىلا كۆرسۈتۈلۈش</value>
 	</data>
-  <data name="CurrentProductAlreadyExists" xml:space="preserve">
+	<data name="CurrentProductAlreadyExists" xml:space="preserve">
 		<value>نۆۋەتتىكى مەھسۇلات ئاللىقاچان مەۋجۈت !‏</value>
 	</data>
-  <data name="Statistic" xml:space="preserve">
+	<data name="Statistic" xml:space="preserve">
 		<value>ستاتىستىكا</value>
 	</data>
-  <data name="Exception_InvalidMediaRoot" xml:space="preserve">
+	<data name="Exception_InvalidMediaRoot" xml:space="preserve">
 		<value>مۇلازىمېتىر رەسىم ئادرىسى ئىناۋەتسىز ياكى مەۋجۈت ئەمەس، ھۆججەت قىسقۇرچنى ياكى تورنى تەكشۇرۈڭ ! خاتالىق نۇمۇرى: 100‏</value>
 	</data>
-  <data name="Canceld" xml:space="preserve">
+	<data name="Canceld" xml:space="preserve">
 		<value>بىكار قىلىندى</value>
 	</data>
-  <data name="Exception_Relogin" xml:space="preserve">
+	<data name="Exception_Relogin" xml:space="preserve">
 		<value>ئالاقە ئەمەلدىن قالدى، سېستىمىدىن چىكىنىپ قايتا كىرىڭ !‏</value>
 	</data>
-  <data name="InputNotValid" xml:space="preserve">
+	<data name="InputNotValid" xml:space="preserve">
 		<value>‏ ئالاقىدار سانشىغىرنى توغرا ۋە تۇلۇق كىرگۈزۈڭ !‏</value>
 	</data>
-  <data name="Bill" xml:space="preserve">
+	<data name="Bill" xml:space="preserve">
 		<value>تالون</value>
 	</data>
-  <data name="IncomeManager" xml:space="preserve">
+	<data name="IncomeManager" xml:space="preserve">
 		<value>كىرىم باشقۇرۇش</value>
 	</data>
-  <data name="ExpendBill" xml:space="preserve">
+	<data name="ExpendBill" xml:space="preserve">
 		<value>چىقىم تالونى</value>
 	</data>
-  <data name="OwedPrice" xml:space="preserve">
+	<data name="OwedPrice" xml:space="preserve">
 		<value>نىسى سوممىسى</value>
 	</data>
-  <data name="IncomeStatistic" xml:space="preserve">
+	<data name="IncomeStatistic" xml:space="preserve">
 		<value>كىرىم ستاتىستىكىسى</value>
 	</data>
-  <data name="SpendStatistic" xml:space="preserve">
+	<data name="SpendStatistic" xml:space="preserve">
 		<value>چىقىم ستاتىستىكىسى</value>
 	</data>
-  <data name="SellProductsStatistic" xml:space="preserve">
+	<data name="SellProductsStatistic" xml:space="preserve">
 		<value>ساتقان مەھسۇلات ستاتىستىكىسى</value>
 	</data>
-  <data name="SpendProductsStatistic" xml:space="preserve">
+	<data name="SpendProductsStatistic" xml:space="preserve">
 		<value>ئالغان مەھسۇلات ستاتىستىكىسى</value>
 	</data>
-  <data name="NotFoundAnyRecords" xml:space="preserve">
+	<data name="NotFoundAnyRecords" xml:space="preserve">
 		<value>ھېچقانداق خاتىرە تېپىلمىدى !‏</value>
 	</data>
-  <data name="Proportion" xml:space="preserve">
+	<data name="Proportion" xml:space="preserve">
 		<value>نىسبىتى</value>
 	</data>
-  <data name="PermissionsMenu" xml:space="preserve">
+	<data name="PermissionsMenu" xml:space="preserve">
 		<value>ھوقۇق تىزىملىكى</value>
 	</data>
-  <data name="Exception_MemberDisabled" xml:space="preserve">
+	<data name="Exception_MemberDisabled" xml:space="preserve">
 		<value>ئەزا چەكلەنگەن !‏</value>
 	</data>
-  <data name="Income" xml:space="preserve">
+	<data name="Income" xml:space="preserve">
 		<value>كىرىم</value>
 	</data>
-  <data name="ImageMode" xml:space="preserve">
+	<data name="ImageMode" xml:space="preserve">
 		<value>رەسىم شەكلى</value>
 	</data>
-  <data name="Exception_DeviceCountOutOfLimit" xml:space="preserve">
+	<data name="Exception_DeviceCountOutOfLimit" xml:space="preserve">
 		<value>ئۈسكۈنە بەلگىلەنگەن ئەڭ يۇقىرى سانىدىن ئېشىپ كەتتى !‏ {0}خاتالىق نۇمۇرى: 105</value>
 	</data>
-  <data name="NewPasswordSizeLimit" xml:space="preserve">
+	<data name="NewPasswordSizeLimit" xml:space="preserve">
 		<value>يېڭى شىفىر ئەڭ ئاز بولغاندا {0} خانە بولسۇن !‏</value>
 	</data>
-  <data name="LogTitle" xml:space="preserve">
+	<data name="LogTitle" xml:space="preserve">
 		<value>خاتىرە تىمىسى</value>
 	</data>
-  <data name="LogContent" xml:space="preserve">
+	<data name="LogContent" xml:space="preserve">
 		<value>خاتىرە مەزمۇنى</value>
 	</data>
-  <data name="AdminLog" xml:space="preserve">
+	<data name="AdminLog" xml:space="preserve">
 		<value>باشقۇرغۇچى خاتىرسى</value>
 	</data>
-  <data name="AdminPay" xml:space="preserve">
+	<data name="AdminPay" xml:space="preserve">
 		<value>باشقۇرغۇچى تۆلەم</value>
 	</data>
-  <data name="AdminPayDescription" xml:space="preserve">
+	<data name="AdminPayDescription" xml:space="preserve">
 		<value>باشقۇرغۇچى تۆلەم تەپسىلاتىنى كۆرۈش</value>
 	</data>
-  <data name="AdminPayNo" xml:space="preserve">
+	<data name="AdminPayNo" xml:space="preserve">
 		<value>باشقۇرغۇچى تۆلەم نومۇرى</value>
 	</data>
-  <data name="SupplierPay" xml:space="preserve">
+	<data name="SupplierPay" xml:space="preserve">
 		<value>تەمىناتچى تۆلەم</value>
 	</data>
-  <data name="SupplierPayDescription" xml:space="preserve">
+	<data name="SupplierPayDescription" xml:space="preserve">
 		<value>تەمىناتچى تۆلەم تەپسىلاتىنى كۆرۈش</value>
 	</data>
-  <data name="SupplierPayNo" xml:space="preserve">
+	<data name="SupplierPayNo" xml:space="preserve">
 		<value>تەمىناتچى تۆلەم نومۇرى</value>
 	</data>
-  <data name="SupplierManager" xml:space="preserve">
+	<data name="SupplierManager" xml:space="preserve">
 		<value>تەمىناتچى باشقۇرۇش</value>
 	</data>
-  <data name="SupplierExpiredDescription" xml:space="preserve">
+	<data name="SupplierExpiredDescription" xml:space="preserve">
 		<value>تەمىناتچىنىڭ ئىناۋەتلىك ۋاقتىنى ئۆزگەرتىش !‏</value>
 	</data>
-  <data name="SupplierNo" xml:space="preserve">
+	<data name="SupplierNo" xml:space="preserve">
 		<value>تەمىناتچى نومۇرى</value>
 	</data>
-  <data name="SupplierName" xml:space="preserve">
+	<data name="SupplierName" xml:space="preserve">
 		<value>تەمىناتچى نامى</value>
 	</data>
-  <data name="AddSupplier" xml:space="preserve">
+	<data name="AddSupplier" xml:space="preserve">
 		<value>تەمىناتچى قوشۇش</value>
 	</data>
-  <data name="SupplierExpired" xml:space="preserve">
+	<data name="SupplierExpired" xml:space="preserve">
 		<value>نۆۋەتتىكى تەمىناتچى ۋاقتى توشۇپ قالدى !‏</value>
 	</data>
-  <data name="Exception_SupplierDisabled" xml:space="preserve">
+	<data name="Exception_SupplierDisabled" xml:space="preserve">
 		<value>تەمىناتچى چەكلەنگەن !‏</value>
 	</data>
-  <data name="SupplierBalancePrice" xml:space="preserve">
+	<data name="SupplierBalancePrice" xml:space="preserve">
 		<value>تەمىناتچى قالدۇق سوممىسى</value>
 	</data>
-  <data name="SupplierBalanceNotEnough" xml:space="preserve">
+	<data name="SupplierBalanceNotEnough" xml:space="preserve">
 		<value>تەمىناتچى قالدۇق سوممىسى يېتەرلىك ئەمەس!‏</value>
 	</data>
-  <data name="SupplierDealsPrice" xml:space="preserve">
+	<data name="SupplierDealsPrice" xml:space="preserve">
 		<value>تەمىناتچى ئىتىبار باھاسى</value>
 	</data>
-  <data name="SupplierPaidPrice" xml:space="preserve">
+	<data name="SupplierPaidPrice" xml:space="preserve">
 		<value>تەمىناتچى تاپشۇرغان پۇل</value>
 	</data>
-  <data name="PleaseWait" xml:space="preserve">
+	<data name="PleaseWait" xml:space="preserve">
 		<value>تەخىر قىلىڭ...‏</value>
 	</data>
-  <data name="CreatingTheDocument" xml:space="preserve">
+	<data name="CreatingTheDocument" xml:space="preserve">
 		<value>ھۆججەت قۇرۇلۇۋاتىدۇ...‏</value>
 	</data>
-  <data name="TableUsed" xml:space="preserve">
+	<data name="TableUsed" xml:space="preserve">
 		<value>ھازىرقى ئۈستەل ئىشلىتىلىۋاتىدۇ !‏</value>
 	</data>
-  <data name="Exception_InvalidType" xml:space="preserve">
+	<data name="Exception_InvalidType" xml:space="preserve">
 		<value>‏ ئالاقىدار سانشىغىرنى توغرا ۋە تۇلۇق كىرگۈزۈڭ !‏</value>
 	</data>
-  <data name="ChangeCostPrice" xml:space="preserve">
+	<data name="ChangeCostPrice" xml:space="preserve">
 		<value>تەننەرخ باھا ئۆزگەرتىش</value>
 	</data>
-  <data name="IndexName" xml:space="preserve">
+	<data name="IndexName" xml:space="preserve">
 		<value>ئاچقۇچ نامى</value>
 	</data>
-  <data name="FinanceLog" xml:space="preserve">
+	<data name="FinanceLog" xml:space="preserve">
 		<value>مالىيە خاتىرىسى</value>
 	</data>
-  <data name="OperateName" xml:space="preserve">
+	<data name="OperateName" xml:space="preserve">
 		<value>مەشغۇلات نامى</value>
 	</data>
-  <data name="Open" xml:space="preserve">
+	<data name="Open" xml:space="preserve">
 		<value>ئېچىش</value>
 	</data>
-  <data name="CashDrawer" xml:space="preserve">
+	<data name="CashDrawer" xml:space="preserve">
 		<value>پۇل ساندۇقى</value>
 	</data>
-  <data name="IsPayByCard" xml:space="preserve">
+	<data name="IsPayByCard" xml:space="preserve">
 		<value>كارتىدا تۆلەنگەن</value>
 	</data>
-  <data name="CardPaidPrice" xml:space="preserve">
+	<data name="CardPaidPrice" xml:space="preserve">
 		<value>كارتىدا تۆلىگەن پۇل</value>
 	</data>
-  <data name="SpendPaysStatistic" xml:space="preserve">
+	<data name="SpendPaysStatistic" xml:space="preserve">
 		<value>تۆلەم چىقىم ستاتىستىكىسى</value>
 	</data>
-  <data name="SalePaysStatistic" xml:space="preserve">
+	<data name="SalePaysStatistic" xml:space="preserve">
 		<value>تۆلەم كىرىم ستاتىستىكىسى</value>
 	</data>
-  <data name="BalancePay" xml:space="preserve">
+	<data name="BalancePay" xml:space="preserve">
 		<value>قالدۇق تۆلەم</value>
 	</data>
-  <data name="BalancePayDescription" xml:space="preserve">
+	<data name="BalancePayDescription" xml:space="preserve">
 		<value>قالدۇق تۆلەم تەپسىلاتىنى كۆرۈش</value>
 	</data>
-  <data name="BalancePayNo" xml:space="preserve">
+	<data name="BalancePayNo" xml:space="preserve">
 		<value>قالدۇق تۆلەم نومۇرى</value>
 	</data>
-  <data name="SoftServiceNameWithoutVersion" xml:space="preserve">
+	<data name="SoftServiceNameWithoutVersion" xml:space="preserve">
 		<value>ئويباب سودا سېستىمىسى</value>
 	</data>
-  <data name="MediumLabelFontSize" xml:space="preserve">
+	<data name="MediumLabelFontSize" xml:space="preserve">
 		<value>22</value>
 	</data>
-  <data name="LogoTitleLabelFontSize" xml:space="preserve">
+	<data name="LogoTitleLabelFontSize" xml:space="preserve">
 		<value>40</value>
 	</data>
-  <data name="SoftServiceVersion" xml:space="preserve">
+	<data name="SoftServiceVersion" xml:space="preserve">
 		<value>V1.1</value>
 	</data>
-  <data name="DirectionMode" xml:space="preserve">
+	<data name="DirectionMode" xml:space="preserve">
 		<value>RightToLeft</value>
 	</data>
-  <data name="LoginUserInputMsg" xml:space="preserve">
+	<data name="LoginUserInputMsg" xml:space="preserve">
 		<value>باشقۇرغۇچى نومۇرىنى كىرگۈزۈڭ</value>
 	</data>
-  <data name="LoginPasswordInputMsg" xml:space="preserve">
+	<data name="LoginPasswordInputMsg" xml:space="preserve">
 		<value>باشقۇرغۇچى شىفىرىنى كىرگۈزۈڭ</value>
 	</data>
-  <data name="Reset2" xml:space="preserve">
+	<data name="Reset2" xml:space="preserve">
 		<value>ئۆچۈرۈش</value>
 	</data>
-  <data name="MediumButtonFontSize" xml:space="preserve">
+	<data name="MediumButtonFontSize" xml:space="preserve">
 		<value>26</value>
 	</data>
-  <data name="OK2" xml:space="preserve">
+	<data name="OK2" xml:space="preserve">
 		<value>جەزىملەش</value>
 	</data>
-  <data name="LittleKeyboardFontSize" xml:space="preserve">
+	<data name="LittleKeyboardFontSize" xml:space="preserve">
 		<value>18</value>
 	</data>
-  <data name="HorizontalModel" xml:space="preserve">
+	<data name="HorizontalModel" xml:space="preserve">
 		<value>Right</value>
 	</data>
-  <data name="CompanyLogoName" xml:space="preserve">
+	<data name="CompanyLogoName" xml:space="preserve">
 		<value>ئويباب ئۇچۇر-تېخنىكىسى</value>
 	</data>
-  <data name="RegNoInputMessage" xml:space="preserve">
+	<data name="RegNoInputMessage" xml:space="preserve">
 		<value>تىزىملاش نومۇرىنى كىرگۈزۈڭ</value>
 	</data>
-  <data name="RegCountInputMessage" xml:space="preserve">
+	<data name="RegCountInputMessage" xml:space="preserve">
 		<value>سان تىزىملاش نومۇرىنى كىرگۈزۈڭ</value>
 	</data>
-  <data name="TopLogoTitleLabelFontSize" xml:space="preserve">
+	<data name="TopLogoTitleLabelFontSize" xml:space="preserve">
 		<value>25</value>
 	</data>
-  <data name="LittleMediumLabelFontSize" xml:space="preserve">
+	<data name="LittleMediumLabelFontSize" xml:space="preserve">
 		<value>20</value>
 	</data>
-  <data name="Exception_AdminExists" xml:space="preserve">
+	<data name="Exception_AdminExists" xml:space="preserve">
 		<value>نۆۋەتتىكى باشقۇرغۇچى ئىشلىتىلىۋاتىدۇ !‏{0} خاتالىق نۇمۇرى: 113</value>
 	</data>
-  <data name="IncomeTradingManage" xml:space="preserve">
+	<data name="IncomeTradingManage" xml:space="preserve">
 		<value>كىرىم ھېساباتى باشقۇرۇش</value>
 	</data>
-  <data name="Permission" xml:space="preserve">
+	<data name="Permission" xml:space="preserve">
 		<value>ھوقۇق</value>
 	</data>
-  <data name="Day" xml:space="preserve">
+	<data name="Day" xml:space="preserve">
 		<value>كۈن</value>
 	</data>
-  <data name="Empty" xml:space="preserve">
+	<data name="Empty" xml:space="preserve">
 		<value>بىكار</value>
 	</data>
-  <data name="Selected" xml:space="preserve">
+	<data name="Selected" xml:space="preserve">
 		<value>تاللانغىنى</value>
 	</data>
-  <data name="Products" xml:space="preserve">
+	<data name="Products" xml:space="preserve">
 		<value>مەھسۇلاتلار</value>
 	</data>
-  <data name="Operate" xml:space="preserve">
+	<data name="Operate" xml:space="preserve">
 		<value>مەشغۇلات</value>
 	</data>
-  <data name="SelectedCount" xml:space="preserve">
+	<data name="SelectedCount" xml:space="preserve">
 		<value>تاللانغان سانى</value>
 	</data>
-  <data name="OperatingWait" xml:space="preserve">
+	<data name="OperatingWait" xml:space="preserve">
 		<value>تەخىر قىلىڭ.....‏</value>
 	</data>
-  <data name="Cash" xml:space="preserve">
+	<data name="Cash" xml:space="preserve">
 		<value>نەق پۇل</value>
 	</data>
-  <data name="Card" xml:space="preserve">
+	<data name="Card" xml:space="preserve">
 		<value>كارتا</value>
 	</data>
-  <data name="Member" xml:space="preserve">
+	<data name="Member" xml:space="preserve">
 		<value>ئەزا</value>
 	</data>
-  <data name="Bind" xml:space="preserve">
+	<data name="Bind" xml:space="preserve">
 		<value>باغلاش</value>
 	</data>
-  <data name="Unbind" xml:space="preserve">
+	<data name="Unbind" xml:space="preserve">
 		<value>يېشىش</value>
 	</data>
-  <data name="MediumLargeButtonFontSize" xml:space="preserve">
+	<data name="MediumLargeButtonFontSize" xml:space="preserve">
 		<value>35</value>
 	</data>
-  <data name="OldRoomNo" xml:space="preserve">
+	<data name="OldRoomNo" xml:space="preserve">
 		<value>كونا ئۈستەل نومۇرى</value>
 	</data>
-  <data name="NewRoomNo" xml:space="preserve">
+	<data name="NewRoomNo" xml:space="preserve">
 		<value>يېڭى ئۈستەل نومۇرى</value>
 	</data>
-  <data name="IpAddress2" xml:space="preserve">
+	<data name="IpAddress2" xml:space="preserve">
 		<value>تور ئادرېسى</value>
 	</data>
-  <data name="RequestManager" xml:space="preserve">
+	<data name="RequestManager" xml:space="preserve">
 		<value>تەلەپ باشقۇرۇش</value>
 	</data>
-  <data name="RequestName" xml:space="preserve">
+	<data name="RequestName" xml:space="preserve">
 		<value>تەلەپ نامى</value>
 	</data>
-  <data name="Request2" xml:space="preserve">
+	<data name="Request2" xml:space="preserve">
 		<value>تەلەپ</value>
 	</data>
-  <data name="RequestDescription" xml:space="preserve">
-		<value>نۆۋەتتىكى سانشىغىرغا تەلەپ قوشۇش</value>
+	<data name="RequestDescription" xml:space="preserve">
+		<value>نۆۋەتتىكى سانشىغىرغا تەلەپ قوشۇش.‏</value>
 	</data>
-  <data name="IsDisplayAll" xml:space="preserve">
+	<data name="IsDisplayAll" xml:space="preserve">
 		<value>ھەممىنى كۆرسىتىش</value>
 	</data>
-  <data name="CheckoutBy" xml:space="preserve">
+	<data name="CheckoutBy" xml:space="preserve">
 		<value>ھېساپ بوققۇچى</value>
 	</data>
-  <data name="OrderPhoneNo" xml:space="preserve">
+	<data name="OrderPhoneNo" xml:space="preserve">
 		<value>تالون تېلېغون نۇمۇرى</value>
 	</data>
-  <data name="PersonName" xml:space="preserve">
+	<data name="PersonName" xml:space="preserve">
 		<value>ئىسمى</value>
 	</data>
-  <data name="BillTypeInner" xml:space="preserve">
+	<data name="BillTypeInner" xml:space="preserve">
 		<value>ئىچكى</value>
 	</data>
-  <data name="BillTypeOuter" xml:space="preserve">
+	<data name="BillTypeOuter" xml:space="preserve">
 		<value>تاشقى</value>
 	</data>
-  <data name="BillType" xml:space="preserve">
+	<data name="BillType" xml:space="preserve">
 		<value>تالون تۈرى</value>
 	</data>
-  <data name="AddOuterBill" xml:space="preserve">
+	<data name="AddOuterBill" xml:space="preserve">
 		<value>تاشقى تالون قوشۇش</value>
 	</data>
-  <data name="ConfirmSaveAll" xml:space="preserve">
+	<data name="ConfirmSaveAll" xml:space="preserve">
 		<value>ھەممىنى ساقلاشنى جەزىملەشتۈرەمسىز؟</value>
 	</data>
-  <data name="SuccessAndFailProperty" xml:space="preserve">
+	<data name="SuccessAndFailProperty" xml:space="preserve">
 		<value>Utukluk: {0}, Maglup: {1}.</value>
 	</data>
-  <data name="Profit" xml:space="preserve">
+	<data name="Profit" xml:space="preserve">
 		<value>ساپ كىرىم</value>
 	</data>
-  <data name="TypeName" xml:space="preserve">
+	<data name="TypeName" xml:space="preserve">
 		<value>تۈر نامى</value>
 	</data>
-  <data name="Summary" xml:space="preserve">
+	<data name="Summary" xml:space="preserve">
 		<value>خۇلاسە</value>
 	</data>
-  <data name="SystemTimeInvalid" xml:space="preserve">
+	<data name="SystemTimeInvalid" xml:space="preserve">
 		<value>سېستىما ۋاقتى مۇلازىمىتىر ۋاقتى بىلەن ئوخشاش ئەمەس !‏ {0}خاتالىق نۇمۇرى: 106</value>
 	</data>
-  <data name="UnrecordedPrice" xml:space="preserve">
+	<data name="UnrecordedPrice" xml:space="preserve">
 		<value>خاتىرلەنمىگەن پۇل</value>
 	</data>
-  <data name="ReceivedPrice" xml:space="preserve">
+	<data name="ReceivedPrice" xml:space="preserve">
 		<value>ئېلىنغان پۇل</value>
 	</data>
-  <data name="Prefix" xml:space="preserve">
+	<data name="Prefix" xml:space="preserve">
 		<value>باش ھەرپ</value>
 	</data>
-  <data name="MultiLanguage" xml:space="preserve">
+	<data name="MultiLanguage" xml:space="preserve">
 		<value>كۆپ تىل</value>
 	</data>
-  <data name="Exception_DatabaseNotFound" xml:space="preserve">
+	<data name="Exception_DatabaseNotFound" xml:space="preserve">
 		<value>يىراق مۇلازىمېتىردىكى سانشىغىر ئامبىرى تېپىلمىدى، تەكشۈرۈڭ !‏ خاتالىق نۇمۇرى: 108</value>
 	</data>
-  <data name="Exception_DatabaseLoadFailed" xml:space="preserve">
+	<data name="Exception_DatabaseLoadFailed" xml:space="preserve">
 		<value>يىراق مۇلازىمېتىردا سانشىغىر ئامبىرىنى يۈكلەش مەغلۇپ بولدى !‏ خاتالىق نۇمۇرى: 109</value>
 	</data>
-  <data name="NoLimit" xml:space="preserve">
+	<data name="NoLimit" xml:space="preserve">
 		<value>چەكسىز</value>
 	</data>
-  <data name="ProductExpiredDescription" xml:space="preserve">
+	<data name="ProductExpiredDescription" xml:space="preserve">
 		<value>مەھسۇلاتنىڭ ئىناۋەتلىك ۋاقتىنى ئۆزگەرتىش !‏</value>
 	</data>
-  <data name="None" xml:space="preserve">
+	<data name="None" xml:space="preserve">
 		<value>يوق</value>
 	</data>
-  <data name="BarcodeReader" xml:space="preserve">
+	<data name="BarcodeReader" xml:space="preserve">
 		<value>تاياقلىق كود ئوقۇغۇچ</value>
 	</data>
-  <data name="PrintBarcodeDescription" xml:space="preserve">
+	<data name="PrintBarcodeDescription" xml:space="preserve">
 		<value>تاياقلىق كود بېسىش</value>
 	</data>
-  <data name="Size" xml:space="preserve">
+	<data name="Size" xml:space="preserve">
 		<value>ئۆلچەم</value>
 	</data>
-  <data name="BarcodeLengthLimit" xml:space="preserve">
+	<data name="BarcodeLengthLimit" xml:space="preserve">
 		<value>تاياقلىق كود سانى 8 خانە ياكى 13 خانە بولىشى كېرەك !‏</value>
 	</data>
-  <data name="BillWide" xml:space="preserve">
+	<data name="BillWide" xml:space="preserve">
 		<value>تالۇن-كەڭ</value>
 	</data>
-  <data name="PrintAll" xml:space="preserve">
+	<data name="PrintAll" xml:space="preserve">
 		<value>ھەممىنى پىرىنتلاش</value>
 	</data>
-  <data name="ConfirmBalanceInjustice" xml:space="preserve">
+	<data name="ConfirmBalanceInjustice" xml:space="preserve">
 		<value>قالدۇق تەمپۇڭ ئەمەس! جەزىملەشتۈرەمسىز؟</value>
 	</data>
-  <data name="ProductParentName" xml:space="preserve">
+	<data name="ProductParentName" xml:space="preserve">
 		<value>ئاتا مەھسۇلات نامى</value>
 	</data>
-  <data name="ProductParentCount" xml:space="preserve">
+	<data name="ProductParentCount" xml:space="preserve">
 		<value>ئاتا مەھسۇلات سانى</value>
 	</data>
-  <data name="Borrow" xml:space="preserve">
+	<data name="Borrow" xml:space="preserve">
 		<value>نىسى</value>
 	</data>
-  <data name="CanNotExceed" xml:space="preserve">
+	<data name="CanNotExceed" xml:space="preserve">
 		<value>ئومۇمىي تۆلەنگەن پۇل {0} يۈەن !‏</value>
 	</data>
-  <data name="ChangeCount" xml:space="preserve">
+	<data name="ChangeCount" xml:space="preserve">
 		<value>سان ئۆزگەرتىش</value>
 	</data>
-  <data name="Information" xml:space="preserve">
+	<data name="Information" xml:space="preserve">
 		<value>ئەسكەرتىش</value>
 	</data>
-  <data name="InnerBill" xml:space="preserve">
+	<data name="InnerBill" xml:space="preserve">
 		<value>ئىچكى تالون</value>
 	</data>
-  <data name="OuterBill" xml:space="preserve">
+	<data name="OuterBill" xml:space="preserve">
 		<value>تاشقى تالون</value>
 	</data>
-  <data name="IndexNameOrBarcode" xml:space="preserve">
+	<data name="IndexNameOrBarcode" xml:space="preserve">
 		<value>ئاچقۇچ نامى ياكى تاياقلىق كود نومۇرىنى كىرگۈزۈڭ</value>
 	</data>
-  <data name="Exception_DeviceExists" xml:space="preserve">
+	<data name="Exception_DeviceExists" xml:space="preserve">
 		<value>نۆۋەتتىكى ئۈسكىنە ئىشلىتىلىۋاتىدۇ !‏{0} خاتالىق نۇمۇرى: 115</value>
 	</data>
-  <data name="ReturnId" xml:space="preserve">
+	<data name="ReturnId" xml:space="preserve">
 		<value>قايتۇرۇش نومۇرى</value>
 	</data>
-  <data name="ReturnBill" xml:space="preserve">
+	<data name="ReturnBill" xml:space="preserve">
 		<value>قايتۇرۇش تالونى</value>
 	</data>
-  <data name="BalanceManager" xml:space="preserve">
+	<data name="BalanceManager" xml:space="preserve">
 		<value>قالدۇق باشقۇرۇش</value>
 	</data>
-  <data name="BalanceName" xml:space="preserve">
+	<data name="BalanceName" xml:space="preserve">
 		<value>قالدۇق نامى</value>
 	</data>
-  <data name="IsBind" xml:space="preserve">
+	<data name="IsBind" xml:space="preserve">
 		<value>باغلاش</value>
 	</data>
-  <data name="CardOnlyCouldBindOnce" xml:space="preserve">
+	<data name="CardOnlyCouldBindOnce" xml:space="preserve">
 		<value>ئەڭ كۆپ بولغاندا بىرلا كارتا باغلىغىلى بولىدۇ !‏</value>
 	</data>
-  <data name="AccountBank" xml:space="preserve">
+	<data name="AccountBank" xml:space="preserve">
 		<value>ھېسابات بانكىسى</value>
 	</data>
-  <data name="AccountName" xml:space="preserve">
+	<data name="AccountName" xml:space="preserve">
 		<value>ھېسابات ئىسمى</value>
 	</data>
-  <data name="AccountNo" xml:space="preserve">
+	<data name="AccountNo" xml:space="preserve">
 		<value>ھېسابات نومۇرى</value>
 	</data>
-  <data name="ReturnType" xml:space="preserve">
+	<data name="ReturnType" xml:space="preserve">
 		<value>قايتۇرۇش تۈرى</value>
 	</data>
-  <data name="ReturnManager" xml:space="preserve">
+	<data name="ReturnManager" xml:space="preserve">
 		<value>قايتۇرۇش باشقۇرۇش</value>
 	</data>
-  <data name="FromCustomer" xml:space="preserve">
+	<data name="FromCustomer" xml:space="preserve">
 		<value>خېرىداردىن</value>
 	</data>
-  <data name="ToSupplier" xml:space="preserve">
+	<data name="ToSupplier" xml:space="preserve">
 		<value>تەمىناتچىغا</value>
 	</data>
-  <data name="ReturnDetails" xml:space="preserve">
+	<data name="ReturnDetails" xml:space="preserve">
 		<value>قايتۇرۇش تەپسىلاتى</value>
 	</data>
-  <data name="IsChange" xml:space="preserve">
+	<data name="IsChange" xml:space="preserve">
 		<value>ئالماشتۇرۇش</value>
 	</data>
-  <data name="CheckoutReturn" xml:space="preserve">
+	<data name="CheckoutReturn" xml:space="preserve">
 		<value>قايتۇرۇش بوغۇش</value>
 	</data>
-  <data name="BalancePaysIncomeStatistic" xml:space="preserve">
+	<data name="BalancePaysIncomeStatistic" xml:space="preserve">
 		<value>قالدۇق تۆلەم كىرىم ستاتىستىكىسى</value>
 	</data>
-  <data name="BalancePaysSpendStatistic" xml:space="preserve">
+	<data name="BalancePaysSpendStatistic" xml:space="preserve">
 		<value>قالدۇق تۆلەم چىقىم ستاتىستىكىسى</value>
 	</data>
-  <data name="BalancePayByCash" xml:space="preserve">
+	<data name="BalancePayByCash" xml:space="preserve">
 		<value>قالدۇق تۆلەم (نەخ پۇل)‏</value>
 	</data>
-  <data name="BalancePayByCard" xml:space="preserve">
+	<data name="BalancePayByCard" xml:space="preserve">
 		<value>قالدۇق تۆلەم (كارتا)‏</value>
 	</data>
-  <data name="MemberPayByCash" xml:space="preserve">
+	<data name="MemberPayByCash" xml:space="preserve">
 		<value>ئەزا تۆلەم (نەخ پۇل)‏</value>
 	</data>
-  <data name="MemberPayByCard" xml:space="preserve">
+	<data name="MemberPayByCard" xml:space="preserve">
 		<value>ئەزا تۆلەم (كارتا)‏</value>
 	</data>
-  <data name="SupplierPayByCash" xml:space="preserve">
+	<data name="SupplierPayByCash" xml:space="preserve">
 		<value>تەمىناتچى تۆلەم (نەخ پۇل)‏‏</value>
 	</data>
-  <data name="SupplierPayByCard" xml:space="preserve">
+	<data name="SupplierPayByCard" xml:space="preserve">
 		<value>تەمىناتچى تۆلەم (كارتا)‏</value>
 	</data>
-  <data name="AdminPayByCash" xml:space="preserve">
+	<data name="AdminPayByCash" xml:space="preserve">
 		<value>باشقۇرغۇچى تۆلەم (نەخ پۇل)‏</value>
 	</data>
-  <data name="AdminPayByCard" xml:space="preserve">
+	<data name="AdminPayByCard" xml:space="preserve">
 		<value>باشقۇرغۇچى تۆلەم (كارتا)‏</value>
 	</data>
-  <data name="ReturnStatistic" xml:space="preserve">
+	<data name="ReturnStatistic" xml:space="preserve">
 		<value>قايتۇرۇش ستاتىستىكىسى</value>
 	</data>
-  <data name="AdminSaleStatistic" xml:space="preserve">
+	<data name="AdminSaleStatistic" xml:space="preserve">
 		<value>باشقۇرغۇچى سېتىش ستاتىستىكىسى</value>
 	</data>
-  <data name="ReturnProductsStatistic" xml:space="preserve">
+	<data name="ReturnProductsStatistic" xml:space="preserve">
 		<value>قايتۇرۇلغان مەھسۇلات ستاتىستىكىسى</value>
 	</data>
-  <data name="ReplaceCount" xml:space="preserve">
+	<data name="ReplaceCount" xml:space="preserve">
 		<value>ئالماشتۇرغان سانى</value>
 	</data>
-  <data name="RecordCount" xml:space="preserve">
+	<data name="RecordCount" xml:space="preserve">
 		<value>خاتىرە سانى</value>
 	</data>
-  <data name="Return" xml:space="preserve">
+	<data name="Return" xml:space="preserve">
 		<value>قايتۇرۇش</value>
 	</data>
-  <data name="CardPrice" xml:space="preserve">
+	<data name="CardPrice" xml:space="preserve">
 		<value>كارتا سۈرۈش باھاسى</value>
 	</data>
-  <data name="CardBalancePrice" xml:space="preserve">
+	<data name="CardBalancePrice" xml:space="preserve">
 		<value>كارتا قالدۇق باھاسى</value>
 	</data>
-  <data name="OtherPrice" xml:space="preserve">
+	<data name="OtherPrice" xml:space="preserve">
 		<value>باشقا باھاسى</value>
 	</data>
-  <data name="Supplier" xml:space="preserve">
+	<data name="Supplier" xml:space="preserve">
 		<value>تەمىناتچى</value>
 	</data>
-  <data name="PrintInfo" xml:space="preserve">
+	<data name="PrintInfo" xml:space="preserve">
 		<value>تالون ئۇچۇرى</value>
 	</data>
-  <data name="Test" xml:space="preserve">
+	<data name="Test" xml:space="preserve">
 		<value>سىناش</value>
 	</data>
-  <data name="InputPhoneNoFirst" xml:space="preserve">
+	<data name="InputPhoneNoFirst" xml:space="preserve">
 		<value>ئەگەر تالون ئۇچۇرى كىرگۈزسىڭىز ئاۋال تېلېغون نۇمۇرىنى كىرگۈزۈڭ !‏</value>
 	</data>
-  <data name="PriceMonitor" xml:space="preserve">
+	<data name="PriceMonitor" xml:space="preserve">
 		<value>باھا كۆرسەتكۈچ</value>
 	</data>
-  <data name="ProductProfitStatistic" xml:space="preserve">
+	<data name="ProductProfitStatistic" xml:space="preserve">
 		<value>مەھسۇلات كىرىم ستاتىستىكىسى</value>
 	</data>
-  <data name="IsBindWeigh" xml:space="preserve">
+	<data name="IsBindWeigh" xml:space="preserve">
 		<value>ئېغىرلىق باغلاش</value>
 	</data>
-  <data name="PageHeight" xml:space="preserve">
+	<data name="PageHeight" xml:space="preserve">
 		<value>بەت ئېگىزلىكى</value>
 	</data>
-  <data name="CancelAndDelete" xml:space="preserve">
+	<data name="CancelAndDelete" xml:space="preserve">
 		<value>ئۆچۈرۈش ۋە بىكار قىلىش</value>
 	</data>
-  <data name="CashWithCard" xml:space="preserve">
+	<data name="CashWithCard" xml:space="preserve">
 		<value>نەخ پۇل: {0}￥. كارتا: {1}￥.‏</value>
 	</data>
-  <data name="AdminCantCreateAnAdmin" xml:space="preserve">
+	<data name="AdminCantCreateAnAdmin" xml:space="preserve">
 		<value>باشقۇرغۇچى يېڭى باشقۇرغۇچى قوشالمايدۇ!‏</value>
 	</data>
-  <data name="IncomePermission" xml:space="preserve">
+	<data name="IncomePermission" xml:space="preserve">
 		<value>كىرىم ھوقوقى</value>
 	</data>
-  <data name="ExpenditurePermission" xml:space="preserve">
+	<data name="ExpenditurePermission" xml:space="preserve">
 		<value>چىقىم ھوقوقى</value>
 	</data>
-  <data name="TemporaryChangePrice" xml:space="preserve">
+	<data name="TemporaryChangePrice" xml:space="preserve">
 		<value>ۋاقىتلىق باھا ئۆزگەرتىش</value>
 	</data>
-  <data name="ChangeUnitPrice" xml:space="preserve">
+	<data name="ChangeUnitPrice" xml:space="preserve">
 		<value>پارچە باھا ئۆزگەرتىش</value>
 	</data>
-  <data name="AddPrice" xml:space="preserve">
+	<data name="AddPrice" xml:space="preserve">
 		<value>قوشقان پۇل</value>
 	</data>
-  <data name="AddMemberBalancePrice" xml:space="preserve">
+	<data name="AddMemberBalancePrice" xml:space="preserve">
 		<value>ئەزا قالدۇق سوممىسى قوشۇش</value>
 	</data>
-  <data name="PosTopTitleFontSize" xml:space="preserve">
+	<data name="PosTopTitleFontSize" xml:space="preserve">
 		<value>24</value>
 	</data>
-  <data name="PosTotalPriceFontSize" xml:space="preserve">
+	<data name="PosTotalPriceFontSize" xml:space="preserve">
 		<value>32</value>
 	</data>
-  <data name="PosCountFontSize" xml:space="preserve">
+	<data name="PosCountFontSize" xml:space="preserve">
 		<value>20</value>
 	</data>
-  <data name="PosDescriptionFontSize" xml:space="preserve">
+	<data name="PosDescriptionFontSize" xml:space="preserve">
 		<value>18</value>
 	</data>
-  <data name="User" xml:space="preserve">
+	<data name="User" xml:space="preserve">
 		<value>ئابونت</value>
 	</data>
-  <data name="PosContentFontSize" xml:space="preserve">
+	<data name="PosContentFontSize" xml:space="preserve">
 		<value>16</value>
 	</data>
-  <data name="PosDescription" xml:space="preserve">
+	<data name="PosDescription" xml:space="preserve">
 		<value>مەھسۇلات ئىزدەش: F3، ۋاقىتلىق ساقلاش: F7، ئەسلىگە كەلتۈرۈش: F8،  ئەزا باغلاش: F10، ئۆچۈرۈش: F12، تىل ئالماشتۇرۇش: Tab، پۇل ساندۇقى ئېچىش: Alt+Z، ئورۈن ئالماشتۇرۇش: ↑ ↓ → ←، بەت ئالماشتۇرۇش: PgUp/PgDn، سان قوشۇش: +، سان ئازلىتىش: -، تاللاش/جەزىملەش: Enter، تاللانغاننى ئۆچۈرۈش: Del، بىكار قىلىش/قايتىش: Esc.</value>
 	</data>
-  <data name="Restore" xml:space="preserve">
+	<data name="Restore" xml:space="preserve">
 		<value>ئەسلىگە كەلتۈرۈش</value>
 	</data>
-  <data name="CardReader" xml:space="preserve">
+	<data name="CardReader" xml:space="preserve">
 		<value>كارتا ئوقۇغۇچ</value>
 	</data>
-  <data name="CardNo" xml:space="preserve">
+	<data name="CardNo" xml:space="preserve">
 		<value>كارتا نومۇرى</value>
 	</data>
-  <data name="CardNoExists" xml:space="preserve">
+	<data name="CardNoExists" xml:space="preserve">
 		<value>كارتا نومۇرى ئاللىقاچان مەۋجۈت، ئالماشتۇرۇشنى جەزىملەشتۈرەمسىز؟‏</value>
 	</data>
-  <data name="SuccessReadBarcode" xml:space="preserve">
+	<data name="SuccessReadBarcode" xml:space="preserve">
 		<value>سىزىقلىق كود ئوقۇش مۇۋەپپىقىيەتلىك بولدى !‏</value>
 	</data>
-  <data name="SuccessReadCardNo" xml:space="preserve">
+	<data name="SuccessReadCardNo" xml:space="preserve">
 		<value>كارتا ئوقۇش مۇۋەپپىقىيەتلىك بولدى !‏</value>
 	</data>
-  <data name="ServerIpAddress2" xml:space="preserve">
+	<data name="ServerIpAddress2" xml:space="preserve">
 		<value>مۇلازىمېتىر ئادرېسى</value>
 	</data>
-  <data name="BindMemberByNo" xml:space="preserve">
+	<data name="BindMemberByNo" xml:space="preserve">
 		<value>نومۇر ئارقىلىق ئەزا باغلاش</value>
 	</data>
-  <data name="BindSupplierByNo" xml:space="preserve">
+	<data name="BindSupplierByNo" xml:space="preserve">
 		<value>نومۇر ئارقىلىق تەمىناتچى باغلاش</value>
 	</data>
-  <data name="BarcodeScales" xml:space="preserve">
+	<data name="BarcodeScales" xml:space="preserve">
 		<value>سىزىقلىق كود تارازا</value>
 	</data>
-  <data name="SendData" xml:space="preserve">
+	<data name="SendData" xml:space="preserve">
 		<value>سانشىفىر ئەۋەتىش</value>
 	</data>
-  <data name="IncorrectProductData" xml:space="preserve">
+	<data name="IncorrectProductData" xml:space="preserve">
 		<value>مەھسۇلات ئۇچۇرى ئارىسىدا ئىناۋەتسىز سانشىفىر بار !‏</value>
 	</data>
-  <data name="IncorrectProductName" xml:space="preserve">
+	<data name="IncorrectProductName" xml:space="preserve">
 		<value>مەھسۇلات نامى ئارىسىدا ئىناۋەتسىز سانشىفىر بار !‏</value>
 	</data>
-  <data name="UnableToConnectIPAddress" xml:space="preserve">
+	<data name="UnableToConnectIPAddress" xml:space="preserve">
 		<value>تور ئادرېسىغا ئۇلۇنۇش مەغلۇپ بولدى !‏</value>
 	</data>
-  <data name="ConfirmNotPay" xml:space="preserve">
+	<data name="ConfirmNotPay" xml:space="preserve">
 		<value>پۇل تۆلىمەسلىكنى جەزىملەشتۈرەمسىز؟‏</value>
 	</data>
-  <data name="ReadResourceStrError" xml:space="preserve">
+	<data name="ReadResourceStrError" xml:space="preserve">
 		<value>مەنبە ئوقۇشتا خاتالىق كۆرۈلدى!‏</value>
 	</data>
-  <data name="FreeRoomPriceLimit" xml:space="preserve">
+	<data name="FreeRoomPriceLimit" xml:space="preserve">
 		<value>ھەقسىز باھا ئۆلچىمى</value>
 	</data>
-  <data name="CancelFireAlarm" xml:space="preserve">
+	<data name="CancelFireAlarm" xml:space="preserve">
 		<value>ئوت سىگنالى ئۆچۈرۈش</value>
 	</data>
-  <data name="ConfirmOperate" xml:space="preserve">
+	<data name="ConfirmOperate" xml:space="preserve">
 		<value>{0} نى جەزىملەشتۈرەمسىز ؟‏</value>
 	</data>
-  <data name="DeleteProduct" xml:space="preserve">
+	<data name="DeleteProduct" xml:space="preserve">
 		<value>مەھسۇلات ئۆچۈرۈش</value>
 	</data>
-  <data name="OpenCashDrawer" xml:space="preserve">
+	<data name="OpenCashDrawer" xml:space="preserve">
 		<value>پۇل ساندۇقى ئېچىش</value>
 	</data>
-  <data name="Paid" xml:space="preserve">
+	<data name="Paid" xml:space="preserve">
 		<value>تۆلەم</value>
 	</data>
-  <data name="Platform" xml:space="preserve">
+	<data name="Platform" xml:space="preserve">
 		<value>سۇپا</value>
 	</data>
-  <data name="UnlimitedTime" xml:space="preserve">
+	<data name="UnlimitedTime" xml:space="preserve">
 		<value>ۋاقىتسىز</value>
 	</data>
-  <data name="Enabled" xml:space="preserve">
+	<data name="Enabled" xml:space="preserve">
 		<value>ئېچىۋىتىلگەن</value>
 	</data>
-  <data name="DecreaseProductCount" xml:space="preserve">
+	<data name="DecreaseProductCount" xml:space="preserve">
 		<value>مەھسۇلات سانىنى ئازايتىش</value>
 	</data>
-  <data name="FaildThenWaitRetry" xml:space="preserve">
+	<data name="FaildThenWaitRetry" xml:space="preserve">
 		<value>مەشغۇلات مەغلۇپ بولدى، مەشخۇلاتىڭىز بەك تىز، قايتا سىناڭ !‏</value>
 	</data>
-  <data name="RemovePrice" xml:space="preserve">
+	<data name="RemovePrice" xml:space="preserve">
 		<value>ئېلىنغان باھاسى</value>
 	</data>
-  <data name="Exception_ServerClientVersionMisalignment" xml:space="preserve">
+	<data name="Exception_ServerClientVersionMisalignment" xml:space="preserve">
 		<value>يىراق مۇلازىمېتىردىكى سېستىما نۇسخىسى بىلەن ھازىرىقى سېستىما نۇسخىسى ئوخشاش ئەمەس، ئوخشاش سېستىما نۇسخىسىغا يېڭىلاڭ !‏</value>
 	</data>
-  <data name="Exception_ServerClientTimeMisalignment" xml:space="preserve">
+	<data name="Exception_ServerClientTimeMisalignment" xml:space="preserve">
 		<value>يىراق مۇلازىمېتىردىكى سېستىما ۋاقتى بىلەن ھازىرىقى سېستىما ۋاقتى ئوخشاش ئەمەس، ئوخشاش سېستىما ۋاقتىغا يېڭىلاڭ !‏</value>
 	</data>
-  <data name="ConfirmAddPay" xml:space="preserve">
+	<data name="ConfirmAddPay" xml:space="preserve">
 		<value>{3} غا {2} دىن {1}{0} قوشۇشنى جەزىملەشتۈرەمسىز؟</value>
 	</data>
-  <data name="BalanceTransfer" xml:space="preserve">
+	<data name="BalanceTransfer" xml:space="preserve">
 		<value>قالدۇق يۆتكەش</value>
 	</data>
-  <data name="OldBalance" xml:space="preserve">
+	<data name="OldBalance" xml:space="preserve">
 		<value>كونا قالدۇق</value>
 	</data>
-  <data name="NewBalance" xml:space="preserve">
+	<data name="NewBalance" xml:space="preserve">
 		<value>يېڭى قالدۇق</value>
 	</data>
-  <data name="BalanceTransferDescription" xml:space="preserve">
+	<data name="BalanceTransferDescription" xml:space="preserve">
 		<value>قالدۇق ئارىسىدىكى پۇلنى يۆتكەش</value>
 	</data>
-  <data name="LangName" xml:space="preserve">
+	<data name="LangName" xml:space="preserve">
 		<value>ئۇيغۇرچە</value>
 	</data>
-  <data name="HightFix" xml:space="preserve">
+	<data name="HightFix" xml:space="preserve">
 		<value>-4</value>
 	</data>
-  <data name="Culcure" xml:space="preserve">
+	<data name="Culcure" xml:space="preserve">
 		<value>ug-CN</value>
 	</data>
-  <data name="Dir" xml:space="preserve">
+	<data name="Dir" xml:space="preserve">
 		<value>rtl</value>
 	</data>
-  <data name="LargeFont" xml:space="preserve">
+	<data name="LargeFont" xml:space="preserve">
 		<value>1</value>
 	</data>
-  <data name="EnableAntialiasing" xml:space="preserve">
+	<data name="EnableAntialiasing" xml:space="preserve">
 		<value>1</value>
 	</data>
-  <data name="GlobalSetting" xml:space="preserve">
+	<data name="GlobalSetting" xml:space="preserve">
 		<value>ئومۇمىي تەڭكەش</value>
 	</data>
-  <data name="PriceSymbol" xml:space="preserve">
+	<data name="PriceSymbol" xml:space="preserve">
 		<value>باھا بەلگىسى</value>
 	</data>
-  <data name="Main" xml:space="preserve">
+	<data name="Main" xml:space="preserve">
 		<value>ئاساسى</value>
 	</data>
-  <data name="SystemLanguage" xml:space="preserve">
+	<data name="SystemLanguage" xml:space="preserve">
 		<value>سېستىما تىلى</value>
 	</data>
-  <data name="SystemLanguageCantSame" xml:space="preserve">
+	<data name="SystemLanguageCantSame" xml:space="preserve">
 		<value>سېستىما تىللىرى ئوخشاش بولسا بولمايدۇ!‏</value>
 	</data>
-  <data name="SystemLanguageChangeWarn" xml:space="preserve">
+	<data name="SystemLanguageChangeWarn" xml:space="preserve">
 		<value>سېستىما تىلىنى ئۆزگەرتىش سېستىمىغا تەسىر كۆرسىتىشى مۇمكىن، جەزىملەشتۈرەمسىز ؟‏</value>
 	</data>
-  <data name="PermissionsMenuDescription" xml:space="preserve">
+	<data name="PermissionsMenuDescription" xml:space="preserve">
 		<value>باشقۇرغۇچى ھوقوقىنى ئۆزگەرتىش</value>
 	</data>
-  <data name="ReturnMoney" xml:space="preserve">
+	<data name="ReturnMoney" xml:space="preserve">
 		<value>پۇل قايتۇرۇش</value>
 	</data>
-  <data name="CanNotExceedConfirm" xml:space="preserve">
+	<data name="CanNotExceedConfirm" xml:space="preserve">
 		<value>ئومۇمىي تۆلەنگەن پۇل {0} يۈەن !‏ قايتۇرۇشنى جەزىملەشتۈرەمسىز ؟‏</value>
 	</data>
-  <data name="Exception_PasswordErrorCountLimit" xml:space="preserve">
+	<data name="Exception_PasswordErrorCountLimit" xml:space="preserve">
 		<value>شىغىر خاتالىق سانى بەك كۆپ بولۇپ كەتتى، كىيىنرەك قايتا سىناڭ !‏</value>
 	</data>
-  <data name="CompanyName" xml:space="preserve">
+	<data name="CompanyName" xml:space="preserve">
 		<value>شىركەت نامى</value>
 	</data>
-  <data name="CustomFont_Android" xml:space="preserve">
+	<data name="CustomFont_Android" xml:space="preserve">
 		<value>OybabTuz.ttf#Oybab Tuz</value>
 	</data>
-  <data name="CustomFont_iOS" xml:space="preserve">
+	<data name="CustomFont_iOS" xml:space="preserve">
 		<value>OybabTuz</value>
 	</data>
-  <data name="CustomFont_UWP" xml:space="preserve">
+	<data name="CustomFont_UWP" xml:space="preserve">
 		<value>/Assets/OybabTuz.ttf#Oybab Tuz</value>
 	</data>
-  <data name="SavePassword" xml:space="preserve">
+	<data name="SavePassword" xml:space="preserve">
 		<value>شىفىر ساقلاش</value>
 	</data>
-  <data name="Tsmi_Lang_Icon" xml:space="preserve">
+	<data name="Tsmi_Lang_Icon" xml:space="preserve">
 		<value>LangUG.png</value>
 	</data>
-  <data name="IncomeTypeStatistic" xml:space="preserve">
+	<data name="IncomeTypeStatistic" xml:space="preserve">
 		<value>كىرىم تۈرى ستاتىستىكىسى</value>
 	</data>
-  <data name="SpendTypeStatistic" xml:space="preserve">
+	<data name="SpendTypeStatistic" xml:space="preserve">
 		<value>چىقىم تۈرى ستاتىستىكىسى</value>
 	</data>
-  <data name="Settings" xml:space="preserve">
+	<data name="Settings" xml:space="preserve">
 		<value>ئىقتىدار</value>
 	</data>
-  <data name="Agree" xml:space="preserve">
+	<data name="Agree" xml:space="preserve">
 		<value>قوشۇلىمەن</value>
 	</data>
-  <data name="PrivacyPolicy" xml:space="preserve">
+	<data name="PrivacyPolicy" xml:space="preserve">
 		<value>شەخسىيەت سىياسىتى</value>
 	</data>
-  <data name="Exception_AdminUsing" xml:space="preserve">
+	<data name="Exception_AdminUsing" xml:space="preserve">
 		<value>نۆۋەتتىكى باشقۇرغۇچى ئىشلىتىلىۋاتىدۇ !‏ ئەگەر ئۆزىڭىزنىڭ مەشخۇلاتى بولمىسا شىفىرىڭىزنى ۋاقتىدا ئۆزگەرتىۋېتىڭ !‏‏</value>
 	</data>
-  <data name="UserAgreement" xml:space="preserve">
+	<data name="UserAgreement" xml:space="preserve">
 		<value>ئابونېنت كېلىشىمى</value>
 	</data>
-  <data name="And" xml:space="preserve">
+	<data name="And" xml:space="preserve">
 		<value>ۋە</value>
 	</data>
-  <data name="History" xml:space="preserve">
+	<data name="History" xml:space="preserve">
 		<value>تارىخ</value>
 	</data>
-  <data name="HistoryDescription" xml:space="preserve">
-		<value>نۆۋەتتىكى سانشىغىر تارىخىنى كۆرۈش‏</value>
+	<data name="HistoryDescription" xml:space="preserve">
+		<value>نۆۋەتتىكى سانشىغىر تارىخىنى كۆرۈش‏.‏</value>
 	</data>
-  <data name="CompanyAbbreviation" xml:space="preserve">
+	<data name="CompanyAbbreviation" xml:space="preserve">
 		<value>ئويباب ئۇچۇر-تېخنىكىسى</value>
 	</data>
-  <data name="License" xml:space="preserve">
+	<data name="License" xml:space="preserve">
 		<value>كېلىشىم</value>
 	</data>
-  <data name="Donate" xml:space="preserve">
+	<data name="Donate" xml:space="preserve">
 		<value>ئىئانە</value>
 	</data>
-  <data name="SourceCode" xml:space="preserve">
+	<data name="SourceCode" xml:space="preserve">
 		<value>مەنبە كود</value>
 	</data>
-  <data name="ConfirmItemBalanceNotEnough" xml:space="preserve">
+	<data name="ConfirmItemBalanceNotEnough" xml:space="preserve">
 		<value>{0} قالدۇق سوممىسى يېتەرلىك ئەمەس، جەزىملەشتۈرەمسىز ؟‏</value>
 	</data>
 </root>

@@ -127,7 +127,7 @@
     <value>Change</value>
   </data>
 	<data name="ChangeFaild" xml:space="preserve">
-    <value>Change faild</value>
+    <value>Change faild !</value>
   </data>
 	<data name="ChangePassword" xml:space="preserve">
     <value>Change Password</value>
@@ -154,7 +154,7 @@
     <value>Delete failed!</value>
   </data>
 	<data name="DeleteSuccess" xml:space="preserve">
-    <value>Delete Success</value>
+    <value>Delete Success!</value>
   </data>
 	<data name="Exit" xml:space="preserve">
     <value>Exit</value>
@@ -334,7 +334,7 @@
     <value>Delete current data.</value>
   </data>
 	<data name="PleaseEditBefore" xml:space="preserve">
-    <value>Please finish edit first.</value>
+    <value>Please finish edit first!</value>
   </data>
 	<data name="SaveDescription" xml:space="preserve">
     <value>Save the current added or altered data.</value>
@@ -1039,7 +1039,7 @@
 		<value>The count can not exceeds the specified limit !</value>
 	</data>
 	<data name="MemberExpired" xml:space="preserve">
-		<value>Current member has expired</value>
+		<value>Current member has expired!</value>
 	</data>
 	<data name="MemberExpiredDescription" xml:space="preserve">
 		<value>Change member expired time!</value>
@@ -1243,7 +1243,7 @@
 		<value>AddSupplier</value>
 	</data>
 	<data name="SupplierExpired" xml:space="preserve">
-		<value>Current supplier has expired</value>
+		<value>Current supplier has expired!</value>
 	</data>
 	<data name="Exception_SupplierDisabled" xml:space="preserve">
 		<value>Supplier is disabled !</value>
