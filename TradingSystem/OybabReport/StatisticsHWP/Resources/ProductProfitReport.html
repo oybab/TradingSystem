@@ -168,6 +168,17 @@ if (null != parameters && isGenerated == true)
 
 }
 
+
+function getProperty(property)
+{
+	 if (typeof (property) == "undefined")
+	 {
+		 return 0;
+	 }
+	 
+	return property;
+}
+
 function getProgressbar(totalPrice)
 {
 	 if (typeof (totalPrice) == "undefined")
@@ -196,7 +207,7 @@ if (null != dataSource && isGenerated == true)
 			newTrList = newTrList + '<tr>'
 		+'<td class="xrcsFont14" style="width:34px;height:19px;text-align:center;vertical-align:center;">'  + no + '</td>'
 		+'<td class="xrcsFont14" colspan="3" style="width:280px;height:21px;line-height:19px;text-align:left;vertical-align:middle;">' + ojbInItem["ProductName"] + '</td>'
-		+'<td class="xrcsFont14" style="width:70px;height:21px;line-height:19px;text-align:center;vertical-align:middle;">' + ojbInItem["Count"] + '</td>'
+		+'<td class="xrcsFont14" style="width:70px;height:21px;line-height:19px;text-align:center;vertical-align:middle;">' + getProperty(ojbInItem["Count"]) + '</td>'
 		+'<td class="xrcsFont14" style="width:80px;height:21px;line-height:19px;text-align:center;vertical-align:middle;">' + ojbInItem["CostPrice"] + '</td>'
 		+'<td class="xrcsFont14" style="width:80px;height:21px;line-height:19px;text-align:center;vertical-align:middle;">' + ojbInItem["Price"] + '</td>'
 		+'<td class="xrcsFont14" style="width:80px;height:21px;line-height:19px;text-align:center;vertical-align:middle;">' + ojbInItem["ProfitPrice"] + '</td>'
