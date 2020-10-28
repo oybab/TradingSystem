@@ -42,8 +42,9 @@ namespace Oybab.Res.Tools
                     postValues.Add("version", version);
                     postValues.Add("uid", uid);
                     postValues.Add("lang", Resources.GetRes().GetLangByLangIndex(Resources.GetRes().CurrentLangIndex).Culture.Name);
-                    postValues.Add("app", Res.Resources.GetRes().SOFT_SERVICE_NAME);
+                    postValues.Add("app", Resources.GetRes().SOFT_SERVICE_NAME);
                     postValues.Add("more", more);
+                    postValues.Add("name", Resources.GetRes().KEY_NAME_0);
                     postValues.Add("os", OSCheck.GetOS());
                     postValues.Add("ostype", OSCheck.GetOSType());
 

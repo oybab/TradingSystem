@@ -86,7 +86,7 @@ namespace Oybab.Res.View.ViewModels.Pages
         /// </summary>
         private void RecalcPaidPrice()
         {
-            if (null != order && this.ChangePaidPrice.Remark != this.order.Remark)
+            if (null != order && this.ChangePaidPrice.Remark != this.order.Remark && !(this.ChangePaidPrice.Remark == "" && this.order.Remark == null))
             {
                 this.Selected.RemarkChanged = true;
             }

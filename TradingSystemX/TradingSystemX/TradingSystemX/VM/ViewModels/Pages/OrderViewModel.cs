@@ -228,7 +228,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
         /// </summary>
         private void RecalcPaidPrice()
         {
-            if (null != order && this.Selected.ChangePaidPriceView.Remark != this.order.Remark)
+            if (null != order && this.Selected.ChangePaidPriceView.Remark != this.order.Remark && !(this.Selected.ChangePaidPriceView.Remark == "" && this.order.Remark == null))
             {
                 this.Selected.RemarkChanged = true;
             }

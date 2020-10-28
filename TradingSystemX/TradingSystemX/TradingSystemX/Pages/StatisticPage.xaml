@@ -34,11 +34,11 @@
                         </StackLayout>
                         <StackLayout Margin="0,20,0,0" HorizontalOptions="Fill" Orientation="Horizontal">
                             <Label VerticalOptions="Center" Margin="0"  Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=BillType}"  />
-                            <Picker VerticalOptions="Center" HorizontalOptions="FillAndExpand" ItemsSource="{Binding BillType}" SelectedItem="{Binding SelectedBillType}" ItemDisplayBinding="{Binding Name}"  />
+                            <Picker VerticalOptions="Center" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ItemsSource="{Binding BillType}" SelectedItem="{Binding SelectedBillType}" ItemDisplayBinding="{Binding Name}"  />
                         </StackLayout>
                         <StackLayout Margin="0,10,0,0" HorizontalOptions="Fill" Orientation="Horizontal">
                             <Label VerticalOptions="Center" Margin="0"  Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=TypeName}"  />
-                            <Picker VerticalOptions="Center" HorizontalOptions="FillAndExpand" ItemsSource="{Binding TypeName}" SelectedItem="{Binding SelectedTypeName}" ItemDisplayBinding="{Binding Name}"  />
+                            <Picker VerticalOptions="Center" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ItemsSource="{Binding TypeName}" SelectedItem="{Binding SelectedTypeName}" ItemDisplayBinding="{Binding Name}"  />
                         </StackLayout>
 
                     </StackLayout>

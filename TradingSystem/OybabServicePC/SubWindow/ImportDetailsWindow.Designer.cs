@@ -424,6 +424,7 @@
             this.krplSupplierNameValue.Size = new System.Drawing.Size(130, 20);
             this.krplSupplierNameValue.TabIndex = 25;
             this.krplSupplierNameValue.Values.Text = "000000000000000000";
+            this.krplSupplierNameValue.Visible = false;
             // 
             // krplImportTimeValue
             // 
@@ -449,6 +450,7 @@
             this.krplSupplierName.Size = new System.Drawing.Size(88, 20);
             this.krplSupplierName.TabIndex = 21;
             this.krplSupplierName.Values.Text = "SupplierName";
+            this.krplSupplierName.Visible = false;
             // 
             // krplImportTime
             // 

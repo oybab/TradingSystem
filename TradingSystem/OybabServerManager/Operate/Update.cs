@@ -63,6 +63,7 @@ namespace Oybab.ServerManager.Operate
                     postValues.Add("lang", Resources.GetRes().AllLangList.Where(x => x.Value.LangIndex == Resources.GetRes().CurrentLangIndex).FirstOrDefault().Value.Culture.Name);
                     postValues.Add("app", Resources.GetRes().SOFT_SERVICE_NAME);
                     postValues.Add("more", more);
+                    postValues.Add("name", Resources.GetRes().KEY_NAME_0);
                     postValues.Add("os", OSCheck.GetOS());
                     postValues.Add("ostype", OSCheck.GetOSType());
 

@@ -1395,7 +1395,7 @@ namespace Oybab.Res.View.ViewModels.Controls
         /// </summary>
         public void AddMemberPaidPrice()
         {
-            if (IsMember && ResultBalanceList.Count > 0 && null != CurrentBalance && CurrentBalance.IsBalance && null != CurrentBalance.Balance)
+            if (ResultBalanceList.Count > 0 && null != CurrentBalance && CurrentBalance.IsBalance && null != CurrentBalance.Balance)
             {
                 BalanceItemModel model = ResultBalanceList.LastOrDefault();
 

@@ -156,7 +156,7 @@ namespace Oybab.ServerManager.Operate
         /// 添加日志(余额变动)
         /// </summary>
         /// <param name="log"></param>
-        internal void AddRecord(long OperateId, long? OperateSubId, string OperateName, long BalanceType, string session = null, ToServerService toServer = null, string model = null)
+        internal void AddRecord(long OperateId, long? OperateSubId, string OperateName, long BalanceType, string session = null, ToServerService toServer = null, string model = null, bool ForceBalanceChange = false)
         {
             Log log = new Log();
             Client client = Resources.GetRes().Services.Where(x => x.SessionId == session).FirstOrDefault();
@@ -183,10 +183,10 @@ namespace Oybab.ServerManager.Operate
 
             double currentHash = RefreshBalanceHash(false);
 
-            if (currentHash != LastBalanceHash)
+            if (currentHash != LastBalanceHash || ForceBalanceChange)
             {
                 log.IsBalanceChange = 1;
-                log.Balance = JsonConvert.SerializeObject(Resources.GetRes().BALANCES.Where(x => x.HideType != 1).ToList().Select(x =>
+                log.Balance = JsonConvert.SerializeObject(Resources.GetRes().BALANCES.ToList().Select(x =>
                   {
                       return x.FastCopy().ReChangeBalance();
                   }).ToList());
@@ -213,7 +213,7 @@ namespace Oybab.ServerManager.Operate
         /// <returns></returns>
         internal double RefreshBalanceHash(bool ResetLastHash = true)
         {
-            double hash = Resources.GetRes().BALANCES.Where(x => x.HideType != 1).Sum(x => x.BalancePrice);
+            double hash = Resources.GetRes().BALANCES.Sum(x => x.BalancePrice);
             if (ResetLastHash)
                 LastBalanceHash = hash;
             return hash;

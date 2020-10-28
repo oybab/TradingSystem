@@ -1819,7 +1819,7 @@
 		<value>远程服务端系统时间和当前客户端系统时间不一致, 请更新至相同时间 !</value>
 	</data>
 	<data name="ConfirmAddPay" xml:space="preserve">
-		<value>确认从{2}添加{0}}{1}给{3}?</value>
+		<value>确认从{2}添加{0}{1}给{3}?</value>
 	</data>
 	<data name="BalanceTransfer" xml:space="preserve">
 		<value>转账余额</value>

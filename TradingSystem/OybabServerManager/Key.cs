@@ -217,7 +217,7 @@ namespace Oybab.ServerManager.Res
         /// <returns></returns>
         internal void GetPass()
         {
-            Resources.GetRes().DB_KEY = "";
+            //Resources.GetRes().DB_KEY = "";
         }
 
         /// <summary>
@@ -227,7 +227,7 @@ namespace Oybab.ServerManager.Res
         /// <returns></returns>
         private void GetUid()
         {
-            Resources.GetRes().UID = "";
+            //Resources.GetRes().UID = "";
         }
 
 

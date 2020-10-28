@@ -16,7 +16,7 @@
                     <Entry Text="{Binding ServerIP, Mode=TwoWay}"/>
 
                     <Label HorizontalOptions="Start" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Language}"/>
-                    <Picker HorizontalOptions="FillAndExpand" ItemsSource="{Binding AllLang}" SelectedItem="{Binding SelectedLang}" ItemDisplayBinding="{Binding Name}" />
+                    <Picker HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ItemsSource="{Binding AllLang}" SelectedItem="{Binding SelectedLang}" ItemDisplayBinding="{Binding Name}" />
 
                     <!--<Label HorizontalOptions="Start" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Mode}"/>
                     <Picker HorizontalOptions="FillAndExpand" ItemsSource="{Binding AllMode}" SelectedItem="{Binding SelectedMode}" ItemDisplayBinding="{Binding Name}" />-->

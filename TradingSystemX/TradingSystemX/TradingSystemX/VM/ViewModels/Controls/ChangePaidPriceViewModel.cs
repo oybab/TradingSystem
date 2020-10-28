@@ -1280,7 +1280,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Controls
         /// </summary>
         internal void AddMemberPaidPrice()
         {
-            if (IsMember && CurrentBalanceList.Count > 0 && null != CurrentBalance && CurrentBalance.IsBalance && null != CurrentBalance.Balance)
+            if (CurrentBalanceList.Count > 0 && null != CurrentBalance && CurrentBalance.IsBalance && null != CurrentBalance.Balance)
             {
                 BalanceItemModel model = CurrentBalanceList.LastOrDefault();
 

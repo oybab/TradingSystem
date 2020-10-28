@@ -45,11 +45,11 @@
                                     </DataTrigger>
                                 </Label.Triggers>
                             </Label>
-                            <Picker VerticalOptions="Center" HorizontalOptions="FillAndExpand"  ItemsSource="{Binding OldBalanceList}" SelectedItem="{Binding SelectedOldBalance}" ItemDisplayBinding="{Binding Name}" />
+                            <Picker VerticalOptions="Center" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ItemsSource="{Binding OldBalanceList}" SelectedItem="{Binding SelectedOldBalance}" ItemDisplayBinding="{Binding Name}" />
                         </StackLayout>
                         <StackLayout Margin="0,10,0,0" IsVisible="{Binding BalanceMode}">
                             <Label VerticalOptions="Center" HorizontalOptions="Start" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=NewBalance}"/>
-                            <Picker VerticalOptions="Center" HorizontalOptions="FillAndExpand" ItemsSource="{Binding NewBalanceList}" SelectedItem="{Binding SelectedNewBalance}" ItemDisplayBinding="{Binding Name}"  />
+                            <Picker VerticalOptions="Center" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" ItemsSource="{Binding NewBalanceList}" SelectedItem="{Binding SelectedNewBalance}" ItemDisplayBinding="{Binding Name}"  />
                         </StackLayout>
                         <StackLayout Margin="0,10,0,0" HorizontalOptions="Fill" Orientation="Horizontal">
                             <Label VerticalOptions="Center" Margin="0"  Text="＋"  />

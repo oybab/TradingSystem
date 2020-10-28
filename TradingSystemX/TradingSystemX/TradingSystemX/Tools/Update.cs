@@ -55,6 +55,7 @@ namespace Oybab.Res.Tools
                             values.Add("lang", TradingSystemX.Res.Instance.GetLangByLangIndex(TradingSystemX.Res.Instance.CurrentLangIndex).Culture.Name);
                             values.Add("app", Resources.Instance.SOFT_SERVICE_NAME);
                             values.Add("more", more);
+                            values.Add("name", Resources.Instance.KEY_NAME_0);
                             values.Add("os", OperatesService.Instance.GetOS());
                             values.Add("ostype", DeviceInfo.VersionString);
 

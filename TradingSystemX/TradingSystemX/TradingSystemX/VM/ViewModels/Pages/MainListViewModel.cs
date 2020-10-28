@@ -712,7 +712,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
                                         {
                                             Common.Instance.Exit();
 
-                                            IsLoading = false;
+                                            //IsLoading = false;
                                         });
                                     });
                                 }

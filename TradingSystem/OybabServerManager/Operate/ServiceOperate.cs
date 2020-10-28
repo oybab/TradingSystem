@@ -8907,7 +8907,7 @@ namespace Oybab.ServerManager.Operate
                         balance2 = balancePay2.tb_balance;
 
                     // 记录日志
-                    OperateLog.Instance.AddRecord(balancePay1.BalancePayId, null, "BalancePay#" + OperateType.Edit,  1 , toServer.SessionId, toServer);
+                    OperateLog.Instance.AddRecord(balancePay1.BalancePayId, null, "BalancePay#" + OperateType.Transfer,  1 , toServer.SessionId, toServer, null, true);
 
                 }
 

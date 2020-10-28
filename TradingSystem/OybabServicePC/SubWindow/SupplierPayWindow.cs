@@ -277,7 +277,7 @@ namespace Oybab.ServicePC.SubWindow
             krpdgList.Rows.Clear();
             foreach (var item in currentResult)
             {
-                AddToGrid("", item.ParentId.ToString(), item.Price, GetBalanceType(item.BalanceId), item.Remark, item.AddTime, item);
+                AddToGrid("", item.PayId.ToString(), item.Price, GetBalanceType(item.BalanceId), item.Remark, item.AddTime, item);
             }
         }
 
@@ -311,7 +311,7 @@ namespace Oybab.ServicePC.SubWindow
 
 
             if (editMark == "*")
-                krpdgList.Rows.Insert(0, editMark, Id, Price.ToString(), BalanceName, Remark, AddTimeStr);
+                krpdgList.Rows.Insert(0, editMark, Id, OperateNameStr, GetOperateSymbal(model, Price).ToString(), BalanceName, Remark, AddTimeStr);
             else
             {
                 krpdgList.Rows.Add(editMark, Id, OperateNameStr, GetOperateSymbal(model, Price).ToString(), BalanceName, Remark, AddTimeStr);
