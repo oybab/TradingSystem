@@ -19,10 +19,26 @@ You could download the source code and customized it based it [License](https://
  - As a part of your service.(E.g. The delivery company connect its own service to the system for save, print, and statistics bills.)
  - As a customized tools.
 
- Currently supported languages(Extendable):
+ Currently supported languages(Extendable)   (*If any translation wrong in it, we hope you could help us fix it):
  - 简体中文
  - ئۇيغۇرچە
  - English
+ - Français
+ - 日本語
+ - 한국어
+ - ไทย
+ - Português
+ - Español
+ - עִברִית
+ - Türk
+ - Deutsche
+ - Русский
+ - Italiano
+ - हिन्दी
+ - سعودي
+ - اردو
+ - O'zbek
+
 
 Currently supported external device:
  - Thermal printer 58mm & Thermal printer 80mm & Dot-matrix printer (for print bill) & Barcode Printer (for print barcode)
