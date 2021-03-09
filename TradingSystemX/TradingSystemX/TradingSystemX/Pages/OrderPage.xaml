@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+<FlyoutPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             IsPresented="{Binding IsPresented, Mode=TwoWay}" MasterBehavior="Popover" xmlns:forms="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.Core"
+             IsPresented="{Binding IsPresented, Mode=TwoWay}" FlyoutLayoutBehavior="Popover" xmlns:forms="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.Core"
              x:Class="Oybab.TradingSystemX.Pages.OrderPage" BackgroundColor="{DynamicResource PageBackgroundColor}">
 
-    <MasterDetailPage.Master>
+    <FlyoutPage.Flyout>
         <ContentPage Title="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Back}" BackgroundColor="{DynamicResource PageBackgroundColor}">
             <Grid>
                 <StackLayout Orientation="Vertical" Margin="10">
@@ -47,7 +47,7 @@
                 </Grid>
             </Grid>
         </ContentPage>
-    </MasterDetailPage.Master>
+    </FlyoutPage.Flyout>
 
 
-</MasterDetailPage>
+</FlyoutPage>

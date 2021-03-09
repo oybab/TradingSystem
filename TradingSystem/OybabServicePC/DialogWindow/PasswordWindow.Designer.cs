@@ -49,7 +49,7 @@
             // 
             // krpbClose
             // 
-            this.krpbClose.Location = new System.Drawing.Point(167, 147);
+            this.krpbClose.Location = new System.Drawing.Point(233, 147);
             this.krpbClose.Name = "krpbClose";
             this.krpbClose.Size = new System.Drawing.Size(90, 25);
             this.krpbClose.TabIndex = 5;
@@ -82,38 +82,39 @@
             // 
             // krptPassword
             // 
-            this.krptPassword.Location = new System.Drawing.Point(139, 27);
+            this.krptPassword.Location = new System.Drawing.Point(207, 27);
             this.krptPassword.MaxLength = 32;
             this.krptPassword.Name = "krptPassword";
             this.krptPassword.PasswordChar = '●';
-            this.krptPassword.Size = new System.Drawing.Size(159, 20);
+            this.krptPassword.Size = new System.Drawing.Size(159, 23);
             this.krptPassword.TabIndex = 1;
             this.krptPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.krptConfirmPassword_KeyDown);
             // 
             // krptNewPassword
             // 
-            this.krptNewPassword.Location = new System.Drawing.Point(139, 65);
+            this.krptNewPassword.Location = new System.Drawing.Point(207, 65);
             this.krptNewPassword.MaxLength = 16;
             this.krptNewPassword.Name = "krptNewPassword";
             this.krptNewPassword.PasswordChar = '●';
-            this.krptNewPassword.Size = new System.Drawing.Size(159, 20);
+            this.krptNewPassword.Size = new System.Drawing.Size(159, 23);
             this.krptNewPassword.TabIndex = 2;
             this.krptNewPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.krptConfirmPassword_KeyDown);
             // 
             // krptConfirmPassword
             // 
-            this.krptConfirmPassword.Location = new System.Drawing.Point(139, 102);
+            this.krptConfirmPassword.Location = new System.Drawing.Point(207, 102);
             this.krptConfirmPassword.MaxLength = 16;
             this.krptConfirmPassword.Name = "krptConfirmPassword";
             this.krptConfirmPassword.PasswordChar = '●';
-            this.krptConfirmPassword.Size = new System.Drawing.Size(159, 20);
+            this.krptConfirmPassword.Size = new System.Drawing.Size(159, 23);
             this.krptConfirmPassword.TabIndex = 3;
             this.krptConfirmPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.krptConfirmPassword_KeyDown);
             // 
             // PasswordWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F); this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(331, 184);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(401, 184);
             this.Controls.Add(this.krptConfirmPassword);
             this.Controls.Add(this.krptNewPassword);
             this.Controls.Add(this.krptPassword);

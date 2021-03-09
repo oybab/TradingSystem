@@ -119,18 +119,18 @@ namespace Oybab.ServicePC.SubWindow
                 if (null == order.StartTime)
                     krplStartTimeValue.Text = ":";
                 else
-                    krplStartTimeValue.Text = string.Format(": {0}", DateTime.ParseExact(order.StartTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm"));
+                    krplStartTimeValue.Text = string.Format(": {0}", DateTime.ParseExact(order.StartTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm"));
 
                 if (null == order.EndTime)
                     krplEndTimeValue.Text = ":";
                 else
-                    krplEndTimeValue.Text = string.Format(": {0}", DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm"));
+                    krplEndTimeValue.Text = string.Format(": {0}", DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm"));
 
                 
-                krplAddTimeValue.Text = string.Format(": {0}", DateTime.ParseExact(order.AddTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm"));
+                krplAddTimeValue.Text = string.Format(": {0}", DateTime.ParseExact(order.AddTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm"));
 
                 if (null != order.FinishTime)
-                    krplFinishTimeValue.Text = string.Format(":{0}", DateTime.ParseExact(order.FinishTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm"));
+                    krplFinishTimeValue.Text = string.Format(":{0}", DateTime.ParseExact(order.FinishTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm"));
                 else
                     krplFinishTimeValue.Text = ";";
             }
@@ -392,7 +392,7 @@ namespace Oybab.ServicePC.SubWindow
                 }
 
 
-                AddTimeStr = DateTime.ParseExact(AddTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm");
+                AddTimeStr = DateTime.ParseExact(AddTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm");
 
                 if (Resources.GetRes().MainLangIndex == 0)
                     productName = Resources.GetRes().Products.Where(x => x.ProductId == productId).Select(x => x.ProductName0).FirstOrDefault();
@@ -485,7 +485,7 @@ namespace Oybab.ServicePC.SubWindow
                 }
 
 
-                AddTimeStr = DateTime.ParseExact(AddTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm");
+                AddTimeStr = DateTime.ParseExact(AddTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm");
 
                
                 if (AdminId > 0)
@@ -1046,7 +1046,7 @@ namespace Oybab.ServicePC.SubWindow
 
                     List<Log> logList = null;
 
-                    DateTime orderAddTime = (DateTime.ParseExact(order.AddTime.ToString(), "yyyyMMddHHmmss", null));
+                    DateTime orderAddTime = (DateTime.ParseExact(order.AddTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture));
 
                     DateTime startDateTime = orderAddTime;
                     DateTime endDateTime = orderAddTime;

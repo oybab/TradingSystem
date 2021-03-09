@@ -66,8 +66,8 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Controls
             this.StartTimeLong = order == null ? selectedModel.StartTimeTemp : order.StartTime.Value;
             this.EndTimeLong = selectedModel.EndTimeTemp;
 
-            this.StartTime = DateTime.ParseExact(StartTimeLong.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm:ss");
-            this.EndTime = DateTime.ParseExact(EndTimeLong.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm:ss");
+            this.StartTime = DateTime.ParseExact(StartTimeLong.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm:ss");
+            this.EndTime = DateTime.ParseExact(EndTimeLong.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm:ss");
 
 
             this.Mode = 1;
@@ -385,11 +385,11 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Controls
 
                                 if (selectedModel.RoomType == 1)
                                 {
-                                    ReturnValue = long.Parse(DateTime.ParseExact(EndTimeLong.ToString(), "yyyyMMddHHmmss", null).AddHours(int.Parse(Hour)).AddMinutes(int.Parse(Minute)).ToString("yyyyMMddHHmmss"));
+                                    ReturnValue = long.Parse(DateTime.ParseExact(EndTimeLong.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).AddHours(int.Parse(Hour)).AddMinutes(int.Parse(Minute)).ToString("yyyyMMddHHmmss"));
                                 }
                                 else if (selectedModel.RoomType == 2)
                                 {
-                                    ReturnValue = long.Parse(DateTime.ParseExact(EndTimeLong.ToString(), "yyyyMMddHHmmss", null).AddDays(int.Parse(Hour)).AddHours(int.Parse(Minute)).ToString("yyyyMMddHHmmss"));
+                                    ReturnValue = long.Parse(DateTime.ParseExact(EndTimeLong.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).AddDays(int.Parse(Hour)).AddHours(int.Parse(Minute)).ToString("yyyyMMddHHmmss"));
                                 }
 
                             }
@@ -397,11 +397,11 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Controls
                             {
                                 if (selectedModel.RoomType == 1)
                                 {
-                                    ReturnValue = long.Parse(DateTime.ParseExact(EndTimeLong.ToString(), "yyyyMMddHHmmss", null).AddHours(-int.Parse(Hour)).AddMinutes(-int.Parse(Minute)).ToString("yyyyMMddHHmmss"));
+                                    ReturnValue = long.Parse(DateTime.ParseExact(EndTimeLong.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).AddHours(-int.Parse(Hour)).AddMinutes(-int.Parse(Minute)).ToString("yyyyMMddHHmmss"));
                                 }
                                 else if (selectedModel.RoomType == 2)
                                 {
-                                    ReturnValue = long.Parse(DateTime.ParseExact(EndTimeLong.ToString(), "yyyyMMddHHmmss", null).AddDays(-int.Parse(Hour)).AddHours(-int.Parse(Minute)).ToString("yyyyMMddHHmmss"));
+                                    ReturnValue = long.Parse(DateTime.ParseExact(EndTimeLong.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).AddDays(-int.Parse(Hour)).AddHours(-int.Parse(Minute)).ToString("yyyyMMddHHmmss"));
                                 }
                             }
 
@@ -566,8 +566,8 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Controls
 
             if (Mode == 1)
             {
-                TimeSpan total = (DateTime.ParseExact(EndTimeLong.ToString(), "yyyyMMddHHmmss", null).AddDays(DayD).AddHours(HourD).AddMinutes(MinuteD) - DateTime.ParseExact(StartTimeLong.ToString(), "yyyyMMddHHmmss", null));
-                TimeSpan balance = (DateTime.Now - DateTime.ParseExact(EndTimeLong.ToString(), "yyyyMMddHHmmss", null).AddDays(DayD).AddHours(HourD).AddMinutes(MinuteD));
+                TimeSpan total = (DateTime.ParseExact(EndTimeLong.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).AddDays(DayD).AddHours(HourD).AddMinutes(MinuteD) - DateTime.ParseExact(StartTimeLong.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture));
+                TimeSpan balance = (DateTime.Now - DateTime.ParseExact(EndTimeLong.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).AddDays(DayD).AddHours(HourD).AddMinutes(MinuteD));
 
                 if (selectedModel.RoomType == 1)
                     TotalTime = string.Format("{0}:{1}", (int)total.TotalHours, total.Minutes);
@@ -584,12 +584,12 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Controls
                 else
                     RemainingTime = "0:0";
 
-                this.EndTime = DateTime.ParseExact(EndTimeLong.ToString(), "yyyyMMddHHmmss", null).AddDays(DayD).AddHours(HourD).AddMinutes(MinuteD).ToString("yyyy-MM-dd HH:mm:ss");
+                this.EndTime = DateTime.ParseExact(EndTimeLong.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).AddDays(DayD).AddHours(HourD).AddMinutes(MinuteD).ToString("yyyy-MM-dd HH:mm:ss");
             }
             else if (Mode == 2)
             {
-                TimeSpan total = (DateTime.ParseExact(EndTimeLong.ToString(), "yyyyMMddHHmmss", null).AddDays(-DayD).AddHours(-HourD).AddMinutes(-MinuteD) - DateTime.ParseExact(StartTimeLong.ToString(), "yyyyMMddHHmmss", null));
-                TimeSpan balance = (DateTime.Now - DateTime.ParseExact(EndTimeLong.ToString(), "yyyyMMddHHmmss", null).AddDays(-DayD).AddHours(-HourD).AddMinutes(-MinuteD));
+                TimeSpan total = (DateTime.ParseExact(EndTimeLong.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).AddDays(-DayD).AddHours(-HourD).AddMinutes(-MinuteD) - DateTime.ParseExact(StartTimeLong.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture));
+                TimeSpan balance = (DateTime.Now - DateTime.ParseExact(EndTimeLong.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).AddDays(-DayD).AddHours(-HourD).AddMinutes(-MinuteD));
 
                 if (selectedModel.RoomType == 1)
                     TotalTime = string.Format("{0}:{1}", (int)total.TotalHours, total.Minutes);
@@ -606,7 +606,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Controls
                 else
                     RemainingTime = "0:0";
 
-                this.EndTime = DateTime.ParseExact(EndTimeLong.ToString(), "yyyyMMddHHmmss", null).AddDays(-DayD).AddHours(-HourD).AddMinutes(-MinuteD).ToString("yyyy-MM-dd HH:mm:ss");
+                this.EndTime = DateTime.ParseExact(EndTimeLong.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).AddDays(-DayD).AddHours(-HourD).AddMinutes(-MinuteD).ToString("yyyy-MM-dd HH:mm:ss");
             }
         }
 

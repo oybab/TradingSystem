@@ -8,7 +8,7 @@
     <!-- 弹出框边框 -->
     <Style x:Key="bdMessageboxBorderStyle" TargetType="Border">
         <Setter Property="Width" Value="700"/>
-        <Setter Property="Height" Value="600"/>
+        <Setter Property="MinHeight" Value="600"/>
         <Setter Property="CornerRadius" Value="15"/>
         <Setter Property="BorderBrush" Value="Gray"/>
         <Setter Property="Background" Value="White"/>

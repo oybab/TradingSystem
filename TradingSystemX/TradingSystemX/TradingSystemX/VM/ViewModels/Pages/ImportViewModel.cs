@@ -427,6 +427,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
             if (!string.IsNullOrWhiteSpace(Products.SearchKey))
                 Products.SearchKey = "";
 
+            Selected.GoCommand = null;
             // 语言默认, 或者上次选择
             if (Resources.Instance.DefaultOrderLang == -1)
             {
@@ -436,7 +437,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
             {
                 Selected.LanguageMode = Resources.Instance.DefaultOrderLang;
             }
-
+            Selected.GoCommand = GoCommand;
 
 
             Selected.ClearList();
@@ -904,7 +905,8 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
             {
                 return _changeOrderLanguageCommand ?? (_changeOrderLanguageCommand = new RelayCommand(param =>
                 {
-                    Selected.LanguageMode = Res.Instance.GetMainLangByMainLangIndex(Res.Instance.GetMainLangByLangIndex(this.Selected.LanguageMode).MainLangIndex + 1).LangIndex;
+                    //Selected.LanguageMode = Res.Instance.GetMainLangByMainLangIndex(Res.Instance.GetMainLangByLangIndex(this.Selected.LanguageMode).MainLangIndex + 1).LangIndex;
+                    Selected.LanguageMode = (int)Selected.SelectedLang.Value;
 
                 }));
             }

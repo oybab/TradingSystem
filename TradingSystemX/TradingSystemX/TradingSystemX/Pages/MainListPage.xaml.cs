@@ -1,4 +1,5 @@
-﻿using Oybab.TradingSystemX.VM.ViewModels.Pages;
+﻿using Oybab.TradingSystemX.VM.ModelsForViews;
+using Oybab.TradingSystemX.VM.ViewModels.Pages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,8 +22,20 @@ namespace Oybab.TradingSystemX.Pages
             viewModel = new MainListViewModel(this, GetListContent(), GetListTemplate());
             
             this.BindingContext = viewModel;
-            
 
+            viewModel.ClickPickerEvent -= ViewModel_ClickPickerEvent;
+            viewModel.ClickPickerEvent += ViewModel_ClickPickerEvent;
+        }
+
+        private void ViewModel_ClickPickerEvent(object sender, EventArgs e)
+        {
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                if (pkLanguage.IsFocused)
+                    pkLanguage.Unfocus();
+
+                pkLanguage.Focus();
+            });
         }
 
         /// <summary>
@@ -51,6 +64,16 @@ namespace Oybab.TradingSystemX.Pages
         private StackLayout GetListContent()
         {
             return lvList;
+        }
+
+        private void Picker_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MainListViewModel view = this.BindingContext as MainListViewModel;
+            if (null != view)
+            {
+                if (null != view.SelectedLang && null != view.GoCommand && view._isInit)
+                    view.GoCommand.Execute(new MainListModel { Name = "ChangeLanguageFinish" });
+            }
         }
     }
 }

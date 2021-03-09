@@ -160,10 +160,10 @@
     <value>Exit</value>
   </data>
 	<data name="FontName" xml:space="preserve">
-    <value>Microsoft YaHei, Oybab Tuz</value>
+    <value>Microsoft YaHei, Aria, Oybab Tuz</value>
   </data>
 	<data name="FontSize" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
 	<data name="Id" xml:space="preserve">
     <value>ID</value>

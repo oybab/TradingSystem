@@ -30,7 +30,7 @@ namespace Oybab.Res.View.ViewModels.Controls
             {
                 LanguageList.Clear();
 
-                foreach (var item in Resources.GetRes().AllLangList)
+                foreach (var item in Resources.GetRes().AllLangList.OrderBy(x=>x.Value.LangOrder))
                 {
                     LanguageList.Add(new LangItemModel() { LanguageMode = item.Value.LangIndex, LanguageName = item.Value.LangName, Command = this.Command });
                 }
@@ -120,6 +120,23 @@ namespace Oybab.Res.View.ViewModels.Controls
 
         }
 
+
+
+
+
+        private bool _isPrint = false;
+        /// <summary>
+        /// 是否打印
+        /// </summary>
+        public bool IsPrint
+        {
+            get { return _isPrint; }
+            set
+            {
+                _isPrint = value;
+                OnPropertyChanged("IsPrint");
+            }
+        }
 
 
 

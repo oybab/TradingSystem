@@ -1,0 +1,1947 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="About" xml:space="preserve">
+    <value>حول</value>
+  </data>
+	<data name="Add" xml:space="preserve">
+    <value>إضافة</value>
+  </data>
+	<data name="Change" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+	<data name="ChangeFaild" xml:space="preserve">
+    <value>فشل التعديل !‏</value>
+  </data>
+	<data name="ChangePassword" xml:space="preserve">
+    <value>تعديل كلمة المرور</value>
+  </data>
+	<data name="ChangeSuccess" xml:space="preserve">
+    <value>تم التعديل بنجاح !‏</value>
+  </data>
+	<data name="Close" xml:space="preserve">
+    <value>إغلاق</value>
+  </data>
+	<data name="Company" xml:space="preserve">
+    <value>Hotan Oybab انفارمیشن اینڈ ٹیکنالوجی کمپنی</value>
+  </data>
+	<data name="ConfirmPassword" xml:space="preserve">
+    <value>تأكيد كلمة المرور</value>
+  </data>
+	<data name="Copyright" xml:space="preserve">
+    <value>جميع الحقوق محفوظة لشركة Oybab.</value>
+  </data>
+	<data name="Delete" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+	<data name="DeleteFailt" xml:space="preserve">
+    <value>فشل الحذف !‏</value>
+  </data>
+	<data name="DeleteSuccess" xml:space="preserve">
+    <value>تم الحذف بنجاح !‏</value>
+  </data>
+	<data name="Exit" xml:space="preserve">
+    <value>خروج</value>
+  </data>
+	<data name="FontName" xml:space="preserve">
+    <value>Microsoft YaHei, Aria, Oybab Tuz</value>
+  </data>
+	<data name="FontSize" xml:space="preserve">
+    <value>12</value>
+  </data>
+	<data name="Id" xml:space="preserve">
+    <value>الرقم</value>
+  </data>
+	<data name="Language" xml:space="preserve">
+    <value>اللغة</value>
+  </data>
+	<data name="Login" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+  </data>
+	<data name="LoginValid" xml:space="preserve">
+    <value>يرجى إدخال معلومات {0} بدقة !‏</value>
+  </data>
+	<data name="NewPassword" xml:space="preserve">
+    <value>كلمة المرور الجديدة</value>
+  </data>
+	<data name="No" xml:space="preserve">
+    <value>لا</value>
+  </data>
+	<data name="OldPassword" xml:space="preserve">
+    <value>كلمة المرور القديمة</value>
+  </data>
+	<data name="OldPasswordFaild" xml:space="preserve">
+    <value>لم يتم إدخال كلمة المرور القديمة بشكل صحيح، يرجى إعادة إدخالها !‏</value>
+  </data>
+	<data name="Password" xml:space="preserve">
+    <value>كلمة المرور</value>
+  </data>
+	<data name="PwdError" xml:space="preserve">
+    <value>كلمة مرور خاطئة !‏</value>
+  </data>
+	<data name="Refresh" xml:space="preserve">
+    <value>تحديث</value>
+  </data>
+	<data name="Retry" xml:space="preserve">
+    <value>حاول مرة أخرى</value>
+  </data>
+	<data name="RightToLeft" xml:space="preserve">
+    <value>1</value>
+  </data>
+	<data name="Save" xml:space="preserve">
+    <value>حفظ</value>
+  </data>
+	<data name="SaveFailt" xml:space="preserve">
+    <value>فشل الحفظ !‏</value>
+  </data>
+	<data name="SaveSuccess" xml:space="preserve">
+    <value>حفظ بنجاح !‏</value>
+  </data>
+	<data name="Search" xml:space="preserve">
+    <value>ابحث عن</value>
+  </data>
+	<data name="Total" xml:space="preserve">
+    <value>الإجمالي</value>
+  </data>
+	<data name="TwoNewPasswordNotEqual" xml:space="preserve">
+    <value>كلمة المرور الجديدة التي تم إدخالها مرتين غير متطابقة، يرجى إعادة إدخالها !‏</value>
+  </data>
+	<data name="UpdateInfo" xml:space="preserve">
+    <value>تم العثور على إصدار جديد</value>
+  </data>
+	<data name="USBKey_Warn" xml:space="preserve">
+    <value>يرجى إدخال مفتاح USB والنقر فوق [إعادة المحاولة] للمتابعة أو انقر فوق [خروج] للخروج من البرنامج!‏</value>
+  </data>
+	<data name="UserLogin" xml:space="preserve">
+    <value>تسجيل دخول المستخدم</value>
+  </data>
+	<data name="Yes" xml:space="preserve">
+    <value>نعم</value>
+  </data>
+	<data name="Abort" xml:space="preserve">
+    <value>خروج</value>
+  </data>
+	<data name="Cancel" xml:space="preserve">
+    <value>إلغاء</value>
+  </data>
+	<data name="Ignore" xml:space="preserve">
+    <value>تجاهل</value>
+  </data>
+	<data name="UserName" xml:space="preserve">
+    <value>اسم المستخدم</value>
+  </data>
+	<data name="Warn" xml:space="preserve">
+    <value>تحذير</value>
+  </data>
+	<data name="OK" xml:space="preserve">
+    <value>تأكيد</value>
+  </data>
+	<data name="Error" xml:space="preserve">
+    <value>خطأ</value>
+  </data>
+	<data name="CurrentKeyName" xml:space="preserve">
+    <value>اسم مفتاح USB الحالي هو: {0}.‏</value>
+  </data>
+	<data name="Exception_CheckSqlAndNet" xml:space="preserve">
+    <value>خطأ في اتصال قاعدة البيانات، يرجى التحقق من تكوين اتصال الشبكة أو قاعدة البيانات !‏</value>
+  </data>
+	<data name="Exception_LoadCacheError" xml:space="preserve">
+    <value>خطأ في تحميل ذاكرة التخزين المؤقت .‏</value>
+  </data>
+	<data name="Exception_LoadMediaRoot" xml:space="preserve">
+    <value>خطأ في تحميل مسار جذر الأغنية، يرجى التحقق من ملف التكوين !‏</value>
+  </data>
+	<data name="Exception_NotSupprtKey" xml:space="preserve">
+    <value>يتعذر الاتصال بقاعدة البيانات.  مفتاح USB هذا غير مدعوم.‏</value>
+  </data>
+	<data name="InputData" xml:space="preserve">
+    <value>استيراد البيانات</value>
+  </data>
+	<data name="OutputData" xml:space="preserve">
+    <value>تصدير البيانات</value>
+  </data>
+	<data name="UpdateNonReturnOrCantRead" xml:space="preserve">
+    <value>تم إرجاع بيانات التحديث فارغة أو فشل التحليل .‏</value>
+  </data>
+	<data name="UpdateUnableError" xml:space="preserve">
+    <value>خطأ غير معروف لتحديث الاستعلام، الرمز: {0} .‏</value>
+  </data>
+	<data name="CompanyLogoImage" xml:space="preserve">
+    <value>logo.png</value>
+  </data>
+	<data name="Exception_ReadResourceStrError" xml:space="preserve">
+    <value>فشلت قراءة أحرف المورد !‏</value>
+  </data>
+	<data name="Exception_InputData" xml:space="preserve">
+    <value>فشل استيراد البيانات !‏</value>
+  </data>
+	<data name="Exception_InputReadData" xml:space="preserve">
+    <value>فشل استيراد البيانات وقراءتها !‏</value>
+  </data>
+	<data name="Exception_OutputData" xml:space="preserve">
+    <value>فشل تصدير البيانات !‏</value>
+  </data>
+	<data name="InputDataSuccess" xml:space="preserve">
+    <value>تم استيراد البيانات بنجاح !‏</value>
+  </data>
+	<data name="OutputDataSuccess" xml:space="preserve">
+    <value>تم تصدير البيانات بنجاح !‏</value>
+  </data>
+	<data name="File" xml:space="preserve">
+    <value>ملف</value>
+  </data>
+	<data name="Tools" xml:space="preserve">
+    <value>الأدوات</value>
+  </data>
+	<data name="All" xml:space="preserve">
+    <value>الكل</value>
+  </data>
+	<data name="FolderName" xml:space="preserve">
+    <value>اسم المجلد</value>
+  </data>
+	<data name="IgnoreData" xml:space="preserve">
+    <value>هل تريد بالتأكيد تجاهل البيانات غير المحفوظة ؟‏</value>
+  </data>
+	<data name="ImageName" xml:space="preserve">
+    <value>اسم الصورة</value>
+  </data>
+	<data name="More" xml:space="preserve">
+    <value>المزيد</value>
+  </data>
+	<data name="Page" xml:space="preserve">
+    <value>الصفحة</value>
+  </data>
+	<data name="AddDescription" xml:space="preserve">
+    <value>إضافة بيانات جديدة‏.‏</value>
+  </data>
+	<data name="DeleteDescription" xml:space="preserve">
+    <value>احذف البيانات الحالية.‏</value>
+  </data>
+	<data name="PleaseEditBefore" xml:space="preserve">
+    <value>يرجى إنهاء التحرير أولاً !‏</value>
+  </data>
+	<data name="SaveDescription" xml:space="preserve">
+    <value>احفظ البيانات الجديدة أو التي تم تغييرها حالياً</value>
+  </data>
+	<data name="SureDelete" xml:space="preserve">
+    <value>هل تريد بالتأكيد الحذف؟‏</value>
+  </data>
+	<data name="FileName" xml:space="preserve">
+    <value>اسم الملف</value>
+  </data>
+	<data name="Exception_NotFound" xml:space="preserve">
+    <value>لم يتم العثور على {0} هذا !‏</value>
+  </data>
+	<data name="ErrorBig" xml:space="preserve">
+    <value>تم العثور على ثغرات</value>
+  </data>
+	<data name="Select" xml:space="preserve">
+    <value>اختر</value>
+  </data>
+	<data name="System" xml:space="preserve">
+    <value>النظام</value>
+  </data>
+	<data name="AllPage" xml:space="preserve">
+    <value>الإجمالي:</value>
+  </data>
+	<data name="AllPage2" xml:space="preserve">
+    <value>صفحة</value>
+  </data>
+	<data name="CurrentPage" xml:space="preserve">
+    <value>الحالي: لا</value>
+  </data>
+	<data name="CurrentPage2" xml:space="preserve">
+    <value>صفحة</value>
+  </data>
+	<data name="LastPage" xml:space="preserve">
+    <value>الصفحة السابقة</value>
+  </data>
+	<data name="NextPage" xml:space="preserve">
+    <value>الصفحة التالية</value>
+  </data>
+	<data name="CompanyUrlStr" xml:space="preserve">
+    <value>موقع الكتروني</value>
+  </data>
+	<data name="ExitPassword" xml:space="preserve">
+    <value>قم بإنهاء كلمة المرور</value>
+  </data>
+	<data name="MobileNoStr" xml:space="preserve">
+    <value>الهاتف</value>
+  </data>
+	<data name="Reset" xml:space="preserve">
+    <value>إعادة تعيين</value>
+  </data>
+	<data name="NotFoundUSBKEY" xml:space="preserve">
+    <value>USB-KEY لم يتم العثور على !‏</value>
+  </data>
+	<data name="Back" xml:space="preserve">
+    <value>العودة</value>
+  </data>
+	<data name="MuteRestore" xml:space="preserve">
+    <value>استعادة</value>
+  </data>
+	<data name="UpdateAlert" xml:space="preserve">
+    <value>إذا وجدت إصدارًا جديدًا من النظام، فيرجى تنزيله وتحديثه في الوقت المناسب !‏</value>
+  </data>
+	<data name="Exception_CheckSqlAndFile" xml:space="preserve">
+    <value>خطأ في اتصال قاعدة البيانات، يرجى التحقق من تكوين ملف قاعدة البيانات أو اتصال قاعدة البيانات !‏</value>
+  </data>
+	<data name="CompanyShortName" xml:space="preserve">
+    <value>OYBAB</value>
+  </data>
+	<data name="CompleteInput" xml:space="preserve">
+    <value>يرجى إدخال البيانات بالكامل !‏</value>
+  </data>
+	<data name="VersionNo" xml:space="preserve">
+    <value>رقم الإصدار</value>
+  </data>
+	<data name="SoftPlayerDescription" xml:space="preserve">
+    <value>إذا كان لديك أي تعليقات أو اقتراحات، يرجى الاتصال بنا على: "النظام - حول" .‏</value>
+  </data>
+	<data name="ChangeLanguage" xml:space="preserve">
+    <value>تبديل اللغة</value>
+  </data>
+	<data name="ChangeLanguageFailt" xml:space="preserve">
+    <value>فشل تغيير اللغة !‏</value>
+  </data>
+	<data name="ChangeLanguageSuccess" xml:space="preserve">
+    <value>كان تغيير اللغة ناجحًا وسيدخل حيز التنفيذ في المرة التالية التي يتم فيها بدء تشغيل النظام  !‏</value>
+  </data>
+	<data name="Exception_InvalidLanguage" xml:space="preserve">
+    <value>لغة النظام غير صالحة أو غير موجودة. يرجى التحقق من ملف التكوين !‏</value>
+  </data>
+	<data name="Exception_LogError" xml:space="preserve">
+    <value>فشل تحميل السجل !‏</value>
+  </data>
+	<data name="FontName2" xml:space="preserve">
+    <value>Arial</value>
+  </data>
+	<data name="Help" xml:space="preserve">
+    <value>مساعدة</value>
+  </data>
+	<data name="Exception_InvalidDB" xml:space="preserve">
+    <value>ملف قاعدة بيانات غير صالح !‏</value>
+  </data>
+	<data name="Exception_KeyKeyError" xml:space="preserve">
+    <value>خطأ في الحصول على مفتاح USB.  خطأ: {0}، {1}.‏</value>
+  </data>
+	<data name="Exception_ApplicationCheckFaild" xml:space="preserve">
+    <value>فشل التحقق من التطبيق !‏</value>
+  </data>
+	<data name="Exception_CloseRequestFaild" xml:space="preserve">
+    <value>خطأ في إرسال طلب إغلاق الجلسة !‏</value>
+  </data>
+	<data name="Exception_EncryptedRequestFaild" xml:space="preserve">
+    <value>خطأ في إرسال طلب التشفير !‏</value>
+  </data>
+	<data name="Exception_LockRequestFaild" xml:space="preserve">
+    <value>خطأ في إرسال طلب القفل !‏</value>
+  </data>
+	<data name="Exception_NewRequestFailt" xml:space="preserve">
+    <value>خطأ في إرسال طلب جلسة جديدة! {0} رمز الخطأ : 101</value>
+  </data>
+	<data name="Exception_OutClientLimitFaild" xml:space="preserve">
+    <value>تجاوز حد اتصال العميل! رمز الخطأ {0}: 102</value>
+  </data>
+	<data name="Exception_RemoteServerConn" xml:space="preserve">
+    <value>يتعذر الاتصال بالخادم البعيد !‏</value>
+  </data>
+	<data name="Exception_ServerCantCorrConn" xml:space="preserve">
+    <value>يتعذر متابعة الجلسة مع الخادم بشكل صحيح! الرجاء النقر فوق "إعادة المحاولة" للمتابعة أو "خروج" للخروج من النظام ‏!‏</value>
+  </data>
+	<data name="Exception_ServerCheckFaild" xml:space="preserve">
+    <value>تحقق من خطأ مفتاح الخادم !‏</value>
+  </data>
+	<data name="Exception_ServerFaild" xml:space="preserve">
+    <value>خطأ في الخادم !‏</value>
+  </data>
+	<data name="Exception_ServerKeyFaild" xml:space="preserve">
+    <value>خطأ في Key الخادم!‏</value>
+  </data>
+	<data name="Exception_SessionExpiredRetry" xml:space="preserve">
+    <value>انتهت صلاحية الجلسة، يرجى إعادة المحاولة !‏</value>
+  </data>
+	<data name="Exception_SessionFaildAndTry" xml:space="preserve">
+    <value>انتهت صلاحية الجلسة، حاول أن تعيد المحاولة !‏</value>
+  </data>
+	<data name="Exception_SessionRequestFaild" xml:space="preserve">
+    <value>خطأ في إرسال طلب الاحتفاظ بالجلسة !‏</value>
+  </data>
+	<data name="Exception_SessionUpdateFaild" xml:space="preserve">
+    <value>فشل تحديث الجلسة !‏</value>
+  </data>
+	<data name="Exception_UIDRequestFaild" xml:space="preserve">
+    <value>فشل إرسال طلب الحصول على UID !‏</value>
+  </data>
+	<data name="SessionUpdateSuccess" xml:space="preserve">
+    <value>تم تحديث الجلسة بنجاح .‏</value>
+  </data>
+	<data name="Exception_SetClientTimeFailt" xml:space="preserve">
+    <value>فشل معايرة وقت الخادم لوقت العميل .‏</value>
+  </data>
+	<data name="IsHidden" xml:space="preserve">
+    <value>إخفاء</value>
+  </data>
+	<data name="Exception_CheckDataFaild" xml:space="preserve">
+    <value>خطأ في الحصول على بيانات الخادم البعيد !‏</value>
+  </data>
+	<data name="Exception_DataNotReady" xml:space="preserve">
+    <value>بيانات الخادم البعيد غير جاهزة! يرجى المحاولة مرة أخرى لاحقًا! رمز الخطأ: 107</value>
+  </data>
+	<data name="Exception_ChangePWDRequestFaild" xml:space="preserve">
+    <value>خطأ في إرسال طلب تغيير كلمة المرور !‏</value>
+  </data>
+	<data name="Exception_ValidPWDRequestFaild" xml:space="preserve">
+    <value>خطأ في إرسال طلب التحقق من كلمة المرور !‏</value>
+  </data>
+	<data name="ContactUs" xml:space="preserve">
+    <value>اتصل بنا</value>
+  </data>
+	<data name="Consumption" xml:space="preserve">
+    <value>استهلاك</value>
+  </data>
+	<data name="DealerContactWay" xml:space="preserve">
+    <value>معلومات الاتصال بالوكيل</value>
+  </data>
+	<data name="Mode" xml:space="preserve">
+    <value>وضع</value>
+  </data>
+	<data name="Remark" xml:space="preserve">
+    <value>ملاحظات</value>
+  </data>
+	<data name="Other" xml:space="preserve">
+    <value>غير ذلك</value>
+  </data>
+	<data name="Exception_IPConflict" xml:space="preserve">
+    <value>تعارض في عنوان IP، يرجى إعادة التشغيل !‏</value>
+  </data>
+	<data name="Exception_SessionInvalid" xml:space="preserve">
+    <value>جلسة غير صالحة، يرجى إعادة التشغيل !‏</value>
+  </data>
+	<data name="Exception_InvalidPending" xml:space="preserve">
+    <value>وضع غير صالح !‏</value>
+  </data>
+	<data name="Exception_IPInvalid" xml:space="preserve">
+    <value>عنوان IP غير صالح، يرجى الاتصال بخدمة العملاء ‏!‏</value>
+  </data>
+	<data name="Exception_OrderExpired" xml:space="preserve">
+    <value>انتهت صلاحية الفاتورة، يرجى الاتصال بخدمة العملاء ‏!‏</value>
+  </data>
+	<data name="Exception_OrderInvalid" xml:space="preserve">
+    <value>فاتورة غير صالحة، يرجى الاتصال بخدمة العملاء ‏!‏</value>
+  </data>
+	<data name="Exception_SendRequestFaild" xml:space="preserve">
+    <value>خطأ في إرسال طلب الإشعار !‏</value>
+  </data>
+	<data name="Exception_SetConRequestFaild" xml:space="preserve">
+    <value>خطأ في إرسال طلب وظيفة الإعدادات !‏</value>
+  </data>
+	<data name="Exception_OperateRequestFaild" xml:space="preserve">
+    <value>خطأ في إرسال طلب العملية !‏</value>
+  </data>
+	<data name="ChangeSet" xml:space="preserve">
+    <value>إعدادات الميزات</value>
+  </data>
+	<data name="ExpenditureManager" xml:space="preserve">
+    <value>إدارة المدفوعات</value>
+  </data>
+	<data name="MainPage" xml:space="preserve">
+    <value>الصفحة الرئيسية</value>
+  </data>
+	<data name="OrderManager" xml:space="preserve">
+    <value>إدارة الفواتير</value>
+  </data>
+	<data name="ProductManager" xml:space="preserve">
+    <value>إدارة المنتجات</value>
+  </data>
+	<data name="ProductTypeManager" xml:space="preserve">
+    <value>إدارة نوع المنتج</value>
+  </data>
+	<data name="RoomManager" xml:space="preserve">
+    <value>إدارة المقاعد</value>
+  </data>
+	<data name="SoftServiceName" xml:space="preserve">
+    <value>Oybab ٹریڈ سسٹم v1.1</value>
+  </data>
+	<data name="OperateFaild" xml:space="preserve">
+    <value>فشل {0} !‏</value>
+  </data>
+	<data name="ActualPrice" xml:space="preserve">
+    <value>السعر الفعلي</value>
+  </data>
+	<data name="AddTime" xml:space="preserve">
+    <value>إضافة وقت</value>
+  </data>
+	<data name="Backstage" xml:space="preserve">
+    <value>خلف الكواليس</value>
+  </data>
+	<data name="Count" xml:space="preserve">
+    <value>الكمية</value>
+  </data>
+	<data name="DealsPrice" xml:space="preserve">
+    <value>مبلغ الخصم</value>
+  </data>
+	<data name="Display" xml:space="preserve">
+    <value>شاشة العرض</value>
+  </data>
+	<data name="DisplayType" xml:space="preserve">
+    <value>نوع العرض</value>
+  </data>
+	<data name="EndTime" xml:space="preserve">
+    <value>وقت الانتهاء</value>
+  </data>
+	<data name="FinishTime" xml:space="preserve">
+    <value>وقت الاكتمال</value>
+  </data>
+	<data name="Hide" xml:space="preserve">
+    <value>إخفاء</value>
+  </data>
+	<data name="ImportTime" xml:space="preserve">
+    <value>تاريخ الدفع</value>
+  </data>
+	<data name="IpAddress" xml:space="preserve">
+    <value>عنوان IP</value>
+  </data>
+	<data name="Order" xml:space="preserve">
+    <value>ترتيب</value>
+  </data>
+	<data name="ProductName" xml:space="preserve">
+    <value>اسم المنتج</value>
+  </data>
+	<data name="ProductTypeName" xml:space="preserve">
+    <value>اسم نوع المنتج</value>
+  </data>
+	<data name="RoomNo" xml:space="preserve">
+    <value>رقم المقعد</value>
+  </data>
+	<data name="StartTime" xml:space="preserve">
+    <value>وقت البدء</value>
+  </data>
+	<data name="State" xml:space="preserve">
+    <value>الحالة</value>
+  </data>
+	<data name="TotalPrice" xml:space="preserve">
+    <value>السعر الإجمالي</value>
+  </data>
+	<data name="UnitPrice" xml:space="preserve">
+    <value>سعر الوحدة</value>
+  </data>
+	<data name="PropertyUsed" xml:space="preserve">
+    <value>يرجى تعديل البيانات المرتبطة بهذه البيانات أو حذفها أولاً !‏</value>
+  </data>
+	<data name="Exception_CountOutOfIPRequestLimit" xml:space="preserve">
+    <value>عدد كبير جدًا من الطلبات المتكررة، يرجى المحاولة مرة أخرى لاحقًا!  رمز الخطأ: 103</value>
+  </data>
+	<data name="Exception_ExceptionSource" xml:space="preserve">
+    <value>{0} {1} مصدر الخطأ: {2}</value>
+  </data>
+	<data name="PropertyExists" xml:space="preserve">
+    <value>{0} موجود مسبقاً، يرجى عدم التكرار !‏</value>
+  </data>
+	<data name="Checkout" xml:space="preserve">
+    <value>دفع الفاتورة</value>
+  </data>
+	<data name="Invalid" xml:space="preserve">
+    <value>إلغاء</value>
+  </data>
+	<data name="Confirmed" xml:space="preserve">
+    <value>تم التأكيد</value>
+  </data>
+	<data name="GetFailed" xml:space="preserve">
+    <value>الحصول على فشل !‏</value>
+  </data>
+	<data name="OrderDetails" xml:space="preserve">
+    <value>تفاصيل الفاتورة</value>
+  </data>
+	<data name="OrderNo" xml:space="preserve">
+    <value>رقم الفاتورة</value>
+  </data>
+	<data name="PropertyError" xml:space="preserve">
+    <value>{0} الذي تم إدخاله غير مكتمل أو غير دقيق !‏</value>
+  </data>
+	<data name="Requesting" xml:space="preserve">
+    <value>تحت الطلب</value>
+  </data>
+	<data name="Show" xml:space="preserve">
+    <value>عرض</value>
+  </data>
+	<data name="ShowDescription" xml:space="preserve">
+    <value>عرض التفاصيل</value>
+  </data>
+	<data name="Time" xml:space="preserve">
+    <value>الوقت</value>
+  </data>
+	<data name="TimeLimit" xml:space="preserve">
+    <value>يجب أن يكون الفاصل الزمني للبحث في غضون {0} يوم !‏</value>
+  </data>
+	<data name="ImportDetails" xml:space="preserve">
+    <value>تفاصيل الدفع</value>
+  </data>
+	<data name="ImportId" xml:space="preserve">
+    <value>رقم الدفع</value>
+  </data>
+	<data name="Print" xml:space="preserve">
+    <value>طباعة</value>
+  </data>
+	<data name="PrintDescription" xml:space="preserve">
+    <value>طباعة المحتوى</value>
+  </data>
+	<data name="AddImport" xml:space="preserve">
+    <value>مدفوعات جديدة</value>
+  </data>
+	<data name="LineDataError" xml:space="preserve">
+    <value>إدخال بيانات غير مكتمل أو غير دقيق على السطر {0} !‏</value>
+  </data>
+	<data name="BalanceCount" xml:space="preserve">
+    <value>الكمية المتبقية</value>
+  </data>
+	<data name="Exception_ProductCountRefreshExpiredRetry" xml:space="preserve">
+    <value>كمية المنتج انتهت، يرجى المحاولة مرة أخرى !‏</value>
+  </data>
+	<data name="Exception_ProductCountRefreshFailed" xml:space="preserve">
+    <value>فشل تحديث المنتج !‏</value>
+  </data>
+	<data name="Exception_ProductCountRefreshRetry" xml:space="preserve">
+    <value>عدد المنتجات غير كافٍ، حاول الحصول على المنتج مرة أخرى !‏</value>
+  </data>
+	<data name="IsBindCount" xml:space="preserve">
+    <value>عدد الروابط</value>
+  </data>
+	<data name="ProductCountRefreshSuccess" xml:space="preserve">
+    <value>تم تحديث المنتج بنجاح.‏</value>
+  </data>
+	<data name="WarningCount" xml:space="preserve">
+    <value>عدد التحذيرات</value>
+  </data>
+	<data name="Call" xml:space="preserve">
+    <value>مكالمة</value>
+  </data>
+	<data name="ConsumptionType" xml:space="preserve">
+    <value>التحكم في الاستهلاك</value>
+  </data>
+	<data name="ControlType" xml:space="preserve">
+    <value>جهاز التحكم عن بعد</value>
+  </data>
+	<data name="CostPrice" xml:space="preserve">
+    <value>سعر التكلفة</value>
+  </data>
+	<data name="New" xml:space="preserve">
+    <value>جديد</value>
+  </data>
+	<data name="Offline" xml:space="preserve">
+    <value>غير متصل</value>
+  </data>
+	<data name="Online" xml:space="preserve">
+    <value>متصل</value>
+  </data>
+	<data name="PaidPrice" xml:space="preserve">
+    <value>مبلغ الدفع</value>
+  </data>
+	<data name="PermissionDenied" xml:space="preserve">
+    <value>لا توجد أذونات !‏</value>
+  </data>
+	<data name="BalancePrice" xml:space="preserve">
+    <value>المبلغ المتبقي</value>
+  </data>
+	<data name="ChangePrice" xml:space="preserve">
+    <value>تعديل السعر</value>
+  </data>
+	<data name="ChangeTime" xml:space="preserve">
+    <value>تعديل الوقت</value>
+  </data>
+	<data name="Disable" xml:space="preserve">
+    <value>إغلاق</value>
+  </data>
+	<data name="Enable" xml:space="preserve">
+    <value>فتح</value>
+  </data>
+	<data name="Hour" xml:space="preserve">
+    <value>ساعة</value>
+  </data>
+	<data name="InvalidIt" xml:space="preserve">
+    <value>إلغاء</value>
+  </data>
+	<data name="Minute" xml:space="preserve">
+    <value>دقيقة</value>
+  </data>
+	<data name="RemainingTime" xml:space="preserve">
+    <value>الوقت المتبقي</value>
+  </data>
+	<data name="TotalTime" xml:space="preserve">
+    <value>الوقت الإجمالي</value>
+  </data>
+	<data name="BalanceCountNotEnough" xml:space="preserve">
+    <value>فشلت العملية، الكمية المتبقية من هذا المنتج هي {0} فقط !‏</value>
+  </data>
+	<data name="CancelOrder" xml:space="preserve">
+    <value>إلغاء الفاتورة</value>
+  </data>
+	<data name="CancelOrderDescription" xml:space="preserve">
+    <value>إلغاء الفاتورة الحالية .‏</value>
+  </data>
+	<data name="CheckoutOrder" xml:space="preserve">
+    <value>دفع الفاتورة</value>
+  </data>
+	<data name="CheckoutOrderDescription" xml:space="preserve">
+    <value>دفع الفاتورة الحالية .‏</value>
+  </data>
+	<data name="ConfirmCancelOrder" xml:space="preserve">
+    <value>هل تريد تأكيد إلغاء الفاتورة الحالية ؟‏</value>
+  </data>
+	<data name="FaildThenRefreshModel" xml:space="preserve">
+    <value>فشلت العملية، تم تعديل الفاتورة، جاهز لمحاولة تحديث معلومات الفوترة !‏</value>
+  </data>
+	<data name="Locked" xml:space="preserve">
+    <value>مقفل</value>
+  </data>
+	<data name="NewOrder" xml:space="preserve">
+    <value>فاتورة جديدة</value>
+  </data>
+	<data name="NewOrderDescription" xml:space="preserve">
+    <value>إنشاء فاتورة جديدة .‏</value>
+  </data>
+	<data name="OperateSuccess" xml:space="preserve">
+    <value>نجاح {0} !‏</value>
+  </data>
+	<data name="RefreshOrderFailed" xml:space="preserve">
+    <value>فشل تحديث الفاتورة الحالية !‏</value>
+  </data>
+	<data name="ReplaceRoom" xml:space="preserve">
+    <value>استبدال المقعد</value>
+  </data>
+	<data name="ReplaceRoomDescription" xml:space="preserve">
+    <value>استبدل المقعد الحالي بمقعد آخر .‏</value>
+  </data>
+	<data name="Request" xml:space="preserve">
+    <value>طلب</value>
+  </data>
+	<data name="Restart" xml:space="preserve">
+    <value>إعادة تشغيل</value>
+  </data>
+	<data name="RestartDescription" xml:space="preserve">
+    <value>أعد تشغيل الجهاز الرئيسي .‏</value>
+  </data>
+	<data name="SaveBeforeDelete" xml:space="preserve">
+    <value>يرجى حفظ البيانات أولاً !‏</value>
+  </data>
+	<data name="ShowOrder" xml:space="preserve">
+    <value>عرض الفاتورة</value>
+  </data>
+	<data name="ShowOrderDescription" xml:space="preserve">
+    <value>عرض تفاصيل الفاتورة .‏</value>
+  </data>
+	<data name="Shutdown" xml:space="preserve">
+    <value>إيقاف التشغيل</value>
+  </data>
+	<data name="ShutdownDescription" xml:space="preserve">
+    <value>إيقاف تشغيل الجهاز الرئيسي .‏</value>
+  </data>
+	<data name="UnevenBalance" xml:space="preserve">
+    <value>الرصيد غير متساو !‏</value>
+  </data>
+	<data name="Confirm" xml:space="preserve">
+    <value>تأكيد</value>
+  </data>
+	<data name="NewRoom" xml:space="preserve">
+    <value>مقعد جديد</value>
+  </data>
+	<data name="SendFireAlarm" xml:space="preserve">
+    <value>إنذار حريق</value>
+  </data>
+	<data name="Barcode" xml:space="preserve">
+    <value>الباركود</value>
+  </data>
+	<data name="Disabled" xml:space="preserve">
+    <value>تم التعطيل</value>
+  </data>
+	<data name="Price" xml:space="preserve">
+    <value>السعر</value>
+  </data>
+	<data name="IsPayByTime" xml:space="preserve">
+    <value>حسب الوقت</value>
+  </data>
+	<data name="PriceHour" xml:space="preserve">
+    <value>سعر الوقت</value>
+  </data>
+	<data name="IsAutoExtendTime" xml:space="preserve">
+    <value>هل تريد تمديد الوقت تلقائيا</value>
+  </data>
+	<data name="PropertyUnSame" xml:space="preserve">
+    <value>البيانات غير متناسقة، يرجى إعادة التشغيل والمحاولة مرة أخرى !‏</value>
+  </data>
+	<data name="AdminName" xml:space="preserve">
+    <value>اسم المسؤول</value>
+  </data>
+	<data name="AdminManager" xml:space="preserve">
+    <value>إدارة المسؤول</value>
+  </data>
+	<data name="AdminNo" xml:space="preserve">
+    <value>رقم المسؤول</value>
+  </data>
+	<data name="Sex" xml:space="preserve">
+    <value>الجنس</value>
+  </data>
+	<data name="IDNumber" xml:space="preserve">
+    <value>رقم الهوية</value>
+  </data>
+	<data name="Menu" xml:space="preserve">
+    <value>القائمة</value>
+  </data>
+	<data name="IsOnlyOwn" xml:space="preserve">
+    <value>إدارة القيود</value>
+  </data>
+	<data name="IsEnable" xml:space="preserve">
+    <value>التشغيل أو إيقاف التشغيل</value>
+  </data>
+	<data name="Guest" xml:space="preserve">
+    <value>النزلاء</value>
+  </data>
+	<data name="Employee" xml:space="preserve">
+    <value>الموظفون</value>
+  </data>
+	<data name="Admin" xml:space="preserve">
+    <value>المسؤولين</value>
+  </data>
+	<data name="DeviceNo" xml:space="preserve">
+    <value>رقم الجهاز</value>
+  </data>
+	<data name="DeviceType" xml:space="preserve">
+    <value>نوع الجهاز</value>
+  </data>
+	<data name="DeviceManager" xml:space="preserve">
+    <value>إدارة الجهاز</value>
+  </data>
+	<data name="Computer" xml:space="preserve">
+    <value>الكمبيوتر</value>
+  </data>
+	<data name="Tablet" xml:space="preserve">
+    <value>جهاز لوحي</value>
+  </data>
+	<data name="PrinterManager" xml:space="preserve">
+    <value>إدارة الطابعة</value>
+  </data>
+	<data name="PrinterName" xml:space="preserve">
+    <value>اسم الطابعة</value>
+  </data>
+	<data name="PrinterDeviceName" xml:space="preserve">
+    <value>اسم جهاز الطابعة</value>
+  </data>
+	<data name="PrintType" xml:space="preserve">
+    <value>نوع الطباعة</value>
+  </data>
+	<data name="Customer" xml:space="preserve">
+    <value>العميل</value>
+  </data>
+	<data name="Kitchen" xml:space="preserve">
+    <value>المطبخ</value>
+  </data>
+	<data name="MemberNo" xml:space="preserve">
+    <value>رقم العضوية</value>
+  </data>
+	<data name="MemberManager" xml:space="preserve">
+    <value>إدارة العضوية</value>
+  </data>
+	<data name="MemberName" xml:space="preserve">
+    <value>اسم العضو</value>
+  </data>
+	<data name="Occupation" xml:space="preserve">
+    <value>المهنة</value>
+  </data>
+	<data name="Mobile" xml:space="preserve">
+    <value>الهاتف المحمول</value>
+  </data>
+	<data name="Phone" xml:space="preserve">
+    <value>الهاتف</value>
+  </data>
+	<data name="Address" xml:space="preserve">
+    <value>العنوان</value>
+  </data>
+	<data name="OfferRate" xml:space="preserve">
+    <value>100%/نسبة البيع</value>
+  </data>
+	<data name="SpendPrice" xml:space="preserve">
+    <value>مبلغ الدفع</value>
+  </data>
+	<data name="FavorablePrice" xml:space="preserve">
+    <value>مبلغ الخصم</value>
+  </data>
+	<data name="ExpiredTime" xml:space="preserve">
+    <value>تاريخ الاستحقاق</value>
+  </data>
+	<data name="Male" xml:space="preserve">
+    <value>ذكر</value>
+  </data>
+	<data name="Female" xml:space="preserve">
+    <value>أنثى</value>
+  </data>
+	<data name="Register" xml:space="preserve">
+    <value>تسجيل</value>
+  </data>
+	<data name="MachineNo" xml:space="preserve">
+    <value>رمز الآلة</value>
+  </data>
+	<data name="RegisterNo" xml:space="preserve">
+    <value>رمز التسجيل</value>
+  </data>
+	<data name="SoftwareExpired" xml:space="preserve">
+    <value>انتهت صلاحية النظام، هل تريد إعادة التسجيل؟‏</value>
+  </data>
+	<data name="SoftwareSoonExpired" xml:space="preserve">
+    <value>ستنتهي صلاحية النظام بعد {0} يومًا {1}، هل تريد التسجيل الآن؟‏</value>
+  </data>
+	<data name="SoftwareExpiredWarn" xml:space="preserve">
+    <value>حتى لا تؤثر على الاستخدام العادي، نقترح عليك الاتصال بنا وتسجيل النظام قبل 7 أيام على الأقل!‏</value>
+  </data>
+	<data name="RegisterSuccess" xml:space="preserve">
+    <value>تم التسجيل بنجاح، يرجى إعادة تشغيل النظام !‏</value>
+  </data>
+	<data name="MemberPay" xml:space="preserve">
+    <value>الدفع للأعضاء</value>
+  </data>
+	<data name="MemberPayDescription" xml:space="preserve">
+    <value>عرض تفاصيل الدفع الخاص بالعضو</value>
+  </data>
+	<data name="MemberPayNo" xml:space="preserve">
+    <value>رقم الدفع الخاص بالعضو</value>
+  </data>
+	<data name="MemberBalanceNotEnough" xml:space="preserve">
+    <value>رصيد العضو غير كافٍ!‏</value>
+  </data>
+	<data name="AddMember" xml:space="preserve">
+    <value>إضافة عضو</value>
+  </data>
+	<data name="PropertyNotFound" xml:space="preserve">
+    <value>لم يتم العثور على {0} ‏!‏‏</value>
+  </data>
+	<data name="CheckoutImport" xml:space="preserve">
+    <value>استحقاق الفاتورة</value>
+  </data>
+	<data name="RoomPrice" xml:space="preserve">
+    <value>سعر المقعد</value>
+  </data>
+	<data name="CountOfoffLimit" xml:space="preserve">
+    <value>لا يمكن أن تتجاوز الكمية الحد المحدد !‏</value>
+  </data>
+	<data name="MemberExpired" xml:space="preserve">
+    <value>انتهت صلاحية العضوية الحالية !‏</value>
+  </data>
+	<data name="MemberExpiredDescription" xml:space="preserve">
+    <value>تعديل وقت انتهاء صلاحية العضو !‏</value>
+  </data>
+	<data name="Unknown" xml:space="preserve">
+    <value>غير معروف</value>
+  </data>
+	<data name="NotFoundProperty_Number" xml:space="preserve">
+    <value>لم يتم العثور على {0} {1} !‏</value>
+  </data>
+	<data name="Exception_UnknownDevice" xml:space="preserve">
+    <value>الجهاز غير موجود أو معطل! {0} رمز الخطأ : 111</value>
+  </data>
+	<data name="Exception_RoomCountOutOfLimit" xml:space="preserve">
+    <value>تجاوز عدد المقاعد الحد الأقصى! {0}رمز الخطأ : 104</value>
+  </data>
+	<data name="ResetDescription" xml:space="preserve">
+    <value>أعد تعيين كلمة مرور المسؤول</value>
+  </data>
+	<data name="SureReset" xml:space="preserve">
+    <value>هل تريد بالتأكيد إعادة التعيين ؟‏</value>
+  </data>
+	<data name="Exception_UnknownAdmin" xml:space="preserve">
+    <value>المسؤول غير موجود أو معطل! {0} رمز الخطأ : 112</value>
+  </data>
+	<data name="ReturnPrice" xml:space="preserve">
+    <value>المبلغ المسترد</value>
+  </data>
+	<data name="BorrowPrice" xml:space="preserve">
+    <value>مبلغ القرض</value>
+  </data>
+	<data name="KeepPrice" xml:space="preserve">
+    <value>المبلغ المتبقي</value>
+  </data>
+	<data name="RemainingDays" xml:space="preserve">
+    <value>الأيام المتبقية</value>
+  </data>
+	<data name="Device" xml:space="preserve">
+    <value>المعدات</value>
+  </data>
+	<data name="Table" xml:space="preserve">
+    <value>المقعد</value>
+  </data>
+	<data name="Package" xml:space="preserve">
+    <value>تغليف سفري</value>
+  </data>
+	<data name="MemberDealsPrice" xml:space="preserve">
+    <value>مبلغ الخصم الخاص بالعضو</value>
+  </data>
+	<data name="MemberPaidPrice" xml:space="preserve">
+    <value>مبلغ الدفع للعضو</value>
+  </data>
+	<data name="TotalPaidPrice" xml:space="preserve">
+    <value>المبلغ الإجمالي</value>
+  </data>
+	<data name="MemberBalancePrice" xml:space="preserve">
+    <value>رصيد العضو</value>
+  </data>
+	<data name="RegisterCount" xml:space="preserve">
+    <value>عدد التسجيلات</value>
+  </data>
+	<data name="Expenditure" xml:space="preserve">
+    <value>المدفوعات</value>
+  </data>
+	<data name="PrintTypeLimit" xml:space="preserve">
+    <value>لا يمكن إضافة طابعة من نفس النوع !‏</value>
+  </data>
+	<data name="SameEnabledPrinterFailed" xml:space="preserve">
+    <value>يمكن تشغيل طابعة واحدة فقط لنوع الفوترة !‏</value>
+  </data>
+	<data name="Server" xml:space="preserve">
+    <value>الخادم</value>
+  </data>
+	<data name="PrintAfterBuy" xml:space="preserve">
+    <value>اطبع بعد الشراء</value>
+  </data>
+	<data name="PrintAfterCheckout" xml:space="preserve">
+    <value>اطبع بعد الدفع للخروج</value>
+  </data>
+	<data name="LocalPrint" xml:space="preserve">
+    <value>طباعة محلية</value>
+  </data>
+	<data name="ServerIpAddress" xml:space="preserve">
+    <value>عنوان IP للخادم</value>
+  </data>
+	<data name="OperateChangeNextStartup" xml:space="preserve">
+    <value>نجح {0}، وسيسري مفعوله عند بدء تشغيل النظام في المرة القادمة  !‏</value>
+  </data>
+	<data name="BarcodeNo" xml:space="preserve">
+    <value>رقم الباركود</value>
+  </data>
+	<data name="OnlyDisplaySelected" xml:space="preserve">
+    <value>إظهار المحدد فقط</value>
+  </data>
+	<data name="CurrentProductAlreadyExists" xml:space="preserve">
+    <value>المنتج الحالي موجود بالفعل !‏</value>
+  </data>
+	<data name="Statistic" xml:space="preserve">
+    <value>إحصائيات</value>
+  </data>
+	<data name="Exception_InvalidMediaRoot" xml:space="preserve">
+    <value>مسار صورة الخادم غير صالح أو غير موجود، يرجى التحقق من المجلد أو الشبكة!  رمز الخطأ: 100</value>
+  </data>
+	<data name="Canceld" xml:space="preserve">
+    <value>تم الإلغاء</value>
+  </data>
+	<data name="Exception_Relogin" xml:space="preserve">
+    <value>انتهت صلاحية الجلسة، يرجى تسجيل الخروج من النظام وتسجيل الدخول مرة أخرى !‏</value>
+  </data>
+	<data name="InputNotValid" xml:space="preserve">
+    <value>الرجاء إدخال المعلومات الحالية بدقة وبشكل كامل !‏</value>
+  </data>
+	<data name="Bill" xml:space="preserve">
+    <value>فاتورةً</value>
+  </data>
+	<data name="IncomeManager" xml:space="preserve">
+    <value>إدارة الإيرادات</value>
+  </data>
+	<data name="ExpendBill" xml:space="preserve">
+    <value>فاتورة المصاريف</value>
+  </data>
+	<data name="OwedPrice" xml:space="preserve">
+    <value>مبلغ الائتمان</value>
+  </data>
+	<data name="IncomeStatistic" xml:space="preserve">
+    <value>إحصاءات الدخل</value>
+  </data>
+	<data name="SpendStatistic" xml:space="preserve">
+    <value>إحصاءات النفقات</value>
+  </data>
+	<data name="SellProductsStatistic" xml:space="preserve">
+    <value>إحصاءات المبيعات</value>
+  </data>
+	<data name="SpendProductsStatistic" xml:space="preserve">
+    <value>إحصاءات المشتريات</value>
+  </data>
+	<data name="NotFoundAnyRecords" xml:space="preserve">
+    <value>لم يتم العثور على سجلات !‏</value>
+  </data>
+	<data name="Proportion" xml:space="preserve">
+    <value>النسبة</value>
+  </data>
+	<data name="PermissionsMenu" xml:space="preserve">
+    <value>قائمة الأذونات</value>
+  </data>
+	<data name="Exception_MemberDisabled" xml:space="preserve">
+    <value>تم حظر العضو !‏</value>
+  </data>
+	<data name="Income" xml:space="preserve">
+    <value>الإيرادات</value>
+  </data>
+	<data name="ImageMode" xml:space="preserve">
+    <value>نمط الصورة</value>
+  </data>
+	<data name="Exception_DeviceCountOutOfLimit" xml:space="preserve">
+    <value>تم تجاوز الحد الأقصى لعدد الأجهزة!  {0} رمز الخطأ: 105</value>
+  </data>
+	<data name="NewPasswordSizeLimit" xml:space="preserve">
+    <value>كلمة المرور الجديدة تتكون من {0} رقم على الأقل !‏</value>
+  </data>
+	<data name="AdminLog" xml:space="preserve">
+    <value>سجل المسؤول</value>
+  </data>
+	<data name="LogTitle" xml:space="preserve">
+    <value>عنوان السجل</value>
+  </data>
+	<data name="LogContent" xml:space="preserve">
+    <value>محتويات السجل</value>
+  </data>
+	<data name="AdminPay" xml:space="preserve">
+    <value>دفع المسؤول</value>
+  </data>
+	<data name="AdminPayDescription" xml:space="preserve">
+    <value>عرض تفاصيل دفع المسؤول</value>
+  </data>
+	<data name="AdminPayNo" xml:space="preserve">
+    <value>رقم دفع المسؤول</value>
+  </data>
+	<data name="SupplierManager" xml:space="preserve">
+    <value>إدارة الموردين</value>
+  </data>
+	<data name="SupplierPay" xml:space="preserve">
+    <value>دفع المورد</value>
+  </data>
+	<data name="SupplierPayDescription" xml:space="preserve">
+    <value>عرض تفاصيل دفع المورّد</value>
+  </data>
+	<data name="SupplierPayNo" xml:space="preserve">
+    <value>رقم دفع المورد</value>
+  </data>
+	<data name="SupplierNo" xml:space="preserve">
+    <value>رقم المورد</value>
+  </data>
+	<data name="SupplierExpiredDescription" xml:space="preserve">
+    <value>تعديل وقت استحقاق المورد !‏</value>
+  </data>
+	<data name="SupplierName" xml:space="preserve">
+    <value>اسم المورد</value>
+  </data>
+	<data name="AddSupplier" xml:space="preserve">
+    <value>إضافة مورد</value>
+  </data>
+	<data name="SupplierExpired" xml:space="preserve">
+    <value>انتهت صلاحية المورد الحالي !‏</value>
+  </data>
+	<data name="Exception_SupplierDisabled" xml:space="preserve">
+    <value>المورد معطل !‏</value>
+  </data>
+	<data name="SupplierBalancePrice" xml:space="preserve">
+    <value>رصيد المورد</value>
+  </data>
+	<data name="SupplierBalanceNotEnough" xml:space="preserve">
+    <value>رصيد المورد غير كاف!‏</value>
+  </data>
+	<data name="SupplierDealsPrice" xml:space="preserve">
+    <value>سعر تفضيلي للمورد</value>
+  </data>
+	<data name="SupplierPaidPrice" xml:space="preserve">
+    <value>مبلغ الدفع للمورد</value>
+  </data>
+	<data name="PleaseWait" xml:space="preserve">
+    <value>يرجى الانتظار...‏</value>
+  </data>
+	<data name="CreatingTheDocument" xml:space="preserve">
+    <value>إنشاء المستند قيد التقدم...‏</value>
+  </data>
+	<data name="TableUsed" xml:space="preserve">
+    <value>الجدول الحالي قيد الاستخدام !‏</value>
+  </data>
+	<data name="Exception_InvalidType" xml:space="preserve">
+    <value>الرجاء إدخال المعلومات الحالية بدقة وبشكل كامل !‏</value>
+  </data>
+	<data name="ChangeCostPrice" xml:space="preserve">
+    <value>تعديل سعر التكلفة</value>
+  </data>
+	<data name="IndexName" xml:space="preserve">
+    <value>اسم الفهرس</value>
+  </data>
+	<data name="FinanceLog" xml:space="preserve">
+    <value>السجل المالي</value>
+  </data>
+	<data name="OperateName" xml:space="preserve">
+    <value>اسم العملية</value>
+  </data>
+	<data name="CashDrawer" xml:space="preserve">
+    <value>صندوق النقد</value>
+  </data>
+	<data name="Open" xml:space="preserve">
+    <value>افتح</value>
+  </data>
+	<data name="IsPayByCard" xml:space="preserve">
+    <value>الدفع بواسطة البطاقة</value>
+  </data>
+	<data name="CardPaidPrice" xml:space="preserve">
+    <value>المبلغ المدفوع بواسطة البطاقة</value>
+  </data>
+	<data name="SpendPaysStatistic" xml:space="preserve">
+    <value>إحصائيات الدفع</value>
+  </data>
+	<data name="SalePaysStatistic" xml:space="preserve">
+    <value>إحصاءات دخل الدفع</value>
+  </data>
+	<data name="BalancePay" xml:space="preserve">
+    <value>الرصيد المدفوع</value>
+  </data>
+	<data name="BalancePayDescription" xml:space="preserve">
+    <value>عرض تفاصيل الرصيد المدفوع</value>
+  </data>
+	<data name="BalancePayNo" xml:space="preserve">
+    <value>رقم الرصيد المدفوع</value>
+  </data>
+	<data name="SoftServiceNameWithoutVersion" xml:space="preserve">
+    <value>Oybab ٹریڈ سسٹم</value>
+  </data>
+	<data name="MediumLabelFontSize" xml:space="preserve">
+    <value>22</value>
+  </data>
+	<data name="LogoTitleLabelFontSize" xml:space="preserve">
+    <value>40</value>
+  </data>
+	<data name="SoftServiceVersion" xml:space="preserve">
+    <value>V1.1</value>
+  </data>
+	<data name="DirectionMode" xml:space="preserve">
+    <value>RightToLeft</value>
+  </data>
+	<data name="LoginUserInputMsg" xml:space="preserve">
+    <value>يرجى إدخال رقم مسؤول</value>
+  </data>
+	<data name="LoginPasswordInputMsg" xml:space="preserve">
+    <value>يرجى إدخال كلمة مرور المسؤول</value>
+  </data>
+	<data name="Reset2" xml:space="preserve">
+    <value>إعادة ضبط</value>
+  </data>
+	<data name="MediumButtonFontSize" xml:space="preserve">
+    <value>26</value>
+  </data>
+	<data name="OK2" xml:space="preserve">
+    <value>تأكيد</value>
+  </data>
+	<data name="LittleKeyboardFontSize" xml:space="preserve">
+    <value>18</value>
+  </data>
+	<data name="HorizontalModel" xml:space="preserve">
+    <value>Right</value>
+  </data>
+	<data name="CompanyLogoName" xml:space="preserve">
+    <value>Oybab ٹیکنالوجی</value>
+  </data>
+	<data name="RegNoInputMessage" xml:space="preserve">
+    <value>يرجى إدخال رمز التسجيل</value>
+  </data>
+	<data name="RegCountInputMessage" xml:space="preserve">
+    <value>يرجى إدخال رمز تسجيل الكمية</value>
+  </data>
+	<data name="TopLogoTitleLabelFontSize" xml:space="preserve">
+    <value>25</value>
+  </data>
+	<data name="LittleMediumLabelFontSize" xml:space="preserve">
+    <value>20</value>
+  </data>
+	<data name="Exception_AdminExists" xml:space="preserve">
+    <value>المسؤول الحالي يستخدمه! رمز الخطأ {0}: 113</value>
+  </data>
+	<data name="IncomeTradingManage" xml:space="preserve">
+    <value>إدارة معاملات الإيرادات</value>
+  </data>
+	<data name="Permission" xml:space="preserve">
+    <value>الأذونات</value>
+  </data>
+	<data name="Day" xml:space="preserve">
+    <value>يوم</value>
+  </data>
+	<data name="Empty" xml:space="preserve">
+    <value>فارغ</value>
+  </data>
+	<data name="Selected" xml:space="preserve">
+    <value>القائمة المختارة</value>
+  </data>
+	<data name="Products" xml:space="preserve">
+    <value>قائمة المنتجات</value>
+  </data>
+	<data name="Operate" xml:space="preserve">
+    <value>تشغيل</value>
+  </data>
+	<data name="SelectedCount" xml:space="preserve">
+    <value>اختر الكمية</value>
+  </data>
+	<data name="OperatingWait" xml:space="preserve">
+    <value>الرجاء الانتظار.....‏</value>
+  </data>
+	<data name="Cash" xml:space="preserve">
+    <value>نقد</value>
+  </data>
+	<data name="Card" xml:space="preserve">
+    <value>بطاقة</value>
+  </data>
+	<data name="Member" xml:space="preserve">
+    <value>عضو</value>
+  </data>
+	<data name="Bind" xml:space="preserve">
+    <value>الربط</value>
+  </data>
+	<data name="Unbind" xml:space="preserve">
+    <value>إلغاء الربط</value>
+  </data>
+	<data name="MediumLargeButtonFontSize" xml:space="preserve">
+    <value>35</value>
+  </data>
+	<data name="OldRoomNo" xml:space="preserve">
+    <value>رقم المقعد القديم</value>
+  </data>
+	<data name="NewRoomNo" xml:space="preserve">
+    <value>رقم المقعد الجديد</value>
+  </data>
+	<data name="IpAddress2" xml:space="preserve">
+    <value>عنوان IP</value>
+  </data>
+	<data name="RequestManager" xml:space="preserve">
+    <value>إدارة الطلب</value>
+  </data>
+	<data name="RequestName" xml:space="preserve">
+    <value>اسم الطلب</value>
+  </data>
+	<data name="Request2" xml:space="preserve">
+    <value>الطلب</value>
+  </data>
+	<data name="RequestDescription" xml:space="preserve">
+    <value>إضافة طلب إلى البيانات الحالية.‏</value>
+  </data>
+	<data name="IsDisplayAll" xml:space="preserve">
+    <value>عرض الكل</value>
+  </data>
+	<data name="CheckoutBy" xml:space="preserve">
+    <value>مسؤول الدفع</value>
+  </data>
+	<data name="OrderPhoneNo" xml:space="preserve">
+    <value>رقم هاتف للفوترة</value>
+  </data>
+	<data name="PersonName" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
+	<data name="BillTypeInner" xml:space="preserve">
+    <value>داخلي</value>
+  </data>
+	<data name="BillTypeOuter" xml:space="preserve">
+    <value>خارجي</value>
+  </data>
+	<data name="BillType" xml:space="preserve">
+    <value>نوع الفوترة</value>
+  </data>
+	<data name="AddOuterBill" xml:space="preserve">
+    <value>إضافة فاتورة خارجية</value>
+  </data>
+	<data name="SuccessAndFailProperty" xml:space="preserve">
+    <value>نجاح: {0}، فشل: {1}.‏</value>
+  </data>
+	<data name="ConfirmSaveAll" xml:space="preserve">
+    <value>هل تريد تأكيد حفظ الكل؟‏</value>
+  </data>
+	<data name="Profit" xml:space="preserve">
+    <value>صافي الربح</value>
+  </data>
+	<data name="TypeName" xml:space="preserve">
+    <value>اكتب الاسم</value>
+  </data>
+	<data name="Summary" xml:space="preserve">
+    <value>ملخص</value>
+  </data>
+	<data name="SystemTimeInvalid" xml:space="preserve">
+    <value>وقت النظام ووقت الخادم غير متسقين! {0}رمز الخطأ : 106</value>
+  </data>
+	<data name="UnrecordedPrice" xml:space="preserve">
+    <value>لم يتم تسجيل المبلغ</value>
+  </data>
+	<data name="ReceivedPrice" xml:space="preserve">
+    <value>المبلغ المستلم</value>
+  </data>
+	<data name="Prefix" xml:space="preserve">
+    <value>مبدئي</value>
+  </data>
+	<data name="MultiLanguage" xml:space="preserve">
+    <value>لغات متعددة</value>
+  </data>
+	<data name="Exception_DatabaseNotFound" xml:space="preserve">
+    <value>لم يتم العثور على قاعدة بيانات الخادم البعيد، يرجى التحقق!  رمز الخطأ: 108</value>
+  </data>
+	<data name="Exception_DatabaseLoadFailed" xml:space="preserve">
+    <value>فشل تحميل قاعدة بيانات الخادم البعيد! رمز الخطأ: 109</value>
+  </data>
+	<data name="NoLimit" xml:space="preserve">
+    <value>لا توجد قيود</value>
+  </data>
+	<data name="ProductExpiredDescription" xml:space="preserve">
+    <value>تعديل وقت انتهاء صلاحية المنتج !‏</value>
+  </data>
+	<data name="None" xml:space="preserve">
+    <value>لا شيء</value>
+  </data>
+	<data name="BarcodeReader" xml:space="preserve">
+    <value>قارئ الباركود</value>
+  </data>
+	<data name="PrintBarcodeDescription" xml:space="preserve">
+    <value>طباعة الباركود</value>
+  </data>
+	<data name="Size" xml:space="preserve">
+    <value>المقاس</value>
+  </data>
+	<data name="BarcodeLengthLimit" xml:space="preserve">
+    <value>يجب أن يتألف رمز الباركود من 8 أو 13 رقمًا !‏</value>
+  </data>
+	<data name="BillWide" xml:space="preserve">
+    <value>الفاتورة-عرض</value>
+  </data>
+	<data name="PrintAll" xml:space="preserve">
+    <value>طباعة الكل</value>
+  </data>
+	<data name="ConfirmBalanceInjustice" xml:space="preserve">
+    <value>الرصيد غير متساو، هل أنت متأكد؟‏</value>
+  </data>
+	<data name="ProductParentName" xml:space="preserve">
+    <value>اسم المنتج الأصلي</value>
+  </data>
+	<data name="ProductParentCount" xml:space="preserve">
+    <value>عدد المنتجات الأصلية</value>
+  </data>
+	<data name="Borrow" xml:space="preserve">
+    <value>الائتمان</value>
+  </data>
+	<data name="CanNotExceed" xml:space="preserve">
+    <value>المبلغ الإجمالي للدفع هو {0} يوان !‏</value>
+  </data>
+	<data name="ChangeCount" xml:space="preserve">
+    <value>تعديل الكمية</value>
+  </data>
+	<data name="Information" xml:space="preserve">
+    <value>تلميح</value>
+  </data>
+	<data name="InnerBill" xml:space="preserve">
+    <value>الفوترة الداخلية</value>
+  </data>
+	<data name="OuterBill" xml:space="preserve">
+    <value>الفوترة الخارجية</value>
+  </data>
+	<data name="IndexNameOrBarcode" xml:space="preserve">
+    <value>يرجى إدخال اسم فهرس أو رمز باركود</value>
+  </data>
+	<data name="Exception_DeviceExists" xml:space="preserve">
+    <value>الجهاز قيد الاستخدام حالياً! {0} رمز الخطأ: 115</value>
+  </data>
+	<data name="ReturnId" xml:space="preserve">
+    <value>رقم الإرجاع</value>
+  </data>
+	<data name="ReturnBill" xml:space="preserve">
+    <value>إعادة الفاتورة</value>
+  </data>
+	<data name="BalanceManager" xml:space="preserve">
+    <value>إدارة الرصيد</value>
+  </data>
+	<data name="BalanceName" xml:space="preserve">
+    <value>اسم الرصيد</value>
+  </data>
+	<data name="IsBind" xml:space="preserve">
+    <value>الربط</value>
+  </data>
+	<data name="CardOnlyCouldBindOnce" xml:space="preserve">
+    <value>يمكن ربط بطاقة واحدة فقط !‏</value>
+  </data>
+	<data name="AccountBank" xml:space="preserve">
+    <value>بنك الحساب</value>
+  </data>
+	<data name="AccountName" xml:space="preserve">
+    <value>اسم الحساب</value>
+  </data>
+	<data name="AccountNo" xml:space="preserve">
+    <value>رقم الحساب</value>
+  </data>
+	<data name="ReturnType" xml:space="preserve">
+    <value>نوع الإرجاع</value>
+  </data>
+	<data name="ReturnManager" xml:space="preserve">
+    <value>إدارة الإرجاع</value>
+  </data>
+	<data name="FromCustomer" xml:space="preserve">
+    <value>من العميل</value>
+  </data>
+	<data name="ToSupplier" xml:space="preserve">
+    <value>إعادة للمورد</value>
+  </data>
+	<data name="ReturnDetails" xml:space="preserve">
+    <value>تفاصيل الإرجاع</value>
+  </data>
+	<data name="IsChange" xml:space="preserve">
+    <value>استبدل</value>
+  </data>
+	<data name="CheckoutReturn" xml:space="preserve">
+    <value>استرجاع المبلغ المدفوع</value>
+  </data>
+	<data name="BalancePaysIncomeStatistic" xml:space="preserve">
+    <value>إحصاءات إيرادات مدفوعات الرصيد</value>
+  </data>
+	<data name="BalancePaysSpendStatistic" xml:space="preserve">
+    <value>إحصاءات مصروفات مدفوعات الرصيد</value>
+  </data>
+	<data name="BalancePayByCash" xml:space="preserve">
+    <value>دفع الرصيد (نقدا)</value>
+  </data>
+	<data name="BalancePayByCard" xml:space="preserve">
+    <value>دفع الرصيد (البطاقة)</value>
+  </data>
+	<data name="MemberPayByCash" xml:space="preserve">
+    <value>دفع العضو (نقدا)</value>
+  </data>
+	<data name="MemberPayByCard" xml:space="preserve">
+    <value>دفع العضو (البطاقة)</value>
+  </data>
+	<data name="SupplierPayByCash" xml:space="preserve">
+    <value>دفع المورد (نقدا)</value>
+  </data>
+	<data name="SupplierPayByCard" xml:space="preserve">
+    <value>دفع المورد (بطاقة)</value>
+  </data>
+	<data name="AdminPayByCash" xml:space="preserve">
+    <value>دفع المسؤول (نقدا)</value>
+  </data>
+	<data name="AdminPayByCard" xml:space="preserve">
+    <value>دفع المسؤول (البطاقة)</value>
+  </data>
+	<data name="ReturnStatistic" xml:space="preserve">
+    <value>إحصائيات الإرجاع</value>
+  </data>
+	<data name="AdminSaleStatistic" xml:space="preserve">
+    <value>إحصائيات مبيعات المسؤول</value>
+  </data>
+	<data name="ReturnProductsStatistic" xml:space="preserve">
+    <value>إحصائيات المنتجات المرتجعة</value>
+  </data>
+	<data name="ReplaceCount" xml:space="preserve">
+    <value>كمية الاستبدال</value>
+  </data>
+	<data name="RecordCount" xml:space="preserve">
+    <value>سجّل الكمية</value>
+  </data>
+	<data name="Return" xml:space="preserve">
+    <value>إرجاع</value>
+  </data>
+	<data name="CardPrice" xml:space="preserve">
+    <value>سعر البطاقة</value>
+  </data>
+	<data name="CardBalancePrice" xml:space="preserve">
+    <value>رصيد البطاقة</value>
+  </data>
+	<data name="OtherPrice" xml:space="preserve">
+    <value>أسعار أخرى</value>
+  </data>
+	<data name="Supplier" xml:space="preserve">
+    <value>المورد</value>
+  </data>
+	<data name="PrintInfo" xml:space="preserve">
+    <value>معلومات الفوترة</value>
+  </data>
+	<data name="Test" xml:space="preserve">
+    <value>اختبار</value>
+  </data>
+	<data name="InputPhoneNoFirst" xml:space="preserve">
+    <value>يرجى إدخال رقم الهاتف أولاً في حال إدخال معلومات الفوترة !‏</value>
+  </data>
+	<data name="PriceMonitor" xml:space="preserve">
+    <value>عرض السعر</value>
+  </data>
+	<data name="ProductProfitStatistic" xml:space="preserve">
+    <value>إحصاءات أرباح المنتجات</value>
+  </data>
+	<data name="IsBindWeigh" xml:space="preserve">
+    <value>وزن الربط</value>
+  </data>
+	<data name="PageHeight" xml:space="preserve">
+    <value>ارتفاع الصفحة</value>
+  </data>
+	<data name="CancelAndDelete" xml:space="preserve">
+    <value>إلغاء وحذف</value>
+  </data>
+	<data name="CashWithCard" xml:space="preserve">
+    <value>النقد: ¥{0}. البطاقة: ¥{1}.‏</value>
+  </data>
+	<data name="AdminCantCreateAnAdmin" xml:space="preserve">
+    <value>لا يمكن للمسؤول إضافة مسؤول!‏</value>
+  </data>
+	<data name="IncomePermission" xml:space="preserve">
+    <value>صلاحية الإيرادات</value>
+  </data>
+	<data name="ExpenditurePermission" xml:space="preserve">
+    <value>صلاحية المصروفات</value>
+  </data>
+	<data name="TemporaryChangePrice" xml:space="preserve">
+    <value>تعديل السعر مؤقتًا</value>
+  </data>
+	<data name="ChangeUnitPrice" xml:space="preserve">
+    <value>تعديل سعر الوحدة</value>
+  </data>
+	<data name="AddPrice" xml:space="preserve">
+    <value>زيادة المبلغ</value>
+  </data>
+	<data name="AddMemberBalancePrice" xml:space="preserve">
+    <value>زيادة المبلغ المتبقي للعضو</value>
+  </data>
+	<data name="PosTopTitleFontSize" xml:space="preserve">
+    <value>24</value>
+  </data>
+	<data name="PosTotalPriceFontSize" xml:space="preserve">
+    <value>32</value>
+  </data>
+	<data name="PosCountFontSize" xml:space="preserve">
+    <value>20</value>
+  </data>
+	<data name="PosDescriptionFontSize" xml:space="preserve">
+    <value>18</value>
+  </data>
+	<data name="User" xml:space="preserve">
+    <value>المستخدم</value>
+  </data>
+	<data name="PosContentFontSize" xml:space="preserve">
+    <value>16</value>
+  </data>
+	<data name="PosDescription" xml:space="preserve">
+    <value>البحث في المنتجات: F3، الحفظ المؤقت: F7، استعادة: F8، ربط العضو: F10، إغلاق: F12، تغيير اللغة: TAB، فتح صندوق النقد: Alt+Z، التنقل: ↑ → ↓ →, قلب الصفحة: PgUp/PgDn، زيادة الكمية: +، إنقاص الكمية: -، اختيار/تأكيد: Enter، حذف المحدد: Del، إلغاء/استرجاع: Esc. </value>
+  </data>
+	<data name="Restore" xml:space="preserve">
+    <value>استعادة</value>
+  </data>
+	<data name="CardReader" xml:space="preserve">
+    <value>قارئ البطاقات</value>
+  </data>
+	<data name="CardNo" xml:space="preserve">
+    <value>رقم البطاقة</value>
+  </data>
+	<data name="CardNoExists" xml:space="preserve">
+    <value>رقم البطاقة موجود بالفعل، هل أنت متأكد من استبداله؟‏</value>
+  </data>
+	<data name="SuccessReadBarcode" xml:space="preserve">
+    <value>تم قراءة الباركود بنجاح !‏</value>
+  </data>
+	<data name="SuccessReadCardNo" xml:space="preserve">
+    <value>تمت قراءة البطاقة بنجاح !‏</value>
+  </data>
+	<data name="ServerIpAddress2" xml:space="preserve">
+    <value>عنوان الخادم</value>
+  </data>
+	<data name="BindMemberByNo" xml:space="preserve">
+    <value>ربط العضو بالرقم</value>
+  </data>
+	<data name="BindSupplierByNo" xml:space="preserve">
+    <value>ربط المورد بالرقم</value>
+  </data>
+	<data name="BarcodeScales" xml:space="preserve">
+    <value>نطاق الباركود</value>
+  </data>
+	<data name="SendData" xml:space="preserve">
+    <value>إرسال البيانات</value>
+  </data>
+	<data name="IncorrectProductData" xml:space="preserve">
+    <value>بيانات غير صالحة في معلومات المنتج !‏</value>
+  </data>
+	<data name="IncorrectProductName" xml:space="preserve">
+    <value>بيانات غير صالحة في اسم المنتج !‏</value>
+  </data>
+	<data name="UnableToConnectIPAddress" xml:space="preserve">
+    <value>يتعذر الاتصال بعنوان IP !‏</value>
+  </data>
+	<data name="ConfirmNotPay" xml:space="preserve">
+    <value>هل أنت متأكد من أنك لا تريد الدفع؟‏</value>
+  </data>
+	<data name="ReadResourceStrError" xml:space="preserve">
+    <value>خطأ في قراءة المورد!‏</value>
+  </data>
+	<data name="FreeRoomPriceLimit" xml:space="preserve">
+    <value>حد السعر المجاني</value>
+  </data>
+	<data name="CancelFireAlarm" xml:space="preserve">
+    <value>إلغاء إنذار الحريق</value>
+  </data>
+	<data name="ConfirmOperate" xml:space="preserve">
+    <value>هل تريد تأكيد {0} ؟‏</value>
+  </data>
+	<data name="DeleteProduct" xml:space="preserve">
+    <value>حذف المنتج</value>
+  </data>
+	<data name="OpenCashDrawer" xml:space="preserve">
+    <value>افتح صندوق النقد</value>
+  </data>
+	<data name="Paid" xml:space="preserve">
+    <value>الدفع</value>
+  </data>
+	<data name="Platform" xml:space="preserve">
+    <value>النظام الأساسي</value>
+  </data>
+	<data name="UnlimitedTime" xml:space="preserve">
+    <value>غير محدود</value>
+  </data>
+	<data name="Enabled" xml:space="preserve">
+    <value>قيد التشغيل</value>
+  </data>
+	<data name="DecreaseProductCount" xml:space="preserve">
+    <value>قلل عدد المنتجات</value>
+  </data>
+	<data name="FaildThenWaitRetry" xml:space="preserve">
+    <value>فشلت العملية، العملية سريعة للغاية، يرجى المحاولة مرة أخرى !‏</value>
+  </data>
+	<data name="RemovePrice" xml:space="preserve">
+    <value>قم بإزالة السعر</value>
+  </data>
+	<data name="Exception_ServerClientVersionMisalignment" xml:space="preserve">
+    <value>إصدار نظام الخادم البعيد غير متوافق مع إصدار نظام العميل الحالي، يرجى التحديث إلى نفس إصدار النظام !‏</value>
+  </data>
+	<data name="Exception_ServerClientTimeMisalignment" xml:space="preserve">
+    <value>لا يتطابق وقت نظام الخادم البعيد مع وقت نظام العميل الحالي، يرجى التحديث في الوقت نفسه !‏</value>
+  </data>
+	<data name="ConfirmAddPay" xml:space="preserve">
+    <value>هل تريد بالتأكيد إضافة {0} {1} من {2} إلى {3}؟‏</value>
+  </data>
+	<data name="BalanceTransfer" xml:space="preserve">
+    <value>تحويل الرصيد</value>
+  </data>
+	<data name="OldBalance" xml:space="preserve">
+    <value>الرصيد القديم</value>
+  </data>
+	<data name="NewBalance" xml:space="preserve">
+    <value>الرصيد الجديد</value>
+  </data>
+	<data name="BalanceTransferDescription" xml:space="preserve">
+    <value>تحويل الأموال بين الأرصدة</value>
+  </data>
+	<data name="LangName" xml:space="preserve">
+    <value>سعودي</value>
+  </data>
+	<data name="HightFix" xml:space="preserve">
+    <value>0</value>
+  </data>
+	<data name="Culcure" xml:space="preserve">
+    <value>ar-SA</value>
+  </data>
+	<data name="Dir" xml:space="preserve">
+    <value>rtl</value>
+  </data>
+	<data name="LargeFont" xml:space="preserve">
+    <value>0</value>
+  </data>
+	<data name="EnableAntialiasing" xml:space="preserve">
+    <value>0</value>
+  </data>
+	<data name="GlobalSetting" xml:space="preserve">
+    <value>الإعدادات العامة</value>
+  </data>
+	<data name="PriceSymbol" xml:space="preserve">
+    <value>رمز السعر</value>
+  </data>
+	<data name="Main" xml:space="preserve">
+    <value>أساسي</value>
+  </data>
+	<data name="SystemLanguage" xml:space="preserve">
+    <value>لغة النظام</value>
+  </data>
+	<data name="SystemLanguageCantSame" xml:space="preserve">
+    <value>لا يمكن أن تكون لغات النظام هي نفسها!‏</value>
+  </data>
+	<data name="SystemLanguageChangeWarn" xml:space="preserve">
+    <value>قد يؤثر تغيير لغة النظام على النظام. هل أنت متأكد أنك تريد تغييره ؟‏</value>
+  </data>
+	<data name="PermissionsMenuDescription" xml:space="preserve">
+    <value>تعديل أذونات المسؤول</value>
+  </data>
+	<data name="ReturnMoney" xml:space="preserve">
+    <value>اعادة المبلغ</value>
+  </data>
+	<data name="CanNotExceedConfirm" xml:space="preserve">
+    <value>المبلغ الإجمالي المدفوع هو {0} يوان! هل تريد تأكيد استرجاعه ؟‏</value>
+  </data>
+	<data name="Exception_PasswordErrorCountLimit" xml:space="preserve">
+    <value>عدد كبير جداً من أخطاء كلمة المرور، يرجى إعادة المحاولة لاحقاً !‏</value>
+  </data>
+	<data name="CompanyName" xml:space="preserve">
+    <value>اسم الشركة</value>
+  </data>
+	<data name="CustomFont_Android" xml:space="preserve">
+    <value>OybabTuz.ttf # Oybab Tuz</value>
+  </data>
+	<data name="CustomFont_iOS" xml:space="preserve">
+    <value>OybabTuz</value>
+  </data>
+	<data name="CustomFont_UWP" xml:space="preserve">
+    <value>/Assets/OybabTuz.ttf#Oybab Tuz</value>
+  </data>
+	<data name="SavePassword" xml:space="preserve">
+    <value>حفظ كلمة المرور</value>
+  </data>
+	<data name="Tsmi_Lang_Icon" xml:space="preserve">
+    <value>-</value>
+  </data>
+	<data name="IncomeTypeStatistic" xml:space="preserve">
+    <value>إحصاءات نوع الدخل</value>
+  </data>
+	<data name="SpendTypeStatistic" xml:space="preserve">
+    <value>إحصاءات نوع المصروفات</value>
+  </data>
+	<data name="Settings" xml:space="preserve">
+    <value>المميزات</value>
+  </data>
+	<data name="Agree" xml:space="preserve">
+    <value>أوافق</value>
+  </data>
+	<data name="PrivacyPolicy" xml:space="preserve">
+    <value>سياسة الخصوصية</value>
+  </data>
+	<data name="Exception_AdminUsing" xml:space="preserve">
+    <value>يستخدم المسؤول الحالي! قم بتغيير كلمة المرور الخاصة بك إذا لم تكن أنت بنفسك !‏‏</value>
+  </data>
+	<data name="UserAgreement" xml:space="preserve">
+    <value>اتفاقية المستخدم</value>
+  </data>
+	<data name="And" xml:space="preserve">
+    <value>و</value>
+  </data>
+	<data name="History" xml:space="preserve">
+    <value>التاريخ</value>
+  </data>
+	<data name="HistoryDescription" xml:space="preserve">
+    <value>عرض محفوظات البيانات الحالية.‏</value>
+  </data>
+	<data name="CompanyAbbreviation" xml:space="preserve">
+    <value>Oybab للتكنولوجيا</value>
+  </data>
+	<data name="License" xml:space="preserve">
+    <value>الاتفاقية</value>
+  </data>
+	<data name="Donate" xml:space="preserve">
+    <value>التبرع</value>
+  </data>
+	<data name="SourceCode" xml:space="preserve">
+    <value>كود المصدر</value>
+  </data>
+	<data name="ConfirmItemBalanceNotEnough" xml:space="preserve">
+    <value>رصيد {0} غير كافٍ، هل أنت متأكد ؟‏</value>
+  </data>
+</root>

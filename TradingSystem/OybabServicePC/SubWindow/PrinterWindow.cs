@@ -132,7 +132,7 @@ namespace Oybab.ServicePC.SubWindow
 
 
             krpcmLang.Items.Add(Resources.GetRes().GetString("Customer"));
-            krpcmLang.Items.AddRange(Resources.GetRes().MainLangList.Select(x => x.Value.LangName).ToArray());
+            krpcmLang.Items.AddRange(Resources.GetRes().MainLangList.OrderBy(x => x.Value.MainLangIndex).Select(x => x.Value.LangName).ToArray());
 
 
 

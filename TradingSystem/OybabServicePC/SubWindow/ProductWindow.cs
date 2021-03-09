@@ -486,7 +486,7 @@ namespace Oybab.ServicePC.SubWindow
             try
             {
                 if (ExpiredTime != 0)
-                    ExpiredTimeStr = DateTime.ParseExact(ExpiredTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm");
+                    ExpiredTimeStr = DateTime.ParseExact(ExpiredTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm");
 
             }
             catch (Exception ex)

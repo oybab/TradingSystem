@@ -588,6 +588,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\Images\Tablet\productListPanel_large.png" />
+    <Resource Include="Resources\Images\Tablet\productListPanel_large_selected.png" />
+    <Resource Include="Resources\Images\Tablet\selectedListPanel_large.png" />
+    <Resource Include="Resources\Images\Tablet\selectedListPanel_large_selected.png" />
     <None Include="BsUI\bootstrap\css\bootstrap-theme.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -628,6 +632,51 @@
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <EmbeddedResource Include="..\OybabServerManager\Resource.ar-SA.resx">
+      <Link>Resource.ar-SA.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\OybabServerManager\Resource.de-DE.resx">
+      <Link>Resource.de-DE.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\OybabServerManager\Resource.es-ES.resx">
+      <Link>Resource.es-ES.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\OybabServerManager\Resource.fr-FR.resx">
+      <Link>Resource.fr-FR.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\OybabServerManager\Resource.he-IL.resx">
+      <Link>Resource.he-IL.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\OybabServerManager\Resource.hi-IN.resx">
+      <Link>Resource.hi-IN.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\OybabServerManager\Resource.it-IT.resx">
+      <Link>Resource.it-IT.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\OybabServerManager\Resource.ja-JP.resx">
+      <Link>Resource.ja-JP.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\OybabServerManager\Resource.ko-KR.resx">
+      <Link>Resource.ko-KR.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\OybabServerManager\Resource.pt-PT.resx">
+      <Link>Resource.pt-PT.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\OybabServerManager\Resource.ru-RU.resx">
+      <Link>Resource.ru-RU.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\OybabServerManager\Resource.th-TH.resx">
+      <Link>Resource.th-TH.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\OybabServerManager\Resource.tr-TR.resx">
+      <Link>Resource.tr-TR.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\OybabServerManager\Resource.ur-PK.resx">
+      <Link>Resource.ur-PK.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\OybabServerManager\Resource.uz-Latn.resx">
+      <Link>Resource.uz-Latn.resx</Link>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\Images\PC\ShoppingCart.ico" />
     <Resource Include="Resources\Images\Tablet\outerbill.png" />
     <Resource Include="Resources\Images\Tablet\outerbill_selected.png" />
@@ -703,6 +752,7 @@
       <Link>Resource.en-US.resx</Link>
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource.en-US.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="..\OybabServerManager\Resource.ug-CN.resx">
       <Link>Resource.ug-CN.resx</Link>

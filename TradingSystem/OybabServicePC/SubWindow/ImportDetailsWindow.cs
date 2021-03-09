@@ -107,8 +107,8 @@ namespace Oybab.ServicePC.SubWindow
 
             try
             {
-                krplImportTimeValue.Text = string.Format(": {0}", DateTime.ParseExact(import.ImportTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm"));
-                krplAddTimeValue.Text = string.Format(": {0}", DateTime.ParseExact(import.AddTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm"));
+                krplImportTimeValue.Text = string.Format(": {0}", DateTime.ParseExact(import.ImportTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm"));
+                krplAddTimeValue.Text = string.Format(": {0}", DateTime.ParseExact(import.AddTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm"));
             }
             catch (Exception ex)
             {
@@ -312,7 +312,7 @@ namespace Oybab.ServicePC.SubWindow
 
             try
             {
-                AddTimeStr = DateTime.ParseExact(AddTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm");
+                AddTimeStr = DateTime.ParseExact(AddTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm");
 
                 if (Resources.GetRes().MainLangIndex == 0)
                     productName = Resources.GetRes().Products.Where(x => x.ProductId == productId).Select(x => x.ProductName0).FirstOrDefault();
@@ -388,7 +388,7 @@ namespace Oybab.ServicePC.SubWindow
                 }
 
 
-                AddTimeStr = DateTime.ParseExact(AddTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm");
+                AddTimeStr = DateTime.ParseExact(AddTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm");
 
 
                 if (AdminId > 0)

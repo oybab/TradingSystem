@@ -123,7 +123,7 @@ namespace Oybab.ServicePC.DialogWindow
                                 if (result && Members.Count > 0)
                                 {
                                     // 检查下会员是否到期先
-                                    if (Members.FirstOrDefault().ExpiredTime != 0 && DateTime.ParseExact(Members.FirstOrDefault().ExpiredTime.ToString(), "yyyyMMddHHmmss", null) < DateTime.Now)
+                                    if (Members.FirstOrDefault().ExpiredTime != 0 && DateTime.ParseExact(Members.FirstOrDefault().ExpiredTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture) < DateTime.Now)
                                     {
                                         KryptonMessageBox.Show(this, Resources.GetRes().GetString("MemberExpired"), Resources.GetRes().GetString("Warn"), MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                     }
@@ -161,7 +161,7 @@ namespace Oybab.ServicePC.DialogWindow
                                 if (result && Suppliers.Count > 0)
                                 {
                                     // 检查下会员是否到期先
-                                    if (Suppliers.FirstOrDefault().ExpiredTime != 0 && DateTime.ParseExact(Suppliers.FirstOrDefault().ExpiredTime.ToString(), "yyyyMMddHHmmss", null) < DateTime.Now)
+                                    if (Suppliers.FirstOrDefault().ExpiredTime != 0 && DateTime.ParseExact(Suppliers.FirstOrDefault().ExpiredTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture) < DateTime.Now)
                                     {
                                         KryptonMessageBox.Show(this, Resources.GetRes().GetString("SupplierExpired"), Resources.GetRes().GetString("Warn"), MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                     }

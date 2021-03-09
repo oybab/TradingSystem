@@ -1,0 +1,1947 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>เกี่ยวกับ</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>เพิ่ม</value>
+  </data>
+  <data name="Change" xml:space="preserve">
+    <value>แก้ไข</value>
+  </data>
+  <data name="ChangeFaild" xml:space="preserve">
+    <value>แก้ไขล้มเหลว!</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>เปลี่ยนรหัสผ่าน</value>
+  </data>
+  <data name="ChangeSuccess" xml:space="preserve">
+    <value>เปลี่ยนสำเร็จ!</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>ปิด</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>บริษัทเทคโนโลยีสารสนเทศHotan Oybab</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>ยืนยันรหัสผ่าน</value>
+  </data>
+  <data name="Copyright" xml:space="preserve">
+    <value>บริษัทOybab ขอสงวนสิทธิ์ทั้งหมด.</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>ลบ</value>
+  </data>
+  <data name="DeleteFailt" xml:space="preserve">
+    <value>ลบล้มเหลว!</value>
+  </data>
+  <data name="DeleteSuccess" xml:space="preserve">
+    <value>ลบสำเร็จ!</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>ออก</value>
+  </data>
+  <data name="FontName" xml:space="preserve">
+    <value>Microsoft YaHei, Aria, Oybab Tuz</value>
+  </data>
+  <data name="FontSize" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="Id" xml:space="preserve">
+    <value>หมายเลข</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>ภาษา</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>เข้าสู่ระบบ</value>
+  </data>
+  <data name="LoginValid" xml:space="preserve">
+    <value>โปรดป้อนข้อมูล{0}ให้ถูกต้อง!</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>รหัสผ่านใหม่</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>ไม่</value>
+  </data>
+  <data name="OldPassword" xml:space="preserve">
+    <value>รหัสผ่านเก่า</value>
+  </data>
+  <data name="OldPasswordFaild" xml:space="preserve">
+    <value>รหัสผ่านเก่าป้อนไม่ถูกต้อง กรุณาป้อนใหม่!</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>รหัสผ่าน</value>
+  </data>
+  <data name="PwdError" xml:space="preserve">
+    <value>รหัสผ่านไม่ถูกต้อง!</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>รีเฟรช</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>ลองใหม่</value>
+  </data>
+  <data name="RightToLeft" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>บันทึก</value>
+  </data>
+  <data name="SaveFailt" xml:space="preserve">
+    <value>บันทึกล้มเหลว!</value>
+  </data>
+  <data name="SaveSuccess" xml:space="preserve">
+    <value>บันทึกสำเร็จ!</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>ค้นหา</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>ทั้งหมด</value>
+  </data>
+  <data name="TwoNewPasswordNotEqual" xml:space="preserve">
+    <value>รหัสผ่านใหม่ที่ป้อนสองครั้งไม่สอดคล้องกัน กรุณาป้อนใหม่!</value>
+  </data>
+  <data name="UpdateInfo" xml:space="preserve">
+    <value>พบเวอร์ชั่นใหม่</value>
+  </data>
+  <data name="USBKey_Warn" xml:space="preserve">
+    <value>กรุณาเสียบ USB-KEY และคลิก【ลองใหม่】เพื่อดำเนินการต่อ หรือคลิก【ออก】เพื่อออกจากโปรแกรม!</value>
+  </data>
+  <data name="UserLogin" xml:space="preserve">
+    <value>ผู้ใช้เข้าสู่ระบบ</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>ใช่</value>
+  </data>
+  <data name="Abort" xml:space="preserve">
+    <value>ออก</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>ยกเลิก</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>ไม่สนใจ</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>ชื่อผู้ใช้</value>
+  </data>
+  <data name="Warn" xml:space="preserve">
+    <value>คำเตือน</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>ยืนยัน</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>ผิดพลาด</value>
+  </data>
+  <data name="CurrentKeyName" xml:space="preserve">
+    <value>ชื่อ USB-KEY ปัจจุบันคือ: {0}.</value>
+  </data>
+  <data name="Exception_CheckSqlAndNet" xml:space="preserve">
+    <value>เชื่อมต่อฐานข้อมูลผิดพลาด โปรดตรวจสอบเครือข่ายหรือการกําหนดค่าการเชื่อมต่อฐานข้อมูล!</value>
+  </data>
+  <data name="Exception_LoadCacheError" xml:space="preserve">
+    <value>โหลดแคชล้มเหลว.</value>
+  </data>
+  <data name="Exception_LoadMediaRoot" xml:space="preserve">
+    <value>การโหลดเส้นทางรูทเพลงล้มเหลว โปรดตรวจสอบไฟล์กำหนดค่า!</value>
+  </data>
+  <data name="Exception_NotSupprtKey" xml:space="preserve">
+    <value>ไม่สามารถเชื่อมต่อฐานข้อมูลได้ ไม่สนับสนุนUSB-KEYนี้.</value>
+  </data>
+  <data name="InputData" xml:space="preserve">
+    <value>นําเข้าข้อมูล</value>
+  </data>
+  <data name="OutputData" xml:space="preserve">
+    <value>ส่งออกข้อมูล</value>
+  </data>
+  <data name="UpdateNonReturnOrCantRead" xml:space="preserve">
+    <value>อัพเดตข้อมูลส่งกลับว่างหรือวิเคราะห์ล้มเหลว!</value>
+  </data>
+  <data name="UpdateUnableError" xml:space="preserve">
+    <value>อัพเดตการตรวจสอบที่ไม่ทราบข้อผิดพลาด รหัส:{0}.</value>
+  </data>
+  <data name="CompanyLogoImage" xml:space="preserve">
+    <value>logo.png</value>
+  </data>
+  <data name="Exception_ReadResourceStrError" xml:space="preserve">
+    <value>อ่านทรัพยากรสัญลักษณ์ล้มเหลว!</value>
+  </data>
+  <data name="Exception_InputData" xml:space="preserve">
+    <value>นำเข้าข้อมูลล้มเหลว!</value>
+  </data>
+  <data name="Exception_InputReadData" xml:space="preserve">
+    <value>นำเข้าข้อมูลและอ่านล้มเหลว!</value>
+  </data>
+  <data name="Exception_OutputData" xml:space="preserve">
+    <value>ส่งออกข้อมูลล้มเหลว!</value>
+  </data>
+  <data name="InputDataSuccess" xml:space="preserve">
+    <value>นำเข้าข้อมูลสำเร็จ!</value>
+  </data>
+  <data name="OutputDataSuccess" xml:space="preserve">
+    <value>ส่งออกข้อมูลสําเร็จ!</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>ไฟล์</value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>เครื่องมือ</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>ทั้งหมด</value>
+  </data>
+  <data name="FolderName" xml:space="preserve">
+    <value>ชื่อโฟลเดอร์</value>
+  </data>
+  <data name="IgnoreData" xml:space="preserve">
+    <value>แน่ใจหรือไม่ที่จะไม่สนใจข้อมูลที่ยังไม่ได้บันทึก?</value>
+  </data>
+  <data name="ImageName" xml:space="preserve">
+    <value>ชื่อรูปภาพ</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>เพิ่มเติม</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>หน้า</value>
+  </data>
+  <data name="AddDescription" xml:space="preserve">
+    <value>มีการเพิ่มข้อมูลใหม่.</value>
+  </data>
+  <data name="DeleteDescription" xml:space="preserve">
+    <value>ลบข้อมูลปัจจุบัน.</value>
+  </data>
+  <data name="PleaseEditBefore" xml:space="preserve">
+    <value>กรุณาแก้ไขให้สำเร็จก่อน!</value>
+  </data>
+  <data name="SaveDescription" xml:space="preserve">
+    <value>บันทึกข้อมูลปัจจุบันที่เพิ่มใหม่หรือแก้ไข.</value>
+  </data>
+  <data name="SureDelete" xml:space="preserve">
+    <value>แน่ใจหรือไม่ที่จะลบออก?</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>ชื่อไฟล์</value>
+  </data>
+  <data name="Exception_NotFound" xml:space="preserve">
+    <value>หา{0}นี้ไม่เจอ!</value>
+  </data>
+  <data name="ErrorBig" xml:space="preserve">
+    <value>พบช่องโหว่</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>เลือก</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>ระบบ</value>
+  </data>
+  <data name="AllPage" xml:space="preserve">
+    <value>ทั้งหมด:</value>
+  </data>
+  <data name="AllPage2" xml:space="preserve">
+    <value>หน้า</value>
+  </data>
+  <data name="CurrentPage" xml:space="preserve">
+    <value>ปัจจุบัน: ที่</value>
+  </data>
+  <data name="CurrentPage2" xml:space="preserve">
+    <value>หน้า</value>
+  </data>
+  <data name="LastPage" xml:space="preserve">
+    <value>หน้าที่แล้ว</value>
+  </data>
+  <data name="NextPage" xml:space="preserve">
+    <value>หน้าถัดไป</value>
+  </data>
+  <data name="CompanyUrlStr" xml:space="preserve">
+    <value>Url</value>
+  </data>
+  <data name="ExitPassword" xml:space="preserve">
+    <value>ออกจากรหัสผ่าน</value>
+  </data>
+  <data name="MobileNoStr" xml:space="preserve">
+    <value>โทรศัพท์</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>รีเซ็ต</value>
+  </data>
+  <data name="NotFoundUSBKEY" xml:space="preserve">
+    <value>ไม่พบ USB-KEY!</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>กลับ</value>
+  </data>
+  <data name="MuteRestore" xml:space="preserve">
+    <value>กู้คืน</value>
+  </data>
+  <data name="UpdateAlert" xml:space="preserve">
+    <value>พบระบบเวอร์ชั่นใหม่ กรุณาดาวน์โหลดการอัพเดตทันที!</value>
+  </data>
+  <data name="Exception_CheckSqlAndFile" xml:space="preserve">
+    <value>เชื่อมต่อฐานข้อมูลผิดพลาด โปรดตรวจสอบไฟล์ฐานข้อมูลหรือกำหนดค่าการเชื่อมต่อฐานข้อมูล!</value>
+  </data>
+  <data name="CompanyShortName" xml:space="preserve">
+    <value>Oybab</value>
+  </data>
+  <data name="CompleteInput" xml:space="preserve">
+    <value>โปรดป้อนข้อมูลทั้งหมด!</value>
+  </data>
+  <data name="VersionNo" xml:space="preserve">
+    <value>หมายเลขเวอร์ชั่น</value>
+  </data>
+  <data name="SoftPlayerDescription" xml:space="preserve">
+    <value>หากมีความคิดเห็นหรือข้อเสนอแนะใด ๆ โปรดติดต่อเราผ่าน"ระบบ---เกี่ยวกับ"เพื่อตรวจสอบ.</value>
+  </data>
+  <data name="ChangeLanguage" xml:space="preserve">
+    <value>เปลี่ยนภาษา</value>
+  </data>
+  <data name="ChangeLanguageFailt" xml:space="preserve">
+    <value>เปลี่ยนภาษาล้มเหลว!</value>
+  </data>
+  <data name="ChangeLanguageSuccess" xml:space="preserve">
+    <value>เปลี่ยนภาษาสำเร็จ จะมีผลในครั้งต่อไปเมื่อระบบเริ่มทำงาน!</value>
+  </data>
+  <data name="Exception_InvalidLanguage" xml:space="preserve">
+    <value>ระบบภาษาไม่ถูกต้องหรือไม่มีอยู่ โปรดตรวจสอบไฟล์กำหนดค่า!</value>
+  </data>
+  <data name="Exception_LogError" xml:space="preserve">
+    <value>โหลดบันทึกการทำงานล้มเหลว!</value>
+  </data>
+  <data name="FontName2" xml:space="preserve">
+    <value>Arial</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>ช่วยเหลือ</value>
+  </data>
+  <data name="Exception_InvalidDB" xml:space="preserve">
+    <value>ไฟล์ฐานข้อมูลไม่ถูกต้อง!</value>
+  </data>
+  <data name="Exception_KeyKeyError" xml:space="preserve">
+    <value>USB-KEY ได้รับKeyผิดพลาด ผิดพลาด: {0} {1}.</value>
+  </data>
+  <data name="Exception_ApplicationCheckFaild" xml:space="preserve">
+    <value>ตรวจสอบยืนยันโปรแกรมประยุกต์ล้มเหลว!</value>
+  </data>
+  <data name="Exception_CloseRequestFaild" xml:space="preserve">
+    <value>ส่งคำขอปิดเซสชั่นผิดพลาด!</value>
+  </data>
+  <data name="Exception_EncryptedRequestFaild" xml:space="preserve">
+    <value>ส่งคําขอการเข้ารหัสผิดพลาด!</value>
+  </data>
+  <data name="Exception_LockRequestFaild" xml:space="preserve">
+    <value>ส่งคำขอการล็อคผิดพลาด!</value>
+  </data>
+  <data name="Exception_NewRequestFailt" xml:space="preserve">
+    <value>ส่งคําขอเซสชั่นใหม่ผิดพลาด! รหัสผิดพลาด{0}: 101</value>
+  </data>
+  <data name="Exception_OutClientLimitFaild" xml:space="preserve">
+    <value>เกินขีดจํากัดการเชื่อมต่อลูกค้า! รหัสผิดพลาด{0}: 102</value>
+  </data>
+  <data name="Exception_RemoteServerConn" xml:space="preserve">
+    <value>ไม่สามารถเชื่อมต่อเซิร์ฟเวอร์ระยะไกลได้!</value>
+  </data>
+  <data name="Exception_ServerCantCorrConn" xml:space="preserve">
+    <value>ไม่สามารถรักษาเซสชั่นกับเซิร์ฟเวอร์ได้อย่างถูกต้อง! กรุณาคลิกลองอีกครั้งเพื่อดําเนินการต่อ หรือคลิก Exit เพื่อออกจากระบบ!</value>
+  </data>
+  <data name="Exception_ServerCheckFaild" xml:space="preserve">
+    <value>ตรวจสอบข้อผิดพลาดของคีย์เซิร์ฟเวอร์!</value>
+  </data>
+  <data name="Exception_ServerFaild" xml:space="preserve">
+    <value>มีข้อผิดพลาดกับเซิร์ฟเวอร์!</value>
+  </data>
+  <data name="Exception_ServerKeyFaild" xml:space="preserve">
+    <value>ข้อผิดพลาดคีย์เซิร์ฟเวอร์!</value>
+  </data>
+  <data name="Exception_SessionExpiredRetry" xml:space="preserve">
+    <value>เซสชั่นหมดอายุ โปรดลองอีกครั้ง!</value>
+  </data>
+  <data name="Exception_SessionFaildAndTry" xml:space="preserve">
+    <value>เซสชั่นหมดอายุ ลองรับอีกครั้ง!</value>
+  </data>
+  <data name="Exception_SessionRequestFaild" xml:space="preserve">
+    <value>ส่งคําขอเซสชั่นผิดพลาด!</value>
+  </data>
+  <data name="Exception_SessionUpdateFaild" xml:space="preserve">
+    <value>การแก้ไขเซสชั่นล้มเหลว!</value>
+  </data>
+  <data name="Exception_UIDRequestFaild" xml:space="preserve">
+    <value>ส่งคําขอเพื่อรับ UIDล้มเหลว!</value>
+  </data>
+  <data name="SessionUpdateSuccess" xml:space="preserve">
+    <value>อัพเดตเซสชั่นสำเร็จ.</value>
+  </data>
+  <data name="Exception_SetClientTimeFailt" xml:space="preserve">
+    <value>ตรวจปรับเวลาของเซิร์ฟเวอร์ถึงเวลาของลูกค้าล้มเหลว!</value>
+  </data>
+  <data name="IsHidden" xml:space="preserve">
+    <value>ซ่อน</value>
+  </data>
+  <data name="Exception_CheckDataFaild" xml:space="preserve">
+    <value>ข้อผิดพลาดในการรับข้อมูลเซิร์ฟเวอร์ระยะไกล!</value>
+  </data>
+  <data name="Exception_DataNotReady" xml:space="preserve">
+    <value>ข้อมูลเซิร์ฟเวอร์ระยะไกลยังไม่พร้อม! โปรดลองอีกครั้งในภายหลัง! รหัสข้อผิดพลาด: 107</value>
+  </data>
+  <data name="Exception_ChangePWDRequestFaild" xml:space="preserve">
+    <value>ส่งคําขอแก้ไขรหัสผ่านล้มเหลว!</value>
+  </data>
+  <data name="Exception_ValidPWDRequestFaild" xml:space="preserve">
+    <value>ส่งคําขอยืนยันรหัสผ่านล้มเหลว!</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>ติดต่อเรา</value>
+  </data>
+  <data name="Consumption" xml:space="preserve">
+    <value>ใช้จ่าย</value>
+  </data>
+  <data name="DealerContactWay" xml:space="preserve">
+    <value>ข้อมูลติดต่อตัวแทนจําหน่าย</value>
+  </data>
+  <data name="Mode" xml:space="preserve">
+    <value>โหมด</value>
+  </data>
+  <data name="Remark" xml:space="preserve">
+    <value>หมายเหตุ</value>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>อื่นๆ</value>
+  </data>
+  <data name="Exception_IPConflict" xml:space="preserve">
+    <value>ที่อยู่ IP ขัดแย้ง โปรดเริ่มใหม่!</value>
+  </data>
+  <data name="Exception_SessionInvalid" xml:space="preserve">
+    <value>เซสชั่นไม่ถูกต้อง โปรดเริ่มใหม่!</value>
+  </data>
+  <data name="Exception_InvalidPending" xml:space="preserve">
+    <value>โหมดไม่ถูกต้อง!</value>
+  </data>
+  <data name="Exception_IPInvalid" xml:space="preserve">
+    <value>ที่อยู่ IP ไม่ถูกต้อง โปรดติดต่อฝ่ายบริการลูกค้า!</value>
+  </data>
+  <data name="Exception_OrderExpired" xml:space="preserve">
+    <value>บิลหมดอายุแล้ว โปรดติดต่อฝ่ายบริการลูกค้า!</value>
+  </data>
+  <data name="Exception_OrderInvalid" xml:space="preserve">
+    <value>การเรียกเก็บเงินไม่ถูกต้อง โปรดติดต่อฝ่ายบริการลูกค้า!</value>
+  </data>
+  <data name="Exception_SendRequestFaild" xml:space="preserve">
+    <value>ส่งคําขอรับการแจ้งเตือนผิดพลาด!</value>
+  </data>
+  <data name="Exception_SetConRequestFaild" xml:space="preserve">
+    <value>ส่งคำขอการตั้งค่าฟังก์ชั่นผิดพลาด!</value>
+  </data>
+  <data name="Exception_OperateRequestFaild" xml:space="preserve">
+    <value>ส่งคําขอดําเนินการผิดพลาด!</value>
+  </data>
+  <data name="ChangeSet" xml:space="preserve">
+    <value>ตั้งค่าฟังก์ชั่น</value>
+  </data>
+  <data name="ExpenditureManager" xml:space="preserve">
+    <value>การจัดการค่าใช้จ่าย</value>
+  </data>
+  <data name="MainPage" xml:space="preserve">
+    <value>หน้าหลัก</value>
+  </data>
+  <data name="OrderManager" xml:space="preserve">
+    <value>การจัดการการเรียกเก็บเงิน</value>
+  </data>
+  <data name="ProductManager" xml:space="preserve">
+    <value>การจัดการผลิตภัณฑ์</value>
+  </data>
+  <data name="ProductTypeManager" xml:space="preserve">
+    <value>การจัดการชนิดผลิตภัณฑ์</value>
+  </data>
+  <data name="RoomManager" xml:space="preserve">
+    <value>การจัดการแบบวีไอพี</value>
+  </data>
+  <data name="SoftServiceName" xml:space="preserve">
+    <value>ระบบซื้อขายOybab v1.1</value>
+  </data>
+  <data name="OperateFaild" xml:space="preserve">
+    <value>{0}ล้มเหลว!</value>
+  </data>
+  <data name="ActualPrice" xml:space="preserve">
+    <value>ราคาจริง</value>
+  </data>
+  <data name="AddTime" xml:space="preserve">
+    <value>เพิ่มเวลา</value>
+  </data>
+  <data name="Backstage" xml:space="preserve">
+    <value>เบื้องหลัง</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>จำนวน</value>
+  </data>
+  <data name="DealsPrice" xml:space="preserve">
+    <value>จำนวนเงินที่ลด</value>
+  </data>
+  <data name="Display" xml:space="preserve">
+    <value>แสดง</value>
+  </data>
+  <data name="DisplayType" xml:space="preserve">
+    <value>รูปแบบที่แสดง</value>
+  </data>
+  <data name="EndTime" xml:space="preserve">
+    <value>เวลาสิ้นสุด</value>
+  </data>
+  <data name="FinishTime" xml:space="preserve">
+    <value>เวลาเสร็จสิ้น</value>
+  </data>
+  <data name="Hide" xml:space="preserve">
+    <value>ซ่อน</value>
+  </data>
+  <data name="ImportTime" xml:space="preserve">
+    <value>วันที่จ่าย</value>
+  </data>
+  <data name="IpAddress" xml:space="preserve">
+    <value>ที่อยู่Ip</value>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>ลำดับ</value>
+  </data>
+  <data name="ProductName" xml:space="preserve">
+    <value>ชื่อผลิตภัณฑ์</value>
+  </data>
+  <data name="ProductTypeName" xml:space="preserve">
+    <value>ชื่อของชนิดผลิตภัณฑ์</value>
+  </data>
+  <data name="RoomNo" xml:space="preserve">
+    <value>หมายเลขวีไอพี</value>
+  </data>
+  <data name="StartTime" xml:space="preserve">
+    <value>เวลาเริ่มต้น</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>สถานะ</value>
+  </data>
+  <data name="TotalPrice" xml:space="preserve">
+    <value>ราคาทั้งหมด</value>
+  </data>
+  <data name="UnitPrice" xml:space="preserve">
+    <value>ราคาต่อหน่วย</value>
+  </data>
+  <data name="PropertyUsed" xml:space="preserve">
+    <value>โปรดแก้ไขหรือลบข้อมูลที่เกี่ยวข้องกับข้อมูลนี้ก่อน!</value>
+  </data>
+  <data name="Exception_CountOutOfIPRequestLimit" xml:space="preserve">
+    <value>มีคําขอซ้ำมากเกินไป โปรดลองอีกครั้งในภายหลัง! รหัสข้อผิดพลาด: 103</value>
+  </data>
+  <data name="Exception_ExceptionSource" xml:space="preserve">
+    <value>{0} {1}ที่มาของข้อผิดพลาด : {2}</value>
+  </data>
+  <data name="PropertyExists" xml:space="preserve">
+    <value>{0}มีอยู่ กรุณาอย่าป้อนซ้ำ!</value>
+  </data>
+  <data name="Checkout" xml:space="preserve">
+    <value>เช็คบิล</value>
+  </data>
+  <data name="Invalid" xml:space="preserve">
+    <value>เป็นโมฆะ</value>
+  </data>
+  <data name="Confirmed" xml:space="preserve">
+    <value>ยืนยันแล้ว</value>
+  </data>
+  <data name="GetFailed" xml:space="preserve">
+    <value>ได้รับล้มเหลว!</value>
+  </data>
+  <data name="OrderDetails" xml:space="preserve">
+    <value>รายละเอียดบิล</value>
+  </data>
+  <data name="OrderNo" xml:space="preserve">
+    <value>หมายเลขบิล</value>
+  </data>
+  <data name="PropertyError" xml:space="preserve">
+    <value>{0}ที่ป้อนไม่สมบูรณ์หรือไม่ถูกต้อง!</value>
+  </data>
+  <data name="Requesting" xml:space="preserve">
+    <value>กำลังร้องขอ</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>ตรวจสอบ</value>
+  </data>
+  <data name="ShowDescription" xml:space="preserve">
+    <value>ตรวจสอบรายละเอียด</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>เวลา</value>
+  </data>
+  <data name="TimeLimit" xml:space="preserve">
+    <value>ช่วงเวลาการค้นหาต้องเว้นระยะภายใน{0}วัน!</value>
+  </data>
+  <data name="ImportDetails" xml:space="preserve">
+    <value>รายละเอียดการจ่าย</value>
+  </data>
+  <data name="ImportId" xml:space="preserve">
+    <value>หมายเลขการจ่าย</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>พิมพ์</value>
+  </data>
+  <data name="PrintDescription" xml:space="preserve">
+    <value>พิมพ์เนื้อหา</value>
+  </data>
+  <data name="AddImport" xml:space="preserve">
+    <value>ค่าใช้จ่ายใหม่</value>
+  </data>
+  <data name="LineDataError" xml:space="preserve">
+    <value>แถวที่{0}ของการป้อนข้อมูลไม่สมบูรณ์หรือไม่ถูกต้อง!</value>
+  </data>
+  <data name="BalanceCount" xml:space="preserve">
+    <value>ปริมาณคงเหลือ</value>
+  </data>
+  <data name="Exception_ProductCountRefreshExpiredRetry" xml:space="preserve">
+    <value>จํานวนผลิตภัณฑ์หมดอายุแล้ว โปรดลองอีกครั้ง!</value>
+  </data>
+  <data name="Exception_ProductCountRefreshFailed" xml:space="preserve">
+    <value>การอัพเดตผลิตภัณฑ์ล้มเหลว!</value>
+  </data>
+  <data name="Exception_ProductCountRefreshRetry" xml:space="preserve">
+    <value>จํานวนผลิตภัณฑ์ไม่เพียงพอ ลองที่จะได้รับสินค้าอีกครั้ง!</value>
+  </data>
+  <data name="IsBindCount" xml:space="preserve">
+    <value>จํานวนของการผูก</value>
+  </data>
+  <data name="ProductCountRefreshSuccess" xml:space="preserve">
+    <value>การอัพเดตผลิตภัณฑ์สำเร็จ.</value>
+  </data>
+  <data name="WarningCount" xml:space="preserve">
+    <value>จํานวนคําเตือน</value>
+  </data>
+  <data name="Call" xml:space="preserve">
+    <value>เรียก</value>
+  </data>
+  <data name="ConsumptionType" xml:space="preserve">
+    <value>ควบคุมการใช้จ่าย</value>
+  </data>
+  <data name="ControlType" xml:space="preserve">
+    <value>ควบคุมระยะไกล</value>
+  </data>
+  <data name="CostPrice" xml:space="preserve">
+    <value>ราคาต้นทุน</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>ใหม่</value>
+  </data>
+  <data name="Offline" xml:space="preserve">
+    <value>ออฟไลน์</value>
+  </data>
+  <data name="Online" xml:space="preserve">
+    <value>ออนไลน์</value>
+  </data>
+  <data name="PaidPrice" xml:space="preserve">
+    <value>จํานวนเงินที่ชําระ</value>
+  </data>
+  <data name="PermissionDenied" xml:space="preserve">
+    <value>ไม่มีสิทธิ์!</value>
+  </data>
+  <data name="BalancePrice" xml:space="preserve">
+    <value>ยอดเงินที่เหลือ</value>
+  </data>
+  <data name="ChangePrice" xml:space="preserve">
+    <value>แก้ไขราคา</value>
+  </data>
+  <data name="ChangeTime" xml:space="preserve">
+    <value>แก้ไขเวลา</value>
+  </data>
+  <data name="Disable" xml:space="preserve">
+    <value>ปิด</value>
+  </data>
+  <data name="Enable" xml:space="preserve">
+    <value>เปิด</value>
+  </data>
+  <data name="Hour" xml:space="preserve">
+    <value>ชั่วโมง</value>
+  </data>
+  <data name="InvalidIt" xml:space="preserve">
+    <value>เป็นโมฆะ</value>
+  </data>
+  <data name="Minute" xml:space="preserve">
+    <value>นาที</value>
+  </data>
+  <data name="RemainingTime" xml:space="preserve">
+    <value>เหลือเวลาอีก</value>
+  </data>
+  <data name="TotalTime" xml:space="preserve">
+    <value>เวลาทั้งหมด</value>
+  </data>
+  <data name="BalanceCountNotEnough" xml:space="preserve">
+    <value>การดำเนินการล้มเหลว ผลิตภัณฑ์นี้จำนวนที่เหลือเพียง{0}อัน!</value>
+  </data>
+  <data name="CancelOrder" xml:space="preserve">
+    <value>ยกเลิกใบเรียกเก็บเงิน</value>
+  </data>
+  <data name="CancelOrderDescription" xml:space="preserve">
+    <value>ยกเลิกใบเรียกเก็บเงินปัจจุบัน.</value>
+  </data>
+  <data name="CheckoutOrder" xml:space="preserve">
+    <value>เช็คบิล</value>
+  </data>
+  <data name="CheckoutOrderDescription" xml:space="preserve">
+    <value>ตรวจสอบการเรียกเก็บเงินปัจจุบัน.</value>
+  </data>
+  <data name="ConfirmCancelOrder" xml:space="preserve">
+    <value>ยืนยันการยกเลิกการเรียกเก็บเงินปัจจุบันของคุณ?</value>
+  </data>
+  <data name="FaildThenRefreshModel" xml:space="preserve">
+    <value>การดําเนินการล้มเหลว บิลได้รับการแก้ไข พร้อมที่จะลองอัพเดตข้อมูลการเรียกเก็บเงิน!</value>
+  </data>
+  <data name="Locked" xml:space="preserve">
+    <value>ล็อคไว้</value>
+  </data>
+  <data name="NewOrder" xml:space="preserve">
+    <value>สร้างใบเรียกเก็บเงินใหม่</value>
+  </data>
+  <data name="NewOrderDescription" xml:space="preserve">
+    <value>สร้างใบเรียกเก็บเงินใหม่.</value>
+  </data>
+  <data name="OperateSuccess" xml:space="preserve">
+    <value>{0}สําเร็จ!</value>
+  </data>
+  <data name="RefreshOrderFailed" xml:space="preserve">
+    <value>อัพเดตการเรียกเก็บเงินปัจจุบันล้มเหลว!</value>
+  </data>
+  <data name="ReplaceRoom" xml:space="preserve">
+    <value>แทนที่วีไอพี</value>
+  </data>
+  <data name="ReplaceRoomDescription" xml:space="preserve">
+    <value>แทนที่วีไอพีปัจจุบันสําหรับวีไอพีอื่น ๆ.</value>
+  </data>
+  <data name="Request" xml:space="preserve">
+    <value>ร้องขอ</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>รีสตาร์ท</value>
+  </data>
+  <data name="RestartDescription" xml:space="preserve">
+    <value>รีสตาร์ทโฮสต์.</value>
+  </data>
+  <data name="SaveBeforeDelete" xml:space="preserve">
+    <value>กรุณาบันทึกข้อมูลก่อน!</value>
+  </data>
+  <data name="ShowOrder" xml:space="preserve">
+    <value>ดูใบเรียกเก็บเงิน</value>
+  </data>
+  <data name="ShowOrderDescription" xml:space="preserve">
+    <value>ดูรายละเอียดการเรียกเก็บเงิน.</value>
+  </data>
+  <data name="Shutdown" xml:space="preserve">
+    <value>ปิด</value>
+  </data>
+  <data name="ShutdownDescription" xml:space="preserve">
+    <value>ปิดโฮสต์.</value>
+  </data>
+  <data name="UnevenBalance" xml:space="preserve">
+    <value>ยอดเงินไม่สมดุล!</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>ยืนยัน</value>
+  </data>
+  <data name="NewRoom" xml:space="preserve">
+    <value>วีไอพีใหม่</value>
+  </data>
+  <data name="SendFireAlarm" xml:space="preserve">
+    <value>ส่งสัญญาณเตือนไฟไหม้</value>
+  </data>
+  <data name="Barcode" xml:space="preserve">
+    <value>บาร์โค้ด</value>
+  </data>
+  <data name="Disabled" xml:space="preserve">
+    <value>ห้ามใช้</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>ราคา</value>
+  </data>
+  <data name="IsPayByTime" xml:space="preserve">
+    <value>ตามเวลาใช่หรือไม่</value>
+  </data>
+  <data name="PriceHour" xml:space="preserve">
+    <value>ราคาเวลา</value>
+  </data>
+  <data name="IsAutoExtendTime" xml:space="preserve">
+    <value>จะขยายเวลาโดยอัตโนมัติหรือไม่</value>
+  </data>
+  <data name="PropertyUnSame" xml:space="preserve">
+    <value>ข้อมูลไม่สอดคล้องกัน โปรดเริ่มใหม่และลองอีกครั้ง!</value>
+  </data>
+  <data name="AdminName" xml:space="preserve">
+    <value>ชื่อผู้ดูแลระบบ</value>
+  </data>
+  <data name="AdminManager" xml:space="preserve">
+    <value>การจัดการผู้ดูแลระบบ</value>
+  </data>
+  <data name="AdminNo" xml:space="preserve">
+    <value>หมายเลขผู้ดูแลระบบ</value>
+  </data>
+  <data name="Sex" xml:space="preserve">
+    <value>เพศ</value>
+  </data>
+  <data name="IDNumber" xml:space="preserve">
+    <value>หมายเลขบัตรประชาชน</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>เมนู</value>
+  </data>
+  <data name="IsOnlyOwn" xml:space="preserve">
+    <value>จำกัดการจัดการ</value>
+  </data>
+  <data name="IsEnable" xml:space="preserve">
+    <value>ต้องการที่จะเปิดหรือไม่</value>
+  </data>
+  <data name="Guest" xml:space="preserve">
+    <value>ลูกค้า</value>
+  </data>
+  <data name="Employee" xml:space="preserve">
+    <value>พนักงาน</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>ผู้ดูแล</value>
+  </data>
+  <data name="DeviceNo" xml:space="preserve">
+    <value>หมายเลขอุปกรณ์</value>
+  </data>
+  <data name="DeviceType" xml:space="preserve">
+    <value>ชนิดของอุปกรณ์</value>
+  </data>
+  <data name="DeviceManager" xml:space="preserve">
+    <value>การจัดการอุปกรณ์</value>
+  </data>
+  <data name="Computer" xml:space="preserve">
+    <value>คอมพิวเตอร์</value>
+  </data>
+  <data name="Tablet" xml:space="preserve">
+    <value>แท็บเล็ต</value>
+  </data>
+  <data name="PrinterManager" xml:space="preserve">
+    <value>การจัดการเครื่องพิมพ์</value>
+  </data>
+  <data name="PrinterName" xml:space="preserve">
+    <value>ชื่อของเครื่องพิมพ์</value>
+  </data>
+  <data name="PrinterDeviceName" xml:space="preserve">
+    <value>ชื่อของอุปกรณ์เครื่องพิมพ์</value>
+  </data>
+  <data name="PrintType" xml:space="preserve">
+    <value>ชนิดของการพิมพ์</value>
+  </data>
+  <data name="Customer" xml:space="preserve">
+    <value>ลูกค้า</value>
+  </data>
+  <data name="Kitchen" xml:space="preserve">
+    <value>ห้องครัว</value>
+  </data>
+  <data name="MemberNo" xml:space="preserve">
+    <value>หมายเลขสมาชิก</value>
+  </data>
+  <data name="MemberManager" xml:space="preserve">
+    <value>การจัดการสมาชิก</value>
+  </data>
+  <data name="MemberName" xml:space="preserve">
+    <value>ชื่อของสมาชิก</value>
+  </data>
+  <data name="Occupation" xml:space="preserve">
+    <value>อาชีพ</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>โทรศัพท์มือถือ</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>โทรศัพท์</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>ที่อยู่</value>
+  </data>
+  <data name="OfferRate" xml:space="preserve">
+    <value>อัตราการขาย/100%</value>
+  </data>
+  <data name="SpendPrice" xml:space="preserve">
+    <value>จํานวนเงินที่ใช้จ่าย</value>
+  </data>
+  <data name="FavorablePrice" xml:space="preserve">
+    <value>จำนวนเงินที่ลด</value>
+  </data>
+  <data name="ExpiredTime" xml:space="preserve">
+    <value>เวลาหมดอายุ</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>ผู้ชาย</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>ผู้หญิง</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>ลงทะเบียน</value>
+  </data>
+  <data name="MachineNo" xml:space="preserve">
+    <value>รหัสเครื่อง</value>
+  </data>
+  <data name="RegisterNo" xml:space="preserve">
+    <value>รหัสการลงทะเบียน</value>
+  </data>
+  <data name="SoftwareExpired" xml:space="preserve">
+    <value>ระบบหมดอายุแล้ว ต้องการลงทะเบียนใหม่หรือไม่?</value>
+  </data>
+  <data name="SoftwareSoonExpired" xml:space="preserve">
+    <value>ระบบ{0}หมดอายุ{1}วัน ต้องการลงทะเบียนตอนนี้หรือไม่?</value>
+  </data>
+  <data name="SoftwareExpiredWarn" xml:space="preserve">
+    <value>เพื่อไม่ให้ส่งผลกระทบต่อการใช้งานตามปกติ เราขอแนะนําให้คุณติดต่อเราและลงทะเบียนระบบล่วงหน้า 7 วัน!</value>
+  </data>
+  <data name="RegisterSuccess" xml:space="preserve">
+    <value>ลงทะเบียนสําเร็จ โปรดรีสตาร์ทระบบ!</value>
+  </data>
+  <data name="MemberPay" xml:space="preserve">
+    <value>การชําระเงินของสมาชิก</value>
+  </data>
+  <data name="MemberPayDescription" xml:space="preserve">
+    <value>ดูรายละเอียดการชําระเงินของสมาชิก</value>
+  </data>
+  <data name="MemberPayNo" xml:space="preserve">
+    <value>หมายเลขการชําระเงินของสมาชิก</value>
+  </data>
+  <data name="MemberBalanceNotEnough" xml:space="preserve">
+    <value>จำนวนเงินของสมาชิกไม่เพียงพอ!</value>
+  </data>
+  <data name="AddMember" xml:space="preserve">
+    <value>เพิ่มสมาชิก</value>
+  </data>
+  <data name="PropertyNotFound" xml:space="preserve">
+    <value>หา{0}ไม่เจอ!</value>
+  </data>
+  <data name="CheckoutImport" xml:space="preserve">
+    <value>ค่าใช้จ่ายการชําระเงิน</value>
+  </data>
+  <data name="RoomPrice" xml:space="preserve">
+    <value>ราคาวีไอพี</value>
+  </data>
+  <data name="CountOfoffLimit" xml:space="preserve">
+    <value>จำนวนต้องไม่เกินขีดจํากัดที่ระบุ!</value>
+  </data>
+  <data name="MemberExpired" xml:space="preserve">
+    <value>สมาชิกปัจจุบันหมดอายุแล้ว!</value>
+  </data>
+  <data name="MemberExpiredDescription" xml:space="preserve">
+    <value>แก้ไขเวลาหมดอายุของสมาชิก!</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>ไม่ทราบ</value>
+  </data>
+  <data name="NotFoundProperty_Number" xml:space="preserve">
+    <value>อันที่{0}{1}หาไม่เจอ!</value>
+  </data>
+  <data name="Exception_UnknownDevice" xml:space="preserve">
+    <value>อุปกรณ์ไม่มีอยู่หรือถูกปิดใช้งาน! รหัสผิดพลาด{0}: 111</value>
+  </data>
+  <data name="Exception_RoomCountOutOfLimit" xml:space="preserve">
+    <value>วีไอพีเกินขีดจํากัดจํานวนสูงสุด! รหัสผิดพลาด{0}: 104</value>
+  </data>
+  <data name="ResetDescription" xml:space="preserve">
+    <value>รีเซ็ตรหัสผ่านของผู้ดูแลระบบ</value>
+  </data>
+  <data name="SureReset" xml:space="preserve">
+    <value>แน่ใจหรือไม่ที่จะตั้งค่าใหม่?</value>
+  </data>
+  <data name="Exception_UnknownAdmin" xml:space="preserve">
+    <value>ไม่มีผู้ดูแลระบบอยู่หรือถูกปิดใช้งาน! รหัสผิดพลาด{0}: 112</value>
+  </data>
+  <data name="ReturnPrice" xml:space="preserve">
+    <value>ยอดเงินที่ส่งคืน</value>
+  </data>
+  <data name="BorrowPrice" xml:space="preserve">
+    <value>จํานวนเงินที่ยืม</value>
+  </data>
+  <data name="KeepPrice" xml:space="preserve">
+    <value>ยอดเงินที่เหลือ</value>
+  </data>
+  <data name="RemainingDays" xml:space="preserve">
+    <value>จํานวนวันที่เหลือ</value>
+  </data>
+  <data name="Device" xml:space="preserve">
+    <value>อุปกรณ์</value>
+  </data>
+  <data name="Table" xml:space="preserve">
+    <value>วีไอพี</value>
+  </data>
+  <data name="Package" xml:space="preserve">
+    <value>บรรจุ</value>
+  </data>
+  <data name="MemberDealsPrice" xml:space="preserve">
+    <value>จํานวนส่วนลดสําหรับสมาชิก</value>
+  </data>
+  <data name="MemberPaidPrice" xml:space="preserve">
+    <value>จํานวนเงินที่ชําระโดยสมาชิก</value>
+  </data>
+  <data name="TotalPaidPrice" xml:space="preserve">
+    <value>ราคาทั้งหมดที่ต้องชำระ</value>
+  </data>
+  <data name="MemberBalancePrice" xml:space="preserve">
+    <value>จำนวนเงินสมาชิก</value>
+  </data>
+  <data name="RegisterCount" xml:space="preserve">
+    <value>จํานวนการลงทะเบียน</value>
+  </data>
+  <data name="Expenditure" xml:space="preserve">
+    <value>จ่ายไป</value>
+  </data>
+  <data name="PrintTypeLimit" xml:space="preserve">
+    <value>คุณไม่สามารถเพิ่มเครื่องพิมพ์ชนิดเดียวกันได้!</value>
+  </data>
+  <data name="SameEnabledPrinterFailed" xml:space="preserve">
+    <value>เครื่องพิมพ์แบบการเรียกเก็บเงินเครื่องเดียวเท่านั้นที่สามารถเปิดได้!</value>
+  </data>
+  <data name="Server" xml:space="preserve">
+    <value>เซิร์ฟเวอร์</value>
+  </data>
+  <data name="PrintAfterBuy" xml:space="preserve">
+    <value>พิมพ์หลังจากซื้อ</value>
+  </data>
+  <data name="PrintAfterCheckout" xml:space="preserve">
+    <value>พิมพ์หลังจากเช็คบิล</value>
+  </data>
+  <data name="LocalPrint" xml:space="preserve">
+    <value>พิมพ์ในท้องถิ่น</value>
+  </data>
+  <data name="ServerIpAddress" xml:space="preserve">
+    <value>ที่อยู่ IP ของเซิร์ฟเวอร์</value>
+  </data>
+  <data name="OperateChangeNextStartup" xml:space="preserve">
+    <value>{0}สำเร็จ จะมีผลในครั้งถัดไปเมื่อระบบเริ่มต้น!</value>
+  </data>
+  <data name="BarcodeNo" xml:space="preserve">
+    <value>หมายเลขบาร์โค้ด</value>
+  </data>
+  <data name="OnlyDisplaySelected" xml:space="preserve">
+    <value>แสดงเฉพาะที่เลือกเท่านั้น</value>
+  </data>
+  <data name="CurrentProductAlreadyExists" xml:space="preserve">
+    <value>ผลิตภัณฑ์ปัจจุบันมีอยู่แล้ว!</value>
+  </data>
+  <data name="Statistic" xml:space="preserve">
+    <value>สถิติ</value>
+  </data>
+  <data name="Exception_InvalidMediaRoot" xml:space="preserve">
+    <value>เส้นทางภาพเซิร์ฟเวอร์ไม่ถูกต้องหรือไม่มีอยู่ โปรดตรวจสอบโฟลเดอร์หรือเครือข่าย! รหัสผิดพลาด: 100</value>
+  </data>
+  <data name="Canceld" xml:space="preserve">
+    <value>ยกเลิกแล้ว</value>
+  </data>
+  <data name="Exception_Relogin" xml:space="preserve">
+    <value>เซสชั่นหมดอายุ โปรดออกจากระบบและเข้าสู่ระบบใหม่!</value>
+  </data>
+  <data name="InputNotValid" xml:space="preserve">
+    <value>กรุณาป้อนข้อมูลที่เกี่ยวข้องในปัจจุบันอย่างถูกต้องและครบถ้วน!</value>
+  </data>
+  <data name="Bill" xml:space="preserve">
+    <value>บิล</value>
+  </data>
+  <data name="IncomeManager" xml:space="preserve">
+    <value>การจัดการรายได้</value>
+  </data>
+  <data name="ExpendBill" xml:space="preserve">
+    <value>ใบเรียกเก็บเงินที่จ่ายไป</value>
+  </data>
+  <data name="OwedPrice" xml:space="preserve">
+    <value>จํานวนเงินที่ค้างจ่าย</value>
+  </data>
+  <data name="IncomeStatistic" xml:space="preserve">
+    <value>สถิติรายได้</value>
+  </data>
+  <data name="SpendStatistic" xml:space="preserve">
+    <value>สถิติที่จ่ายไป</value>
+  </data>
+  <data name="SellProductsStatistic" xml:space="preserve">
+    <value>สถิติขายผลิตภัณฑ์</value>
+  </data>
+  <data name="SpendProductsStatistic" xml:space="preserve">
+    <value>สถิติซื้อผลิตภัณฑ์</value>
+  </data>
+  <data name="NotFoundAnyRecords" xml:space="preserve">
+    <value>ไม่พบบันทึกใดๆ!</value>
+  </data>
+  <data name="Proportion" xml:space="preserve">
+    <value>สัดส่วน</value>
+  </data>
+  <data name="PermissionsMenu" xml:space="preserve">
+    <value>เมนูสิทธิ์</value>
+  </data>
+  <data name="Exception_MemberDisabled" xml:space="preserve">
+    <value>สมาชิกถูกปิดใช้งาน!</value>
+  </data>
+  <data name="Income" xml:space="preserve">
+    <value>รายได้</value>
+  </data>
+  <data name="ImageMode" xml:space="preserve">
+    <value>โหมดภาพ</value>
+  </data>
+  <data name="Exception_DeviceCountOutOfLimit" xml:space="preserve">
+    <value>จํานวนอุปกรณ์เกินขีดจำกัดสูงสุด! รหัสผิดพลาด{0}: 105</value>
+  </data>
+  <data name="NewPasswordSizeLimit" xml:space="preserve">
+    <value>รหัสผ่านใหม่เป็นอย่างน้อย{0}หลัก!</value>
+  </data>
+  <data name="AdminLog" xml:space="preserve">
+    <value>บันทึกของผู้ดูแลระบบ</value>
+  </data>
+  <data name="LogTitle" xml:space="preserve">
+    <value>หัวข้อบันทึก</value>
+  </data>
+  <data name="LogContent" xml:space="preserve">
+    <value>เนื้อหาการบันทึก</value>
+  </data>
+  <data name="AdminPay" xml:space="preserve">
+    <value>ผู้ดูแลระบบชำระเงิน</value>
+  </data>
+  <data name="AdminPayDescription" xml:space="preserve">
+    <value>ดูรายละเอียดการชําระเงินของผู้ดูแลระบบ</value>
+  </data>
+  <data name="AdminPayNo" xml:space="preserve">
+    <value>หมายเลขการชำระของผู้ดูแลระบบ</value>
+  </data>
+  <data name="SupplierManager" xml:space="preserve">
+    <value>การจัดการของผู้จัดจําหน่าย</value>
+  </data>
+  <data name="SupplierPay" xml:space="preserve">
+    <value>การชําระเงินของผู้จัดจําหน่าย</value>
+  </data>
+  <data name="SupplierPayDescription" xml:space="preserve">
+    <value>ดูรายละเอียดการชําระเงินของผู้จัดจําหน่าย</value>
+  </data>
+  <data name="SupplierPayNo" xml:space="preserve">
+    <value>หมายเลขการชําระเงินของผู้จัดจําหน่าย</value>
+  </data>
+  <data name="SupplierNo" xml:space="preserve">
+    <value>หมายเลขผู้จัดจําหน่าย</value>
+  </data>
+  <data name="SupplierExpiredDescription" xml:space="preserve">
+    <value>แก้ไขเวลาหมดอายุของผู้จัดจําหน่าย!</value>
+  </data>
+  <data name="SupplierName" xml:space="preserve">
+    <value>ชื่อของผู้จัดจําหน่าย</value>
+  </data>
+  <data name="AddSupplier" xml:space="preserve">
+    <value>เพิ่มผู้จัดจําหน่าย</value>
+  </data>
+  <data name="SupplierExpired" xml:space="preserve">
+    <value>ผู้จัดจําหน่ายปัจจุบันหมดอายุแล้ว!</value>
+  </data>
+  <data name="Exception_SupplierDisabled" xml:space="preserve">
+    <value>ผู้จัดจําหน่ายถูกปิดการใช้งาน!</value>
+  </data>
+  <data name="SupplierBalancePrice" xml:space="preserve">
+    <value>จำนวนเงินของผู้จัดจําหน่าย</value>
+  </data>
+  <data name="SupplierBalanceNotEnough" xml:space="preserve">
+    <value>จำนวนเงินของผู้จัดจําหน่ายไม่เพียงพอ!</value>
+  </data>
+  <data name="SupplierDealsPrice" xml:space="preserve">
+    <value>ราคาที่ลดสําหรับผู้จัดจําหน่าย</value>
+  </data>
+  <data name="SupplierPaidPrice" xml:space="preserve">
+    <value>จำนวนเงินที่ชําระโดยผู้จัดจําหน่าย</value>
+  </data>
+  <data name="PleaseWait" xml:space="preserve">
+    <value>โปรดรอสักครู่...</value>
+  </data>
+  <data name="CreatingTheDocument" xml:space="preserve">
+    <value>กำลังสร้างไฟล์...</value>
+  </data>
+  <data name="TableUsed" xml:space="preserve">
+    <value>กำลังใช้โต๊ะปัจจุบันอยู่!</value>
+  </data>
+  <data name="Exception_InvalidType" xml:space="preserve">
+    <value>กรุณาป้อนข้อมูลที่เกี่ยวข้องในปัจจุบันอย่างถูกต้องและครบถ้วน!</value>
+  </data>
+  <data name="ChangeCostPrice" xml:space="preserve">
+    <value>แก้ไขราคาต้นทุน</value>
+  </data>
+  <data name="IndexName" xml:space="preserve">
+    <value>ชื่อของดัชนี</value>
+  </data>
+  <data name="FinanceLog" xml:space="preserve">
+    <value>บันทึกการเงิน</value>
+  </data>
+  <data name="OperateName" xml:space="preserve">
+    <value>ชื่อการดําเนินการ</value>
+  </data>
+  <data name="CashDrawer" xml:space="preserve">
+    <value>กล่องเงิน</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>เปิด</value>
+  </data>
+  <data name="IsPayByCard" xml:space="preserve">
+    <value>ชำระเงินโดยบัตรเครดิต</value>
+  </data>
+  <data name="CardPaidPrice" xml:space="preserve">
+    <value>จํานวนเงินที่ชําระโดยบัตรเครดิต</value>
+  </data>
+  <data name="SpendPaysStatistic" xml:space="preserve">
+    <value>สถิติค่าใช้จ่ายการชําระเงิน</value>
+  </data>
+  <data name="SalePaysStatistic" xml:space="preserve">
+    <value>สถิติรายได้ของการชําระเงิน</value>
+  </data>
+  <data name="BalancePay" xml:space="preserve">
+    <value>จำนวนเงินคงเหลือ</value>
+  </data>
+  <data name="BalancePayDescription" xml:space="preserve">
+    <value>ดูรายละเอียดจำนวนเงินที่ชําระ</value>
+  </data>
+  <data name="BalancePayNo" xml:space="preserve">
+    <value>หมายเลขจำนวนเงินที่ต้องชําระ</value>
+  </data>
+  <data name="SoftServiceNameWithoutVersion" xml:space="preserve">
+    <value>ระบบซื้อขายOybab</value>
+  </data>
+  <data name="MediumLabelFontSize" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="LogoTitleLabelFontSize" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="SoftServiceVersion" xml:space="preserve">
+    <value>V1.1</value>
+  </data>
+  <data name="DirectionMode" xml:space="preserve">
+    <value>LeftToRight</value>
+  </data>
+  <data name="LoginUserInputMsg" xml:space="preserve">
+    <value>กรุณาป้อนหมายเลขของผู้ดูแลระบบ</value>
+  </data>
+  <data name="LoginPasswordInputMsg" xml:space="preserve">
+    <value>กรุณาป้อนรหัสผ่านของผู้ดูแลระบบ</value>
+  </data>
+  <data name="Reset2" xml:space="preserve">
+    <value>รีเซ็ต</value>
+  </data>
+  <data name="MediumButtonFontSize" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="OK2" xml:space="preserve">
+    <value>แน่ใจ</value>
+  </data>
+  <data name="LittleKeyboardFontSize" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="HorizontalModel" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="CompanyLogoName" xml:space="preserve">
+    <value>เทคโนโลยีOybab</value>
+  </data>
+  <data name="RegNoInputMessage" xml:space="preserve">
+    <value>กรุณาป้อนรหัสลงทะเบียน</value>
+  </data>
+  <data name="RegCountInputMessage" xml:space="preserve">
+    <value>โปรดป้อนจำนวนรหัสการลงทะเบียน</value>
+  </data>
+  <data name="TopLogoTitleLabelFontSize" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="LittleMediumLabelFontSize" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="Exception_AdminExists" xml:space="preserve">
+    <value>ขณะนี้กําลังใช้งานโดยผู้ดูแลระบบ! รหัสข้อผิดพลาด{0}: 113</value>
+  </data>
+  <data name="IncomeTradingManage" xml:space="preserve">
+    <value>การจัดการธุรกรรมรายได้</value>
+  </data>
+  <data name="Permission" xml:space="preserve">
+    <value>สิทธิ์</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>วัน</value>
+  </data>
+  <data name="Empty" xml:space="preserve">
+    <value>ว่าง</value>
+  </data>
+  <data name="Selected" xml:space="preserve">
+    <value>รายการที่เลือกแล้ว</value>
+  </data>
+  <data name="Products" xml:space="preserve">
+    <value>รายการผลิตภัณฑ์</value>
+  </data>
+  <data name="Operate" xml:space="preserve">
+    <value>ดำเนินการ</value>
+  </data>
+  <data name="SelectedCount" xml:space="preserve">
+    <value>เลือกจำนวน</value>
+  </data>
+  <data name="OperatingWait" xml:space="preserve">
+    <value>โปรดรอสักครู่.....</value>
+  </data>
+  <data name="Cash" xml:space="preserve">
+    <value>เงินสด</value>
+  </data>
+  <data name="Card" xml:space="preserve">
+    <value>บัตรเครดิต</value>
+  </data>
+  <data name="Member" xml:space="preserve">
+    <value>สมาชิก</value>
+  </data>
+  <data name="Bind" xml:space="preserve">
+    <value>ผูก</value>
+  </data>
+  <data name="Unbind" xml:space="preserve">
+    <value>ยกเลิกการผูก</value>
+  </data>
+  <data name="MediumLargeButtonFontSize" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="OldRoomNo" xml:space="preserve">
+    <value>หมายเลขวีไอพีเก่า</value>
+  </data>
+  <data name="NewRoomNo" xml:space="preserve">
+    <value>หมายเลขวีไอพีใหม่</value>
+  </data>
+  <data name="IpAddress2" xml:space="preserve">
+    <value>ที่อยู่ Ip</value>
+  </data>
+  <data name="RequestManager" xml:space="preserve">
+    <value>ความต้องการของการจัดการ</value>
+  </data>
+  <data name="RequestName" xml:space="preserve">
+    <value>ชื่อของความต้องการ</value>
+  </data>
+  <data name="Request2" xml:space="preserve">
+    <value>ความต้องการ</value>
+  </data>
+  <data name="RequestDescription" xml:space="preserve">
+    <value>เพิ่มความต้องการไปยังข้อมูลปัจจุบัน.</value>
+  </data>
+  <data name="IsDisplayAll" xml:space="preserve">
+    <value>แสดงทั้งหมด</value>
+  </data>
+  <data name="CheckoutBy" xml:space="preserve">
+    <value>ผู้เช็คบิล</value>
+  </data>
+  <data name="OrderPhoneNo" xml:space="preserve">
+    <value>หมายเลขโทรศัพท์สําหรับการเรียกเก็บเงิน</value>
+  </data>
+  <data name="PersonName" xml:space="preserve">
+    <value>ชื่อ</value>
+  </data>
+  <data name="BillTypeInner" xml:space="preserve">
+    <value>ภายใน</value>
+  </data>
+  <data name="BillTypeOuter" xml:space="preserve">
+    <value>ภายนอก</value>
+  </data>
+  <data name="BillType" xml:space="preserve">
+    <value>ชนิดบิล</value>
+  </data>
+  <data name="AddOuterBill" xml:space="preserve">
+    <value>เพิ่มใบเรียกเก็บเงินภายนอก</value>
+  </data>
+  <data name="SuccessAndFailProperty" xml:space="preserve">
+    <value>สําเร็จ: {0}, ล้มเหลว : {1}.</value>
+  </data>
+  <data name="ConfirmSaveAll" xml:space="preserve">
+    <value>แน่ใจหรือที่จะบันทึกทั้งหมด?</value>
+  </data>
+  <data name="Profit" xml:space="preserve">
+    <value>กําไรบริสุทธิ์</value>
+  </data>
+  <data name="TypeName" xml:space="preserve">
+    <value>ชื่อชนิด</value>
+  </data>
+  <data name="Summary" xml:space="preserve">
+    <value>สรุป</value>
+  </data>
+  <data name="SystemTimeInvalid" xml:space="preserve">
+    <value>ระบบเวลาและระบบเซิร์ฟเวอร์ไม่สอดคล้องกัน! รหัสข้อผิดพลาด{0}: 106</value>
+  </data>
+  <data name="UnrecordedPrice" xml:space="preserve">
+    <value>ไม่ได้บันทึกยอดเงิน</value>
+  </data>
+  <data name="ReceivedPrice" xml:space="preserve">
+    <value>ยอดเงินที่ได้รับ</value>
+  </data>
+  <data name="Prefix" xml:space="preserve">
+    <value>หัวของคํา</value>
+  </data>
+  <data name="MultiLanguage" xml:space="preserve">
+    <value>หลายภาษา</value>
+  </data>
+  <data name="Exception_DatabaseNotFound" xml:space="preserve">
+    <value>ไม่พบฐานข้อมูลเซิร์ฟเวอร์ระยะไกล โปรดตรวจสอบ! รหัสข้อผิดพลาด: 108</value>
+  </data>
+  <data name="Exception_DatabaseLoadFailed" xml:space="preserve">
+    <value>ฐานข้อมูลเซิร์ฟเวอร์ระยะไกลไม่สามารถโหลดได้! รหัสข้อผิดพลาด: 109</value>
+  </data>
+  <data name="NoLimit" xml:space="preserve">
+    <value>ไม่มีข้อจํากัด</value>
+  </data>
+  <data name="ProductExpiredDescription" xml:space="preserve">
+    <value>แก้ไขเวลาหมดอายุของผลิตภัณฑ์!</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>ไม่มี</value>
+  </data>
+  <data name="BarcodeReader" xml:space="preserve">
+    <value>เครื่องอ่านบาร์โค้ด</value>
+  </data>
+  <data name="PrintBarcodeDescription" xml:space="preserve">
+    <value>พิมพ์บาร์โค้ด</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>ขนาด</value>
+  </data>
+  <data name="BarcodeLengthLimit" xml:space="preserve">
+    <value>ความยาวบาร์โค้ดต้อง 8 หรือ 13 ตัว!</value>
+  </data>
+  <data name="BillWide" xml:space="preserve">
+    <value>บิล - กว้าง</value>
+  </data>
+  <data name="PrintAll" xml:space="preserve">
+    <value>พิมพ์ทั้งหมด</value>
+  </data>
+  <data name="ConfirmBalanceInjustice" xml:space="preserve">
+    <value>ยอดคงเหลือไม่สมดุล แน่ใจหรือไม่?</value>
+  </data>
+  <data name="ProductParentName" xml:space="preserve">
+    <value>ชื่อผลิตภัณฑ์หลัก</value>
+  </data>
+  <data name="ProductParentCount" xml:space="preserve">
+    <value>จํานวนผลิตภัณฑ์หลัก</value>
+  </data>
+  <data name="Borrow" xml:space="preserve">
+    <value>ค้างจ่าย</value>
+  </data>
+  <data name="CanNotExceed" xml:space="preserve">
+    <value>จํานวนเงินที่ชำระทั้งหมดคือ{0}หยวน!</value>
+  </data>
+  <data name="ChangeCount" xml:space="preserve">
+    <value>จํานวนการแก้ไข</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>แนะนำ</value>
+  </data>
+  <data name="InnerBill" xml:space="preserve">
+    <value>การเรียกเก็บเงินภายใน</value>
+  </data>
+  <data name="OuterBill" xml:space="preserve">
+    <value>การเรียกเก็บเงินภายนอก</value>
+  </data>
+  <data name="IndexNameOrBarcode" xml:space="preserve">
+    <value>โปรดใส่ชื่อดัชนีหรือบาร์โค้ด</value>
+  </data>
+  <data name="Exception_DeviceExists" xml:space="preserve">
+    <value>อุปกรณ์ปัจจุบันกําลังใช้งานอยู่! รหัสข้อผิดพลาด{0}: 115</value>
+  </data>
+  <data name="ReturnId" xml:space="preserve">
+    <value>คืนหมายเลข</value>
+  </data>
+  <data name="ReturnBill" xml:space="preserve">
+    <value>คืนใบเรียกเก็บเงิน</value>
+  </data>
+  <data name="BalanceManager" xml:space="preserve">
+    <value>การจัดการยอดคงเหลือ</value>
+  </data>
+  <data name="BalanceName" xml:space="preserve">
+    <value>ชื่อยอดคงเหลือ</value>
+  </data>
+  <data name="IsBind" xml:space="preserve">
+    <value>ผูก</value>
+  </data>
+  <data name="CardOnlyCouldBindOnce" xml:space="preserve">
+    <value>สามารถผูกได้มากสุดหนึ่งบัญชี!</value>
+  </data>
+  <data name="AccountBank" xml:space="preserve">
+    <value>เปิดบัญชีธนาคาร</value>
+  </data>
+  <data name="AccountName" xml:space="preserve">
+    <value>ชื่อบัญชีที่เปิด</value>
+  </data>
+  <data name="AccountNo" xml:space="preserve">
+    <value>หมายเลขที่เปิดบัญชีธนาคาร</value>
+  </data>
+  <data name="ReturnType" xml:space="preserve">
+    <value>ชนิดที่ส่งคืน</value>
+  </data>
+  <data name="ReturnManager" xml:space="preserve">
+    <value>ส่งคืนการจัดการ</value>
+  </data>
+  <data name="FromCustomer" xml:space="preserve">
+    <value>จากลูกค้า</value>
+  </data>
+  <data name="ToSupplier" xml:space="preserve">
+    <value>คืนผู้จัดจำหน่าย</value>
+  </data>
+  <data name="ReturnDetails" xml:space="preserve">
+    <value>รายละเอียดการส่งคืน</value>
+  </data>
+  <data name="IsChange" xml:space="preserve">
+    <value>แทนที่</value>
+  </data>
+  <data name="CheckoutReturn" xml:space="preserve">
+    <value>คืนบิล</value>
+  </data>
+  <data name="BalancePaysIncomeStatistic" xml:space="preserve">
+    <value>สถิติรายได้ยอดคงเหลือที่ต้องชำระ</value>
+  </data>
+  <data name="BalancePaysSpendStatistic" xml:space="preserve">
+    <value>สถิติรายจ่ายยอดคงเหลือที่ต้องชำระ</value>
+  </data>
+  <data name="BalancePayByCash" xml:space="preserve">
+    <value>การชําระเงินคงเหลือ (เงินสด)</value>
+  </data>
+  <data name="BalancePayByCard" xml:space="preserve">
+    <value>การชําระเงินคงเหลือ (บัตร)</value>
+  </data>
+  <data name="MemberPayByCash" xml:space="preserve">
+    <value>การชําระเงินสมาชิก (เงินสด)</value>
+  </data>
+  <data name="MemberPayByCard" xml:space="preserve">
+    <value>การชําระเงินสมาชิก (บัตร)</value>
+  </data>
+  <data name="SupplierPayByCash" xml:space="preserve">
+    <value>การชําระเงินของผู้จัดจำหน่าย (เงินสด)</value>
+  </data>
+  <data name="SupplierPayByCard" xml:space="preserve">
+    <value>การชําระเงินของผู้จัดจำหน่าย (บัตร)</value>
+  </data>
+  <data name="AdminPayByCash" xml:space="preserve">
+    <value>การชําระเงินของผู้ดูแลระบบ (เงินสด)</value>
+  </data>
+  <data name="AdminPayByCard" xml:space="preserve">
+    <value>การชําระเงินของผู้ดูแลระบบ (บัตร)</value>
+  </data>
+  <data name="ReturnStatistic" xml:space="preserve">
+    <value>สถิติการส่งคืน</value>
+  </data>
+  <data name="AdminSaleStatistic" xml:space="preserve">
+    <value>สถิติการขายของผู้ดูแลระบบ</value>
+  </data>
+  <data name="ReturnProductsStatistic" xml:space="preserve">
+    <value>สถิติส่งคืนผลิตภัณฑ์</value>
+  </data>
+  <data name="ReplaceCount" xml:space="preserve">
+    <value>จํานวนการแทนที่</value>
+  </data>
+  <data name="RecordCount" xml:space="preserve">
+    <value>จํานวนการบันทึก</value>
+  </data>
+  <data name="Return" xml:space="preserve">
+    <value>ส่งคืน</value>
+  </data>
+  <data name="CardPrice" xml:space="preserve">
+    <value>ราคาบัตรเครดิต</value>
+  </data>
+  <data name="CardBalancePrice" xml:space="preserve">
+    <value>ยอดเงินคงเหลือในบัตร</value>
+  </data>
+  <data name="OtherPrice" xml:space="preserve">
+    <value>ราคาอื่น ๆ</value>
+  </data>
+  <data name="Supplier" xml:space="preserve">
+    <value>ผู้จัดจำหน่าย</value>
+  </data>
+  <data name="PrintInfo" xml:space="preserve">
+    <value>ข้อมูลการเรียกเก็บเงิน</value>
+  </data>
+  <data name="Test" xml:space="preserve">
+    <value>ทดสอบ</value>
+  </data>
+  <data name="InputPhoneNoFirst" xml:space="preserve">
+    <value>หากคุณป้อนข้อมูลการเรียกเก็บเงิน กรุณาป้อนหมายเลขโทรศัพท์ของคุณก่อน!</value>
+  </data>
+  <data name="PriceMonitor" xml:space="preserve">
+    <value>แสดงราคา</value>
+  </data>
+  <data name="ProductProfitStatistic" xml:space="preserve">
+    <value>สถิติกําไรของผลิตภัณฑ์</value>
+  </data>
+  <data name="IsBindWeigh" xml:space="preserve">
+    <value>น้ำหนักการผูก</value>
+  </data>
+  <data name="PageHeight" xml:space="preserve">
+    <value>ความสูงของเวปเพจ</value>
+  </data>
+  <data name="CancelAndDelete" xml:space="preserve">
+    <value>ยกเลิกและลบ</value>
+  </data>
+  <data name="CashWithCard" xml:space="preserve">
+    <value>เงินสด:￥ {0} เยน บัตรเครดิต: ¥{1}.</value>
+  </data>
+  <data name="AdminCantCreateAnAdmin" xml:space="preserve">
+    <value>ผู้ดูแลระบบไม่สามารถเพิ่มผู้ดูแลระบบได้!</value>
+  </data>
+  <data name="IncomePermission" xml:space="preserve">
+    <value>สิทธิ์รายได้</value>
+  </data>
+  <data name="ExpenditurePermission" xml:space="preserve">
+    <value>สิทธิ์ค่าใช้จ่าย</value>
+  </data>
+  <data name="TemporaryChangePrice" xml:space="preserve">
+    <value>แก้ไขราคาชั่วคราว</value>
+  </data>
+  <data name="ChangeUnitPrice" xml:space="preserve">
+    <value>แก้ไขราคาต่อหน่วย</value>
+  </data>
+  <data name="AddPrice" xml:space="preserve">
+    <value>เพิ่มยอดเงิน</value>
+  </data>
+  <data name="AddMemberBalancePrice" xml:space="preserve">
+    <value>เพิ่มจํานวนเงินคงเหลือของสมาชิก</value>
+  </data>
+  <data name="PosTopTitleFontSize" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="PosTotalPriceFontSize" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="PosCountFontSize" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="PosDescriptionFontSize" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>ผู้ใช้ ผู้ใช้</value>
+  </data>
+  <data name="PosContentFontSize" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="PosDescription" xml:space="preserve">
+    <value>ค้นหาผลิตภัณฑ์:F3，บันทึกชั่วคราว：F7，คืนสภาพเดิม：F8，ผูกสมาชิกF10，ปิด：F12，เปลี่ยนภาษา：TAB，เปิดกล่องเงิน：Alt+Z，ตำแหน่ง：↑ ↓ ← →，พลิกหน้า：PgUp/PgDn，เพิ่มจำนวน：+，ลบจำนวน：-，เลือก/ยืนยัน：Enter，ลบที่เลือกแล้ว：Del，ยกเลิก/กลับ：Esc，.</value>
+  </data>
+  <data name="Restore" xml:space="preserve">
+    <value>คืนสภาพเดิม</value>
+  </data>
+  <data name="CardReader" xml:space="preserve">
+    <value>เครื่องอ่านการ์ด</value>
+  </data>
+  <data name="CardNo" xml:space="preserve">
+    <value>หมายเลขบัตร</value>
+  </data>
+  <data name="CardNoExists" xml:space="preserve">
+    <value>มีหมายเลขบัตรอยู่แล้ว แน่ใจหรือไม่ที่จะแทนที่?</value>
+  </data>
+  <data name="SuccessReadBarcode" xml:space="preserve">
+    <value>อ่านบาร์โค้ดสำเร็จ!</value>
+  </data>
+  <data name="SuccessReadCardNo" xml:space="preserve">
+    <value>อ่านบัตรสำเร็จ!</value>
+  </data>
+  <data name="ServerIpAddress2" xml:space="preserve">
+    <value>ที่อยู่เซิร์ฟเวอร์</value>
+  </data>
+  <data name="BindMemberByNo" xml:space="preserve">
+    <value>ผูกสมาชิกตามหมายเลข</value>
+  </data>
+  <data name="BindSupplierByNo" xml:space="preserve">
+    <value>ผูกผู้จัดจําหน่ายตามหมายเลข</value>
+  </data>
+  <data name="BarcodeScales" xml:space="preserve">
+    <value>เครื่องชั่งน้ำหนักบาร์โค้ด</value>
+  </data>
+  <data name="SendData" xml:space="preserve">
+    <value>ส่งข้อมูล</value>
+  </data>
+  <data name="IncorrectProductData" xml:space="preserve">
+    <value>มีข้อมูลที่ไม่ถูกต้องในข้อมูลผลิตภัณฑ์!</value>
+  </data>
+  <data name="IncorrectProductName" xml:space="preserve">
+    <value>มีข้อมูลที่ไม่ถูกต้องในชื่อผลิตภัณฑ์!</value>
+  </data>
+  <data name="UnableToConnectIPAddress" xml:space="preserve">
+    <value>ฉันไม่สามารถเชื่อมต่อกับที่อยู่ IP!</value>
+  </data>
+  <data name="ConfirmNotPay" xml:space="preserve">
+    <value>แน่ใจหรือไม่ที่จะไม่จ่ายเงิน?</value>
+  </data>
+  <data name="ReadResourceStrError" xml:space="preserve">
+    <value>การอ่านทรัพยากรผิดพลาด!</value>
+  </data>
+  <data name="FreeRoomPriceLimit" xml:space="preserve">
+    <value>จํากัดราคาฟรี</value>
+  </data>
+  <data name="CancelFireAlarm" xml:space="preserve">
+    <value>ยกเลิกสัญญาณเตือนไฟไหม้</value>
+  </data>
+  <data name="ConfirmOperate" xml:space="preserve">
+    <value>ยืนยัน{0}ไหม?</value>
+  </data>
+  <data name="DeleteProduct" xml:space="preserve">
+    <value>ลบรายการ</value>
+  </data>
+  <data name="OpenCashDrawer" xml:space="preserve">
+    <value>เปิดกล่องเงิน</value>
+  </data>
+  <data name="Paid" xml:space="preserve">
+    <value>จ่าย</value>
+  </data>
+  <data name="Platform" xml:space="preserve">
+    <value>แพลตฟอร์ม</value>
+  </data>
+  <data name="UnlimitedTime" xml:space="preserve">
+    <value>ไม่จํากัดจํานวนชั่วโมง</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>เปิดแล้ว</value>
+  </data>
+  <data name="DecreaseProductCount" xml:space="preserve">
+    <value>ลดจํานวนผลิตภัณฑ์</value>
+  </data>
+  <data name="FaildThenWaitRetry" xml:space="preserve">
+    <value>การดําเนินการล้มเหลว การดําเนินการเร็วเกินไป โปรดลองอีกครั้ง!</value>
+  </data>
+  <data name="RemovePrice" xml:space="preserve">
+    <value>ลบราคาออก</value>
+  </data>
+  <data name="Exception_ServerClientVersionMisalignment" xml:space="preserve">
+    <value>เวอร์ชั่นระบบเซิร์ฟเวอร์ระยะไกลกับเวอร์ชั่นระบบปัจจุบันของลูกค้าไม่สอดคล้องกัน โปรดอัพเดตเป็นเวอร์ชั่นระบบเดียวกัน!</value>
+  </data>
+  <data name="Exception_ServerClientTimeMisalignment" xml:space="preserve">
+    <value>ระบบเวลาระยะไกลและระบบเวลาลูกค้าปัจจุบันไม่สอดคล้องกัน โปรดอัพเดตเวลาเดียวกัน!</value>
+  </data>
+  <data name="ConfirmAddPay" xml:space="preserve">
+    <value>แน่ใจหรือไม่ว่าจาก{2}เพิ่ม{0}{1}ให้กับ{3}?</value>
+  </data>
+  <data name="BalanceTransfer" xml:space="preserve">
+    <value>โอนย้ายยอดคงเหลือ</value>
+  </data>
+  <data name="OldBalance" xml:space="preserve">
+    <value>ยอดคงเหลือเก่า</value>
+  </data>
+  <data name="NewBalance" xml:space="preserve">
+    <value>ยอดคงเหลือใหม่</value>
+  </data>
+  <data name="BalanceTransferDescription" xml:space="preserve">
+    <value>โอนเงินระหว่างยอดคงเหลือ</value>
+  </data>
+  <data name="LangName" xml:space="preserve">
+    <value>ไทย</value>
+  </data>
+  <data name="HightFix" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Culcure" xml:space="preserve">
+    <value>th-TH</value>
+  </data>
+  <data name="Dir" xml:space="preserve">
+    <value>ltr</value>
+  </data>
+  <data name="LargeFont" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="EnableAntialiasing" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="GlobalSetting" xml:space="preserve">
+    <value>การตั้งค่าส่วนกลาง</value>
+  </data>
+  <data name="PriceSymbol" xml:space="preserve">
+    <value>สัญลักษณ์ราคา</value>
+  </data>
+  <data name="Main" xml:space="preserve">
+    <value>หลัก</value>
+  </data>
+  <data name="SystemLanguage" xml:space="preserve">
+    <value>ภาษาของระบบ</value>
+  </data>
+  <data name="SystemLanguageCantSame" xml:space="preserve">
+    <value>ภาษาของระบบไม่สามารถเหมือนกัน!</value>
+  </data>
+  <data name="SystemLanguageChangeWarn" xml:space="preserve">
+    <value>แก้ไขภาษาของระบบอาจมีผลต่อระบบ ยืนยันที่จะแก้ไขหรือไม่?</value>
+  </data>
+  <data name="PermissionsMenuDescription" xml:space="preserve">
+    <value>แก้ไขสิทธิ์ของผู้ดูแลระบบ</value>
+  </data>
+  <data name="ReturnMoney" xml:space="preserve">
+    <value>คืนเงิน</value>
+  </data>
+  <data name="CanNotExceedConfirm" xml:space="preserve">
+    <value>จํานวนเงินที่จ่ายทั้งหมดคือ{0}หยวน! ยืนยันที่จะคืนหรือไม่?</value>
+  </data>
+  <data name="Exception_PasswordErrorCountLimit" xml:space="preserve">
+    <value>รหัสผ่านมีข้อผิดพลาดมากเกินไป โปรดลองอีกครั้งในภายหลัง!</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>ชื่อบริษัท</value>
+  </data>
+  <data name="CustomFont_Android" xml:space="preserve">
+    <value>OybabTuz.ttf#Oybab Tuz</value>
+  </data>
+  <data name="CustomFont_iOS" xml:space="preserve">
+    <value>OybabTuz</value>
+  </data>
+  <data name="CustomFont_UWP" xml:space="preserve">
+    <value>/Assets/OybabTuz.ttf#Oybab Tuz</value>
+  </data>
+  <data name="SavePassword" xml:space="preserve">
+    <value>บันทึกรหัสผ่าน</value>
+  </data>
+  <data name="Tsmi_Lang_Icon" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="IncomeTypeStatistic" xml:space="preserve">
+    <value>สถิติชนิดรายได้</value>
+  </data>
+  <data name="SpendTypeStatistic" xml:space="preserve">
+    <value>สถิติชนิดค่าใช้จ่าย</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>ฟังก์ชั่น</value>
+  </data>
+  <data name="Agree" xml:space="preserve">
+    <value>เห็นด้วย</value>
+  </data>
+  <data name="PrivacyPolicy" xml:space="preserve">
+    <value>นโยบายความเป็นส่วนตัว</value>
+  </data>
+  <data name="Exception_AdminUsing" xml:space="preserve">
+    <value>ขณะนี้กําลังใช้งานโดยผู้ดูแลระบบ! หากไม่ได้ดําเนินการด้วยตนเอง โปรดเปลี่ยนรหัสผ่านทันที!</value>
+  </data>
+  <data name="UserAgreement" xml:space="preserve">
+    <value>ข้อตกลงผู้ใช้</value>
+  </data>
+  <data name="And" xml:space="preserve">
+    <value>และ</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>ประวัติ</value>
+  </data>
+  <data name="HistoryDescription" xml:space="preserve">
+    <value>ดูประวัติข้อมูลปัจจุบัน.</value>
+  </data>
+  <data name="CompanyAbbreviation" xml:space="preserve">
+    <value>เทคโนโลยีOybab</value>
+  </data>
+  <data name="License" xml:space="preserve">
+    <value>ข้อตกลง</value>
+  </data>
+  <data name="Donate" xml:space="preserve">
+    <value>บริจาคเพื่อช่วยเหลือ</value>
+  </data>
+  <data name="SourceCode" xml:space="preserve">
+    <value>รหัสแหล่งที่มา</value>
+  </data>
+  <data name="ConfirmItemBalanceNotEnough" xml:space="preserve">
+    <value>{0}ยอดเงินไม่เพียงพอ ยืนยัน?</value>
+  </data>
+</root>

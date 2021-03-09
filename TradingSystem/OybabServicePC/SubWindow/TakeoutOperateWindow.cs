@@ -77,7 +77,7 @@ namespace Oybab.ServicePC.SubWindow
             krplTotalPrice.Text = Resources.GetRes().GetString("TotalPrice");
 
 
-            krpcbLanguage.Items.AddRange(Resources.GetRes().MainLangList.Select(x => x.Value.LangName).ToArray());
+            krpcbLanguage.Items.AddRange(Resources.GetRes().AllLangList.OrderBy(x => x.Value.LangOrder).Select(x => x.Value.LangName).ToArray());
 
             krpbAddByBarcode.StateCommon.Back.Image = Image.FromStream(asm.GetManifestResourceStream(@"Oybab.Res.Resources.Images.PC.Barcode.png"));
             krpbAddByFastGrid.StateCommon.Back.Image = Image.FromStream(asm.GetManifestResourceStream(@"Oybab.Res.Resources.Images.PC.FastGrid.png"));
@@ -394,7 +394,7 @@ namespace Oybab.ServicePC.SubWindow
 
                 }
 
-                AddTimeStr = DateTime.ParseExact(AddTime, "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm");
+                AddTimeStr = DateTime.ParseExact(AddTime, "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm");
 
                 if (productId > 0)
                 {

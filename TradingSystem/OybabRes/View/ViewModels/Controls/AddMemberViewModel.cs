@@ -426,7 +426,7 @@ namespace Oybab.Res.View.ViewModels.Controls
                                             if (result && Members.Count > 0)
                                             {
                                                 // 检查下会员是否到期先
-                                                if (Members.FirstOrDefault().ExpiredTime != 0 && DateTime.ParseExact(Members.FirstOrDefault().ExpiredTime.ToString(), "yyyyMMddHHmmss", null) < DateTime.Now)
+                                                if (Members.FirstOrDefault().ExpiredTime != 0 && DateTime.ParseExact(Members.FirstOrDefault().ExpiredTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture) < DateTime.Now)
                                                 {
                                                     _element.RaiseEvent(new PopupRoutedEventArgs(PublicEvents.PopupEvent, null, Resources.GetRes().GetString("MemberExpired"), null, PopupType.Warn));
                                                 }
@@ -464,7 +464,7 @@ namespace Oybab.Res.View.ViewModels.Controls
                                             if (result && Suppliers.Count > 0)
                                             {
                                                 // 检查下会员是否到期先
-                                                if (Suppliers.FirstOrDefault().ExpiredTime != 0 && DateTime.ParseExact(Suppliers.FirstOrDefault().ExpiredTime.ToString(), "yyyyMMddHHmmss", null) < DateTime.Now)
+                                                if (Suppliers.FirstOrDefault().ExpiredTime != 0 && DateTime.ParseExact(Suppliers.FirstOrDefault().ExpiredTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture) < DateTime.Now)
                                                 {
 
                                                     _element.RaiseEvent(new PopupRoutedEventArgs(PublicEvents.PopupEvent, null, Resources.GetRes().GetString("SupplierExpired"), null, PopupType.Warn));

@@ -1,0 +1,1947 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>Касательно</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="Change" xml:space="preserve">
+    <value>Изменить сайт</value>
+  </data>
+  <data name="ChangeFaild" xml:space="preserve">
+    <value>Перемены не удались!</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Изменить пароль</value>
+  </data>
+  <data name="ChangeSuccess" xml:space="preserve">
+    <value>Успешно модифицировано!</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>Hotan Oybab Информационные технологии Лтд.</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>Подтвердить пароль</value>
+  </data>
+  <data name="Copyright" xml:space="preserve">
+    <value>Авторское право Oybab Inc.</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="DeleteFailt" xml:space="preserve">
+    <value>Удаление не удалось!</value>
+  </data>
+  <data name="DeleteSuccess" xml:space="preserve">
+    <value>Удалено успешно!</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="FontName" xml:space="preserve">
+    <value>Microsoft YaHei, Arial, Oybab Tuz</value>
+  </data>
+  <data name="FontSize" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="Id" xml:space="preserve">
+    <value>Серийный номер</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Язык</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Войти в систему</value>
+  </data>
+  <data name="LoginValid" xml:space="preserve">
+    <value>Пожалуйста, введите точную {0} информацию!</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>Новый пароль</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Не</value>
+  </data>
+  <data name="OldPassword" xml:space="preserve">
+    <value>Старый пароль</value>
+  </data>
+  <data name="OldPasswordFaild" xml:space="preserve">
+    <value>Старый пароль был введен неправильно, пожалуйста, введите его еще раз!</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Шифр</value>
+  </data>
+  <data name="PwdError" xml:space="preserve">
+    <value>Неверный пароль!</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Обновление</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Повторно попробовать</value>
+  </data>
+  <data name="RightToLeft" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="SaveFailt" xml:space="preserve">
+    <value>Спасти не удалось!</value>
+  </data>
+  <data name="SaveSuccess" xml:space="preserve">
+    <value>Сохранить успех!</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Всего</value>
+  </data>
+  <data name="TwoNewPasswordNotEqual" xml:space="preserve">
+    <value>Несоответствие двух новых паролей, введите повторно!</value>
+  </data>
+  <data name="UpdateInfo" xml:space="preserve">
+    <value>Откройте для себя новую версию</value>
+  </data>
+  <data name="USBKey_Warn" xml:space="preserve">
+    <value>Пожалуйста, вставьте USB-KEY и нажмите [повторить попытку] для продолжения или нажмите [выйти] для выхода из системы!</value>
+  </data>
+  <data name="UserLogin" xml:space="preserve">
+    <value>Логин пользователя</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="Abort" xml:space="preserve">
+    <value>Прервать</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Отменять</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>Игнорировать</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Имя пользователя</value>
+  </data>
+  <data name="Warn" xml:space="preserve">
+    <value>Предупреждения</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>Идентифицировать</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Ошибки</value>
+  </data>
+  <data name="CurrentKeyName" xml:space="preserve">
+    <value>Текущее имя USB-KEY: {0}.</value>
+  </data>
+  <data name="Exception_CheckSqlAndNet" xml:space="preserve">
+    <value>Ошибка подключения к базе данных, пожалуйста, проверьте конфигурацию подключения к сети или базе данных!</value>
+  </data>
+  <data name="Exception_LoadCacheError" xml:space="preserve">
+    <value>Ошибка при загрузке кэша.</value>
+  </data>
+  <data name="Exception_LoadMediaRoot" xml:space="preserve">
+    <value>Ошибка загрузки корневого пути песни, пожалуйста, проверьте файл конфигурации!</value>
+  </data>
+  <data name="Exception_NotSupprtKey" xml:space="preserve">
+    <value>Невозможно подключиться к базе данных, USB-KEY не поддерживается.</value>
+  </data>
+  <data name="InputData" xml:space="preserve">
+    <value>Импорт данных</value>
+  </data>
+  <data name="OutputData" xml:space="preserve">
+    <value>Экспортированные данные</value>
+  </data>
+  <data name="UpdateNonReturnOrCantRead" xml:space="preserve">
+    <value>Обновление возвращает нулевые данные или парсинг не удался!</value>
+  </data>
+  <data name="UpdateUnableError" xml:space="preserve">
+    <value>Неизвестная ошибка обновления, код: {0}.</value>
+  </data>
+  <data name="CompanyLogoImage" xml:space="preserve">
+    <value>logo.png</value>
+  </data>
+  <data name="Exception_ReadResourceStrError" xml:space="preserve">
+    <value>Не удалось прочитать символ ресурса!</value>
+  </data>
+  <data name="Exception_InputData" xml:space="preserve">
+    <value>Импорт данных не удалось!</value>
+  </data>
+  <data name="Exception_InputReadData" xml:space="preserve">
+    <value>Импорт и чтения данных не удалось!</value>
+  </data>
+  <data name="Exception_OutputData" xml:space="preserve">
+    <value>Не удалось экспортировать данные!</value>
+  </data>
+  <data name="InputDataSuccess" xml:space="preserve">
+    <value>Импорт данных успешно!</value>
+  </data>
+  <data name="OutputDataSuccess" xml:space="preserve">
+    <value>Экспортируйте данные успешно!</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>Файл</value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>Инструменты</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>Собственный</value>
+  </data>
+  <data name="FolderName" xml:space="preserve">
+    <value>Имя папки</value>
+  </data>
+  <data name="IgnoreData" xml:space="preserve">
+    <value>Вы уверены, что хотите игнорировать несохраненные данные?</value>
+  </data>
+  <data name="ImageName" xml:space="preserve">
+    <value>Название изображения</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>Больше</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>Страница</value>
+  </data>
+  <data name="AddDescription" xml:space="preserve">
+    <value>Добавьте новые данные.</value>
+  </data>
+  <data name="DeleteDescription" xml:space="preserve">
+    <value>Удалить текущие данные.</value>
+  </data>
+  <data name="PleaseEditBefore" xml:space="preserve">
+    <value>Пожалуйста, сначала закончите редактирование!</value>
+  </data>
+  <data name="SaveDescription" xml:space="preserve">
+    <value>Сохранить текущие добавленные или измененные данные.</value>
+  </data>
+  <data name="SureDelete" xml:space="preserve">
+    <value>Ты уверен, что хочешь его удалить?</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>Имя файла</value>
+  </data>
+  <data name="Exception_NotFound" xml:space="preserve">
+    <value>Ничего подобного не найдено{0}!</value>
+  </data>
+  <data name="ErrorBig" xml:space="preserve">
+    <value>Найти лазейку</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Вариант</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>Система</value>
+  </data>
+  <data name="AllPage" xml:space="preserve">
+    <value>Всего:</value>
+  </data>
+  <data name="AllPage2" xml:space="preserve">
+    <value>Страницы</value>
+  </data>
+  <data name="CurrentPage" xml:space="preserve">
+    <value>Текущая: </value>
+  </data>
+  <data name="CurrentPage2" xml:space="preserve">
+    <value>Страница</value>
+  </data>
+  <data name="LastPage" xml:space="preserve">
+    <value>Предыдущая страница</value>
+  </data>
+  <data name="NextPage" xml:space="preserve">
+    <value>Следующая страница</value>
+  </data>
+  <data name="CompanyUrlStr" xml:space="preserve">
+    <value>Веб-сайт</value>
+  </data>
+  <data name="ExitPassword" xml:space="preserve">
+    <value>Пароль доступа</value>
+  </data>
+  <data name="MobileNoStr" xml:space="preserve">
+    <value>Телефоны</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Сброс</value>
+  </data>
+  <data name="NotFoundUSBKEY" xml:space="preserve">
+    <value>USB-KEY не найден!</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Вернись</value>
+  </data>
+  <data name="MuteRestore" xml:space="preserve">
+    <value>Реставрация</value>
+  </data>
+  <data name="UpdateAlert" xml:space="preserve">
+    <value>Найдите новую версию системы, скачайте обновленную!</value>
+  </data>
+  <data name="Exception_CheckSqlAndFile" xml:space="preserve">
+    <value>Ошибка подключения к базе данных, пожалуйста, проверьте файл базы данных или конфигурацию подключения к базе данных!</value>
+  </data>
+  <data name="CompanyShortName" xml:space="preserve">
+    <value>OYBAB</value>
+  </data>
+  <data name="CompleteInput" xml:space="preserve">
+    <value>Пожалуйста, введите данные полностью!</value>
+  </data>
+  <data name="VersionNo" xml:space="preserve">
+    <value>Номер редакции</value>
+  </data>
+  <data name="SoftPlayerDescription" xml:space="preserve">
+    <value>Если у вас есть какие-либо комментарии или предложения, пожалуйста, свяжитесь с нами через: "Система - О программе".</value>
+  </data>
+  <data name="ChangeLanguage" xml:space="preserve">
+    <value>Изменить язык</value>
+  </data>
+  <data name="ChangeLanguageFailt" xml:space="preserve">
+    <value>Смена языка не удалась!</value>
+  </data>
+  <data name="ChangeLanguageSuccess" xml:space="preserve">
+    <value>Смена языка прошла успешно и вступит в силу при следующей загрузке системы!</value>
+  </data>
+  <data name="Exception_InvalidLanguage" xml:space="preserve">
+    <value>Системный язык недействителен или не существует, пожалуйста, проверьте файл конфигурации!</value>
+  </data>
+  <data name="Exception_LogError" xml:space="preserve">
+    <value>Не удалось загрузить журнал!</value>
+  </data>
+  <data name="FontName2" xml:space="preserve">
+    <value>Arial</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Помощь</value>
+  </data>
+  <data name="Exception_InvalidDB" xml:space="preserve">
+    <value>Файл базы данных недействителен!</value>
+  </data>
+  <data name="Exception_KeyKeyError" xml:space="preserve">
+    <value>USB-KEY получает ошибку ключа. Ошибка: {0},{1}.</value>
+  </data>
+  <data name="Exception_ApplicationCheckFaild" xml:space="preserve">
+    <value>Проверка приложения не прошла!</value>
+  </data>
+  <data name="Exception_CloseRequestFaild" xml:space="preserve">
+    <value>Ошибка отправки запроса на закрытие сессии!</value>
+  </data>
+  <data name="Exception_EncryptedRequestFaild" xml:space="preserve">
+    <value>Ошибка отправки запроса на шифрование!</value>
+  </data>
+  <data name="Exception_LockRequestFaild" xml:space="preserve">
+    <value>Ошибка отправки запроса на блокировку!</value>
+  </data>
+  <data name="Exception_NewRequestFailt" xml:space="preserve">
+    <value>Ошибка при отправке запроса на новый сеанс! {0} Код ошибки: 101</value>
+  </data>
+  <data name="Exception_OutClientLimitFaild" xml:space="preserve">
+    <value>Превышение пределов подключения клиентов! {0} Код ошибки: 102</value>
+  </data>
+  <data name="Exception_RemoteServerConn" xml:space="preserve">
+    <value>Невозможно подключиться к удаленному серверу!</value>
+  </data>
+  <data name="Exception_ServerCantCorrConn" xml:space="preserve">
+    <value>Я не могу поддерживать нормальную сессию с сервером! Пожалуйста, нажмите [повторить попытку] для продолжения или нажмите [выйти] для выхода из системы!</value>
+  </data>
+  <data name="Exception_ServerCheckFaild" xml:space="preserve">
+    <value>Проверьте, нет ли ошибок KEY сервера!</value>
+  </data>
+  <data name="Exception_ServerFaild" xml:space="preserve">
+    <value>Сервер получил ошибку!</value>
+  </data>
+  <data name="Exception_ServerKeyFaild" xml:space="preserve">
+    <value>Ошибка KEY сервера!</value>
+  </data>
+  <data name="Exception_SessionExpiredRetry" xml:space="preserve">
+    <value>Сессия закончилась, пожалуйста, попробуйте еще раз!</value>
+  </data>
+  <data name="Exception_SessionFaildAndTry" xml:space="preserve">
+    <value>Сессия истекла, пытаюсь получить!</value>
+  </data>
+  <data name="Exception_SessionRequestFaild" xml:space="preserve">
+    <value>Отправить ошибку запроса на удержание сессии!</value>
+  </data>
+  <data name="Exception_SessionUpdateFaild" xml:space="preserve">
+    <value>Обновление сеанса прошло неудачно!</value>
+  </data>
+  <data name="Exception_UIDRequestFaild" xml:space="preserve">
+    <value>Не удалось отправить запрос на получение UID!</value>
+  </data>
+  <data name="SessionUpdateSuccess" xml:space="preserve">
+    <value>Обновление сессии прошло успешно.</value>
+  </data>
+  <data name="Exception_SetClientTimeFailt" xml:space="preserve">
+    <value>Калибровка времени сервера клиенту не удалась!</value>
+  </data>
+  <data name="IsHidden" xml:space="preserve">
+    <value>Скрывать</value>
+  </data>
+  <data name="Exception_CheckDataFaild" xml:space="preserve">
+    <value>Ошибка удаленного сбора данных сервера!</value>
+  </data>
+  <data name="Exception_DataNotReady" xml:space="preserve">
+    <value>Данные удаленного сервера не готовы! Пожалуйста, попробуйте позже! Код ошибки: 107</value>
+  </data>
+  <data name="Exception_ChangePWDRequestFaild" xml:space="preserve">
+    <value>Ошибка отправки запроса на изменение пароля!</value>
+  </data>
+  <data name="Exception_ValidPWDRequestFaild" xml:space="preserve">
+    <value>Ошибка отправки запроса пароля на аутентификацию!</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>Свяжитесь с Нами</value>
+  </data>
+  <data name="Consumption" xml:space="preserve">
+    <value>Потребление</value>
+  </data>
+  <data name="DealerContactWay" xml:space="preserve">
+    <value>Контакт с дилером</value>
+  </data>
+  <data name="Mode" xml:space="preserve">
+    <value>Шаблон</value>
+  </data>
+  <data name="Remark" xml:space="preserve">
+    <value>Примечание</value>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>Другой сайт</value>
+  </data>
+  <data name="Exception_IPConflict" xml:space="preserve">
+    <value>Конфликт IP-адресов, пожалуйста, перезагрузитесь!</value>
+  </data>
+  <data name="Exception_SessionInvalid" xml:space="preserve">
+    <value>Недействительный сеанс, пожалуйста, перезагрузитесь!</value>
+  </data>
+  <data name="Exception_InvalidPending" xml:space="preserve">
+    <value>Недействительный режим!</value>
+  </data>
+  <data name="Exception_IPInvalid" xml:space="preserve">
+    <value>IP-адрес недействителен, пожалуйста, свяжитесь со службой поддержки!</value>
+  </data>
+  <data name="Exception_OrderExpired" xml:space="preserve">
+    <value>Счет истек, свяжитесь со службой поддержки!</value>
+  </data>
+  <data name="Exception_OrderInvalid" xml:space="preserve">
+    <value>Недействительный счет, пожалуйста, свяжитесь со службой поддержки!</value>
+  </data>
+  <data name="Exception_SendRequestFaild" xml:space="preserve">
+    <value>Ошибка отправки запроса уведомления!</value>
+  </data>
+  <data name="Exception_SetConRequestFaild" xml:space="preserve">
+    <value>Ошибка при отправке запроса о функции настройки!</value>
+  </data>
+  <data name="Exception_OperateRequestFaild" xml:space="preserve">
+    <value>Ошибка отправки запроса на выполнение операции!</value>
+  </data>
+  <data name="ChangeSet" xml:space="preserve">
+    <value>Функциональные настройки</value>
+  </data>
+  <data name="ExpenditureManager" xml:space="preserve">
+    <value>Управление расходами</value>
+  </data>
+  <data name="MainPage" xml:space="preserve">
+    <value>Начальная страница</value>
+  </data>
+  <data name="OrderManager" xml:space="preserve">
+    <value>Управление счетами</value>
+  </data>
+  <data name="ProductManager" xml:space="preserve">
+    <value>Управление продукцией</value>
+  </data>
+  <data name="ProductTypeManager" xml:space="preserve">
+    <value>Управление типом продукции</value>
+  </data>
+  <data name="RoomManager" xml:space="preserve">
+    <value>Управление салоном</value>
+  </data>
+  <data name="SoftServiceName" xml:space="preserve">
+    <value>Торговая система Oybab v1.1</value>
+  </data>
+  <data name="OperateFaild" xml:space="preserve">
+    <value>{0}Неудачно!</value>
+  </data>
+  <data name="ActualPrice" xml:space="preserve">
+    <value>Реальная цена</value>
+  </data>
+  <data name="AddTime" xml:space="preserve">
+    <value>Добавьте время</value>
+  </data>
+  <data name="Backstage" xml:space="preserve">
+    <value>Закулисный сайт</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>Номер</value>
+  </data>
+  <data name="DealsPrice" xml:space="preserve">
+    <value>Дисконтированная сумма</value>
+  </data>
+  <data name="Display" xml:space="preserve">
+    <value>Дисплей</value>
+  </data>
+  <data name="DisplayType" xml:space="preserve">
+    <value>Тип дисплея</value>
+  </data>
+  <data name="EndTime" xml:space="preserve">
+    <value>Дата окончания</value>
+  </data>
+  <data name="FinishTime" xml:space="preserve">
+    <value>Время завершения</value>
+  </data>
+  <data name="Hide" xml:space="preserve">
+    <value>Скрывать</value>
+  </data>
+  <data name="ImportTime" xml:space="preserve">
+    <value>Дата расходов</value>
+  </data>
+  <data name="IpAddress" xml:space="preserve">
+    <value>IP адрес</value>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>Порядок</value>
+  </data>
+  <data name="ProductName" xml:space="preserve">
+    <value>Наименование товара</value>
+  </data>
+  <data name="ProductTypeName" xml:space="preserve">
+    <value>Название типа продукта</value>
+  </data>
+  <data name="RoomNo" xml:space="preserve">
+    <value>Номер акцента</value>
+  </data>
+  <data name="StartTime" xml:space="preserve">
+    <value>Стартовое время</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>Государство</value>
+  </data>
+  <data name="TotalPrice" xml:space="preserve">
+    <value>Итоговая цена</value>
+  </data>
+  <data name="UnitPrice" xml:space="preserve">
+    <value>Цена за единицу</value>
+  </data>
+  <data name="PropertyUsed" xml:space="preserve">
+    <value>Пожалуйста, сначала измените или удалите данные, связанные с этими данными!</value>
+  </data>
+  <data name="Exception_CountOutOfIPRequestLimit" xml:space="preserve">
+    <value>Слишком много повторных запросов, пожалуйста, попробуйте еще раз позже! Код ошибки: 103</value>
+  </data>
+  <data name="Exception_ExceptionSource" xml:space="preserve">
+    <value>{0} {1}Источник исключения: {2}</value>
+  </data>
+  <data name="PropertyExists" xml:space="preserve">
+    <value>{0} Уже существует, не повторяй!</value>
+  </data>
+  <data name="Checkout" xml:space="preserve">
+    <value>Расчётные счета</value>
+  </data>
+  <data name="Invalid" xml:space="preserve">
+    <value>Отменять</value>
+  </data>
+  <data name="Confirmed" xml:space="preserve">
+    <value>Подтверждено</value>
+  </data>
+  <data name="GetFailed" xml:space="preserve">
+    <value>Доступ не удался!</value>
+  </data>
+  <data name="OrderDetails" xml:space="preserve">
+    <value>Данные для выставления счетов</value>
+  </data>
+  <data name="OrderNo" xml:space="preserve">
+    <value>Номер для выставления счёта</value>
+  </data>
+  <data name="PropertyError" xml:space="preserve">
+    <value>Введенная {0} неполная или неправильная!</value>
+  </data>
+  <data name="Requesting" xml:space="preserve">
+    <value>Запрос в процессе выполнения</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>Проверить</value>
+  </data>
+  <data name="ShowDescription" xml:space="preserve">
+    <value>Посмотреть Подробнее</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Время</value>
+  </data>
+  <data name="TimeLimit" xml:space="preserve">
+    <value>Интервал поиска должен быть в пределах {0} дней!</value>
+  </data>
+  <data name="ImportDetails" xml:space="preserve">
+    <value>Детали расходов</value>
+  </data>
+  <data name="ImportId" xml:space="preserve">
+    <value>Код расходов</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Распечатка</value>
+  </data>
+  <data name="PrintDescription" xml:space="preserve">
+    <value>Содержание для печати</value>
+  </data>
+  <data name="AddImport" xml:space="preserve">
+    <value>Дополнительные расходы</value>
+  </data>
+  <data name="LineDataError" xml:space="preserve">
+    <value>Неполный или неточный ввод данных в строке {0}!</value>
+  </data>
+  <data name="BalanceCount" xml:space="preserve">
+    <value>Избыток</value>
+  </data>
+  <data name="Exception_ProductCountRefreshExpiredRetry" xml:space="preserve">
+    <value>Срок действия продукта истек, повторите попытку!</value>
+  </data>
+  <data name="Exception_ProductCountRefreshFailed" xml:space="preserve">
+    <value>Обновление продукта не удалось!</value>
+  </data>
+  <data name="Exception_ProductCountRefreshRetry" xml:space="preserve">
+    <value>Недостаточно товара, попробуйте заново приобрести товар!</value>
+  </data>
+  <data name="IsBindCount" xml:space="preserve">
+    <value>Количество переплетов</value>
+  </data>
+  <data name="ProductCountRefreshSuccess" xml:space="preserve">
+    <value>Обновление продукта прошло успешно.</value>
+  </data>
+  <data name="WarningCount" xml:space="preserve">
+    <value>Количество предупреждений</value>
+  </data>
+  <data name="Call" xml:space="preserve">
+    <value>Звонок</value>
+  </data>
+  <data name="ConsumptionType" xml:space="preserve">
+    <value>Потребительский контроль</value>
+  </data>
+  <data name="ControlType" xml:space="preserve">
+    <value>Дистанционный контроль</value>
+  </data>
+  <data name="CostPrice" xml:space="preserve">
+    <value>Отпускная цена</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>Новый сайт</value>
+  </data>
+  <data name="Offline" xml:space="preserve">
+    <value>Автономный</value>
+  </data>
+  <data name="Online" xml:space="preserve">
+    <value>Онлайн</value>
+  </data>
+  <data name="PaidPrice" xml:space="preserve">
+    <value>Сумма платежа</value>
+  </data>
+  <data name="PermissionDenied" xml:space="preserve">
+    <value>Разрешение отказано!</value>
+  </data>
+  <data name="BalancePrice" xml:space="preserve">
+    <value>Оставшаяся сумма</value>
+  </data>
+  <data name="ChangePrice" xml:space="preserve">
+    <value>Изменить цену</value>
+  </data>
+  <data name="ChangeTime" xml:space="preserve">
+    <value>Время модификации</value>
+  </data>
+  <data name="Disable" xml:space="preserve">
+    <value>Закрыть сайт</value>
+  </data>
+  <data name="Enable" xml:space="preserve">
+    <value>Включать электропитание</value>
+  </data>
+  <data name="Hour" xml:space="preserve">
+    <value>Часы</value>
+  </data>
+  <data name="InvalidIt" xml:space="preserve">
+    <value>Отменять</value>
+  </data>
+  <data name="Minute" xml:space="preserve">
+    <value>Минуты</value>
+  </data>
+  <data name="RemainingTime" xml:space="preserve">
+    <value>Оставшееся время</value>
+  </data>
+  <data name="TotalTime" xml:space="preserve">
+    <value>Суммарное время</value>
+  </data>
+  <data name="BalanceCountNotEnough" xml:space="preserve">
+    <value>Операция не удалась, в изделии остался только {0}!</value>
+  </data>
+  <data name="CancelOrder" xml:space="preserve">
+    <value>Отменить законопроект</value>
+  </data>
+  <data name="CancelOrderDescription" xml:space="preserve">
+    <value>Отменить текущий счет.</value>
+  </data>
+  <data name="CheckoutOrder" xml:space="preserve">
+    <value>Кассовый чек</value>
+  </data>
+  <data name="CheckoutOrderDescription" xml:space="preserve">
+    <value>Проверьте текущий счет.</value>
+  </data>
+  <data name="ConfirmCancelOrder" xml:space="preserve">
+    <value>Подтвердить аннулирование текущего счета?</value>
+  </data>
+  <data name="FaildThenRefreshModel" xml:space="preserve">
+    <value>Операция не удалась, счет был изменен, и вы готовы попробовать обновить информацию для выставления счетов!</value>
+  </data>
+  <data name="Locked" xml:space="preserve">
+    <value>Запертый</value>
+  </data>
+  <data name="NewOrder" xml:space="preserve">
+    <value>Новые биллинги</value>
+  </data>
+  <data name="NewOrderDescription" xml:space="preserve">
+    <value>Создай новый законопроект.</value>
+  </data>
+  <data name="OperateSuccess" xml:space="preserve">
+    <value>{0}Успех!</value>
+  </data>
+  <data name="RefreshOrderFailed" xml:space="preserve">
+    <value>Обновление текущего счета провалилось!</value>
+  </data>
+  <data name="ReplaceRoom" xml:space="preserve">
+    <value>Сменное место</value>
+  </data>
+  <data name="ReplaceRoomDescription" xml:space="preserve">
+    <value>Замените текущий стенд на другой.</value>
+  </data>
+  <data name="Request" xml:space="preserve">
+    <value>Запрос</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Рестарт</value>
+  </data>
+  <data name="RestartDescription" xml:space="preserve">
+    <value>Перезапустите Хосты.</value>
+  </data>
+  <data name="SaveBeforeDelete" xml:space="preserve">
+    <value>Пожалуйста, сначала сохраните свои данные!</value>
+  </data>
+  <data name="ShowOrder" xml:space="preserve">
+    <value>Смотреть законопроект</value>
+  </data>
+  <data name="ShowOrderDescription" xml:space="preserve">
+    <value>Просмотреть данные для выставления счетов.</value>
+  </data>
+  <data name="Shutdown" xml:space="preserve">
+    <value>Выключение</value>
+  </data>
+  <data name="ShutdownDescription" xml:space="preserve">
+    <value>Отключаю главный компьютер.</value>
+  </data>
+  <data name="UnevenBalance" xml:space="preserve">
+    <value>Баланс не равняется!</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Узнавать</value>
+  </data>
+  <data name="NewRoom" xml:space="preserve">
+    <value>Новая таблица</value>
+  </data>
+  <data name="SendFireAlarm" xml:space="preserve">
+    <value>Пошлите пожарную тревогу</value>
+  </data>
+  <data name="Barcode" xml:space="preserve">
+    <value>Штрих-код</value>
+  </data>
+  <data name="Disabled" xml:space="preserve">
+    <value>Инвалид</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Цена</value>
+  </data>
+  <data name="IsPayByTime" xml:space="preserve">
+    <value>По времени ли</value>
+  </data>
+  <data name="PriceHour" xml:space="preserve">
+    <value>Временная цена</value>
+  </data>
+  <data name="IsAutoExtendTime" xml:space="preserve">
+    <value>Будет ли время автоматически продлено</value>
+  </data>
+  <data name="PropertyUnSame" xml:space="preserve">
+    <value>Данные несовместимы, пожалуйста, перезагрузитесь и попробуйте еще раз!</value>
+  </data>
+  <data name="AdminName" xml:space="preserve">
+    <value>Имя администратора</value>
+  </data>
+  <data name="AdminManager" xml:space="preserve">
+    <value>Руководство администратора</value>
+  </data>
+  <data name="AdminNo" xml:space="preserve">
+    <value>Номер администратора</value>
+  </data>
+  <data name="Sex" xml:space="preserve">
+    <value>Пол</value>
+  </data>
+  <data name="IDNumber" xml:space="preserve">
+    <value>Идентификационный номер</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>Меню</value>
+  </data>
+  <data name="IsOnlyOwn" xml:space="preserve">
+    <value>Управленческие ограничения</value>
+  </data>
+  <data name="IsEnable" xml:space="preserve">
+    <value>Открывать ли</value>
+  </data>
+  <data name="Guest" xml:space="preserve">
+    <value>Гость</value>
+  </data>
+  <data name="Employee" xml:space="preserve">
+    <value>Сотрудники</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>Админ</value>
+  </data>
+  <data name="DeviceNo" xml:space="preserve">
+    <value>Номер оборудования</value>
+  </data>
+  <data name="DeviceType" xml:space="preserve">
+    <value>Вид оборудования</value>
+  </data>
+  <data name="DeviceManager" xml:space="preserve">
+    <value>Управление инвентарём</value>
+  </data>
+  <data name="Computer" xml:space="preserve">
+    <value>Компьютер</value>
+  </data>
+  <data name="Tablet" xml:space="preserve">
+    <value>Планшетник</value>
+  </data>
+  <data name="PrinterManager" xml:space="preserve">
+    <value>Управление принтерами</value>
+  </data>
+  <data name="PrinterName" xml:space="preserve">
+    <value>Название принтера</value>
+  </data>
+  <data name="PrinterDeviceName" xml:space="preserve">
+    <value>Название типографского оборудования</value>
+  </data>
+  <data name="PrintType" xml:space="preserve">
+    <value>Тип печати</value>
+  </data>
+  <data name="Customer" xml:space="preserve">
+    <value>Клиент</value>
+  </data>
+  <data name="Kitchen" xml:space="preserve">
+    <value>Мини-кухня</value>
+  </data>
+  <data name="MemberNo" xml:space="preserve">
+    <value>Номер участника</value>
+  </data>
+  <data name="MemberManager" xml:space="preserve">
+    <value>Член-менеджер</value>
+  </data>
+  <data name="MemberName" xml:space="preserve">
+    <value>Имя участника</value>
+  </data>
+  <data name="Occupation" xml:space="preserve">
+    <value>Род занятий</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>Мобильный</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Телефоны</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Адреса</value>
+  </data>
+  <data name="OfferRate" xml:space="preserve">
+    <value>Коэффициент продаж/100%</value>
+  </data>
+  <data name="SpendPrice" xml:space="preserve">
+    <value>Сумма потраченных средств</value>
+  </data>
+  <data name="FavorablePrice" xml:space="preserve">
+    <value>Дисконтированная сумма</value>
+  </data>
+  <data name="ExpiredTime" xml:space="preserve">
+    <value>Истекшее время</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>Мужской</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>Женщина</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Зарегистрироваться на сайте</value>
+  </data>
+  <data name="MachineNo" xml:space="preserve">
+    <value>Машинное кодирование</value>
+  </data>
+  <data name="RegisterNo" xml:space="preserve">
+    <value>Регистрационный код</value>
+  </data>
+  <data name="SoftwareExpired" xml:space="preserve">
+    <value>Срок действия системы истек, хотите перерегистрироваться?</value>
+  </data>
+  <data name="SoftwareSoonExpired" xml:space="preserve">
+    <value>Срок действия системы истечет через {0} дней спустя. {1} Вы хотите перерегистрироваться сейчас?</value>
+  </data>
+  <data name="SoftwareExpiredWarn" xml:space="preserve">
+    <value>Чтобы не мешать нормальному использованию системы, мы рекомендуем связаться с нами как минимум за 7 дней до регистрации системы!</value>
+  </data>
+  <data name="RegisterSuccess" xml:space="preserve">
+    <value>Регистрация прошла успешно, перезапустите систему!</value>
+  </data>
+  <data name="MemberPay" xml:space="preserve">
+    <value>Членский взнос</value>
+  </data>
+  <data name="MemberPayDescription" xml:space="preserve">
+    <value>Просмотреть платежные реквизиты участника</value>
+  </data>
+  <data name="MemberPayNo" xml:space="preserve">
+    <value>Платежный номер участника</value>
+  </data>
+  <data name="MemberBalanceNotEnough" xml:space="preserve">
+    <value>Недостаточно баланса членов!</value>
+  </data>
+  <data name="AddMember" xml:space="preserve">
+    <value>Добавить члена</value>
+  </data>
+  <data name="PropertyNotFound" xml:space="preserve">
+    <value>Не найдено {0}!</value>
+  </data>
+  <data name="CheckoutImport" xml:space="preserve">
+    <value>Расходы на кассу</value>
+  </data>
+  <data name="RoomPrice" xml:space="preserve">
+    <value>Цена элегантного сиденья</value>
+  </data>
+  <data name="CountOfoffLimit" xml:space="preserve">
+    <value>Количество не может превышать указанный предел!</value>
+  </data>
+  <data name="MemberExpired" xml:space="preserve">
+    <value>Текущее членство истекло!</value>
+  </data>
+  <data name="MemberExpiredDescription" xml:space="preserve">
+    <value>Изменить срок действия членства!</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>Неизвестный</value>
+  </data>
+  <data name="NotFoundProperty_Number" xml:space="preserve">
+    <value>{0} {1} не найден!</value>
+  </data>
+  <data name="Exception_UnknownDevice" xml:space="preserve">
+    <value>Устройство не существует или отключено! {0} Код ошибки: 111</value>
+  </data>
+  <data name="Exception_RoomCountOutOfLimit" xml:space="preserve">
+    <value>Максимальное количество мест превышено! {0} Код ошибки: 104</value>
+  </data>
+  <data name="ResetDescription" xml:space="preserve">
+    <value>Сброс пароля администратора</value>
+  </data>
+  <data name="SureReset" xml:space="preserve">
+    <value>Подтвердить сброс?</value>
+  </data>
+  <data name="Exception_UnknownAdmin" xml:space="preserve">
+    <value>Администратор не существует или был отключен! {0} Код ошибки: 112</value>
+  </data>
+  <data name="ReturnPrice" xml:space="preserve">
+    <value>Сумма возврата</value>
+  </data>
+  <data name="BorrowPrice" xml:space="preserve">
+    <value>Сумма займа</value>
+  </data>
+  <data name="KeepPrice" xml:space="preserve">
+    <value>Оставшаяся сумма</value>
+  </data>
+  <data name="RemainingDays" xml:space="preserve">
+    <value>Оставшиеся дни</value>
+  </data>
+  <data name="Device" xml:space="preserve">
+    <value>Оборудование</value>
+  </data>
+  <data name="Table" xml:space="preserve">
+    <value>Кабинет</value>
+  </data>
+  <data name="Package" xml:space="preserve">
+    <value> Упаковать</value>
+  </data>
+  <data name="MemberDealsPrice" xml:space="preserve">
+    <value>Сумма скидки для участников</value>
+  </data>
+  <data name="MemberPaidPrice" xml:space="preserve">
+    <value>Членские взносы</value>
+  </data>
+  <data name="TotalPaidPrice" xml:space="preserve">
+    <value>Общая уплаченная цена</value>
+  </data>
+  <data name="MemberBalancePrice" xml:space="preserve">
+    <value>Баланс членства</value>
+  </data>
+  <data name="RegisterCount" xml:space="preserve">
+    <value>Количество регистраций</value>
+  </data>
+  <data name="Expenditure" xml:space="preserve">
+    <value>Расходы</value>
+  </data>
+  <data name="PrintTypeLimit" xml:space="preserve">
+    <value>Нельзя добавлять один и тот же тип принтера!</value>
+  </data>
+  <data name="SameEnabledPrinterFailed" xml:space="preserve">
+    <value>Может быть включен только один принтер типа биллинга!</value>
+  </data>
+  <data name="Server" xml:space="preserve">
+    <value>Сервер</value>
+  </data>
+  <data name="PrintAfterBuy" xml:space="preserve">
+    <value>Печать после покупки</value>
+  </data>
+  <data name="PrintAfterCheckout" xml:space="preserve">
+    <value>Распечатка после выписки</value>
+  </data>
+  <data name="LocalPrint" xml:space="preserve">
+    <value>Местная печать</value>
+  </data>
+  <data name="ServerIpAddress" xml:space="preserve">
+    <value>IP-адрес сервера</value>
+  </data>
+  <data name="OperateChangeNextStartup" xml:space="preserve">
+    <value>{0} Успех, вступит в силу при следующей загрузке системы!</value>
+  </data>
+  <data name="BarcodeNo" xml:space="preserve">
+    <value>Номер штрих-кода</value>
+  </data>
+  <data name="OnlyDisplaySelected" xml:space="preserve">
+    <value>Показать только выбранные</value>
+  </data>
+  <data name="CurrentProductAlreadyExists" xml:space="preserve">
+    <value>Современные продукты уже существуют!</value>
+  </data>
+  <data name="Statistic" xml:space="preserve">
+    <value>Статистика</value>
+  </data>
+  <data name="Exception_InvalidMediaRoot" xml:space="preserve">
+    <value>Путь к образу сервера недействителен или не существует, пожалуйста, проверьте папку или сеть! Код ошибки: 100</value>
+  </data>
+  <data name="Canceld" xml:space="preserve">
+    <value>Отменено</value>
+  </data>
+  <data name="Exception_Relogin" xml:space="preserve">
+    <value>Сессия истекла, пожалуйста, выйдите и войдите обратно!</value>
+  </data>
+  <data name="InputNotValid" xml:space="preserve">
+    <value>Пожалуйста, введите правильную информацию!</value>
+  </data>
+  <data name="Bill" xml:space="preserve">
+    <value>Счет</value>
+  </data>
+  <data name="IncomeManager" xml:space="preserve">
+    <value>Управление доходами</value>
+  </data>
+  <data name="ExpendBill" xml:space="preserve">
+    <value>Счет расходов</value>
+  </data>
+  <data name="OwedPrice" xml:space="preserve">
+    <value>Сумма кредита</value>
+  </data>
+  <data name="IncomeStatistic" xml:space="preserve">
+    <value>Статистика доходов</value>
+  </data>
+  <data name="SpendStatistic" xml:space="preserve">
+    <value>Статистика расходов</value>
+  </data>
+  <data name="SellProductsStatistic" xml:space="preserve">
+    <value>Статистика проданных товаров</value>
+  </data>
+  <data name="SpendProductsStatistic" xml:space="preserve">
+    <value>Статистика закупок</value>
+  </data>
+  <data name="NotFoundAnyRecords" xml:space="preserve">
+    <value>Никаких записей не найдено!</value>
+  </data>
+  <data name="Proportion" xml:space="preserve">
+    <value>Пропорции</value>
+  </data>
+  <data name="PermissionsMenu" xml:space="preserve">
+    <value>Меню разрешений</value>
+  </data>
+  <data name="Exception_MemberDisabled" xml:space="preserve">
+    <value>Членство отключено!</value>
+  </data>
+  <data name="Income" xml:space="preserve">
+    <value>Заработок</value>
+  </data>
+  <data name="ImageMode" xml:space="preserve">
+    <value>Режим изображения</value>
+  </data>
+  <data name="Exception_DeviceCountOutOfLimit" xml:space="preserve">
+    <value>Превышение максимального количества устройств! {0} Код ошибки: 105</value>
+  </data>
+  <data name="NewPasswordSizeLimit" xml:space="preserve">
+    <value>Новый пароль - не менее {0} цифр!</value>
+  </data>
+  <data name="AdminLog" xml:space="preserve">
+    <value>Журнал администратора</value>
+  </data>
+  <data name="LogTitle" xml:space="preserve">
+    <value>Название бревна</value>
+  </data>
+  <data name="LogContent" xml:space="preserve">
+    <value>Содержание журнала</value>
+  </data>
+  <data name="AdminPay" xml:space="preserve">
+    <value>Административные платежи</value>
+  </data>
+  <data name="AdminPayDescription" xml:space="preserve">
+    <value>Просмотр платежных данных администратора</value>
+  </data>
+  <data name="AdminPayNo" xml:space="preserve">
+    <value>Номер платежа администратора</value>
+  </data>
+  <data name="SupplierManager" xml:space="preserve">
+    <value>Управление поставщиками</value>
+  </data>
+  <data name="SupplierPay" xml:space="preserve">
+    <value>Продажные платежи</value>
+  </data>
+  <data name="SupplierPayDescription" xml:space="preserve">
+    <value>Просмотреть информацию об оплате поставщика</value>
+  </data>
+  <data name="SupplierPayNo" xml:space="preserve">
+    <value>Номер платежа поставщика</value>
+  </data>
+  <data name="SupplierNo" xml:space="preserve">
+    <value>Номер поставщика</value>
+  </data>
+  <data name="SupplierExpiredDescription" xml:space="preserve">
+    <value>Изменить сроки оплаты поставщика!</value>
+  </data>
+  <data name="SupplierName" xml:space="preserve">
+    <value>Имя поставщика</value>
+  </data>
+  <data name="AddSupplier" xml:space="preserve">
+    <value>Добавление поставщиков</value>
+  </data>
+  <data name="SupplierExpired" xml:space="preserve">
+    <value>Текущий поставщик истек!</value>
+  </data>
+  <data name="Exception_SupplierDisabled" xml:space="preserve">
+    <value>Поставщик отключен!</value>
+  </data>
+  <data name="SupplierBalancePrice" xml:space="preserve">
+    <value>Балансы поставщиков</value>
+  </data>
+  <data name="SupplierBalanceNotEnough" xml:space="preserve">
+    <value>Недостаточный баланс поставщиков!</value>
+  </data>
+  <data name="SupplierDealsPrice" xml:space="preserve">
+    <value>Льготные цены поставщиков</value>
+  </data>
+  <data name="SupplierPaidPrice" xml:space="preserve">
+    <value>Сумма оплачивается поставщиком</value>
+  </data>
+  <data name="PleaseWait" xml:space="preserve">
+    <value>Пожалуйста подождите...</value>
+  </data>
+  <data name="CreatingTheDocument" xml:space="preserve">
+    <value>Создаваемый документ...</value>
+  </data>
+  <data name="TableUsed" xml:space="preserve">
+    <value>Текущая таблица в использовании!</value>
+  </data>
+  <data name="Exception_InvalidType" xml:space="preserve">
+    <value>Пожалуйста, введите правильную информацию!</value>
+  </data>
+  <data name="ChangeCostPrice" xml:space="preserve">
+    <value>Изменить себестоимость</value>
+  </data>
+  <data name="IndexName" xml:space="preserve">
+    <value>Наименование индекса</value>
+  </data>
+  <data name="FinanceLog" xml:space="preserve">
+    <value>Финансовый журнал</value>
+  </data>
+  <data name="OperateName" xml:space="preserve">
+    <value>Название операции</value>
+  </data>
+  <data name="CashDrawer" xml:space="preserve">
+    <value>Ящик для денег</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Открыть (дверь)</value>
+  </data>
+  <data name="IsPayByCard" xml:space="preserve">
+    <value>Оплата кредитной картой</value>
+  </data>
+  <data name="CardPaidPrice" xml:space="preserve">
+    <value>Сумма, оплаченная кредитной картой</value>
+  </data>
+  <data name="SpendPaysStatistic" xml:space="preserve">
+    <value>Статистика выплат</value>
+  </data>
+  <data name="SalePaysStatistic" xml:space="preserve">
+    <value>Статистика доходов от платежей</value>
+  </data>
+  <data name="BalancePay" xml:space="preserve">
+    <value>Выплата остатка</value>
+  </data>
+  <data name="BalancePayDescription" xml:space="preserve">
+    <value>Просмотреть информацию об оплате баланса</value>
+  </data>
+  <data name="BalancePayNo" xml:space="preserve">
+    <value>Номер платежа баланса</value>
+  </data>
+  <data name="SoftServiceNameWithoutVersion" xml:space="preserve">
+    <value>Торговая система Monssen</value>
+  </data>
+  <data name="MediumLabelFontSize" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="LogoTitleLabelFontSize" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="SoftServiceVersion" xml:space="preserve">
+    <value>V1.1</value>
+  </data>
+  <data name="DirectionMode" xml:space="preserve">
+    <value>LeftToRight</value>
+  </data>
+  <data name="LoginUserInputMsg" xml:space="preserve">
+    <value>Пожалуйста, введите ваш администраторский номер</value>
+  </data>
+  <data name="LoginPasswordInputMsg" xml:space="preserve">
+    <value>Пожалуйста, введите пароль администратора</value>
+  </data>
+  <data name="Reset2" xml:space="preserve">
+    <value>Сброс</value>
+  </data>
+  <data name="MediumButtonFontSize" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="OK2" xml:space="preserve">
+    <value>Идентифицировать</value>
+  </data>
+  <data name="LittleKeyboardFontSize" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="HorizontalModel" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="CompanyLogoName" xml:space="preserve">
+    <value>Технология Oybab</value>
+  </data>
+  <data name="RegNoInputMessage" xml:space="preserve">
+    <value>Пожалуйста, введите регистрационный код</value>
+  </data>
+  <data name="RegCountInputMessage" xml:space="preserve">
+    <value>Пожалуйста, введите код регистрации количества</value>
+  </data>
+  <data name="TopLogoTitleLabelFontSize" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="LittleMediumLabelFontSize" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="Exception_AdminExists" xml:space="preserve">
+    <value>Текущий администратор использует ! {0} Код ошибки: 113</value>
+  </data>
+  <data name="IncomeTradingManage" xml:space="preserve">
+    <value>Управление доходными операциями</value>
+  </data>
+  <data name="Permission" xml:space="preserve">
+    <value>Компетенция</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>День</value>
+  </data>
+  <data name="Empty" xml:space="preserve">
+    <value>Пустой</value>
+  </data>
+  <data name="Selected" xml:space="preserve">
+    <value>Избранный список</value>
+  </data>
+  <data name="Products" xml:space="preserve">
+    <value>Перечень продукции</value>
+  </data>
+  <data name="Operate" xml:space="preserve">
+    <value>Работа</value>
+  </data>
+  <data name="SelectedCount" xml:space="preserve">
+    <value>Номер выбора</value>
+  </data>
+  <data name="OperatingWait" xml:space="preserve">
+    <value>Пожалуйста, подождите.....</value>
+  </data>
+  <data name="Cash" xml:space="preserve">
+    <value>По наличному расчёту</value>
+  </data>
+  <data name="Card" xml:space="preserve">
+    <value>Бесконтактная карта</value>
+  </data>
+  <data name="Member" xml:space="preserve">
+    <value>Участник</value>
+  </data>
+  <data name="Bind" xml:space="preserve">
+    <value>Привязать</value>
+  </data>
+  <data name="Unbind" xml:space="preserve">
+    <value>Развязать сайт</value>
+  </data>
+  <data name="MediumLargeButtonFontSize" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="OldRoomNo" xml:space="preserve">
+    <value>Номер старого блока</value>
+  </data>
+  <data name="NewRoomNo" xml:space="preserve">
+    <value>Новая таблица №</value>
+  </data>
+  <data name="IpAddress2" xml:space="preserve">
+    <value>IP адрес</value>
+  </data>
+  <data name="RequestManager" xml:space="preserve">
+    <value>Управление спросом</value>
+  </data>
+  <data name="RequestName" xml:space="preserve">
+    <value>Наименование требования</value>
+  </data>
+  <data name="Request2" xml:space="preserve">
+    <value>Запрос</value>
+  </data>
+  <data name="RequestDescription" xml:space="preserve">
+    <value>Добавьте требования к текущим данным.</value>
+  </data>
+  <data name="IsDisplayAll" xml:space="preserve">
+    <value>Показать все</value>
+  </data>
+  <data name="CheckoutBy" xml:space="preserve">
+    <value>Коллектор</value>
+  </data>
+  <data name="OrderPhoneNo" xml:space="preserve">
+    <value>Телефонный номер для выставления счета</value>
+  </data>
+  <data name="PersonName" xml:space="preserve">
+    <value>Имена</value>
+  </data>
+  <data name="BillTypeInner" xml:space="preserve">
+    <value>Внутренний</value>
+  </data>
+  <data name="BillTypeOuter" xml:space="preserve">
+    <value>Внешний</value>
+  </data>
+  <data name="BillType" xml:space="preserve">
+    <value>Вид счета</value>
+  </data>
+  <data name="AddOuterBill" xml:space="preserve">
+    <value>Добавление внешнего биллинга</value>
+  </data>
+  <data name="SuccessAndFailProperty" xml:space="preserve">
+    <value>Успех: {0}, неудача: {1}.</value>
+  </data>
+  <data name="ConfirmSaveAll" xml:space="preserve">
+    <value>Подтверждение спасения?</value>
+  </data>
+  <data name="Profit" xml:space="preserve">
+    <value>Чистая прибыль</value>
+  </data>
+  <data name="TypeName" xml:space="preserve">
+    <value>Имя типа</value>
+  </data>
+  <data name="Summary" xml:space="preserve">
+    <value>Резюме</value>
+  </data>
+  <data name="SystemTimeInvalid" xml:space="preserve">
+    <value>Системное время и время сервера не совпадают! {0} Код ошибки: 106</value>
+  </data>
+  <data name="UnrecordedPrice" xml:space="preserve">
+    <value>Неучтенная сумма</value>
+  </data>
+  <data name="ReceivedPrice" xml:space="preserve">
+    <value>Полученная сумма</value>
+  </data>
+  <data name="Prefix" xml:space="preserve">
+    <value>Префикс</value>
+  </data>
+  <data name="MultiLanguage" xml:space="preserve">
+    <value>Многоязычный</value>
+  </data>
+  <data name="Exception_DatabaseNotFound" xml:space="preserve">
+    <value>База данных удаленного сервера не найдена, пожалуйста, проверьте! Код ошибки: 108</value>
+  </data>
+  <data name="Exception_DatabaseLoadFailed" xml:space="preserve">
+    <value>База данных удаленного сервера не загрузилась! Код ошибки: 109</value>
+  </data>
+  <data name="NoLimit" xml:space="preserve">
+    <value>Безлимитный</value>
+  </data>
+  <data name="ProductExpiredDescription" xml:space="preserve">
+    <value>Изменить срок годности продукта!</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>Никто</value>
+  </data>
+  <data name="BarcodeReader" xml:space="preserve">
+    <value>Считыватель штрих-кода</value>
+  </data>
+  <data name="PrintBarcodeDescription" xml:space="preserve">
+    <value>Печать штрих-кода</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>Размер</value>
+  </data>
+  <data name="BarcodeLengthLimit" xml:space="preserve">
+    <value>Длина штрих-кода должна быть 8 или 13 цифр!</value>
+  </data>
+  <data name="BillWide" xml:space="preserve">
+    <value>Счет - широкий</value>
+  </data>
+  <data name="PrintAll" xml:space="preserve">
+    <value>Распечатать все</value>
+  </data>
+  <data name="ConfirmBalanceInjustice" xml:space="preserve">
+    <value>Баланс несправедливости! подтверждено?</value>
+  </data>
+  <data name="ProductParentName" xml:space="preserve">
+    <value>Родительское название продукта</value>
+  </data>
+  <data name="ProductParentCount" xml:space="preserve">
+    <value>Количество материнских продуктов</value>
+  </data>
+  <data name="Borrow" xml:space="preserve">
+    <value>Одолжить</value>
+  </data>
+  <data name="CanNotExceed" xml:space="preserve">
+    <value>Общий платеж составил ￥{0}!</value>
+  </data>
+  <data name="ChangeCount" xml:space="preserve">
+    <value>Количество модификаций</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Информация</value>
+  </data>
+  <data name="InnerBill" xml:space="preserve">
+    <value>Внутренний биллинг</value>
+  </data>
+  <data name="OuterBill" xml:space="preserve">
+    <value>Внешний биллинг</value>
+  </data>
+  <data name="IndexNameOrBarcode" xml:space="preserve">
+    <value>Пожалуйста, введите индекс или штрих-код</value>
+  </data>
+  <data name="Exception_DeviceExists" xml:space="preserve">
+    <value>Текущее оборудование в использовании! {0} Код ошибки: 115</value>
+  </data>
+  <data name="ReturnId" xml:space="preserve">
+    <value>Номер возврата</value>
+  </data>
+  <data name="ReturnBill" xml:space="preserve">
+    <value>Возврат счетов</value>
+  </data>
+  <data name="BalanceManager" xml:space="preserve">
+    <value>Управление балансом</value>
+  </data>
+  <data name="BalanceName" xml:space="preserve">
+    <value>Название баланса</value>
+  </data>
+  <data name="IsBind" xml:space="preserve">
+    <value>Связывать</value>
+  </data>
+  <data name="CardOnlyCouldBindOnce" xml:space="preserve">
+    <value>Свяжите до одной карты!</value>
+  </data>
+  <data name="AccountBank" xml:space="preserve">
+    <value>Банк расчётов</value>
+  </data>
+  <data name="AccountName" xml:space="preserve">
+    <value>Имя аккаунта</value>
+  </data>
+  <data name="AccountNo" xml:space="preserve">
+    <value>Открыть счет</value>
+  </data>
+  <data name="ReturnType" xml:space="preserve">
+    <value>Тип возврата</value>
+  </data>
+  <data name="ReturnManager" xml:space="preserve">
+    <value>Управление возвратами</value>
+  </data>
+  <data name="FromCustomer" xml:space="preserve">
+    <value>От клиентов</value>
+  </data>
+  <data name="ToSupplier" xml:space="preserve">
+    <value>Отводящий поставщик</value>
+  </data>
+  <data name="ReturnDetails" xml:space="preserve">
+    <value>Вернуться к деталям</value>
+  </data>
+  <data name="IsChange" xml:space="preserve">
+    <value>Замены</value>
+  </data>
+  <data name="CheckoutReturn" xml:space="preserve">
+    <value>Вернулся с кассы</value>
+  </data>
+  <data name="BalancePaysIncomeStatistic" xml:space="preserve">
+    <value>Статистика платежного баланса</value>
+  </data>
+  <data name="BalancePaysSpendStatistic" xml:space="preserve">
+    <value>Статистика расходов на оплату платежного баланса</value>
+  </data>
+  <data name="BalancePayByCash" xml:space="preserve">
+    <value>Платежи баланса (наличными)</value>
+  </data>
+  <data name="BalancePayByCard" xml:space="preserve">
+    <value>Баланс оплаты (карта)</value>
+  </data>
+  <data name="MemberPayByCash" xml:space="preserve">
+    <value>Членский взнос (наличные)</value>
+  </data>
+  <data name="MemberPayByCard" xml:space="preserve">
+    <value>Членский взнос (Карта)</value>
+  </data>
+  <data name="SupplierPayByCash" xml:space="preserve">
+    <value>Продажные платежи (наличными)</value>
+  </data>
+  <data name="SupplierPayByCard" xml:space="preserve">
+    <value>Продажные платежи (карточки)</value>
+  </data>
+  <data name="AdminPayByCash" xml:space="preserve">
+    <value>Администраторские платежи (наличными)</value>
+  </data>
+  <data name="AdminPayByCard" xml:space="preserve">
+    <value>Оплата хранителя (картами)</value>
+  </data>
+  <data name="ReturnStatistic" xml:space="preserve">
+    <value>Статистика возврата</value>
+  </data>
+  <data name="AdminSaleStatistic" xml:space="preserve">
+    <value>Статистика продаж администратора</value>
+  </data>
+  <data name="ReturnProductsStatistic" xml:space="preserve">
+    <value>Статистика возвращаемой продукции</value>
+  </data>
+  <data name="ReplaceCount" xml:space="preserve">
+    <value>Количество замен</value>
+  </data>
+  <data name="RecordCount" xml:space="preserve">
+    <value>Зарегистрированное количество</value>
+  </data>
+  <data name="Return" xml:space="preserve">
+    <value>Возврат (лот)</value>
+  </data>
+  <data name="CardPrice" xml:space="preserve">
+    <value>Цена карточного конверта</value>
+  </data>
+  <data name="CardBalancePrice" xml:space="preserve">
+    <value>Баланс карты</value>
+  </data>
+  <data name="OtherPrice" xml:space="preserve">
+    <value>Другие цены</value>
+  </data>
+  <data name="Supplier" xml:space="preserve">
+    <value>Поставщики</value>
+  </data>
+  <data name="PrintInfo" xml:space="preserve">
+    <value>Информация для выставления счетов</value>
+  </data>
+  <data name="Test" xml:space="preserve">
+    <value>Тестирование</value>
+  </data>
+  <data name="InputPhoneNoFirst" xml:space="preserve">
+    <value>Если вы вводите информацию для выставления счетов, пожалуйста, сначала введите свой номер телефона!</value>
+  </data>
+  <data name="PriceMonitor" xml:space="preserve">
+    <value>Монитор цен</value>
+  </data>
+  <data name="ProductProfitStatistic" xml:space="preserve">
+    <value>Статистика прибыли продукции</value>
+  </data>
+  <data name="IsBindWeigh" xml:space="preserve">
+    <value>Вес связующего</value>
+  </data>
+  <data name="PageHeight" xml:space="preserve">
+    <value>Высота страницы</value>
+  </data>
+  <data name="CancelAndDelete" xml:space="preserve">
+    <value>Отмена и удаление</value>
+  </data>
+  <data name="CashWithCard" xml:space="preserve">
+    <value>Наличные: ￥ {0}. Карточка: ￥ {1}.</value>
+  </data>
+  <data name="AdminCantCreateAnAdmin" xml:space="preserve">
+    <value>Администраторы не могут добавлять администраторов!</value>
+  </data>
+  <data name="IncomePermission" xml:space="preserve">
+    <value>Разрешения на прибыль</value>
+  </data>
+  <data name="ExpenditurePermission" xml:space="preserve">
+    <value>Полномочия по расходованию средств</value>
+  </data>
+  <data name="TemporaryChangePrice" xml:space="preserve">
+    <value>Временный пересмотр цен</value>
+  </data>
+  <data name="ChangeUnitPrice" xml:space="preserve">
+    <value>Изменить удельную цену</value>
+  </data>
+  <data name="AddPrice" xml:space="preserve">
+    <value>Сумма увеличения</value>
+  </data>
+  <data name="AddMemberBalancePrice" xml:space="preserve">
+    <value>Увеличение оставшейся части членства</value>
+  </data>
+  <data name="PosTopTitleFontSize" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="PosTotalPriceFontSize" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="PosCountFontSize" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="PosDescriptionFontSize" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Пользователь</value>
+  </data>
+  <data name="PosContentFontSize" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="PosDescription" xml:space="preserve">
+    <value>Поиск продукта: F3, Сохранение: F7, Восстановление: F8, Привязать члена: F10, Закрыть: F12, Язык изменения: TAB, Открытое окно: Alt+Z, Позиция: ↑ ↓ ← →, Разворот страницы: PgUp/PgDn, Количество увеличения: +, Количество уменьшения: -, Выбор / OK: Введите, Удалить выбранное: Del, Отмена / Возврат: Esc,.</value>
+  </data>
+  <data name="Restore" xml:space="preserve">
+    <value>Восстановление</value>
+  </data>
+  <data name="CardReader" xml:space="preserve">
+    <value>Кардридер</value>
+  </data>
+  <data name="CardNo" xml:space="preserve">
+    <value>Номер карточки</value>
+  </data>
+  <data name="CardNoExists" xml:space="preserve">
+    <value>Карта не существует, подтвердить замену?</value>
+  </data>
+  <data name="SuccessReadBarcode" xml:space="preserve">
+    <value>Чтение штрих-кода успешно!</value>
+  </data>
+  <data name="SuccessReadCardNo" xml:space="preserve">
+    <value>Читайте карточку успешно!</value>
+  </data>
+  <data name="ServerIpAddress2" xml:space="preserve">
+    <value>Адрес сервера</value>
+  </data>
+  <data name="BindMemberByNo" xml:space="preserve">
+    <value>Членство по количеству</value>
+  </data>
+  <data name="BindSupplierByNo" xml:space="preserve">
+    <value>Связывание поставщиков по номерам</value>
+  </data>
+  <data name="BarcodeScales" xml:space="preserve">
+    <value>Весы со штрих-кодом</value>
+  </data>
+  <data name="SendData" xml:space="preserve">
+    <value>Исходные данные</value>
+  </data>
+  <data name="IncorrectProductData" xml:space="preserve">
+    <value>Недействительные данные в информации о продукте!</value>
+  </data>
+  <data name="IncorrectProductName" xml:space="preserve">
+    <value>Недействительные данные в названии продукта!</value>
+  </data>
+  <data name="UnableToConnectIPAddress" xml:space="preserve">
+    <value>Невозможно подключить IP-адрес!</value>
+  </data>
+  <data name="ConfirmNotPay" xml:space="preserve">
+    <value>Уверен, что не хочешь платить?</value>
+  </data>
+  <data name="ReadResourceStrError" xml:space="preserve">
+    <value>Ошибка чтения ресурса!</value>
+  </data>
+  <data name="FreeRoomPriceLimit" xml:space="preserve">
+    <value>Лимит цены бесплатного номера</value>
+  </data>
+  <data name="CancelFireAlarm" xml:space="preserve">
+    <value>Отменить пожарную тревогу</value>
+  </data>
+  <data name="ConfirmOperate" xml:space="preserve">
+    <value>Подтвердить {0}?</value>
+  </data>
+  <data name="DeleteProduct" xml:space="preserve">
+    <value>Удалить продукт</value>
+  </data>
+  <data name="OpenCashDrawer" xml:space="preserve">
+    <value>Открыть денежный ящик</value>
+  </data>
+  <data name="Paid" xml:space="preserve">
+    <value>Оплатить</value>
+  </data>
+  <data name="Platform" xml:space="preserve">
+    <value>Платформы</value>
+  </data>
+  <data name="UnlimitedTime" xml:space="preserve">
+    <value>Неограниченное время</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>Включен</value>
+  </data>
+  <data name="DecreaseProductCount" xml:space="preserve">
+    <value>Сокращенное количество продуктов</value>
+  </data>
+  <data name="FaildThenWaitRetry" xml:space="preserve">
+    <value>Операция провалилась, слишком быстро, пожалуйста, попробуйте еще раз!</value>
+  </data>
+  <data name="RemovePrice" xml:space="preserve">
+    <value>Удалить Цена</value>
+  </data>
+  <data name="Exception_ServerClientVersionMisalignment" xml:space="preserve">
+    <value>Системная версия удаленного сервера не совпадает с текущей системной версией клиента, пожалуйста, обновите ее до той же версии системы!</value>
+  </data>
+  <data name="Exception_ServerClientTimeMisalignment" xml:space="preserve">
+    <value>Системное время удаленного сервера не совпадает с текущим системным временем клиента, пожалуйста, обновите его в то же время!</value>
+  </data>
+  <data name="ConfirmAddPay" xml:space="preserve">
+    <value>Подтвердить добавление {0} {1} из {2} в {3}?</value>
+  </data>
+  <data name="BalanceTransfer" xml:space="preserve">
+    <value>Трансфертный баланс</value>
+  </data>
+  <data name="OldBalance" xml:space="preserve">
+    <value>Старые балансы</value>
+  </data>
+  <data name="NewBalance" xml:space="preserve">
+    <value>Новый баланс</value>
+  </data>
+  <data name="BalanceTransferDescription" xml:space="preserve">
+    <value>Деньги между остатками средств</value>
+  </data>
+  <data name="LangName" xml:space="preserve">
+    <value>Русский</value>
+  </data>
+  <data name="HightFix" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Culcure" xml:space="preserve">
+    <value>ru-RU</value>
+  </data>
+  <data name="Dir" xml:space="preserve">
+    <value>ltr</value>
+  </data>
+  <data name="LargeFont" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="EnableAntialiasing" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="GlobalSetting" xml:space="preserve">
+    <value>Глобальная обстановка</value>
+  </data>
+  <data name="PriceSymbol" xml:space="preserve">
+    <value>Ценовые символы</value>
+  </data>
+  <data name="Main" xml:space="preserve">
+    <value>Главный сайт</value>
+  </data>
+  <data name="SystemLanguage" xml:space="preserve">
+    <value>Системный язык</value>
+  </data>
+  <data name="SystemLanguageCantSame" xml:space="preserve">
+    <value>Язык системы не может быть одинаковым!</value>
+  </data>
+  <data name="SystemLanguageChangeWarn" xml:space="preserve">
+    <value>Изменение языка системы может повлиять на систему, подтверждаете ли вы изменение?</value>
+  </data>
+  <data name="PermissionsMenuDescription" xml:space="preserve">
+    <value>Изменение прав администратора</value>
+  </data>
+  <data name="ReturnMoney" xml:space="preserve">
+    <value>Возврат денег</value>
+  </data>
+  <data name="CanNotExceedConfirm" xml:space="preserve">
+    <value>Общая уплаченная цена составляет ￥ {0}! Подтвердите возврат?</value>
+  </data>
+  <data name="Exception_PasswordErrorCountLimit" xml:space="preserve">
+    <value>Слишком много ошибок в пароле, пожалуйста, попробуйте еще раз позже!</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>Наименование организации</value>
+  </data>
+  <data name="CustomFont_Android" xml:space="preserve">
+    <value>OybabTuz.ttf#Oybab Tuz</value>
+  </data>
+  <data name="CustomFont_iOS" xml:space="preserve">
+    <value>OybabTuz</value>
+  </data>
+  <data name="CustomFont_UWP" xml:space="preserve">
+    <value>/Assets/OybabTuz.ttf#Oybab Tuz</value>
+  </data>
+  <data name="SavePassword" xml:space="preserve">
+    <value>Сохранить пароль</value>
+  </data>
+  <data name="Tsmi_Lang_Icon" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="IncomeTypeStatistic" xml:space="preserve">
+    <value>Статистика по видам доходов</value>
+  </data>
+  <data name="SpendTypeStatistic" xml:space="preserve">
+    <value>Статистика по видам расходов</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="Agree" xml:space="preserve">
+    <value>Согласен</value>
+  </data>
+  <data name="PrivacyPolicy" xml:space="preserve">
+    <value>Политика конфиденциальности</value>
+  </data>
+  <data name="Exception_AdminUsing" xml:space="preserve">
+    <value>Текущий администратор использует! Если это не ваша работа, пожалуйста, своевременно меняйте пароль!</value>
+  </data>
+  <data name="UserAgreement" xml:space="preserve">
+    <value>Соглашение с пользователем</value>
+  </data>
+  <data name="And" xml:space="preserve">
+    <value>Сумма</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>История</value>
+  </data>
+  <data name="HistoryDescription" xml:space="preserve">
+    <value>Просмотр истории текущих данных.</value>
+  </data>
+  <data name="CompanyAbbreviation" xml:space="preserve">
+    <value>Oybab Co., Ltd.</value>
+  </data>
+  <data name="License" xml:space="preserve">
+    <value>Лицензия</value>
+  </data>
+  <data name="Donate" xml:space="preserve">
+    <value>Пожертвования</value>
+  </data>
+  <data name="SourceCode" xml:space="preserve">
+    <value>Исходный код</value>
+  </data>
+  <data name="ConfirmItemBalanceNotEnough" xml:space="preserve">
+    <value>Недостаточно остатка {0}, подтвердить?</value>
+  </data>
+</root>

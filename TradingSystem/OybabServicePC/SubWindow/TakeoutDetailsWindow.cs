@@ -124,10 +124,10 @@ namespace Oybab.ServicePC.SubWindow
 
             try
             {
-                krplAddTimeValue.Text = string.Format(": {0}", DateTime.ParseExact(takeout.AddTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm"));
+                krplAddTimeValue.Text = string.Format(": {0}", DateTime.ParseExact(takeout.AddTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm"));
 
                 if (null != takeout.FinishTime)
-                    krplFinishTimeValue.Text = string.Format(":{0}", DateTime.ParseExact(takeout.FinishTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm"));
+                    krplFinishTimeValue.Text = string.Format(":{0}", DateTime.ParseExact(takeout.FinishTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm"));
                 else
                     krplFinishTimeValue.Text = ";";
             }
@@ -385,7 +385,7 @@ namespace Oybab.ServicePC.SubWindow
                 }
 
 
-                AddTimeStr = DateTime.ParseExact(AddTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm");
+                AddTimeStr = DateTime.ParseExact(AddTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm");
 
                 if (null != productId)
                 {
@@ -463,7 +463,7 @@ namespace Oybab.ServicePC.SubWindow
                 }
 
 
-                AddTimeStr = DateTime.ParseExact(AddTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm");
+                AddTimeStr = DateTime.ParseExact(AddTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm");
 
 
                 if (AdminId > 0)

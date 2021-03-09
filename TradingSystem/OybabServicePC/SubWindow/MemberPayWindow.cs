@@ -299,7 +299,7 @@ namespace Oybab.ServicePC.SubWindow
 
             try
             {
-                AddTimeStr = DateTime.ParseExact(AddTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm");
+                AddTimeStr = DateTime.ParseExact(AddTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm");
 
                 if (null != model)
                     OperateNameStr = GetOperateName(model);
@@ -608,7 +608,7 @@ namespace Oybab.ServicePC.SubWindow
                                     krpdgList.SelectedRows[0].Cells["krpcmMemberPayId"].Value = newMemberPay.MemberPayId;
                                     krpdgList.SelectedRows[0].Cells["krpcmEdit"].Value = "";
                                     //resultList.Insert(0, model);
-                                    krpdgList.SelectedRows[0].Cells["krpcmAddTime"].Value = DateTime.ParseExact(newMemberPay.AddTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm");
+                                    krpdgList.SelectedRows[0].Cells["krpcmAddTime"].Value = DateTime.ParseExact(newMemberPay.AddTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm");
                                     this.Member = newMember;
                                     this.ReturnValue = newMember;
                                     this.resultList.Insert(0, newMemberPay);

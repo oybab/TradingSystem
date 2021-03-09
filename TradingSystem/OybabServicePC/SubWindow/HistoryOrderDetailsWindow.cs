@@ -171,7 +171,7 @@ namespace Oybab.ServicePC.SubWindow
             krplMemberPaidPriceValue.Text = string.Format(": {0}", order.MemberPaidPrice.ToString());
             krplTotalPaidPriceValue.Text = string.Format(": {0}", order.TotalPaidPrice.ToString());
             krplPaidPriceValue.Text = string.Format(": {0}", order.PaidPrice.ToString());
-            krplChangeTimeValue.Text = string.Format(": {0}", DateTime.ParseExact(log.AddTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm"));
+            krplChangeTimeValue.Text = string.Format(": {0}", DateTime.ParseExact(log.AddTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm"));
 
             
             krplLanguageValue.Text = string.Format(": {0}", Resources.GetRes().GetLangByLangIndex((int)order.Lang).LangName);
@@ -182,18 +182,18 @@ namespace Oybab.ServicePC.SubWindow
                 if (null == order.StartTime)
                     krplStartTimeValue.Text = ":";
                 else
-                    krplStartTimeValue.Text = string.Format(": {0}", DateTime.ParseExact(order.StartTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm"));
+                    krplStartTimeValue.Text = string.Format(": {0}", DateTime.ParseExact(order.StartTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm"));
 
                 if (null == order.EndTime)
                     krplEndTimeValue.Text = ":";
                 else
-                    krplEndTimeValue.Text = string.Format(": {0}", DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm"));
+                    krplEndTimeValue.Text = string.Format(": {0}", DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm"));
 
 
                 if (0 == order.AddTime)
                     krplAddTimeValue.Text = ":";
                 else
-                    krplAddTimeValue.Text = string.Format(": {0}", DateTime.ParseExact(order.AddTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm"));
+                    krplAddTimeValue.Text = string.Format(": {0}", DateTime.ParseExact(order.AddTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm"));
 
             }
             catch (Exception ex)
@@ -340,9 +340,9 @@ namespace Oybab.ServicePC.SubWindow
 
 
                 if (0 == AddTime)
-                    AddTimeStr = DateTime.ParseExact(LogTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm");
+                    AddTimeStr = DateTime.ParseExact(LogTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm");
                 else
-                    AddTimeStr = DateTime.ParseExact(AddTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm");
+                    AddTimeStr = DateTime.ParseExact(AddTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm");
 
 
                 if (AdminId > 0)
@@ -594,9 +594,9 @@ namespace Oybab.ServicePC.SubWindow
                 }
 
                 if (0 == AddTime)
-                    AddTimeStr = DateTime.ParseExact(LogTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm");
+                    AddTimeStr = DateTime.ParseExact(LogTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm");
                 else
-                    AddTimeStr = DateTime.ParseExact(AddTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm");
+                    AddTimeStr = DateTime.ParseExact(AddTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm");
 
                 if (Resources.GetRes().MainLangIndex == 0)
                     productName = Resources.GetRes().Products.Where(x => x.ProductId == productId).Select(x => x.ProductName0).FirstOrDefault();

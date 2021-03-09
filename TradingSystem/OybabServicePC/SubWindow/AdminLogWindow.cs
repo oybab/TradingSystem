@@ -280,7 +280,7 @@ namespace Oybab.ServicePC.SubWindow
 
             try
             {
-                AddTimeStr = DateTime.ParseExact(addTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm");
+                AddTimeStr = DateTime.ParseExact(addTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm");
 
                 if (adminId > 0)
                 {

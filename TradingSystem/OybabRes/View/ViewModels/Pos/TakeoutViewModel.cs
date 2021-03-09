@@ -754,7 +754,7 @@ namespace Oybab.Res.View.ViewModels.Pos
         /// </summary>
         public string LanguageName
         {
-            get { return Resources.GetRes().GetMainLangByLangIndex(_languageMode).LangName; }
+            get { return Resources.GetRes().GetLangByLangIndex(_languageMode).LangName; }
             set
             {
                 _languageName = value;
@@ -1004,7 +1004,7 @@ namespace Oybab.Res.View.ViewModels.Pos
                 {
                     _changeOrderLanguageCommand = new RelayCommand(param =>
                         {
-                            this.LanguageMode = Resources.GetRes().GetMainLangByMainLangIndex(Resources.GetRes().GetMainLangByLangIndex(this.LanguageMode).MainLangIndex + 1).LangIndex;
+                            this.LanguageMode = Resources.GetRes().GetLangByLangIndex(Resources.GetRes().GetLangByLangIndex(this.LanguageMode).LangIndex + 1).LangIndex;
 
                             // 刷新第二屏语言
                             if (FullScreenMonitor.Instance._isInitialized)

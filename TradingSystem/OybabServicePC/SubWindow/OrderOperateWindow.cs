@@ -101,7 +101,7 @@ namespace Oybab.ServicePC.SubWindow
             krpcbPackage.Text = Resources.GetRes().GetString("Package");
 
 
-            krpcbLanguage.Items.AddRange(Resources.GetRes().MainLangList.Select(x => x.Value.LangName).ToArray());
+            krpcbLanguage.Items.AddRange(Resources.GetRes().AllLangList.OrderBy(x => x.Value.LangOrder).Select(x => x.Value.LangName).ToArray());
 
             krpbAddByBarcode.StateCommon.Back.Image = Image.FromStream(asm.GetManifestResourceStream(@"Oybab.Res.Resources.Images.PC.Barcode.png"));
             krpbAddByFastGrid.StateCommon.Back.Image = Image.FromStream(asm.GetManifestResourceStream(@"Oybab.Res.Resources.Images.PC.FastGrid.png"));
@@ -566,11 +566,11 @@ namespace Oybab.ServicePC.SubWindow
                 {
                     if (room.IsPayByTime == 1 || room.IsPayByTime == 2)
                     {
-                            krplEndTimeValue.Text = DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm");
+                            krplEndTimeValue.Text = DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm");
                     }
                     else
                     {
-                        krplEndTimeValue.Text = DateTime.ParseExact(order.AddTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm");
+                        krplEndTimeValue.Text = DateTime.ParseExact(order.AddTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm");
                         krplEndTime.Text = Resources.GetRes().GetString("AddTime");
                     }
 
@@ -701,7 +701,7 @@ namespace Oybab.ServicePC.SubWindow
 
                 }
 
-                AddTimeStr = DateTime.ParseExact(AddTime, "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm");
+                AddTimeStr = DateTime.ParseExact(AddTime, "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm");
 
                 if (productId > 0)
                 {
@@ -1715,18 +1715,18 @@ namespace Oybab.ServicePC.SubWindow
             {
                 // 直接计算时间
                 if (null == this.order)
-                    totalMinutes = (int)DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", null).Subtract(DateTime.ParseExact(order.StartTime.ToString(), "yyyyMMddHHmmss", null)).TotalMinutes;
+                    totalMinutes = (int)DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).Subtract(DateTime.ParseExact(order.StartTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture)).TotalMinutes;
                 else
                 {
                     // 如果是时间少了, 则还是老方法计算
-                    if (DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", null) < DateTime.ParseExact(order.RoomPriceCalcTime.ToString(), "yyyyMMddHHmmss", null))
+                    if (DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture) < DateTime.ParseExact(order.RoomPriceCalcTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture))
                     {
-                        totalMinutes = (int)DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", null).Subtract(DateTime.ParseExact(order.StartTime.ToString(), "yyyyMMddHHmmss", null)).TotalMinutes;
+                        totalMinutes = (int)DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).Subtract(DateTime.ParseExact(order.StartTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture)).TotalMinutes;
                         IsSubTime = true;
                     }
                     // 如果不是, 则在上次的时间加上新时间价格
                     else{
-                        totalMinutes = (int)DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", null).Subtract(DateTime.ParseExact(order.RoomPriceCalcTime.ToString(), "yyyyMMddHHmmss", null)).TotalMinutes;
+                        totalMinutes = (int)DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).Subtract(DateTime.ParseExact(order.RoomPriceCalcTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture)).TotalMinutes;
                     }
                         
                 }
@@ -1770,7 +1770,7 @@ namespace Oybab.ServicePC.SubWindow
                 {
                     if (room.IsPayByTime == 1 || room.IsPayByTime == 2)
                     {
-                        totalMinutes = (int)DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", null).Subtract(DateTime.ParseExact(order.StartTime.ToString(), "yyyyMMddHHmmss", null)).TotalMinutes;
+                        totalMinutes = (int)DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).Subtract(DateTime.ParseExact(order.StartTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture)).TotalMinutes;
                     }
                     krplRoomPriceValue.Text = (order.RoomPrice = CommonOperates.GetCommonOperates().GetRoomPrice(this.order, room.Price, room.PriceHour, room.IsPayByTime, totalMinutes, IsSubTime, order.EndTime, true)).ToString();
 
@@ -1836,8 +1836,8 @@ namespace Oybab.ServicePC.SubWindow
                 if (null != this.order) {
                     if (this.order.StartTime != null && this.order.EndTime != null)
                     {
-                        TimeSpan total = (DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", null) - DateTime.ParseExact(order.StartTime.ToString(), "yyyyMMddHHmmss", null));
-                        TimeSpan balance = (DateTime.Now - DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", null));
+                        TimeSpan total = (DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture) - DateTime.ParseExact(order.StartTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture));
+                        TimeSpan balance = (DateTime.Now - DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture));
 
 
                         if (room.IsPayByTime == 1)
@@ -1848,7 +1848,7 @@ namespace Oybab.ServicePC.SubWindow
                     }
                     else
                     {
-                        TimeSpan total = (DateTime.Now - DateTime.ParseExact(order.AddTime.ToString(), "yyyyMMddHHmmss", null));
+                        TimeSpan total = (DateTime.Now - DateTime.ParseExact(order.AddTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture));
 
                         if (room.IsPayByTime == 2)
                             roomInfo.TotalTime = string.Format("{0}/{1}:{2}", (int)total.TotalDays, total.Hours, total.Minutes);
@@ -2746,7 +2746,7 @@ namespace Oybab.ServicePC.SubWindow
             TimeChangeWindow window = new TimeChangeWindow(mark, startTime, endTime, room.IsPayByTime, _tempUnlimitedTime, null == this.order);
             if (window.ShowDialog(this) == System.Windows.Forms.DialogResult.OK)
             {
-                krplEndTimeValue.Text = DateTime.ParseExact(window.ReturnValue.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm");
+                krplEndTimeValue.Text = DateTime.ParseExact(window.ReturnValue.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm");
 
                 // 如果跟订单上次保存的不一样,就提示未保存提示
                 if (null != order && order.EndTime == window.ReturnValue)
@@ -3000,7 +3000,7 @@ namespace Oybab.ServicePC.SubWindow
 
                     List<Log> logList = null;
 
-                    DateTime orderAddTime = (DateTime.ParseExact(order.AddTime.ToString(), "yyyyMMddHHmmss", null));
+                    DateTime orderAddTime = (DateTime.ParseExact(order.AddTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture));
 
                     DateTime startDateTime = orderAddTime;
                     DateTime endDateTime = orderAddTime;

@@ -189,7 +189,7 @@ namespace Oybab.ServicePC.SubWindow
             if (null != balances && balances.Count > 0)
             {
 
-                foreach (var item in balances)
+                foreach (var item in balances.OrderByDescending(x => x.Order).ThenByDescending(x => x.BalanceId))
                 {
 
                     Balance currentBalance = Resources.GetRes().Balances.Where(x => x.BalanceId == item.BalanceId).FirstOrDefault();
@@ -474,7 +474,7 @@ namespace Oybab.ServicePC.SubWindow
 
 
 
-                AddTimeStr = DateTime.ParseExact(AddTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm");
+                AddTimeStr = DateTime.ParseExact(AddTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm");
             }
             catch (Exception ex)
             {
@@ -945,7 +945,7 @@ namespace Oybab.ServicePC.SubWindow
                 double price = 0;
              
 
-                DateTime AddTime = DateTime.ParseExact(item.AddTime.ToString(), "yyyyMMddHHmmss", null);
+                DateTime AddTime = DateTime.ParseExact(item.AddTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture);
 
                 records.Add(new RecordTime(item.LogId, AddTime, price));
             }

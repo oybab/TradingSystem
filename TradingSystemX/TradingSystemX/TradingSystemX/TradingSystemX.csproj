@@ -264,13 +264,58 @@
   <ItemGroup>
     <EmbeddedResource Include="..\..\..\TradingSystem\OybabReport\StatisticsHWP\Resources\ChartReport.html" Link="Report\StatisticsHWP\Resources\ChartReport.html" />
     <EmbeddedResource Include="..\..\..\TradingSystem\OybabReport\StatisticsHWP\Resources\ProductReport.html" Link="Report\StatisticsHWP\Resources\ProductReport.html" />
+    <EmbeddedResource Include="..\..\..\TradingSystem\OybabServerManager\Resource.ar-SA.resx" Link="Res\Resource.ar-SA.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\TradingSystem\OybabServerManager\Resource.de-DE.resx" Link="Res\Resource.de-DE.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="..\..\..\TradingSystem\OybabServerManager\Resource.en-US.resx" Link="Res\Resource.en-US.resx">
       <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\TradingSystem\OybabServerManager\Resource.es-ES.resx" Link="Res\Resource.es-ES.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\TradingSystem\OybabServerManager\Resource.fr-FR.resx" Link="Res\Resource.fr-FR.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\TradingSystem\OybabServerManager\Resource.he-IL.resx" Link="Res\Resource.he-IL.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\TradingSystem\OybabServerManager\Resource.hi-IN.resx" Link="Res\Resource.hi-IN.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\TradingSystem\OybabServerManager\Resource.it-IT.resx" Link="Res\Resource.it-IT.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\TradingSystem\OybabServerManager\Resource.ja-JP.resx" Link="Res\Resource.ja-JP.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\TradingSystem\OybabServerManager\Resource.ko-KR.resx" Link="Res\Resource.ko-KR.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\TradingSystem\OybabServerManager\Resource.pt-PT.resx" Link="Res\Resource.pt-PT.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\TradingSystem\OybabServerManager\Resource.ru-RU.resx" Link="Res\Resource.ru-RU.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\TradingSystem\OybabServerManager\Resource.th-TH.resx" Link="Res\Resource.th-TH.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\TradingSystem\OybabServerManager\Resource.tr-TR.resx" Link="Res\Resource.tr-TR.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
     <EmbeddedResource Include="..\..\..\TradingSystem\OybabServerManager\Resource.ug-CN.resx" Link="Res\Resource.ug-CN.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\TradingSystem\OybabServerManager\Resource.ur-PK.resx" Link="Res\Resource.ur-PK.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\TradingSystem\OybabServerManager\Resource.uz-Latn.resx" Link="Res\Resource.uz-Latn.resx">
+      <Generator></Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\..\TradingSystem\OybabServerManager\Resource.zh-CN.resx" Link="Res\Resource.zh-CN.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -280,8 +325,8 @@
     <PackageReference Include="Microsoft.AspNet.SignalR.Client" Version="2.4.1" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="System.Globalization" Version="4.3.0" />
-    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1269" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
     <PackageReference Include="ZXing.Net.Mobile" Version="2.4.1" />
     <PackageReference Include="ZXing.Net.Mobile.Forms" Version="2.4.1" />
   </ItemGroup>

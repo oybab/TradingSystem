@@ -231,7 +231,7 @@ namespace Oybab.ServicePC.Tools
                     bool isTimeLeft = false;
 
 
-                    if ((room.IsPayByTime == 1 || room.IsPayByTime == 2) && DateTime.ParseExact(this.model.PayOrder.EndTime.Value.ToString(), "yyyyMMddHHmmss", null) <= DateTime.Now)
+                    if ((room.IsPayByTime == 1 || room.IsPayByTime == 2) && DateTime.ParseExact(this.model.PayOrder.EndTime.Value.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture) <= DateTime.Now)
                     {
                         isTimeLeft = true;
                     }

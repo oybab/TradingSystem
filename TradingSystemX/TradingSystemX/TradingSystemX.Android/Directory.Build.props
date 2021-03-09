@@ -6,10 +6,11 @@
 
 	
 	<!-- Can't use it for now, because has a Bug: https://developercommunity.visualstudio.com/content/problem/1166703/cant-create-android-archive-when-use-directorybuil.html
-	Temporarily change item in TradingSystemX.Android.csproj file for now.	
+	or https://developercommunity.visualstudio.com/t/cant-create-android-archive-when-use-directorybuil/1166703
+	Temporarily change item in TradingSystemX.Android.csproj file for now.	-->
 
 	<BaseIntermediateOutputPath>Y:\NET\TradingSystemX\$(MSBuildProjectName)\$(Platform)\obj\$(Configuration)\</BaseIntermediateOutputPath>
     <OutputPath>Y:\NET\TradingSystemX\$(MSBuildProjectName)\$(Platform)\$(Configuration)\</OutputPath>
--->
+
  </PropertyGroup>
 </Project>

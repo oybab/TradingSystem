@@ -22,7 +22,7 @@
 
                 <StackLayout VerticalOptions="FillAndExpand">
                     <Label HorizontalOptions="Start" Text="{Binding OwnerName}"  Margin="6,10,0,0" />
-
+                    <Picker x:Name="pkLanguage" IsVisible="True"  SelectedIndex="{Binding LanguageMode}" HorizontalTextAlignment="Center" SelectedIndexChanged="Picker_SelectedIndexChanged" HorizontalOptions="End" ItemsSource="{Binding AllLang}" SelectedItem="{Binding SelectedLang}"  ItemDisplayBinding="{Binding Name}"/>
                     <ScrollView Margin="0,20,0,0" BackgroundColor="{DynamicResource ItemBackgroundColor}" VerticalOptions="FillAndExpand">
                         <StackLayout x:Name="lvList">
 

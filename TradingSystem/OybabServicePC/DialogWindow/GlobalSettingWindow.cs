@@ -40,7 +40,7 @@ namespace Oybab.ServicePC.DialogWindow
             krpCompanyName.Text = Resources.GetRes().GetString("CompanyName");
 
 
-            string[] Names = Resources.GetRes().AllLangList.Select(x => x.Value.LangName).ToArray();
+            string[] Names = Resources.GetRes().AllLangList.OrderBy(x => x.Value.LangOrder).Select(x => x.Value.LangName).ToArray();
 
 
             krpcLanguage0.Items.AddRange(Names);

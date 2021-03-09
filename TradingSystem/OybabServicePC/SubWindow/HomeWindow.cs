@@ -403,9 +403,9 @@ namespace Oybab.ServicePC.SubWindow
                     }
 
                     if (null != order.StartTime && order.StartTime != 0)
-                        StartTimeStr = DateTime.ParseExact(order.StartTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm");
+                        StartTimeStr = DateTime.ParseExact(order.StartTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm");
                     if (null != order.StartTime && order.EndTime != 0)
-                        EndTimeStr = DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm");
+                        EndTimeStr = DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm");
 
                         // 计算余额
                         BalancePrice = Math.Round(order.TotalPaidPrice - order.TotalPrice, 2).ToString();

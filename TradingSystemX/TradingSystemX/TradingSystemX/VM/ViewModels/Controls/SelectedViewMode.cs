@@ -58,6 +58,14 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages.Controls
             ChangePaidPriceView = new ChangePaidPriceViewModel(null, RecalcPaidPrice, spBalanceList, ctBalanceControlTemplate);
             ChangeTimeView = new ChangeTimeViewModel(null, this, Recalc);
 
+
+
+            foreach (var item in Res.Instance.AllLangList.OrderBy(x => x.Value.LangOrder))
+            {
+                Dict dict = new Dict() { Name = Res.Instance.GetString("LangName", item.Value.Culture), Value = item.Value.LangIndex };
+                AllLang.Add(dict);
+            }
+
         }
 
         /// <summary>
@@ -75,6 +83,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages.Controls
         /// </summary>
         internal void Init()
         {
+            //SelectedLang = AllLang.Where(x => int.Parse(x.Value.ToString()) == Res.Instance.CurrentLangIndex).FirstOrDefault();
         }
 
 
@@ -689,6 +698,38 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages.Controls
 
 
 
+
+        private ObservableCollection<Dict> _allLang = new ObservableCollection<Dict>();
+        /// <summary>
+        /// 所有语言
+        /// </summary>
+        public ObservableCollection<Dict> AllLang
+        {
+            get { return _allLang; }
+            set
+            {
+                _allLang = value;
+                OnPropertyChanged("AllLang");
+            }
+        }
+
+
+        private Dict _selectedLang = null;
+        /// <summary>
+        /// 所选语言
+        /// </summary>
+        public Dict SelectedLang
+        {
+            get { return _selectedLang; }
+            set
+            {
+                _selectedLang = value;
+                OnPropertyChanged("SelectedLang");
+            }
+        }
+
+
+
         private int _languageMode = -1;
         /// <summary>
         /// 选择模式 0中文, 1维文, 2英文
@@ -702,6 +743,8 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages.Controls
                 OnPropertyChanged("LanguageMode");
                 OnPropertyChanged("LanguageName");
 
+                //SelectedLang = AllLang.Where(x => int.Parse(x.Value.ToString()) == Res.Instance.CurrentLangIndex).FirstOrDefault();
+
                 if (_languageMode != Res.Instance.MainLangIndex)
                 {
                     if (LanguageModeNo != 1)
@@ -712,7 +755,6 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages.Controls
                     if (LanguageModeNo != 0)
                         LanguageModeNo = 0;
                 }
-
             }
         }
 
@@ -728,6 +770,22 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages.Controls
             {
                 _languageModeNo = value;
                 OnPropertyChanged("LanguageModeNo");
+            }
+        }
+
+
+
+        private bool _languageEnable = false;
+        /// <summary>
+        /// 是否允许更改语言
+        /// </summary>
+        public bool LanguageEnable
+        {
+            get { return _languageEnable; }
+            set
+            {
+                _languageEnable = value;
+                OnPropertyChanged("LanguageEnable");
             }
         }
 

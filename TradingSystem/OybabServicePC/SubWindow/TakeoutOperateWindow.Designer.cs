@@ -394,9 +394,10 @@
             // krpbCheckout
             // 
             this.krpbCheckout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.krpbCheckout.AutoSize = true;
             this.krpbCheckout.Location = new System.Drawing.Point(851, 7);
             this.krpbCheckout.Name = "krpbCheckout";
-            this.krpbCheckout.Size = new System.Drawing.Size(90, 25);
+            this.krpbCheckout.Size = new System.Drawing.Size(94, 25);
             this.krpbCheckout.TabIndex = 14;
             this.krpbCheckout.Values.Text = "Checkout";
             this.krpbCheckout.Click += new System.EventHandler(this.krpbCheckout_Click);
@@ -440,7 +441,7 @@
             // 
             // krpbAddByFastGrid
             // 
-            this.krpbAddByFastGrid.Location = new System.Drawing.Point(907, 38);
+            this.krpbAddByFastGrid.Location = new System.Drawing.Point(913, 38);
             this.krpbAddByFastGrid.Name = "krpbAddByFastGrid";
             this.krpbAddByFastGrid.Size = new System.Drawing.Size(32, 32);
             this.krpbAddByFastGrid.TabIndex = 16;
@@ -500,7 +501,7 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(348, 116);
             this.flowLayoutPanel1.TabIndex = 8;
             // 
-            // flpNameZH
+            // flpName0
             // 
             this.flpName0.Controls.Add(this.krplName0);
             this.flpName0.Controls.Add(this.kryptonLabel7);
@@ -510,31 +511,31 @@
             this.flpName0.Size = new System.Drawing.Size(345, 31);
             this.flpName0.TabIndex = 0;
             // 
-            // krplNameZH
+            // krplName0
             // 
             this.krplName0.Location = new System.Drawing.Point(3, 3);
             this.krplName0.Name = "krplName0";
-            this.krplName0.Size = new System.Drawing.Size(59, 20);
+            this.krplName0.Size = new System.Drawing.Size(50, 20);
             this.krplName0.TabIndex = 13;
             this.krplName0.Values.Text = "Name0";
             // 
             // kryptonLabel7
             // 
-            this.kryptonLabel7.Location = new System.Drawing.Point(68, 3);
+            this.kryptonLabel7.Location = new System.Drawing.Point(59, 3);
             this.kryptonLabel7.Name = "kryptonLabel7";
             this.kryptonLabel7.Size = new System.Drawing.Size(13, 20);
             this.kryptonLabel7.TabIndex = 12;
             this.kryptonLabel7.Values.Text = ":";
             // 
-            // krptNameZH
+            // krptName0
             // 
-            this.krptName0.Location = new System.Drawing.Point(87, 3);
+            this.krptName0.Location = new System.Drawing.Point(78, 3);
             this.krptName0.MaxLength = 40;
             this.krptName0.Name = "krptName0";
             this.krptName0.Size = new System.Drawing.Size(189, 23);
             this.krptName0.TabIndex = 8;
             // 
-            // flpNameUG
+            // flpName1
             // 
             this.flpName1.Controls.Add(this.krplName1);
             this.flpName1.Controls.Add(this.kryptonLabel6);
@@ -544,59 +545,59 @@
             this.flpName1.Size = new System.Drawing.Size(345, 31);
             this.flpName1.TabIndex = 0;
             // 
-            // krplNameUG
+            // krplName1
             // 
             this.krplName1.Location = new System.Drawing.Point(3, 3);
             this.krplName1.Name = "krplName1";
-            this.krplName1.Size = new System.Drawing.Size(60, 20);
+            this.krplName1.Size = new System.Drawing.Size(50, 20);
             this.krplName1.TabIndex = 13;
             this.krplName1.Values.Text = "Name1";
             // 
             // kryptonLabel6
             // 
-            this.kryptonLabel6.Location = new System.Drawing.Point(69, 3);
+            this.kryptonLabel6.Location = new System.Drawing.Point(59, 3);
             this.kryptonLabel6.Name = "kryptonLabel6";
             this.kryptonLabel6.Size = new System.Drawing.Size(13, 20);
             this.kryptonLabel6.TabIndex = 12;
             this.kryptonLabel6.Values.Text = ":";
             // 
-            // krptNameUG
+            // krptName1
             // 
-            this.krptName1.Location = new System.Drawing.Point(88, 3);
+            this.krptName1.Location = new System.Drawing.Point(78, 3);
             this.krptName1.MaxLength = 40;
             this.krptName1.Name = "krptName1";
             this.krptName1.Size = new System.Drawing.Size(189, 23);
             this.krptName1.TabIndex = 10;
             // 
-            // flpNameEN
+            // flpName2
             // 
             this.flpName2.Controls.Add(this.krplName2);
             this.flpName2.Controls.Add(this.kryptonLabel10);
             this.flpName2.Controls.Add(this.krptName2);
             this.flpName2.Location = new System.Drawing.Point(3, 77);
-            this.flpName2.Name = "Location";
+            this.flpName2.Name = "flpName2";
             this.flpName2.Size = new System.Drawing.Size(345, 31);
             this.flpName2.TabIndex = 0;
             // 
-            // krplNameEN
+            // krplName2
             // 
             this.krplName2.Location = new System.Drawing.Point(3, 3);
             this.krplName2.Name = "krplName2";
-            this.krplName2.Size = new System.Drawing.Size(59, 20);
+            this.krplName2.Size = new System.Drawing.Size(50, 20);
             this.krplName2.TabIndex = 13;
             this.krplName2.Values.Text = "Name2";
             // 
             // kryptonLabel10
             // 
-            this.kryptonLabel10.Location = new System.Drawing.Point(68, 3);
+            this.kryptonLabel10.Location = new System.Drawing.Point(59, 3);
             this.kryptonLabel10.Name = "kryptonLabel10";
             this.kryptonLabel10.Size = new System.Drawing.Size(13, 20);
             this.kryptonLabel10.TabIndex = 12;
             this.kryptonLabel10.Values.Text = ":";
             // 
-            // krptNameEN
+            // krptName2
             // 
-            this.krptName2.Location = new System.Drawing.Point(87, 3);
+            this.krptName2.Location = new System.Drawing.Point(78, 3);
             this.krptName2.MaxLength = 40;
             this.krptName2.Name = "krptName2";
             this.krptName2.Size = new System.Drawing.Size(189, 23);
@@ -613,7 +614,7 @@
             this.flowLayoutPanel2.Size = new System.Drawing.Size(575, 116);
             this.flowLayoutPanel2.TabIndex = 9;
             // 
-            // flpAddressZH
+            // flpAddress0
             // 
             this.flpAddress0.Controls.Add(this.krplAddress0);
             this.flpAddress0.Controls.Add(this.kryptonLabel9);
@@ -623,31 +624,31 @@
             this.flpAddress0.Size = new System.Drawing.Size(570, 31);
             this.flpAddress0.TabIndex = 0;
             // 
-            // krplAddressZH
+            // krplAddress0
             // 
             this.krplAddress0.Location = new System.Drawing.Point(3, 3);
             this.krplAddress0.Name = "krplAddress0";
-            this.krplAddress0.Size = new System.Drawing.Size(70, 20);
+            this.krplAddress0.Size = new System.Drawing.Size(61, 20);
             this.krplAddress0.TabIndex = 13;
             this.krplAddress0.Values.Text = "Address0";
             // 
             // kryptonLabel9
             // 
-            this.kryptonLabel9.Location = new System.Drawing.Point(79, 3);
+            this.kryptonLabel9.Location = new System.Drawing.Point(70, 3);
             this.kryptonLabel9.Name = "kryptonLabel9";
             this.kryptonLabel9.Size = new System.Drawing.Size(13, 20);
             this.kryptonLabel9.TabIndex = 12;
             this.kryptonLabel9.Values.Text = ":";
             // 
-            // krptAddressZH
+            // krptAddress0
             // 
-            this.krptAddress0.Location = new System.Drawing.Point(98, 3);
+            this.krptAddress0.Location = new System.Drawing.Point(89, 3);
             this.krptAddress0.MaxLength = 80;
             this.krptAddress0.Name = "krptAddress0";
             this.krptAddress0.Size = new System.Drawing.Size(403, 23);
             this.krptAddress0.TabIndex = 9;
             // 
-            // flpAddressUG
+            // flpAddress1
             // 
             this.flpAddress1.Controls.Add(this.krplAddress1);
             this.flpAddress1.Controls.Add(this.kryptonLabel11);
@@ -657,31 +658,31 @@
             this.flpAddress1.Size = new System.Drawing.Size(570, 31);
             this.flpAddress1.TabIndex = 0;
             // 
-            // krplAddressUG
+            // krplAddress1
             // 
             this.krplAddress1.Location = new System.Drawing.Point(3, 3);
             this.krplAddress1.Name = "krplAddress1";
-            this.krplAddress1.Size = new System.Drawing.Size(71, 20);
+            this.krplAddress1.Size = new System.Drawing.Size(61, 20);
             this.krplAddress1.TabIndex = 13;
             this.krplAddress1.Values.Text = "Address1";
             // 
             // kryptonLabel11
             // 
-            this.kryptonLabel11.Location = new System.Drawing.Point(80, 3);
+            this.kryptonLabel11.Location = new System.Drawing.Point(70, 3);
             this.kryptonLabel11.Name = "kryptonLabel11";
             this.kryptonLabel11.Size = new System.Drawing.Size(13, 20);
             this.kryptonLabel11.TabIndex = 12;
             this.kryptonLabel11.Values.Text = ":";
             // 
-            // krptAddressUG
+            // krptAddress1
             // 
-            this.krptAddress1.Location = new System.Drawing.Point(99, 3);
+            this.krptAddress1.Location = new System.Drawing.Point(89, 3);
             this.krptAddress1.MaxLength = 80;
             this.krptAddress1.Name = "krptAddress1";
             this.krptAddress1.Size = new System.Drawing.Size(402, 23);
             this.krptAddress1.TabIndex = 11;
             // 
-            // flpAddressEN
+            // flpAddress2
             // 
             this.flpAddress2.Controls.Add(this.krplAddress2);
             this.flpAddress2.Controls.Add(this.kryptonLabel14);
@@ -691,25 +692,25 @@
             this.flpAddress2.Size = new System.Drawing.Size(570, 31);
             this.flpAddress2.TabIndex = 0;
             // 
-            // krplAddressEN
+            // krplAddress2
             // 
             this.krplAddress2.Location = new System.Drawing.Point(3, 3);
             this.krplAddress2.Name = "krplAddress2";
-            this.krplAddress2.Size = new System.Drawing.Size(70, 20);
+            this.krplAddress2.Size = new System.Drawing.Size(61, 20);
             this.krplAddress2.TabIndex = 13;
             this.krplAddress2.Values.Text = "Address2";
             // 
             // kryptonLabel14
             // 
-            this.kryptonLabel14.Location = new System.Drawing.Point(79, 3);
+            this.kryptonLabel14.Location = new System.Drawing.Point(70, 3);
             this.kryptonLabel14.Name = "kryptonLabel14";
             this.kryptonLabel14.Size = new System.Drawing.Size(13, 20);
             this.kryptonLabel14.TabIndex = 12;
             this.kryptonLabel14.Values.Text = ":";
             // 
-            // krptAddressEN
+            // krptAddress2
             // 
-            this.krptAddress2.Location = new System.Drawing.Point(98, 3);
+            this.krptAddress2.Location = new System.Drawing.Point(89, 3);
             this.krptAddress2.MaxLength = 80;
             this.krptAddress2.Name = "krptAddress2";
             this.krptAddress2.Size = new System.Drawing.Size(403, 23);

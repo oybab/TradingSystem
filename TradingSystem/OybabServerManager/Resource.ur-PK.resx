@@ -1,0 +1,1947 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="About" xml:space="preserve">
+    <value>کے  مطابق</value>
+  </data>
+	<data name="Add" xml:space="preserve">
+    <value>شامل  کریں</value>
+  </data>
+	<data name="Change" xml:space="preserve">
+    <value>ترمیم  کریں</value>
+  </data>
+	<data name="ChangeFaild" xml:space="preserve">
+    <value>تر میم  میں  ناکامی !‏</value>
+  </data>
+	<data name="ChangePassword" xml:space="preserve">
+    <value>پاسورڈ  تبدیل  کرنا</value>
+  </data>
+	<data name="ChangeSuccess" xml:space="preserve">
+    <value>ترمیم  میں  کامیابی !‏</value>
+  </data>
+	<data name="Close" xml:space="preserve">
+    <value>بند  کرنا</value>
+  </data>
+	<data name="Company" xml:space="preserve">
+    <value>Hotan Oybab انفارمیشن اینڈ ٹیکنالوجی کمپنی</value>
+  </data>
+	<data name="ConfirmPassword" xml:space="preserve">
+    <value>پاسورڈ  کی  تصدیق  کریں</value>
+  </data>
+	<data name="Copyright" xml:space="preserve">
+    <value>Oybab کمپنی  کے  جملہ حقوق  محفوظ  ہیں ‏.‏</value>
+  </data>
+	<data name="Delete" xml:space="preserve">
+    <value>ڈلیٹ  کریں</value>
+  </data>
+	<data name="DeleteFailt" xml:space="preserve">
+    <value>ڈلیٹ  منسوخ  ہوِ‏یٴ !‏</value>
+  </data>
+	<data name="DeleteSuccess" xml:space="preserve">
+    <value>ڈلیٹ  میں  کامیابی !‏</value>
+  </data>
+	<data name="Exit" xml:space="preserve">
+    <value>واپسی</value>
+  </data>
+	<data name="FontName" xml:space="preserve">
+    <value>Microsoft YaHei, Aria</value>
+  </data>
+	<data name="FontSize" xml:space="preserve">
+    <value>12</value>
+  </data>
+	<data name="Id" xml:space="preserve">
+    <value>سیریل  نمبر</value>
+  </data>
+	<data name="Language" xml:space="preserve">
+    <value>زبان</value>
+  </data>
+	<data name="Login" xml:space="preserve">
+    <value>لاگ  ان</value>
+  </data>
+	<data name="LoginValid" xml:space="preserve">
+    <value>براہ کرم معلومات  {0} کا درست اندراج  کریں !‏</value>
+  </data>
+	<data name="NewPassword" xml:space="preserve">
+    <value>نیا  پاسورڈ</value>
+  </data>
+	<data name="No" xml:space="preserve">
+    <value>نہیں</value>
+  </data>
+	<data name="OldPassword" xml:space="preserve">
+    <value>پرانا  پاسورڈ</value>
+  </data>
+	<data name="OldPasswordFaild" xml:space="preserve">
+    <value>پرانا پاس ورڈ غلط ہے ، براہ کرم دوبارہ اندراج کریں !‏</value>
+  </data>
+	<data name="Password" xml:space="preserve">
+    <value>پاسورڈ</value>
+  </data>
+	<data name="PwdError" xml:space="preserve">
+    <value>پاسورڈ غلط  ہے !‏</value>
+  </data>
+	<data name="Refresh" xml:space="preserve">
+    <value>ریفریش</value>
+  </data>
+	<data name="Retry" xml:space="preserve">
+    <value>دوبارہ  کوشش  کریں</value>
+  </data>
+	<data name="RightToLeft" xml:space="preserve">
+    <value>1</value>
+  </data>
+	<data name="Save" xml:space="preserve">
+    <value>محفوظ کریں</value>
+  </data>
+	<data name="SaveFailt" xml:space="preserve">
+    <value>محفوظ کرنے  میں ناکامی !‏</value>
+  </data>
+	<data name="SaveSuccess" xml:space="preserve">
+    <value>محفوظ کرنے  میں  کامیابی !‏</value>
+  </data>
+	<data name="Search" xml:space="preserve">
+    <value>چیک  کریں</value>
+  </data>
+	<data name="Total" xml:space="preserve">
+    <value>ٹوٹل</value>
+  </data>
+	<data name="TwoNewPasswordNotEqual" xml:space="preserve">
+    <value>اندراج کردہ دو نئے پاس ورڈ متضاد ہیں ، براہ کرم دوبارہ اندراج کریں !‏</value>
+  </data>
+	<data name="UpdateInfo" xml:space="preserve">
+    <value>نیا ورژن</value>
+  </data>
+	<data name="USBKey_Warn" xml:space="preserve">
+    <value>براہ کرم USB-KEY داخل کریں اور جاری رکھنے کے لئے [دوبارہ کوشش کریں] پر کلک کریں ، یا پروگرام سے باہر آنے کیلئے [باہر نکلیں] پر کلک کریں!‏</value>
+  </data>
+	<data name="UserLogin" xml:space="preserve">
+    <value>یوزر  لاگ ان</value>
+  </data>
+	<data name="Yes" xml:space="preserve">
+    <value>ہاں</value>
+  </data>
+	<data name="Abort" xml:space="preserve">
+    <value>خارج  کریں</value>
+  </data>
+	<data name="Cancel" xml:space="preserve">
+    <value>کینسل  کریں</value>
+  </data>
+	<data name="Ignore" xml:space="preserve">
+    <value>نظر انداز کریں</value>
+  </data>
+	<data name="UserName" xml:space="preserve">
+    <value>صارف  کا  نام</value>
+  </data>
+	<data name="Warn" xml:space="preserve">
+    <value>وارننگ</value>
+  </data>
+	<data name="OK" xml:space="preserve">
+    <value>کنفرم</value>
+  </data>
+	<data name="Error" xml:space="preserve">
+    <value>غلطی</value>
+  </data>
+	<data name="CurrentKeyName" xml:space="preserve">
+    <value>موجودہ USB-KEY کا  نام ہے: {0}.‏</value>
+  </data>
+	<data name="Exception_CheckSqlAndNet" xml:space="preserve">
+    <value>ڈیٹا بیس کنکشن کی خرابی ، براہ کرم نیٹ ورک یا ڈیٹا بیس کنکشن کی تشکیل کی جانچ کریں !‏</value>
+  </data>
+	<data name="Exception_LoadCacheError" xml:space="preserve">
+    <value>کیشے  اپلوڈ  میں  خرابی .‏</value>
+  </data>
+	<data name="Exception_LoadMediaRoot" xml:space="preserve">
+    <value>بھرے ہوئیےگانوں  کی اصل راہ غلط ہے ، براہ کرم کنفیگریشن فائل چیک کریں !‏</value>
+  </data>
+	<data name="Exception_NotSupprtKey" xml:space="preserve">
+    <value>ڈیٹا بیس سے رابطہ قائم کرنے سے قاصر ، یہ USB-KEY معاون نہیں ہے.‏</value>
+  </data>
+	<data name="InputData" xml:space="preserve">
+    <value>امپورٹ ڈیٹا</value>
+  </data>
+	<data name="OutputData" xml:space="preserve">
+    <value>برآمد ڈیٹا</value>
+  </data>
+	<data name="UpdateNonReturnOrCantRead" xml:space="preserve">
+    <value>اپ  ڈیٹ   کا اعداد و شمار خالی ہے یا تجزیہ ناکام .‏</value>
+  </data>
+	<data name="UpdateUnableError" xml:space="preserve">
+    <value>اپ ڈیٹ  کی   نامعلوم خامی چیک  کرنا، کوڈ: {0} .‏</value>
+  </data>
+	<data name="CompanyLogoImage" xml:space="preserve">
+    <value>logo.png</value>
+  </data>
+	<data name="Exception_ReadResourceStrError" xml:space="preserve">
+    <value>وسائل کے حروف کو پڑھنے میں ناکامی !‏</value>
+  </data>
+	<data name="Exception_InputData" xml:space="preserve">
+    <value>ڈیٹا درآمد کرنے میں ناکامی !‏</value>
+  </data>
+	<data name="Exception_InputReadData" xml:space="preserve">
+    <value>ڈیٹا درآمد  کرنے اور پڑھنے میں ناکامی !‏</value>
+  </data>
+	<data name="Exception_OutputData" xml:space="preserve">
+    <value>ڈیٹا برآمد کرنے میں ناکامی !‏</value>
+  </data>
+	<data name="InputDataSuccess" xml:space="preserve">
+    <value>ڈیٹا درآمد کرنے  میں  کامیابی !‏</value>
+  </data>
+	<data name="OutputDataSuccess" xml:space="preserve">
+    <value>ڈیٹا برآمد کرنے  میں  کامیابی !‏</value>
+  </data>
+	<data name="File" xml:space="preserve">
+    <value>فائل</value>
+  </data>
+	<data name="Tools" xml:space="preserve">
+    <value>ٹولز</value>
+  </data>
+	<data name="All" xml:space="preserve">
+    <value>سب</value>
+  </data>
+	<data name="FolderName" xml:space="preserve">
+    <value>فولڈر کا نام</value>
+  </data>
+	<data name="IgnoreData" xml:space="preserve">
+    <value>کیا آپ واقعی غیر محفوظ ڈیٹا کو نظرانداز کرنا چاہتے ہیں ؟‏</value>
+  </data>
+	<data name="ImageName" xml:space="preserve">
+    <value>تصویر کا نام</value>
+  </data>
+	<data name="More" xml:space="preserve">
+    <value>مزیز</value>
+  </data>
+	<data name="Page" xml:space="preserve">
+    <value>صفحہ</value>
+  </data>
+	<data name="AddDescription" xml:space="preserve">
+    <value>نیا ڈیٹا شامل کریں‏.‏</value>
+  </data>
+	<data name="DeleteDescription" xml:space="preserve">
+    <value>موجودہ ڈیٹا کو ڈلیٹ کریں.‏</value>
+  </data>
+	<data name="PleaseEditBefore" xml:space="preserve">
+    <value>براہ کرم پہلے ترمیم مکمل کریں !‏</value>
+  </data>
+	<data name="SaveDescription" xml:space="preserve">
+    <value>فی الحال موجودہ یا تبدیل شدہ ڈیٹا کو محفوظ کریں</value>
+  </data>
+	<data name="SureDelete" xml:space="preserve">
+    <value>کیا آپ واقعی اسے ڈلیٹ کرنا چاہتے ہیں؟‏</value>
+  </data>
+	<data name="FileName" xml:space="preserve">
+    <value>فائل کا نام</value>
+  </data>
+	<data name="Exception_NotFound" xml:space="preserve">
+    <value>یہ {0} نہیں ملا !‏</value>
+  </data>
+	<data name="ErrorBig" xml:space="preserve">
+    <value>خامیاں ملیں</value>
+  </data>
+	<data name="Select" xml:space="preserve">
+    <value>منتخب کریں</value>
+  </data>
+	<data name="System" xml:space="preserve">
+    <value>سسٹم</value>
+  </data>
+	<data name="AllPage" xml:space="preserve">
+    <value>تمام  :</value>
+  </data>
+	<data name="AllPage2" xml:space="preserve">
+    <value>صفحہ</value>
+  </data>
+	<data name="CurrentPage" xml:space="preserve">
+    <value>موجودہ: نمبر</value>
+  </data>
+	<data name="CurrentPage2" xml:space="preserve">
+    <value>صفحہ</value>
+  </data>
+	<data name="LastPage" xml:space="preserve">
+    <value>سابقہ ​​صفحہ</value>
+  </data>
+	<data name="NextPage" xml:space="preserve">
+    <value>اگلا صفحہ</value>
+  </data>
+	<data name="CompanyUrlStr" xml:space="preserve">
+    <value>یو آر ایل</value>
+  </data>
+	<data name="ExitPassword" xml:space="preserve">
+    <value>مخرج  پاس ورڈ</value>
+  </data>
+	<data name="MobileNoStr" xml:space="preserve">
+    <value>فون</value>
+  </data>
+	<data name="Reset" xml:space="preserve">
+    <value>ری سیٹ کریں</value>
+  </data>
+	<data name="NotFoundUSBKEY" xml:space="preserve">
+    <value>USB-KEY  نہیں  ملی !‏</value>
+  </data>
+	<data name="Back" xml:space="preserve">
+    <value>واپسی</value>
+  </data>
+	<data name="MuteRestore" xml:space="preserve">
+    <value>بحال</value>
+  </data>
+	<data name="UpdateAlert" xml:space="preserve">
+    <value>سسٹم کا نیا ورژن ڈھونڈیں ، براہ کرم ڈاؤن لوڈ کریں اور وقت پر اپ  ڈیٹ  کریں !‏</value>
+  </data>
+	<data name="Exception_CheckSqlAndFile" xml:space="preserve">
+    <value>ڈیٹا بیس کنکشن کی خرابی ، براہ کرم ڈیٹا بیس فائل یا ڈیٹا بیس کنکشن کی تشکیل کی جانچ کیجیَے !‏</value>
+  </data>
+	<data name="CompanyShortName" xml:space="preserve">
+    <value>OYBAB</value>
+  </data>
+	<data name="CompleteInput" xml:space="preserve">
+    <value>براہ کرم مکمل طور پر ڈیٹا درج کریں !‏</value>
+  </data>
+	<data name="VersionNo" xml:space="preserve">
+    <value>ورژن نمبر</value>
+  </data>
+	<data name="SoftPlayerDescription" xml:space="preserve">
+    <value>اگر کوئی رائے یا مشورے ہیں تو براہ کرم ہم سے رابطہ کریں۔ براہ کرم رابطہ کی معلومات دیکھیں: "سسٹم --- کے بارے میں" .‏</value>
+  </data>
+	<data name="ChangeLanguage" xml:space="preserve">
+    <value>زبان تبدیل کریں</value>
+  </data>
+	<data name="ChangeLanguageFailt" xml:space="preserve">
+    <value>زبان کو تبدیل کرنے میں ناکامی !‏</value>
+  </data>
+	<data name="ChangeLanguageSuccess" xml:space="preserve">
+    <value>اگلی  دفعہ  سستم  شروع  ھونے  کے  ساتھ ساتھ  ،  زبان  کی  تبدیلی  کامیاب  ہوجاےَ  گی  !‏</value>
+  </data>
+	<data name="Exception_InvalidLanguage" xml:space="preserve">
+    <value>سسٹم کی زبان غلط ہے یا موجود نہیں ہے ، براہ کرم کنفیگریشن فائل چیک کریں !‏</value>
+  </data>
+	<data name="Exception_LogError" xml:space="preserve">
+    <value>لاگ لوڈ کرنے میں ناکامی !‏</value>
+  </data>
+	<data name="FontName2" xml:space="preserve">
+    <value>Arial</value>
+  </data>
+	<data name="Help" xml:space="preserve">
+    <value>مدد</value>
+  </data>
+	<data name="Exception_InvalidDB" xml:space="preserve">
+    <value>ڈیٹا بیس فائل غلط ہے !‏</value>
+  </data>
+	<data name="Exception_KeyKeyError" xml:space="preserve">
+    <value>یو  ایس  بی  ۔کی  کی  کی  خامی۰غلطی: {0}، {1}.‏</value>
+  </data>
+	<data name="Exception_ApplicationCheckFaild" xml:space="preserve">
+    <value>درخواست کی تصدیق ناکام !‏</value>
+  </data>
+	<data name="Exception_CloseRequestFaild" xml:space="preserve">
+    <value>سیشن بند کرنے کی درخواست بھیجنے میں خامی !‏</value>
+  </data>
+	<data name="Exception_EncryptedRequestFaild" xml:space="preserve">
+    <value>خفیہ کاری کی درخواست بھیجنے میں خامی !‏</value>
+  </data>
+	<data name="Exception_LockRequestFaild" xml:space="preserve">
+    <value>لاک کی درخواست بھیجنے میں خرابی !‏</value>
+  </data>
+	<data name="Exception_NewRequestFailt" xml:space="preserve">
+    <value>نئی سیشن کی درخواست بھیجنے میں خامی! {0} غلطی کا کوڈ: 101</value>
+  </data>
+	<data name="Exception_OutClientLimitFaild" xml:space="preserve">
+    <value>کلائنٹ کنکشن کی حد سے تجاوز کر گیا! {0} غلطی کا کوڈ: 102</value>
+  </data>
+	<data name="Exception_RemoteServerConn" xml:space="preserve">
+    <value>ریموٹ سرور سے رابطہ قائم کرنے سے قاصر ہے !‏</value>
+  </data>
+	<data name="Exception_ServerCantCorrConn" xml:space="preserve">
+    <value>سرور کے ساتھ سیشن کو عام طور پر برقرار نہیں رکھا  جا سکتا! براہ کرم جاری رکھنے کے لئے [دوبارہ کوشش کریں] پر کلک کریں ، یا نظام سے باہر آنے کے لئے [باہر نکلیں] پر کلک کریں ‏!‏</value>
+  </data>
+	<data name="Exception_ServerCheckFaild" xml:space="preserve">
+    <value>کی  غلطی  کے  لیےءسرور  چیک  کریں !‏</value>
+  </data>
+	<data name="Exception_ServerFaild" xml:space="preserve">
+    <value>سرور  میں  خامی  کی  پیشگی !‏</value>
+  </data>
+	<data name="Exception_ServerKeyFaild" xml:space="preserve">
+    <value>سرور  میں  KEY    خامی!‏</value>
+  </data>
+	<data name="Exception_SessionExpiredRetry" xml:space="preserve">
+    <value>سیشن کی میعاد ختم ہوگئی ہے ، براہ کرم دوبارہ کوشش کریں !‏</value>
+  </data>
+	<data name="Exception_SessionFaildAndTry" xml:space="preserve">
+    <value>سیشن کی میعاد ختم ہوگئی ، اسے دوبارہ لینے کی کوشش کریں !‏</value>
+  </data>
+	<data name="Exception_SessionRequestFaild" xml:space="preserve">
+    <value>سیشن  کی  درخواست بھیجنا  جاری  رکھنے  میں  خامی !‏</value>
+  </data>
+	<data name="Exception_SessionUpdateFaild" xml:space="preserve">
+    <value>سیشن اپ ڈیٹ ناکامی !‏</value>
+  </data>
+	<data name="Exception_UIDRequestFaild" xml:space="preserve">
+    <value>UID   حاصل کرنے کے لئے درخواست بھیجنے میں ناکامی !‏</value>
+  </data>
+	<data name="SessionUpdateSuccess" xml:space="preserve">
+    <value>سیشن کامیابی کے ساتھ اپ ڈیٹ ہوا۔ .‏</value>
+  </data>
+	<data name="Exception_SetClientTimeFailt" xml:space="preserve">
+    <value>سرور کے وقت کو کلائنٹ کے وقت میں درجہ بندی کرنے میں ناکامی .‏</value>
+  </data>
+	<data name="IsHidden" xml:space="preserve">
+    <value>چھپانا</value>
+  </data>
+	<data name="Exception_CheckDataFaild" xml:space="preserve">
+    <value>ریموٹ سرور ڈیٹا کے حصول میں خرابی !‏</value>
+  </data>
+	<data name="Exception_DataNotReady" xml:space="preserve">
+    <value>ریموٹ سرور ڈیٹا تیار نہیں ہے! براہ کرم کچھ دیر بعد کوشش کریں! غلطی کا کوڈ: 107</value>
+  </data>
+	<data name="Exception_ChangePWDRequestFaild" xml:space="preserve">
+    <value>پاس ورڈ میں ترمیم کی درخواست بھیجنے میں خامی !‏</value>
+  </data>
+	<data name="Exception_ValidPWDRequestFaild" xml:space="preserve">
+    <value>تصدیق  کے  پاسورڈ  کی  درخواست  بھیجنے  میں  غلطی !‏</value>
+  </data>
+	<data name="ContactUs" xml:space="preserve">
+    <value>ہم سے رابطہ کریں</value>
+  </data>
+	<data name="Consumption" xml:space="preserve">
+    <value>کھپت</value>
+  </data>
+	<data name="DealerContactWay" xml:space="preserve">
+    <value>ڈیلر سے رابطہ</value>
+  </data>
+	<data name="Mode" xml:space="preserve">
+    <value>ماڈل</value>
+  </data>
+	<data name="Remark" xml:space="preserve">
+    <value>ریمارکس</value>
+  </data>
+	<data name="Other" xml:space="preserve">
+    <value>دیگر</value>
+  </data>
+	<data name="Exception_IPConflict" xml:space="preserve">
+    <value>آیٴ  پی   ایڈریس میں  تنازعہ ، دوبارہ شروع کریں !‏</value>
+  </data>
+	<data name="Exception_SessionInvalid" xml:space="preserve">
+    <value>غلط سیشن ، دوبارہ شروع کریں !‏</value>
+  </data>
+	<data name="Exception_InvalidPending" xml:space="preserve">
+    <value>غلط  ماڈل !‏</value>
+  </data>
+	<data name="Exception_IPInvalid" xml:space="preserve">
+    <value>غلط IP پتہ ، براہ کرم کسٹمر سروس سے رابطہ کریں ‏!‏</value>
+  </data>
+	<data name="Exception_OrderExpired" xml:space="preserve">
+    <value>بل کی میعاد ختم ہوگئی ہے ، براہ کرم کسٹمر سروس سے رابطہ کریں ‏!‏</value>
+  </data>
+	<data name="Exception_OrderInvalid" xml:space="preserve">
+    <value>بل غلط ہے ، براہ کرم کسٹمر سروس سے رابطہ کریں ‏!‏</value>
+  </data>
+	<data name="Exception_SendRequestFaild" xml:space="preserve">
+    <value>اطلاع  بھیجنے  کی  درخواست  میں  غلطی !‏</value>
+  </data>
+	<data name="Exception_SetConRequestFaild" xml:space="preserve">
+    <value>سیٹنگ  کی  درخواست  بھیجنے  میں  غلطی !‏</value>
+  </data>
+	<data name="Exception_OperateRequestFaild" xml:space="preserve">
+    <value>آپریشن کی درخواست بھیجنے میں غلطی !‏</value>
+  </data>
+	<data name="ChangeSet" xml:space="preserve">
+    <value>فنکشن کی ترتیب</value>
+  </data>
+	<data name="ExpenditureManager" xml:space="preserve">
+    <value>اخراجات کا انتظام</value>
+  </data>
+	<data name="MainPage" xml:space="preserve">
+    <value>ہوم پیج</value>
+  </data>
+	<data name="OrderManager" xml:space="preserve">
+    <value>بل مینجمنٹ</value>
+  </data>
+	<data name="ProductManager" xml:space="preserve">
+    <value>پروڈکٹ مینجمنٹ</value>
+  </data>
+	<data name="ProductTypeManager" xml:space="preserve">
+    <value>پراڈکٹ کی اقسام کا انتظام</value>
+  </data>
+	<data name="RoomManager" xml:space="preserve">
+    <value>لاؤنج مینجمنٹ</value>
+  </data>
+	<data name="SoftServiceName" xml:space="preserve">
+    <value>Oybab ٹریڈنگ سسٹم v1.1</value>
+  </data>
+	<data name="OperateFaild" xml:space="preserve">
+    <value>{0} ناکام !‏</value>
+  </data>
+	<data name="ActualPrice" xml:space="preserve">
+    <value>اصل قیمت</value>
+  </data>
+	<data name="AddTime" xml:space="preserve">
+    <value>وقت شامل کریں</value>
+  </data>
+	<data name="Backstage" xml:space="preserve">
+    <value>فورم کے پیچھے</value>
+  </data>
+	<data name="Count" xml:space="preserve">
+    <value>مقدار</value>
+  </data>
+	<data name="DealsPrice" xml:space="preserve">
+    <value>رعایتی قیمت</value>
+  </data>
+	<data name="Display" xml:space="preserve">
+    <value>ڈسپلے</value>
+  </data>
+	<data name="DisplayType" xml:space="preserve">
+    <value>ڈسپلے کی قسم</value>
+  </data>
+	<data name="EndTime" xml:space="preserve">
+    <value>آخری وقت</value>
+  </data>
+	<data name="FinishTime" xml:space="preserve">
+    <value>مکمل وقت</value>
+  </data>
+	<data name="Hide" xml:space="preserve">
+    <value>چھپانا</value>
+  </data>
+	<data name="ImportTime" xml:space="preserve">
+    <value>اخراجات کی تاریخ</value>
+  </data>
+	<data name="IpAddress" xml:space="preserve">
+    <value>آٴی  پی  ایڈریس</value>
+  </data>
+	<data name="Order" xml:space="preserve">
+    <value>ترتیب</value>
+  </data>
+	<data name="ProductName" xml:space="preserve">
+    <value>پروڈکٹ کا نام</value>
+  </data>
+	<data name="ProductTypeName" xml:space="preserve">
+    <value>پراڈکٹ کی قسم کا نام</value>
+  </data>
+	<data name="RoomNo" xml:space="preserve">
+    <value>لاؤنج نمبر</value>
+  </data>
+	<data name="StartTime" xml:space="preserve">
+    <value>ابتدا یٴ  ٹایَم</value>
+  </data>
+	<data name="State" xml:space="preserve">
+    <value>حالت</value>
+  </data>
+	<data name="TotalPrice" xml:space="preserve">
+    <value>کل قیمت</value>
+  </data>
+	<data name="UnitPrice" xml:space="preserve">
+    <value>اکائی قیمت</value>
+  </data>
+	<data name="PropertyUsed" xml:space="preserve">
+    <value>براہ کرم پہلے اس ڈیٹا سے وابستہ ڈیٹا میں ترمیم یا ڈیلیٹ  کریں !‏</value>
+  </data>
+	<data name="Exception_CountOutOfIPRequestLimit" xml:space="preserve">
+    <value>بہت ساری بار بار درخواستیں ، براہ کرم بعد میں دوبارہ کوشش کریں! غلطی کا کوڈ: 103</value>
+  </data>
+	<data name="Exception_ExceptionSource" xml:space="preserve">
+    <value>{2}  خرابی کی  ابتداء:{0} {1}</value>
+  </data>
+	<data name="PropertyExists" xml:space="preserve">
+    <value>{0} پہلے سے موجود ہے ، براہ کرم دوبارہ داخل نہ ہوں !‏</value>
+  </data>
+	<data name="Checkout" xml:space="preserve">
+    <value>بل</value>
+  </data>
+	<data name="Invalid" xml:space="preserve">
+    <value>ناکابل  استعمال</value>
+  </data>
+	<data name="Confirmed" xml:space="preserve">
+    <value>تصدیق شدہ</value>
+  </data>
+	<data name="GetFailed" xml:space="preserve">
+    <value>حصول ناکام !‏</value>
+  </data>
+	<data name="OrderDetails" xml:space="preserve">
+    <value>بل کی تفصیلات</value>
+  </data>
+	<data name="OrderNo" xml:space="preserve">
+    <value>بل نمبر</value>
+  </data>
+	<data name="PropertyError" xml:space="preserve">
+    <value>داخل کردہ {0} نامکمل یا غلط ہے !‏</value>
+  </data>
+	<data name="Requesting" xml:space="preserve">
+    <value>درخواست کرنا</value>
+  </data>
+	<data name="Show" xml:space="preserve">
+    <value>دیکھیں</value>
+  </data>
+	<data name="ShowDescription" xml:space="preserve">
+    <value>تفصیلات دیکھیں</value>
+  </data>
+	<data name="Time" xml:space="preserve">
+    <value>وقت</value>
+  </data>
+	<data name="TimeLimit" xml:space="preserve">
+    <value>تلاش کا وقفہ لازمی {0} دن میں ہونا چاہئے !‏</value>
+  </data>
+	<data name="ImportDetails" xml:space="preserve">
+    <value>اخراجات کی تفصیلات</value>
+  </data>
+	<data name="ImportId" xml:space="preserve">
+    <value>اخراجات نمبر</value>
+  </data>
+	<data name="Print" xml:space="preserve">
+    <value>پرنٹ کریں</value>
+  </data>
+	<data name="PrintDescription" xml:space="preserve">
+    <value>پرنٹ  کا  مواد</value>
+  </data>
+	<data name="AddImport" xml:space="preserve">
+    <value>نیا خرچ</value>
+  </data>
+	<data name="LineDataError" xml:space="preserve">
+    <value>لائن {0} پر ڈیٹا ان پٹ نامکمل ہے یا غلط ہے !‏</value>
+  </data>
+	<data name="BalanceCount" xml:space="preserve">
+    <value>باقی رقم</value>
+  </data>
+	<data name="Exception_ProductCountRefreshExpiredRetry" xml:space="preserve">
+    <value>پراڈکٹس کی مقدار کی میعاد ختم ہوگئی ہے ، براہ کرم دوبارہ کوشش کریں !‏</value>
+  </data>
+	<data name="Exception_ProductCountRefreshFailed" xml:space="preserve">
+    <value>پراڈکٹ کی اپ  ڈیٹ ناکام !‏</value>
+  </data>
+	<data name="Exception_ProductCountRefreshRetry" xml:space="preserve">
+    <value>پراڈکٹس کی مقدار کافی نہیں ہے ، دوبارہ مصنوع حاصل کرنے کی کوشش کریں !‏</value>
+  </data>
+	<data name="IsBindCount" xml:space="preserve">
+    <value>بائنڈنگ کی  تعداد</value>
+  </data>
+	<data name="ProductCountRefreshSuccess" xml:space="preserve">
+    <value>پراڈکٹ  کی  اپ  ڈیٹ  کامیاب  ہوِیَ.‏</value>
+  </data>
+	<data name="WarningCount" xml:space="preserve">
+    <value>وارننگ  کی  تعداد</value>
+  </data>
+	<data name="Call" xml:space="preserve">
+    <value>کال کریں</value>
+  </data>
+	<data name="ConsumptionType" xml:space="preserve">
+    <value>کھپت کنٹرول</value>
+  </data>
+	<data name="ControlType" xml:space="preserve">
+    <value>ریموٹ کنٹرول</value>
+  </data>
+	<data name="CostPrice" xml:space="preserve">
+    <value>لاگت کی قیمت</value>
+  </data>
+	<data name="New" xml:space="preserve">
+    <value>نیا</value>
+  </data>
+	<data name="Offline" xml:space="preserve">
+    <value>آف لائن</value>
+  </data>
+	<data name="Online" xml:space="preserve">
+    <value>آن  لائن</value>
+  </data>
+	<data name="PaidPrice" xml:space="preserve">
+    <value>ادائیگی کی رقم</value>
+  </data>
+	<data name="PermissionDenied" xml:space="preserve">
+    <value>اجازت نہیں دی گئی !‏</value>
+  </data>
+	<data name="BalancePrice" xml:space="preserve">
+    <value>بقیہ</value>
+  </data>
+	<data name="ChangePrice" xml:space="preserve">
+    <value>قیمت میں ترمیم کریں</value>
+  </data>
+	<data name="ChangeTime" xml:space="preserve">
+    <value>وقت کی  تبدیلی</value>
+  </data>
+	<data name="Disable" xml:space="preserve">
+    <value>بند کرو</value>
+  </data>
+	<data name="Enable" xml:space="preserve">
+    <value>آن کر و</value>
+  </data>
+	<data name="Hour" xml:space="preserve">
+    <value>گھنٹے</value>
+  </data>
+	<data name="InvalidIt" xml:space="preserve">
+    <value>ناکابل  استعمال</value>
+  </data>
+	<data name="Minute" xml:space="preserve">
+    <value>منٹ</value>
+  </data>
+	<data name="RemainingTime" xml:space="preserve">
+    <value>باقی  ٹایَم</value>
+  </data>
+	<data name="TotalTime" xml:space="preserve">
+    <value>ٹوٹل  ٹایَم</value>
+  </data>
+	<data name="BalanceCountNotEnough" xml:space="preserve">
+    <value>آپریشن ناکام ، اس پراڈکٹ کی باقی مقدار صرف {0} ہے !‏</value>
+  </data>
+	<data name="CancelOrder" xml:space="preserve">
+    <value>بل منسوخ کریں</value>
+  </data>
+	<data name="CancelOrderDescription" xml:space="preserve">
+    <value>موجودہ  بل  منسوخ  کرِیں</value>
+  </data>
+	<data name="CheckoutOrder" xml:space="preserve">
+    <value>بل  ادا  کریں</value>
+  </data>
+	<data name="CheckoutOrderDescription" xml:space="preserve">
+    <value>موجودہ  بل  ادا  کریں .‏</value>
+  </data>
+	<data name="ConfirmCancelOrder" xml:space="preserve">
+    <value>موجودہ بل کو منسوخ کرنے کی تصدیق کریں ؟‏</value>
+  </data>
+	<data name="FaildThenRefreshModel" xml:space="preserve">
+    <value>آپریشن ناکام ، بل میں ترمیم کی گئی ہے ، بل کی معلومات  اپ ڈیٹ کرنے کی کوشش کے لئے تیار ہے !‏</value>
+  </data>
+	<data name="Locked" xml:space="preserve">
+    <value>لاک  ان</value>
+  </data>
+	<data name="NewOrder" xml:space="preserve">
+    <value>نیا بل</value>
+  </data>
+	<data name="NewOrderDescription" xml:space="preserve">
+    <value>ایک نیا بل بنائیں .‏</value>
+  </data>
+	<data name="OperateSuccess" xml:space="preserve">
+    <value>{0} کامیابی !‏</value>
+  </data>
+	<data name="RefreshOrderFailed" xml:space="preserve">
+    <value>موجودہ بل کو اپ ڈیٹ کرنے میں ناکام !‏</value>
+  </data>
+	<data name="ReplaceRoom" xml:space="preserve">
+    <value>لاؤنج  تبدیل  کریں</value>
+  </data>
+	<data name="ReplaceRoomDescription" xml:space="preserve">
+    <value>موجودہ لاؤنج کو کسی اور لاؤنج سے تبدیل کریں .‏</value>
+  </data>
+	<data name="Request" xml:space="preserve">
+    <value>درخواست</value>
+  </data>
+	<data name="Restart" xml:space="preserve">
+    <value>ری سٹارٹ کریں</value>
+  </data>
+	<data name="RestartDescription" xml:space="preserve">
+    <value>کمپیوٹر  ری  سٹارٹ  کریں .‏</value>
+  </data>
+	<data name="SaveBeforeDelete" xml:space="preserve">
+    <value>براہ کرم پہلے ڈیٹا کو سیو  کریں !‏</value>
+  </data>
+	<data name="ShowOrder" xml:space="preserve">
+    <value>بل دیکھیں</value>
+  </data>
+	<data name="ShowOrderDescription" xml:space="preserve">
+    <value>بل کی تفصیلات دیکھیں .‏</value>
+  </data>
+	<data name="Shutdown" xml:space="preserve">
+    <value>بند</value>
+  </data>
+	<data name="ShutdownDescription" xml:space="preserve">
+    <value>کمپیوٹر  بند  کریں .‏</value>
+  </data>
+	<data name="UnevenBalance" xml:space="preserve">
+    <value>ناہموار  بیلنس !‏</value>
+  </data>
+	<data name="Confirm" xml:space="preserve">
+    <value>کنفرم</value>
+  </data>
+	<data name="NewRoom" xml:space="preserve">
+    <value>نیا  لاؤنج</value>
+  </data>
+	<data name="SendFireAlarm" xml:space="preserve">
+    <value>فائر الارم بھیجیں</value>
+  </data>
+	<data name="Barcode" xml:space="preserve">
+    <value>بار کوڈ</value>
+  </data>
+	<data name="Disabled" xml:space="preserve">
+    <value>غیر فعال</value>
+  </data>
+	<data name="Price" xml:space="preserve">
+    <value>قیمت</value>
+  </data>
+	<data name="IsPayByTime" xml:space="preserve">
+    <value>ٹایَم  کے  مطابق  یا  نہیں</value>
+  </data>
+	<data name="PriceHour" xml:space="preserve">
+    <value>وقت  کی  قیمت</value>
+  </data>
+	<data name="IsAutoExtendTime" xml:space="preserve">
+    <value>خود بخود وقت میں توسیع کریں  یا  نا  کریں</value>
+  </data>
+	<data name="PropertyUnSame" xml:space="preserve">
+    <value>ڈیٹا متضاد ہے ، براہ کرم ریسٹارٹ  کریں اور دوبارہ کوشش کریں !‏</value>
+  </data>
+	<data name="AdminName" xml:space="preserve">
+    <value>ایڈمنسٹریٹر کا نام</value>
+  </data>
+	<data name="AdminManager" xml:space="preserve">
+    <value>ایڈمنسٹریٹر مینجمنٹ</value>
+  </data>
+	<data name="AdminNo" xml:space="preserve">
+    <value>ایڈمن نمبر</value>
+  </data>
+	<data name="Sex" xml:space="preserve">
+    <value>صنف</value>
+  </data>
+	<data name="IDNumber" xml:space="preserve">
+    <value>شناختی نمبر</value>
+  </data>
+	<data name="Menu" xml:space="preserve">
+    <value>مینو</value>
+  </data>
+	<data name="IsOnlyOwn" xml:space="preserve">
+    <value>ممنوعہ انتظام</value>
+  </data>
+	<data name="IsEnable" xml:space="preserve">
+    <value>آن  کریں  یا  ناں</value>
+  </data>
+	<data name="Guest" xml:space="preserve">
+    <value>مہمان</value>
+  </data>
+	<data name="Employee" xml:space="preserve">
+    <value>سٹاف</value>
+  </data>
+	<data name="Admin" xml:space="preserve">
+    <value>ایڈمنسٹریٹر</value>
+  </data>
+	<data name="DeviceNo" xml:space="preserve">
+    <value>ڈیوایَس  آیَ  ڈی</value>
+  </data>
+	<data name="DeviceType" xml:space="preserve">
+    <value>ڈیوایَس  کی  اقسام</value>
+  </data>
+	<data name="DeviceManager" xml:space="preserve">
+    <value>ڈیوایَس  کا  انتظام</value>
+  </data>
+	<data name="Computer" xml:space="preserve">
+    <value>کمپیوٹر</value>
+  </data>
+	<data name="Tablet" xml:space="preserve">
+    <value>فلیٹ</value>
+  </data>
+	<data name="PrinterManager" xml:space="preserve">
+    <value>پرنٹر مینجمنٹ</value>
+  </data>
+	<data name="PrinterName" xml:space="preserve">
+    <value>پرنٹر کا نام</value>
+  </data>
+	<data name="PrinterDeviceName" xml:space="preserve">
+    <value>پرنٹر ڈیوائس کا نام</value>
+  </data>
+	<data name="PrintType" xml:space="preserve">
+    <value>پرنٹ کی قسم</value>
+  </data>
+	<data name="Customer" xml:space="preserve">
+    <value>کلائنٹ</value>
+  </data>
+	<data name="Kitchen" xml:space="preserve">
+    <value>کچن</value>
+  </data>
+	<data name="MemberNo" xml:space="preserve">
+    <value>ممبرشپ  آیَ  |ڈی</value>
+  </data>
+	<data name="MemberManager" xml:space="preserve">
+    <value>ممبرشپ مینجمنٹ</value>
+  </data>
+	<data name="MemberName" xml:space="preserve">
+    <value>ممبر  کا  نام</value>
+  </data>
+	<data name="Occupation" xml:space="preserve">
+    <value>پیشہ</value>
+  </data>
+	<data name="Mobile" xml:space="preserve">
+    <value>موبایَل  نمبر</value>
+  </data>
+	<data name="Phone" xml:space="preserve">
+    <value>فون  نمبر</value>
+  </data>
+	<data name="Address" xml:space="preserve">
+    <value>ایڈریس</value>
+  </data>
+	<data name="OfferRate" xml:space="preserve">
+    <value>100%/فروخت کا تناسب</value>
+  </data>
+	<data name="SpendPrice" xml:space="preserve">
+    <value>ادائیگی کی رقم</value>
+  </data>
+	<data name="FavorablePrice" xml:space="preserve">
+    <value>رعایتی قیمت</value>
+  </data>
+	<data name="ExpiredTime" xml:space="preserve">
+    <value>ختم ہونے کی تاریخ</value>
+  </data>
+	<data name="Male" xml:space="preserve">
+    <value>مرد</value>
+  </data>
+	<data name="Female" xml:space="preserve">
+    <value>عورت</value>
+  </data>
+	<data name="Register" xml:space="preserve">
+    <value>رجسٹرڈ</value>
+  </data>
+	<data name="MachineNo" xml:space="preserve">
+    <value>مشین کوڈ</value>
+  </data>
+	<data name="RegisterNo" xml:space="preserve">
+    <value>رجسٹریشن کوڈ</value>
+  </data>
+	<data name="SoftwareExpired" xml:space="preserve">
+    <value>سسٹم کی میعاد ختم ہوچکی ہے ، دوبارہ رجسٹر ہوں؟‏</value>
+  </data>
+	<data name="SoftwareSoonExpired" xml:space="preserve">
+    <value>یہ سسٹم {0} دن {1} میں ختم ہوجاتا ہے ، کیا آپ اب رجسٹر کرنا چاہتے ہیں؟‏</value>
+  </data>
+	<data name="SoftwareExpiredWarn" xml:space="preserve">
+    <value>عام استعمال پر اثر انداز نہ ہونے کے  لیَے، ہمارا مشورہ ہے کہ آپ ہم سے رابطہ کریں اور کم از کم 7 دن پہلے ہی سسٹم کو رجسٹر کریں!‏</value>
+  </data>
+	<data name="RegisterSuccess" xml:space="preserve">
+    <value>رجسٹریشن کامیاب ہے ، براہ کرم سسٹم کو دوبارہ سٹارٹ کریں !‏</value>
+  </data>
+	<data name="MemberPay" xml:space="preserve">
+    <value>ممبر  شپ  کی ادائیگی</value>
+  </data>
+	<data name="MemberPayDescription" xml:space="preserve">
+    <value>ممبرشپ کی ادائیگی کی تفصیلات دیکھیں</value>
+  </data>
+	<data name="MemberPayNo" xml:space="preserve">
+    <value>ممبر  شپ ادائیگی کا کوڈ</value>
+  </data>
+	<data name="MemberBalanceNotEnough" xml:space="preserve">
+    <value>ممبر  شپ بیلنس ناکافی  ہے!‏</value>
+  </data>
+	<data name="AddMember" xml:space="preserve">
+    <value>ممبر شامل کریں</value>
+  </data>
+	<data name="PropertyNotFound" xml:space="preserve">
+    <value>نہیں ملا {0} ‏!‏‏</value>
+  </data>
+	<data name="CheckoutImport" xml:space="preserve">
+    <value>چیک آؤٹ کے اخراجات</value>
+  </data>
+	<data name="RoomPrice" xml:space="preserve">
+    <value>لاؤنج  کی  قیمت</value>
+  </data>
+	<data name="CountOfoffLimit" xml:space="preserve">
+    <value>مقدار مقررہ حد سے تجاوز نہیں کرسکتی !‏</value>
+  </data>
+	<data name="MemberExpired" xml:space="preserve">
+    <value>موجودہ ممبرشپ ختم ہوگئی !‏</value>
+  </data>
+	<data name="MemberExpiredDescription" xml:space="preserve">
+    <value>ممبرشپ کی میعاد ختم ہونے کے وقت میں ترمیم کریں !‏</value>
+  </data>
+	<data name="Unknown" xml:space="preserve">
+    <value>نامعلوم</value>
+  </data>
+	<data name="NotFoundProperty_Number" xml:space="preserve">
+    <value>نہیں ملا {0}  {1}  !‏</value>
+  </data>
+	<data name="Exception_UnknownDevice" xml:space="preserve">
+    <value>ڈیوائس موجود نہیں ہے یا غیر فعال ہے! {0} غلطی کا کوڈ: 111</value>
+  </data>
+	<data name="Exception_RoomCountOutOfLimit" xml:space="preserve">
+    <value>نشستوں کی زیادہ سے زیادہ تعداد حد سے تجاوز کر گئی! {0} غلطی کا کوڈ: 104</value>
+  </data>
+	<data name="ResetDescription" xml:space="preserve">
+    <value>ایڈمنسٹریٹر کا پاس ورڈ دوبارہ ترتیب دیں</value>
+  </data>
+	<data name="SureReset" xml:space="preserve">
+    <value>کیا آپ واقعی دوبارہ سیٹ کرنا چاہتے ہیں ؟‏</value>
+  </data>
+	<data name="Exception_UnknownAdmin" xml:space="preserve">
+    <value>منتظم موجود نہیں ہے یا غیر فعال ہے! {0} غلطی کا کوڈ: 102</value>
+  </data>
+	<data name="ReturnPrice" xml:space="preserve">
+    <value>رقم کی واپسی</value>
+  </data>
+	<data name="BorrowPrice" xml:space="preserve">
+    <value>قرضے کی رقم</value>
+  </data>
+	<data name="KeepPrice" xml:space="preserve">
+    <value>بقیہ  رقم</value>
+  </data>
+	<data name="RemainingDays" xml:space="preserve">
+    <value>باقی دن</value>
+  </data>
+	<data name="Device" xml:space="preserve">
+    <value>الات</value>
+  </data>
+	<data name="Table" xml:space="preserve">
+    <value>لاؤنج</value>
+  </data>
+	<data name="Package" xml:space="preserve">
+    <value>پیک  کرنا</value>
+  </data>
+	<data name="MemberDealsPrice" xml:space="preserve">
+    <value>ممبرشپ  کی  ڈسکاؤنٹ  کی رقم</value>
+  </data>
+	<data name="MemberPaidPrice" xml:space="preserve">
+    <value>ممبرشپ کی  ادا  کردہ رقم</value>
+  </data>
+	<data name="TotalPaidPrice" xml:space="preserve">
+    <value>کل قیمت ادا کریں</value>
+  </data>
+	<data name="MemberBalancePrice" xml:space="preserve">
+    <value>ممبر  کی   رقم</value>
+  </data>
+	<data name="RegisterCount" xml:space="preserve">
+    <value>رجسٹریشن کی تعداد</value>
+  </data>
+	<data name="Expenditure" xml:space="preserve">
+    <value>اخراجات</value>
+  </data>
+	<data name="PrintTypeLimit" xml:space="preserve">
+    <value>ایک ہی قسم کا پرنٹر شامل نہیں کیے جاسکتے !‏</value>
+  </data>
+	<data name="SameEnabledPrinterFailed" xml:space="preserve">
+    <value>صرف ایک قسم کا بل پرنٹر آن کیا جاسکتا ہے !‏</value>
+  </data>
+	<data name="Server" xml:space="preserve">
+    <value>سرور</value>
+  </data>
+	<data name="PrintAfterBuy" xml:space="preserve">
+    <value>خریداری کے بعد پرنٹ کریں</value>
+  </data>
+	<data name="PrintAfterCheckout" xml:space="preserve">
+    <value>چیک آؤٹ کے بعد پرنٹ کریں</value>
+  </data>
+	<data name="LocalPrint" xml:space="preserve">
+    <value>لوکل پرنٹنگ</value>
+  </data>
+	<data name="ServerIpAddress" xml:space="preserve">
+    <value>سرور  کا IP ایڈریس</value>
+  </data>
+	<data name="OperateChangeNextStartup" xml:space="preserve">
+    <value>{0} کامیاب ہے ، اگلی بار جب یہ سسٹم شروع ہوجائے گا تو وہ نافذالعمل ہوگا !‏</value>
+  </data>
+	<data name="BarcodeNo" xml:space="preserve">
+    <value>بارکوڈ نمبر</value>
+  </data>
+	<data name="OnlyDisplaySelected" xml:space="preserve">
+    <value>صرف منتخب کردہ دکھائیں</value>
+  </data>
+	<data name="CurrentProductAlreadyExists" xml:space="preserve">
+    <value>موجودہ پراڈکٹ پہلے سے  ہی سیو ہے !‏</value>
+  </data>
+	<data name="Statistic" xml:space="preserve">
+    <value>اعدادوشمار</value>
+  </data>
+	<data name="Exception_InvalidMediaRoot" xml:space="preserve">
+    <value>سرور تصویر کا راستہ غلط ہے یا موجود نہیں ہے ، براہ کرم فولڈر یا نیٹ ورک کی جانچ کریں! غلطی کا کوڈ: 100</value>
+  </data>
+	<data name="Canceld" xml:space="preserve">
+    <value>منسوخ</value>
+  </data>
+	<data name="Exception_Relogin" xml:space="preserve">
+    <value>سیشن کی میعاد ختم ہوگئی  ہے ، براہ کرم لاگ آؤٹ اور دوبارہ لاگ ان ہوں !‏</value>
+  </data>
+	<data name="InputNotValid" xml:space="preserve">
+    <value>براہ کرم موجودہ متعلقہ معلومات کا درست اور مکمل طور پر اندراج  کریں !‏</value>
+  </data>
+	<data name="Bill" xml:space="preserve">
+    <value>بل</value>
+  </data>
+	<data name="IncomeManager" xml:space="preserve">
+    <value>تنظیم آمدن</value>
+  </data>
+	<data name="ExpendBill" xml:space="preserve">
+    <value>بل خرچ کرنا</value>
+  </data>
+	<data name="OwedPrice" xml:space="preserve">
+    <value>کریڈٹ کی رقم</value>
+  </data>
+	<data name="IncomeStatistic" xml:space="preserve">
+    <value>آمدنی کے اعدادوشمار</value>
+  </data>
+	<data name="SpendStatistic" xml:space="preserve">
+    <value>اخراجات کے اعدادوشمار</value>
+  </data>
+	<data name="SellProductsStatistic" xml:space="preserve">
+    <value>سیلز پروڈکٹ کے اعدادوشمار</value>
+  </data>
+	<data name="SpendProductsStatistic" xml:space="preserve">
+    <value>پروڈکٹ کے اعداد و شمار خریدیں</value>
+  </data>
+	<data name="NotFoundAnyRecords" xml:space="preserve">
+    <value>کوئی ریکارڈ نہیں ملا !‏</value>
+  </data>
+	<data name="Proportion" xml:space="preserve">
+    <value>ریشو</value>
+  </data>
+	<data name="PermissionsMenu" xml:space="preserve">
+    <value>اجازت کا مینو</value>
+  </data>
+	<data name="Exception_MemberDisabled" xml:space="preserve">
+    <value>ممبر  غیر  فعال  ہے !‏</value>
+  </data>
+	<data name="Income" xml:space="preserve">
+    <value>آمدنی</value>
+  </data>
+	<data name="ImageMode" xml:space="preserve">
+    <value>تصویر کا انداز</value>
+  </data>
+	<data name="Exception_DeviceCountOutOfLimit" xml:space="preserve">
+    <value>ڈیوائس حد  سے زیادہ  تجاوز  کر  گیَی  ہے ! {0} غلطی کا کوڈ: 105</value>
+  </data>
+	<data name="NewPasswordSizeLimit" xml:space="preserve">
+    <value>نیا پاس ورڈ کم از کم {0} ہندسوں کا ہونا چاہئے !‏</value>
+  </data>
+	<data name="AdminLog" xml:space="preserve">
+    <value>ایڈمنسٹریٹر لاگ</value>
+  </data>
+	<data name="LogTitle" xml:space="preserve">
+    <value>لاگ  کا عنوان</value>
+  </data>
+	<data name="LogContent" xml:space="preserve">
+    <value>لاگ کا  مواد</value>
+  </data>
+	<data name="AdminPay" xml:space="preserve">
+    <value>ایڈمنسٹریٹر  کی تنخواہ</value>
+  </data>
+	<data name="AdminPayDescription" xml:space="preserve">
+    <value>ایڈمنسٹریٹر کی ادائیگی کی تفصیلات دیکھیں</value>
+  </data>
+	<data name="AdminPayNo" xml:space="preserve">
+    <value>ایڈمنسٹریٹر کا ادائیگی نمبر</value>
+  </data>
+	<data name="SupplierManager" xml:space="preserve">
+    <value>سپلائر مینجمنٹ</value>
+  </data>
+	<data name="SupplierPay" xml:space="preserve">
+    <value>سپلائر کی ادائیگی</value>
+  </data>
+	<data name="SupplierPayDescription" xml:space="preserve">
+    <value>سپلائر کی ادائیگی کی تفصیلات دیکھیں</value>
+  </data>
+	<data name="SupplierPayNo" xml:space="preserve">
+    <value>سپلائر  کا ادائیگی نمبر</value>
+  </data>
+	<data name="SupplierNo" xml:space="preserve">
+    <value>سپلائر  کا  کوڈ</value>
+  </data>
+	<data name="SupplierExpiredDescription" xml:space="preserve">
+    <value>سپلائر کی میعاد ختم ہونے کے وقت کی  ترمیم کریں !‏</value>
+  </data>
+	<data name="SupplierName" xml:space="preserve">
+    <value>سپلائر کا نام</value>
+  </data>
+	<data name="AddSupplier" xml:space="preserve">
+    <value>سپلائر شامل کریں</value>
+  </data>
+	<data name="SupplierExpired" xml:space="preserve">
+    <value>موجودہ سپلائر کی میعاد ختم ہوگئی ہے !‏</value>
+  </data>
+	<data name="Exception_SupplierDisabled" xml:space="preserve">
+    <value>سپلائر غیر فعال ہے !‏</value>
+  </data>
+	<data name="SupplierBalancePrice" xml:space="preserve">
+    <value>سپلائر  کا  بیلنس</value>
+  </data>
+	<data name="SupplierBalanceNotEnough" xml:space="preserve">
+    <value>سپلائر بیلنس ناکافی ہے!‏</value>
+  </data>
+	<data name="SupplierDealsPrice" xml:space="preserve">
+    <value>سپلائر کی  ڈسکاؤنٹڈڈ قیمت</value>
+  </data>
+	<data name="SupplierPaidPrice" xml:space="preserve">
+    <value>سپلائر کی ادائیگی کی رقم</value>
+  </data>
+	<data name="PleaseWait" xml:space="preserve">
+    <value>برائے مہربانی انتظار کریں...‏</value>
+  </data>
+	<data name="CreatingTheDocument" xml:space="preserve">
+    <value>دستاویز بنائی جارہی ہے...‏</value>
+  </data>
+	<data name="TableUsed" xml:space="preserve">
+    <value>موجودہ ٹیبل استعمال میں ہے !‏</value>
+  </data>
+	<data name="Exception_InvalidType" xml:space="preserve">
+    <value>براہ کرم موجودہ متعلقہ معلومات کو درست اور مکمل طور پر داخل کریں !‏</value>
+  </data>
+	<data name="ChangeCostPrice" xml:space="preserve">
+    <value>لاگت کی قیمت میں ترمیم کریں</value>
+  </data>
+	<data name="IndexName" xml:space="preserve">
+    <value>انڈیکس  کا  نام</value>
+  </data>
+	<data name="FinanceLog" xml:space="preserve">
+    <value>فنانس  جرنل</value>
+  </data>
+	<data name="OperateName" xml:space="preserve">
+    <value>آپریشن کا نام</value>
+  </data>
+	<data name="CashDrawer" xml:space="preserve">
+    <value>کیش باکس</value>
+  </data>
+	<data name="Open" xml:space="preserve">
+    <value>آن کر دو</value>
+  </data>
+	<data name="IsPayByCard" xml:space="preserve">
+    <value>کریڈٹ کارڈ کی ادائیگی</value>
+  </data>
+	<data name="CardPaidPrice" xml:space="preserve">
+    <value>کریڈٹ کارڈ کی ادائیگی کی رقم</value>
+  </data>
+	<data name="SpendPaysStatistic" xml:space="preserve">
+    <value>ادائیگی کے اخراجات کے اعدادوشمار</value>
+  </data>
+	<data name="SalePaysStatistic" xml:space="preserve">
+    <value>ادائیگی سے متعلق آمدنی کے اعدادوشمار</value>
+  </data>
+	<data name="BalancePay" xml:space="preserve">
+    <value>بیلنس  کی ادائیگی</value>
+  </data>
+	<data name="BalancePayDescription" xml:space="preserve">
+    <value>بیلنس ادائیگی کی تفصیلات دیکھیں</value>
+  </data>
+	<data name="BalancePayNo" xml:space="preserve">
+    <value>بیلنس کا  ادائیگی نمبر</value>
+  </data>
+	<data name="SoftServiceNameWithoutVersion" xml:space="preserve">
+    <value>Oybab ٹریڈنگ سسٹم</value>
+  </data>
+	<data name="MediumLabelFontSize" xml:space="preserve">
+    <value>22</value>
+  </data>
+	<data name="LogoTitleLabelFontSize" xml:space="preserve">
+    <value>40</value>
+  </data>
+	<data name="SoftServiceVersion" xml:space="preserve">
+    <value>V1.1</value>
+  </data>
+	<data name="DirectionMode" xml:space="preserve">
+    <value>RightToLeft</value>
+  </data>
+	<data name="LoginUserInputMsg" xml:space="preserve">
+    <value>براہ کرم ایڈمنسٹریٹر نمبر درج کریں</value>
+  </data>
+	<data name="LoginPasswordInputMsg" xml:space="preserve">
+    <value>براہ کرم ایڈمنسٹریٹرکا پاس ورڈ درج کریں</value>
+  </data>
+	<data name="Reset2" xml:space="preserve">
+    <value>ری سیٹ کریں</value>
+  </data>
+	<data name="MediumButtonFontSize" xml:space="preserve">
+    <value>26</value>
+  </data>
+	<data name="OK2" xml:space="preserve">
+    <value>کنفرم</value>
+  </data>
+	<data name="LittleKeyboardFontSize" xml:space="preserve">
+    <value>18</value>
+  </data>
+	<data name="HorizontalModel" xml:space="preserve">
+    <value>Right</value>
+  </data>
+	<data name="CompanyLogoName" xml:space="preserve">
+    <value>Oybab ٹیکنالوجی</value>
+  </data>
+	<data name="RegNoInputMessage" xml:space="preserve">
+    <value>برائے کرم رجسٹریشن کوڈ درج کریں</value>
+  </data>
+	<data name="RegCountInputMessage" xml:space="preserve">
+    <value>براہ کرم مقدار کے اندراج کوڈ درج کریں</value>
+  </data>
+	<data name="TopLogoTitleLabelFontSize" xml:space="preserve">
+    <value>25</value>
+  </data>
+	<data name="LittleMediumLabelFontSize" xml:space="preserve">
+    <value>20</value>
+  </data>
+	<data name="Exception_AdminExists" xml:space="preserve">
+    <value>موجودہ  ایڈمنسٹریٹر استعمال کررہا ہے! {0} غلطی کا کوڈ: ۱۱۳</value>
+  </data>
+	<data name="IncomeTradingManage" xml:space="preserve">
+    <value>محصول کی لین دین کا انتظام</value>
+  </data>
+	<data name="Permission" xml:space="preserve">
+    <value>اتھارٹی</value>
+  </data>
+	<data name="Day" xml:space="preserve">
+    <value>دن</value>
+  </data>
+	<data name="Empty" xml:space="preserve">
+    <value>بیکار</value>
+  </data>
+	<data name="Selected" xml:space="preserve">
+    <value>منتخب فہرست</value>
+  </data>
+	<data name="Products" xml:space="preserve">
+    <value>پراڈکٹ کی فہرست</value>
+  </data>
+	<data name="Operate" xml:space="preserve">
+    <value>آپریٹنگ</value>
+  </data>
+	<data name="SelectedCount" xml:space="preserve">
+    <value>مقدار منتخب کریں</value>
+  </data>
+	<data name="OperatingWait" xml:space="preserve">
+    <value>برائے مہربانی انتظار کریں.....‏</value>
+  </data>
+	<data name="Cash" xml:space="preserve">
+    <value>نقد</value>
+  </data>
+	<data name="Card" xml:space="preserve">
+    <value>کارڈ</value>
+  </data>
+	<data name="Member" xml:space="preserve">
+    <value>ممبر</value>
+  </data>
+	<data name="Bind" xml:space="preserve">
+    <value>ٹایَ  کرنا</value>
+  </data>
+	<data name="Unbind" xml:space="preserve">
+    <value>ان  ٹایَ  کرنا</value>
+  </data>
+	<data name="MediumLargeButtonFontSize" xml:space="preserve">
+    <value>35</value>
+  </data>
+	<data name="OldRoomNo" xml:space="preserve">
+    <value>پرانا لاؤنج نمبر</value>
+  </data>
+	<data name="NewRoomNo" xml:space="preserve">
+    <value>نیا لاؤنج نمبر</value>
+  </data>
+	<data name="IpAddress2" xml:space="preserve">
+    <value>آی  پی  ایڈریس</value>
+  </data>
+	<data name="RequestManager" xml:space="preserve">
+    <value>ڈیمانڈ مینجمنٹ</value>
+  </data>
+	<data name="RequestName" xml:space="preserve">
+    <value>مطلوبہ نام</value>
+  </data>
+	<data name="Request2" xml:space="preserve">
+    <value>مطلوبہ</value>
+  </data>
+	<data name="RequestDescription" xml:space="preserve">
+    <value>موجودہ ڈیٹا میں ضروریات شامل کریں.‏</value>
+  </data>
+	<data name="IsDisplayAll" xml:space="preserve">
+    <value>سارے دکھاو</value>
+  </data>
+	<data name="CheckoutBy" xml:space="preserve">
+    <value>بل  بنانے  والا</value>
+  </data>
+	<data name="OrderPhoneNo" xml:space="preserve">
+    <value>بل  بنانے  والے  کا  فون  نمبر</value>
+  </data>
+	<data name="PersonName" xml:space="preserve">
+    <value>نام</value>
+  </data>
+	<data name="BillTypeInner" xml:space="preserve">
+    <value>اندرونی</value>
+  </data>
+	<data name="BillTypeOuter" xml:space="preserve">
+    <value>بیرونی</value>
+  </data>
+	<data name="BillType" xml:space="preserve">
+    <value>بل کی قسم</value>
+  </data>
+	<data name="AddOuterBill" xml:space="preserve">
+    <value>بیرونی بل شامل کریں</value>
+  </data>
+	<data name="SuccessAndFailProperty" xml:space="preserve">
+    <value>کامیابی: {0} ، ناکامی: {1}.‏</value>
+  </data>
+	<data name="ConfirmSaveAll" xml:space="preserve">
+    <value>کیا  آپ  واقعی  سب  کو  بچانا  چاہتے  ہیں؟‏</value>
+  </data>
+	<data name="Profit" xml:space="preserve">
+    <value>خالص منافع</value>
+  </data>
+	<data name="TypeName" xml:space="preserve">
+    <value>ٹائپ کا نام</value>
+  </data>
+	<data name="Summary" xml:space="preserve">
+    <value>خلاصہ</value>
+  </data>
+	<data name="SystemTimeInvalid" xml:space="preserve">
+    <value>سسٹم کا وقت اور سرور کا وقت متضاد ہے! {0} غلطی کا کوڈ: 106</value>
+  </data>
+	<data name="UnrecordedPrice" xml:space="preserve">
+    <value>بے حساب رقم</value>
+  </data>
+	<data name="ReceivedPrice" xml:space="preserve">
+    <value>رقم موصول ہوئی</value>
+  </data>
+	<data name="Prefix" xml:space="preserve">
+    <value>آغاز</value>
+  </data>
+	<data name="MultiLanguage" xml:space="preserve">
+    <value>کثیر زبانیں</value>
+  </data>
+	<data name="Exception_DatabaseNotFound" xml:space="preserve">
+    <value>ریموٹ سرور ڈیٹا بیس نہیں ملا ، براہ کرم چیک کریں! غلطی کا کوڈ: 108</value>
+  </data>
+	<data name="Exception_DatabaseLoadFailed" xml:space="preserve">
+    <value>ریموٹ سرور ڈیٹا بیس لوڈ کرنے میں ناکام! غلطی کا کوڈ: 109</value>
+  </data>
+	<data name="NoLimit" xml:space="preserve">
+    <value>کوئی حد نہیں</value>
+  </data>
+	<data name="ProductExpiredDescription" xml:space="preserve">
+    <value>پراڈکٹس کی میعاد ختم ہونے کے وقت میں ترمیم کریں !‏</value>
+  </data>
+	<data name="None" xml:space="preserve">
+    <value>نہیں</value>
+  </data>
+	<data name="BarcodeReader" xml:space="preserve">
+    <value>بارکوڈ ریڈر</value>
+  </data>
+	<data name="PrintBarcodeDescription" xml:space="preserve">
+    <value>بار کوڈ پرنٹ کریں</value>
+  </data>
+	<data name="Size" xml:space="preserve">
+    <value>سائز</value>
+  </data>
+	<data name="BarcodeLengthLimit" xml:space="preserve">
+    <value>بار کوڈ کی لمبائی 8 یا 13 ہندسوں کا ہونا ضروری ہے !‏</value>
+  </data>
+	<data name="BillWide" xml:space="preserve">
+    <value>بل۔وسیع</value>
+  </data>
+	<data name="PrintAll" xml:space="preserve">
+    <value>سب پرنٹ کریں</value>
+  </data>
+	<data name="ConfirmBalanceInjustice" xml:space="preserve">
+    <value>بقیہ  بیلنس  ناکافی  ہے،  کیا  آپ  کو  معلوم  ہے؟‏</value>
+  </data>
+	<data name="ProductParentName" xml:space="preserve">
+    <value>پیرنٹ  پراڈکٹس  کا  نام</value>
+  </data>
+	<data name="ProductParentCount" xml:space="preserve">
+    <value>پیرنٹ  پراڈکٹس  کی  تعداد</value>
+  </data>
+	<data name="Borrow" xml:space="preserve">
+    <value>کریڈٹ</value>
+  </data>
+	<data name="CanNotExceed" xml:space="preserve">
+    <value>ادائیگی کی کل رقم {0} یوآن ہے !‏</value>
+  </data>
+	<data name="ChangeCount" xml:space="preserve">
+    <value>مقدار بدلیں</value>
+  </data>
+	<data name="Information" xml:space="preserve">
+    <value>فوری طور پر</value>
+  </data>
+	<data name="InnerBill" xml:space="preserve">
+    <value>اندرونی بل</value>
+  </data>
+	<data name="OuterBill" xml:space="preserve">
+    <value>بیرونی بل</value>
+  </data>
+	<data name="IndexNameOrBarcode" xml:space="preserve">
+    <value>براہ کرم انڈیکس کا نام یا بار کوڈ درج کریں</value>
+  </data>
+	<data name="Exception_DeviceExists" xml:space="preserve">
+    <value>موجودہ ڈیوائس استعمال میں ہے! {0} غلطی کا کوڈ: 115</value>
+  </data>
+	<data name="ReturnId" xml:space="preserve">
+    <value>ریٹرن نمبر</value>
+  </data>
+	<data name="ReturnBill" xml:space="preserve">
+    <value>واپسی کا بل</value>
+  </data>
+	<data name="BalanceManager" xml:space="preserve">
+    <value>بیلنس مینجمنٹ</value>
+  </data>
+	<data name="BalanceName" xml:space="preserve">
+    <value>بیلنس کا نام</value>
+  </data>
+	<data name="IsBind" xml:space="preserve">
+    <value>باندھنا</value>
+  </data>
+	<data name="CardOnlyCouldBindOnce" xml:space="preserve">
+    <value>صرف ایک کارڈ کا پابند ہوسکتا ہے !‏</value>
+  </data>
+	<data name="AccountBank" xml:space="preserve">
+    <value>بنک  اکاؤنٹ</value>
+  </data>
+	<data name="AccountName" xml:space="preserve">
+    <value>اکاؤنٹ  کا  نام</value>
+  </data>
+	<data name="AccountNo" xml:space="preserve">
+    <value>اکاؤنٹ  نمبر</value>
+  </data>
+	<data name="ReturnType" xml:space="preserve">
+    <value>واپسی کی قسم</value>
+  </data>
+	<data name="ReturnManager" xml:space="preserve">
+    <value>ریٹرن مینجمنٹ</value>
+  </data>
+	<data name="FromCustomer" xml:space="preserve">
+    <value>گاہک سے</value>
+  </data>
+	<data name="ToSupplier" xml:space="preserve">
+    <value>سپلائر واپس کریں</value>
+  </data>
+	<data name="ReturnDetails" xml:space="preserve">
+    <value>تفصیلات لوٹائیں</value>
+  </data>
+	<data name="IsChange" xml:space="preserve">
+    <value>تبدیل کریں</value>
+  </data>
+	<data name="CheckoutReturn" xml:space="preserve">
+    <value>بل  کی  واپسی</value>
+  </data>
+	<data name="BalancePaysIncomeStatistic" xml:space="preserve">
+    <value>بیلنس ادائیگی  کی آمدنی کے اعدادوشمار</value>
+  </data>
+	<data name="BalancePaysSpendStatistic" xml:space="preserve">
+    <value>بیلنس ادائیگی کے اخراجات کے اعدادوشمار</value>
+  </data>
+	<data name="BalancePayByCash" xml:space="preserve">
+    <value>بیلنس ادائیگی (نقد)</value>
+  </data>
+	<data name="BalancePayByCard" xml:space="preserve">
+    <value>بیلنس ادائیگی (کارڈ)</value>
+  </data>
+	<data name="MemberPayByCash" xml:space="preserve">
+    <value>ممبرشپ  کی ادائیگی (نقد)</value>
+  </data>
+	<data name="MemberPayByCard" xml:space="preserve">
+    <value>ممبرشپ  کی   ادائیگی (کارڈ)</value>
+  </data>
+	<data name="SupplierPayByCash" xml:space="preserve">
+    <value>سپلائر کی ادائیگی (نقد)</value>
+  </data>
+	<data name="SupplierPayByCard" xml:space="preserve">
+    <value>سپلائر کی ادائیگی (کارڈ)</value>
+  </data>
+	<data name="AdminPayByCash" xml:space="preserve">
+    <value>ایڈمنسٹریٹر کی تنخواہ (نقد)</value>
+  </data>
+	<data name="AdminPayByCard" xml:space="preserve">
+    <value>ایڈمنسٹریٹر کی تنخواہ (کارڈ)</value>
+  </data>
+	<data name="ReturnStatistic" xml:space="preserve">
+    <value>اعداد و شمار  سے واپسی</value>
+  </data>
+	<data name="AdminSaleStatistic" xml:space="preserve">
+    <value>ایڈمن سیل کے اعدادوشمار</value>
+  </data>
+	<data name="ReturnProductsStatistic" xml:space="preserve">
+    <value>واپس  آےَ  ہوےَ  پرا|ڈکٹس  کا  اعدادوشمار</value>
+  </data>
+	<data name="ReplaceCount" xml:space="preserve">
+    <value>تبدیلی کی مقدار</value>
+  </data>
+	<data name="RecordCount" xml:space="preserve">
+    <value>ریکارڈوں کی تعداد</value>
+  </data>
+	<data name="Return" xml:space="preserve">
+    <value>واپسی</value>
+  </data>
+	<data name="CardPrice" xml:space="preserve">
+    <value>کریڈٹ کارڈ کی قیمت</value>
+  </data>
+	<data name="CardBalancePrice" xml:space="preserve">
+    <value>کارڈ بیلنس</value>
+  </data>
+	<data name="OtherPrice" xml:space="preserve">
+    <value>دیگر قیمتیں</value>
+  </data>
+	<data name="Supplier" xml:space="preserve">
+    <value>سپلائر</value>
+  </data>
+	<data name="PrintInfo" xml:space="preserve">
+    <value>بلنگ کی معلومات</value>
+  </data>
+	<data name="Test" xml:space="preserve">
+    <value>ٹیسٹ</value>
+  </data>
+	<data name="InputPhoneNoFirst" xml:space="preserve">
+    <value>اگر آپ بلنگ کی معلومات درج کرتے ہیں تو ، براہ کرم پہلے فون نمبر درج کریں !‏</value>
+  </data>
+	<data name="PriceMonitor" xml:space="preserve">
+    <value>قیمت ڈسپلے</value>
+  </data>
+	<data name="ProductProfitStatistic" xml:space="preserve">
+    <value>پراڈکٹس کے منافع کے اعدادوشمار</value>
+  </data>
+	<data name="IsBindWeigh" xml:space="preserve">
+    <value>وزن  بایَنڈ  کریں</value>
+  </data>
+	<data name="PageHeight" xml:space="preserve">
+    <value>صفحے کی اوپر</value>
+  </data>
+	<data name="CancelAndDelete" xml:space="preserve">
+    <value>منسوخ کریں اور ڈلیٹ کریں</value>
+  </data>
+	<data name="CashWithCard" xml:space="preserve">
+    <value>کیش: ￥ {0}. کریڈٹ کارڈ: ￥ {1}.‏</value>
+  </data>
+	<data name="AdminCantCreateAnAdmin" xml:space="preserve">
+    <value>ایڈمنسٹریٹر ایڈمنسٹریٹر کو شامل نہیں کرسکتے ہیں!‏</value>
+  </data>
+	<data name="IncomePermission" xml:space="preserve">
+    <value>انکم اتھارٹی</value>
+  </data>
+	<data name="ExpenditurePermission" xml:space="preserve">
+    <value>اختیار خرچ کرنا</value>
+  </data>
+	<data name="TemporaryChangePrice" xml:space="preserve">
+    <value>عارضی طور پر قیمت میں ترمیم کریں</value>
+  </data>
+	<data name="ChangeUnitPrice" xml:space="preserve">
+    <value>یونٹ کی قیمت میں ترمیم کریں</value>
+  </data>
+	<data name="AddPrice" xml:space="preserve">
+    <value>رقم میں اضافہ</value>
+  </data>
+	<data name="AddMemberBalancePrice" xml:space="preserve">
+    <value>ممبرشپ کی باقی رقم میں اضافہ کریں</value>
+  </data>
+	<data name="PosTopTitleFontSize" xml:space="preserve">
+    <value>24</value>
+  </data>
+	<data name="PosTotalPriceFontSize" xml:space="preserve">
+    <value>32</value>
+  </data>
+	<data name="PosCountFontSize" xml:space="preserve">
+    <value>20</value>
+  </data>
+	<data name="PosDescriptionFontSize" xml:space="preserve">
+    <value>18</value>
+  </data>
+	<data name="User" xml:space="preserve">
+    <value>صارف</value>
+  </data>
+	<data name="PosContentFontSize" xml:space="preserve">
+    <value>16</value>
+  </data>
+	<data name="Restore" xml:space="preserve">
+    <value>بحال</value>
+  </data>
+	<data name="CardReader" xml:space="preserve">
+    <value>کارڈ ریڈر</value>
+  </data>
+	<data name="CardNo" xml:space="preserve">
+    <value>کارڈ نمبر</value>
+  </data>
+	<data name="CardNoExists" xml:space="preserve">
+    <value>کارڈ نمبر پہلے ہی موجود ہے ، تبدیل کرنے کی تصدیق کریں؟‏</value>
+  </data>
+	<data name="SuccessReadBarcode" xml:space="preserve">
+    <value>بار کوڈ ریڈنگ  کامیاب  ہویَ !‏</value>
+  </data>
+	<data name="SuccessReadCardNo" xml:space="preserve">
+    <value>کارڈ  ریڈنگ  کامیاب  ہویَ !‏</value>
+  </data>
+	<data name="ServerIpAddress2" xml:space="preserve">
+    <value>سرور کا پتہ</value>
+  </data>
+	<data name="BindMemberByNo" xml:space="preserve">
+    <value>تعداد کے حساب سے ممبروں کو باندھنا</value>
+  </data>
+	<data name="BindSupplierByNo" xml:space="preserve">
+    <value>تعداد کے لحاظ سے سپلائرز کو پباندھنا</value>
+  </data>
+	<data name="BarcodeScales" xml:space="preserve">
+    <value>بارکوڈ اسکیل</value>
+  </data>
+	<data name="SendData" xml:space="preserve">
+    <value>ڈیٹا بھیجیں</value>
+  </data>
+	<data name="IncorrectProductData" xml:space="preserve">
+    <value>پراڈکٹس کی معلومات میں غلط اعداد و شمار !‏</value>
+  </data>
+	<data name="IncorrectProductName" xml:space="preserve">
+    <value>پروڈکٹ کے نام پر غلط ڈیٹا !‏</value>
+  </data>
+	<data name="UnableToConnectIPAddress" xml:space="preserve">
+    <value>آی  پی ایڈریس سے رابطہ قائم کرنے سے قاصر !‏</value>
+  </data>
+	<data name="ConfirmNotPay" xml:space="preserve">
+    <value>کیا آپ واقعی ادائیگی نہیں کرنا چاہتے ہیں؟‏</value>
+  </data>
+	<data name="ReadResourceStrError" xml:space="preserve">
+    <value>وسائل پڑھنے میں خرابی!‏</value>
+  </data>
+	<data name="FreeRoomPriceLimit" xml:space="preserve">
+    <value>مفت قیمت کی حد</value>
+  </data>
+	<data name="CancelFireAlarm" xml:space="preserve">
+    <value>فائر الارم منسوخ کریں</value>
+  </data>
+	<data name="ConfirmOperate" xml:space="preserve">
+    <value>{0} کی تصدیق کریں ؟‏</value>
+  </data>
+	<data name="DeleteProduct" xml:space="preserve">
+    <value>پراڈکٹ کو ڈلیٹ کریں</value>
+  </data>
+	<data name="OpenCashDrawer" xml:space="preserve">
+    <value>کیش باکس کھولیں</value>
+  </data>
+	<data name="Paid" xml:space="preserve">
+    <value>تنخواہ</value>
+  </data>
+	<data name="Platform" xml:space="preserve">
+    <value>پلیٹ فارم</value>
+  </data>
+	<data name="UnlimitedTime" xml:space="preserve">
+    <value>لامحدود وقت</value>
+  </data>
+	<data name="Enabled" xml:space="preserve">
+    <value>ٹرنڈ  آن</value>
+  </data>
+	<data name="DecreaseProductCount" xml:space="preserve">
+    <value>مصنوعات کی تعداد کم کریں</value>
+  </data>
+	<data name="FaildThenWaitRetry" xml:space="preserve">
+    <value>آپریشن ناکام ، آپریشن بہت تیز تھا ، براہ کرم دوبارہ کوشش کریں !‏</value>
+  </data>
+	<data name="RemovePrice" xml:space="preserve">
+    <value>قیمت ہٹا دیں</value>
+  </data>
+	<data name="Exception_ServerClientVersionMisalignment" xml:space="preserve">
+    <value>ریموٹ سرور سسٹم ورژن موجودہ کلائنٹ سسٹم ورژن سے مطابقت نہیں رکھتا ، براہ کرم اسی سسٹم ورژن سے  اپ  ڈیٹ  کریں !‏</value>
+  </data>
+	<data name="Exception_ServerClientTimeMisalignment" xml:space="preserve">
+    <value>ریموٹ سرور سسٹم کا وقت موجودہ کلائنٹ سسٹم ٹائم سے مطابقت نہیں رکھتا ہے ، براہ کرم اسی وقت اپ ڈیٹ کریں !‏</value>
+  </data>
+	<data name="ConfirmAddPay" xml:space="preserve">
+    <value>{2} سے {3} میں {0} {1} شامل کرنے کی تصدیق کریں؟‏</value>
+  </data>
+	<data name="BalanceTransfer" xml:space="preserve">
+    <value>ٹرانسفر  بیلنس</value>
+  </data>
+	<data name="OldBalance" xml:space="preserve">
+    <value>پرانا  بیلنس</value>
+  </data>
+	<data name="NewBalance" xml:space="preserve">
+    <value>نیا  بیلنس</value>
+  </data>
+	<data name="BalanceTransferDescription" xml:space="preserve">
+    <value>بیلنس کے مابین رقم کی منتقلی</value>
+  </data>
+	<data name="LangName" xml:space="preserve">
+    <value>اردو</value>
+  </data>
+	<data name="HightFix" xml:space="preserve">
+    <value>0</value>
+  </data>
+	<data name="Culcure" xml:space="preserve">
+    <value>ur-PK</value>
+  </data>
+	<data name="Dir" xml:space="preserve">
+    <value>rtl</value>
+  </data>
+	<data name="LargeFont" xml:space="preserve">
+    <value>0</value>
+  </data>
+	<data name="EnableAntialiasing" xml:space="preserve">
+    <value>0</value>
+  </data>
+	<data name="GlobalSetting" xml:space="preserve">
+    <value>عالمی ترتیبات</value>
+  </data>
+	<data name="PriceSymbol" xml:space="preserve">
+    <value>قیمت کی  علامت</value>
+  </data>
+	<data name="Main" xml:space="preserve">
+    <value>مرکزی</value>
+  </data>
+	<data name="SystemLanguage" xml:space="preserve">
+    <value>سسٹم کی زبان</value>
+  </data>
+	<data name="SystemLanguageCantSame" xml:space="preserve">
+    <value>سسٹم کی زبانیں ایک جیسی نہیں ہوسکتی ہیں!‏</value>
+  </data>
+	<data name="SystemLanguageChangeWarn" xml:space="preserve">
+    <value>سسٹم کی زبان میں تبدیلی سے نظام متاثر ہوسکتا ہے ، تبدیلی کی تصدیق کریں ؟‏</value>
+  </data>
+	<data name="PermissionsMenuDescription" xml:space="preserve">
+    <value>ایڈمنسٹریٹر کے  اختیار میں ترمیم کریں</value>
+  </data>
+	<data name="ReturnMoney" xml:space="preserve">
+    <value>پیسے لوٹائیں</value>
+  </data>
+	<data name="CanNotExceedConfirm" xml:space="preserve">
+    <value>ادائیگی کی کل رقم {0} یوآن ہے! واپسی کی تصدیق کریں ؟‏</value>
+  </data>
+	<data name="Exception_PasswordErrorCountLimit" xml:space="preserve">
+    <value>بہت سارے غلط پاس ورڈز ہیں، براہ کرم بعد میں دوبارہ کوشش کریں !‏</value>
+  </data>
+	<data name="CompanyName" xml:space="preserve">
+    <value>کمپنی  کا  نام</value>
+  </data>
+	<data name="CustomFont_Android" xml:space="preserve">
+    <value>OybabTuz.ttf # Oybab Tuz</value>
+  </data>
+	<data name="CustomFont_iOS" xml:space="preserve">
+    <value>OybabTuz</value>
+  </data>
+	<data name="CustomFont_UWP" xml:space="preserve">
+    <value>/Assets/OybabTuz.ttf#Oybab Tuz</value>
+  </data>
+	<data name="SavePassword" xml:space="preserve">
+    <value>پاس ورڈ کو محفوظ کریں</value>
+  </data>
+	<data name="Tsmi_Lang_Icon" xml:space="preserve">
+    <value>-</value>
+  </data>
+	<data name="IncomeTypeStatistic" xml:space="preserve">
+    <value>انکم کی  اقسام  کے اعدادوشمار</value>
+  </data>
+	<data name="SpendTypeStatistic" xml:space="preserve">
+    <value>اخراجات کی اقسام کے اعدادوشمار</value>
+  </data>
+	<data name="Settings" xml:space="preserve">
+    <value>خصوصیات</value>
+  </data>
+	<data name="Agree" xml:space="preserve">
+    <value>متفق ہوں</value>
+  </data>
+	<data name="PrivacyPolicy" xml:space="preserve">
+    <value>رازداری کی پالیسی</value>
+  </data>
+	<data name="Exception_AdminUsing" xml:space="preserve">
+    <value>موجودہ ایڈمنسٹریٹر استعمال کررہا ہے! اگر یہ آپ کا اپنا آپریشن نہیں ہے تو ، براہ کرم وقت پر پاس ورڈ تبدیل کریں !‏‏</value>
+  </data>
+	<data name="UserAgreement" xml:space="preserve">
+    <value>صارف کا معاہدہ</value>
+  </data>
+	<data name="And" xml:space="preserve">
+    <value>اور</value>
+  </data>
+	<data name="History" xml:space="preserve">
+    <value>تاریخ</value>
+  </data>
+	<data name="HistoryDescription" xml:space="preserve">
+    <value>موجودہ اعداد و شمار کی تاریخ دیکھیں.‏</value>
+  </data>
+	<data name="CompanyAbbreviation" xml:space="preserve">
+    <value>Oybab ٹیکنالوجی</value>
+  </data>
+	<data name="License" xml:space="preserve">
+    <value>معاہدہ</value>
+  </data>
+	<data name="Donate" xml:space="preserve">
+    <value>عطیہ</value>
+  </data>
+	<data name="SourceCode" xml:space="preserve">
+    <value>سورس کوڈ</value>
+  </data>
+	<data name="ConfirmItemBalanceNotEnough" xml:space="preserve">
+    <value>بیلنس  {0}ناکافی ہے ، تصدیق کریں ؟‏</value>
+  </data>
+	<data name="PosDescription" xml:space="preserve">
+		<value>تلاش کی مصنوعات: F3 ، عارضی اسٹوریج: F7 ، بحالی: F8 ، پابند رکنیت: F10 ، بند  کرنا: F12 ، زبان تبدیل کریں: TAB ، کیش  باکس  کھولنا: Alt + Z ، پوزیشن:  ↓↑   → ←  ، صفحے کا رخ: PgUp / PgDn، مقدار میں اضافہ: + ، مقدار کم کریں: - ، منتخب کریں / ٹھیک ہے: Enter ، منتخب کردہ حذف کریں: Del ، منسوخ / واپس: Esc .</value>
+	</data>
+</root>

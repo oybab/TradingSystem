@@ -36,7 +36,7 @@ namespace Oybab.ServicePC.DialogWindow
             krplCount.Text = Resources.GetRes().GetString("Count");
 
 
-            krpcLanguage.Items.AddRange(Resources.GetRes().MainLangList.Select(x => x.Value.LangName).ToArray());
+            krpcLanguage.Items.AddRange(Resources.GetRes().MainLangList.OrderBy(x => x.Value.MainLangIndex).Select(x => x.Value.LangName).ToArray());
             krpcSize.Items.AddRange(new object[] { "4cmX3cm", "3cmX2cm" });
 
             Assembly asm = Assembly.LoadFrom(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Res.dll"));

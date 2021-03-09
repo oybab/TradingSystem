@@ -282,7 +282,7 @@ namespace Oybab.ServicePC.SubWindow
 
             try
             {
-                AddTimeStr = DateTime.ParseExact(AddTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm");
+                AddTimeStr = DateTime.ParseExact(AddTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm");
             }
             catch (Exception ex)
             {
@@ -572,7 +572,7 @@ namespace Oybab.ServicePC.SubWindow
                                     KryptonMessageBox.Show(this, Resources.GetRes().GetString("SaveSuccess"), Resources.GetRes().GetString("Information"), MessageBoxButtons.OK, MessageBoxIcon.Information);
                                     krpdgList.SelectedRows[0].Cells["krpcmAdminPayId"].Value = newAdminPay.AdminPayId;
                                     krpdgList.SelectedRows[0].Cells["krpcmEdit"].Value = "";
-                                    krpdgList.SelectedRows[0].Cells["krpcmAddTime"].Value = DateTime.ParseExact(newAdminPay.AddTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm");
+                                    krpdgList.SelectedRows[0].Cells["krpcmAddTime"].Value = DateTime.ParseExact(newAdminPay.AddTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm");
                                     this.resultList.Insert(0, newAdminPay);
 
                                     krpdgList.SelectedRows[0].Cells["krpcmPrice"].ReadOnly = true;

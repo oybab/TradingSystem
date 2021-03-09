@@ -95,7 +95,7 @@
                     
                 </Grid>
                 <WrapPanel Grid.Row="3" Style="{StaticResource wpInfoWrapStyle}" HorizontalAlignment="Center">
-                    <WrapPanel Margin="0,0,50,0">
+                    <WrapPanel Margin="0,0,20,0">
                         <WrapPanel.Style>
                             <Style TargetType="WrapPanel">
                                 <Setter Property="Visibility" Value="Collapsed"/>
@@ -106,9 +106,9 @@
                                 </Style.Triggers>
                             </Style>
                         </WrapPanel.Style>
-                        <Label Style="{StaticResource lbInfoHeadStyle}" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=UnlimitedTime}"/>
-                        <Label Style="{StaticResource lbInfoHeadStyle}" Content=":"/>
-                        <CheckBox Style="{StaticResource cbUnlimitedTimeStyle}" Click="CheckBox2_Click"/>
+                        <Label Margin="0" Padding="0" Style="{StaticResource lbInfoHeadStyle}" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=UnlimitedTime}"/>
+                        <Label Margin="0" Padding="0" Style="{StaticResource lbInfoHeadStyle}" Content=":"/>
+                        <CheckBox Margin="0" Padding="0" Style="{StaticResource cbUnlimitedTimeStyle}" Click="CheckBox2_Click"/>
                     </WrapPanel>
                     <Button Style="{StaticResource btnCancelStyle}" Command="{Binding CancelCommand}"/>
                     <Button Width="0" Height="0" x:Name="btnForFocusProblem"/>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-	<!-- 
+  <!-- 
     Microsoft ResX Schema 
     
     Version 2.0
@@ -59,1889 +59,1889 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-		<xsd:element name="root" msdata:IsDataSet="true">
-			<xsd:complexType>
-				<xsd:choice maxOccurs="unbounded">
-					<xsd:element name="metadata">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" />
-							</xsd:sequence>
-							<xsd:attribute name="name" use="required" type="xsd:string" />
-							<xsd:attribute name="type" type="xsd:string" />
-							<xsd:attribute name="mimetype" type="xsd:string" />
-							<xsd:attribute ref="xml:space" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="assembly">
-						<xsd:complexType>
-							<xsd:attribute name="alias" type="xsd:string" />
-							<xsd:attribute name="name" type="xsd:string" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="data">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-							<xsd:attribute ref="xml:space" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="resheader">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" />
-						</xsd:complexType>
-					</xsd:element>
-				</xsd:choice>
-			</xsd:complexType>
-		</xsd:element>
-	</xsd:schema>
-	<resheader name="resmimetype">
-		<value>text/microsoft-resx</value>
-	</resheader>
-	<resheader name="version">
-		<value>2.0</value>
-	</resheader>
-	<resheader name="reader">
-		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<resheader name="writer">
-		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<data name="About" xml:space="preserve">
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
     <value>关于</value>
   </data>
-	<data name="Add" xml:space="preserve">
+  <data name="Add" xml:space="preserve">
     <value>添加</value>
   </data>
-	<data name="Change" xml:space="preserve">
+  <data name="Change" xml:space="preserve">
     <value>修改</value>
   </data>
-	<data name="ChangeFaild" xml:space="preserve">
+  <data name="ChangeFaild" xml:space="preserve">
     <value>修改失败!</value>
   </data>
-	<data name="ChangePassword" xml:space="preserve">
+  <data name="ChangePassword" xml:space="preserve">
     <value>修改密码</value>
   </data>
-	<data name="ChangeSuccess" xml:space="preserve">
+  <data name="ChangeSuccess" xml:space="preserve">
     <value>修改成功!</value>
   </data>
-	<data name="Close" xml:space="preserve">
+  <data name="Close" xml:space="preserve">
     <value>关闭</value>
   </data>
-	<data name="Company" xml:space="preserve">
+  <data name="Company" xml:space="preserve">
     <value>和田梦胜信息科技有限公司</value>
   </data>
-	<data name="ConfirmPassword" xml:space="preserve">
+  <data name="ConfirmPassword" xml:space="preserve">
     <value>确认密码</value>
   </data>
-	<data name="Copyright" xml:space="preserve">
+  <data name="Copyright" xml:space="preserve">
     <value>梦胜公司 版权所有.</value>
   </data>
-	<data name="Delete" xml:space="preserve">
+  <data name="Delete" xml:space="preserve">
     <value>删除</value>
   </data>
-	<data name="DeleteFailt" xml:space="preserve">
+  <data name="DeleteFailt" xml:space="preserve">
     <value>删除失败!</value>
   </data>
-	<data name="DeleteSuccess" xml:space="preserve">
+  <data name="DeleteSuccess" xml:space="preserve">
     <value>删除成功!</value>
   </data>
-	<data name="Exit" xml:space="preserve">
+  <data name="Exit" xml:space="preserve">
     <value>退出</value>
   </data>
-	<data name="FontName" xml:space="preserve">
-    <value>微软雅黑, Oybab Tuz</value>
+  <data name="FontName" xml:space="preserve">
+    <value>Microsoft YaHei, Aria, Oybab Tuz</value>
   </data>
-	<data name="FontSize" xml:space="preserve">
-    <value>9</value>
+  <data name="FontSize" xml:space="preserve">
+    <value>10</value>
   </data>
-	<data name="Id" xml:space="preserve">
+  <data name="Id" xml:space="preserve">
     <value>编号</value>
   </data>
-	<data name="Language" xml:space="preserve">
+  <data name="Language" xml:space="preserve">
     <value>语言</value>
   </data>
-	<data name="Login" xml:space="preserve">
+  <data name="Login" xml:space="preserve">
     <value>登录</value>
   </data>
-	<data name="LoginValid" xml:space="preserve">
+  <data name="LoginValid" xml:space="preserve">
     <value>请准确输入 {0} 信息！</value>
   </data>
-	<data name="NewPassword" xml:space="preserve">
+  <data name="NewPassword" xml:space="preserve">
     <value>新密码</value>
   </data>
-	<data name="No" xml:space="preserve">
+  <data name="No" xml:space="preserve">
     <value>否</value>
   </data>
-	<data name="OldPassword" xml:space="preserve">
+  <data name="OldPassword" xml:space="preserve">
     <value>旧密码</value>
   </data>
-	<data name="OldPasswordFaild" xml:space="preserve">
+  <data name="OldPasswordFaild" xml:space="preserve">
     <value>旧密码输入不准确，请重新输入！</value>
   </data>
-	<data name="Password" xml:space="preserve">
+  <data name="Password" xml:space="preserve">
     <value>密码</value>
   </data>
-	<data name="PwdError" xml:space="preserve">
+  <data name="PwdError" xml:space="preserve">
     <value>密码错误！</value>
   </data>
-	<data name="Refresh" xml:space="preserve">
+  <data name="Refresh" xml:space="preserve">
     <value>刷新</value>
   </data>
-	<data name="Retry" xml:space="preserve">
+  <data name="Retry" xml:space="preserve">
     <value>重试</value>
   </data>
-	<data name="RightToLeft" xml:space="preserve">
+  <data name="RightToLeft" xml:space="preserve">
     <value>0</value>
   </data>
-	<data name="Save" xml:space="preserve">
+  <data name="Save" xml:space="preserve">
     <value>保存</value>
   </data>
-	<data name="SaveFailt" xml:space="preserve">
+  <data name="SaveFailt" xml:space="preserve">
     <value>保存失败!</value>
   </data>
-	<data name="SaveSuccess" xml:space="preserve">
+  <data name="SaveSuccess" xml:space="preserve">
     <value>保存成功!</value>
   </data>
-	<data name="Search" xml:space="preserve">
+  <data name="Search" xml:space="preserve">
     <value>查找</value>
   </data>
-	<data name="Total" xml:space="preserve">
+  <data name="Total" xml:space="preserve">
     <value>总共</value>
   </data>
-	<data name="TwoNewPasswordNotEqual" xml:space="preserve">
+  <data name="TwoNewPasswordNotEqual" xml:space="preserve">
     <value>两次输入的新密码不一致，请重新输入！</value>
   </data>
-	<data name="UpdateInfo" xml:space="preserve">
+  <data name="UpdateInfo" xml:space="preserve">
     <value>发现新版本</value>
   </data>
-	<data name="USBKey_Warn" xml:space="preserve">
+  <data name="USBKey_Warn" xml:space="preserve">
     <value>请插入USB-KEY单击【重试】继续，或单击【退出】退出程序！</value>
   </data>
-	<data name="UserLogin" xml:space="preserve">
+  <data name="UserLogin" xml:space="preserve">
     <value>用户登录</value>
   </data>
-	<data name="Yes" xml:space="preserve">
+  <data name="Yes" xml:space="preserve">
     <value>是</value>
   </data>
-	<data name="Abort" xml:space="preserve">
+  <data name="Abort" xml:space="preserve">
     <value>退出</value>
   </data>
-	<data name="Cancel" xml:space="preserve">
+  <data name="Cancel" xml:space="preserve">
     <value>取消</value>
   </data>
-	<data name="Ignore" xml:space="preserve">
+  <data name="Ignore" xml:space="preserve">
     <value>忽略</value>
   </data>
-	<data name="UserName" xml:space="preserve">
+  <data name="UserName" xml:space="preserve">
     <value>用户名</value>
   </data>
-	<data name="Warn" xml:space="preserve">
+  <data name="Warn" xml:space="preserve">
     <value>警告</value>
   </data>
-	<data name="OK" xml:space="preserve">
+  <data name="OK" xml:space="preserve">
     <value>确定</value>
   </data>
-	<data name="Error" xml:space="preserve">
+  <data name="Error" xml:space="preserve">
     <value>错误</value>
   </data>
-	<data name="CurrentKeyName" xml:space="preserve">
+  <data name="CurrentKeyName" xml:space="preserve">
     <value>当前USB-KEY名称为：{0}.</value>
   </data>
-	<data name="Exception_CheckSqlAndNet" xml:space="preserve">
+  <data name="Exception_CheckSqlAndNet" xml:space="preserve">
     <value>数据库连接错误, 请检查网络或数据库连接配置！</value>
   </data>
-	<data name="Exception_LoadCacheError" xml:space="preserve">
+  <data name="Exception_LoadCacheError" xml:space="preserve">
     <value>加载缓存错误.</value>
   </data>
-	<data name="Exception_LoadMediaRoot" xml:space="preserve">
+  <data name="Exception_LoadMediaRoot" xml:space="preserve">
     <value>加载歌曲根路径错误, 请检查配置文件！</value>
   </data>
-	<data name="Exception_NotSupprtKey" xml:space="preserve">
+  <data name="Exception_NotSupprtKey" xml:space="preserve">
     <value>无法连接数据库, 不支持此USB-KEY.</value>
   </data>
-	<data name="InputData" xml:space="preserve">
+  <data name="InputData" xml:space="preserve">
     <value>导入数据</value>
   </data>
-	<data name="OutputData" xml:space="preserve">
+  <data name="OutputData" xml:space="preserve">
     <value>导出数据</value>
   </data>
-	<data name="UpdateNonReturnOrCantRead" xml:space="preserve">
+  <data name="UpdateNonReturnOrCantRead" xml:space="preserve">
     <value>更新返回数据为空或解析失败！</value>
   </data>
-	<data name="UpdateUnableError" xml:space="preserve">
+  <data name="UpdateUnableError" xml:space="preserve">
     <value>查询更新未知错误, Code:{0}.</value>
   </data>
-	<data name="CompanyLogoImage" xml:space="preserve">
+  <data name="CompanyLogoImage" xml:space="preserve">
     <value>logo.png</value>
   </data>
-	<data name="Exception_ReadResourceStrError" xml:space="preserve">
+  <data name="Exception_ReadResourceStrError" xml:space="preserve">
     <value>读取资源字符失败！</value>
   </data>
-	<data name="Exception_InputData" xml:space="preserve">
+  <data name="Exception_InputData" xml:space="preserve">
     <value>导入数据失败！</value>
   </data>
-	<data name="Exception_InputReadData" xml:space="preserve">
+  <data name="Exception_InputReadData" xml:space="preserve">
     <value>导入数据并读取失败！</value>
   </data>
-	<data name="Exception_OutputData" xml:space="preserve">
+  <data name="Exception_OutputData" xml:space="preserve">
     <value>导出数据失败！</value>
   </data>
-	<data name="InputDataSuccess" xml:space="preserve">
+  <data name="InputDataSuccess" xml:space="preserve">
     <value>导入数据成功！</value>
   </data>
-	<data name="OutputDataSuccess" xml:space="preserve">
+  <data name="OutputDataSuccess" xml:space="preserve">
     <value>导出数据成功！</value>
   </data>
-	<data name="File" xml:space="preserve">
+  <data name="File" xml:space="preserve">
     <value>文件</value>
   </data>
-	<data name="Tools" xml:space="preserve">
+  <data name="Tools" xml:space="preserve">
     <value>工具</value>
   </data>
-	<data name="All" xml:space="preserve">
+  <data name="All" xml:space="preserve">
     <value>所有</value>
   </data>
-	<data name="FolderName" xml:space="preserve">
+  <data name="FolderName" xml:space="preserve">
     <value>文件夹名称</value>
   </data>
-	<data name="IgnoreData" xml:space="preserve">
+  <data name="IgnoreData" xml:space="preserve">
     <value>确定忽略未保存的数据吗?</value>
   </data>
-	<data name="ImageName" xml:space="preserve">
+  <data name="ImageName" xml:space="preserve">
     <value>图片名称</value>
   </data>
-	<data name="More" xml:space="preserve">
+  <data name="More" xml:space="preserve">
     <value>更多</value>
   </data>
-	<data name="Page" xml:space="preserve">
+  <data name="Page" xml:space="preserve">
     <value>页</value>
   </data>
-	<data name="AddDescription" xml:space="preserve">
+  <data name="AddDescription" xml:space="preserve">
     <value>新增一条新数据。</value>
   </data>
-	<data name="DeleteDescription" xml:space="preserve">
+  <data name="DeleteDescription" xml:space="preserve">
     <value>删除当前的数据。</value>
   </data>
-	<data name="PleaseEditBefore" xml:space="preserve">
+  <data name="PleaseEditBefore" xml:space="preserve">
     <value>请先完成编辑!</value>
   </data>
-	<data name="SaveDescription" xml:space="preserve">
+  <data name="SaveDescription" xml:space="preserve">
     <value>保存当前新增或改动的数据。</value>
   </data>
-	<data name="SureDelete" xml:space="preserve">
+  <data name="SureDelete" xml:space="preserve">
     <value>确定要删除吗?</value>
   </data>
-	<data name="FileName" xml:space="preserve">
+  <data name="FileName" xml:space="preserve">
     <value>文件名称</value>
   </data>
-	<data name="Exception_NotFound" xml:space="preserve">
+  <data name="Exception_NotFound" xml:space="preserve">
     <value>没找到此{0}！</value>
   </data>
-	<data name="ErrorBig" xml:space="preserve">
+  <data name="ErrorBig" xml:space="preserve">
     <value>发现漏洞</value>
   </data>
-	<data name="Select" xml:space="preserve">
+  <data name="Select" xml:space="preserve">
     <value>选择</value>
   </data>
-	<data name="System" xml:space="preserve">
+  <data name="System" xml:space="preserve">
     <value>系统</value>
   </data>
-	<data name="AllPage" xml:space="preserve">
+  <data name="AllPage" xml:space="preserve">
     <value>总共:</value>
   </data>
-	<data name="AllPage2" xml:space="preserve">
+  <data name="AllPage2" xml:space="preserve">
     <value>页</value>
   </data>
-	<data name="CurrentPage" xml:space="preserve">
+  <data name="CurrentPage" xml:space="preserve">
     <value>当前: 第</value>
   </data>
-	<data name="CurrentPage2" xml:space="preserve">
+  <data name="CurrentPage2" xml:space="preserve">
     <value>页</value>
   </data>
-	<data name="LastPage" xml:space="preserve">
+  <data name="LastPage" xml:space="preserve">
     <value>上一页</value>
   </data>
-	<data name="NextPage" xml:space="preserve">
+  <data name="NextPage" xml:space="preserve">
     <value>下一页</value>
   </data>
-	<data name="CompanyUrlStr" xml:space="preserve">
+  <data name="CompanyUrlStr" xml:space="preserve">
     <value>网址</value>
   </data>
-	<data name="ExitPassword" xml:space="preserve">
+  <data name="ExitPassword" xml:space="preserve">
     <value>退出密码</value>
   </data>
-	<data name="MobileNoStr" xml:space="preserve">
+  <data name="MobileNoStr" xml:space="preserve">
     <value>电话</value>
   </data>
-	<data name="Reset" xml:space="preserve">
+  <data name="Reset" xml:space="preserve">
     <value>重置</value>
   </data>
-	<data name="NotFoundUSBKEY" xml:space="preserve">
+  <data name="NotFoundUSBKEY" xml:space="preserve">
     <value>未找到USB-KEY！</value>
   </data>
-	<data name="Back" xml:space="preserve">
+  <data name="Back" xml:space="preserve">
     <value>返回</value>
   </data>
-	<data name="MuteRestore" xml:space="preserve">
+  <data name="MuteRestore" xml:space="preserve">
     <value>恢复</value>
   </data>
-	<data name="UpdateAlert" xml:space="preserve">
+  <data name="UpdateAlert" xml:space="preserve">
     <value>发现系统新版本，请及时下载更新！</value>
   </data>
-	<data name="Exception_CheckSqlAndFile" xml:space="preserve">
+  <data name="Exception_CheckSqlAndFile" xml:space="preserve">
     <value>数据库连接错误, 请检查数据库文件或数据库连接配置！</value>
   </data>
-	<data name="CompanyShortName" xml:space="preserve">
+  <data name="CompanyShortName" xml:space="preserve">
     <value>梦胜</value>
   </data>
-	<data name="CompleteInput" xml:space="preserve">
+  <data name="CompleteInput" xml:space="preserve">
     <value>请完整输入数据！</value>
   </data>
-	<data name="VersionNo" xml:space="preserve">
+  <data name="VersionNo" xml:space="preserve">
     <value>版本号</value>
   </data>
-	<data name="SoftPlayerDescription" xml:space="preserve">
+  <data name="SoftPlayerDescription" xml:space="preserve">
     <value>如有任何意见或建议请与我们联系，联系方式请通过：“系统---关于” 查看。</value>
   </data>
-	<data name="ChangeLanguage" xml:space="preserve">
+  <data name="ChangeLanguage" xml:space="preserve">
     <value>切换语言</value>
   </data>
-	<data name="ChangeLanguageFailt" xml:space="preserve">
+  <data name="ChangeLanguageFailt" xml:space="preserve">
     <value>更改语言失败！</value>
   </data>
-	<data name="ChangeLanguageSuccess" xml:space="preserve">
+  <data name="ChangeLanguageSuccess" xml:space="preserve">
     <value>更改语言成功, 将在系统下次启动时生效！</value>
   </data>
-	<data name="Exception_InvalidLanguage" xml:space="preserve">
+  <data name="Exception_InvalidLanguage" xml:space="preserve">
     <value>系统语言无效或不存在, 请检查配置文件！</value>
   </data>
-	<data name="Exception_LogError" xml:space="preserve">
+  <data name="Exception_LogError" xml:space="preserve">
     <value>加载日志失败！</value>
   </data>
-	<data name="FontName2" xml:space="preserve">
-    <value>宋体</value>
+  <data name="FontName2" xml:space="preserve">
+    <value>Simsun</value>
   </data>
-	<data name="Help" xml:space="preserve">
+  <data name="Help" xml:space="preserve">
     <value>帮助</value>
   </data>
-	<data name="Exception_InvalidDB" xml:space="preserve">
+  <data name="Exception_InvalidDB" xml:space="preserve">
     <value>数据库文件无效！</value>
   </data>
-	<data name="Exception_KeyKeyError" xml:space="preserve">
+  <data name="Exception_KeyKeyError" xml:space="preserve">
     <value>USB-KEY获取Key错误.错误:{0},{1}.</value>
   </data>
-	<data name="Exception_ApplicationCheckFaild" xml:space="preserve">
+  <data name="Exception_ApplicationCheckFaild" xml:space="preserve">
     <value>应用程序验证失败！</value>
   </data>
-	<data name="Exception_CloseRequestFaild" xml:space="preserve">
+  <data name="Exception_CloseRequestFaild" xml:space="preserve">
     <value>发送关闭会话请求错误！</value>
   </data>
-	<data name="Exception_EncryptedRequestFaild" xml:space="preserve">
+  <data name="Exception_EncryptedRequestFaild" xml:space="preserve">
     <value>发送加密请求错误！</value>
   </data>
-	<data name="Exception_LockRequestFaild" xml:space="preserve">
+  <data name="Exception_LockRequestFaild" xml:space="preserve">
     <value>发送锁定请求错误！</value>
   </data>
-	<data name="Exception_NewRequestFailt" xml:space="preserve">
+  <data name="Exception_NewRequestFailt" xml:space="preserve">
     <value>发送新会话请求错误！{0}错误代码：101</value>
   </data>
-	<data name="Exception_OutClientLimitFaild" xml:space="preserve">
+  <data name="Exception_OutClientLimitFaild" xml:space="preserve">
     <value>超出客户端连接限制！{0}错误代码：102</value>
   </data>
-	<data name="Exception_RemoteServerConn" xml:space="preserve">
+  <data name="Exception_RemoteServerConn" xml:space="preserve">
     <value>无法连接远程服务器！</value>
   </data>
-	<data name="Exception_ServerCantCorrConn" xml:space="preserve">
+  <data name="Exception_ServerCantCorrConn" xml:space="preserve">
     <value>无法跟服务器正常保持会话！请单击【重试】继续，或单击【退出】退出系统！</value>
   </data>
-	<data name="Exception_ServerCheckFaild" xml:space="preserve">
+  <data name="Exception_ServerCheckFaild" xml:space="preserve">
     <value>检查服务器KEY错误！</value>
   </data>
-	<data name="Exception_ServerFaild" xml:space="preserve">
+  <data name="Exception_ServerFaild" xml:space="preserve">
     <value>服务器发生错误！</value>
   </data>
-	<data name="Exception_ServerKeyFaild" xml:space="preserve">
+  <data name="Exception_ServerKeyFaild" xml:space="preserve">
     <value>服务器KEY错误！</value>
   </data>
-	<data name="Exception_SessionExpiredRetry" xml:space="preserve">
+  <data name="Exception_SessionExpiredRetry" xml:space="preserve">
     <value>会话过期, 请重试！</value>
   </data>
-	<data name="Exception_SessionFaildAndTry" xml:space="preserve">
+  <data name="Exception_SessionFaildAndTry" xml:space="preserve">
     <value>会话过期, 尝试重新获取！</value>
   </data>
-	<data name="Exception_SessionRequestFaild" xml:space="preserve">
+  <data name="Exception_SessionRequestFaild" xml:space="preserve">
     <value>发送保持会话请求错误！</value>
   </data>
-	<data name="Exception_SessionUpdateFaild" xml:space="preserve">
+  <data name="Exception_SessionUpdateFaild" xml:space="preserve">
     <value>会话更新失败！</value>
   </data>
-	<data name="Exception_UIDRequestFaild" xml:space="preserve">
+  <data name="Exception_UIDRequestFaild" xml:space="preserve">
     <value>发送获取UID请求失败！</value>
   </data>
-	<data name="SessionUpdateSuccess" xml:space="preserve">
+  <data name="SessionUpdateSuccess" xml:space="preserve">
     <value>会话更新成功.</value>
   </data>
-	<data name="Exception_SetClientTimeFailt" xml:space="preserve">
+  <data name="Exception_SetClientTimeFailt" xml:space="preserve">
     <value>校准服务器时间到客户端时间失败！</value>
   </data>
-	<data name="IsHidden" xml:space="preserve">
+  <data name="IsHidden" xml:space="preserve">
     <value>隐藏</value>
   </data>
-	<data name="Exception_CheckDataFaild" xml:space="preserve">
+  <data name="Exception_CheckDataFaild" xml:space="preserve">
     <value>远程服务器数据获取错误！</value>
   </data>
-	<data name="Exception_DataNotReady" xml:space="preserve">
+  <data name="Exception_DataNotReady" xml:space="preserve">
     <value>远程服务器数据未准备就绪！请稍后重试！错误代码：107</value>
   </data>
-	<data name="Exception_ChangePWDRequestFaild" xml:space="preserve">
+  <data name="Exception_ChangePWDRequestFaild" xml:space="preserve">
     <value>发送修改密码请求错误！</value>
   </data>
-	<data name="Exception_ValidPWDRequestFaild" xml:space="preserve">
+  <data name="Exception_ValidPWDRequestFaild" xml:space="preserve">
     <value>发送验证密码请求错误！</value>
   </data>
-	<data name="ContactUs" xml:space="preserve">
+  <data name="ContactUs" xml:space="preserve">
     <value>联系我们</value>
   </data>
-	<data name="Consumption" xml:space="preserve">
+  <data name="Consumption" xml:space="preserve">
     <value>消费</value>
   </data>
-	<data name="DealerContactWay" xml:space="preserve">
+  <data name="DealerContactWay" xml:space="preserve">
     <value>经销商联系方式</value>
   </data>
-	<data name="Mode" xml:space="preserve">
+  <data name="Mode" xml:space="preserve">
     <value>模式</value>
   </data>
-	<data name="Remark" xml:space="preserve">
+  <data name="Remark" xml:space="preserve">
     <value>备注</value>
   </data>
-	<data name="Other" xml:space="preserve">
+  <data name="Other" xml:space="preserve">
     <value>其他</value>
   </data>
-	<data name="Exception_IPConflict" xml:space="preserve">
+  <data name="Exception_IPConflict" xml:space="preserve">
     <value>IP地址冲突， 请重启！</value>
   </data>
-	<data name="Exception_SessionInvalid" xml:space="preserve">
+  <data name="Exception_SessionInvalid" xml:space="preserve">
     <value>无效会话， 请重启！</value>
   </data>
-	<data name="Exception_InvalidPending" xml:space="preserve">
+  <data name="Exception_InvalidPending" xml:space="preserve">
     <value>无效模式！</value>
   </data>
-	<data name="Exception_IPInvalid" xml:space="preserve">
+  <data name="Exception_IPInvalid" xml:space="preserve">
     <value>IP地址无效，请联系客服！</value>
   </data>
-	<data name="Exception_OrderExpired" xml:space="preserve">
+  <data name="Exception_OrderExpired" xml:space="preserve">
     <value>账单已过期，请联系客服！</value>
   </data>
-	<data name="Exception_OrderInvalid" xml:space="preserve">
+  <data name="Exception_OrderInvalid" xml:space="preserve">
     <value>账单无效，请联系客服！</value>
   </data>
-	<data name="Exception_SendRequestFaild" xml:space="preserve">
+  <data name="Exception_SendRequestFaild" xml:space="preserve">
     <value>发送通知请求错误！</value>
   </data>
-	<data name="Exception_SetConRequestFaild" xml:space="preserve">
+  <data name="Exception_SetConRequestFaild" xml:space="preserve">
     <value>发送设置功能请求错误！</value>
   </data>
-	<data name="Exception_OperateRequestFaild" xml:space="preserve">
+  <data name="Exception_OperateRequestFaild" xml:space="preserve">
     <value>发送操作请求错误！</value>
   </data>
-	<data name="SoftServiceName" xml:space="preserve">
+  <data name="SoftServiceName" xml:space="preserve">
     <value>梦胜交易系统v1.1</value>
   </data>
-	<data name="ChangeSet" xml:space="preserve">
+  <data name="ChangeSet" xml:space="preserve">
     <value>功能设置</value>
   </data>
-	<data name="ExpenditureManager" xml:space="preserve">
+  <data name="ExpenditureManager" xml:space="preserve">
     <value>支出管理</value>
   </data>
-	<data name="MainPage" xml:space="preserve">
+  <data name="MainPage" xml:space="preserve">
     <value>主页</value>
   </data>
-	<data name="OrderManager" xml:space="preserve">
+  <data name="OrderManager" xml:space="preserve">
     <value>账单管理</value>
   </data>
-	<data name="ProductManager" xml:space="preserve">
+  <data name="ProductManager" xml:space="preserve">
     <value>产品管理</value>
   </data>
-	<data name="ProductTypeManager" xml:space="preserve">
+  <data name="ProductTypeManager" xml:space="preserve">
     <value>产品类型管理</value>
   </data>
-	<data name="RoomManager" xml:space="preserve">
+  <data name="RoomManager" xml:space="preserve">
     <value>雅座管理</value>
   </data>
-	<data name="OperateFaild" xml:space="preserve">
+  <data name="OperateFaild" xml:space="preserve">
     <value>{0}失败！</value>
   </data>
-	<data name="ActualPrice" xml:space="preserve">
+  <data name="ActualPrice" xml:space="preserve">
     <value>实际价格</value>
   </data>
-	<data name="AddTime" xml:space="preserve">
+  <data name="AddTime" xml:space="preserve">
     <value>添加时间</value>
   </data>
-	<data name="Backstage" xml:space="preserve">
+  <data name="Backstage" xml:space="preserve">
     <value>后台</value>
   </data>
-	<data name="Count" xml:space="preserve">
+  <data name="Count" xml:space="preserve">
     <value>数量</value>
   </data>
-	<data name="DealsPrice" xml:space="preserve">
+  <data name="DealsPrice" xml:space="preserve">
     <value>优惠金额</value>
   </data>
-	<data name="Display" xml:space="preserve">
+  <data name="Display" xml:space="preserve">
     <value>显示</value>
   </data>
-	<data name="DisplayType" xml:space="preserve">
+  <data name="DisplayType" xml:space="preserve">
     <value>显示类型</value>
   </data>
-	<data name="EndTime" xml:space="preserve">
+  <data name="EndTime" xml:space="preserve">
     <value>结束时间</value>
   </data>
-	<data name="FinishTime" xml:space="preserve">
+  <data name="FinishTime" xml:space="preserve">
     <value>完成时间</value>
   </data>
-	<data name="Hide" xml:space="preserve">
+  <data name="Hide" xml:space="preserve">
     <value>隐藏</value>
   </data>
-	<data name="ImportTime" xml:space="preserve">
+  <data name="ImportTime" xml:space="preserve">
     <value>支出日期</value>
   </data>
-	<data name="IpAddress" xml:space="preserve">
+  <data name="IpAddress" xml:space="preserve">
     <value>IP地址</value>
   </data>
-	<data name="Order" xml:space="preserve">
+  <data name="Order" xml:space="preserve">
     <value>顺序</value>
   </data>
-	<data name="ProductName" xml:space="preserve">
+  <data name="ProductName" xml:space="preserve">
     <value>产品名称</value>
   </data>
-	<data name="ProductTypeName" xml:space="preserve">
+  <data name="ProductTypeName" xml:space="preserve">
     <value>产品类型名称</value>
   </data>
-	<data name="RoomNo" xml:space="preserve">
+  <data name="RoomNo" xml:space="preserve">
     <value>雅座编号</value>
   </data>
-	<data name="StartTime" xml:space="preserve">
+  <data name="StartTime" xml:space="preserve">
     <value>开始时间</value>
   </data>
-	<data name="State" xml:space="preserve">
+  <data name="State" xml:space="preserve">
     <value>状态</value>
   </data>
-	<data name="TotalPrice" xml:space="preserve">
+  <data name="TotalPrice" xml:space="preserve">
     <value>总价</value>
   </data>
-	<data name="UnitPrice" xml:space="preserve">
+  <data name="UnitPrice" xml:space="preserve">
     <value>单价</value>
   </data>
-	<data name="PropertyUsed" xml:space="preserve">
+  <data name="PropertyUsed" xml:space="preserve">
     <value>请先修改或删除与此数据关联的数据！</value>
   </data>
-	<data name="Exception_CountOutOfIPRequestLimit" xml:space="preserve">
+  <data name="Exception_CountOutOfIPRequestLimit" xml:space="preserve">
     <value>重复请求数量过多，请稍后重试！错误代码：103</value>
   </data>
-	<data name="Exception_ExceptionSource" xml:space="preserve">
+  <data name="Exception_ExceptionSource" xml:space="preserve">
     <value>{0} {1} 错误来源：{2}</value>
   </data>
-	<data name="PropertyExists" xml:space="preserve">
+  <data name="PropertyExists" xml:space="preserve">
     <value>{0} 已存在, 请勿重复输入！</value>
   </data>
-	<data name="Checkout" xml:space="preserve">
+  <data name="Checkout" xml:space="preserve">
     <value>结账</value>
   </data>
-	<data name="Invalid" xml:space="preserve">
+  <data name="Invalid" xml:space="preserve">
     <value>作废</value>
   </data>
-	<data name="Confirmed" xml:space="preserve">
+  <data name="Confirmed" xml:space="preserve">
     <value>已确认</value>
   </data>
-	<data name="GetFailed" xml:space="preserve">
+  <data name="GetFailed" xml:space="preserve">
     <value>获取失败！</value>
   </data>
-	<data name="OrderDetails" xml:space="preserve">
+  <data name="OrderDetails" xml:space="preserve">
     <value>账单详细</value>
   </data>
-	<data name="OrderNo" xml:space="preserve">
+  <data name="OrderNo" xml:space="preserve">
     <value>账单编号</value>
   </data>
-	<data name="PropertyError" xml:space="preserve">
+  <data name="PropertyError" xml:space="preserve">
     <value>输入的{0}不完整或不准确！</value>
   </data>
-	<data name="Requesting" xml:space="preserve">
+  <data name="Requesting" xml:space="preserve">
     <value>请求中</value>
   </data>
-	<data name="Show" xml:space="preserve">
+  <data name="Show" xml:space="preserve">
     <value>查看</value>
   </data>
-	<data name="ShowDescription" xml:space="preserve">
+  <data name="ShowDescription" xml:space="preserve">
     <value>查看详情</value>
   </data>
-	<data name="Time" xml:space="preserve">
+  <data name="Time" xml:space="preserve">
     <value>时间</value>
   </data>
-	<data name="TimeLimit" xml:space="preserve">
+  <data name="TimeLimit" xml:space="preserve">
     <value>查找时间间隔必须在 {0} 天内！</value>
   </data>
-	<data name="ImportDetails" xml:space="preserve">
+  <data name="ImportDetails" xml:space="preserve">
     <value>支出详情</value>
   </data>
-	<data name="ImportId" xml:space="preserve">
+  <data name="ImportId" xml:space="preserve">
     <value>支出编号</value>
   </data>
-	<data name="Print" xml:space="preserve">
+  <data name="Print" xml:space="preserve">
     <value>打印</value>
   </data>
-	<data name="PrintDescription" xml:space="preserve">
+  <data name="PrintDescription" xml:space="preserve">
     <value>打印内容</value>
   </data>
-	<data name="AddImport" xml:space="preserve">
+  <data name="AddImport" xml:space="preserve">
     <value>新增支出</value>
   </data>
-	<data name="LineDataError" xml:space="preserve">
+  <data name="LineDataError" xml:space="preserve">
     <value>第{0}行的数据输入不完整或不准确！</value>
   </data>
-	<data name="BalanceCount" xml:space="preserve">
+  <data name="BalanceCount" xml:space="preserve">
     <value>剩余数量</value>
   </data>
-	<data name="Exception_ProductCountRefreshExpiredRetry" xml:space="preserve">
+  <data name="Exception_ProductCountRefreshExpiredRetry" xml:space="preserve">
     <value>产品数量过期, 请重试！</value>
   </data>
-	<data name="Exception_ProductCountRefreshFailed" xml:space="preserve">
+  <data name="Exception_ProductCountRefreshFailed" xml:space="preserve">
     <value>产品更新失败！</value>
   </data>
-	<data name="Exception_ProductCountRefreshRetry" xml:space="preserve">
+  <data name="Exception_ProductCountRefreshRetry" xml:space="preserve">
     <value>产品数量不够, 尝试重新获取产品！</value>
   </data>
-	<data name="IsBindCount" xml:space="preserve">
+  <data name="IsBindCount" xml:space="preserve">
     <value>绑定数量</value>
   </data>
-	<data name="ProductCountRefreshSuccess" xml:space="preserve">
+  <data name="ProductCountRefreshSuccess" xml:space="preserve">
     <value>产品更新成功.</value>
   </data>
-	<data name="WarningCount" xml:space="preserve">
+  <data name="WarningCount" xml:space="preserve">
     <value>警告数量</value>
   </data>
-	<data name="ConsumptionType" xml:space="preserve">
+  <data name="ConsumptionType" xml:space="preserve">
     <value>消费控制</value>
   </data>
-	<data name="ControlType" xml:space="preserve">
+  <data name="ControlType" xml:space="preserve">
     <value>远程控制</value>
   </data>
-	<data name="PaidPrice" xml:space="preserve">
+  <data name="PaidPrice" xml:space="preserve">
     <value>支付金额</value>
   </data>
-	<data name="PermissionDenied" xml:space="preserve">
+  <data name="PermissionDenied" xml:space="preserve">
     <value>没有权限!</value>
   </data>
-	<data name="Call" xml:space="preserve">
+  <data name="Call" xml:space="preserve">
     <value>呼叫</value>
   </data>
-	<data name="CostPrice" xml:space="preserve">
+  <data name="CostPrice" xml:space="preserve">
     <value>成本价格</value>
   </data>
-	<data name="New" xml:space="preserve">
+  <data name="New" xml:space="preserve">
     <value>新</value>
   </data>
-	<data name="Offline" xml:space="preserve">
+  <data name="Offline" xml:space="preserve">
     <value>离线</value>
   </data>
-	<data name="Online" xml:space="preserve">
+  <data name="Online" xml:space="preserve">
     <value>在线</value>
   </data>
-	<data name="BalancePrice" xml:space="preserve">
+  <data name="BalancePrice" xml:space="preserve">
     <value>剩余金额</value>
   </data>
-	<data name="ChangePrice" xml:space="preserve">
+  <data name="ChangePrice" xml:space="preserve">
     <value>修改价格</value>
   </data>
-	<data name="ChangeTime" xml:space="preserve">
+  <data name="ChangeTime" xml:space="preserve">
     <value>修改时间</value>
   </data>
-	<data name="Confirm" xml:space="preserve">
+  <data name="Confirm" xml:space="preserve">
     <value>确认</value>
   </data>
-	<data name="Disable" xml:space="preserve">
+  <data name="Disable" xml:space="preserve">
     <value>关闭</value>
   </data>
-	<data name="Enable" xml:space="preserve">
+  <data name="Enable" xml:space="preserve">
     <value>开启</value>
   </data>
-	<data name="Hour" xml:space="preserve">
+  <data name="Hour" xml:space="preserve">
     <value>小时</value>
   </data>
-	<data name="InvalidIt" xml:space="preserve">
+  <data name="InvalidIt" xml:space="preserve">
     <value>作废</value>
   </data>
-	<data name="Minute" xml:space="preserve">
+  <data name="Minute" xml:space="preserve">
     <value>分钟</value>
   </data>
-	<data name="RemainingTime" xml:space="preserve">
+  <data name="RemainingTime" xml:space="preserve">
     <value>剩余时间</value>
   </data>
-	<data name="TotalTime" xml:space="preserve">
+  <data name="TotalTime" xml:space="preserve">
     <value>总时间</value>
   </data>
-	<data name="BalanceCountNotEnough" xml:space="preserve">
+  <data name="BalanceCountNotEnough" xml:space="preserve">
     <value>操作失败, 此产品剩余数量只有{0}个 !</value>
   </data>
-	<data name="CancelOrder" xml:space="preserve">
+  <data name="CancelOrder" xml:space="preserve">
     <value>取消账单</value>
   </data>
-	<data name="CancelOrderDescription" xml:space="preserve">
+  <data name="CancelOrderDescription" xml:space="preserve">
     <value>取消当前账单.</value>
   </data>
-	<data name="CheckoutOrder" xml:space="preserve">
+  <data name="CheckoutOrder" xml:space="preserve">
     <value>结账账单</value>
   </data>
-	<data name="CheckoutOrderDescription" xml:space="preserve">
+  <data name="CheckoutOrderDescription" xml:space="preserve">
     <value>结账当前账单.</value>
   </data>
-	<data name="ConfirmCancelOrder" xml:space="preserve">
+  <data name="ConfirmCancelOrder" xml:space="preserve">
     <value>确认取消当前账单?</value>
   </data>
-	<data name="FaildThenRefreshModel" xml:space="preserve">
+  <data name="FaildThenRefreshModel" xml:space="preserve">
     <value>操作失败, 账单已修改, 准备尝试更新账单信息 !</value>
   </data>
-	<data name="Locked" xml:space="preserve">
+  <data name="Locked" xml:space="preserve">
     <value>锁住</value>
   </data>
-	<data name="NewOrder" xml:space="preserve">
+  <data name="NewOrder" xml:space="preserve">
     <value>新建账单</value>
   </data>
-	<data name="NewOrderDescription" xml:space="preserve">
+  <data name="NewOrderDescription" xml:space="preserve">
     <value>创建一个新账单.</value>
   </data>
-	<data name="OperateSuccess" xml:space="preserve">
+  <data name="OperateSuccess" xml:space="preserve">
     <value>{0}成功！</value>
   </data>
-	<data name="RefreshOrderFailed" xml:space="preserve">
+  <data name="RefreshOrderFailed" xml:space="preserve">
     <value>更新当前账单失败！</value>
   </data>
-	<data name="ReplaceRoom" xml:space="preserve">
+  <data name="ReplaceRoom" xml:space="preserve">
     <value>替换雅座</value>
   </data>
-	<data name="ReplaceRoomDescription" xml:space="preserve">
+  <data name="ReplaceRoomDescription" xml:space="preserve">
     <value>替换当前雅座为其他雅座.</value>
   </data>
-	<data name="Request" xml:space="preserve">
+  <data name="Request" xml:space="preserve">
     <value>请求</value>
   </data>
-	<data name="Restart" xml:space="preserve">
+  <data name="Restart" xml:space="preserve">
     <value>重启</value>
   </data>
-	<data name="RestartDescription" xml:space="preserve">
+  <data name="RestartDescription" xml:space="preserve">
     <value>重启主机.</value>
   </data>
-	<data name="SaveBeforeDelete" xml:space="preserve">
+  <data name="SaveBeforeDelete" xml:space="preserve">
     <value>请先保存数据！</value>
   </data>
-	<data name="ShowOrder" xml:space="preserve">
+  <data name="ShowOrder" xml:space="preserve">
     <value>查看账单</value>
   </data>
-	<data name="ShowOrderDescription" xml:space="preserve">
+  <data name="ShowOrderDescription" xml:space="preserve">
     <value>查看账单详情.</value>
   </data>
-	<data name="Shutdown" xml:space="preserve">
+  <data name="Shutdown" xml:space="preserve">
     <value>关机</value>
   </data>
-	<data name="ShutdownDescription" xml:space="preserve">
+  <data name="ShutdownDescription" xml:space="preserve">
     <value>关机主机.</value>
   </data>
-	<data name="UnevenBalance" xml:space="preserve">
+  <data name="UnevenBalance" xml:space="preserve">
     <value>余额不平！</value>
   </data>
-	<data name="NewRoom" xml:space="preserve">
+  <data name="NewRoom" xml:space="preserve">
     <value>新雅座</value>
   </data>
-	<data name="SendFireAlarm" xml:space="preserve">
+  <data name="SendFireAlarm" xml:space="preserve">
     <value>发送火警</value>
   </data>
-	<data name="Barcode" xml:space="preserve">
+  <data name="Barcode" xml:space="preserve">
     <value>条形码</value>
   </data>
-	<data name="Disabled" xml:space="preserve">
+  <data name="Disabled" xml:space="preserve">
     <value>已禁用</value>
   </data>
-	<data name="Price" xml:space="preserve">
+  <data name="Price" xml:space="preserve">
     <value>价格</value>
   </data>
-	<data name="IsPayByTime" xml:space="preserve">
+  <data name="IsPayByTime" xml:space="preserve">
     <value>是否按时间</value>
   </data>
-	<data name="PriceHour" xml:space="preserve">
+  <data name="PriceHour" xml:space="preserve">
     <value>时间价格</value>
   </data>
-	<data name="IsAutoExtendTime" xml:space="preserve">
+  <data name="IsAutoExtendTime" xml:space="preserve">
     <value>是否自动延长时间</value>
   </data>
-	<data name="PropertyUnSame" xml:space="preserve">
+  <data name="PropertyUnSame" xml:space="preserve">
     <value>数据不一致, 请重启并重试!</value>
   </data>
-	<data name="AdminName" xml:space="preserve">
+  <data name="AdminName" xml:space="preserve">
     <value>管理员名称</value>
   </data>
-	<data name="AdminManager" xml:space="preserve">
+  <data name="AdminManager" xml:space="preserve">
     <value>管理员管理</value>
   </data>
-	<data name="Sex" xml:space="preserve">
+  <data name="Sex" xml:space="preserve">
     <value>性别</value>
   </data>
-	<data name="IDNumber" xml:space="preserve">
+  <data name="IDNumber" xml:space="preserve">
     <value>身份证号</value>
   </data>
-	<data name="Menu" xml:space="preserve">
+  <data name="Menu" xml:space="preserve">
     <value>菜单</value>
   </data>
-	<data name="IsOnlyOwn" xml:space="preserve">
+  <data name="IsOnlyOwn" xml:space="preserve">
     <value>限制管理</value>
   </data>
-	<data name="IsEnable" xml:space="preserve">
+  <data name="IsEnable" xml:space="preserve">
     <value>是否开启</value>
   </data>
-	<data name="Guest" xml:space="preserve">
+  <data name="Guest" xml:space="preserve">
     <value>客人</value>
   </data>
-	<data name="Employee" xml:space="preserve">
+  <data name="Employee" xml:space="preserve">
     <value>员工</value>
   </data>
-	<data name="Admin" xml:space="preserve">
+  <data name="Admin" xml:space="preserve">
     <value>管理员</value>
   </data>
-	<data name="DeviceManager" xml:space="preserve">
+  <data name="DeviceManager" xml:space="preserve">
     <value>设备管理</value>
   </data>
-	<data name="AdminNo" xml:space="preserve">
+  <data name="AdminNo" xml:space="preserve">
     <value>管理员编号</value>
   </data>
-	<data name="DeviceNo" xml:space="preserve">
+  <data name="DeviceNo" xml:space="preserve">
     <value>设备编号</value>
   </data>
-	<data name="Computer" xml:space="preserve">
+  <data name="Computer" xml:space="preserve">
     <value>电脑</value>
   </data>
-	<data name="Tablet" xml:space="preserve">
+  <data name="Tablet" xml:space="preserve">
     <value>平板</value>
   </data>
-	<data name="DeviceType" xml:space="preserve">
+  <data name="DeviceType" xml:space="preserve">
     <value>设备类型</value>
   </data>
-	<data name="PrinterManager" xml:space="preserve">
+  <data name="PrinterManager" xml:space="preserve">
     <value>打印机管理</value>
   </data>
-	<data name="PrinterDeviceName" xml:space="preserve">
+  <data name="PrinterDeviceName" xml:space="preserve">
     <value>打印机设备名称</value>
   </data>
-	<data name="PrinterName" xml:space="preserve">
+  <data name="PrinterName" xml:space="preserve">
     <value>打印机名称</value>
   </data>
-	<data name="Customer" xml:space="preserve">
+  <data name="Customer" xml:space="preserve">
     <value>客户</value>
   </data>
-	<data name="Kitchen" xml:space="preserve">
+  <data name="Kitchen" xml:space="preserve">
     <value>厨房</value>
   </data>
-	<data name="MemberNo" xml:space="preserve">
+  <data name="MemberNo" xml:space="preserve">
     <value>会员编号</value>
   </data>
-	<data name="MemberManager" xml:space="preserve">
+  <data name="MemberManager" xml:space="preserve">
     <value>会员管理</value>
   </data>
-	<data name="MemberName" xml:space="preserve">
+  <data name="MemberName" xml:space="preserve">
     <value>会员名称</value>
   </data>
-	<data name="Occupation" xml:space="preserve">
+  <data name="Occupation" xml:space="preserve">
     <value>职业</value>
   </data>
-	<data name="Mobile" xml:space="preserve">
+  <data name="Mobile" xml:space="preserve">
     <value>手机</value>
   </data>
-	<data name="Phone" xml:space="preserve">
+  <data name="Phone" xml:space="preserve">
     <value>电话</value>
   </data>
-	<data name="Address" xml:space="preserve">
+  <data name="Address" xml:space="preserve">
     <value>地址</value>
   </data>
-	<data name="OfferRate" xml:space="preserve">
+  <data name="OfferRate" xml:space="preserve">
     <value>出售比率/100%</value>
   </data>
-	<data name="SpendPrice" xml:space="preserve">
+  <data name="SpendPrice" xml:space="preserve">
     <value>支出金额</value>
   </data>
-	<data name="FavorablePrice" xml:space="preserve">
+  <data name="FavorablePrice" xml:space="preserve">
     <value>优惠金额</value>
   </data>
-	<data name="ExpiredTime" xml:space="preserve">
+  <data name="ExpiredTime" xml:space="preserve">
     <value>到期时间</value>
   </data>
-	<data name="PrintType" xml:space="preserve">
+  <data name="PrintType" xml:space="preserve">
     <value>打印类型</value>
   </data>
-	<data name="Male" xml:space="preserve">
+  <data name="Male" xml:space="preserve">
     <value>男</value>
   </data>
-	<data name="Female" xml:space="preserve">
+  <data name="Female" xml:space="preserve">
     <value>女</value>
   </data>
-	<data name="Register" xml:space="preserve">
+  <data name="Register" xml:space="preserve">
     <value>注册</value>
   </data>
-	<data name="MachineNo" xml:space="preserve">
+  <data name="MachineNo" xml:space="preserve">
     <value>机器编码</value>
   </data>
-	<data name="RegisterNo" xml:space="preserve">
+  <data name="RegisterNo" xml:space="preserve">
     <value>注册编码</value>
   </data>
-	<data name="SoftwareExpired" xml:space="preserve">
+  <data name="SoftwareExpired" xml:space="preserve">
     <value>系统已到期, 重新注册吗?</value>
   </data>
-	<data name="SoftwareSoonExpired" xml:space="preserve">
+  <data name="SoftwareSoonExpired" xml:space="preserve">
     <value>系统{0}天后{1}过期, 是否现在注册?</value>
   </data>
-	<data name="SoftwareExpiredWarn" xml:space="preserve">
+  <data name="SoftwareExpiredWarn" xml:space="preserve">
     <value>为了不影响正常使用, 我们建议您最晚提前7天联系我们并注册系统!</value>
   </data>
-	<data name="RegisterSuccess" xml:space="preserve">
+  <data name="RegisterSuccess" xml:space="preserve">
     <value>注册成功, 请重新启动系统!</value>
   </data>
-	<data name="MemberPay" xml:space="preserve">
+  <data name="MemberPay" xml:space="preserve">
     <value>会员支付</value>
   </data>
-	<data name="MemberPayDescription" xml:space="preserve">
+  <data name="MemberPayDescription" xml:space="preserve">
     <value>查看会员支付详细</value>
   </data>
-	<data name="MemberPayNo" xml:space="preserve">
+  <data name="MemberPayNo" xml:space="preserve">
     <value>会员支付编号</value>
   </data>
-	<data name="MemberBalanceNotEnough" xml:space="preserve">
+  <data name="MemberBalanceNotEnough" xml:space="preserve">
     <value>会员余额不够!</value>
   </data>
-	<data name="PropertyNotFound" xml:space="preserve">
+  <data name="PropertyNotFound" xml:space="preserve">
     <value>未找到 {0} !</value>
   </data>
-	<data name="AddMember" xml:space="preserve">
+  <data name="AddMember" xml:space="preserve">
     <value>添加会员</value>
   </data>
-	<data name="CheckoutImport" xml:space="preserve">
+  <data name="CheckoutImport" xml:space="preserve">
     <value>结账支出</value>
   </data>
-	<data name="RoomPrice" xml:space="preserve">
+  <data name="RoomPrice" xml:space="preserve">
     <value>雅座价格</value>
   </data>
-	<data name="CountOfoffLimit" xml:space="preserve">
+  <data name="CountOfoffLimit" xml:space="preserve">
     <value>数量不能超过指定的限制!</value>
   </data>
-	<data name="MemberExpired" xml:space="preserve">
+  <data name="MemberExpired" xml:space="preserve">
     <value>当前会员已经到期!</value>
   </data>
-	<data name="MemberExpiredDescription" xml:space="preserve">
+  <data name="MemberExpiredDescription" xml:space="preserve">
     <value>修改会员到期时间!</value>
   </data>
-	<data name="NotFoundProperty_Number" xml:space="preserve">
+  <data name="NotFoundProperty_Number" xml:space="preserve">
     <value>第{0}个{1}未找到!</value>
   </data>
-	<data name="Unknown" xml:space="preserve">
+  <data name="Unknown" xml:space="preserve">
     <value>未知</value>
   </data>
-	<data name="Exception_UnknownDevice" xml:space="preserve">
+  <data name="Exception_UnknownDevice" xml:space="preserve">
     <value>设备不存在或被禁用！{0}错误代码：111</value>
   </data>
-	<data name="Exception_RoomCountOutOfLimit" xml:space="preserve">
+  <data name="Exception_RoomCountOutOfLimit" xml:space="preserve">
     <value>雅座超出最大数量限制！{0}错误代码：104</value>
   </data>
-	<data name="SureReset" xml:space="preserve">
+  <data name="SureReset" xml:space="preserve">
     <value>确定要重置吗?</value>
   </data>
-	<data name="ResetDescription" xml:space="preserve">
+  <data name="ResetDescription" xml:space="preserve">
     <value>重置管理员密码</value>
   </data>
-	<data name="Exception_UnknownAdmin" xml:space="preserve">
+  <data name="Exception_UnknownAdmin" xml:space="preserve">
     <value>管理员不存在或被禁用！{0}错误代码：112</value>
   </data>
-	<data name="BorrowPrice" xml:space="preserve">
+  <data name="BorrowPrice" xml:space="preserve">
     <value>借款金额</value>
   </data>
-	<data name="ReturnPrice" xml:space="preserve">
+  <data name="ReturnPrice" xml:space="preserve">
     <value>退回金额</value>
   </data>
-	<data name="RemainingDays" xml:space="preserve">
+  <data name="RemainingDays" xml:space="preserve">
     <value>剩余天</value>
   </data>
-	<data name="KeepPrice" xml:space="preserve">
+  <data name="KeepPrice" xml:space="preserve">
     <value>剩余金额</value>
   </data>
-	<data name="Device" xml:space="preserve">
+  <data name="Device" xml:space="preserve">
     <value>设备</value>
   </data>
-	<data name="Table" xml:space="preserve">
+  <data name="Table" xml:space="preserve">
     <value>雅座</value>
   </data>
-	<data name="Package" xml:space="preserve">
+  <data name="Package" xml:space="preserve">
     <value>打包</value>
   </data>
-	<data name="MemberDealsPrice" xml:space="preserve">
+  <data name="MemberDealsPrice" xml:space="preserve">
     <value>会员优惠金额</value>
   </data>
-	<data name="MemberPaidPrice" xml:space="preserve">
+  <data name="MemberPaidPrice" xml:space="preserve">
     <value>会员支付金额</value>
   </data>
-	<data name="TotalPaidPrice" xml:space="preserve">
+  <data name="TotalPaidPrice" xml:space="preserve">
     <value>支付总价</value>
   </data>
-	<data name="MemberBalancePrice" xml:space="preserve">
+  <data name="MemberBalancePrice" xml:space="preserve">
     <value>会员余额</value>
   </data>
-	<data name="RegisterCount" xml:space="preserve">
+  <data name="RegisterCount" xml:space="preserve">
     <value>注册数量</value>
   </data>
-	<data name="Expenditure" xml:space="preserve">
+  <data name="Expenditure" xml:space="preserve">
     <value>支出</value>
   </data>
-	<data name="PrintTypeLimit" xml:space="preserve">
+  <data name="PrintTypeLimit" xml:space="preserve">
     <value>不能添加同一类型的打印机!</value>
   </data>
-	<data name="SameEnabledPrinterFailed" xml:space="preserve">
+  <data name="SameEnabledPrinterFailed" xml:space="preserve">
     <value>账单类型的打印机只能开启一个!</value>
   </data>
-	<data name="Server" xml:space="preserve">
+  <data name="Server" xml:space="preserve">
     <value>服务器</value>
   </data>
-	<data name="PrintAfterBuy" xml:space="preserve">
+  <data name="PrintAfterBuy" xml:space="preserve">
     <value>购买后打印</value>
   </data>
-	<data name="PrintAfterCheckout" xml:space="preserve">
+  <data name="PrintAfterCheckout" xml:space="preserve">
     <value>结账后打印</value>
   </data>
-	<data name="LocalPrint" xml:space="preserve">
+  <data name="LocalPrint" xml:space="preserve">
     <value>本地打印</value>
   </data>
-	<data name="ServerIpAddress" xml:space="preserve">
+  <data name="ServerIpAddress" xml:space="preserve">
     <value>服务器IP地址</value>
   </data>
-	<data name="OperateChangeNextStartup" xml:space="preserve">
+  <data name="OperateChangeNextStartup" xml:space="preserve">
     <value>{0}成功, 将在系统下次启动时生效！</value>
   </data>
-	<data name="BarcodeNo" xml:space="preserve">
+  <data name="BarcodeNo" xml:space="preserve">
     <value>条形码编号</value>
   </data>
-	<data name="OnlyDisplaySelected" xml:space="preserve">
+  <data name="OnlyDisplaySelected" xml:space="preserve">
     <value>只显示选择的</value>
   </data>
-	<data name="CurrentProductAlreadyExists" xml:space="preserve">
+  <data name="CurrentProductAlreadyExists" xml:space="preserve">
     <value>当前产品已经存在!</value>
   </data>
-	<data name="Statistic" xml:space="preserve">
+  <data name="Statistic" xml:space="preserve">
     <value>统计</value>
   </data>
-	<data name="Exception_InvalidMediaRoot" xml:space="preserve">
+  <data name="Exception_InvalidMediaRoot" xml:space="preserve">
     <value>服务器图片路径无效或不存在, 请检查文件夹或网络！错误代码：100</value>
   </data>
-	<data name="Canceld" xml:space="preserve">
+  <data name="Canceld" xml:space="preserve">
     <value>已取消</value>
   </data>
-	<data name="Exception_Relogin" xml:space="preserve">
+  <data name="Exception_Relogin" xml:space="preserve">
     <value>会话过期, 请退出系统并重新登录!</value>
   </data>
-	<data name="InputNotValid" xml:space="preserve">
+  <data name="InputNotValid" xml:space="preserve">
     <value>请准确完整输入当前的相关信息!</value>
   </data>
-	<data name="IncomeManager" xml:space="preserve">
+  <data name="IncomeManager" xml:space="preserve">
     <value>收入管理</value>
   </data>
-	<data name="Bill" xml:space="preserve">
+  <data name="Bill" xml:space="preserve">
     <value>账单</value>
   </data>
-	<data name="ExpendBill" xml:space="preserve">
+  <data name="ExpendBill" xml:space="preserve">
     <value>支出账单</value>
   </data>
-	<data name="OwedPrice" xml:space="preserve">
+  <data name="OwedPrice" xml:space="preserve">
     <value>赊欠金额</value>
   </data>
-	<data name="IncomeStatistic" xml:space="preserve">
+  <data name="IncomeStatistic" xml:space="preserve">
     <value>收入统计</value>
   </data>
-	<data name="SpendStatistic" xml:space="preserve">
+  <data name="SpendStatistic" xml:space="preserve">
     <value>支出统计</value>
   </data>
-	<data name="SellProductsStatistic" xml:space="preserve">
+  <data name="SellProductsStatistic" xml:space="preserve">
     <value>出售产品统计</value>
   </data>
-	<data name="SpendProductsStatistic" xml:space="preserve">
+  <data name="SpendProductsStatistic" xml:space="preserve">
     <value>购买产品统计</value>
   </data>
-	<data name="NotFoundAnyRecords" xml:space="preserve">
+  <data name="NotFoundAnyRecords" xml:space="preserve">
     <value>未找到任何记录!</value>
   </data>
-	<data name="Proportion" xml:space="preserve">
+  <data name="Proportion" xml:space="preserve">
     <value>比例</value>
   </data>
-	<data name="PermissionsMenu" xml:space="preserve">
+  <data name="PermissionsMenu" xml:space="preserve">
     <value>权限菜单</value>
   </data>
-	<data name="Exception_MemberDisabled" xml:space="preserve">
+  <data name="Exception_MemberDisabled" xml:space="preserve">
     <value>会员被禁用！</value>
   </data>
-	<data name="Income" xml:space="preserve">
+  <data name="Income" xml:space="preserve">
     <value>收入</value>
   </data>
-	<data name="Exception_DeviceCountOutOfLimit" xml:space="preserve">
+  <data name="Exception_DeviceCountOutOfLimit" xml:space="preserve">
     <value>设备超出最大数量限制！{0}错误代码：105</value>
   </data>
-	<data name="ImageMode" xml:space="preserve">
+  <data name="ImageMode" xml:space="preserve">
     <value>图片模式</value>
   </data>
-	<data name="NewPasswordSizeLimit" xml:space="preserve">
+  <data name="NewPasswordSizeLimit" xml:space="preserve">
     <value>新密码至少是{0}位数!</value>
   </data>
-	<data name="AdminLog" xml:space="preserve">
+  <data name="AdminLog" xml:space="preserve">
     <value>管理员日志</value>
   </data>
-	<data name="LogTitle" xml:space="preserve">
+  <data name="LogTitle" xml:space="preserve">
     <value>日志标题</value>
   </data>
-	<data name="AdminPay" xml:space="preserve">
+  <data name="AdminPay" xml:space="preserve">
     <value>管理员支付</value>
   </data>
-	<data name="AdminPayDescription" xml:space="preserve">
+  <data name="AdminPayDescription" xml:space="preserve">
     <value>查看管理员支付详细</value>
   </data>
-	<data name="AdminPayNo" xml:space="preserve">
+  <data name="AdminPayNo" xml:space="preserve">
     <value>管理员支付编号</value>
   </data>
-	<data name="LogContent" xml:space="preserve">
+  <data name="LogContent" xml:space="preserve">
     <value>日志内容</value>
   </data>
-	<data name="SupplierManager" xml:space="preserve">
+  <data name="SupplierManager" xml:space="preserve">
     <value>供应商管理</value>
   </data>
-	<data name="SupplierPay" xml:space="preserve">
+  <data name="SupplierPay" xml:space="preserve">
     <value>供应商支付</value>
   </data>
-	<data name="SupplierPayDescription" xml:space="preserve">
+  <data name="SupplierPayDescription" xml:space="preserve">
     <value>查看供应商支付详细</value>
   </data>
-	<data name="SupplierPayNo" xml:space="preserve">
+  <data name="SupplierPayNo" xml:space="preserve">
     <value>供应商支付编号</value>
   </data>
-	<data name="SupplierNo" xml:space="preserve">
+  <data name="SupplierNo" xml:space="preserve">
     <value>供应商编号</value>
   </data>
-	<data name="SupplierExpiredDescription" xml:space="preserve">
+  <data name="SupplierExpiredDescription" xml:space="preserve">
     <value>修改供应商到期时间!</value>
   </data>
-	<data name="SupplierName" xml:space="preserve">
+  <data name="SupplierName" xml:space="preserve">
     <value>供应商名称</value>
   </data>
-	<data name="AddSupplier" xml:space="preserve">
+  <data name="AddSupplier" xml:space="preserve">
     <value>添加供应商</value>
   </data>
-	<data name="SupplierExpired" xml:space="preserve">
+  <data name="SupplierExpired" xml:space="preserve">
     <value>当前供应商已经到期!</value>
   </data>
-	<data name="Exception_SupplierDisabled" xml:space="preserve">
+  <data name="Exception_SupplierDisabled" xml:space="preserve">
     <value>供应商被禁用！</value>
   </data>
-	<data name="SupplierBalancePrice" xml:space="preserve">
+  <data name="SupplierBalancePrice" xml:space="preserve">
     <value>供应商余额</value>
   </data>
-	<data name="SupplierBalanceNotEnough" xml:space="preserve">
+  <data name="SupplierBalanceNotEnough" xml:space="preserve">
     <value>供应商余额不够!</value>
   </data>
-	<data name="SupplierDealsPrice" xml:space="preserve">
+  <data name="SupplierDealsPrice" xml:space="preserve">
     <value>供应商优惠价格</value>
   </data>
-	<data name="SupplierPaidPrice" xml:space="preserve">
+  <data name="SupplierPaidPrice" xml:space="preserve">
     <value>供应商支付金额</value>
   </data>
-	<data name="PleaseWait" xml:space="preserve">
+  <data name="PleaseWait" xml:space="preserve">
     <value>请稍等...</value>
   </data>
-	<data name="CreatingTheDocument" xml:space="preserve">
+  <data name="CreatingTheDocument" xml:space="preserve">
     <value>文档建立中...</value>
   </data>
-	<data name="TableUsed" xml:space="preserve">
+  <data name="TableUsed" xml:space="preserve">
     <value>当前桌子使用中!</value>
   </data>
-	<data name="Exception_InvalidType" xml:space="preserve">
+  <data name="Exception_InvalidType" xml:space="preserve">
 		<value>请准确完整输入当前的相关信息!</value>
 	</data>
-	<data name="ChangeCostPrice" xml:space="preserve">
+  <data name="ChangeCostPrice" xml:space="preserve">
 		<value>修改成本价格</value>
 	</data>
-	<data name="IndexName" xml:space="preserve">
+  <data name="IndexName" xml:space="preserve">
 		<value>索引名称</value>
 	</data>
-	<data name="FinanceLog" xml:space="preserve">
+  <data name="FinanceLog" xml:space="preserve">
 		<value>财务日志</value>
 	</data>
-	<data name="OperateName" xml:space="preserve">
+  <data name="OperateName" xml:space="preserve">
 		<value>操作名称</value>
 	</data>
-	<data name="CashDrawer" xml:space="preserve">
+  <data name="CashDrawer" xml:space="preserve">
 		<value>钱箱</value>
 	</data>
-	<data name="Open" xml:space="preserve">
+  <data name="Open" xml:space="preserve">
 		<value>打开</value>
 	</data>
-	<data name="IsPayByCard" xml:space="preserve">
+  <data name="IsPayByCard" xml:space="preserve">
 		<value>刷卡支付</value>
 	</data>
-	<data name="CardPaidPrice" xml:space="preserve">
+  <data name="CardPaidPrice" xml:space="preserve">
 		<value>刷卡支付金额</value>
 	</data>
-	<data name="SpendPaysStatistic" xml:space="preserve">
+  <data name="SpendPaysStatistic" xml:space="preserve">
 		<value>支付支出统计</value>
 	</data>
-	<data name="SalePaysStatistic" xml:space="preserve">
+  <data name="SalePaysStatistic" xml:space="preserve">
 		<value>支付收入统计</value>
 	</data>
-	<data name="BalancePay" xml:space="preserve">
+  <data name="BalancePay" xml:space="preserve">
 		<value>余额支付</value>
 	</data>
-	<data name="BalancePayDescription" xml:space="preserve">
+  <data name="BalancePayDescription" xml:space="preserve">
 		<value>查看余额支付详细</value>
 	</data>
-	<data name="BalancePayNo" xml:space="preserve">
+  <data name="BalancePayNo" xml:space="preserve">
 		<value>余额支付编号</value>
 	</data>
-	<data name="SoftServiceNameWithoutVersion" xml:space="preserve">
+  <data name="SoftServiceNameWithoutVersion" xml:space="preserve">
 		<value>梦胜交易系统</value>
 	</data>
-	<data name="MediumLabelFontSize" xml:space="preserve">
+  <data name="MediumLabelFontSize" xml:space="preserve">
 		<value>22</value>
 	</data>
-	<data name="LogoTitleLabelFontSize" xml:space="preserve">
+  <data name="LogoTitleLabelFontSize" xml:space="preserve">
 		<value>40</value>
 	</data>
-	<data name="SoftServiceVersion" xml:space="preserve">
+  <data name="SoftServiceVersion" xml:space="preserve">
 		<value>V1.1</value>
 	</data>
-	<data name="DirectionMode" xml:space="preserve">
+  <data name="DirectionMode" xml:space="preserve">
 		<value>LeftToRight</value>
 	</data>
-	<data name="LoginUserInputMsg" xml:space="preserve">
+  <data name="LoginUserInputMsg" xml:space="preserve">
 		<value>请输入管理员编号</value>
 	</data>
-	<data name="LoginPasswordInputMsg" xml:space="preserve">
+  <data name="LoginPasswordInputMsg" xml:space="preserve">
 		<value>请输入管理员密码</value>
 	</data>
-	<data name="Reset2" xml:space="preserve">
+  <data name="Reset2" xml:space="preserve">
 		<value>重置</value>
 	</data>
-	<data name="MediumButtonFontSize" xml:space="preserve">
+  <data name="MediumButtonFontSize" xml:space="preserve">
 		<value>26</value>
 	</data>
-	<data name="OK2" xml:space="preserve">
+  <data name="OK2" xml:space="preserve">
 		<value>确定</value>
 	</data>
-	<data name="LittleKeyboardFontSize" xml:space="preserve">
+  <data name="LittleKeyboardFontSize" xml:space="preserve">
 		<value>18</value>
 	</data>
-	<data name="HorizontalModel" xml:space="preserve">
+  <data name="HorizontalModel" xml:space="preserve">
 		<value>Left</value>
 	</data>
-	<data name="CompanyLogoName" xml:space="preserve">
+  <data name="CompanyLogoName" xml:space="preserve">
 		<value>梦胜科技</value>
 	</data>
-	<data name="RegNoInputMessage" xml:space="preserve">
+  <data name="RegNoInputMessage" xml:space="preserve">
 		<value>请输入注册码</value>
 	</data>
-	<data name="RegCountInputMessage" xml:space="preserve">
+  <data name="RegCountInputMessage" xml:space="preserve">
 		<value>请输入数量注册码</value>
 	</data>
-	<data name="TopLogoTitleLabelFontSize" xml:space="preserve">
+  <data name="TopLogoTitleLabelFontSize" xml:space="preserve">
 		<value>25</value>
 	</data>
-	<data name="LittleMediumLabelFontSize" xml:space="preserve">
+  <data name="LittleMediumLabelFontSize" xml:space="preserve">
 		<value>20</value>
 	</data>
-	<data name="Exception_AdminExists" xml:space="preserve">
+  <data name="Exception_AdminExists" xml:space="preserve">
 		<value>当前管理员正在使用！{0}错误代码：113</value>
 	</data>
-	<data name="IncomeTradingManage" xml:space="preserve">
+  <data name="IncomeTradingManage" xml:space="preserve">
 		<value>收入交易管理</value>
 	</data>
-	<data name="Permission" xml:space="preserve">
+  <data name="Permission" xml:space="preserve">
 		<value>权限</value>
 	</data>
-	<data name="Day" xml:space="preserve">
+  <data name="Day" xml:space="preserve">
 		<value>天</value>
 	</data>
-	<data name="Empty" xml:space="preserve">
+  <data name="Empty" xml:space="preserve">
 		<value>空闲</value>
 	</data>
-	<data name="Selected" xml:space="preserve">
+  <data name="Selected" xml:space="preserve">
 		<value>已选列表</value>
 	</data>
-	<data name="Products" xml:space="preserve">
+  <data name="Products" xml:space="preserve">
 		<value>产品列表</value>
 	</data>
-	<data name="Operate" xml:space="preserve">
+  <data name="Operate" xml:space="preserve">
 		<value>操作</value>
 	</data>
-	<data name="SelectedCount" xml:space="preserve">
+  <data name="SelectedCount" xml:space="preserve">
 		<value>选择数量</value>
 	</data>
-	<data name="OperatingWait" xml:space="preserve">
+  <data name="OperatingWait" xml:space="preserve">
 		<value>请稍等.....</value>
 	</data>
-	<data name="Cash" xml:space="preserve">
+  <data name="Cash" xml:space="preserve">
 		<value>现金</value>
 	</data>
-	<data name="Card" xml:space="preserve">
+  <data name="Card" xml:space="preserve">
 		<value>刷卡</value>
 	</data>
-	<data name="Member" xml:space="preserve">
+  <data name="Member" xml:space="preserve">
 		<value>会员</value>
 	</data>
-	<data name="Bind" xml:space="preserve">
+  <data name="Bind" xml:space="preserve">
 		<value>绑定</value>
 	</data>
-	<data name="Unbind" xml:space="preserve">
+  <data name="Unbind" xml:space="preserve">
 		<value>解绑</value>
 	</data>
-	<data name="MediumLargeButtonFontSize" xml:space="preserve">
+  <data name="MediumLargeButtonFontSize" xml:space="preserve">
 		<value>35</value>
 	</data>
-	<data name="OldRoomNo" xml:space="preserve">
+  <data name="OldRoomNo" xml:space="preserve">
 		<value>旧雅座编号</value>
 	</data>
-	<data name="NewRoomNo" xml:space="preserve">
+  <data name="NewRoomNo" xml:space="preserve">
 		<value>新雅座编号</value>
 	</data>
-	<data name="IpAddress2" xml:space="preserve">
+  <data name="IpAddress2" xml:space="preserve">
 		<value>IP地址</value>
 	</data>
-	<data name="RequestManager" xml:space="preserve">
+  <data name="RequestManager" xml:space="preserve">
 		<value>需求管理</value>
 	</data>
-	<data name="RequestName" xml:space="preserve">
+  <data name="RequestName" xml:space="preserve">
 		<value>需求名称</value>
 	</data>
-	<data name="Request2" xml:space="preserve">
+  <data name="Request2" xml:space="preserve">
 		<value>需求</value>
 	</data>
-	<data name="RequestDescription" xml:space="preserve">
+  <data name="RequestDescription" xml:space="preserve">
 		<value>给当前的数据添加需求。</value>
 	</data>
-	<data name="IsDisplayAll" xml:space="preserve">
+  <data name="IsDisplayAll" xml:space="preserve">
 		<value>显示所有</value>
 	</data>
-	<data name="CheckoutBy" xml:space="preserve">
+  <data name="CheckoutBy" xml:space="preserve">
 		<value>结账者</value>
 	</data>
-	<data name="OrderPhoneNo" xml:space="preserve">
+  <data name="OrderPhoneNo" xml:space="preserve">
 		<value>账单电话号码</value>
 	</data>
-	<data name="PersonName" xml:space="preserve">
+  <data name="PersonName" xml:space="preserve">
 		<value>姓名</value>
 	</data>
-	<data name="BillTypeInner" xml:space="preserve">
+  <data name="BillTypeInner" xml:space="preserve">
 		<value>内部</value>
 	</data>
-	<data name="BillTypeOuter" xml:space="preserve">
+  <data name="BillTypeOuter" xml:space="preserve">
 		<value>外部</value>
 	</data>
-	<data name="BillType" xml:space="preserve">
+  <data name="BillType" xml:space="preserve">
 		<value>账单类型</value>
 	</data>
-	<data name="AddOuterBill" xml:space="preserve">
+  <data name="AddOuterBill" xml:space="preserve">
 		<value>添加外部账单</value>
 	</data>
-	<data name="SuccessAndFailProperty" xml:space="preserve">
+  <data name="SuccessAndFailProperty" xml:space="preserve">
 		<value>成功: {0}, 失败: {1}.</value>
 	</data>
-	<data name="ConfirmSaveAll" xml:space="preserve">
+  <data name="ConfirmSaveAll" xml:space="preserve">
 		<value>确认保存所有?</value>
 	</data>
-	<data name="Profit" xml:space="preserve">
+  <data name="Profit" xml:space="preserve">
 		<value>纯利润</value>
 	</data>
-	<data name="TypeName" xml:space="preserve">
+  <data name="TypeName" xml:space="preserve">
 		<value>类型名称</value>
 	</data>
-	<data name="Summary" xml:space="preserve">
+  <data name="Summary" xml:space="preserve">
 		<value>总结</value>
 	</data>
-	<data name="SystemTimeInvalid" xml:space="preserve">
+  <data name="SystemTimeInvalid" xml:space="preserve">
 		<value>系统时间和服务器时间不一致！{0}错误代码：106</value>
 	</data>
-	<data name="UnrecordedPrice" xml:space="preserve">
+  <data name="UnrecordedPrice" xml:space="preserve">
 		<value>未记录金额</value>
 	</data>
-	<data name="ReceivedPrice" xml:space="preserve">
+  <data name="ReceivedPrice" xml:space="preserve">
 		<value>已收金额</value>
 	</data>
-	<data name="Prefix" xml:space="preserve">
+  <data name="Prefix" xml:space="preserve">
 		<value>字头</value>
 	</data>
-	<data name="MultiLanguage" xml:space="preserve">
+  <data name="MultiLanguage" xml:space="preserve">
 		<value>多语言</value>
 	</data>
-	<data name="Exception_DatabaseNotFound" xml:space="preserve">
+  <data name="Exception_DatabaseNotFound" xml:space="preserve">
 		<value>远程服务器数据库未找到，请检查！错误代码：108</value>
 	</data>
-	<data name="Exception_DatabaseLoadFailed" xml:space="preserve">
+  <data name="Exception_DatabaseLoadFailed" xml:space="preserve">
 		<value>远程服务器数据库加载失败！错误代码：109</value>
 	</data>
-	<data name="NoLimit" xml:space="preserve">
+  <data name="NoLimit" xml:space="preserve">
 		<value>没有限制</value>
 	</data>
-	<data name="ProductExpiredDescription" xml:space="preserve">
+  <data name="ProductExpiredDescription" xml:space="preserve">
 		<value>修改产品到期时间！</value>
 	</data>
-	<data name="None" xml:space="preserve">
+  <data name="None" xml:space="preserve">
 		<value>无</value>
 	</data>
-	<data name="BarcodeReader" xml:space="preserve">
+  <data name="BarcodeReader" xml:space="preserve">
 		<value>条码阅读器</value>
 	</data>
-	<data name="PrintBarcodeDescription" xml:space="preserve">
+  <data name="PrintBarcodeDescription" xml:space="preserve">
 		<value>打印条码</value>
 	</data>
-	<data name="Size" xml:space="preserve">
+  <data name="Size" xml:space="preserve">
 		<value>尺寸</value>
 	</data>
-	<data name="BarcodeLengthLimit" xml:space="preserve">
+  <data name="BarcodeLengthLimit" xml:space="preserve">
 		<value>条码长度必须是8位或13位！</value>
 	</data>
-	<data name="BillWide" xml:space="preserve">
+  <data name="BillWide" xml:space="preserve">
 		<value>账单-宽</value>
 	</data>
-	<data name="PrintAll" xml:space="preserve">
+  <data name="PrintAll" xml:space="preserve">
 		<value>打印所有</value>
 	</data>
-	<data name="ConfirmBalanceInjustice" xml:space="preserve">
+  <data name="ConfirmBalanceInjustice" xml:space="preserve">
 		<value>余额不平, 确定吗？</value>
 	</data>
-	<data name="ProductParentName" xml:space="preserve">
+  <data name="ProductParentName" xml:space="preserve">
 		<value>父级产品名</value>
 	</data>
-	<data name="ProductParentCount" xml:space="preserve">
+  <data name="ProductParentCount" xml:space="preserve">
 		<value>父级产品数量</value>
 	</data>
-	<data name="Borrow" xml:space="preserve">
+  <data name="Borrow" xml:space="preserve">
 		<value>赊欠</value>
 	</data>
-	<data name="CanNotExceed" xml:space="preserve">
+  <data name="CanNotExceed" xml:space="preserve">
 		<value>总支付金额为{0}元！</value>
 	</data>
-	<data name="ChangeCount" xml:space="preserve">
+  <data name="ChangeCount" xml:space="preserve">
 		<value>修改数量</value>
 	</data>
-	<data name="Information" xml:space="preserve">
+  <data name="Information" xml:space="preserve">
 		<value>提示</value>
 	</data>
-	<data name="InnerBill" xml:space="preserve">
+  <data name="InnerBill" xml:space="preserve">
 		<value>内部账单</value>
 	</data>
-	<data name="OuterBill" xml:space="preserve">
+  <data name="OuterBill" xml:space="preserve">
 		<value>外部账单</value>
 	</data>
-	<data name="IndexNameOrBarcode" xml:space="preserve">
+  <data name="IndexNameOrBarcode" xml:space="preserve">
 		<value>请输入索引名或条码</value>
 	</data>
-	<data name="Exception_DeviceExists" xml:space="preserve">
+  <data name="Exception_DeviceExists" xml:space="preserve">
 		<value>当前设备正在使用！{0}错误代码：115</value>
 	</data>
-	<data name="ReturnId" xml:space="preserve">
+  <data name="ReturnId" xml:space="preserve">
 		<value>退回编号</value>
 	</data>
-	<data name="BalanceManager" xml:space="preserve">
+  <data name="BalanceManager" xml:space="preserve">
 		<value>余额管理</value>
 	</data>
-	<data name="ReturnBill" xml:space="preserve">
+  <data name="ReturnBill" xml:space="preserve">
 		<value>退回账单</value>
 	</data>
-	<data name="BalanceName" xml:space="preserve">
+  <data name="BalanceName" xml:space="preserve">
 		<value>余额名称</value>
 	</data>
-	<data name="IsBind" xml:space="preserve">
+  <data name="IsBind" xml:space="preserve">
 		<value>绑定</value>
 	</data>
-	<data name="CardOnlyCouldBindOnce" xml:space="preserve">
+  <data name="CardOnlyCouldBindOnce" xml:space="preserve">
 		<value>最多只能绑定一张卡!</value>
 	</data>
-	<data name="AccountBank" xml:space="preserve">
+  <data name="AccountBank" xml:space="preserve">
 		<value>开户银行</value>
 	</data>
-	<data name="AccountName" xml:space="preserve">
+  <data name="AccountName" xml:space="preserve">
 		<value>开户姓名</value>
 	</data>
-	<data name="AccountNo" xml:space="preserve">
+  <data name="AccountNo" xml:space="preserve">
 		<value>开户帐号</value>
 	</data>
-	<data name="ReturnType" xml:space="preserve">
+  <data name="ReturnType" xml:space="preserve">
 		<value>退回类型</value>
 	</data>
-	<data name="ReturnManager" xml:space="preserve">
+  <data name="ReturnManager" xml:space="preserve">
 		<value>退回管理</value>
 	</data>
-	<data name="FromCustomer" xml:space="preserve">
+  <data name="FromCustomer" xml:space="preserve">
 		<value>来自客户</value>
 	</data>
-	<data name="ToSupplier" xml:space="preserve">
+  <data name="ToSupplier" xml:space="preserve">
 		<value>退供应商</value>
 	</data>
-	<data name="ReturnDetails" xml:space="preserve">
+  <data name="ReturnDetails" xml:space="preserve">
 		<value>退回详细</value>
 	</data>
-	<data name="IsChange" xml:space="preserve">
+  <data name="IsChange" xml:space="preserve">
 		<value>替换</value>
 	</data>
-	<data name="CheckoutReturn" xml:space="preserve">
+  <data name="CheckoutReturn" xml:space="preserve">
 		<value>结账退回</value>
 	</data>
-	<data name="BalancePaysIncomeStatistic" xml:space="preserve">
+  <data name="BalancePaysIncomeStatistic" xml:space="preserve">
 		<value>余额支付收入统计</value>
 	</data>
-	<data name="BalancePaysSpendStatistic" xml:space="preserve">
+  <data name="BalancePaysSpendStatistic" xml:space="preserve">
 		<value>余额支付支出统计</value>
 	</data>
-	<data name="BalancePayByCash" xml:space="preserve">
+  <data name="BalancePayByCash" xml:space="preserve">
 		<value>余额支付(现金)</value>
 	</data>
-	<data name="BalancePayByCard" xml:space="preserve">
+  <data name="BalancePayByCard" xml:space="preserve">
 		<value>余额支付(卡)</value>
 	</data>
-	<data name="MemberPayByCash" xml:space="preserve">
+  <data name="MemberPayByCash" xml:space="preserve">
 		<value>会员支付(现金)</value>
 	</data>
-	<data name="MemberPayByCard" xml:space="preserve">
+  <data name="MemberPayByCard" xml:space="preserve">
 		<value>会员支付(卡)</value>
 	</data>
-	<data name="SupplierPayByCash" xml:space="preserve">
+  <data name="SupplierPayByCash" xml:space="preserve">
 		<value>供应商支付(现金)</value>
 	</data>
-	<data name="SupplierPayByCard" xml:space="preserve">
+  <data name="SupplierPayByCard" xml:space="preserve">
 		<value>供应商支付(卡)</value>
 	</data>
-	<data name="AdminPayByCash" xml:space="preserve">
+  <data name="AdminPayByCash" xml:space="preserve">
 		<value>管理员支付(现金)</value>
 	</data>
-	<data name="AdminPayByCard" xml:space="preserve">
+  <data name="AdminPayByCard" xml:space="preserve">
 		<value>管理员支付(卡)</value>
 	</data>
-	<data name="ReturnStatistic" xml:space="preserve">
+  <data name="ReturnStatistic" xml:space="preserve">
 		<value>退回统计</value>
 	</data>
-	<data name="AdminSaleStatistic" xml:space="preserve">
+  <data name="AdminSaleStatistic" xml:space="preserve">
 		<value>管理员出售统计</value>
 	</data>
-	<data name="ReturnProductsStatistic" xml:space="preserve">
+  <data name="ReturnProductsStatistic" xml:space="preserve">
 		<value>退回产品统计</value>
 	</data>
-	<data name="ReplaceCount" xml:space="preserve">
+  <data name="ReplaceCount" xml:space="preserve">
 		<value>替换数量</value>
 	</data>
-	<data name="RecordCount" xml:space="preserve">
+  <data name="RecordCount" xml:space="preserve">
 		<value>记录数量</value>
 	</data>
-	<data name="Return" xml:space="preserve">
+  <data name="Return" xml:space="preserve">
 		<value>退回</value>
 	</data>
-	<data name="CardPrice" xml:space="preserve">
+  <data name="CardPrice" xml:space="preserve">
 		<value>刷卡价格</value>
 	</data>
-	<data name="CardBalancePrice" xml:space="preserve">
+  <data name="CardBalancePrice" xml:space="preserve">
 		<value>卡余额</value>
 	</data>
-	<data name="OtherPrice" xml:space="preserve">
+  <data name="OtherPrice" xml:space="preserve">
 		<value>其他价格</value>
 	</data>
-	<data name="Supplier" xml:space="preserve">
+  <data name="Supplier" xml:space="preserve">
 		<value>供应商</value>
 	</data>
-	<data name="PrintInfo" xml:space="preserve">
+  <data name="PrintInfo" xml:space="preserve">
 		<value>账单信息</value>
 	</data>
-	<data name="Test" xml:space="preserve">
+  <data name="Test" xml:space="preserve">
 		<value>测试</value>
 	</data>
-	<data name="InputPhoneNoFirst" xml:space="preserve">
+  <data name="InputPhoneNoFirst" xml:space="preserve">
 		<value>如果输入账单信息请先输入电话号码!</value>
 	</data>
-	<data name="PriceMonitor" xml:space="preserve">
+  <data name="PriceMonitor" xml:space="preserve">
 		<value>价格显示</value>
 	</data>
-	<data name="ProductProfitStatistic" xml:space="preserve">
+  <data name="ProductProfitStatistic" xml:space="preserve">
 		<value>产品利润统计</value>
 	</data>
-	<data name="IsBindWeigh" xml:space="preserve">
+  <data name="IsBindWeigh" xml:space="preserve">
 		<value>绑定重量</value>
 	</data>
-	<data name="PageHeight" xml:space="preserve">
+  <data name="PageHeight" xml:space="preserve">
 		<value>页面高度</value>
 	</data>
-	<data name="CancelAndDelete" xml:space="preserve">
+  <data name="CancelAndDelete" xml:space="preserve">
 		<value>取消和删除</value>
 	</data>
-	<data name="CashWithCard" xml:space="preserve">
+  <data name="CashWithCard" xml:space="preserve">
 		<value>现金: ￥{0}. 刷卡: ￥{1}.</value>
 	</data>
-	<data name="AdminCantCreateAnAdmin" xml:space="preserve">
+  <data name="AdminCantCreateAnAdmin" xml:space="preserve">
 		<value>管理员不能添加管理员!</value>
 	</data>
-	<data name="IncomePermission" xml:space="preserve">
+  <data name="IncomePermission" xml:space="preserve">
 		<value>收入权限</value>
 	</data>
-	<data name="ExpenditurePermission" xml:space="preserve">
+  <data name="ExpenditurePermission" xml:space="preserve">
 		<value>支出权限</value>
 	</data>
-	<data name="TemporaryChangePrice" xml:space="preserve">
+  <data name="TemporaryChangePrice" xml:space="preserve">
 		<value>临时修改价格</value>
 	</data>
-	<data name="ChangeUnitPrice" xml:space="preserve">
+  <data name="ChangeUnitPrice" xml:space="preserve">
 		<value>修改单价</value>
 	</data>
-	<data name="AddPrice" xml:space="preserve">
+  <data name="AddPrice" xml:space="preserve">
 		<value>增加金额</value>
 	</data>
-	<data name="AddMemberBalancePrice" xml:space="preserve">
+  <data name="AddMemberBalancePrice" xml:space="preserve">
 		<value>增加会员剩余金额</value>
 	</data>
-	<data name="PosTopTitleFontSize" xml:space="preserve">
+  <data name="PosTopTitleFontSize" xml:space="preserve">
 		<value>24</value>
 	</data>
-	<data name="PosTotalPriceFontSize" xml:space="preserve">
+  <data name="PosTotalPriceFontSize" xml:space="preserve">
 		<value>32</value>
 	</data>
-	<data name="PosCountFontSize" xml:space="preserve">
+  <data name="PosCountFontSize" xml:space="preserve">
 		<value>20</value>
 	</data>
-	<data name="PosDescriptionFontSize" xml:space="preserve">
+  <data name="PosDescriptionFontSize" xml:space="preserve">
 		<value>18</value>
 	</data>
-	<data name="User" xml:space="preserve">
+  <data name="User" xml:space="preserve">
 		<value>用户</value>
 	</data>
-	<data name="PosContentFontSize" xml:space="preserve">
+  <data name="PosContentFontSize" xml:space="preserve">
 		<value>16</value>
 	</data>
-	<data name="PosDescription" xml:space="preserve">
+  <data name="PosDescription" xml:space="preserve">
 		<value>搜索产品：F3，暂存：F7，恢复：F8，绑定会员：F10，关闭：F12，更换语言：TAB，打开钱箱：Alt+Z，定位：↑ ↓ ← →，翻页：PgUp/PgDn，增加数量：+，减少数量：-，选择/确定：Enter，删除已选：Del，取消/返回：Esc，。</value>
 	</data>
-	<data name="Restore" xml:space="preserve">
+  <data name="Restore" xml:space="preserve">
 		<value>恢复</value>
 	</data>
-	<data name="CardReader" xml:space="preserve">
+  <data name="CardReader" xml:space="preserve">
 		<value>卡片阅读器</value>
 	</data>
-	<data name="CardNo" xml:space="preserve">
+  <data name="CardNo" xml:space="preserve">
 		<value>卡号</value>
 	</data>
-	<data name="CardNoExists" xml:space="preserve">
+  <data name="CardNoExists" xml:space="preserve">
 		<value>卡号已存在，确认替换？</value>
 	</data>
-	<data name="SuccessReadBarcode" xml:space="preserve">
+  <data name="SuccessReadBarcode" xml:space="preserve">
 		<value>读取条码成功!</value>
 	</data>
-	<data name="SuccessReadCardNo" xml:space="preserve">
+  <data name="SuccessReadCardNo" xml:space="preserve">
 		<value>读取卡片成功!</value>
 	</data>
-	<data name="ServerIpAddress2" xml:space="preserve">
+  <data name="ServerIpAddress2" xml:space="preserve">
 		<value>服务器地址</value>
 	</data>
-	<data name="BindMemberByNo" xml:space="preserve">
+  <data name="BindMemberByNo" xml:space="preserve">
 		<value>通过号码绑定会员</value>
 	</data>
-	<data name="BindSupplierByNo" xml:space="preserve">
+  <data name="BindSupplierByNo" xml:space="preserve">
 		<value>通过号码绑定供应商</value>
 	</data>
-	<data name="BarcodeScales" xml:space="preserve">
+  <data name="BarcodeScales" xml:space="preserve">
 		<value>条码秤</value>
 	</data>
-	<data name="SendData" xml:space="preserve">
+  <data name="SendData" xml:space="preserve">
 		<value>发送数据</value>
 	</data>
-	<data name="IncorrectProductData" xml:space="preserve">
+  <data name="IncorrectProductData" xml:space="preserve">
 		<value>产品信息中有无效数据!</value>
 	</data>
-	<data name="IncorrectProductName" xml:space="preserve">
+  <data name="IncorrectProductName" xml:space="preserve">
 		<value>产品名称中有无效数据!</value>
 	</data>
-	<data name="UnableToConnectIPAddress" xml:space="preserve">
+  <data name="UnableToConnectIPAddress" xml:space="preserve">
 		<value>无法连接IP地址!</value>
 	</data>
-	<data name="ConfirmNotPay" xml:space="preserve">
+  <data name="ConfirmNotPay" xml:space="preserve">
 		<value>确定不付款吗？</value>
 	</data>
-	<data name="ReadResourceStrError" xml:space="preserve">
+  <data name="ReadResourceStrError" xml:space="preserve">
 		<value>资源读取错误！</value>
 	</data>
-	<data name="FreeRoomPriceLimit" xml:space="preserve">
+  <data name="FreeRoomPriceLimit" xml:space="preserve">
 		<value>免费价格限制</value>
 	</data>
-	<data name="CancelFireAlarm" xml:space="preserve">
+  <data name="CancelFireAlarm" xml:space="preserve">
 		<value>取消火警</value>
 	</data>
-	<data name="ConfirmOperate" xml:space="preserve">
+  <data name="ConfirmOperate" xml:space="preserve">
 		<value>确认{0}吗?</value>
 	</data>
-	<data name="DeleteProduct" xml:space="preserve">
+  <data name="DeleteProduct" xml:space="preserve">
 		<value>删除商品</value>
 	</data>
-	<data name="OpenCashDrawer" xml:space="preserve">
+  <data name="OpenCashDrawer" xml:space="preserve">
 		<value>打开钱箱</value>
 	</data>
-	<data name="Paid" xml:space="preserve">
+  <data name="Paid" xml:space="preserve">
 		<value>支付</value>
 	</data>
-	<data name="Platform" xml:space="preserve">
+  <data name="Platform" xml:space="preserve">
 		<value>平台</value>
 	</data>
-	<data name="UnlimitedTime" xml:space="preserve">
+  <data name="UnlimitedTime" xml:space="preserve">
 		<value>不限时</value>
 	</data>
-	<data name="Enabled" xml:space="preserve">
+  <data name="Enabled" xml:space="preserve">
 		<value>已开启</value>
 	</data>
-	<data name="DecreaseProductCount" xml:space="preserve">
+  <data name="DecreaseProductCount" xml:space="preserve">
 		<value>减少产品数量</value>
 	</data>
-	<data name="FaildThenWaitRetry" xml:space="preserve">
+  <data name="FaildThenWaitRetry" xml:space="preserve">
 		<value>操作失败, 操作太快, 请重试 !</value>
 	</data>
-	<data name="RemovePrice" xml:space="preserve">
+  <data name="RemovePrice" xml:space="preserve">
 		<value>去掉价格</value>
 	</data>
-	<data name="Exception_ServerClientVersionMisalignment" xml:space="preserve">
+  <data name="Exception_ServerClientVersionMisalignment" xml:space="preserve">
 		<value>远程服务端系统版本和当前客户端系统版本不一致, 请更新至相同系统版本 !</value>
 	</data>
-	<data name="Exception_ServerClientTimeMisalignment" xml:space="preserve">
+  <data name="Exception_ServerClientTimeMisalignment" xml:space="preserve">
 		<value>远程服务端系统时间和当前客户端系统时间不一致, 请更新至相同时间 !</value>
 	</data>
-	<data name="ConfirmAddPay" xml:space="preserve">
+  <data name="ConfirmAddPay" xml:space="preserve">
 		<value>确认从{2}添加{0}{1}给{3}?</value>
 	</data>
-	<data name="BalanceTransfer" xml:space="preserve">
+  <data name="BalanceTransfer" xml:space="preserve">
 		<value>转账余额</value>
 	</data>
-	<data name="OldBalance" xml:space="preserve">
+  <data name="OldBalance" xml:space="preserve">
 		<value>老余额</value>
 	</data>
-	<data name="NewBalance" xml:space="preserve">
+  <data name="NewBalance" xml:space="preserve">
 		<value>新余额</value>
 	</data>
-	<data name="BalanceTransferDescription" xml:space="preserve">
+  <data name="BalanceTransferDescription" xml:space="preserve">
 		<value>转账余额之间的钱</value>
 	</data>
-	<data name="LangName" xml:space="preserve">
+  <data name="LangName" xml:space="preserve">
 		<value>中文</value>
 	</data>
-	<data name="HightFix" xml:space="preserve">
+  <data name="HightFix" xml:space="preserve">
 		<value>0</value>
 	</data>
-	<data name="Culcure" xml:space="preserve">
+  <data name="Culcure" xml:space="preserve">
 		<value>zh-CN</value>
 	</data>
-	<data name="Dir" xml:space="preserve">
+  <data name="Dir" xml:space="preserve">
 		<value>ltr</value>
 	</data>
-	<data name="LargeFont" xml:space="preserve">
+  <data name="LargeFont" xml:space="preserve">
 		<value>0</value>
 	</data>
-	<data name="EnableAntialiasing" xml:space="preserve">
+  <data name="EnableAntialiasing" xml:space="preserve">
 		<value>0</value>
 	</data>
-	<data name="GlobalSetting" xml:space="preserve">
+  <data name="GlobalSetting" xml:space="preserve">
 		<value>全局设置</value>
 	</data>
-	<data name="PriceSymbol" xml:space="preserve">
+  <data name="PriceSymbol" xml:space="preserve">
 		<value>价格符号</value>
 	</data>
-	<data name="Main" xml:space="preserve">
+  <data name="Main" xml:space="preserve">
 		<value>主要</value>
 	</data>
-	<data name="SystemLanguage" xml:space="preserve">
+  <data name="SystemLanguage" xml:space="preserve">
 		<value>系统语言</value>
 	</data>
-	<data name="SystemLanguageCantSame" xml:space="preserve">
+  <data name="SystemLanguageCantSame" xml:space="preserve">
 		<value>系统语言们不能相同!</value>
 	</data>
-	<data name="SystemLanguageChangeWarn" xml:space="preserve">
+  <data name="SystemLanguageChangeWarn" xml:space="preserve">
 		<value>更改系统语言可能会影响系统，确认更改吗？</value>
 	</data>
-	<data name="PermissionsMenuDescription" xml:space="preserve">
+  <data name="PermissionsMenuDescription" xml:space="preserve">
 		<value>修改管理员权限</value>
 	</data>
-	<data name="ReturnMoney" xml:space="preserve">
+  <data name="ReturnMoney" xml:space="preserve">
 		<value>退回金钱</value>
 	</data>
-	<data name="CanNotExceedConfirm" xml:space="preserve">
+  <data name="CanNotExceedConfirm" xml:space="preserve">
 		<value>总支付金额为{0}元！确认退回吗 ？</value>
 	</data>
-	<data name="Exception_PasswordErrorCountLimit" xml:space="preserve">
+  <data name="Exception_PasswordErrorCountLimit" xml:space="preserve">
 		<value>密码错误次数过多，请晚点再试！</value>
 	</data>
-	<data name="CompanyName" xml:space="preserve">
+  <data name="CompanyName" xml:space="preserve">
 		<value>公司名称</value>
 	</data>
-	<data name="CustomFont_Android" xml:space="preserve">
+  <data name="CustomFont_Android" xml:space="preserve">
 		<value>OybabTuz.ttf#Oybab Tuz</value>
 	</data>
-	<data name="CustomFont_iOS" xml:space="preserve">
+  <data name="CustomFont_iOS" xml:space="preserve">
 		<value>OybabTuz</value>
 	</data>
-	<data name="CustomFont_UWP" xml:space="preserve">
+  <data name="CustomFont_UWP" xml:space="preserve">
 		<value>/Assets/OybabTuz.ttf#Oybab Tuz</value>
 	</data>
-	<data name="SavePassword" xml:space="preserve">
+  <data name="SavePassword" xml:space="preserve">
 		<value>保存密码</value>
 	</data>
-	<data name="Tsmi_Lang_Icon" xml:space="preserve">
+  <data name="Tsmi_Lang_Icon" xml:space="preserve">
 		<value>LangZH.png</value>
 	</data>
-	<data name="IncomeTypeStatistic" xml:space="preserve">
+  <data name="IncomeTypeStatistic" xml:space="preserve">
 		<value>收入类型统计</value>
 	</data>
-	<data name="SpendTypeStatistic" xml:space="preserve">
+  <data name="SpendTypeStatistic" xml:space="preserve">
 		<value>支出类型统计</value>
 	</data>
-	<data name="Settings" xml:space="preserve">
+  <data name="Settings" xml:space="preserve">
 		<value>功能</value>
 	</data>
-	<data name="Agree" xml:space="preserve">
+  <data name="Agree" xml:space="preserve">
 		<value>同意</value>
 	</data>
-	<data name="PrivacyPolicy" xml:space="preserve">
+  <data name="PrivacyPolicy" xml:space="preserve">
 		<value>隐私政策</value>
 	</data>
-	<data name="Exception_AdminUsing" xml:space="preserve">
+  <data name="Exception_AdminUsing" xml:space="preserve">
 		<value>当前管理员正在使用！如果不是本人操作请及时更改密码！</value>
 	</data>
-	<data name="UserAgreement" xml:space="preserve">
+  <data name="UserAgreement" xml:space="preserve">
 		<value>用户协议</value>
 	</data>
-	<data name="And" xml:space="preserve">
+  <data name="And" xml:space="preserve">
 		<value>和</value>
 	</data>
-	<data name="History" xml:space="preserve">
+  <data name="History" xml:space="preserve">
 		<value>历史</value>
 	</data>
-	<data name="HistoryDescription" xml:space="preserve">
+  <data name="HistoryDescription" xml:space="preserve">
 		<value>查看当前数据的历史。</value>
 	</data>
-	<data name="CompanyAbbreviation" xml:space="preserve">
+  <data name="CompanyAbbreviation" xml:space="preserve">
 		<value>梦胜科技</value>
 	</data>
-	<data name="License" xml:space="preserve">
+  <data name="License" xml:space="preserve">
 		<value>协议</value>
 	</data>
-	<data name="Donate" xml:space="preserve">
+  <data name="Donate" xml:space="preserve">
 		<value>捐助</value>
 	</data>
-	<data name="SourceCode" xml:space="preserve">
+  <data name="SourceCode" xml:space="preserve">
 		<value>源代码</value>
 	</data>
-	<data name="ConfirmItemBalanceNotEnough" xml:space="preserve">
+  <data name="ConfirmItemBalanceNotEnough" xml:space="preserve">
 		<value>{0}余额不够, 确认?</value>
 	</data>
 </root>

@@ -112,7 +112,7 @@ namespace Oybab.TradingSystemX.VM.ModelsForViews
                 {
 
                     DateTime now = DateTime.Now;
-                    TimeSpan balance = (DateTime.ParseExact(this.PayOrder.EndTime.ToString(), "yyyyMMddHHmmss", null) - now);
+                    TimeSpan balance = (DateTime.ParseExact(this.PayOrder.EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture) - now);
                     Room room = Resources.Instance.Rooms.Where(x => x.RoomId == RoomId).FirstOrDefault();
                     bool isTimeLeft = false;
 
@@ -128,7 +128,7 @@ namespace Oybab.TradingSystemX.VM.ModelsForViews
 
 
                     // 如果剩余时间已经超出了, 默认0:0显示
-                    if (now < DateTime.ParseExact(this.PayOrder.EndTime.ToString(), "yyyyMMddHHmmss", null))
+                    if (now < DateTime.ParseExact(this.PayOrder.EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture))
                     {
                         if (room.IsPayByTime == 1)
                             RoomTime = string.Format("{0}:{1}", (int)balance.TotalHours, balance.Minutes);
@@ -140,7 +140,7 @@ namespace Oybab.TradingSystemX.VM.ModelsForViews
 
 
 
-                    if (DateTime.ParseExact(this.PayOrder.EndTime.Value.ToString(), "yyyyMMddHHmmss", null) <= now)
+                    if (DateTime.ParseExact(this.PayOrder.EndTime.Value.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture) <= now)
                     {
                         timeup = true;
                         timeMode = 3;

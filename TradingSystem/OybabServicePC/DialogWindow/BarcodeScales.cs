@@ -41,7 +41,7 @@ namespace Oybab.ServicePC.DialogWindow
                 this.Icon = new Icon(asm.GetManifestResourceStream(@"Oybab.Res.Resources.Images.PC.PrintBarcode.ico"));
 
             krplLanguage.Text = Resources.GetRes().GetString("Language");
-            krpcLanguage.Items.AddRange(Resources.GetRes().MainLangList.Select(x => x.Value.LangName).ToArray());
+            krpcLanguage.Items.AddRange(Resources.GetRes().MainLangList.OrderBy(x=>x.Value.MainLangIndex).Select(x => x.Value.LangName).ToArray());
 
             krptIPAddress.Text = "192.168.1.150";
 

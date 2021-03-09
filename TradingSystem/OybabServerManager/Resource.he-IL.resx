@@ -1,0 +1,1947 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>על</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>הוסף את זה</value>
+  </data>
+  <data name="Change" xml:space="preserve">
+    <value>לשנות</value>
+  </data>
+  <data name="ChangeFaild" xml:space="preserve">
+    <value>השינוי נכשל !‏</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>שנה את הסיסמה</value>
+  </data>
+  <data name="ChangeSuccess" xml:space="preserve">
+    <value>השינוי היה מוצלח !‏</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>תסגור</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>הטיין Oybab מידע טכנולוגיה ושות', בע מ</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>אשר את הסיסמה</value>
+  </data>
+  <data name="Copyright" xml:space="preserve">
+    <value>זכויות יוצרים של תאגיד Oybab ‏.‏</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>למחוק</value>
+  </data>
+  <data name="DeleteFailt" xml:space="preserve">
+    <value>המחיקה נכשלה !‏</value>
+  </data>
+  <data name="DeleteSuccess" xml:space="preserve">
+    <value>מחק בהצלחה !‏</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>יציאה</value>
+  </data>
+  <data name="FontName" xml:space="preserve">
+    <value>Microsoft YaHei, Aria, Oybab Tuz</value>
+  </data>
+  <data name="FontSize" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="Id" xml:space="preserve">
+    <value>מספר</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>שפה</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>כניסה</value>
+  </data>
+  <data name="LoginValid" xml:space="preserve">
+    <value>אנא להזין את המידע {0} מדויק !‏</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>הסיסמה החדשה</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>לא</value>
+  </data>
+  <data name="OldPassword" xml:space="preserve">
+    <value>הסיסמה הישנה</value>
+  </data>
+  <data name="OldPasswordFaild" xml:space="preserve">
+    <value>הסיסמה הישנה לא הוזנה מדויק, אנא להזין אותה מחדש !‏</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>הסיסמה</value>
+  </data>
+  <data name="PwdError" xml:space="preserve">
+    <value>הסיסמה שגויה !‏</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>רענון</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>נסה שוב</value>
+  </data>
+  <data name="RightToLeft" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>לשמור</value>
+  </data>
+  <data name="SaveFailt" xml:space="preserve">
+    <value>השמירה נכשלה !‏</value>
+  </data>
+  <data name="SaveSuccess" xml:space="preserve">
+    <value>נשמר בהצלחה !‏</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>למצוא</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>הכולל</value>
+  </data>
+  <data name="TwoNewPasswordNotEqual" xml:space="preserve">
+    <value>הסיסמה החדשה שהוזנה פעמיים לא עקבית, אנא להזין מחדש !‏</value>
+  </data>
+  <data name="UpdateInfo" xml:space="preserve">
+    <value>גירסה חדשה נמצאה</value>
+  </data>
+  <data name="USBKey_Warn" xml:space="preserve">
+    <value>נא הכנס USB-KEY ולחץ על נסה שוב כדי להמשיך, או לחץ על יציאה כדי לצאת מהתוכנית!‏</value>
+  </data>
+  <data name="UserLogin" xml:space="preserve">
+    <value>המשתמש נכנס להיכנס</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>כן</value>
+  </data>
+  <data name="Abort" xml:space="preserve">
+    <value>יציאה</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>לבטל</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>להתעלם</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>שם המשתמש</value>
+  </data>
+  <data name="Warn" xml:space="preserve">
+    <value>אזהרה</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>בטוח</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>שגיאה</value>
+  </data>
+  <data name="CurrentKeyName" xml:space="preserve">
+    <value>שם USB-KEY הנוכחי הוא: {0}.‏</value>
+  </data>
+  <data name="Exception_CheckSqlAndNet" xml:space="preserve">
+    <value>חיבור מסד הנתונים שגוי, נא בדוק את תצורת חיבור הרשת או מסד הנתונים !‏</value>
+  </data>
+  <data name="Exception_LoadCacheError" xml:space="preserve">
+    <value>טוען שגיאת מטמון .‏</value>
+  </data>
+  <data name="Exception_LoadMediaRoot" xml:space="preserve">
+    <value>טען שגיאת נתיב בסיס של שיר, נא בדוק את הפרופיל !‏</value>
+  </data>
+  <data name="Exception_NotSupprtKey" xml:space="preserve">
+    <value>אין אפשרות להתחבר למסד הנתונים, SUB-KEY זה אינו נתמך.‏</value>
+  </data>
+  <data name="InputData" xml:space="preserve">
+    <value>יבא את הנתונים</value>
+  </data>
+  <data name="OutputData" xml:space="preserve">
+    <value>יצא את הנתונים</value>
+  </data>
+  <data name="UpdateNonReturnOrCantRead" xml:space="preserve">
+    <value>העדכון מחזיר נתונים ריקים או לא מצליח לפתור .‏</value>
+  </data>
+  <data name="UpdateUnableError" xml:space="preserve">
+    <value>חיפוש עדכון שגיאה לא ידועה, קוד: {0}.‏</value>
+  </data>
+  <data name="CompanyLogoImage" xml:space="preserve">
+    <value>logo.png</value>
+  </data>
+  <data name="Exception_ReadResourceStrError" xml:space="preserve">
+    <value>קריאת תווי משאבים נכשלה !‏</value>
+  </data>
+  <data name="Exception_InputData" xml:space="preserve">
+    <value>ייבוא הנתונים נשכל !‏</value>
+  </data>
+  <data name="Exception_InputReadData" xml:space="preserve">
+    <value>ייבוא הנתונים וקריאתם נשכלים !‏</value>
+  </data>
+  <data name="Exception_OutputData" xml:space="preserve">
+    <value>ייצוא הנתונים נשכל !‏</value>
+  </data>
+  <data name="InputDataSuccess" xml:space="preserve">
+    <value>ייבוא הנתונים הצליח !‏</value>
+  </data>
+  <data name="OutputDataSuccess" xml:space="preserve">
+    <value>ייצוא הנתונים הצליח !‏</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>קובץ</value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>כלים</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>הכול</value>
+  </data>
+  <data name="FolderName" xml:space="preserve">
+    <value>שם התיקיה</value>
+  </data>
+  <data name="IgnoreData" xml:space="preserve">
+    <value>האם אתה בטוח שברצונך להתעלם מהנתונים שלא נשמרו ?‏</value>
+  </data>
+  <data name="ImageName" xml:space="preserve">
+    <value>שם התמונה</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>יותר</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>דף</value>
+  </data>
+  <data name="AddDescription" xml:space="preserve">
+    <value>תוסיף נתון חדש.‏</value>
+  </data>
+  <data name="DeleteDescription" xml:space="preserve">
+    <value>מחק את הנתונים הנוכחיים.‏</value>
+  </data>
+  <data name="PleaseEditBefore" xml:space="preserve">
+    <value>נא סיים את העריכה תחילה !‏</value>
+  </data>
+  <data name="SaveDescription" xml:space="preserve">
+    <value>שמירת נתונים חדשים או משתנים כעת.</value>
+  </data>
+  <data name="SureDelete" xml:space="preserve">
+    <value>האם אתה בטוח שברצונך למחוק אותו?‏</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>שם הקובץ</value>
+  </data>
+  <data name="Exception_NotFound" xml:space="preserve">
+    <value>לא נמצא {0} זה !‏</value>
+  </data>
+  <data name="ErrorBig" xml:space="preserve">
+    <value>התגלתה פגיעות</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>לבחור</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>מערכת</value>
+  </data>
+  <data name="AllPage" xml:space="preserve">
+    <value>הכולל:</value>
+  </data>
+  <data name="AllPage2" xml:space="preserve">
+    <value>דף</value>
+  </data>
+  <data name="CurrentPage" xml:space="preserve">
+    <value>נוכח: </value>
+  </data>
+  <data name="CurrentPage2" xml:space="preserve">
+    <value>דף</value>
+  </data>
+  <data name="LastPage" xml:space="preserve">
+    <value>עמוד קודם</value>
+  </data>
+  <data name="NextPage" xml:space="preserve">
+    <value>עמוד בא</value>
+  </data>
+  <data name="CompanyUrlStr" xml:space="preserve">
+    <value>אתר אינטרנט</value>
+  </data>
+  <data name="ExitPassword" xml:space="preserve">
+    <value>צא מהסיסמה</value>
+  </data>
+  <data name="MobileNoStr" xml:space="preserve">
+    <value>טלפון</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>איפוס</value>
+  </data>
+  <data name="NotFoundUSBKEY" xml:space="preserve">
+    <value>לא נמצא USB-KEY !‏</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>להחזיר</value>
+  </data>
+  <data name="MuteRestore" xml:space="preserve">
+    <value>שחזור</value>
+  </data>
+  <data name="UpdateAlert" xml:space="preserve">
+    <value>מצא גרסה חדשה של המערכת, אנא הורד את העדכון בזמן !‏</value>
+  </data>
+  <data name="Exception_CheckSqlAndFile" xml:space="preserve">
+    <value>חיבור מסד הנתונים שגוי, נא בדוק את קובץ מסד הנתונים או את תצורת חיבור מסד הנתונים !‏</value>
+  </data>
+  <data name="CompanyShortName" xml:space="preserve">
+    <value>OYBAB</value>
+  </data>
+  <data name="CompleteInput" xml:space="preserve">
+    <value>אנא להזין את הנתונים בשלמותו !‏</value>
+  </data>
+  <data name="VersionNo" xml:space="preserve">
+    <value>מספר גירסה</value>
+  </data>
+  <data name="SoftPlayerDescription" xml:space="preserve">
+    <value>אם יש לך הערות או הצעות, אנא צור עמנו קשר באמצעות: "מערכת ---עליו" כדי להציג .‏</value>
+  </data>
+  <data name="ChangeLanguage" xml:space="preserve">
+    <value>החלף שפות</value>
+  </data>
+  <data name="ChangeLanguageFailt" xml:space="preserve">
+    <value>שינוי השפה נכשל !‏</value>
+  </data>
+  <data name="ChangeLanguageSuccess" xml:space="preserve">
+    <value>שינוי השפה הצליח, תחליף אותה בפעם הבאה שהמערכת תאתחל  !‏</value>
+  </data>
+  <data name="Exception_InvalidLanguage" xml:space="preserve">
+    <value>שפת המערכת אינה חוקית או אינה קיימת, נא בדוק את הפרופיל !‏</value>
+  </data>
+  <data name="Exception_LogError" xml:space="preserve">
+    <value>טעינת יומני רישום נכשלה !‏</value>
+  </data>
+  <data name="FontName2" xml:space="preserve">
+    <value>Arial</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>לעזור</value>
+  </data>
+  <data name="Exception_InvalidDB" xml:space="preserve">
+    <value>קובץ מסד הנתונים אינו חוקי !‏</value>
+  </data>
+  <data name="Exception_KeyKeyError" xml:space="preserve">
+    <value>USB-KEY מקבל מפתח באופן שגוי. שגיאה:{0},{1}.‏</value>
+  </data>
+  <data name="Exception_ApplicationCheckFaild" xml:space="preserve">
+    <value>אימות היישום נכשל !‏</value>
+  </data>
+  <data name="Exception_CloseRequestFaild" xml:space="preserve">
+    <value>שליחת בקשת סגירת הפעלה שגוייה !‏</value>
+  </data>
+  <data name="Exception_EncryptedRequestFaild" xml:space="preserve">
+    <value>שליחת בקשת הצפנה שגוייה !‏</value>
+  </data>
+  <data name="Exception_LockRequestFaild" xml:space="preserve">
+    <value>שליחת בקשת נעילה שגוייה !‏</value>
+  </data>
+  <data name="Exception_NewRequestFailt" xml:space="preserve">
+    <value>שליחת בקשת הפעלה חדשה שגוייה! {0}קוד שגיאה:101</value>
+  </data>
+  <data name="Exception_OutClientLimitFaild" xml:space="preserve">
+    <value>חריגה ממגבלת חיבור הלקוח! {0} שגיאה: 102</value>
+  </data>
+  <data name="Exception_RemoteServerConn" xml:space="preserve">
+    <value>לא היתה אפשרות לחבר את השרת המרוחק !‏</value>
+  </data>
+  <data name="Exception_ServerCantCorrConn" xml:space="preserve">
+    <value>אין אפשרות לשמור על ההפעלה עם השרת כראוי! נא לחץ על נסה שוב כדי להמשיך, או לחץ על יציאה כדי לצאת מהמערכת ‏!‏</value>
+  </data>
+  <data name="Exception_ServerCheckFaild" xml:space="preserve">
+    <value>בדוק את שגיאת מפתח השרת !‏</value>
+  </data>
+  <data name="Exception_ServerFaild" xml:space="preserve">
+    <value>אירעה שגיאה בשרת !‏</value>
+  </data>
+  <data name="Exception_ServerKeyFaild" xml:space="preserve">
+    <value>שגיאת מפתח שרת!‏</value>
+  </data>
+  <data name="Exception_SessionExpiredRetry" xml:space="preserve">
+    <value>פג תוקפו של ההפעלה, נא נסה שוב !‏</value>
+  </data>
+  <data name="Exception_SessionFaildAndTry" xml:space="preserve">
+    <value>פג תוקפה של ההפעלה, נסה לרכוש מחדש !‏</value>
+  </data>
+  <data name="Exception_SessionRequestFaild" xml:space="preserve">
+    <value>שגיאת בקשת הפעלה של שלח התעכבות !‏</value>
+  </data>
+  <data name="Exception_SessionUpdateFaild" xml:space="preserve">
+    <value>עדכון ההפעלה נכשל !‏</value>
+  </data>
+  <data name="Exception_UIDRequestFaild" xml:space="preserve">
+    <value>שליחת בקשה ל- uID נכשלה !‏</value>
+  </data>
+  <data name="SessionUpdateSuccess" xml:space="preserve">
+    <value>עדכון ההפעלה הצליח .‏</value>
+  </data>
+  <data name="Exception_SetClientTimeFailt" xml:space="preserve">
+    <value>זמן שרת הכיול לזמן לקוח נכשל .‏</value>
+  </data>
+  <data name="IsHidden" xml:space="preserve">
+    <value>להסתיר</value>
+  </data>
+  <data name="Exception_CheckDataFaild" xml:space="preserve">
+    <value>שגיאת רכישת נתונים של שרת מרוחק !‏</value>
+  </data>
+  <data name="Exception_DataNotReady" xml:space="preserve">
+    <value>נתוני שרת מרוחק אינם מוכנים! נא נסה שוב מאוחר יותר! קוד שגיאה: 107</value>
+  </data>
+  <data name="Exception_ChangePWDRequestFaild" xml:space="preserve">
+    <value>שלח בקשה לשינוי סיסמה באופן שגוי !‏</value>
+  </data>
+  <data name="Exception_ValidPWDRequestFaild" xml:space="preserve">
+    <value>שלח בקשת סיסמת אימות באופן שגוי !‏</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>צור קשר אלינו</value>
+  </data>
+  <data name="Consumption" xml:space="preserve">
+    <value>צריכת</value>
+  </data>
+  <data name="DealerContactWay" xml:space="preserve">
+    <value>פרטי קשר של הסוחר</value>
+  </data>
+  <data name="Mode" xml:space="preserve">
+    <value>מצב</value>
+  </data>
+  <data name="Remark" xml:space="preserve">
+    <value>הערה</value>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>אחרים</value>
+  </data>
+  <data name="Exception_IPConflict" xml:space="preserve">
+    <value>התנגשות כתובת IP, נא הפעל מחדש !‏</value>
+  </data>
+  <data name="Exception_SessionInvalid" xml:space="preserve">
+    <value>הפעלה לא חוקית, נא הפעל מחדש !‏</value>
+  </data>
+  <data name="Exception_InvalidPending" xml:space="preserve">
+    <value>מצב לא חוקי !‏</value>
+  </data>
+  <data name="Exception_IPInvalid" xml:space="preserve">
+    <value>כתובת ה-IP אינה חוקית, אנא צרו קשר עם שירות הלקוחות ‏!‏</value>
+  </data>
+  <data name="Exception_OrderExpired" xml:space="preserve">
+    <value>פג תוקפו של החשבון, אנא צרו קשר עם שירות הלקוחות ‏!‏</value>
+  </data>
+  <data name="Exception_OrderInvalid" xml:space="preserve">
+    <value>החשבון אינו חוקי, אנא צור קשר עם שירות הלקוחות ‏!‏</value>
+  </data>
+  <data name="Exception_SendRequestFaild" xml:space="preserve">
+    <value>שגיאת בקשת שליחת הודעה !‏</value>
+  </data>
+  <data name="Exception_SetConRequestFaild" xml:space="preserve">
+    <value>שגיאת בקשת תכונה של שלח הגדרות !‏</value>
+  </data>
+  <data name="Exception_OperateRequestFaild" xml:space="preserve">
+    <value>שלח שגיאת בקשת פעולה !‏</value>
+  </data>
+  <data name="ChangeSet" xml:space="preserve">
+    <value>הגדרות תכונה</value>
+  </data>
+  <data name="ExpenditureManager" xml:space="preserve">
+    <value>ניהול הוצאות</value>
+  </data>
+  <data name="MainPage" xml:space="preserve">
+    <value>עמוד בית</value>
+  </data>
+  <data name="OrderManager" xml:space="preserve">
+    <value>ניהול חיוב</value>
+  </data>
+  <data name="ProductManager" xml:space="preserve">
+    <value>ניהול מוצר</value>
+  </data>
+  <data name="ProductTypeManager" xml:space="preserve">
+    <value>ניהול סוג מוצר</value>
+  </data>
+  <data name="RoomManager" xml:space="preserve">
+    <value>ניהול מושב</value>
+  </data>
+  <data name="SoftServiceName" xml:space="preserve">
+    <value>Oybab V1.1 מערכת הסחר</value>
+  </data>
+  <data name="OperateFaild" xml:space="preserve">
+    <value>{0} נשכל !‏</value>
+  </data>
+  <data name="ActualPrice" xml:space="preserve">
+    <value>המחיר האמיתי</value>
+  </data>
+  <data name="AddTime" xml:space="preserve">
+    <value>הוסף זמן</value>
+  </data>
+  <data name="Backstage" xml:space="preserve">
+    <value>רקע</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>מספר</value>
+  </data>
+  <data name="DealsPrice" xml:space="preserve">
+    <value>סכום מוזל</value>
+  </data>
+  <data name="Display" xml:space="preserve">
+    <value>הצג</value>
+  </data>
+  <data name="DisplayType" xml:space="preserve">
+    <value>סוג התצוגה</value>
+  </data>
+  <data name="EndTime" xml:space="preserve">
+    <value>הזמן הסופי</value>
+  </data>
+  <data name="FinishTime" xml:space="preserve">
+    <value>זמן ההשלמה</value>
+  </data>
+  <data name="Hide" xml:space="preserve">
+    <value>להסתיר</value>
+  </data>
+  <data name="ImportTime" xml:space="preserve">
+    <value>תאריך ההוצאה</value>
+  </data>
+  <data name="IpAddress" xml:space="preserve">
+    <value>כתובת איי.פי</value>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>סדר</value>
+  </data>
+  <data name="ProductName" xml:space="preserve">
+    <value>שם המוצר</value>
+  </data>
+  <data name="ProductTypeName" xml:space="preserve">
+    <value>שם סוג המוצר</value>
+  </data>
+  <data name="RoomNo" xml:space="preserve">
+    <value>מספר מושב</value>
+  </data>
+  <data name="StartTime" xml:space="preserve">
+    <value>זמן ההתחלה</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>מצב</value>
+  </data>
+  <data name="TotalPrice" xml:space="preserve">
+    <value>סכום המחיר</value>
+  </data>
+  <data name="UnitPrice" xml:space="preserve">
+    <value>מחיר</value>
+  </data>
+  <data name="PropertyUsed" xml:space="preserve">
+    <value>נא שנה או מחק תחילה את הנתונים המשויכים לנתונים אלה !‏</value>
+  </data>
+  <data name="Exception_CountOutOfIPRequestLimit" xml:space="preserve">
+    <value>קיימות בקשות כפולות רבות מדי, נא נסה שוב מאוחר יותר! קוד שגיאה: 103</value>
+  </data>
+  <data name="Exception_ExceptionSource" xml:space="preserve">
+    <value>{0} {1} שגיאה: גואנגמינג {2}</value>
+  </data>
+  <data name="PropertyExists" xml:space="preserve">
+    <value>{0} כבר קיים, אל תיכנסו שוב !‏</value>
+  </data>
+  <data name="Checkout" xml:space="preserve">
+    <value>לשלם</value>
+  </data>
+  <data name="Invalid" xml:space="preserve">
+    <value>חלל</value>
+  </data>
+  <data name="Confirmed" xml:space="preserve">
+    <value>אישור</value>
+  </data>
+  <data name="GetFailed" xml:space="preserve">
+    <value>לא הצליחו להשיג !‏</value>
+  </data>
+  <data name="OrderDetails" xml:space="preserve">
+    <value>פרטי חשבון</value>
+  </data>
+  <data name="OrderNo" xml:space="preserve">
+    <value>מספר חשבון</value>
+  </data>
+  <data name="PropertyError" xml:space="preserve">
+    <value>המידע {0} אינו שלם או לא מדויק !‏</value>
+  </data>
+  <data name="Requesting" xml:space="preserve">
+    <value>במצב בקשה</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>הצג</value>
+  </data>
+  <data name="ShowDescription" xml:space="preserve">
+    <value>הצג פרטים</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>זמן</value>
+  </data>
+  <data name="TimeLimit" xml:space="preserve">
+    <value>מרווח בדיקת הבדיקה חייב להיות {0} זמן !‏</value>
+  </data>
+  <data name="ImportDetails" xml:space="preserve">
+    <value>פרטי ההוצאה</value>
+  </data>
+  <data name="ImportId" xml:space="preserve">
+    <value>מספר ההוצאות</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>להדפיס</value>
+  </data>
+  <data name="PrintDescription" xml:space="preserve">
+    <value>תוכן ההדפס</value>
+  </data>
+  <data name="AddImport" xml:space="preserve">
+    <value>הוצאות חדשות</value>
+  </data>
+  <data name="LineDataError" xml:space="preserve">
+    <value>שורת {0} של הזנת נתונים אינה שלמה או לא מדויקת !‏</value>
+  </data>
+  <data name="BalanceCount" xml:space="preserve">
+    <value>הכמות הנותרת</value>
+  </data>
+  <data name="Exception_ProductCountRefreshExpiredRetry" xml:space="preserve">
+    <value>פג תוקפו של מספר המוצרים, נא נסה שוב !‏</value>
+  </data>
+  <data name="Exception_ProductCountRefreshFailed" xml:space="preserve">
+    <value>עדכון המוצר נכשל !‏</value>
+  </data>
+  <data name="Exception_ProductCountRefreshRetry" xml:space="preserve">
+    <value>אם מספר המוצרים אינו מספיק, נסה להשיג את המוצר שוב !‏</value>
+  </data>
+  <data name="IsBindCount" xml:space="preserve">
+    <value>מספר הכריכות</value>
+  </data>
+  <data name="ProductCountRefreshSuccess" xml:space="preserve">
+    <value>עדכון המוצר הצליח.‏</value>
+  </data>
+  <data name="WarningCount" xml:space="preserve">
+    <value>מספר האזהרות</value>
+  </data>
+  <data name="Call" xml:space="preserve">
+    <value>להתקשר</value>
+  </data>
+  <data name="ConsumptionType" xml:space="preserve">
+    <value>בקרת צרכנים</value>
+  </data>
+  <data name="ControlType" xml:space="preserve">
+    <value>שליטה מרוחקת</value>
+  </data>
+  <data name="CostPrice" xml:space="preserve">
+    <value>מחיר עלות</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>חדש</value>
+  </data>
+  <data name="Offline" xml:space="preserve">
+    <value>מנותק</value>
+  </data>
+  <data name="Online" xml:space="preserve">
+    <value>באינטרנט</value>
+  </data>
+  <data name="PaidPrice" xml:space="preserve">
+    <value>הסכום ששולם</value>
+  </data>
+  <data name="PermissionDenied" xml:space="preserve">
+    <value>אין הרשאות !‏</value>
+  </data>
+  <data name="BalancePrice" xml:space="preserve">
+    <value>הסכום הנותר</value>
+  </data>
+  <data name="ChangePrice" xml:space="preserve">
+    <value>שנה את המחיר</value>
+  </data>
+  <data name="ChangeTime" xml:space="preserve">
+    <value>שנה את הזמן</value>
+  </data>
+  <data name="Disable" xml:space="preserve">
+    <value>תסגור</value>
+  </data>
+  <data name="Enable" xml:space="preserve">
+    <value>לפתוח</value>
+  </data>
+  <data name="Hour" xml:space="preserve">
+    <value>שעה</value>
+  </data>
+  <data name="InvalidIt" xml:space="preserve">
+    <value>חלל</value>
+  </data>
+  <data name="Minute" xml:space="preserve">
+    <value>דקה</value>
+  </data>
+  <data name="RemainingTime" xml:space="preserve">
+    <value>בשאר הזמן</value>
+  </data>
+  <data name="TotalTime" xml:space="preserve">
+    <value>זמן הכולל</value>
+  </data>
+  <data name="BalanceCountNotEnough" xml:space="preserve">
+    <value>הפעולה נכשלה, רק {0} מהכמויות הנותרות המוצר !‏</value>
+  </data>
+  <data name="CancelOrder" xml:space="preserve">
+    <value>בטל את החשבון</value>
+  </data>
+  <data name="CancelOrderDescription" xml:space="preserve">
+    <value>בטל את החשבון הנוכחי .‏</value>
+  </data>
+  <data name="CheckoutOrder" xml:space="preserve">
+    <value>לשלם את החשבון</value>
+  </data>
+  <data name="CheckoutOrderDescription" xml:space="preserve">
+    <value>לשלם את החשבון הנוכחי .‏</value>
+  </data>
+  <data name="ConfirmCancelOrder" xml:space="preserve">
+    <value>לאשר את ביטול החשבון הנוכחי שלך ?‏</value>
+  </data>
+  <data name="FaildThenRefreshModel" xml:space="preserve">
+    <value>הפעולה נכשלה, החיוב שונה, מוכנה לנסות לעדכן את פרטי החיוב !‏</value>
+  </data>
+  <data name="Locked" xml:space="preserve">
+    <value>תנעלו את זה</value>
+  </data>
+  <data name="NewOrder" xml:space="preserve">
+    <value>צור חשבון חדש</value>
+  </data>
+  <data name="NewOrderDescription" xml:space="preserve">
+    <value>צור חשבון חדש .‏</value>
+  </data>
+  <data name="OperateSuccess" xml:space="preserve">
+    <value>{0} הצליח !‏</value>
+  </data>
+  <data name="RefreshOrderFailed" xml:space="preserve">
+    <value>עדכון החשבון הנוכחי נשכל !‏</value>
+  </data>
+  <data name="ReplaceRoom" xml:space="preserve">
+    <value>החלף את המושב</value>
+  </data>
+  <data name="ReplaceRoomDescription" xml:space="preserve">
+    <value>החלף את יסר הנוכחי ביסר השני .‏</value>
+  </data>
+  <data name="Request" xml:space="preserve">
+    <value>בקשה</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>הפעל מחדש</value>
+  </data>
+  <data name="RestartDescription" xml:space="preserve">
+    <value>הפעל מחדש את המחשב המארח .‏</value>
+  </data>
+  <data name="SaveBeforeDelete" xml:space="preserve">
+    <value>אנא לשמור את נתונים תחילה !‏</value>
+  </data>
+  <data name="ShowOrder" xml:space="preserve">
+    <value>הצג את החשבון</value>
+  </data>
+  <data name="ShowOrderDescription" xml:space="preserve">
+    <value>הצג את פרטי החיוב .‏</value>
+  </data>
+  <data name="Shutdown" xml:space="preserve">
+    <value>כיבוי</value>
+  </data>
+  <data name="ShutdownDescription" xml:space="preserve">
+    <value>כבה את הפונדקאי .‏</value>
+  </data>
+  <data name="UnevenBalance" xml:space="preserve">
+    <value>היתרה לא מאוזנת !‏</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>לאשר</value>
+  </data>
+  <data name="NewRoom" xml:space="preserve">
+    <value>מושב חדש</value>
+  </data>
+  <data name="SendFireAlarm" xml:space="preserve">
+    <value>שלח אזעקת אש</value>
+  </data>
+  <data name="Barcode" xml:space="preserve">
+    <value>ברקוד</value>
+  </data>
+  <data name="Disabled" xml:space="preserve">
+    <value>נכה</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>מחיר</value>
+  </data>
+  <data name="IsPayByTime" xml:space="preserve">
+    <value>אם לפי הזמן</value>
+  </data>
+  <data name="PriceHour" xml:space="preserve">
+    <value>מחיר זמן</value>
+  </data>
+  <data name="IsAutoExtendTime" xml:space="preserve">
+    <value>האם להאריך את הזמן באופן אוטומטי</value>
+  </data>
+  <data name="PropertyUnSame" xml:space="preserve">
+    <value>הנתונים אינם עקביים, נא הפעל מחדש ונסה שוב !‏</value>
+  </data>
+  <data name="AdminName" xml:space="preserve">
+    <value>שם מנהל המערכת</value>
+  </data>
+  <data name="AdminManager" xml:space="preserve">
+    <value>ניהול מנהל מערכת</value>
+  </data>
+  <data name="AdminNo" xml:space="preserve">
+    <value>מספר מנהל המערכת</value>
+  </data>
+  <data name="Sex" xml:space="preserve">
+    <value>מין</value>
+  </data>
+  <data name="IDNumber" xml:space="preserve">
+    <value>מספר זיהוי</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>תפריט</value>
+  </data>
+  <data name="IsOnlyOwn" xml:space="preserve">
+    <value>הגבל את הניהול</value>
+  </data>
+  <data name="IsEnable" xml:space="preserve">
+    <value>אם להדליק אותו או לא</value>
+  </data>
+  <data name="Guest" xml:space="preserve">
+    <value>האורחים</value>
+  </data>
+  <data name="Employee" xml:space="preserve">
+    <value>עובדים</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>מנהל</value>
+  </data>
+  <data name="DeviceNo" xml:space="preserve">
+    <value>מספר ההתקן</value>
+  </data>
+  <data name="DeviceType" xml:space="preserve">
+    <value>סוג ההתקן</value>
+  </data>
+  <data name="DeviceManager" xml:space="preserve">
+    <value>ניהול מכשירים</value>
+  </data>
+  <data name="Computer" xml:space="preserve">
+    <value>המחשב</value>
+  </data>
+  <data name="Tablet" xml:space="preserve">
+    <value>צלחת</value>
+  </data>
+  <data name="PrinterManager" xml:space="preserve">
+    <value>ניהול מדפסות</value>
+  </data>
+  <data name="PrinterName" xml:space="preserve">
+    <value>שם המדפסת</value>
+  </data>
+  <data name="PrinterDeviceName" xml:space="preserve">
+    <value>שם התקן המדפסת</value>
+  </data>
+  <data name="PrintType" xml:space="preserve">
+    <value>סוג ההדפסה</value>
+  </data>
+  <data name="Customer" xml:space="preserve">
+    <value>לקוח</value>
+  </data>
+  <data name="Kitchen" xml:space="preserve">
+    <value>מטבח</value>
+  </data>
+  <data name="MemberNo" xml:space="preserve">
+    <value>מספר חבר</value>
+  </data>
+  <data name="MemberManager" xml:space="preserve">
+    <value>ניהול חבר</value>
+  </data>
+  <data name="MemberName" xml:space="preserve">
+    <value>שם החבר</value>
+  </data>
+  <data name="Occupation" xml:space="preserve">
+    <value>תעסוקתית</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>הפלאפון</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>טלפון</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>כתובת</value>
+  </data>
+  <data name="OfferRate" xml:space="preserve">
+    <value>100%/שיעור מכירה</value>
+  </data>
+  <data name="SpendPrice" xml:space="preserve">
+    <value>הסכום שהושקע</value>
+  </data>
+  <data name="FavorablePrice" xml:space="preserve">
+    <value>סכום מוזל</value>
+  </data>
+  <data name="ExpiredTime" xml:space="preserve">
+    <value>זמן תפוגה</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>זכר</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>נקבה</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>רשום</value>
+  </data>
+  <data name="MachineNo" xml:space="preserve">
+    <value>קוד מכונה</value>
+  </data>
+  <data name="RegisterNo" xml:space="preserve">
+    <value>קוד הרישום</value>
+  </data>
+  <data name="SoftwareExpired" xml:space="preserve">
+    <value>פג תוקפה של המערכת, להירשם מחדש?‏</value>
+  </data>
+  <data name="SoftwareSoonExpired" xml:space="preserve">
+    <value>תוקפה {0} של המערכת {1} ימים, האם ברצונך להירשם כעת?‏</value>
+  </data>
+  <data name="SoftwareExpiredWarn" xml:space="preserve">
+    <value>על מנת לא להשפיע על שימוש רגיל, אנו ממליצים לך ליצור איתנו קשר ולרשום את המערכת עד 7 ימים מראש!‏</value>
+  </data>
+  <data name="RegisterSuccess" xml:space="preserve">
+    <value>ההרשמה הצליחה, אנא הפעל מחדש את המערכת !‏</value>
+  </data>
+  <data name="MemberPay" xml:space="preserve">
+    <value>תשלומי חבר</value>
+  </data>
+  <data name="MemberPayDescription" xml:space="preserve">
+    <value>הצג פרטי תשלום חבר</value>
+  </data>
+  <data name="MemberPayNo" xml:space="preserve">
+    <value>מספר תשלום חבר</value>
+  </data>
+  <data name="MemberBalanceNotEnough" xml:space="preserve">
+    <value>יתרת החברות אינה מספיקה!‏</value>
+  </data>
+  <data name="AddMember" xml:space="preserve">
+    <value>הוסף חבר</value>
+  </data>
+  <data name="PropertyNotFound" xml:space="preserve">
+    <value>לא נמצא {0} ‏!‏‏</value>
+  </data>
+  <data name="CheckoutImport" xml:space="preserve">
+    <value>הוצאות קופה</value>
+  </data>
+  <data name="RoomPrice" xml:space="preserve">
+    <value>מחיר מושב</value>
+  </data>
+  <data name="CountOfoffLimit" xml:space="preserve">
+    <value>הכמות אינה יכולה לחרוג מהמגבלה שצוינה !‏</value>
+  </data>
+  <data name="MemberExpired" xml:space="preserve">
+    <value>פג תוקפו של החבר הנוכחי !‏</value>
+  </data>
+  <data name="MemberExpiredDescription" xml:space="preserve">
+    <value>שנה את זמן תפוגת החברות !‏</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>לא ידוע</value>
+  </data>
+  <data name="NotFoundProperty_Number" xml:space="preserve">
+    <value>המקום {0} לא {1} נמצא !‏</value>
+  </data>
+  <data name="Exception_UnknownDevice" xml:space="preserve">
+    <value>ההתקן אינו קיים או אינו זמין! {0} שגיאה: 111</value>
+  </data>
+  <data name="Exception_RoomCountOutOfLimit" xml:space="preserve">
+    <value>מושב חורג ממגבלת המספר המרבית! {0} קוד שגיאה: 104</value>
+  </data>
+  <data name="ResetDescription" xml:space="preserve">
+    <value>אפס את סיסמת מנהל המערכת</value>
+  </data>
+  <data name="SureReset" xml:space="preserve">
+    <value>האם אתה בטוח שברצונך לאפס אותו ?‏</value>
+  </data>
+  <data name="Exception_UnknownAdmin" xml:space="preserve">
+    <value>מנהל המערכת אינו קיים או שאינו זמין! {0} שגיאה: 112</value>
+  </data>
+  <data name="ReturnPrice" xml:space="preserve">
+    <value>הסכום שהוחזר</value>
+  </data>
+  <data name="BorrowPrice" xml:space="preserve">
+    <value>הסכום שהושאל</value>
+  </data>
+  <data name="KeepPrice" xml:space="preserve">
+    <value>הסכום הנותר</value>
+  </data>
+  <data name="RemainingDays" xml:space="preserve">
+    <value>הימים הנותרים</value>
+  </data>
+  <data name="Device" xml:space="preserve">
+    <value>ציוד</value>
+  </data>
+  <data name="Table" xml:space="preserve">
+    <value>מושב</value>
+  </data>
+  <data name="Package" xml:space="preserve">
+    <value>הארוזות</value>
+  </data>
+  <data name="MemberDealsPrice" xml:space="preserve">
+    <value>סכום הנחת חבר</value>
+  </data>
+  <data name="MemberPaidPrice" xml:space="preserve">
+    <value>הסכום ששולם על ידי החבר</value>
+  </data>
+  <data name="TotalPaidPrice" xml:space="preserve">
+    <value>סכות התשלום</value>
+  </data>
+  <data name="MemberBalancePrice" xml:space="preserve">
+    <value>יתרת חברים</value>
+  </data>
+  <data name="RegisterCount" xml:space="preserve">
+    <value>מספר הרישומים</value>
+  </data>
+  <data name="Expenditure" xml:space="preserve">
+    <value>הכנסה</value>
+  </data>
+  <data name="PrintTypeLimit" xml:space="preserve">
+    <value>אין באפשרותך להוסיף את אותו סוג מדפסת !‏</value>
+  </data>
+  <data name="SameEnabledPrinterFailed" xml:space="preserve">
+    <value>ניתן להדליק מדפסת אחת בלבד מסוג חיוב !‏</value>
+  </data>
+  <data name="Server" xml:space="preserve">
+    <value>שירות</value>
+  </data>
+  <data name="PrintAfterBuy" xml:space="preserve">
+    <value>הדפס לאחר הרכישה</value>
+  </data>
+  <data name="PrintAfterCheckout" xml:space="preserve">
+    <value>הדפס לאחר ביצוע הצ'ק-אאוט</value>
+  </data>
+  <data name="LocalPrint" xml:space="preserve">
+    <value>הדפס באופן מקומי</value>
+  </data>
+  <data name="ServerIpAddress" xml:space="preserve">
+    <value>כתובת IP של השירות</value>
+  </data>
+  <data name="OperateChangeNextStartup" xml:space="preserve">
+    <value>{0} הצליח.תשתלט בפעם הבאה שמערכת תתחיל  !‏</value>
+  </data>
+  <data name="BarcodeNo" xml:space="preserve">
+    <value>מספר ברקוד</value>
+  </data>
+  <data name="OnlyDisplaySelected" xml:space="preserve">
+    <value>רק הנבחרים מוצגים</value>
+  </data>
+  <data name="CurrentProductAlreadyExists" xml:space="preserve">
+    <value>המוצר הנוכחי כבר קיים !‏</value>
+  </data>
+  <data name="Statistic" xml:space="preserve">
+    <value>סטטיסטיקה</value>
+  </data>
+  <data name="Exception_InvalidMediaRoot" xml:space="preserve">
+    <value>נתיב תמונת השירות אינו חוקי או שאינו קיים, נא בדוק את התיקיה או הרשת! קוד שגיאה: 100</value>
+  </data>
+  <data name="Canceld" xml:space="preserve">
+    <value>בוטל</value>
+  </data>
+  <data name="Exception_Relogin" xml:space="preserve">
+    <value>פג תוקפה של ההפעלה, נא צא מהמערכת והכנס שוב !‏</value>
+  </data>
+  <data name="InputNotValid" xml:space="preserve">
+    <value>אנא הזן את המידע הרלוונטי הנוכחי במדויק ובהסבר!</value>
+  </data>
+  <data name="Bill" xml:space="preserve">
+    <value>חשבון</value>
+  </data>
+  <data name="IncomeManager" xml:space="preserve">
+    <value>ניהול הכנסות</value>
+  </data>
+  <data name="ExpendBill" xml:space="preserve">
+    <value>חשבון הוצאות</value>
+  </data>
+  <data name="OwedPrice" xml:space="preserve">
+    <value>הסכום שהיה חייב</value>
+  </data>
+  <data name="IncomeStatistic" xml:space="preserve">
+    <value>סטטיסטיקת הכנסה</value>
+  </data>
+  <data name="SpendStatistic" xml:space="preserve">
+    <value>סטטיסטיקת הוצאות</value>
+  </data>
+  <data name="SellProductsStatistic" xml:space="preserve">
+    <value>סטטיסטיקת מכירות מוצרים</value>
+  </data>
+  <data name="SpendProductsStatistic" xml:space="preserve">
+    <value>סטטיסטיקת רכישת מוצרים</value>
+  </data>
+  <data name="NotFoundAnyRecords" xml:space="preserve">
+    <value>לא נמצאו רשומות !‏</value>
+  </data>
+  <data name="Proportion" xml:space="preserve">
+    <value>פרופורציה</value>
+  </data>
+  <data name="PermissionsMenu" xml:space="preserve">
+    <value>תפריט ההרשאות</value>
+  </data>
+  <data name="Exception_MemberDisabled" xml:space="preserve">
+    <value>החברים נכים !‏</value>
+  </data>
+  <data name="Income" xml:space="preserve">
+    <value>הכנסה</value>
+  </data>
+  <data name="ImageMode" xml:space="preserve">
+    <value>מצב תמונה</value>
+  </data>
+  <data name="Exception_DeviceCountOutOfLimit" xml:space="preserve">
+    <value>אירע חריגה ממספר ההתקנים המרבי! {0} שגיאה: 105</value>
+  </data>
+  <data name="NewPasswordSizeLimit" xml:space="preserve">
+    <value>הסיסמה החדשה היא לפחות {0} ספרות !‏</value>
+  </data>
+  <data name="AdminLog" xml:space="preserve">
+    <value>יומן מנהל המערכת</value>
+  </data>
+  <data name="LogTitle" xml:space="preserve">
+    <value>כותרת יומן הרישום</value>
+  </data>
+  <data name="LogContent" xml:space="preserve">
+    <value>תוכן יומן הרישום</value>
+  </data>
+  <data name="AdminPay" xml:space="preserve">
+    <value>מנהל המערכת משלם</value>
+  </data>
+  <data name="AdminPayDescription" xml:space="preserve">
+    <value>הצג פרטי תשלום מנהל מערכת</value>
+  </data>
+  <data name="AdminPayNo" xml:space="preserve">
+    <value>מספר תשלום המנהל</value>
+  </data>
+  <data name="SupplierManager" xml:space="preserve">
+    <value>ניהול ספקים</value>
+  </data>
+  <data name="SupplierPay" xml:space="preserve">
+    <value>תשלומי ספקים</value>
+  </data>
+  <data name="SupplierPayDescription" xml:space="preserve">
+    <value>הצג פרטי תשלום ספק</value>
+  </data>
+  <data name="SupplierPayNo" xml:space="preserve">
+    <value>מספר תשלום ספק</value>
+  </data>
+  <data name="SupplierNo" xml:space="preserve">
+    <value>מספר הספק</value>
+  </data>
+  <data name="SupplierExpiredDescription" xml:space="preserve">
+    <value>שנה את זמן התפוגה של הספק !‏</value>
+  </data>
+  <data name="SupplierName" xml:space="preserve">
+    <value>שם הספק</value>
+  </data>
+  <data name="AddSupplier" xml:space="preserve">
+    <value>הוסף ספק</value>
+  </data>
+  <data name="SupplierExpired" xml:space="preserve">
+    <value>פג תוקפו של הספק הנוכחי !‏</value>
+  </data>
+  <data name="Exception_SupplierDisabled" xml:space="preserve">
+    <value>הספק מנוטרל !‏</value>
+  </data>
+  <data name="SupplierBalancePrice" xml:space="preserve">
+    <value>יתרת הספק</value>
+  </data>
+  <data name="SupplierBalanceNotEnough" xml:space="preserve">
+    <value>יתרת הספק אינה מספיקה!‏</value>
+  </data>
+  <data name="SupplierDealsPrice" xml:space="preserve">
+    <value>מחירים מוזלים לספקים</value>
+  </data>
+  <data name="SupplierPaidPrice" xml:space="preserve">
+    <value>הסכום ששולם על-ידי הספק</value>
+  </data>
+  <data name="PleaseWait" xml:space="preserve">
+    <value>רק רגע, בבקשה...‏</value>
+  </data>
+  <data name="CreatingTheDocument" xml:space="preserve">
+    <value>ביצירת מסמכים...‏</value>
+  </data>
+  <data name="TableUsed" xml:space="preserve">
+    <value>השולחן הנוכחי בשימוש !‏</value>
+  </data>
+  <data name="Exception_InvalidType" xml:space="preserve">
+    <value>אנא הזן את המידע הרלוונטי הנוכחי במדויק ובהסבר !‏</value>
+  </data>
+  <data name="ChangeCostPrice" xml:space="preserve">
+    <value>שנה את מחיר העלות</value>
+  </data>
+  <data name="IndexName" xml:space="preserve">
+    <value>שם האינדקס</value>
+  </data>
+  <data name="FinanceLog" xml:space="preserve">
+    <value>יומן פיננסי</value>
+  </data>
+  <data name="OperateName" xml:space="preserve">
+    <value>שם הפעולה</value>
+  </data>
+  <data name="CashDrawer" xml:space="preserve">
+    <value>תיבת הכסף</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>פתח</value>
+  </data>
+  <data name="IsPayByCard" xml:space="preserve">
+    <value>החלק מהר כדי לשלם</value>
+  </data>
+  <data name="CardPaidPrice" xml:space="preserve">
+    <value>הסכום ששולם באמצעות כרטיס אשראי</value>
+  </data>
+  <data name="SpendPaysStatistic" xml:space="preserve">
+    <value>סטטיסטיקת הוצאות תשלום</value>
+  </data>
+  <data name="SalePaysStatistic" xml:space="preserve">
+    <value>סטטיסטיקת הכנסות תשלום</value>
+  </data>
+  <data name="BalancePay" xml:space="preserve">
+    <value>תשלום יתרה</value>
+  </data>
+  <data name="BalancePayDescription" xml:space="preserve">
+    <value>הצג פרטי תשלום יתרה</value>
+  </data>
+  <data name="BalancePayNo" xml:space="preserve">
+    <value>מספר תשלום יתרה</value>
+  </data>
+  <data name="SoftServiceNameWithoutVersion" xml:space="preserve">
+    <value>מערכת העסקה Oybab</value>
+  </data>
+  <data name="MediumLabelFontSize" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="LogoTitleLabelFontSize" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="SoftServiceVersion" xml:space="preserve">
+    <value>V1.1</value>
+  </data>
+  <data name="DirectionMode" xml:space="preserve">
+    <value>RightToLeft</value>
+  </data>
+  <data name="LoginUserInputMsg" xml:space="preserve">
+    <value>נא הזן את מספר מנהל המערכת</value>
+  </data>
+  <data name="LoginPasswordInputMsg" xml:space="preserve">
+    <value>נא הזן את סיסמת מנהל המערכת שלך</value>
+  </data>
+  <data name="Reset2" xml:space="preserve">
+    <value>איפוס</value>
+  </data>
+  <data name="MediumButtonFontSize" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="OK2" xml:space="preserve">
+    <value>אתה בטוח</value>
+  </data>
+  <data name="LittleKeyboardFontSize" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="HorizontalModel" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="CompanyLogoName" xml:space="preserve">
+    <value>Oybab טכנולוגיה</value>
+  </data>
+  <data name="RegNoInputMessage" xml:space="preserve">
+    <value>נא הזן את קוד הרישום שלך</value>
+  </data>
+  <data name="RegCountInputMessage" xml:space="preserve">
+    <value>נא הזן את קוד רישום הכמות</value>
+  </data>
+  <data name="TopLogoTitleLabelFontSize" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="LittleMediumLabelFontSize" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="Exception_AdminExists" xml:space="preserve">
+    <value>מנהל מערכת נמצא כעת בשימוש! {0} קוד שגיאה: 113</value>
+  </data>
+  <data name="IncomeTradingManage" xml:space="preserve">
+    <value>ניהול עסקת הכנסה</value>
+  </data>
+  <data name="Permission" xml:space="preserve">
+    <value>הרשאות</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>ימים</value>
+  </data>
+  <data name="Empty" xml:space="preserve">
+    <value>פנוי</value>
+  </data>
+  <data name="Selected" xml:space="preserve">
+    <value>רשימה נבחרת</value>
+  </data>
+  <data name="Products" xml:space="preserve">
+    <value>רשימת המוצרים</value>
+  </data>
+  <data name="Operate" xml:space="preserve">
+    <value>מבצע</value>
+  </data>
+  <data name="SelectedCount" xml:space="preserve">
+    <value>בחר את הכמות</value>
+  </data>
+  <data name="OperatingWait" xml:space="preserve">
+    <value>רק רגע.....‏</value>
+  </data>
+  <data name="Cash" xml:space="preserve">
+    <value>מזומנים</value>
+  </data>
+  <data name="Card" xml:space="preserve">
+    <value>החלקה מהירה</value>
+  </data>
+  <data name="Member" xml:space="preserve">
+    <value>חבר</value>
+  </data>
+  <data name="Bind" xml:space="preserve">
+    <value>איגוד</value>
+  </data>
+  <data name="Unbind" xml:space="preserve">
+    <value>שחרור</value>
+  </data>
+  <data name="MediumLargeButtonFontSize" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="OldRoomNo" xml:space="preserve">
+    <value>מספר המושב הישן</value>
+  </data>
+  <data name="NewRoomNo" xml:space="preserve">
+    <value>מספר המושב החדש</value>
+  </data>
+  <data name="IpAddress2" xml:space="preserve">
+    <value>כתובת IP</value>
+  </data>
+  <data name="RequestManager" xml:space="preserve">
+    <value>ניהול דרישות</value>
+  </data>
+  <data name="RequestName" xml:space="preserve">
+    <value>שם הדרישה</value>
+  </data>
+  <data name="Request2" xml:space="preserve">
+    <value>דרישה</value>
+  </data>
+  <data name="RequestDescription" xml:space="preserve">
+    <value>הוסף דרישות לנתונים הנוכחיים.</value>
+  </data>
+  <data name="IsDisplayAll" xml:space="preserve">
+    <value>הצג את הכול</value>
+  </data>
+  <data name="CheckoutBy" xml:space="preserve">
+    <value>המשלם</value>
+  </data>
+  <data name="OrderPhoneNo" xml:space="preserve">
+    <value>מספר טלפון של חיוב</value>
+  </data>
+  <data name="PersonName" xml:space="preserve">
+    <value>שם</value>
+  </data>
+  <data name="BillTypeInner" xml:space="preserve">
+    <value>פנימי</value>
+  </data>
+  <data name="BillTypeOuter" xml:space="preserve">
+    <value>חיצוני</value>
+  </data>
+  <data name="BillType" xml:space="preserve">
+    <value>סוג החיוב</value>
+  </data>
+  <data name="AddOuterBill" xml:space="preserve">
+    <value>הוסף חיוב חיצוני</value>
+  </data>
+  <data name="SuccessAndFailProperty" xml:space="preserve">
+    <value>הצלחה: {0}, כישלון: {1}.‏</value>
+  </data>
+  <data name="ConfirmSaveAll" xml:space="preserve">
+    <value>לוודא שתשמור את הכול?‏</value>
+  </data>
+  <data name="Profit" xml:space="preserve">
+    <value>רווח טהור</value>
+  </data>
+  <data name="TypeName" xml:space="preserve">
+    <value>שם הסוג</value>
+  </data>
+  <data name="Summary" xml:space="preserve">
+    <value>סיכום</value>
+  </data>
+  <data name="SystemTimeInvalid" xml:space="preserve">
+    <value>זמני המערכת והשירות אינם עקביים! {0} קוד שגיאה: 106</value>
+  </data>
+  <data name="UnrecordedPrice" xml:space="preserve">
+    <value>הסכום אינו נרשם</value>
+  </data>
+  <data name="ReceivedPrice" xml:space="preserve">
+    <value>הסכום שהתקבל</value>
+  </data>
+  <data name="Prefix" xml:space="preserve">
+    <value>ראש המילה</value>
+  </data>
+  <data name="MultiLanguage" xml:space="preserve">
+    <value>רב לשוני</value>
+  </data>
+  <data name="Exception_DatabaseNotFound" xml:space="preserve">
+    <value>מסד הנתונים של השירות המרוחק לא נמצא, נא בדוק! קוד שגיאה: 108</value>
+  </data>
+  <data name="Exception_DatabaseLoadFailed" xml:space="preserve">
+    <value>טעינת מסד הנתונים של השירות המרוחק נכשלה! קוד שגיאה: 109</value>
+  </data>
+  <data name="NoLimit" xml:space="preserve">
+    <value>אין הגבלות</value>
+  </data>
+  <data name="ProductExpiredDescription" xml:space="preserve">
+    <value>שנה את זמן התפוגה של המוצר !‏</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>אין</value>
+  </data>
+  <data name="BarcodeReader" xml:space="preserve">
+    <value>קורא ברקודים</value>
+  </data>
+  <data name="PrintBarcodeDescription" xml:space="preserve">
+    <value>תדפיס את הברקוד</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>גודל</value>
+  </data>
+  <data name="BarcodeLengthLimit" xml:space="preserve">
+    <value>אורך הברקוד חייב להיות 8 או 13 סיביות !‏</value>
+  </data>
+  <data name="BillWide" xml:space="preserve">
+    <value>חשבון-רוחב</value>
+  </data>
+  <data name="PrintAll" xml:space="preserve">
+    <value>הדפס את הכול</value>
+  </data>
+  <data name="ConfirmBalanceInjustice" xml:space="preserve">
+    <value>היתרה לא אחידה, בסדר?‏</value>
+  </data>
+  <data name="ProductParentName" xml:space="preserve">
+    <value>שם מוצר האב</value>
+  </data>
+  <data name="ProductParentCount" xml:space="preserve">
+    <value>כמות מוצר האב</value>
+  </data>
+  <data name="Borrow" xml:space="preserve">
+    <value>אשראי</value>
+  </data>
+  <data name="CanNotExceed" xml:space="preserve">
+    <value>הסכום הכולל ששולם הוא {0} יואן !‏</value>
+  </data>
+  <data name="ChangeCount" xml:space="preserve">
+    <value>שנה את הכמות</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>טיפים</value>
+  </data>
+  <data name="InnerBill" xml:space="preserve">
+    <value>חיוב פנימי</value>
+  </data>
+  <data name="OuterBill" xml:space="preserve">
+    <value>חיוב חיצוני</value>
+  </data>
+  <data name="IndexNameOrBarcode" xml:space="preserve">
+    <value>נא הזן את שם האינדקס או את הברקוד</value>
+  </data>
+  <data name="Exception_DeviceExists" xml:space="preserve">
+    <value>ההתקן נמצא כעת בשימוש! {0} שגיאה: 115</value>
+  </data>
+  <data name="ReturnId" xml:space="preserve">
+    <value>מספר החזרה</value>
+  </data>
+  <data name="ReturnBill" xml:space="preserve">
+    <value>תחזיר את החשבון</value>
+  </data>
+  <data name="BalanceManager" xml:space="preserve">
+    <value>ניהול היתרה</value>
+  </data>
+  <data name="BalanceName" xml:space="preserve">
+    <value>שם היתרה</value>
+  </data>
+  <data name="IsBind" xml:space="preserve">
+    <value>איגוד</value>
+  </data>
+  <data name="CardOnlyCouldBindOnce" xml:space="preserve">
+    <value>רק כרטיס אחד מאוגד !‏</value>
+  </data>
+  <data name="AccountBank" xml:space="preserve">
+    <value>בנק פתיחת החשבון</value>
+  </data>
+  <data name="AccountName" xml:space="preserve">
+    <value>שם החשבון נפתח</value>
+  </data>
+  <data name="AccountNo" xml:space="preserve">
+    <value>מספר החשבון נפתח</value>
+  </data>
+  <data name="ReturnType" xml:space="preserve">
+    <value>סוג ההחזרה</value>
+  </data>
+  <data name="ReturnManager" xml:space="preserve">
+    <value>ניהול החזרה</value>
+  </data>
+  <data name="FromCustomer" xml:space="preserve">
+    <value>מהלקוח</value>
+  </data>
+  <data name="ToSupplier" xml:space="preserve">
+    <value>החזרה לספק</value>
+  </data>
+  <data name="ReturnDetails" xml:space="preserve">
+    <value>פרטי החזר</value>
+  </data>
+  <data name="IsChange" xml:space="preserve">
+    <value>להחליף</value>
+  </data>
+  <data name="CheckoutReturn" xml:space="preserve">
+    <value>החזרת הקופה</value>
+  </data>
+  <data name="BalancePaysIncomeStatistic" xml:space="preserve">
+    <value>סטטיסטיקת הכנסה מתשלום יתרה</value>
+  </data>
+  <data name="BalancePaysSpendStatistic" xml:space="preserve">
+    <value>סטטיסטיקת הוצאה מתשלום יתרה</value>
+  </data>
+  <data name="BalancePayByCash" xml:space="preserve">
+    <value>תשלום יתרה (מזומן)</value>
+  </data>
+  <data name="BalancePayByCard" xml:space="preserve">
+    <value>תשלום יתרה (כרטיס)</value>
+  </data>
+  <data name="MemberPayByCash" xml:space="preserve">
+    <value>תשלום חבר (מזומן)</value>
+  </data>
+  <data name="MemberPayByCard" xml:space="preserve">
+    <value>תשלום חבר (כרטיס)</value>
+  </data>
+  <data name="SupplierPayByCash" xml:space="preserve">
+    <value>תשלום ספק (מזומן)</value>
+  </data>
+  <data name="SupplierPayByCard" xml:space="preserve">
+    <value>תשלום ספק (כרטיס)</value>
+  </data>
+  <data name="AdminPayByCash" xml:space="preserve">
+    <value>תשלום מנהל מערכת (מזומן)</value>
+  </data>
+  <data name="AdminPayByCard" xml:space="preserve">
+    <value>תשלום מנהל מערכת (כרטיס)</value>
+  </data>
+  <data name="ReturnStatistic" xml:space="preserve">
+    <value>סטטיסטיקת החזר</value>
+  </data>
+  <data name="AdminSaleStatistic" xml:space="preserve">
+    <value>סטטיסטיקת מכירות של מנהל מערכת</value>
+  </data>
+  <data name="ReturnProductsStatistic" xml:space="preserve">
+    <value>סטטיסטיקת מוצרים מוחזרים</value>
+  </data>
+  <data name="ReplaceCount" xml:space="preserve">
+    <value>מספר המחליפים</value>
+  </data>
+  <data name="RecordCount" xml:space="preserve">
+    <value>מספר הרשומות</value>
+  </data>
+  <data name="Return" xml:space="preserve">
+    <value>להחזיר</value>
+  </data>
+  <data name="CardPrice" xml:space="preserve">
+    <value>מחיר כרטיס האשראי</value>
+  </data>
+  <data name="CardBalancePrice" xml:space="preserve">
+    <value>יתרת כרטיס</value>
+  </data>
+  <data name="OtherPrice" xml:space="preserve">
+    <value>מחירים אחרים</value>
+  </data>
+  <data name="Supplier" xml:space="preserve">
+    <value>ספקים</value>
+  </data>
+  <data name="PrintInfo" xml:space="preserve">
+    <value>פרטי חיוב</value>
+  </data>
+  <data name="Test" xml:space="preserve">
+    <value>מבחן</value>
+  </data>
+  <data name="InputPhoneNoFirst" xml:space="preserve">
+    <value>אם תזין פרטי חיוב, הזן תחילה את מספר הטלפון שלך !‏</value>
+  </data>
+  <data name="PriceMonitor" xml:space="preserve">
+    <value>הצגת המחיר</value>
+  </data>
+  <data name="ProductProfitStatistic" xml:space="preserve">
+    <value>סטטיסטיקת רווח מוצר</value>
+  </data>
+  <data name="IsBindWeigh" xml:space="preserve">
+    <value>משקל הכריכה</value>
+  </data>
+  <data name="PageHeight" xml:space="preserve">
+    <value>גובה העמוד</value>
+  </data>
+  <data name="CancelAndDelete" xml:space="preserve">
+    <value>ביטול ומחיקה</value>
+  </data>
+  <data name="CashWithCard" xml:space="preserve">
+    <value>מזומן: {0}¥. החלקה מהירה: {1}¥.‏</value>
+  </data>
+  <data name="AdminCantCreateAnAdmin" xml:space="preserve">
+    <value>למנהלי מערכת אין אפשרות להוסיף מנהלי מערכת!‏</value>
+  </data>
+  <data name="IncomePermission" xml:space="preserve">
+    <value>הרשאות הכנסה</value>
+  </data>
+  <data name="ExpenditurePermission" xml:space="preserve">
+    <value>הרשאות הוצאות</value>
+  </data>
+  <data name="TemporaryChangePrice" xml:space="preserve">
+    <value>שנה את המחיר באופן זמני</value>
+  </data>
+  <data name="ChangeUnitPrice" xml:space="preserve">
+    <value>שנה את מחיר היחידה</value>
+  </data>
+  <data name="AddPrice" xml:space="preserve">
+    <value>הגדל את הסכום</value>
+  </data>
+  <data name="AddMemberBalancePrice" xml:space="preserve">
+    <value>הגדל את הסכום הנותר של החבר</value>
+  </data>
+  <data name="PosTopTitleFontSize" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="PosTotalPriceFontSize" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="PosCountFontSize" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="PosDescriptionFontSize" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>משתמש</value>
+  </data>
+  <data name="PosContentFontSize" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="PosDescription" xml:space="preserve">
+    <value>חיפוש מוצרים: F3, אחסון זמני: F7, שחזור: F8, איגוד חבר: F10, סגור: F12, שינוי שפה: TAB, פתיחת תיבת כסף : Alt-Z, איתור: ↑↓← →, דפדוף: PgUp/PgDn, להגדיל כמות: +, להקטין כמות:-, בחר/אישור: Enter , מחק נבחר: Del, ביטול/החזרה: Esc.</value>
+  </data>
+  <data name="Restore" xml:space="preserve">
+    <value>שחזור</value>
+  </data>
+  <data name="CardReader" xml:space="preserve">
+    <value>קורא כרטיסים</value>
+  </data>
+  <data name="CardNo" xml:space="preserve">
+    <value>מספר כרטיס</value>
+  </data>
+  <data name="CardNoExists" xml:space="preserve">
+    <value>מספר הכרטיס כבר קיים, לאשר החלפה?‏</value>
+  </data>
+  <data name="SuccessReadBarcode" xml:space="preserve">
+    <value>הצליח לקרוא את הברקוד !‏</value>
+  </data>
+  <data name="SuccessReadCardNo" xml:space="preserve">
+    <value>הצליח לקרוא את הכרטיס !‏</value>
+  </data>
+  <data name="ServerIpAddress2" xml:space="preserve">
+    <value>כתובת השירות</value>
+  </data>
+  <data name="BindMemberByNo" xml:space="preserve">
+    <value>אגד חברים לפי מספר</value>
+  </data>
+  <data name="BindSupplierByNo" xml:space="preserve">
+    <value>אגד את הספק לפי מספר</value>
+  </data>
+  <data name="BarcodeScales" xml:space="preserve">
+    <value>מאזני ברקוד</value>
+  </data>
+  <data name="SendData" xml:space="preserve">
+    <value>שלח נתונים</value>
+  </data>
+  <data name="IncorrectProductData" xml:space="preserve">
+    <value>קיימים נתונים לא חוקיים במידע המוצר !‏</value>
+  </data>
+  <data name="IncorrectProductName" xml:space="preserve">
+    <value>קיימים נתונים לא חוקיים בשם המוצר !‏</value>
+  </data>
+  <data name="UnableToConnectIPAddress" xml:space="preserve">
+    <value>אין אפשרות להתחבר לכתובת IP !‏</value>
+  </data>
+  <data name="ConfirmNotPay" xml:space="preserve">
+    <value>אתה בטוח שאתה לא משלם?‏</value>
+  </data>
+  <data name="ReadResourceStrError" xml:space="preserve">
+    <value>שגיאת קריאת משאב!‏</value>
+  </data>
+  <data name="FreeRoomPriceLimit" xml:space="preserve">
+    <value>מגבלת מחיר חינם</value>
+  </data>
+  <data name="CancelFireAlarm" xml:space="preserve">
+    <value>בטל את אזעקת האש</value>
+  </data>
+  <data name="ConfirmOperate" xml:space="preserve">
+    <value>האם {0} מאושר ?‏</value>
+  </data>
+  <data name="DeleteProduct" xml:space="preserve">
+    <value>מחק את הפריט</value>
+  </data>
+  <data name="OpenCashDrawer" xml:space="preserve">
+    <value>פתח את תיבת הכסף</value>
+  </data>
+  <data name="Paid" xml:space="preserve">
+    <value>לשלם</value>
+  </data>
+  <data name="Platform" xml:space="preserve">
+    <value>פלטפורמה</value>
+  </data>
+  <data name="UnlimitedTime" xml:space="preserve">
+    <value>זמן ללא הגבלה</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>כבר פתוח</value>
+  </data>
+  <data name="DecreaseProductCount" xml:space="preserve">
+    <value>הפחת את מספר המוצרים</value>
+  </data>
+  <data name="FaildThenWaitRetry" xml:space="preserve">
+    <value>הפעולה נכשלה, הפעולה מהירה מדי, נא נסה שוב !‏</value>
+  </data>
+  <data name="RemovePrice" xml:space="preserve">
+    <value>הסר את המחיר</value>
+  </data>
+  <data name="Exception_ServerClientVersionMisalignment" xml:space="preserve">
+    <value>גירסת מערכת השירות המרוחק אינה עולה בקנה אחד עם גירסת מערכת הלקוח הנוכחית, נא עדכן לאותה גירסת מערכת !‏</value>
+  </data>
+  <data name="Exception_ServerClientTimeMisalignment" xml:space="preserve">
+    <value>זמן מערכת צד שירות מרחוק וזמן מערכת הלקוח הנוכחי אינם עקביים, נא עדכן לאותו זמן !‏</value>
+  </data>
+  <data name="ConfirmAddPay" xml:space="preserve">
+    <value>האם אתה בטוח להוסיף את {1}{0} מ {2} ל {3}?‏</value>
+  </data>
+  <data name="BalanceTransfer" xml:space="preserve">
+    <value>יתרת העברה</value>
+  </data>
+  <data name="OldBalance" xml:space="preserve">
+    <value>האיזון הישן</value>
+  </data>
+  <data name="NewBalance" xml:space="preserve">
+    <value>האיזון החדש</value>
+  </data>
+  <data name="BalanceTransferDescription" xml:space="preserve">
+    <value>להעביר כסף בין יתרות</value>
+  </data>
+  <data name="LangName" xml:space="preserve">
+    <value>עִברִית</value>
+  </data>
+  <data name="HightFix" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Culcure" xml:space="preserve">
+    <value>he-IL</value>
+  </data>
+  <data name="Dir" xml:space="preserve">
+    <value>rtl</value>
+  </data>
+  <data name="LargeFont" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="EnableAntialiasing" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="GlobalSetting" xml:space="preserve">
+    <value>הגדרות כלליות</value>
+  </data>
+  <data name="PriceSymbol" xml:space="preserve">
+    <value>סמל המחיר</value>
+  </data>
+  <data name="Main" xml:space="preserve">
+    <value>הראשי</value>
+  </data>
+  <data name="SystemLanguage" xml:space="preserve">
+    <value>שפת המערכת</value>
+  </data>
+  <data name="SystemLanguageCantSame" xml:space="preserve">
+    <value>שפות מערכת לא יכולות להיות זהות!‏</value>
+  </data>
+  <data name="SystemLanguageChangeWarn" xml:space="preserve">
+    <value>שינויים בשפת המערכת עשויים להשפיע על המערכת, לאשר את השינויים ?‏</value>
+  </data>
+  <data name="PermissionsMenuDescription" xml:space="preserve">
+    <value>שנה הרשאות מנהל מערכת</value>
+  </data>
+  <data name="ReturnMoney" xml:space="preserve">
+    <value>תחזיר את הכסף</value>
+  </data>
+  <data name="CanNotExceedConfirm" xml:space="preserve">
+    <value>הסכום הכולל ששולם הוא {0} יואן! לאשר את ההחזר ?‏</value>
+  </data>
+  <data name="Exception_PasswordErrorCountLimit" xml:space="preserve">
+    <value>שגיאות סיסמה רבות מדי, נא נסה שוב מאוחר יותר !‏</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>שם החברה</value>
+  </data>
+  <data name="CustomFont_Android" xml:space="preserve">
+    <value>OybabTuz.ttf#Oybab Tuz</value>
+  </data>
+  <data name="CustomFont_iOS" xml:space="preserve">
+    <value>OybabTuz</value>
+  </data>
+  <data name="CustomFont_UWP" xml:space="preserve">
+    <value>/Assets/OybabTuz.ttf#Oybab TuzAssets/OybabTuz.ttf#Oybab Tuz</value>
+  </data>
+  <data name="SavePassword" xml:space="preserve">
+    <value>שמור את הסיסמה שלך</value>
+  </data>
+  <data name="Tsmi_Lang_Icon" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="IncomeTypeStatistic" xml:space="preserve">
+    <value>סטטיסטיקת סוג הכנסה</value>
+  </data>
+  <data name="SpendTypeStatistic" xml:space="preserve">
+    <value>סטטיסטיקת סוג הוצאות</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>פונקציה</value>
+  </data>
+  <data name="Agree" xml:space="preserve">
+    <value>מסכים</value>
+  </data>
+  <data name="PrivacyPolicy" xml:space="preserve">
+    <value>מדיניות פרטיות</value>
+  </data>
+  <data name="Exception_AdminUsing" xml:space="preserve">
+    <value>מנהל מערכת נמצא כעת בשימוש! אם זה לא הפעולה שלך בבקשה לשנות את הסיסמה בזמן !‏‏</value>
+  </data>
+  <data name="UserAgreement" xml:space="preserve">
+    <value>פרוטוקול המשתמש</value>
+  </data>
+  <data name="And" xml:space="preserve">
+    <value>ו</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>היסטוריה</value>
+  </data>
+  <data name="HistoryDescription" xml:space="preserve">
+    <value>הצג את ההיסטוריה של הנתונים הנוכחיים.</value>
+  </data>
+  <data name="CompanyAbbreviation" xml:space="preserve">
+    <value>Oybab  טכנולוגיה   </value>
+  </data>
+  <data name="License" xml:space="preserve">
+    <value>הסכם</value>
+  </data>
+  <data name="Donate" xml:space="preserve">
+    <value>תרומות</value>
+  </data>
+  <data name="SourceCode" xml:space="preserve">
+    <value>מקור</value>
+  </data>
+  <data name="ConfirmItemBalanceNotEnough" xml:space="preserve">
+    <value>{0} זה לא מספיק, לאשר ?‏</value>
+  </data>
+</root>

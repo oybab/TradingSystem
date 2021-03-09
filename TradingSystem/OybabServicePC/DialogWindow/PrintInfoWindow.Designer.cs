@@ -219,7 +219,7 @@
             // KrplOrderPhoneNo
             // 
             this.KrplOrderPhoneNo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.KrplOrderPhoneNo.Location = new System.Drawing.Point(66, 12);
+            this.KrplOrderPhoneNo.Location = new System.Drawing.Point(143, 12);
             this.KrplOrderPhoneNo.Name = "KrplOrderPhoneNo";
             this.KrplOrderPhoneNo.Size = new System.Drawing.Size(100, 20);
             this.KrplOrderPhoneNo.TabIndex = 9;
@@ -228,7 +228,7 @@
             // krpcbMultipleLanguage
             // 
             this.krpcbMultipleLanguage.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.NormalControl;
-            this.krpcbMultipleLanguage.Location = new System.Drawing.Point(299, 15);
+            this.krpcbMultipleLanguage.Location = new System.Drawing.Point(304, 15);
             this.krpcbMultipleLanguage.Name = "krpcbMultipleLanguage";
             this.krpcbMultipleLanguage.Size = new System.Drawing.Size(122, 20);
             this.krpcbMultipleLanguage.TabIndex = 11;
@@ -262,7 +262,7 @@
             // krplPageHeight
             // 
             this.krplPageHeight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.krplPageHeight.Location = new System.Drawing.Point(88, 126);
+            this.krplPageHeight.Location = new System.Drawing.Point(165, 126);
             this.krplPageHeight.Name = "krplPageHeight";
             this.krplPageHeight.Size = new System.Drawing.Size(78, 20);
             this.krplPageHeight.TabIndex = 20;
@@ -284,7 +284,7 @@
             // krplIsPrintAfterCheckout
             // 
             this.krplIsPrintAfterCheckout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.krplIsPrintAfterCheckout.Location = new System.Drawing.Point(45, 86);
+            this.krplIsPrintAfterCheckout.Location = new System.Drawing.Point(122, 86);
             this.krplIsPrintAfterCheckout.Name = "krplIsPrintAfterCheckout";
             this.krplIsPrintAfterCheckout.Size = new System.Drawing.Size(121, 20);
             this.krplIsPrintAfterCheckout.TabIndex = 40;
@@ -303,7 +303,7 @@
             // krplIsPrintAfterBuy
             // 
             this.krplIsPrintAfterBuy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.krplIsPrintAfterBuy.Location = new System.Drawing.Point(76, 51);
+            this.krplIsPrintAfterBuy.Location = new System.Drawing.Point(153, 51);
             this.krplIsPrintAfterBuy.Name = "krplIsPrintAfterBuy";
             this.krplIsPrintAfterBuy.Size = new System.Drawing.Size(90, 20);
             this.krplIsPrintAfterBuy.TabIndex = 41;

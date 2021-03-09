@@ -62,7 +62,12 @@ namespace Oybab.ServerManager.Model.Models
         /// 重置
         /// </summary>
         
-        Reset
+        Reset,
+        /// <summary>
+        /// 转换
+        /// </summary>
+
+        Transfer
     }
 
 

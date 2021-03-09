@@ -300,7 +300,7 @@ namespace Oybab.ServicePC.SubWindow
 
             try
             {
-                AddTimeStr = DateTime.ParseExact(AddTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm");
+                AddTimeStr = DateTime.ParseExact(AddTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm");
 
                 if (null != model)
                     OperateNameStr = GetOperateName(model);
@@ -598,7 +598,7 @@ namespace Oybab.ServicePC.SubWindow
                                     krpdgList.SelectedRows[0].Cells["krpcmBalancePayId"].Value = newBalancePay.BalancePayId;
                                     krpdgList.SelectedRows[0].Cells["krpcmEdit"].Value = "";
 
-                                    krpdgList.SelectedRows[0].Cells["krpcmAddTime"].Value = DateTime.ParseExact(newBalancePay.AddTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm");
+                                    krpdgList.SelectedRows[0].Cells["krpcmAddTime"].Value = DateTime.ParseExact(newBalancePay.AddTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm");
                                     this.balance = balance;
                                     this.ReturnValue = balance;
                                     this.resultList.Insert(0, newBalancePay);

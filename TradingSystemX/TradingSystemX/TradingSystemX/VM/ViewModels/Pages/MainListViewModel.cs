@@ -59,7 +59,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
             AddList(_balanceManager);
             _statistic = new MainListModel() { Name = "Statistic", GoCommand = this.GoCommand };
             AddList(_statistic);
-            AddList(new MainListModel() { Name = "ChangeLanguage", GoCommand = this.GoCommand });
+            //AddList(new MainListModel() { Name = "ChangeLanguage", GoCommand = this.GoCommand });
             AddList(new MainListModel() { Name = "ChangePassword", GoCommand = this.GoCommand });
             AddList(new MainListModel() { Name = "About", GoCommand = this.GoCommand });
             AddList(new MainListModel() { Name = "Exit", GoCommand = this.GoCommand });
@@ -70,21 +70,35 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
 
             // 设置语言
             LoginRefresh();
+
+
+
+
+
+            foreach (var item in Res.Instance.AllLangList.OrderBy(x => x.Value.LangOrder))
+            {
+                Dict dict = new Dict() { Name = Res.Instance.GetString("LangName", item.Value.Culture), Value = item.Value.LangIndex };
+                AllLang.Add(dict);
+            }
         }
 
 
 
-
+        internal bool _isInit;
         /// <summary>
         /// 初始化
         /// </summary>
         public void Init()
         {
-            
+            SelectedLang = AllLang.Where(x => int.Parse(x.Value.ToString()) == Res.Instance.CurrentLangIndex).FirstOrDefault();
+            _isInit = true;
         }
 
 
        
+
+
+
         private ObservableCollection<MainListModel> _lists = new ObservableCollection<MainListModel>();
         /// <summary>
         /// 菜单列表
@@ -96,6 +110,67 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
             {
                 _lists = value;
                 OnPropertyChanged("Lists");
+            }
+        }
+
+        private ObservableCollection<Dict> _allLang = new ObservableCollection<Dict>();
+        /// <summary>
+        /// 所有语言
+        /// </summary>
+        public ObservableCollection<Dict> AllLang
+        {
+            get { return _allLang; }
+            set
+            {
+                _allLang = value;
+                OnPropertyChanged("AllLang");
+            }
+        }
+
+
+        private Dict _selectedLang = null;
+        /// <summary>
+        /// 所选语言
+        /// </summary>
+        public Dict SelectedLang
+        {
+            get { return _selectedLang; }
+            set
+            {
+                _selectedLang = value;
+                OnPropertyChanged("SelectedLang");
+            }
+        }
+
+
+        private int _languageMode = -1;
+        /// <summary>
+        /// 选择模式 0中文, 1维文, 2英文
+        /// </summary>
+        public int LanguageMode
+        {
+            get { return _languageMode; }
+            set
+            {
+                _languageMode = value;
+                OnPropertyChanged("LanguageMode");
+                OnPropertyChanged("LanguageName");
+
+            }
+        }
+
+
+        private string _languageName = "";
+        /// <summary>
+        /// 选择名
+        /// </summary>
+        public string LanguageName
+        {
+            get { return Res.Instance.GetMainLangByLangIndex(_languageMode).LangName; }
+            set
+            {
+                _languageName = value;
+                OnPropertyChanged("LanguageName");
             }
         }
 
@@ -629,18 +704,24 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
                                 break;
                             // 修改语言
                             case "ChangeLanguage":
+                                if (null != ClickPickerEvent)
+                                    ClickPickerEvent(null, null);
+                                break;
+                            case "ChangeLanguageFinish":
 
-                                Dictionary<string, string> langs = new Dictionary<string, string>();
-                                foreach (var item in Res.Instance.AllLangList)
-                                {
-                                    langs.Add(Res.Instance.GetString("LangName", item.Value.Culture), item.Value.LangIndex.ToString());
-                                }
+                                //Dictionary<string, string> langs = new Dictionary<string, string>();
+                                //foreach (var item in Res.Instance.AllLangList.OrderBy(x => x.Value.LangOrder))
+                                //{
+                                //    langs.Add(Res.Instance.GetString("LangName", item.Value.Culture), item.Value.LangIndex.ToString());
+                                //}
 
-                                QueueMessageBoxNotification.Instance.ActionMessageBox(null, null, CommandTitles.Instance.Information, string.Format(Resources.Instance.GetString("ChangeLanguage")), MessageBoxMode.Sheet, MessageBoxImageMode.Information, MessageBoxButtonMode.CustomMultiple, (string operate) =>
-                                {
-                                    int langIndex = int.Parse(operate);
+                                //QueueMessageBoxNotification.Instance.ActionMessageBox(null, null, CommandTitles.Instance.Information, string.Format(Resources.Instance.GetString("ChangeLanguage")), MessageBoxMode.Sheet, MessageBoxImageMode.Information, MessageBoxButtonMode.CustomMultiple, (string operate) =>
+                                //{
+                                //int langIndex = int.Parse(operate);
 
-                                    Device.BeginInvokeOnMainThread(async () =>
+                                int langIndex = LanguageMode;
+
+                                Device.BeginInvokeOnMainThread(async () =>
                                     {
                                         if (Res.Instance.CurrentLangIndex != langIndex)
                                         {
@@ -661,7 +742,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
                                         }
                                     });
 
-                                }, langs);
+                               // }, langs);
                                 break;
                             // 修改密码
                             case "ChangePassword":
@@ -729,6 +810,9 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
                 }));
             }
         }
+
+
+        internal event EventHandler ClickPickerEvent;
 
 
 

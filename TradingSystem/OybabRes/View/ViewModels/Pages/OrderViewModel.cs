@@ -56,7 +56,7 @@ namespace Oybab.Res.View.ViewModels.Pages
             this.Selected.RefreshTime = RefreshTime;
             this.Selected.RefreshCommand = RefreshCommand;
 
-            this.Language = new LanguageViewModel(element, ChangeLanguage);
+            this.Language = new LanguageViewModel(element, ChangeLanguage, true);
 
 
             this.Request = new RequestViewModel(element, ugRequest);
@@ -179,6 +179,7 @@ namespace Oybab.Res.View.ViewModels.Pages
         {
             if (_element.Visibility == Visibility.Visible && !this.Language.IsShow && !this.ChangePaidPrice.IsShow && !this.ChangeCount.IsShow && !this.ChangePrice.IsShow && !this.ChangeTime.IsShow && !this.Request.IsShow)
             {
+                this.Language.IsPrint = true;
                 this.Language.Show();
             }
         }
@@ -376,9 +377,9 @@ namespace Oybab.Res.View.ViewModels.Pages
 
                         // 设置剩余时间
 
-                        TimeSpan balance = (DateTime.Now - DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", null));
+                        TimeSpan balance = (DateTime.Now - DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture));
                         // 如果剩余时间已经超出了, 默认0:0显示
-                        if (DateTime.Now < DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", null))
+                        if (DateTime.Now < DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture))
                         {
                             if (room.IsPayByTime == 1)
                                 Selected.RoomTime = string.Format("{0}:{1}", (int)balance.TotalHours, balance.Minutes);
@@ -413,7 +414,7 @@ namespace Oybab.Res.View.ViewModels.Pages
             {
                 foreach (var item in resultList.OrderByDescending(x => x.OrderDetailId))
                 {
-                    Selected.CurrentSelectedList.Add(new DetailsModel() { _element = _lbSelectedList, AddTime = DateTime.ParseExact(item.AddTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm"), Product = Resources.GetRes().Products.Where(x => x.ProductId == item.ProductId).FirstOrDefault(), OrderDetail = item, Operate = OperateDetails, IsOnlyOrder = true });
+                    Selected.CurrentSelectedList.Add(new DetailsModel() { _element = _lbSelectedList, AddTime = DateTime.ParseExact(item.AddTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm"), Product = Resources.GetRes().Products.Where(x => x.ProductId == item.ProductId).FirstOrDefault(), OrderDetail = item, Operate = OperateDetails, IsOnlyOrder = true });
                 }
 
             }
@@ -659,9 +660,9 @@ namespace Oybab.Res.View.ViewModels.Pages
         {
             // 设置剩余时间
 
-            TimeSpan balance = (DateTime.Now - DateTime.ParseExact(Selected.EndTimeTemp.ToString(), "yyyyMMddHHmmss", null));
+            TimeSpan balance = (DateTime.Now - DateTime.ParseExact(Selected.EndTimeTemp.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture));
             // 如果剩余时间已经超出了, 默认0:0显示
-            if (DateTime.Now < DateTime.ParseExact(Selected.EndTimeTemp.ToString(), "yyyyMMddHHmmss", null))
+            if (DateTime.Now < DateTime.ParseExact(Selected.EndTimeTemp.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture))
             {
                 if (Selected.RoomType == 1)
                     Selected.RoomTime = string.Format("{0}:{1}", (int)balance.TotalHours, balance.Minutes);
@@ -693,10 +694,11 @@ namespace Oybab.Res.View.ViewModels.Pages
         /// <param name="lang"></param>
         private void ChangeLanguage(int lang)
         {
-            if (this.Language.IsShow)
+            if (this.Language.IsPrint)
             {
                 this.Language.Hide(null);
                 PrintOrder(lang);
+                this.Language.IsPrint = false;
             }
             else
             {
@@ -715,6 +717,9 @@ namespace Oybab.Res.View.ViewModels.Pages
                 {
                     FullScreenMonitor.Instance.RefreshSecondMonitorLanguage(Resources.GetRes().GetMainLangByLangIndex(Language.LanguageMode).LangIndex, -1);
                 }
+
+                this.Language.Hide(null);
+
             }
 
         }
@@ -892,19 +897,19 @@ namespace Oybab.Res.View.ViewModels.Pages
             {
                 // 直接计算时间
                 if (null == this.order)
-                    totalMinutes = (int)DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", null).Subtract(DateTime.ParseExact(order.StartTime.ToString(), "yyyyMMddHHmmss", null)).TotalMinutes;
+                    totalMinutes = (int)DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).Subtract(DateTime.ParseExact(order.StartTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture)).TotalMinutes;
                 else
                 {
                     // 如果是时间少了, 则还是老方法计算
-                    if (DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", null) < DateTime.ParseExact(order.RoomPriceCalcTime.ToString(), "yyyyMMddHHmmss", null))
+                    if (DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture) < DateTime.ParseExact(order.RoomPriceCalcTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture))
                     {
-                        totalMinutes = (int)DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", null).Subtract(DateTime.ParseExact(order.StartTime.ToString(), "yyyyMMddHHmmss", null)).TotalMinutes;
+                        totalMinutes = (int)DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).Subtract(DateTime.ParseExact(order.StartTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture)).TotalMinutes;
                         IsSubTime = true;
                     }
                     // 如果不是, 则在上次的时间加上新时间价格
                     else
                     {
-                        totalMinutes = (int)DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", null).Subtract(DateTime.ParseExact(order.RoomPriceCalcTime.ToString(), "yyyyMMddHHmmss", null)).TotalMinutes;
+                        totalMinutes = (int)DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).Subtract(DateTime.ParseExact(order.RoomPriceCalcTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture)).TotalMinutes;
                     }
 
                 }
@@ -945,7 +950,7 @@ namespace Oybab.Res.View.ViewModels.Pages
                 {
                     if (room.IsPayByTime == 1 || room.IsPayByTime == 2)
                     {
-                        totalMinutes = (int)DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", null).Subtract(DateTime.ParseExact(order.StartTime.ToString(), "yyyyMMddHHmmss", null)).TotalMinutes;
+                        totalMinutes = (int)DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).Subtract(DateTime.ParseExact(order.StartTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture)).TotalMinutes;
                     }
                     Selected.RoomPrice = order.RoomPrice = CommonOperates.GetCommonOperates().GetRoomPrice(this.order, room.Price, room.PriceHour, room.IsPayByTime, totalMinutes, IsSubTime, order.EndTime, true);
                     Selected.TotalPrice = order.TotalPrice = Math.Round(lastTotal + order.RoomPrice, 2);
@@ -1962,20 +1967,20 @@ namespace Oybab.Res.View.ViewModels.Pages
                             // 是否允许更改语言
                             if (null == this.order || Common.GetCommon().IsAllowChangeLanguage())
                             {
+                                this.Language.IsPrint = false;
+                                this.Language.Show();
+                                //this.Language.LanguageMode = Resources.GetRes().GetMainLangByMainLangIndex(Resources.GetRes().GetMainLangByLangIndex(this.Language.LanguageMode).MainLangIndex + 1).LangIndex;
 
-     
-                                this.Language.LanguageMode = Resources.GetRes().GetMainLangByMainLangIndex(Resources.GetRes().GetMainLangByLangIndex(this.Language.LanguageMode).MainLangIndex + 1).LangIndex;
-                                
 
-                                this.Selected.RemarkChanged = true;
+                                //this.Selected.RemarkChanged = true;
 
-                                RefreshState();
+                                //RefreshState();
 
-                                // 刷新第二屏语言
-                                if (FullScreenMonitor.Instance._isInitialized)
-                                {
-                                    FullScreenMonitor.Instance.RefreshSecondMonitorLanguage(Resources.GetRes().GetMainLangByLangIndex(Language.LanguageMode).LangIndex, -1);
-                                }
+                                //// 刷新第二屏语言
+                                //if (FullScreenMonitor.Instance._isInitialized)
+                                //{
+                                //    FullScreenMonitor.Instance.RefreshSecondMonitorLanguage(Resources.GetRes().GetMainLangByLangIndex(Language.LanguageMode).LangIndex, -1);
+                                //}
                             }
                             
                         });

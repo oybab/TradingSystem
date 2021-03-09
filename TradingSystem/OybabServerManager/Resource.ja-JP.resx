@@ -1,0 +1,1947 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>詳しく</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>付け足す</value>
+  </data>
+  <data name="Change" xml:space="preserve">
+    <value>変更</value>
+  </data>
+  <data name="ChangeFaild" xml:space="preserve">
+    <value>変更失敗！</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>パスワードの変更</value>
+  </data>
+  <data name="ChangeSuccess" xml:space="preserve">
+    <value>変更完了!</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>Hotan Oybab Information Technology Co., Ltd.</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>パスワードの確認</value>
+  </data>
+  <data name="Copyright" xml:space="preserve">
+    <value>著作権は全て株式会社Oybabに帰属します。</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="DeleteFailt" xml:space="preserve">
+    <value>削除に失敗しました!</value>
+  </data>
+  <data name="DeleteSuccess" xml:space="preserve">
+    <value>削除されました!</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>終了</value>
+  </data>
+  <data name="FontName" xml:space="preserve">
+    <value>Microsoft YaHei, Arial，Oybab Tuz</value>
+  </data>
+  <data name="FontSize" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="Id" xml:space="preserve">
+    <value>シリアルナンバー</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>言語</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>ログイン</value>
+  </data>
+  <data name="LoginValid" xml:space="preserve">
+    <value>正確な{0}情報を入力してください!</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>新パスワード</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>いいえ</value>
+  </data>
+  <data name="OldPassword" xml:space="preserve">
+    <value>旧パスワード</value>
+  </data>
+  <data name="OldPasswordFaild" xml:space="preserve">
+    <value>旧パスワードが間違って入力されました!</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>パスワード</value>
+  </data>
+  <data name="PwdError" xml:space="preserve">
+    <value>パスワードが間違っています!</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>リトライ</value>
+  </data>
+  <data name="RightToLeft" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>セーブ</value>
+  </data>
+  <data name="SaveFailt" xml:space="preserve">
+    <value>セーブ失敗！</value>
+  </data>
+  <data name="SaveSuccess" xml:space="preserve">
+    <value>セーブ完了!</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>全て</value>
+  </data>
+  <data name="TwoNewPasswordNotEqual" xml:space="preserve">
+    <value>入力した新しいパスワードが一致しません、再入力してください!</value>
+  </data>
+  <data name="UpdateInfo" xml:space="preserve">
+    <value>新しいバージョンを見つける</value>
+  </data>
+  <data name="USBKey_Warn" xml:space="preserve">
+    <value>USB-KEYを挿入して[再試行]をクリックして続行するか、[終了]をクリックして終了してください!</value>
+  </data>
+  <data name="UserLogin" xml:space="preserve">
+    <value>ユーザーログイン</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>はい</value>
+  </data>
+  <data name="Abort" xml:space="preserve">
+    <value>止める</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>無視</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>ユーザー名</value>
+  </data>
+  <data name="Warn" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>エラー</value>
+  </data>
+  <data name="CurrentKeyName" xml:space="preserve">
+    <value>現在のUSB-KEY名は{0}です。</value>
+  </data>
+  <data name="Exception_CheckSqlAndNet" xml:space="preserve">
+    <value>データベース接続エラー、ネットワークまたはデータベースの接続設定を確認してください!</value>
+  </data>
+  <data name="Exception_LoadCacheError" xml:space="preserve">
+    <value>キャッシュの読み込みにエラーが発生しました。</value>
+  </data>
+  <data name="Exception_LoadMediaRoot" xml:space="preserve">
+    <value>曲のルートパスの読み込みエラー、設定ファイルを確認してください!</value>
+  </data>
+  <data name="Exception_NotSupprtKey" xml:space="preserve">
+    <value>データベースに接続できません。</value>
+  </data>
+  <data name="InputData" xml:space="preserve">
+    <value>データのインポート</value>
+  </data>
+  <data name="OutputData" xml:space="preserve">
+    <value>データのエクスポート</value>
+  </data>
+  <data name="UpdateNonReturnOrCantRead" xml:space="preserve">
+    <value>更新プログラムの戻りデータが空であるか、解析に失敗しました!</value>
+  </data>
+  <data name="UpdateUnableError" xml:space="preserve">
+    <value>原因不明のアップデートエラー、Code:{0}。</value>
+  </data>
+  <data name="CompanyLogoImage" xml:space="preserve">
+    <value>logo.png</value>
+  </data>
+  <data name="Exception_ReadResourceStrError" xml:space="preserve">
+    <value>リソースの文字の読み取りに失敗しました!</value>
+  </data>
+  <data name="Exception_InputData" xml:space="preserve">
+    <value>データのインポートに失敗しました!</value>
+  </data>
+  <data name="Exception_InputReadData" xml:space="preserve">
+    <value>データのインポート及び読み込みに失敗しました!</value>
+  </data>
+  <data name="Exception_OutputData" xml:space="preserve">
+    <value>データのエクスポートに失敗しました!</value>
+  </data>
+  <data name="InputDataSuccess" xml:space="preserve">
+    <value>データインポート成功!</value>
+  </data>
+  <data name="OutputDataSuccess" xml:space="preserve">
+    <value>データのエクスポートに成功しました!</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>ファイル</value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>ツール</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>全て</value>
+  </data>
+  <data name="FolderName" xml:space="preserve">
+    <value>フォルダ名</value>
+  </data>
+  <data name="IgnoreData" xml:space="preserve">
+    <value>未保存データを無視してよろしいでしょうか？</value>
+  </data>
+  <data name="ImageName" xml:space="preserve">
+    <value>画像名</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>もっと</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>ページ</value>
+  </data>
+  <data name="AddDescription" xml:space="preserve">
+    <value>新しいデータを追加します。</value>
+  </data>
+  <data name="DeleteDescription" xml:space="preserve">
+    <value>現在のデータを削除します。</value>
+  </data>
+  <data name="PleaseEditBefore" xml:space="preserve">
+    <value>まずは編集を終わらせてください!</value>
+  </data>
+  <data name="SaveDescription" xml:space="preserve">
+    <value>現在追加・変更されているデータを保存します。</value>
+  </data>
+  <data name="SureDelete" xml:space="preserve">
+    <value>本当に削除しますか？</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>ファイル名</value>
+  </data>
+  <data name="Exception_NotFound" xml:space="preserve">
+    <value>そのような{0}は見つかりませんでした!</value>
+  </data>
+  <data name="ErrorBig" xml:space="preserve">
+    <value>バグ発見</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>選択</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>システム</value>
+  </data>
+  <data name="AllPage" xml:space="preserve">
+    <value>トータル：</value>
+  </data>
+  <data name="AllPage2" xml:space="preserve">
+    <value>ページ</value>
+  </data>
+  <data name="CurrentPage" xml:space="preserve">
+    <value>現在: ページ</value>
+  </data>
+  <data name="CurrentPage2" xml:space="preserve">
+    <value>ページ</value>
+  </data>
+  <data name="LastPage" xml:space="preserve">
+    <value>前のページ</value>
+  </data>
+  <data name="NextPage" xml:space="preserve">
+    <value>次のページ</value>
+  </data>
+  <data name="CompanyUrlStr" xml:space="preserve">
+    <value>ウェブサイト</value>
+  </data>
+  <data name="ExitPassword" xml:space="preserve">
+    <value>終了パスワード</value>
+  </data>
+  <data name="MobileNoStr" xml:space="preserve">
+    <value>電話</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>リセット</value>
+  </data>
+  <data name="NotFoundUSBKEY" xml:space="preserve">
+    <value>USB-KEYが見つかりませんでした!</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>戻る</value>
+  </data>
+  <data name="MuteRestore" xml:space="preserve">
+    <value>復元</value>
+  </data>
+  <data name="UpdateAlert" xml:space="preserve">
+    <value>システムの新バージョンを発見しました、更新してください!</value>
+  </data>
+  <data name="Exception_CheckSqlAndFile" xml:space="preserve">
+    <value>データベース接続エラー、データベースファイルまたはデータベース接続の構成を確認してください!</value>
+  </data>
+  <data name="CompanyShortName" xml:space="preserve">
+    <value>OYBAB</value>
+  </data>
+  <data name="CompleteInput" xml:space="preserve">
+    <value>完全なデータを入力してください!</value>
+  </data>
+  <data name="VersionNo" xml:space="preserve">
+    <value>バージョン番号</value>
+  </data>
+  <data name="SoftPlayerDescription" xml:space="preserve">
+    <value>ご意見やご提案は、「システム---詳しく」ページからお問い合わせください。</value>
+  </data>
+  <data name="ChangeLanguage" xml:space="preserve">
+    <value>言語の変更</value>
+  </data>
+  <data name="ChangeLanguageFailt" xml:space="preserve">
+    <value>言語変更に失敗！</value>
+  </data>
+  <data name="ChangeLanguageSuccess" xml:space="preserve">
+    <value>言語の変更に成功しました、次のシステム起動時に有効になります!</value>
+  </data>
+  <data name="Exception_InvalidLanguage" xml:space="preserve">
+    <value>システム言語が無効か存在しないので、設定ファイルを確認してください!</value>
+  </data>
+  <data name="Exception_LogError" xml:space="preserve">
+    <value>ログの読み込みに失敗しました!</value>
+  </data>
+  <data name="FontName2" xml:space="preserve">
+    <value>Arial</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>助ける</value>
+  </data>
+  <data name="Exception_InvalidDB" xml:space="preserve">
+    <value>データベースファイルが無効です!</value>
+  </data>
+  <data name="Exception_KeyKeyError" xml:space="preserve">
+    <value>USB-KEY取得キーエラー。 エラー:{0},{1}。</value>
+  </data>
+  <data name="Exception_ApplicationCheckFaild" xml:space="preserve">
+    <value>アプリケーションの検証に失敗しました!</value>
+  </data>
+  <data name="Exception_CloseRequestFaild" xml:space="preserve">
+    <value>セッション終了のリクエストエラーを送信する!</value>
+  </data>
+  <data name="Exception_EncryptedRequestFaild" xml:space="preserve">
+    <value>暗号化のリクエストエラーを送信する!</value>
+  </data>
+  <data name="Exception_LockRequestFaild" xml:space="preserve">
+    <value>ロックのリクエストエラーを送信する!</value>
+  </data>
+  <data name="Exception_NewRequestFailt" xml:space="preserve">
+    <value>セッション終了のリクエストエラーを送信する !{0} エラーコード：101</value>
+  </data>
+  <data name="Exception_OutClientLimitFaild" xml:space="preserve">
+    <value>クライアントの接続制限を超えた!{0} エラーコード：102</value>
+  </data>
+  <data name="Exception_RemoteServerConn" xml:space="preserve">
+    <value>リモートサーバーに接続できません!</value>
+  </data>
+  <data name="Exception_ServerCantCorrConn" xml:space="preserve">
+    <value>サーバーとの正常なセッションが維持できません! [再試行]をクリックして続行するか、[終了]をクリックして終了してください!</value>
+  </data>
+  <data name="Exception_ServerCheckFaild" xml:space="preserve">
+    <value>サーバーのKEYエラーをチェック!</value>
+  </data>
+  <data name="Exception_ServerFaild" xml:space="preserve">
+    <value>サーバーにエラーが発生しました!</value>
+  </data>
+  <data name="Exception_ServerKeyFaild" xml:space="preserve">
+    <value>サーバーKEYエラー!</value>
+  </data>
+  <data name="Exception_SessionExpiredRetry" xml:space="preserve">
+    <value>セッションの期限が切れたため、やり直してください!</value>
+  </data>
+  <data name="Exception_SessionFaildAndTry" xml:space="preserve">
+    <value>セッションの期限が切れたため、再度取得するよう試してください!</value>
+  </data>
+  <data name="Exception_SessionRequestFaild" xml:space="preserve">
+    <value>セッション継続のリクエストエラーを送信する!</value>
+  </data>
+  <data name="Exception_SessionUpdateFaild" xml:space="preserve">
+    <value>セッションの更新に失敗しました!</value>
+  </data>
+  <data name="Exception_UIDRequestFaild" xml:space="preserve">
+    <value>UID取得のリクエストエラーを送信する!</value>
+  </data>
+  <data name="SessionUpdateSuccess" xml:space="preserve">
+    <value>セッションの更新が成功しました。</value>
+  </data>
+  <data name="Exception_SetClientTimeFailt" xml:space="preserve">
+    <value>サーバーの時間からクライアントへの時間較正はできませんでした!</value>
+  </data>
+  <data name="IsHidden" xml:space="preserve">
+    <value>隠し</value>
+  </data>
+  <data name="Exception_CheckDataFaild" xml:space="preserve">
+    <value>リモートサーバーのデータ取得にエラー!</value>
+  </data>
+  <data name="Exception_DataNotReady" xml:space="preserve">
+    <value>リモートサーバーのデータが準備できていません あとでもう一度試してみてください エラーコード：107</value>
+  </data>
+  <data name="Exception_ChangePWDRequestFaild" xml:space="preserve">
+    <value>パスワード変更のリクエストエラーを送信する!</value>
+  </data>
+  <data name="Exception_ValidPWDRequestFaild" xml:space="preserve">
+    <value>パスワード認証のリクエストエラーを送信する!</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>お問い合わせ</value>
+  </data>
+  <data name="Consumption" xml:space="preserve">
+    <value>消費</value>
+  </data>
+  <data name="DealerContactWay" xml:space="preserve">
+    <value>ディーラーの連絡先</value>
+  </data>
+  <data name="Mode" xml:space="preserve">
+    <value>モード</value>
+  </data>
+  <data name="Remark" xml:space="preserve">
+    <value>備考</value>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>その他</value>
+  </data>
+  <data name="Exception_IPConflict" xml:space="preserve">
+    <value>IPアドレスの競合、再起動してください!</value>
+  </data>
+  <data name="Exception_SessionInvalid" xml:space="preserve">
+    <value>無効なセッションのため、再起動してください!</value>
+  </data>
+  <data name="Exception_InvalidPending" xml:space="preserve">
+    <value>無効モード！</value>
+  </data>
+  <data name="Exception_IPInvalid" xml:space="preserve">
+    <value>IPアドレスが有効ではありませんので、カスタマーサービスまでご連絡ください!</value>
+  </data>
+  <data name="Exception_OrderExpired" xml:space="preserve">
+    <value>請求書の期限が切れました、カスタマーサービスに連絡してください!</value>
+  </data>
+  <data name="Exception_OrderInvalid" xml:space="preserve">
+    <value>無効な請求書です!</value>
+  </data>
+  <data name="Exception_SendRequestFaild" xml:space="preserve">
+    <value>通知のリクエストエラーを送信する！</value>
+  </data>
+  <data name="Exception_SetConRequestFaild" xml:space="preserve">
+    <value>セットアップ機能のリクエストエラーを送信する！</value>
+  </data>
+  <data name="Exception_OperateRequestFaild" xml:space="preserve">
+    <value>操作のリクエストエラーを送信する!</value>
+  </data>
+  <data name="ChangeSet" xml:space="preserve">
+    <value>機能設定</value>
+  </data>
+  <data name="ExpenditureManager" xml:space="preserve">
+    <value>支出管理</value>
+  </data>
+  <data name="MainPage" xml:space="preserve">
+    <value>ホームページ</value>
+  </data>
+  <data name="OrderManager" xml:space="preserve">
+    <value>請求書管理</value>
+  </data>
+  <data name="ProductManager" xml:space="preserve">
+    <value>プロダクトマネジメント</value>
+  </data>
+  <data name="ProductTypeManager" xml:space="preserve">
+    <value>製品タイプの管理</value>
+  </data>
+  <data name="RoomManager" xml:space="preserve">
+    <value>経営陣</value>
+  </data>
+  <data name="SoftServiceName" xml:space="preserve">
+    <value>Oybab取引システム v1.1</value>
+  </data>
+  <data name="OperateFaild" xml:space="preserve">
+    <value>{0} 失敗した！</value>
+  </data>
+  <data name="ActualPrice" xml:space="preserve">
+    <value>実際の価格</value>
+  </data>
+  <data name="AddTime" xml:space="preserve">
+    <value>時間の追加</value>
+  </data>
+  <data name="Backstage" xml:space="preserve">
+    <value>バックステージ</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="DealsPrice" xml:space="preserve">
+    <value>割引の金額</value>
+  </data>
+  <data name="Display" xml:space="preserve">
+    <value>ディスプレー</value>
+  </data>
+  <data name="DisplayType" xml:space="preserve">
+    <value>表示タイプ</value>
+  </data>
+  <data name="EndTime" xml:space="preserve">
+    <value>終了の時間</value>
+  </data>
+  <data name="FinishTime" xml:space="preserve">
+    <value>完成時間</value>
+  </data>
+  <data name="Hide" xml:space="preserve">
+    <value>隠し</value>
+  </data>
+  <data name="ImportTime" xml:space="preserve">
+    <value>支払日</value>
+  </data>
+  <data name="IpAddress" xml:space="preserve">
+    <value>IPアドレス</value>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>オーダー</value>
+  </data>
+  <data name="ProductName" xml:space="preserve">
+    <value>プロダクト名称</value>
+  </data>
+  <data name="ProductTypeName" xml:space="preserve">
+    <value>製品タイプ名</value>
+  </data>
+  <data name="RoomNo" xml:space="preserve">
+    <value>テーブル番号</value>
+  </data>
+  <data name="StartTime" xml:space="preserve">
+    <value>開始時刻</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>状態</value>
+  </data>
+  <data name="TotalPrice" xml:space="preserve">
+    <value>総価格</value>
+  </data>
+  <data name="UnitPrice" xml:space="preserve">
+    <value>単価</value>
+  </data>
+  <data name="PropertyUsed" xml:space="preserve">
+    <value>まずはこのデータに関連するデータの修正・削除をお願いします!</value>
+  </data>
+  <data name="Exception_CountOutOfIPRequestLimit" xml:space="preserve">
+    <value>重複したリクエストが多すぎるため、あとでやり直してください。 エラーコード：103</value>
+  </data>
+  <data name="Exception_ExceptionSource" xml:space="preserve">
+    <value>{0} {1} エラーソース: {2}</value>
+  </data>
+  <data name="PropertyExists" xml:space="preserve">
+    <value>{0} 既に存在しているため、重複にご記入しないでください!</value>
+  </data>
+  <data name="Checkout" xml:space="preserve">
+    <value>チェックアウト</value>
+  </data>
+  <data name="Invalid" xml:space="preserve">
+    <value>取り消す</value>
+  </data>
+  <data name="Confirmed" xml:space="preserve">
+    <value>確認済み</value>
+  </data>
+  <data name="GetFailed" xml:space="preserve">
+    <value>アクセスに失敗した！</value>
+  </data>
+  <data name="OrderDetails" xml:space="preserve">
+    <value>請求書の詳細</value>
+  </data>
+  <data name="OrderNo" xml:space="preserve">
+    <value>請求書番号</value>
+  </data>
+  <data name="PropertyError" xml:space="preserve">
+    <value>入力された{0}は不完全または不正確です!</value>
+  </data>
+  <data name="Requesting" xml:space="preserve">
+    <value>進行中のリクエスト</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="ShowDescription" xml:space="preserve">
+    <value>詳細を確認する</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>時間</value>
+  </data>
+  <data name="TimeLimit" xml:space="preserve">
+    <value>検索間隔は{0}日以内でなければなりません!</value>
+  </data>
+  <data name="ImportDetails" xml:space="preserve">
+    <value>お支払いの詳細</value>
+  </data>
+  <data name="ImportId" xml:space="preserve">
+    <value>お支払いコード</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>印刷</value>
+  </data>
+  <data name="PrintDescription" xml:space="preserve">
+    <value>印刷内容</value>
+  </data>
+  <data name="AddImport" xml:space="preserve">
+    <value>追加のお支払い</value>
+  </data>
+  <data name="LineDataError" xml:space="preserve">
+    <value>{0}行目のデータ入力は不完全または不正確です!</value>
+  </data>
+  <data name="BalanceCount" xml:space="preserve">
+    <value>余剰の数量</value>
+  </data>
+  <data name="Exception_ProductCountRefreshExpiredRetry" xml:space="preserve">
+    <value>製品の数量が切れたため、やり直してください!</value>
+  </data>
+  <data name="Exception_ProductCountRefreshFailed" xml:space="preserve">
+    <value>製品アップデートに失敗しました!</value>
+  </data>
+  <data name="Exception_ProductCountRefreshRetry" xml:space="preserve">
+    <value>製品が足りないため、製品の再取得を試してください!</value>
+  </data>
+  <data name="IsBindCount" xml:space="preserve">
+    <value>バインドした数</value>
+  </data>
+  <data name="ProductCountRefreshSuccess" xml:space="preserve">
+    <value>製品のアップデートが成功しました。</value>
+  </data>
+  <data name="WarningCount" xml:space="preserve">
+    <value>警告の数</value>
+  </data>
+  <data name="Call" xml:space="preserve">
+    <value>呼ぶ</value>
+  </data>
+  <data name="ConsumptionType" xml:space="preserve">
+    <value>消費のコントロール</value>
+  </data>
+  <data name="ControlType" xml:space="preserve">
+    <value>リモートコントロール</value>
+  </data>
+  <data name="CostPrice" xml:space="preserve">
+    <value>コスト価格</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>新しい</value>
+  </data>
+  <data name="Offline" xml:space="preserve">
+    <value>オフライン</value>
+  </data>
+  <data name="Online" xml:space="preserve">
+    <value>オンライン</value>
+  </data>
+  <data name="PaidPrice" xml:space="preserve">
+    <value>支払額</value>
+  </data>
+  <data name="PermissionDenied" xml:space="preserve">
+    <value>許可なし！</value>
+  </data>
+  <data name="BalancePrice" xml:space="preserve">
+    <value>残高</value>
+  </data>
+  <data name="ChangePrice" xml:space="preserve">
+    <value>価格の変更</value>
+  </data>
+  <data name="ChangeTime" xml:space="preserve">
+    <value>へんこうじかん</value>
+  </data>
+  <data name="Disable" xml:space="preserve">
+    <value>クローズ</value>
+  </data>
+  <data name="Enable" xml:space="preserve">
+    <value>起動</value>
+  </data>
+  <data name="Hour" xml:space="preserve">
+    <value>じかん</value>
+  </data>
+  <data name="InvalidIt" xml:space="preserve">
+    <value>取り消す</value>
+  </data>
+  <data name="Minute" xml:space="preserve">
+    <value>分</value>
+  </data>
+  <data name="RemainingTime" xml:space="preserve">
+    <value>余剰時間</value>
+  </data>
+  <data name="TotalTime" xml:space="preserve">
+    <value>そうじかん</value>
+  </data>
+  <data name="BalanceCountNotEnough" xml:space="preserve">
+    <value>操作に失敗し、この商品の余剰はたった{0}個しかない！</value>
+  </data>
+  <data name="CancelOrder" xml:space="preserve">
+    <value>勘定のキャンセル</value>
+  </data>
+  <data name="CancelOrderDescription" xml:space="preserve">
+    <value>現在の勘定をキャンセルします。</value>
+  </data>
+  <data name="CheckoutOrder" xml:space="preserve">
+    <value>勘定</value>
+  </data>
+  <data name="CheckoutOrderDescription" xml:space="preserve">
+    <value>現在の勘定を済ます.</value>
+  </data>
+  <data name="ConfirmCancelOrder" xml:space="preserve">
+    <value>現在の勘定をキャンセルしてもよろしいですか？</value>
+  </data>
+  <data name="FaildThenRefreshModel" xml:space="preserve">
+    <value>操作に失敗し、請求書が修正されたので、請求情報の更新を試します!</value>
+  </data>
+  <data name="Locked" xml:space="preserve">
+    <value>ロックされた</value>
+  </data>
+  <data name="NewOrder" xml:space="preserve">
+    <value>新しい請求書</value>
+  </data>
+  <data name="NewOrderDescription" xml:space="preserve">
+    <value>新しい請求書を作成します。</value>
+  </data>
+  <data name="OperateSuccess" xml:space="preserve">
+    <value>{0}成功！</value>
+  </data>
+  <data name="RefreshOrderFailed" xml:space="preserve">
+    <value>現在の請求書更新が失敗！</value>
+  </data>
+  <data name="ReplaceRoom" xml:space="preserve">
+    <value>テーブル交換</value>
+  </data>
+  <data name="ReplaceRoomDescription" xml:space="preserve">
+    <value>現在のテーブルを別のテーブルに取り替えます.</value>
+  </data>
+  <data name="Request" xml:space="preserve">
+    <value>請求</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>再起動</value>
+  </data>
+  <data name="RestartDescription" xml:space="preserve">
+    <value>ホストを再起動します。</value>
+  </data>
+  <data name="SaveBeforeDelete" xml:space="preserve">
+    <value>まずはデータの保存をお願いします!</value>
+  </data>
+  <data name="ShowOrder" xml:space="preserve">
+    <value>請求書を見る</value>
+  </data>
+  <data name="ShowOrderDescription" xml:space="preserve">
+    <value>請求書の詳細を表示します。</value>
+  </data>
+  <data name="Shutdown" xml:space="preserve">
+    <value>シャットダウン</value>
+  </data>
+  <data name="ShutdownDescription" xml:space="preserve">
+    <value>ホストをシャットダウンします。</value>
+  </data>
+  <data name="UnevenBalance" xml:space="preserve">
+    <value>残高が均等ではありません!</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="NewRoom" xml:space="preserve">
+    <value>新しいテーブル</value>
+  </data>
+  <data name="SendFireAlarm" xml:space="preserve">
+    <value>火災アラートを送信する</value>
+  </data>
+  <data name="Barcode" xml:space="preserve">
+    <value>バーコード</value>
+  </data>
+  <data name="Disabled" xml:space="preserve">
+    <value>使用禁止された</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>かかく</value>
+  </data>
+  <data name="IsPayByTime" xml:space="preserve">
+    <value>時間で決めるかどうか</value>
+  </data>
+  <data name="PriceHour" xml:space="preserve">
+    <value>時間価格</value>
+  </data>
+  <data name="IsAutoExtendTime" xml:space="preserve">
+    <value>時間が自動的に延長されるかどうか</value>
+  </data>
+  <data name="PropertyUnSame" xml:space="preserve">
+    <value>データが不一致のため、再起動してもう一度試してみてください!</value>
+  </data>
+  <data name="AdminName" xml:space="preserve">
+    <value>管理者名</value>
+  </data>
+  <data name="AdminManager" xml:space="preserve">
+    <value>管理者管理</value>
+  </data>
+  <data name="AdminNo" xml:space="preserve">
+    <value>管理者番号</value>
+  </data>
+  <data name="Sex" xml:space="preserve">
+    <value>性別</value>
+  </data>
+  <data name="IDNumber" xml:space="preserve">
+    <value>身分証明書番号</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>メニュー</value>
+  </data>
+  <data name="IsOnlyOwn" xml:space="preserve">
+    <value>かんりせいげん</value>
+  </data>
+  <data name="IsEnable" xml:space="preserve">
+    <value>開くかどうか</value>
+  </data>
+  <data name="Guest" xml:space="preserve">
+    <value>ゲスト</value>
+  </data>
+  <data name="Employee" xml:space="preserve">
+    <value>従業員</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>管理者</value>
+  </data>
+  <data name="DeviceNo" xml:space="preserve">
+    <value>設備番号</value>
+  </data>
+  <data name="DeviceType" xml:space="preserve">
+    <value>装置の種類</value>
+  </data>
+  <data name="DeviceManager" xml:space="preserve">
+    <value>設備管理</value>
+  </data>
+  <data name="Computer" xml:space="preserve">
+    <value>コンピュータ</value>
+  </data>
+  <data name="Tablet" xml:space="preserve">
+    <value>タブレット</value>
+  </data>
+  <data name="PrinterManager" xml:space="preserve">
+    <value>プリンタ管理</value>
+  </data>
+  <data name="PrinterName" xml:space="preserve">
+    <value>プリンタ名</value>
+  </data>
+  <data name="PrinterDeviceName" xml:space="preserve">
+    <value>プリンタ設備名称</value>
+  </data>
+  <data name="PrintType" xml:space="preserve">
+    <value>印刷タイプ</value>
+  </data>
+  <data name="Customer" xml:space="preserve">
+    <value>クライアント</value>
+  </data>
+  <data name="Kitchen" xml:space="preserve">
+    <value>キッチン</value>
+  </data>
+  <data name="MemberNo" xml:space="preserve">
+    <value>会員番号</value>
+  </data>
+  <data name="MemberManager" xml:space="preserve">
+    <value>会員管理</value>
+  </data>
+  <data name="MemberName" xml:space="preserve">
+    <value>会員名称</value>
+  </data>
+  <data name="Occupation" xml:space="preserve">
+    <value>キャリア</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>モバイル</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>でんわ</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>住所</value>
+  </data>
+  <data name="OfferRate" xml:space="preserve">
+    <value>売上高比率/100%</value>
+  </data>
+  <data name="SpendPrice" xml:space="preserve">
+    <value>支払い金額</value>
+  </data>
+  <data name="FavorablePrice" xml:space="preserve">
+    <value>割引金額</value>
+  </data>
+  <data name="ExpiredTime" xml:space="preserve">
+    <value>到着時間</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>おとこ</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>おんな</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>登録</value>
+  </data>
+  <data name="MachineNo" xml:space="preserve">
+    <value>機械コード</value>
+  </data>
+  <data name="RegisterNo" xml:space="preserve">
+    <value>登録コード</value>
+  </data>
+  <data name="SoftwareExpired" xml:space="preserve">
+    <value>システムの有効期限が切れているのですが、再度登録する必要がありますか？</value>
+  </data>
+  <data name="SoftwareSoonExpired" xml:space="preserve">
+    <value>システム{1}の有効期限は{0}日ですが、今すぐ登録する必要がありますか？</value>
+  </data>
+  <data name="SoftwareExpiredWarn" xml:space="preserve">
+    <value>通常のご利用に支障をきたさないよう、7日前までにご連絡のうえご登録いただくようお勧めします!</value>
+  </data>
+  <data name="RegisterSuccess" xml:space="preserve">
+    <value>登録に成功した場合は、システムを再起動してください!</value>
+  </data>
+  <data name="MemberPay" xml:space="preserve">
+    <value>会員のお支払い</value>
+  </data>
+  <data name="MemberPayDescription" xml:space="preserve">
+    <value>会員の支払い詳細を見る</value>
+  </data>
+  <data name="MemberPayNo" xml:space="preserve">
+    <value>会員支払い番号</value>
+  </data>
+  <data name="MemberBalanceNotEnough" xml:space="preserve">
+    <value>会員の残高が不足している!</value>
+  </data>
+  <data name="AddMember" xml:space="preserve">
+    <value>メンバーの追加</value>
+  </data>
+  <data name="PropertyNotFound" xml:space="preserve">
+    <value>見つかりませんでした{0}!</value>
+  </data>
+  <data name="CheckoutImport" xml:space="preserve">
+    <value>チェックアウト費用</value>
+  </data>
+  <data name="RoomPrice" xml:space="preserve">
+    <value>テーブルの価格</value>
+  </data>
+  <data name="CountOfoffLimit" xml:space="preserve">
+    <value>数量は指定された上限を超えることはできません!</value>
+  </data>
+  <data name="MemberExpired" xml:space="preserve">
+    <value>現在の会員資格は失効しました!</value>
+  </data>
+  <data name="MemberExpiredDescription" xml:space="preserve">
+    <value>会員の有効期限を変更する！</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>不明</value>
+  </data>
+  <data name="NotFoundProperty_Number" xml:space="preserve">
+    <value>{0}の {1}が 見つかりませんでした!</value>
+  </data>
+  <data name="Exception_UnknownDevice" xml:space="preserve">
+    <value>デバイスが存在しないか、無効になっています。{0} エラーコード：111</value>
+  </data>
+  <data name="Exception_RoomCountOutOfLimit" xml:space="preserve">
+    <value>定員を超えました!{0} エラーコード：104</value>
+  </data>
+  <data name="ResetDescription" xml:space="preserve">
+    <value>管理者パスワードのリセット</value>
+  </data>
+  <data name="SureReset" xml:space="preserve">
+    <value>リセットをしますか？</value>
+  </data>
+  <data name="Exception_UnknownAdmin" xml:space="preserve">
+    <value>管理者が存在しないか、使用禁止されています。 {0} エラーコード：112</value>
+  </data>
+  <data name="ReturnPrice" xml:space="preserve">
+    <value>返金額</value>
+  </data>
+  <data name="BorrowPrice" xml:space="preserve">
+    <value>借入額</value>
+  </data>
+  <data name="KeepPrice" xml:space="preserve">
+    <value>残高</value>
+  </data>
+  <data name="RemainingDays" xml:space="preserve">
+    <value>残りの日数</value>
+  </data>
+  <data name="Device" xml:space="preserve">
+    <value>設備</value>
+  </data>
+  <data name="Table" xml:space="preserve">
+    <value>テーブル</value>
+  </data>
+  <data name="Package" xml:space="preserve">
+    <value>パッケージ</value>
+  </data>
+  <data name="MemberDealsPrice" xml:space="preserve">
+    <value>会員の割引金額</value>
+  </data>
+  <data name="MemberPaidPrice" xml:space="preserve">
+    <value>会員のお支払い金額</value>
+  </data>
+  <data name="TotalPaidPrice" xml:space="preserve">
+    <value>支払総額</value>
+  </data>
+  <data name="MemberBalancePrice" xml:space="preserve">
+    <value>会員の残高</value>
+  </data>
+  <data name="RegisterCount" xml:space="preserve">
+    <value>登録数</value>
+  </data>
+  <data name="Expenditure" xml:space="preserve">
+    <value>お支払い</value>
+  </data>
+  <data name="PrintTypeLimit" xml:space="preserve">
+    <value>同じ種類のプリンターを追加することはできません!</value>
+  </data>
+  <data name="SameEnabledPrinterFailed" xml:space="preserve">
+    <value>課金タイプのプリンタは1台のみ起動できる！</value>
+  </data>
+  <data name="Server" xml:space="preserve">
+    <value>サーバー</value>
+  </data>
+  <data name="PrintAfterBuy" xml:space="preserve">
+    <value>購入後の印刷</value>
+  </data>
+  <data name="PrintAfterCheckout" xml:space="preserve">
+    <value>チェックアウト後の印刷</value>
+  </data>
+  <data name="LocalPrint" xml:space="preserve">
+    <value>ローカル印刷</value>
+  </data>
+  <data name="ServerIpAddress" xml:space="preserve">
+    <value>サーバーIPアドレス</value>
+  </data>
+  <data name="OperateChangeNextStartup" xml:space="preserve">
+    <value>{0} 成功し、次のシステム起動時に有効になります!</value>
+  </data>
+  <data name="BarcodeNo" xml:space="preserve">
+    <value>バーコード番号</value>
+  </data>
+  <data name="OnlyDisplaySelected" xml:space="preserve">
+    <value>選択したものだけを表示する</value>
+  </data>
+  <data name="CurrentProductAlreadyExists" xml:space="preserve">
+    <value>現在の製品はすでに存在しています!</value>
+  </data>
+  <data name="Statistic" xml:space="preserve">
+    <value>統計</value>
+  </data>
+  <data name="Exception_InvalidMediaRoot" xml:space="preserve">
+    <value>サーバーイメージのパスが無効か存在しないため、フォルダまたはネットワークをご確認してください。 エラーコード：100</value>
+  </data>
+  <data name="Canceld" xml:space="preserve">
+    <value>キャンセル済み</value>
+  </data>
+  <data name="Exception_Relogin" xml:space="preserve">
+    <value>セッションが切れましたので、ログアウトして再度ログインしてください!</value>
+  </data>
+  <data name="InputNotValid" xml:space="preserve">
+    <value>現在の関連情報を正確に入力してください!</value>
+  </data>
+  <data name="Bill" xml:space="preserve">
+    <value>請求書</value>
+  </data>
+  <data name="IncomeManager" xml:space="preserve">
+    <value>収益管理</value>
+  </data>
+  <data name="ExpendBill" xml:space="preserve">
+    <value>支出の請求書</value>
+  </data>
+  <data name="OwedPrice" xml:space="preserve">
+    <value>クレジット金額</value>
+  </data>
+  <data name="IncomeStatistic" xml:space="preserve">
+    <value>収入統計</value>
+  </data>
+  <data name="SpendStatistic" xml:space="preserve">
+    <value>支出統計</value>
+  </data>
+  <data name="SellProductsStatistic" xml:space="preserve">
+    <value>販売商品の統計</value>
+  </data>
+  <data name="SpendProductsStatistic" xml:space="preserve">
+    <value>購入商品の統計</value>
+  </data>
+  <data name="NotFoundAnyRecords" xml:space="preserve">
+    <value>記録は見つかりませんでした！</value>
+  </data>
+  <data name="Proportion" xml:space="preserve">
+    <value>プロポーション</value>
+  </data>
+  <data name="PermissionsMenu" xml:space="preserve">
+    <value>パーミッションメニュー</value>
+  </data>
+  <data name="Exception_MemberDisabled" xml:space="preserve">
+    <value>会員登録は使用禁止されています!</value>
+  </data>
+  <data name="Income" xml:space="preserve">
+    <value>收入</value>
+  </data>
+  <data name="ImageMode" xml:space="preserve">
+    <value>ピクチャーモード</value>
+  </data>
+  <data name="Exception_DeviceCountOutOfLimit" xml:space="preserve">
+    <value>デバイスの最大数を超えている! {0} エラーコード：105</value>
+  </data>
+  <data name="NewPasswordSizeLimit" xml:space="preserve">
+    <value>新しいパスワードは、少なくとも{0}桁の数字です!</value>
+  </data>
+  <data name="AdminLog" xml:space="preserve">
+    <value>管理者ログ</value>
+  </data>
+  <data name="LogTitle" xml:space="preserve">
+    <value>ログタイトル</value>
+  </data>
+  <data name="LogContent" xml:space="preserve">
+    <value>ログの内容</value>
+  </data>
+  <data name="AdminPay" xml:space="preserve">
+    <value>管理者の支払い</value>
+  </data>
+  <data name="AdminPayDescription" xml:space="preserve">
+    <value>管理者支払いの詳細を見る</value>
+  </data>
+  <data name="AdminPayNo" xml:space="preserve">
+    <value>管理者の支払番号</value>
+  </data>
+  <data name="SupplierManager" xml:space="preserve">
+    <value>ベンダーへ管理</value>
+  </data>
+  <data name="SupplierPay" xml:space="preserve">
+    <value>ベンダーへの支払い</value>
+  </data>
+  <data name="SupplierPayDescription" xml:space="preserve">
+    <value>ベンダーへ支払いの詳細を見る</value>
+  </data>
+  <data name="SupplierPayNo" xml:space="preserve">
+    <value>ベンダー支払い番号</value>
+  </data>
+  <data name="SupplierNo" xml:space="preserve">
+    <value>ベンダーへ番号</value>
+  </data>
+  <data name="SupplierExpiredDescription" xml:space="preserve">
+    <value>ベンダーの期限を変更してください!</value>
+  </data>
+  <data name="SupplierName" xml:space="preserve">
+    <value>ベンダーへ名</value>
+  </data>
+  <data name="AddSupplier" xml:space="preserve">
+    <value>ベンダーの追加</value>
+  </data>
+  <data name="SupplierExpired" xml:space="preserve">
+    <value>現在ベンダーへの期限が切れました!</value>
+  </data>
+  <data name="Exception_SupplierDisabled" xml:space="preserve">
+    <value>ベンダーは使用禁止されています!</value>
+  </data>
+  <data name="SupplierBalancePrice" xml:space="preserve">
+    <value>ベンダー残高</value>
+  </data>
+  <data name="SupplierBalanceNotEnough" xml:space="preserve">
+    <value>ベンダーの残高不足！</value>
+  </data>
+  <data name="SupplierDealsPrice" xml:space="preserve">
+    <value>ベンダーの割引価格</value>
+  </data>
+  <data name="SupplierPaidPrice" xml:space="preserve">
+    <value>ベンダーの支払額</value>
+  </data>
+  <data name="PleaseWait" xml:space="preserve">
+    <value>ちょっと待ってください...</value>
+  </data>
+  <data name="CreatingTheDocument" xml:space="preserve">
+    <value>ドキュメント作成中...</value>
+  </data>
+  <data name="TableUsed" xml:space="preserve">
+    <value>現在のテーブルは使用中です!</value>
+  </data>
+  <data name="Exception_InvalidType" xml:space="preserve">
+    <value>現在の関連情報を正確に入力してください！</value>
+  </data>
+  <data name="ChangeCostPrice" xml:space="preserve">
+    <value>コスト価格の修正</value>
+  </data>
+  <data name="IndexName" xml:space="preserve">
+    <value>インデックス名</value>
+  </data>
+  <data name="FinanceLog" xml:space="preserve">
+    <value>ファイナンスロゴ</value>
+  </data>
+  <data name="OperateName" xml:space="preserve">
+    <value>操作名</value>
+  </data>
+  <data name="CashDrawer" xml:space="preserve">
+    <value>げんきんばこ</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>あける</value>
+  </data>
+  <data name="IsPayByCard" xml:space="preserve">
+    <value>クレジットカードでのお支払い</value>
+  </data>
+  <data name="CardPaidPrice" xml:space="preserve">
+    <value>クレジットカードでのお支払い金額</value>
+  </data>
+  <data name="SpendPaysStatistic" xml:space="preserve">
+    <value>出金に関する統計</value>
+  </data>
+  <data name="SalePaysStatistic" xml:space="preserve">
+    <value>支払収入に関する統計</value>
+  </data>
+  <data name="BalancePay" xml:space="preserve">
+    <value>残高決済</value>
+  </data>
+  <data name="BalancePayDescription" xml:space="preserve">
+    <value>残高決済の詳細を見る</value>
+  </data>
+  <data name="BalancePayNo" xml:space="preserve">
+    <value>残高支払番号</value>
+  </data>
+  <data name="SoftServiceNameWithoutVersion" xml:space="preserve">
+    <value>Oybab取引システム</value>
+  </data>
+  <data name="MediumLabelFontSize" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="LogoTitleLabelFontSize" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="SoftServiceVersion" xml:space="preserve">
+    <value>V1.1</value>
+  </data>
+  <data name="DirectionMode" xml:space="preserve">
+    <value>LeftToRight</value>
+  </data>
+  <data name="LoginUserInputMsg" xml:space="preserve">
+    <value>管理者番号を入力してください</value>
+  </data>
+  <data name="LoginPasswordInputMsg" xml:space="preserve">
+    <value>管理者パスワードを入力してください</value>
+  </data>
+  <data name="Reset2" xml:space="preserve">
+    <value>リセット</value>
+  </data>
+  <data name="MediumButtonFontSize" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="OK2" xml:space="preserve">
+    <value>確定</value>
+  </data>
+  <data name="LittleKeyboardFontSize" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="HorizontalModel" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="CompanyLogoName" xml:space="preserve">
+    <value>Oybabテクノロジー</value>
+  </data>
+  <data name="RegNoInputMessage" xml:space="preserve">
+    <value>登録コードを入力してください</value>
+  </data>
+  <data name="RegCountInputMessage" xml:space="preserve">
+    <value>数量登録コードを入力してください</value>
+  </data>
+  <data name="TopLogoTitleLabelFontSize" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="LittleMediumLabelFontSize" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="Exception_AdminExists" xml:space="preserve">
+    <value>現在の管理者が使っています! {0} エラーコード：113</value>
+  </data>
+  <data name="IncomeTradingManage" xml:space="preserve">
+    <value>収益取引の管理</value>
+  </data>
+  <data name="Permission" xml:space="preserve">
+    <value>権限</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="Empty" xml:space="preserve">
+    <value>未使用</value>
+  </data>
+  <data name="Selected" xml:space="preserve">
+    <value>選択されたリスト</value>
+  </data>
+  <data name="Products" xml:space="preserve">
+    <value>製品一覧</value>
+  </data>
+  <data name="Operate" xml:space="preserve">
+    <value>操作</value>
+  </data>
+  <data name="SelectedCount" xml:space="preserve">
+    <value>数量を選択する</value>
+  </data>
+  <data name="OperatingWait" xml:space="preserve">
+    <value>お待ちください.....</value>
+  </data>
+  <data name="Cash" xml:space="preserve">
+    <value>げんきん</value>
+  </data>
+  <data name="Card" xml:space="preserve">
+    <value>カード</value>
+  </data>
+  <data name="Member" xml:space="preserve">
+    <value>会員</value>
+  </data>
+  <data name="Bind" xml:space="preserve">
+    <value>バインド</value>
+  </data>
+  <data name="Unbind" xml:space="preserve">
+    <value>アンバインド</value>
+  </data>
+  <data name="MediumLargeButtonFontSize" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="OldRoomNo" xml:space="preserve">
+    <value>旧テーブル番号</value>
+  </data>
+  <data name="NewRoomNo" xml:space="preserve">
+    <value>新テーブル番号</value>
+  </data>
+  <data name="IpAddress2" xml:space="preserve">
+    <value>ＩＰアドレス</value>
+  </data>
+  <data name="RequestManager" xml:space="preserve">
+    <value>要件管理</value>
+  </data>
+  <data name="RequestName" xml:space="preserve">
+    <value>要件名</value>
+  </data>
+  <data name="Request2" xml:space="preserve">
+    <value>要件</value>
+  </data>
+  <data name="RequestDescription" xml:space="preserve">
+    <value>現在のデータに要件を追加します。</value>
+  </data>
+  <data name="IsDisplayAll" xml:space="preserve">
+    <value>すべて表示</value>
+  </data>
+  <data name="CheckoutBy" xml:space="preserve">
+    <value>勘定の人</value>
+  </data>
+  <data name="OrderPhoneNo" xml:space="preserve">
+    <value>請求先電話番号</value>
+  </data>
+  <data name="PersonName" xml:space="preserve">
+    <value>氏名</value>
+  </data>
+  <data name="BillTypeInner" xml:space="preserve">
+    <value>内部</value>
+  </data>
+  <data name="BillTypeOuter" xml:space="preserve">
+    <value>外部</value>
+  </data>
+  <data name="BillType" xml:space="preserve">
+    <value>請求書の種類</value>
+  </data>
+  <data name="AddOuterBill" xml:space="preserve">
+    <value>外部請求書の追加</value>
+  </data>
+  <data name="SuccessAndFailProperty" xml:space="preserve">
+    <value>成功：{0}、失敗：{1}。</value>
+  </data>
+  <data name="ConfirmSaveAll" xml:space="preserve">
+    <value>すべてを保存してよろしいですか？</value>
+  </data>
+  <data name="Profit" xml:space="preserve">
+    <value>純利益</value>
+  </data>
+  <data name="TypeName" xml:space="preserve">
+    <value>タイプ名</value>
+  </data>
+  <data name="Summary" xml:space="preserve">
+    <value>サマリー</value>
+  </data>
+  <data name="SystemTimeInvalid" xml:space="preserve">
+    <value>システム時間とサーバー時間が一致しない! {0} エラーコード：106</value>
+  </data>
+  <data name="UnrecordedPrice" xml:space="preserve">
+    <value>未記録の金額</value>
+  </data>
+  <data name="ReceivedPrice" xml:space="preserve">
+    <value>受け取った金額</value>
+  </data>
+  <data name="Prefix" xml:space="preserve">
+    <value>プレフィックス</value>
+  </data>
+  <data name="MultiLanguage" xml:space="preserve">
+    <value>多言語</value>
+  </data>
+  <data name="Exception_DatabaseNotFound" xml:space="preserve">
+    <value>リモートサーバーのデータベースが見つかりません。 エラーコード：108</value>
+  </data>
+  <data name="Exception_DatabaseLoadFailed" xml:space="preserve">
+    <value>リモートサーバーのデータベースのロードに失敗しました。 エラーコード：109</value>
+  </data>
+  <data name="NoLimit" xml:space="preserve">
+    <value>制限はありません</value>
+  </data>
+  <data name="ProductExpiredDescription" xml:space="preserve">
+    <value>商品の使用期限を修正する!</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>なし</value>
+  </data>
+  <data name="BarcodeReader" xml:space="preserve">
+    <value>バーコードリーダー</value>
+  </data>
+  <data name="PrintBarcodeDescription" xml:space="preserve">
+    <value>バーコード印刷</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>サイズ</value>
+  </data>
+  <data name="BarcodeLengthLimit" xml:space="preserve">
+    <value>バーコードの長さは8桁か13桁でお願いします!</value>
+  </data>
+  <data name="BillWide" xml:space="preserve">
+    <value>請求書 - 幅広さ</value>
+  </data>
+  <data name="PrintAll" xml:space="preserve">
+    <value>すべてを印刷する</value>
+  </data>
+  <data name="ConfirmBalanceInjustice" xml:space="preserve">
+    <value>バランスが不揃いですが、大丈夫ですか？</value>
+  </data>
+  <data name="ProductParentName" xml:space="preserve">
+    <value>親製品の名前</value>
+  </data>
+  <data name="ProductParentCount" xml:space="preserve">
+    <value>親製品の数量</value>
+  </data>
+  <data name="Borrow" xml:space="preserve">
+    <value>借り入れ</value>
+  </data>
+  <data name="CanNotExceed" xml:space="preserve">
+    <value>支払い総額は￥{0}!</value>
+  </data>
+  <data name="ChangeCount" xml:space="preserve">
+    <value>数量の修正</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>インフォメーション</value>
+  </data>
+  <data name="InnerBill" xml:space="preserve">
+    <value>内部課金</value>
+  </data>
+  <data name="OuterBill" xml:space="preserve">
+    <value>外部課金</value>
+  </data>
+  <data name="IndexNameOrBarcode" xml:space="preserve">
+    <value>インデックス名またはバーコードを入力してください</value>
+  </data>
+  <data name="Exception_DeviceExists" xml:space="preserve">
+    <value>現在使用中の機器! {0} エラーコード：115</value>
+  </data>
+  <data name="ReturnId" xml:space="preserve">
+    <value>返却番号</value>
+  </data>
+  <data name="ReturnBill" xml:space="preserve">
+    <value>返却の請求書</value>
+  </data>
+  <data name="BalanceManager" xml:space="preserve">
+    <value>残高管理</value>
+  </data>
+  <data name="BalanceName" xml:space="preserve">
+    <value>残高名</value>
+  </data>
+  <data name="IsBind" xml:space="preserve">
+    <value>バインド</value>
+  </data>
+  <data name="CardOnlyCouldBindOnce" xml:space="preserve">
+    <value>バインドされるカードは1枚だけです！</value>
+  </data>
+  <data name="AccountBank" xml:space="preserve">
+    <value>口座銀行</value>
+  </data>
+  <data name="AccountName" xml:space="preserve">
+    <value>口座名</value>
+  </data>
+  <data name="AccountNo" xml:space="preserve">
+    <value>口座を開設する</value>
+  </data>
+  <data name="ReturnType" xml:space="preserve">
+    <value>返却種類</value>
+  </data>
+  <data name="ReturnManager" xml:space="preserve">
+    <value>返却管理</value>
+  </data>
+  <data name="FromCustomer" xml:space="preserve">
+    <value>お客様より</value>
+  </data>
+  <data name="ToSupplier" xml:space="preserve">
+    <value>ベンダーへ</value>
+  </data>
+  <data name="ReturnDetails" xml:space="preserve">
+    <value>詳細に戻る</value>
+  </data>
+  <data name="IsChange" xml:space="preserve">
+    <value>入れ替え</value>
+  </data>
+  <data name="CheckoutReturn" xml:space="preserve">
+    <value>勘定の返却</value>
+  </data>
+  <data name="BalancePaysIncomeStatistic" xml:space="preserve">
+    <value>残高支払所得統計</value>
+  </data>
+  <data name="BalancePaysSpendStatistic" xml:space="preserve">
+    <value>残高支払支出統計</value>
+  </data>
+  <data name="BalancePayByCash" xml:space="preserve">
+    <value>残高のお支払い（現金）</value>
+  </data>
+  <data name="BalancePayByCard" xml:space="preserve">
+    <value>残高のお支払い（カード）</value>
+  </data>
+  <data name="MemberPayByCash" xml:space="preserve">
+    <value>会員支払い（現金）</value>
+  </data>
+  <data name="MemberPayByCard" xml:space="preserve">
+    <value>会員支払い（カード）</value>
+  </data>
+  <data name="SupplierPayByCash" xml:space="preserve">
+    <value>ベンダー支払い（現金）</value>
+  </data>
+  <data name="SupplierPayByCard" xml:space="preserve">
+    <value>ベンダー支払い（カード）</value>
+  </data>
+  <data name="AdminPayByCash" xml:space="preserve">
+    <value>管理者支払い（現金）</value>
+  </data>
+  <data name="AdminPayByCard" xml:space="preserve">
+    <value>管理者支払い（カード）</value>
+  </data>
+  <data name="ReturnStatistic" xml:space="preserve">
+    <value>統計のほうへ戻る</value>
+  </data>
+  <data name="AdminSaleStatistic" xml:space="preserve">
+    <value>管理者の売上統計</value>
+  </data>
+  <data name="ReturnProductsStatistic" xml:space="preserve">
+    <value>返品の統計</value>
+  </data>
+  <data name="ReplaceCount" xml:space="preserve">
+    <value>入れ替えの数量</value>
+  </data>
+  <data name="RecordCount" xml:space="preserve">
+    <value>記録された量</value>
+  </data>
+  <data name="Return" xml:space="preserve">
+    <value>返す</value>
+  </data>
+  <data name="CardPrice" xml:space="preserve">
+    <value>カードでの支払い価格</value>
+  </data>
+  <data name="CardBalancePrice" xml:space="preserve">
+    <value>カード残高</value>
+  </data>
+  <data name="OtherPrice" xml:space="preserve">
+    <value>その他の価格</value>
+  </data>
+  <data name="Supplier" xml:space="preserve">
+    <value>ベンダー</value>
+  </data>
+  <data name="PrintInfo" xml:space="preserve">
+    <value>課金情報</value>
+  </data>
+  <data name="Test" xml:space="preserve">
+    <value>テスト</value>
+  </data>
+  <data name="InputPhoneNoFirst" xml:space="preserve">
+    <value>課金情報を入力する場合は、まず電話番号を入力してください!</value>
+  </data>
+  <data name="PriceMonitor" xml:space="preserve">
+    <value>価格表示</value>
+  </data>
+  <data name="ProductProfitStatistic" xml:space="preserve">
+    <value>製品利益統計</value>
+  </data>
+  <data name="IsBindWeigh" xml:space="preserve">
+    <value>重量にバインド</value>
+  </data>
+  <data name="PageHeight" xml:space="preserve">
+    <value>ページの高さ</value>
+  </data>
+  <data name="CancelAndDelete" xml:space="preserve">
+    <value>取消しと削除</value>
+  </data>
+  <data name="CashWithCard" xml:space="preserve">
+    <value>現金：￥{0}。カードでの支払い：￥{1}。</value>
+  </data>
+  <data name="AdminCantCreateAnAdmin" xml:space="preserve">
+    <value>管理者は管理者を追加することができません!</value>
+  </data>
+  <data name="IncomePermission" xml:space="preserve">
+    <value>収入の権限</value>
+  </data>
+  <data name="ExpenditurePermission" xml:space="preserve">
+    <value>支出権限</value>
+  </data>
+  <data name="TemporaryChangePrice" xml:space="preserve">
+    <value>一時的な価格変更</value>
+  </data>
+  <data name="ChangeUnitPrice" xml:space="preserve">
+    <value>単価変更</value>
+  </data>
+  <data name="AddPrice" xml:space="preserve">
+    <value>金額の増加</value>
+  </data>
+  <data name="AddMemberBalancePrice" xml:space="preserve">
+    <value>会員の残高を増やす</value>
+  </data>
+  <data name="PosTopTitleFontSize" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="PosTotalPriceFontSize" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="PosCountFontSize" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="PosDescriptionFontSize" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>ユーザー</value>
+  </data>
+  <data name="PosContentFontSize" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="PosDescription" xml:space="preserve">
+    <value>商品検索：F3、保存：F7、復元：F8、会員のバインド：F10、閉じる：F12、言語変更：TAB、金銭ボックスを開く：Alt+Z、位置の特定：↑↓←→、ページめくり：PgUp/PgDn、数量増加：＋、数量減少：-、選択/OK：Enter、選択したものを削除：Del、キャンセル/元に戻す：Esc、。</value>
+  </data>
+  <data name="Restore" xml:space="preserve">
+    <value>復元</value>
+  </data>
+  <data name="CardReader" xml:space="preserve">
+    <value>カードリーダー</value>
+  </data>
+  <data name="CardNo" xml:space="preserve">
+    <value>カード番号</value>
+  </data>
+  <data name="CardNoExists" xml:space="preserve">
+    <value>カード番号は既に存在しています、入れ替えをしてよろしいですか？</value>
+  </data>
+  <data name="SuccessReadBarcode" xml:space="preserve">
+    <value>バーコードの読み取りが成功しました!</value>
+  </data>
+  <data name="SuccessReadCardNo" xml:space="preserve">
+    <value>カードの読み取りが成功しました!</value>
+  </data>
+  <data name="ServerIpAddress2" xml:space="preserve">
+    <value>サーバーアドレス</value>
+  </data>
+  <data name="BindMemberByNo" xml:space="preserve">
+    <value>番号を通じて会員をバインドする</value>
+  </data>
+  <data name="BindSupplierByNo" xml:space="preserve">
+    <value>番号を通じてベンダーをバインドする</value>
+  </data>
+  <data name="BarcodeScales" xml:space="preserve">
+    <value>バーコードスケール</value>
+  </data>
+  <data name="SendData" xml:space="preserve">
+    <value>データ送信</value>
+  </data>
+  <data name="IncorrectProductData" xml:space="preserve">
+    <value>商品の情報に無効なデータがある！</value>
+  </data>
+  <data name="IncorrectProductName" xml:space="preserve">
+    <value>商品の名称に無効なデータがある！</value>
+  </data>
+  <data name="UnableToConnectIPAddress" xml:space="preserve">
+    <value>IPアドレスに接続できません!</value>
+  </data>
+  <data name="ConfirmNotPay" xml:space="preserve">
+    <value>お支払いをしなくてよろしいですか?</value>
+  </data>
+  <data name="ReadResourceStrError" xml:space="preserve">
+    <value>リソースの読み込みにエラー!</value>
+  </data>
+  <data name="FreeRoomPriceLimit" xml:space="preserve">
+    <value>無料価格の制限</value>
+  </data>
+  <data name="CancelFireAlarm" xml:space="preserve">
+    <value>火事警報を取り消します</value>
+  </data>
+  <data name="ConfirmOperate" xml:space="preserve">
+    <value>{0}を確認しますか?</value>
+  </data>
+  <data name="DeleteProduct" xml:space="preserve">
+    <value>製品の削除</value>
+  </data>
+  <data name="OpenCashDrawer" xml:space="preserve">
+    <value>金銭ボックスを開く</value>
+  </data>
+  <data name="Paid" xml:space="preserve">
+    <value>支払い</value>
+  </data>
+  <data name="Platform" xml:space="preserve">
+    <value>プラットホーム</value>
+  </data>
+  <data name="UnlimitedTime" xml:space="preserve">
+    <value>時間限定なし</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>起動された</value>
+  </data>
+  <data name="DecreaseProductCount" xml:space="preserve">
+    <value>製品数の削減</value>
+  </data>
+  <data name="FaildThenWaitRetry" xml:space="preserve">
+    <value>操作に失敗しました。操作が早すぎて、もう一度お試しください!</value>
+  </data>
+  <data name="RemovePrice" xml:space="preserve">
+    <value>価格を削除する</value>
+  </data>
+  <data name="Exception_ServerClientVersionMisalignment" xml:space="preserve">
+    <value>リモートサーバーのシステムバージョンが、現在のクライアントのシステムバージョンとは異なりますので、同じシステムバージョンにアップデートしてください!</value>
+  </data>
+  <data name="Exception_ServerClientTimeMisalignment" xml:space="preserve">
+    <value>リモートサーバのシステム時刻がクライアントの現在のシステム時刻とは異なりますので、同じ時刻に更新してください!</value>
+  </data>
+  <data name="ConfirmAddPay" xml:space="preserve">
+    <value>{2}から{3}に{0}{1}を追加してよろしいですか？</value>
+  </data>
+  <data name="BalanceTransfer" xml:space="preserve">
+    <value>振込残高</value>
+  </data>
+  <data name="OldBalance" xml:space="preserve">
+    <value>古い残高</value>
+  </data>
+  <data name="NewBalance" xml:space="preserve">
+    <value>新しい残高</value>
+  </data>
+  <data name="BalanceTransferDescription" xml:space="preserve">
+    <value>振込残高間のお金</value>
+  </data>
+  <data name="LangName" xml:space="preserve">
+    <value>日本語</value>
+  </data>
+  <data name="HightFix" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Culcure" xml:space="preserve">
+    <value>ja-JP</value>
+  </data>
+  <data name="Dir" xml:space="preserve">
+    <value>ltr</value>
+  </data>
+  <data name="LargeFont" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="EnableAntialiasing" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="GlobalSetting" xml:space="preserve">
+    <value>全体設定</value>
+  </data>
+  <data name="PriceSymbol" xml:space="preserve">
+    <value>価格記号</value>
+  </data>
+  <data name="Main" xml:space="preserve">
+    <value>主要</value>
+  </data>
+  <data name="SystemLanguage" xml:space="preserve">
+    <value>システム言語</value>
+  </data>
+  <data name="SystemLanguageCantSame" xml:space="preserve">
+    <value>システム言語を同じにすることはできない！</value>
+  </data>
+  <data name="SystemLanguageChangeWarn" xml:space="preserve">
+    <value>システムの言語を変更するとシステムに影響が出る可能性がありますが、変更をしてもよろしいですか？</value>
+  </data>
+  <data name="PermissionsMenuDescription" xml:space="preserve">
+    <value>管理者権限の変更</value>
+  </data>
+  <data name="ReturnMoney" xml:space="preserve">
+    <value>返金</value>
+  </data>
+  <data name="CanNotExceedConfirm" xml:space="preserve">
+    <value>支払い総額は{0}! 返金をしてもよろしいですか？</value>
+  </data>
+  <data name="Exception_PasswordErrorCountLimit" xml:space="preserve">
+    <value>パスワードの誤入力が多すぎるため、後ほどお試しください!</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>会社名</value>
+  </data>
+  <data name="CustomFont_Android" xml:space="preserve">
+    <value>OybabTuz.ttf#OybabTuz</value>
+  </data>
+  <data name="CustomFont_iOS" xml:space="preserve">
+    <value>OybabTuz</value>
+  </data>
+  <data name="CustomFont_UWP" xml:space="preserve">
+    <value>/Assets/OybabTuz.ttf#Oybab Tuz</value>
+  </data>
+  <data name="SavePassword" xml:space="preserve">
+    <value>パスワードの保存</value>
+  </data>
+  <data name="IncomeTypeStatistic" xml:space="preserve">
+    <value>収入の種類に関する統計</value>
+  </data>
+  <data name="SpendTypeStatistic" xml:space="preserve">
+    <value>支出の種類に関する統計</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>機能</value>
+  </data>
+  <data name="Agree" xml:space="preserve">
+    <value>同意</value>
+  </data>
+  <data name="PrivacyPolicy" xml:space="preserve">
+    <value>プライバシーポリシー</value>
+  </data>
+  <data name="Exception_AdminUsing" xml:space="preserve">
+    <value>現在の管理者が使っています! ご本人でない場合に直ちにパスワードを変更してください!</value>
+  </data>
+  <data name="UserAgreement" xml:space="preserve">
+    <value>利用者協定</value>
+  </data>
+  <data name="And" xml:space="preserve">
+    <value>および</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>歴史</value>
+  </data>
+  <data name="HistoryDescription" xml:space="preserve">
+    <value>現在のデータの履歴を表示します。</value>
+  </data>
+  <data name="CompanyAbbreviation" xml:space="preserve">
+    <value>Oybab Co., Ltd.</value>
+  </data>
+  <data name="License" xml:space="preserve">
+    <value>ライセンス</value>
+  </data>
+  <data name="Donate" xml:space="preserve">
+    <value>寄付</value>
+  </data>
+  <data name="SourceCode" xml:space="preserve">
+    <value>ソースコード</value>
+  </data>
+  <data name="ConfirmItemBalanceNotEnough" xml:space="preserve">
+    <value>{0}残高が不足しているが、よろしいでしょうか?</value>
+  </data>
+  <data name="Tsmi_Lang_Icon" xml:space="preserve">
+    <value>-</value>
+  </data>
+</root>

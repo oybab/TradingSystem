@@ -123,7 +123,7 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Label Grid.Column="0" VerticalOptions="CenterAndExpand" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Selected}"  HorizontalOptions="Start" />
-                    <Button Grid.Column="1" Text="{Binding LanguageName}"  VerticalOptions="CenterAndExpand" Command="{Binding GoCommand}" CommandParameter="Lang" HorizontalOptions="Center" >
+                    <!--<Button Grid.Column="1" Text="{Binding LanguageName}"  VerticalOptions="CenterAndExpand" Command="{Binding GoCommand}" CommandParameter="Lang" HorizontalOptions="Center" >
                         <Button.Triggers>
                             <DataTrigger TargetType="Button" Binding="{Binding IsImport}" Value="True">
                                 <Setter Property="IsVisible" Value="False"/>
@@ -132,7 +132,20 @@
                                 <Setter Property="TextColor" Value="Red"/>
                             </DataTrigger >
                         </Button.Triggers>
-                    </Button>
+                    </Button>-->
+                    <Picker Grid.Column="1"  SelectedIndex="{Binding LanguageMode}" HorizontalTextAlignment="Center" SelectedIndexChanged="Picker_SelectedIndexChanged" HorizontalOptions="Center" ItemsSource="{Binding AllLang}" SelectedItem="{Binding SelectedLang}"  ItemDisplayBinding="{Binding Name}">
+                        <Picker.Triggers>
+                            <DataTrigger TargetType="Picker" Binding="{Binding IsImport}" Value="True">
+                                <Setter Property="IsVisible" Value="False"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Picker" Binding="{Binding LanguageModeNo}" Value="1">
+                                <Setter Property="TextColor" Value="Red"/>
+                            </DataTrigger >
+                            <DataTrigger TargetType="Picker" Binding="{Binding LanguageEnable}" Value="False">
+                                <Setter Property="IsEnabled" Value="False"/>
+                            </DataTrigger >
+                        </Picker.Triggers>
+                    </Picker>
                     <Button Grid.Column="2" VerticalOptions="CenterAndExpand" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Products}"  HorizontalOptions="End" Command="{Binding GoCommand}" CommandParameter="Products1" />
                 </Grid>
 

@@ -32,7 +32,9 @@
             this.krpdgList = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
             this.krpcmEdit = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.krpcmImportDetailId = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
+            this.krpcmProductName = new Oybab.ServicePC.Tools.ComTextColumn();
             this.krpcmCostPrice = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
+            this.krpcmCount = new Oybab.ServicePC.Tools.ComTextBoxNumericUpDownColumn();
             this.krpcmTotalPrice = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.krpcmPrice = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.krpbClickToPage = new ComponentFactory.Krypton.Toolkit.KryptonButton();
@@ -67,8 +69,6 @@
             this.krpbAddByBarcode = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.comTextColumn1 = new Oybab.ServicePC.Tools.ComTextColumn();
             this.comTextBoxNumericUpDownColumn1 = new Oybab.ServicePC.Tools.ComTextBoxNumericUpDownColumn();
-            this.krpcmProductName = new Oybab.ServicePC.Tools.ComTextColumn();
-            this.krpcmCount = new Oybab.ServicePC.Tools.ComTextBoxNumericUpDownColumn();
             ((System.ComponentModel.ISupportInitialize)(this.krpdgList)).BeginInit();
             this.SuspendLayout();
             // 
@@ -126,11 +126,39 @@
             this.krpcmImportDetailId.Visible = false;
             this.krpcmImportDetailId.Width = 150;
             // 
+            // krpcmProductName
+            // 
+            this.krpcmProductName.HeaderText = "ProductName";
+            this.krpcmProductName.Name = "krpcmProductName";
+            this.krpcmProductName.Width = 210;
+            // 
             // krpcmCostPrice
             // 
             this.krpcmCostPrice.HeaderText = "krpcmCostPrice";
             this.krpcmCostPrice.Name = "krpcmCostPrice";
             this.krpcmCostPrice.Width = 115;
+            // 
+            // krpcmCount
+            // 
+            this.krpcmCount.DecimalPlaces = 3;
+            this.krpcmCount.HeaderText = "Count";
+            this.krpcmCount.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.krpcmCount.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.krpcmCount.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.krpcmCount.Name = "krpcmCount";
+            this.krpcmCount.Width = 100;
             // 
             // krpcmTotalPrice
             // 
@@ -291,7 +319,7 @@
             this.krpbSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.krpbSave.Location = new System.Drawing.Point(654, 12);
             this.krpbSave.Name = "krpbSave";
-            this.krpbSave.Size = new System.Drawing.Size(90, 25);
+            this.krpbSave.Size = new System.Drawing.Size(94, 25);
             this.krpbSave.TabIndex = 11;
             this.krpbSave.Values.Text = "Save";
             this.krpbSave.Visible = false;
@@ -352,7 +380,7 @@
             // 
             // krpbAddByFastGrid
             // 
-            this.krpbAddByFastGrid.Location = new System.Drawing.Point(711, 43);
+            this.krpbAddByFastGrid.Location = new System.Drawing.Point(716, 43);
             this.krpbAddByFastGrid.Name = "krpbAddByFastGrid";
             this.krpbAddByFastGrid.Size = new System.Drawing.Size(32, 32);
             this.krpbAddByFastGrid.TabIndex = 24;
@@ -396,34 +424,6 @@
             this.comTextBoxNumericUpDownColumn1.Name = "comTextBoxNumericUpDownColumn1";
             this.comTextBoxNumericUpDownColumn1.Width = 100;
             // 
-            // krpcmProductName
-            // 
-            this.krpcmProductName.HeaderText = "ProductName";
-            this.krpcmProductName.Name = "krpcmProductName";
-            this.krpcmProductName.Width = 210;
-            // 
-            // krpcmCount
-            // 
-            this.krpcmCount.DecimalPlaces = 3;
-            this.krpcmCount.HeaderText = "Count";
-            this.krpcmCount.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.krpcmCount.Maximum = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            0});
-            this.krpcmCount.Minimum = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.krpcmCount.Name = "krpcmCount";
-            this.krpcmCount.Width = 100;
-            // 
             // NewImportDetailsWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -434,7 +434,6 @@
             this.Controls.Add(this.krptbImportTime);
             this.Controls.Add(this.krptbRemark);
             this.Controls.Add(this.krplImportTime);
-            this.Controls.Add(this.krpbSave);
             this.Controls.Add(this.kryptonLabel2);
             this.Controls.Add(this.kryptonLabel1);
             this.Controls.Add(this.krplSperator2);
@@ -451,6 +450,7 @@
             this.Controls.Add(this.krpbNextPage);
             this.Controls.Add(this.krpbEngPage);
             this.Controls.Add(this.krpbClickToPage);
+            this.Controls.Add(this.krpbSave);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

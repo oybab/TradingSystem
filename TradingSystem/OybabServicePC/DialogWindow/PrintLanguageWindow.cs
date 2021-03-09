@@ -28,7 +28,7 @@ namespace Oybab.ServicePC.DialogWindow
             
             krpbPrint.Text = Resources.GetRes().GetString("Print");
             krplLanguage.Text = Resources.GetRes().GetString("Language");
-            krpcLanguage.Items.AddRange(Resources.GetRes().MainLangList.Select(x => x.Value.LangName).ToArray());
+            krpcLanguage.Items.AddRange(Resources.GetRes().AllLangList.OrderBy(x => x.Value.LangOrder).Select(x => x.Value.LangName).ToArray());
 
             Assembly asm = Assembly.LoadFrom(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Res.dll"));
             this.Icon = new Icon(asm.GetManifestResourceStream(@"Oybab.Res.Resources.Images.PC.Print.ico"));

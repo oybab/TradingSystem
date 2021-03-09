@@ -28,7 +28,7 @@ namespace Oybab.ServicePC
     {
         private bool IsOpenKeyWindow = false;
 
-        
+
         private string UpdateUrl;
         private HomeWindow homeWindow;
         private ProductTypeWindow productTypeWindow;
@@ -53,7 +53,7 @@ namespace Oybab.ServicePC
         {
             InitializeComponent();
 
-            
+
             Font font = new Font(Resources.GetRes().GetString("FontName2"), float.Parse(Resources.GetRes().GetString("FontSize")));
 
             this.Text = Resources.GetRes().GetString("SoftServiceName");
@@ -134,7 +134,7 @@ namespace Oybab.ServicePC
             tsmiFile.Font = font;
             tsmiMenu.Font = font;
             tsmiExit.Font = font;
-      
+
             tsmiSystem.Font = tsmiAdmin.Font = tsmiDevice.Font = tsmiPrinter.Font = tsmiStatistic.Font = tsmiSupplier.Font = tsmiRequest.Font = tsmiAdminLog.Font = tsmiFinanceLog.Font = tsmiBalance.Font = font;
 
 
@@ -143,11 +143,12 @@ namespace Oybab.ServicePC
 
             tsmiLanguage.Font = font;
             tsmiLanguage.DropDownItems.Clear();
-            foreach (var item in Resources.GetRes().MainLangList)
+            foreach (var item in Resources.GetRes().AllLangList.OrderBy(x => x.Value.LangOrder))
             {
                 ToolStripMenuItem tsmi = new ToolStripMenuItem();
                 tsmi.Font = font;
-                tsmi.Image = Image.FromStream(asm.GetManifestResourceStream(@"Oybab.Res.Resources.Images.PC." + Resources.GetRes().GetString("Tsmi_Lang_Icon")));
+                if (!string.IsNullOrWhiteSpace(Resources.GetRes().GetString("Tsmi_Lang_Icon", new System.Globalization.CultureInfo(item.Value.Culture.Name)))  && "-" != Resources.GetRes().GetString("Tsmi_Lang_Icon", new System.Globalization.CultureInfo(item.Value.Culture.Name)))
+                    tsmi.Image = Image.FromStream(asm.GetManifestResourceStream(@"Oybab.Res.Resources.Images.PC." + Resources.GetRes().GetString("Tsmi_Lang_Icon", new System.Globalization.CultureInfo(item.Value.Culture.Name))));
                 tsmi.Tag = item.Value.LangIndex;
                 tsmi.Size = new System.Drawing.Size(88, 22);
                 tsmi.Text = item.Value.LangName;
@@ -227,7 +228,7 @@ namespace Oybab.ServicePC
 
                     // 扫条码处理
                     hookBarcode = new KeyboardHook();
-                  
+
                     var availbleScanners = hookBarcode.GetKeyboardDevices();
                     string first = availbleScanners.Where(x => String.Format("{0:X}", x.GetHashCode()) == Resources.GetRes().BarcodeReader).FirstOrDefault();
 
@@ -253,7 +254,7 @@ namespace Oybab.ServicePC
                         hookCard.AddHook(this);
                     }
 
-                    
+
 
 
                 }
@@ -399,7 +400,7 @@ namespace Oybab.ServicePC
 
 
 
-        
+
 
         /// <summary>
         /// 加载检查KEY
@@ -521,7 +522,7 @@ namespace Oybab.ServicePC
             SetSelect(tsbAout, tsmiAbout);
             about.ShowDialog(this);
             SetSelect(checkedBtn, null, false);
-            
+
         }
 
         /// <summary>
@@ -544,7 +545,7 @@ namespace Oybab.ServicePC
                     StopLoad(obj);
                 };
 
-                
+
                 homeWindow.Show();
             }
 
@@ -571,7 +572,7 @@ namespace Oybab.ServicePC
                 {
                     StopLoad(obj);
                 };
-                
+
 
                 orderWindow.Show();
             }
@@ -599,7 +600,7 @@ namespace Oybab.ServicePC
                 {
                     StopLoad(obj);
                 };
-                
+
 
                 importWindow.Show();
             }
@@ -608,7 +609,7 @@ namespace Oybab.ServicePC
             importWindow.Activate();
         }
 
-      
+
         /// <summary>
         /// 会员管理
         /// </summary>
@@ -681,7 +682,7 @@ namespace Oybab.ServicePC
                         homeWindow.RefreshSome(new List<long>() { (obj as Room).RoomId });
                     }
                 };
-                
+
 
                 roomWindow.Show();
             }
@@ -701,7 +702,7 @@ namespace Oybab.ServicePC
             {
                 productTypeWindow = new ProductTypeWindow();
                 productTypeWindow.MdiParent = this;
-                productTypeWindow.StartLoad += (obj, ev)=>{
+                productTypeWindow.StartLoad += (obj, ev) => {
                     StartLoad(obj);
                 };
                 productTypeWindow.StopLoad += (obj, ev) =>
@@ -713,7 +714,7 @@ namespace Oybab.ServicePC
                     if (null != productWindow && !productWindow.IsDisposed)
                         productWindow.ReloadProductType();
                 };
-                
+
 
                 productTypeWindow.Show();
             }
@@ -741,7 +742,7 @@ namespace Oybab.ServicePC
                 {
                     StopLoad(obj);
                 };
-                
+
 
                 productWindow.Show();
             }
@@ -898,7 +899,7 @@ namespace Oybab.ServicePC
             requestWindow.Activate();
         }
 
-        
+
 
         /// <summary>
         /// 打开管理员日志
@@ -970,7 +971,7 @@ namespace Oybab.ServicePC
             {
                 StopLoad(obj);
             };
-          
+
 
             SetSelect(null, tsmiFinanceLog);
             log.ShowDialog(this);
@@ -1066,7 +1067,7 @@ namespace Oybab.ServicePC
                     }
                 }
 
-               
+
 
 
                 KryptonMessageBox.Show(this, Resources.GetRes().GetString("ChangeLanguageSuccess"), Resources.GetRes().GetString("Information"), MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -1078,7 +1079,7 @@ namespace Oybab.ServicePC
                 return;
             }
         }
-        
+
 
 
 
@@ -1100,9 +1101,9 @@ namespace Oybab.ServicePC
                             form.Enabled = false;
                             IsDialog = true;
                         }
-                            
+
                     }
-                    
+
                     if (!IsDialog)
                         this.Enabled = false;
                     pbProgress.Visible = true;
@@ -1340,7 +1341,7 @@ namespace Oybab.ServicePC
             }
 
 
-            
+
 
         }
 
@@ -1365,6 +1366,6 @@ namespace Oybab.ServicePC
             }
         }
 
-        
+
     }
 }

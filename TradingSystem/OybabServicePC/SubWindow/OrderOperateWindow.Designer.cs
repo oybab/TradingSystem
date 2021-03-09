@@ -361,7 +361,6 @@
             // 
             this.kryptonContextMenuItemHistory.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.H)));
             this.kryptonContextMenuItemHistory.Text = "Menu Item";
-            
             // 
             // kryptonContextMenuItem1
             // 
@@ -557,7 +556,7 @@
             this.krpbConfirm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.krpbConfirm.Location = new System.Drawing.Point(851, 7);
             this.krpbConfirm.Name = "krpbConfirm";
-            this.krpbConfirm.Size = new System.Drawing.Size(90, 25);
+            this.krpbConfirm.Size = new System.Drawing.Size(94, 25);
             this.krpbConfirm.TabIndex = 11;
             this.krpbConfirm.Values.Text = "Confirm";
             this.krpbConfirm.Visible = false;
@@ -578,7 +577,7 @@
             this.krpbSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.krpbSave.Location = new System.Drawing.Point(851, 7);
             this.krpbSave.Name = "krpbSave";
-            this.krpbSave.Size = new System.Drawing.Size(90, 25);
+            this.krpbSave.Size = new System.Drawing.Size(94, 25);
             this.krpbSave.TabIndex = 11;
             this.krpbSave.Values.Text = "Save";
             this.krpbSave.Click += new System.EventHandler(this.krpbSave_Click);
@@ -636,9 +635,10 @@
             // krpbCheckout
             // 
             this.krpbCheckout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.krpbCheckout.AutoSize = true;
             this.krpbCheckout.Location = new System.Drawing.Point(851, 7);
             this.krpbCheckout.Name = "krpbCheckout";
-            this.krpbCheckout.Size = new System.Drawing.Size(90, 25);
+            this.krpbCheckout.Size = new System.Drawing.Size(94, 25);
             this.krpbCheckout.TabIndex = 11;
             this.krpbCheckout.Values.Text = "Checkout";
             this.krpbCheckout.Visible = false;
@@ -691,7 +691,7 @@
             // 
             // krpbAddByFastGrid
             // 
-            this.krpbAddByFastGrid.Location = new System.Drawing.Point(907, 38);
+            this.krpbAddByFastGrid.Location = new System.Drawing.Point(913, 38);
             this.krpbAddByFastGrid.Name = "krpbAddByFastGrid";
             this.krpbAddByFastGrid.Size = new System.Drawing.Size(32, 32);
             this.krpbAddByFastGrid.TabIndex = 23;
@@ -734,7 +734,7 @@
             this.krpbRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.krpbRefresh.Location = new System.Drawing.Point(851, 7);
             this.krpbRefresh.Name = "krpbRefresh";
-            this.krpbRefresh.Size = new System.Drawing.Size(90, 25);
+            this.krpbRefresh.Size = new System.Drawing.Size(94, 25);
             this.krpbRefresh.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Red;
             this.krpbRefresh.TabIndex = 11;
             this.krpbRefresh.Values.Text = "Refresh";
@@ -754,9 +754,6 @@
             this.Controls.Add(this.krpcbLanguage);
             this.Controls.Add(this.krptbRemark);
             this.Controls.Add(this.krplEndTime);
-            this.Controls.Add(this.krpbRefresh);
-            this.Controls.Add(this.krpbCheckout);
-            this.Controls.Add(this.krpbConfirm);
             this.Controls.Add(this.krplRemarkChange);
             this.Controls.Add(this.krplRoomNoValue);
             this.Controls.Add(this.krplBalancePriceValue);
@@ -787,6 +784,9 @@
             this.Controls.Add(this.krpbNextPage);
             this.Controls.Add(this.krpbEngPage);
             this.Controls.Add(this.krpbClickToPage);
+            this.Controls.Add(this.krpbRefresh);
+            this.Controls.Add(this.krpbCheckout);
+            this.Controls.Add(this.krpbConfirm);
             this.Controls.Add(this.krpbSave);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;

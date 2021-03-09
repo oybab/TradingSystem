@@ -80,7 +80,7 @@ namespace Oybab.Res.View.ViewModels.Pages
 
 
             // 一样就无需更改
-            if (Resources.GetRes().MainLangIndex  != lang)
+            if (Resources.GetRes().CurrentLangIndex  != lang)
             {
                 _element.RaiseEvent(new PopupRoutedEventArgs(PublicEvents.PopupEvent, null, null, null, PopupType.AnimationOn));
 

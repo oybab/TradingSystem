@@ -41,7 +41,7 @@ namespace Oybab.ServicePC.DialogWindow
             krpcIsPrintAfterBuy.Text = krpcIsPrintAfterCheckout.Text = Resources.GetRes().GetString("Yes");
 
             List<string> Names = new List<string>();
-            Names.AddRange(Resources.GetRes().MainLangList.Select(x => x.Value.LangName).ToArray());
+            Names.AddRange(Resources.GetRes().MainLangList.OrderBy(x => x.Value.MainLangIndex).Select(x => x.Value.LangName).ToArray());
 
             
             krpl0.Text = Names[0];

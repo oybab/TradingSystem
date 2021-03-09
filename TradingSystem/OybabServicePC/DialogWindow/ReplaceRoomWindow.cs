@@ -253,14 +253,14 @@ namespace Oybab.ServicePC.DialogWindow
                 if (oldOrder.StartTime != oldOrder.EndTime)
                 {
   
-                    if (now > DateTime.ParseExact(tempOrder.EndTime.ToString(), "yyyyMMddHHmmss", null))
+                    if (now > DateTime.ParseExact(tempOrder.EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture))
                     {
-                        now = DateTime.ParseExact(tempOrder.EndTime.ToString(), "yyyyMMddHHmmss", null);
+                        now = DateTime.ParseExact(tempOrder.EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture);
                         IsTimeUp = true;
                     }
 
 
-                    int totalMinute = (int)now.Subtract(DateTime.ParseExact(oldOrder.StartTime.ToString(), "yyyyMMddHHmmss", null)).TotalMinutes;
+                    int totalMinute = (int)now.Subtract(DateTime.ParseExact(oldOrder.StartTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture)).TotalMinutes;
 
                     if (oldRoom.IsPayByTime == 1)
                     {
@@ -275,12 +275,12 @@ namespace Oybab.ServicePC.DialogWindow
 
                     if (oldRoom.IsPayByTime == 1)
                     {
-                        int totalMinuteNew = (int)DateTime.ParseExact(tempOrder.EndTime.ToString(), "yyyyMMddHHmmss", null).Subtract(now).TotalMinutes;
+                        int totalMinuteNew = (int)DateTime.ParseExact(tempOrder.EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).Subtract(now).TotalMinutes;
                         totalMinutesNew = ParseMinute(totalMinuteNew, !IsTimeUp); 
                     }
                     else if (oldRoom.IsPayByTime == 2)
                     {
-                        int totalMinuteNew = (int)DateTime.ParseExact(tempOrder.EndTime.ToString(), "yyyyMMddHHmmss", null).Subtract(now).TotalMinutes;
+                        int totalMinuteNew = (int)DateTime.ParseExact(tempOrder.EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).Subtract(now).TotalMinutes;
                         totalMinutesNew = ParseHour(totalMinuteNew, true); 
                     }
 
@@ -344,7 +344,7 @@ namespace Oybab.ServicePC.DialogWindow
                     double totalMinutes = 0;
                     if (newRoom.IsPayByTime == 1 || newRoom.IsPayByTime == 2)
                     {
-                        totalMinutes = (int)DateTime.ParseExact(tempOrder.EndTime.ToString(), "yyyyMMddHHmmss", null).Subtract(DateTime.ParseExact(tempOrder.StartTime.ToString(), "yyyyMMddHHmmss", null)).TotalMinutes;
+                        totalMinutes = (int)DateTime.ParseExact(tempOrder.EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).Subtract(DateTime.ParseExact(tempOrder.StartTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture)).TotalMinutes;
                     }
                     tempOrder.RoomPrice = Math.Round(CommonOperates.GetCommonOperates().GetRoomPrice(oldRoom.Price, oldRoom.PriceHour, oldRoom.IsPayByTime, totalMinutesOld) + CommonOperates.GetCommonOperates().GetRoomPrice(newRoom.Price, newRoom.PriceHour, newRoom.IsPayByTime, totalMinutesNew), 2);
 

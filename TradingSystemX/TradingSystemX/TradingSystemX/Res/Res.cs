@@ -63,6 +63,7 @@ namespace Oybab.TradingSystemX
             public int LangIndex { get; set; }
             public int MainLangIndex { get; set; } = -1;
             public string LangName { get; set; }
+            public int LangOrder { get; set; }
         }
 
 
@@ -78,19 +79,85 @@ namespace Oybab.TradingSystemX
 
             // zh-CN
             CultureInfo ci = new CultureInfo("zh-CN");
-            AllLangList.Add(orderIndex, new Lang() { Culture = ci, LangIndex = orderIndex, LangName = GetString("LangName", ci) }); // index 0
+            AllLangList.Add(orderIndex, new Lang() { Culture = ci, LangIndex = orderIndex, LangOrder = orderIndex, LangName = GetString("LangName", ci) }); // index 0
 
 
             // ug-CN
             ++orderIndex;
             ci = new CultureInfo("ug-CN");
-            AllLangList.Add(orderIndex, new Lang() { Culture = ci, LangIndex = orderIndex, LangName = GetString("LangName", ci) }); // index 1
+            AllLangList.Add(orderIndex, new Lang() { Culture = ci, LangIndex = orderIndex, LangOrder = orderIndex, LangName = GetString("LangName", ci) }); // index 1
 
 
             //en-US
             ++orderIndex;
             ci = new CultureInfo("en-US");
-            AllLangList.Add(orderIndex, new Lang() { Culture = ci, LangIndex = orderIndex, LangName = GetString("LangName", ci) }); // index 2
+            AllLangList.Add(orderIndex, new Lang() { Culture = ci, LangIndex = orderIndex, LangOrder = orderIndex, LangName = GetString("LangName", ci) }); // index 2
+
+            //fr-FR
+            ++orderIndex;
+            ci = new CultureInfo("fr-FR");
+            AllLangList.Add(orderIndex, new Lang() { Culture = ci, LangIndex = orderIndex, LangOrder = orderIndex, LangName = GetString("LangName", ci) }); // index 3
+
+            //ko-KR
+            ++orderIndex;
+            ci = new CultureInfo("ko-KR");
+            AllLangList.Add(orderIndex, new Lang() { Culture = ci, LangIndex = orderIndex, LangOrder = orderIndex, LangName = GetString("LangName", ci) }); // index 5
+
+            //th-TH
+            ++orderIndex;
+            ci = new CultureInfo("th-TH");
+            AllLangList.Add(orderIndex, new Lang() { Culture = ci, LangIndex = orderIndex, LangOrder = orderIndex, LangName = GetString("LangName", ci) }); // index 6
+
+            //pt-PT
+            ++orderIndex;
+            ci = new CultureInfo("pt-PT");
+            AllLangList.Add(orderIndex, new Lang() { Culture = ci, LangIndex = orderIndex, LangOrder = orderIndex, LangName = GetString("LangName", ci) }); // index 7
+
+            //es-ES
+            ++orderIndex;
+            ci = new CultureInfo("es-ES");
+            AllLangList.Add(orderIndex, new Lang() { Culture = ci, LangIndex = orderIndex, LangOrder = orderIndex, LangName = GetString("LangName", ci) }); // index 8
+
+            //tr-TR
+            ++orderIndex;
+            ci = new CultureInfo("tr-TR");
+            AllLangList.Add(orderIndex, new Lang() { Culture = ci, LangIndex = orderIndex, LangOrder = orderIndex, LangName = GetString("LangName", ci) }); // index 10
+
+            //de-DE
+            ++orderIndex;
+            ci = new CultureInfo("de-DE");
+            AllLangList.Add(orderIndex, new Lang() { Culture = ci, LangIndex = orderIndex, LangOrder = orderIndex, LangName = GetString("LangName", ci) }); // index 11
+
+            //ru-RU
+            ++orderIndex;
+            ci = new CultureInfo("ru-RU");
+            AllLangList.Add(orderIndex, new Lang() { Culture = ci, LangIndex = orderIndex, LangOrder = orderIndex, LangName = GetString("LangName", ci) }); // index 12
+
+            //it-IT
+            ++orderIndex;
+            ci = new CultureInfo("it-IT");
+            AllLangList.Add(orderIndex, new Lang() { Culture = ci, LangIndex = orderIndex, LangOrder = orderIndex, LangName = GetString("LangName", ci) }); // index 13
+
+            //hi-IN
+            ++orderIndex;
+            ci = new CultureInfo("hi-IN");
+            AllLangList.Add(orderIndex, new Lang() { Culture = ci, LangIndex = orderIndex, LangOrder = orderIndex, LangName = GetString("LangName", ci) }); // index 14
+
+            //ar-SA
+            ++orderIndex;
+            ci = new CultureInfo("ar-SA");
+            AllLangList.Add(orderIndex, new Lang() { Culture = ci, LangIndex = orderIndex, LangOrder = orderIndex, LangName = GetString("LangName", ci) }); // index 15
+
+            //ur-PK
+            ++orderIndex;
+            ci = new CultureInfo("ur-PK");
+            AllLangList.Add(orderIndex, new Lang() { Culture = ci, LangIndex = orderIndex, LangOrder = orderIndex, LangName = GetString("LangName", ci) }); // index 16
+
+            //uz-Latn
+            ++orderIndex;
+            ci = new CultureInfo("uz-Latn");
+            AllLangList.Add(orderIndex, new Lang() { Culture = ci, LangIndex = orderIndex, LangOrder = orderIndex, LangName = GetString("LangName", ci) }); // index 17
+
 
 
         }
@@ -158,7 +225,7 @@ namespace Oybab.TradingSystemX
             if (AllLangList.Any(x => x.Value.LangName == LangName))
                 return AllLangList.FirstOrDefault(x => x.Value.LangName == LangName).Value;
             else
-                return null;
+                return AllLangList[0];
         }
 
         // 根据语言索引返回主语言
@@ -168,7 +235,7 @@ namespace Oybab.TradingSystemX
             {
                 return AllLangList.FirstOrDefault(x => x.Value.LangIndex == index).Value;
             }
-            return null;
+            return AllLangList[0];
         }
 
 

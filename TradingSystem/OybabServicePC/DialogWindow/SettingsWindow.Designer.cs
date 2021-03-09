@@ -273,7 +273,7 @@
             // 
             // krplPrintInfoAlert
             // 
-            this.krplPrintInfoAlert.Location = new System.Drawing.Point(273, 77);
+            this.krplPrintInfoAlert.Location = new System.Drawing.Point(283, 77);
             this.krplPrintInfoAlert.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
             this.krplPrintInfoAlert.Name = "krplPrintInfoAlert";
             this.krplPrintInfoAlert.Size = new System.Drawing.Size(16, 20);
@@ -284,7 +284,7 @@
             // 
             // krplGlobalSettingAlert
             // 
-            this.krplGlobalSettingAlert.Location = new System.Drawing.Point(273, 20);
+            this.krplGlobalSettingAlert.Location = new System.Drawing.Point(283, 20);
             this.krplGlobalSettingAlert.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
             this.krplGlobalSettingAlert.Name = "krplGlobalSettingAlert";
             this.krplGlobalSettingAlert.Size = new System.Drawing.Size(16, 20);
@@ -295,6 +295,7 @@
             // 
             // krptGlobalSetting
             // 
+            this.krptGlobalSetting.AutoSize = true;
             this.krptGlobalSetting.Location = new System.Drawing.Point(199, 18);
             this.krptGlobalSetting.Name = "krptGlobalSetting";
             this.krptGlobalSetting.Size = new System.Drawing.Size(68, 25);
@@ -304,6 +305,7 @@
             // 
             // krpbChangePrintInfo
             // 
+            this.krpbChangePrintInfo.AutoSize = true;
             this.krpbChangePrintInfo.Location = new System.Drawing.Point(199, 75);
             this.krpbChangePrintInfo.Name = "krpbChangePrintInfo";
             this.krpbChangePrintInfo.Size = new System.Drawing.Size(68, 25);

@@ -246,7 +246,7 @@ namespace Oybab.TradingSystemX.Tools
         private NavigationPage loginNavigation;
         private NavigationPage mainNavigation;
 
-        private MasterDetailPage orderNavigation;
+        private FlyoutPage orderNavigation;
         private NavigationPage productNavigation;
         private NavigationPage selectedNavigation;
 
@@ -276,7 +276,7 @@ namespace Oybab.TradingSystemX.Tools
         /// 获取当前页
         /// </summary>
         /// <returns></returns>
-        public MasterDetailPage CurrentMasterDetail
+        public FlyoutPage CurrentMasterDetail
         {
             get
             {
@@ -421,7 +421,7 @@ namespace Oybab.TradingSystemX.Tools
         /// 设置订单页导航
         /// </summary>
         /// <param name="orderPage"></param>
-        internal void InitialMasterDetail(MasterDetailPage orderPage, NavigationPage productNavigation, NavigationPage selectedNavigation)
+        internal void InitialMasterDetail(FlyoutPage orderPage, NavigationPage productNavigation, NavigationPage selectedNavigation)
         {
            
             if (!_isInitialMasterDetailAlready || this.orderNavigation != orderPage)

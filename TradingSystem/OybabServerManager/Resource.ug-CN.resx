@@ -166,7 +166,7 @@
     <value>چېكىنىش</value>
   </data>
 	<data name="FontName" xml:space="preserve">
-    <value>Oybab Tuz, 微软雅黑</value>
+    <value>Microsoft YaHei, Aria, Oybab Tuz</value>
   </data>
 	<data name="FontSize" xml:space="preserve">
     <value>10.5</value>
@@ -265,10 +265,10 @@
     <value>بۇففېرنى يۈكلەشدە خاتالىق كۆرۈلدى .‏</value>
   </data>
 	<data name="Exception_LoadMediaRoot" xml:space="preserve">
-    <value>ناخشا باش ئادرىسىنى يۈكلەشدە خاتالىق كۈرۈلدى، سەپلەش ھۆججىتىنى تەكشۇرۈڭ !‏ ‏</value>
+    <value>ناخشا باش ئادرىسىنى يۈكلەشدە خاتالىق كۈرۈلدى، سەپلەش ھۆججىتىنى تەكشۇرۈڭ !‏</value>
   </data>
 	<data name="Exception_NotSupprtKey" xml:space="preserve">
-    <value>سانشىغىر ئامبىرىغا ئولىنالمىدى ، بۇ USB-KEY‎ نى قوللىمايدۇ!‏</value>
+    <value>سانشىغىر ئامبىرىغا ئولىنالمىدى ، بۇ USB-KEY‎ نى قوللىمايدۇ.‏</value>
   </data>
 	<data name="InputData" xml:space="preserve">
     <value>سانشىغىر كىرگۈزۈش</value>
@@ -280,13 +280,13 @@
     <value>يېڭىلىق قۇرۇغ قايتقان ياكى ئوقۇش مەغلۇپ بولدى .‏</value>
   </data>
 	<data name="UpdateUnableError" xml:space="preserve">
-    <value>.{0} : Code ،يېڭىلىقنى تەكشۈرۈش مەغلۇپ بولدى.</value>
+    <value>.{0} : Code ،يېڭىلىقنى تەكشۈرۈش مەغلۇپ بولدى .‏</value>
   </data>
 	<data name="Exception_ReadResourceStrError" xml:space="preserve">
     <value>مەنبە ھەرپىنى ئوقۇش مەغلۇپ بولدى !‏</value>
   </data>
 	<data name="CompanyLogoImage" xml:space="preserve">
-    <value>logou.png</value>
+    <value>logo.png</value>
   </data>
 	<data name="Exception_OutputData" xml:space="preserve">
     <value>سانشىغىر چىقىرىش مەغلۇپ بولدى !‏</value>
@@ -343,7 +343,7 @@
     <value>ئاۋال تەھرىرلەشنى ئايافلاشتۇرۇڭ !‏</value>
   </data>
 	<data name="SureDelete" xml:space="preserve">
-    <value>ئۆچۈرۈشنى جەزىملەشتۈرەمسىز؟</value>
+    <value>ئۆچۈرۈشنى جەزىملەشتۈرەمسىز؟‏</value>
   </data>
 	<data name="Exception_NotFound" xml:space="preserve">
     <value>بۇ {0} تېپىلمىدى !‏</value>
@@ -466,7 +466,7 @@
     <value>يىراق مۇلازىمېتىر بىلەن نۇرمال ئالاقە ساقلاش مەغلۇپ بولدى ! ‏قايتا سىناڭ ياكى سېستىمىدىن چېكىنىڭ ‏!‏</value>
   </data>
 	<data name="Exception_ServerCheckFaild" xml:space="preserve">
-    <value>مۇلازىمېتىر‏ KEY نى تەكشۈرۈشتە خاتالىق يۈز بەردى !</value>
+    <value>مۇلازىمېتىر‏ KEY نى تەكشۈرۈشتە خاتالىق يۈز بەردى !‏</value>
   </data>
 	<data name="Exception_ServerFaild" xml:space="preserve">
     <value>مۇلازىمېتىردا خاتالىق يۈز بەردى !‏</value>
@@ -805,7 +805,7 @@
     <value>نۆۋەتتىكى ھېساپنى بوغۇش .‏</value>
   </data>
 	<data name="ConfirmCancelOrder" xml:space="preserve">
-    <value>نۆۋەتتىكى تالوننى بېكار قىلىشنى جەزىملەشتۈرەمسىز ؟</value>
+    <value>نۆۋەتتىكى تالوننى بېكار قىلىشنى جەزىملەشتۈرەمسىز ؟‏</value>
   </data>
 	<data name="FaildThenRefreshModel" xml:space="preserve">
     <value>مەشغۇلات مەغلۇپ بولدى، تالون ئۆزگەرتىلگەن، تالوننى يېڭىلاشقا ئۇرۇنىۋاتىدۇ !‏</value>
@@ -1000,10 +1000,10 @@
 		<value>تىزىملاش نومۇرى</value>
 	</data>
 	<data name="SoftwareExpired" xml:space="preserve">
-		<value>سېستىمىنىڭ ئىشلىتىش ۋاقتى توشتى، قايتا تىزىملامسىز؟</value>
+		<value>سېستىمىنىڭ ئىشلىتىش ۋاقتى توشتى، قايتا تىزىملامسىز؟‏</value>
 	</data>
 	<data name="SoftwareSoonExpired" xml:space="preserve">
-		<value>سېستىما {0} كۈندىن كىيىن {1}ئىشلىتىش ۋاقتى توشىدۇ، ھازىر تىزىملامسىز؟</value>
+		<value>سېستىما {0} كۈندىن كىيىن {1}ئىشلىتىش ۋاقتى توشىدۇ، ھازىر تىزىملامسىز؟‏</value>
 	</data>
 	<data name="SoftwareExpiredWarn" xml:space="preserve">
 		<value>نۇرمال ئىشلىتىشىڭىزگە تەسىر كۆرسەتمەسلىكى ئۈچۈن، بىز سىزنىڭ ئەڭ كىيىن بولغاندا 7 كۈن بۇرۇن بىز بىلەن ئالاقىلىشىپ سېستىمىنى تىزىملىشىڭىزنى تەۋسىيە قىلىمىز!‏</value>
@@ -1048,7 +1048,7 @@
 		<value>نامەلۇم</value>
 	</data>
 	<data name="NotFoundProperty_Number" xml:space="preserve">
-		<value>{0} - {1} تېپىلمىدى !</value>
+		<value>{0} - {1} تېپىلمىدى !‏</value>
 	</data>
 	<data name="Exception_UnknownDevice" xml:space="preserve">
 		<value>ئۈسكىنە مەۋجۈت ئەمەس ياكى چەكلەنگەن!‏{0} خاتالىق نۇمۇرى: 111</value>
@@ -1456,10 +1456,10 @@
 		<value>تاشقى تالون قوشۇش</value>
 	</data>
 	<data name="ConfirmSaveAll" xml:space="preserve">
-		<value>ھەممىنى ساقلاشنى جەزىملەشتۈرەمسىز؟</value>
+		<value>ھەممىنى ساقلاشنى جەزىملەشتۈرەمسىز؟‏</value>
 	</data>
 	<data name="SuccessAndFailProperty" xml:space="preserve">
-		<value>Utukluk: {0}, Maglup: {1}.</value>
+		<value>Utukluk: {0}, Maglup: {1}.‏</value>
 	</data>
 	<data name="Profit" xml:space="preserve">
 		<value>ساپ كىرىم</value>
@@ -1519,7 +1519,7 @@
 		<value>ھەممىنى پىرىنتلاش</value>
 	</data>
 	<data name="ConfirmBalanceInjustice" xml:space="preserve">
-		<value>قالدۇق تەمپۇڭ ئەمەس! جەزىملەشتۈرەمسىز؟</value>
+		<value>قالدۇق تەمپۇڭ ئەمەس! جەزىملەشتۈرەمسىز؟‏</value>
 	</data>
 	<data name="ProductParentName" xml:space="preserve">
 		<value>ئاتا مەھسۇلات نامى</value>
@@ -1819,7 +1819,7 @@
 		<value>يىراق مۇلازىمېتىردىكى سېستىما ۋاقتى بىلەن ھازىرىقى سېستىما ۋاقتى ئوخشاش ئەمەس، ئوخشاش سېستىما ۋاقتىغا يېڭىلاڭ !‏</value>
 	</data>
 	<data name="ConfirmAddPay" xml:space="preserve">
-		<value>{3} غا {2} دىن {1}{0} قوشۇشنى جەزىملەشتۈرەمسىز؟</value>
+		<value>{3} غا {2} دىن {1}{0} قوشۇشنى جەزىملەشتۈرەمسىز؟‏</value>
 	</data>
 	<data name="BalanceTransfer" xml:space="preserve">
 		<value>قالدۇق يۆتكەش</value>
@@ -1885,7 +1885,7 @@
 		<value>شىركەت نامى</value>
 	</data>
 	<data name="CustomFont_Android" xml:space="preserve">
-		<value>OybabTuz.ttf#Oybab Tuz</value>
+		<value>OybabTuz.ttf # Oybab Tuz</value>
 	</data>
 	<data name="CustomFont_iOS" xml:space="preserve">
 		<value>OybabTuz</value>

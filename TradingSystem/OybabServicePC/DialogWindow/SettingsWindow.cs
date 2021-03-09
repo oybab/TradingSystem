@@ -179,7 +179,7 @@ namespace Oybab.ServicePC.DialogWindow
 
 
 
-            krpcLanguage.Items.AddRange(Resources.GetRes().AllLangList.Select(x => x.Value.LangName).ToArray());
+            krpcLanguage.Items.AddRange(Resources.GetRes().AllLangList.OrderBy(x => x.Value.LangOrder).Select(x => x.Value.LangName).ToArray());
 
             if (lastLangIndex != -1)
                 krpcLanguage.SelectedIndex = lastLangIndex;

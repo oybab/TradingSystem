@@ -382,15 +382,15 @@ namespace Oybab.ServicePC.SubWindow
 
 
                 if (null != StartTime)
-                    StartTimeStr = DateTime.ParseExact(StartTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm");
+                    StartTimeStr = DateTime.ParseExact(StartTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm");
 
                 if (null != EndTime)
-                    EndTimeStr = DateTime.ParseExact(EndTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm");
+                    EndTimeStr = DateTime.ParseExact(EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm");
 
-                    AddTimeStr = DateTime.ParseExact(AddTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm");
+                    AddTimeStr = DateTime.ParseExact(AddTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm");
 
                 if (null != FinishTime)
-                    FinishTimeStr = DateTime.ParseExact(FinishTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm");
+                    FinishTimeStr = DateTime.ParseExact(FinishTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm");
             }
             catch (Exception ex)
             {

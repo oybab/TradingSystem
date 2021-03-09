@@ -11,7 +11,7 @@ using Xamarin.Forms;
 
 namespace Oybab.TradingSystemX.Pages
 {
-	public partial class TakeoutPage : MasterDetailPage
+	public partial class TakeoutPage : FlyoutPage
     {
         TakeoutViewModel viewModel;
 

@@ -9,7 +9,7 @@
   <Identity
     Name="19006-OYBAB.OybabTrading"
     Publisher="CN=AE01C2B0-5459-4C29-B567-EBB9A522C503"
-    Version="1.1.1.0" />
+    Version="1.1.2.0" />
 
   <mp:PhoneIdentity PhoneProductId="d71993d5-eb57-492d-8aa3-1535be5e30f4" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 

@@ -51,7 +51,7 @@ namespace Oybab.Res.View.ViewModels.Pages
             this.Selected.Checkout = Checkout;
             this.Selected.HasAddress = 1;
 
-            this.Language = new LanguageViewModel(element, ChangeLanguage);
+            this.Language = new LanguageViewModel(element, ChangeLanguage, true);
 
             this.Request = new RequestViewModel(element, ugRequest);
             this._lbSelectedList = lbSelectedList;
@@ -828,13 +828,16 @@ namespace Oybab.Res.View.ViewModels.Pages
                 {
                     _changeOrderLanguageCommand = new RelayCommand(param =>
                         {
-                            this.Language.LanguageMode = Resources.GetRes().GetMainLangByMainLangIndex(Resources.GetRes().GetMainLangByLangIndex(this.Language.LanguageMode).MainLangIndex + 1).LangIndex;
 
-                            // 刷新第二屏语言
-                            if (FullScreenMonitor.Instance._isInitialized)
-                            {
-                                FullScreenMonitor.Instance.RefreshSecondMonitorLanguage(Resources.GetRes().GetMainLangByLangIndex(Language.LanguageMode).LangIndex, -1);
-                            }
+                            this.Language.Show();
+
+                            //this.Language.LanguageMode = Resources.GetRes().GetMainLangByMainLangIndex(Resources.GetRes().GetMainLangByLangIndex(this.Language.LanguageMode).MainLangIndex + 1).LangIndex;
+
+                            //// 刷新第二屏语言
+                            //if (FullScreenMonitor.Instance._isInitialized)
+                            //{
+                            //    FullScreenMonitor.Instance.RefreshSecondMonitorLanguage(Resources.GetRes().GetMainLangByLangIndex(Language.LanguageMode).LangIndex, -1);
+                            //}
                         });
                 }
                 return _changeOrderLanguageCommand;

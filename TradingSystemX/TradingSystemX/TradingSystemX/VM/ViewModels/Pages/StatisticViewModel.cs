@@ -891,7 +891,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
                             statisticModel.Parameters.Add("Price", Resources.Instance.GetString("Price"));
                             statisticModel.Parameters.Add("TotalPrice", Resources.Instance.GetString("TotalPrice"));
                             statisticModel.Parameters.Add("Proportion", Resources.Instance.GetString("Proportion"));
-                            statisticModel.Parameters.Add("Time", string.Format("({0} - {1})", DateTime.ParseExact(addTimeFinal.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm"), DateTime.ParseExact(finishTimeFinal.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm")));
+                            statisticModel.Parameters.Add("Time", string.Format("({0} - {1})", DateTime.ParseExact(addTimeFinal.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm"), DateTime.ParseExact(finishTimeFinal.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm")));
 
 
 
@@ -968,7 +968,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
                             statisticModel.Parameters.Add("Price", Resources.Instance.GetString("Price"));
                             statisticModel.Parameters.Add("TotalPrice", Resources.Instance.GetString("TotalPrice"));
                             statisticModel.Parameters.Add("Proportion", Resources.Instance.GetString("Proportion"));
-                            statisticModel.Parameters.Add("Time", string.Format("({0} - {1})", DateTime.ParseExact(addTimeFinal.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm"), DateTime.ParseExact(finishTimeFinal.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm")));
+                            statisticModel.Parameters.Add("Time", string.Format("({0} - {1})", DateTime.ParseExact(addTimeFinal.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm"), DateTime.ParseExact(finishTimeFinal.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm")));
 
                             InitialStatistic(ref statisticModel, Resources.Instance.GetString("SellProductsStatistic"));
 
@@ -1066,7 +1066,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
                         statisticModel.Parameters.Add("Price", Resources.Instance.GetString("Price"));
                         statisticModel.Parameters.Add("TotalPrice", Resources.Instance.GetString("TotalPrice"));
                         statisticModel.Parameters.Add("Proportion", Resources.Instance.GetString("Proportion"));
-                        statisticModel.Parameters.Add("Time", string.Format("({0} - {1})", DateTime.ParseExact(addTimeFinal.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm"), DateTime.ParseExact(finishTimeFinal.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm")));
+                        statisticModel.Parameters.Add("Time", string.Format("({0} - {1})", DateTime.ParseExact(addTimeFinal.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm"), DateTime.ParseExact(finishTimeFinal.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm")));
 
                         InitialStatistic(ref statisticModel, Resources.Instance.GetString("SpendProductsStatistic"));
 

@@ -30,7 +30,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages.Controls
             this._element = _element;
 
 
-            foreach (var item in Res.Instance.AllLangList)
+            foreach (var item in Res.Instance.AllLangList.OrderBy(x => x.Value.LangOrder))
             {
                 Dict dict = new Dict() { Name = Res.Instance.GetString("LangName", item.Value.Culture), Value = item.Value.LangIndex };
                 AllLang.Add(dict);

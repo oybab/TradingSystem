@@ -426,7 +426,7 @@ namespace Oybab.ServerManager.Operate
                                 reportModel.Parameters.Add("ImportIdValue", string.Format(": {0}", import.ImportId.ToString()));
 
                                 reportModel.Parameters.Add("Time", Resources.GetRes().GetString("Time", ci));
-                                reportModel.Parameters.Add("TimeValue", string.Format(": {0}", DateTime.ParseExact(import.ImportTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm:ss")));
+                                reportModel.Parameters.Add("TimeValue", string.Format(": {0}", DateTime.ParseExact(import.ImportTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm:ss")));
                                 reportModel.Parameters.Add("ProductName", Resources.GetRes().GetString("ProductName", ci));
                                 reportModel.Parameters.Add("Count", Resources.GetRes().GetString("Count", ci));
                                 reportModel.Parameters.Add("Price", Resources.GetRes().GetString("Price", ci));
@@ -832,7 +832,7 @@ namespace Oybab.ServerManager.Operate
                     reportModel.Parameters.Add("OrderIdValue", string.Format(": {0}", takeout.TakeoutId.ToString()));
 
                     reportModel.Parameters.Add("Time", Resources.GetRes().GetString("Time", ci));
-                    reportModel.Parameters.Add("TimeValue", string.Format(": {0}", DateTime.ParseExact(takeout.AddTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm:ss")));
+                    reportModel.Parameters.Add("TimeValue", string.Format(": {0}", DateTime.ParseExact(takeout.AddTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm:ss")));
                     reportModel.Parameters.Add("ProductName", Resources.GetRes().GetString("ProductName", ci));
                     reportModel.Parameters.Add("Count", Resources.GetRes().GetString("Count", ci));
                     reportModel.Parameters.Add("Price", Resources.GetRes().GetString("Price", ci));
@@ -1139,8 +1139,8 @@ namespace Oybab.ServerManager.Operate
                         reportModel.Parameters.Add("RoomPrice", Resources.GetRes().GetString("RoomPrice", ci));
                         if (null != order.StartTime && null != order.EndTime)
                         {
-                            DateTime oldOrderEndTime = DateTime.ParseExact(oldOrder.EndTime.ToString(), "yyyyMMddHHmmss", null);
-                            DateTime orderEndTime = DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", null);
+                            DateTime oldOrderEndTime = DateTime.ParseExact(oldOrder.EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture);
+                            DateTime orderEndTime = DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture);
 
                             TimeSpan leftTime = (orderEndTime - oldOrderEndTime);
 
@@ -1175,8 +1175,8 @@ namespace Oybab.ServerManager.Operate
                     reportModel.Parameters.Add("RoomPrice", Resources.GetRes().GetString("RoomPrice", ci));
                     if (null != order.StartTime && null != order.EndTime)
                     {
-                        DateTime orderStartTime = DateTime.ParseExact(order.StartTime.ToString(), "yyyyMMddHHmmss", null);
-                        DateTime orderEndTime = DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", null);
+                        DateTime orderStartTime = DateTime.ParseExact(order.StartTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture);
+                        DateTime orderEndTime = DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture);
 
                         TimeSpan leftTime = (orderEndTime - orderStartTime);
 
@@ -1266,7 +1266,7 @@ namespace Oybab.ServerManager.Operate
                 if (order.FinishTime == null)
                     reportModel.Parameters.Add("TimeValue", string.Format(": {0}", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")));
                 else
-                    reportModel.Parameters.Add("TimeValue", string.Format(": {0}", DateTime.ParseExact(order.FinishTime.Value.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm:ss")));
+                    reportModel.Parameters.Add("TimeValue", string.Format(": {0}", DateTime.ParseExact(order.FinishTime.Value.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm:ss")));
                 reportModel.Parameters.Add("ProductName", Resources.GetRes().GetString("ProductName", ci));
                 reportModel.Parameters.Add("Count", Resources.GetRes().GetString("Count", ci));
                 reportModel.Parameters.Add("Price", Resources.GetRes().GetString("Price", ci));
@@ -1299,8 +1299,8 @@ namespace Oybab.ServerManager.Operate
 
                     if (null != order.StartTime && null != order.EndTime)
                     {
-                        DateTime orderEndTime = DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", null);
-                        DateTime orderStartTime = DateTime.ParseExact(order.StartTime.ToString(), "yyyyMMddHHmmss", null);
+                        DateTime orderEndTime = DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture);
+                        DateTime orderStartTime = DateTime.ParseExact(order.StartTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture);
 
                         TimeSpan leftTime = (orderEndTime - orderStartTime);
 

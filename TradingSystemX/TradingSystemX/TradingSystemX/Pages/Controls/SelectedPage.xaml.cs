@@ -1,6 +1,7 @@
 ﻿using Oybab.TradingSystemX.Server;
 using Oybab.TradingSystemX.VM.DService;
 using Oybab.TradingSystemX.VM.ViewModels.Controls;
+using Oybab.TradingSystemX.VM.ViewModels.Pages.Controls;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -70,5 +71,14 @@ namespace Oybab.TradingSystemX.Pages.Controls
 
         }
 
+        private void Picker_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SelectedViewModel view = this.BindingContext as SelectedViewModel;
+            if (null != view)
+            {
+                if (null != view.SelectedLang && null != view.GoCommand)
+                    view.GoCommand.Execute("Lang");
+            }
+        }
     }
 }

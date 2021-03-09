@@ -69,9 +69,10 @@
             // 
             // krpbCheckout
             // 
+            this.krpbCheckout.AutoSize = true;
             this.krpbCheckout.Location = new System.Drawing.Point(182, 384);
             this.krpbCheckout.Name = "krpbCheckout";
-            this.krpbCheckout.Size = new System.Drawing.Size(90, 25);
+            this.krpbCheckout.Size = new System.Drawing.Size(94, 25);
             this.krpbCheckout.TabIndex = 20;
             this.krpbCheckout.Values.Text = "Checkout";
             this.krpbCheckout.Click += new System.EventHandler(this.krpbCheckout_Click);

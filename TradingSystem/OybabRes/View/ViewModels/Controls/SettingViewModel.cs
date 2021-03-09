@@ -98,7 +98,7 @@ namespace Oybab.Res.View.ViewModels.Controls
             // 初始化语言
             
 
-            foreach (var item in Resources.GetRes().AllLangList)
+            foreach (var item in Resources.GetRes().AllLangList.OrderBy(x => x.Value.LangOrder))
             {
                 RoomStateModel Model0 = new RoomStateModel() { RoomNo = Resources.GetRes().GetString("LangName", item.Value.Culture), RoomId = item.Value.LangIndex };
 

@@ -214,8 +214,8 @@ namespace Oybab.Res.View.ViewModels.Pages
 
             if (this.order.StartTime != null && this.order.EndTime != null)
             {
-                TimeSpan total = (DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", null) - DateTime.ParseExact(order.StartTime.ToString(), "yyyyMMddHHmmss", null));
-                TimeSpan balance = (DateTime.Now - DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", null));
+                TimeSpan total = (DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture) - DateTime.ParseExact(order.StartTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture));
+                TimeSpan balance = (DateTime.Now - DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture));
 
 
                 if (room.IsPayByTime == 1)
@@ -224,7 +224,7 @@ namespace Oybab.Res.View.ViewModels.Pages
                     TotalTime = string.Format("{0}/{1}:{2}", (int)total.TotalDays, total.Hours, total.Minutes);
 
                 // 如果剩余时间已经超出了, 默认0:0显示
-                if (DateTime.Now < DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", null))
+                if (DateTime.Now < DateTime.ParseExact(order.EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture))
                 {
                     if (room.IsPayByTime == 1)
                         RemainingTime = string.Format("{0}:{1}", (int)balance.TotalHours, balance.Minutes);
@@ -236,7 +236,7 @@ namespace Oybab.Res.View.ViewModels.Pages
             }
             else
             {
-                TimeSpan total = (DateTime.Now - DateTime.ParseExact(order.AddTime.ToString(), "yyyyMMddHHmmss", null));
+                TimeSpan total = (DateTime.Now - DateTime.ParseExact(order.AddTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture));
 
 
 

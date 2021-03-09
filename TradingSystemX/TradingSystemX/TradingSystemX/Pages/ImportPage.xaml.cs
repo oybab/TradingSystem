@@ -11,7 +11,7 @@ using Xamarin.Forms;
 
 namespace Oybab.TradingSystemX.Pages
 {
-	public partial class ImportPage : MasterDetailPage
+	public partial class ImportPage : FlyoutPage
     {
         ImportViewModel viewModel;
 

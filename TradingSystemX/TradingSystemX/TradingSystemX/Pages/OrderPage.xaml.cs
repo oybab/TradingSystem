@@ -11,7 +11,7 @@ using Xamarin.Forms;
 
 namespace Oybab.TradingSystemX.Pages
 {
-	public partial class OrderPage : MasterDetailPage
+	public partial class OrderPage : FlyoutPage
     {
         OrderViewModel viewModel;
 

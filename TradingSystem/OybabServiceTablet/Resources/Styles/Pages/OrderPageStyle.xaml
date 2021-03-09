@@ -20,10 +20,10 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type CheckBox}">
-                    <Grid Width="205" Height="65" Margin="3, 0">
+                    <Grid Width="255" Height="65" Margin="3, 0">
                         <Grid>
-                            <Image x:Name="backgroundImage" VerticalAlignment="Top" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/selectedListPanel.png"  Width="204" Height="53"/>
-                            <Image x:Name="backgroundSelectImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/selectedListPanel_selected.png"  Width="205" Height="65" Visibility="Collapsed"/>
+                            <Image x:Name="backgroundImage" VerticalAlignment="Top" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/selectedListPanel_large.png"  Width="254" Height="53"/>
+                            <Image x:Name="backgroundSelectImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/selectedListPanel_large_selected.png"  Width="255" Height="65" Visibility="Collapsed"/>
                         </Grid>
                         <WrapPanel x:Name="wpContent" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,0,15">
                             <Label Padding="0" Margin="2,0,0,0"  VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=Selected}" Foreground="White" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleMediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>
@@ -51,10 +51,10 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type CheckBox}">
-                    <Grid Width="205" Height="65" Margin="3,0">
+                    <Grid Width="255" Height="65" Margin="3,0">
                         <Grid>
-                            <Image x:Name="backgroundImage" VerticalAlignment="Top" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/productListPanel.png"  Width="204" Height="53"/>
-                            <Image x:Name="backgroundSelectImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/productListPanel_selected.png"  Width="205" Height="65" Visibility="Collapsed"/>
+                            <Image x:Name="backgroundImage" VerticalAlignment="Top" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/productListPanel_large.png"  Width="254" Height="53"/>
+                            <Image x:Name="backgroundSelectImage" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/Res;component/Resources/Images/Tablet/productListPanel_large_selected.png"  Width="255" Height="65" Visibility="Collapsed"/>
                         </Grid>
                         <WrapPanel x:Name="wpContent" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,0,15">
                             <Label Padding="0"  VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=Products}" Foreground="White" FontSize="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=LittleMediumLabelFontSize}" FontFamily="{Binding Path=TStr, Source={StaticResource LangConverter}, Mode=OneWay, Converter={StaticResource LangConverter},ConverterParameter=FontName}"/>

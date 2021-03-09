@@ -54,8 +54,8 @@ namespace Oybab.ServicePC.DialogWindow
             this.IsPayByTime = isPayByTime;
 
 
-            krplStartTimeValue.Text = DateTime.ParseExact(StartTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm:ss");
-            krplEndTimeValue.Text = DateTime.ParseExact(EndTime.ToString(), "yyyyMMddHHmmss", null).ToString("yyyy-MM-dd HH:mm:ss");
+            krplStartTimeValue.Text = DateTime.ParseExact(StartTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm:ss");
+            krplEndTimeValue.Text = DateTime.ParseExact(EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm:ss");
 
             krptHour.Text = "0";
             krptMinute.Text = "0";
@@ -107,11 +107,11 @@ namespace Oybab.ServicePC.DialogWindow
             {
                 if (IsPayByTime == 1)
                 {
-                    ReturnValue = long.Parse(DateTime.ParseExact(EndTime.ToString(), "yyyyMMddHHmmss", null).AddHours(int.Parse(Hour)).AddMinutes(int.Parse(Minute)).ToString("yyyyMMddHHmmss"));
+                    ReturnValue = long.Parse(DateTime.ParseExact(EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).AddHours(int.Parse(Hour)).AddMinutes(int.Parse(Minute)).ToString("yyyyMMddHHmmss"));
                 }
                 else if (IsPayByTime == 2)
                 {
-                    ReturnValue = long.Parse(DateTime.ParseExact(EndTime.ToString(), "yyyyMMddHHmmss", null).AddDays(int.Parse(Hour)).AddHours(int.Parse(Minute)).ToString("yyyyMMddHHmmss"));
+                    ReturnValue = long.Parse(DateTime.ParseExact(EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).AddDays(int.Parse(Hour)).AddHours(int.Parse(Minute)).ToString("yyyyMMddHHmmss"));
                 }
                 
             }
@@ -119,11 +119,11 @@ namespace Oybab.ServicePC.DialogWindow
             {
                 if (IsPayByTime == 1)
                 {
-                    ReturnValue = long.Parse(DateTime.ParseExact(EndTime.ToString(), "yyyyMMddHHmmss", null).AddHours(-int.Parse(Hour)).AddMinutes(-int.Parse(Minute)).ToString("yyyyMMddHHmmss"));
+                    ReturnValue = long.Parse(DateTime.ParseExact(EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).AddHours(-int.Parse(Hour)).AddMinutes(-int.Parse(Minute)).ToString("yyyyMMddHHmmss"));
                 }
                 else if (IsPayByTime == 2)
                 {
-                    ReturnValue = long.Parse(DateTime.ParseExact(EndTime.ToString(), "yyyyMMddHHmmss", null).AddDays(-int.Parse(Hour)).AddHours(-int.Parse(Minute)).ToString("yyyyMMddHHmmss"));
+                    ReturnValue = long.Parse(DateTime.ParseExact(EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).AddDays(-int.Parse(Hour)).AddHours(-int.Parse(Minute)).ToString("yyyyMMddHHmmss"));
                 }
             }
 
@@ -172,8 +172,8 @@ namespace Oybab.ServicePC.DialogWindow
 
             if (Mark == "+")
             {
-                TimeSpan total = (DateTime.ParseExact(EndTime.ToString(), "yyyyMMddHHmmss", null).AddDays(DayD).AddHours(HourD).AddMinutes(MinuteD) - DateTime.ParseExact(StartTime.ToString(), "yyyyMMddHHmmss", null));
-                TimeSpan balance = (DateTime.Now - DateTime.ParseExact(EndTime.ToString(), "yyyyMMddHHmmss", null).AddDays(DayD).AddHours(HourD).AddMinutes(MinuteD));
+                TimeSpan total = (DateTime.ParseExact(EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).AddDays(DayD).AddHours(HourD).AddMinutes(MinuteD) - DateTime.ParseExact(StartTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture));
+                TimeSpan balance = (DateTime.Now - DateTime.ParseExact(EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).AddDays(DayD).AddHours(HourD).AddMinutes(MinuteD));
                 
                 if (IsPayByTime == 1)
                     krplTotalTimeValue.Text = string.Format("{0}:{1}", (int)total.TotalHours, total.Minutes);
@@ -190,12 +190,12 @@ namespace Oybab.ServicePC.DialogWindow
                 else
                     krplRemainingTimeValue.Text = "0:0";
 
-                krplEndTimeValue.Text = DateTime.ParseExact(EndTime.ToString(), "yyyyMMddHHmmss", null).AddDays(DayD).AddHours(HourD).AddMinutes(MinuteD).ToString("yyyy-MM-dd HH:mm:ss");
+                krplEndTimeValue.Text = DateTime.ParseExact(EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).AddDays(DayD).AddHours(HourD).AddMinutes(MinuteD).ToString("yyyy-MM-dd HH:mm:ss");
             }
             else if (Mark == "-")
             { 
-                TimeSpan total = (DateTime.ParseExact(EndTime.ToString(), "yyyyMMddHHmmss", null).AddDays(-DayD).AddHours(-HourD).AddMinutes(-MinuteD) - DateTime.ParseExact(StartTime.ToString(), "yyyyMMddHHmmss", null));
-                TimeSpan balance = (DateTime.Now - DateTime.ParseExact(EndTime.ToString(), "yyyyMMddHHmmss", null).AddDays(-DayD).AddHours(-HourD).AddMinutes(-MinuteD));
+                TimeSpan total = (DateTime.ParseExact(EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).AddDays(-DayD).AddHours(-HourD).AddMinutes(-MinuteD) - DateTime.ParseExact(StartTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture));
+                TimeSpan balance = (DateTime.Now - DateTime.ParseExact(EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).AddDays(-DayD).AddHours(-HourD).AddMinutes(-MinuteD));
 
                 if (IsPayByTime == 1)
                     krplTotalTimeValue.Text = string.Format("{0}:{1}", (int)total.TotalHours, total.Minutes);
@@ -213,7 +213,7 @@ namespace Oybab.ServicePC.DialogWindow
                     krplRemainingTimeValue.Text = "0:0";
 
 
-                krplEndTimeValue.Text = DateTime.ParseExact(EndTime.ToString(), "yyyyMMddHHmmss", null).AddDays(-DayD).AddHours(-HourD).AddMinutes(-MinuteD).ToString("yyyy-MM-dd HH:mm:ss");
+                krplEndTimeValue.Text = DateTime.ParseExact(EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).AddDays(-DayD).AddHours(-HourD).AddMinutes(-MinuteD).ToString("yyyy-MM-dd HH:mm:ss");
             }
         }
 
@@ -353,14 +353,14 @@ namespace Oybab.ServicePC.DialogWindow
         private void krpbRemoveTime_Click(object sender, EventArgs e)
         {
 
-            TimeSpan balance = (DateTime.Now - DateTime.ParseExact(EndTime.ToString(), "yyyyMMddHHmmss", null).AddDays(0).AddHours(0).AddMinutes(0));
+            TimeSpan balance = (DateTime.Now - DateTime.ParseExact(EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).AddDays(0).AddHours(0).AddMinutes(0));
 
             if (balance.TotalMilliseconds < 0)
             {
                 int hours = Math.Abs((int)balance.TotalHours);
                 int minutes = Math.Abs(balance.Minutes);
 
-                TimeSpan total = (DateTime.ParseExact(EndTime.ToString(), "yyyyMMddHHmmss", null).AddDays(0).AddHours(-hours).AddMinutes(-minutes) - DateTime.ParseExact(StartTime.ToString(), "yyyyMMddHHmmss", null));
+                TimeSpan total = (DateTime.ParseExact(EndTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture).AddDays(0).AddHours(-hours).AddMinutes(-minutes) - DateTime.ParseExact(StartTime.ToString(), "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture));
                 
                 krptHour.Text = (hours).ToString();
                 krptMinute.Text = (minutes).ToString();

@@ -371,14 +371,29 @@
     <Compile Include="Resources.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resource.ar-SA.resx" />
+    <EmbeddedResource Include="Resource.de-DE.resx" />
     <EmbeddedResource Include="Resource.en-US.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource.en-US.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resource.es-ES.resx" />
+    <EmbeddedResource Include="Resource.fr-FR.resx" />
+    <EmbeddedResource Include="Resource.he-IL.resx" />
+    <EmbeddedResource Include="Resource.hi-IN.resx" />
+    <EmbeddedResource Include="Resource.it-IT.resx" />
+    <EmbeddedResource Include="Resource.ja-JP.resx" />
+    <EmbeddedResource Include="Resource.ko-KR.resx" />
+    <EmbeddedResource Include="Resource.pt-PT.resx" />
+    <EmbeddedResource Include="Resource.ru-RU.resx" />
+    <EmbeddedResource Include="Resource.th-TH.resx" />
+    <EmbeddedResource Include="Resource.tr-TR.resx" />
     <EmbeddedResource Include="Resource.ug-CN.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource.ug-CN.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resource.ur-PK.resx" />
+    <EmbeddedResource Include="Resource.uz-Latn.resx" />
     <EmbeddedResource Include="Resource.zh-CN.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource.zh-CN.Designer.cs</LastGenOutput>

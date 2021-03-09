@@ -1,0 +1,1947 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>Hakkında</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Ekle</value>
+  </data>
+  <data name="Change" xml:space="preserve">
+    <value>Değiştirmek</value>
+  </data>
+  <data name="ChangeFaild" xml:space="preserve">
+    <value>Modifikasyon başarısız oldu!</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Parolayı değiştirin</value>
+  </data>
+  <data name="ChangeSuccess" xml:space="preserve">
+    <value>Modifikasyon başarılı oldu!</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Kapat</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>Hotan Oybab Bilgi Teknolojileri Ltd.</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>Şifreyi onaylayın</value>
+  </data>
+  <data name="Copyright" xml:space="preserve">
+    <value>Mengsheng Corporation Telif Hakkı.</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Silmek</value>
+  </data>
+  <data name="DeleteFailt" xml:space="preserve">
+    <value>Silme işlemi başarısız oldu!</value>
+  </data>
+  <data name="DeleteSuccess" xml:space="preserve">
+    <value>Silme işlemi başarılı oldu!</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Çıkış</value>
+  </data>
+  <data name="FontName" xml:space="preserve">
+    <value>Microsoft YaHei, Aria, Oybab Tuz</value>
+  </data>
+  <data name="FontSize" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="Id" xml:space="preserve">
+    <value>Numaralama</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Dil</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Oturum aç</value>
+  </data>
+  <data name="LoginValid" xml:space="preserve">
+    <value>Lütfen bilgileri doğru {0} girin!</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>Yeni şifre</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Hayır</value>
+  </data>
+  <data name="OldPassword" xml:space="preserve">
+    <value>Eski şifre</value>
+  </data>
+  <data name="OldPasswordFaild" xml:space="preserve">
+    <value>Eski şifre yanlış girilmiş, lütfen tekrar girin!</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Parola</value>
+  </data>
+  <data name="PwdError" xml:space="preserve">
+    <value>Şifre yanlış!</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Yenileme</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Yeni -den deneme</value>
+  </data>
+  <data name="RightToLeft" xml:space="preserve">
+    <value>0 / sıfır</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Kaydetmek</value>
+  </data>
+  <data name="SaveFailt" xml:space="preserve">
+    <value>Kayıt başarısız oldu!</value>
+  </data>
+  <data name="SaveSuccess" xml:space="preserve">
+    <value>Başarıyla kaydedildi!</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Bul</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Toplam</value>
+  </data>
+  <data name="TwoNewPasswordNotEqual" xml:space="preserve">
+    <value>İki kez girilen yeni şifre tutarsız!  lütfen yeniden girin!</value>
+  </data>
+  <data name="UpdateInfo" xml:space="preserve">
+    <value>Yeni bir sürüm bulundu</value>
+  </data>
+  <data name="USBKey_Warn" xml:space="preserve">
+    <value>Lütfen USB-KEY'i takın ve devam etmek için "Tekrar Dene"'yi tıklatın veya programdan çıkmak için "Çıkış"'a tıklayın!</value>
+  </data>
+  <data name="UserLogin" xml:space="preserve">
+    <value>Kullanıcı Girişi</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Evet</value>
+  </data>
+  <data name="Abort" xml:space="preserve">
+    <value>Çıkış</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>İptal</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>Yoksay</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Kullanıcı adı</value>
+  </data>
+  <data name="Warn" xml:space="preserve">
+    <value>Uyarı</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>Tamam</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Hata</value>
+  </data>
+  <data name="CurrentKeyName" xml:space="preserve">
+    <value>Geçerli USB-KEY adı: {0}.</value>
+  </data>
+  <data name="Exception_CheckSqlAndNet" xml:space="preserve">
+    <value>Veritabanı bağlantısı yanlış, lütfen ağ veya veritabanı bağlantısı yapılandırmasını kontrol edin!</value>
+  </data>
+  <data name="Exception_LoadCacheError" xml:space="preserve">
+    <value>Önbellek yükleme hatası.</value>
+  </data>
+  <data name="Exception_LoadMediaRoot" xml:space="preserve">
+    <value>Yük şarkı kök yolu hatası, yapılandırma dosyasını kontrol edin!</value>
+  </data>
+  <data name="Exception_NotSupprtKey" xml:space="preserve">
+    <value>Veritabanına bağlanılamıyor, bu USB-KEY desteklenmiyor.</value>
+  </data>
+  <data name="InputData" xml:space="preserve">
+    <value>Verileri içe aktarın</value>
+  </data>
+  <data name="OutputData" xml:space="preserve">
+    <value>Verileri dışa aktarın</value>
+  </data>
+  <data name="UpdateNonReturnOrCantRead" xml:space="preserve">
+    <value>Güncelleme dönüş verileri boş veya ayrıştırma başarısız oldu!</value>
+  </data>
+  <data name="UpdateUnableError" xml:space="preserve">
+    <value>Sorgu güncelleştirme bilinmeyen hata, Kod:{0}.</value>
+  </data>
+  <data name="CompanyLogoImage" xml:space="preserve">
+    <value>logo.png</value>
+  </data>
+  <data name="Exception_ReadResourceStrError" xml:space="preserve">
+    <value>Kaynak karakterleri okumak için başarısız oldu!</value>
+  </data>
+  <data name="Exception_InputData" xml:space="preserve">
+    <value>Veriler içe aktarılamadı!</value>
+  </data>
+  <data name="Exception_InputReadData" xml:space="preserve">
+    <value>Veri alma ve okuma başarısız oldu!</value>
+  </data>
+  <data name="Exception_OutputData" xml:space="preserve">
+    <value>Veri aktarılamamış!</value>
+  </data>
+  <data name="InputDataSuccess" xml:space="preserve">
+    <value>Veri alma başarılı oldu!</value>
+  </data>
+  <data name="OutputDataSuccess" xml:space="preserve">
+    <value>Verileri dışa aktar başarılı oldu!</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>Dosya</value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>Araçları</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>Tüm</value>
+  </data>
+  <data name="FolderName" xml:space="preserve">
+    <value>Klasör adı</value>
+  </data>
+  <data name="IgnoreData" xml:space="preserve">
+    <value>Kaydedilmemiş verileri göz ardı edeceğinizden emin misiniz?</value>
+  </data>
+  <data name="ImageName" xml:space="preserve">
+    <value>Resmin adı</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>Daha</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>Sayfası</value>
+  </data>
+  <data name="AddDescription" xml:space="preserve">
+    <value>Yeni bir veri eklenir.</value>
+  </data>
+  <data name="DeleteDescription" xml:space="preserve">
+    <value>Geçerli verileri silin.</value>
+  </data>
+  <data name="PleaseEditBefore" xml:space="preserve">
+    <value>Lütfen önce düzenlemeyi bitirin!</value>
+  </data>
+  <data name="SaveDescription" xml:space="preserve">
+    <value>Şu anda yeni veya değiştirilmiş verileri kaydedmek.</value>
+  </data>
+  <data name="SureDelete" xml:space="preserve">
+    <value>Silmek istediğinizden emin misiniz?</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>Dosya adı</value>
+  </data>
+  <data name="Exception_NotFound" xml:space="preserve">
+    <value>Bu {0} bulunamadı!</value>
+  </data>
+  <data name="ErrorBig" xml:space="preserve">
+    <value>Güvenlik açığı bulundu</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Seçin</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>Sistem</value>
+  </data>
+  <data name="AllPage" xml:space="preserve">
+    <value>Toplam:</value>
+  </data>
+  <data name="AllPage2" xml:space="preserve">
+    <value>Sayfa</value>
+  </data>
+  <data name="CurrentPage" xml:space="preserve">
+    <value>Akım: bölüm</value>
+  </data>
+  <data name="CurrentPage2" xml:space="preserve">
+    <value>Sayfa</value>
+  </data>
+  <data name="LastPage" xml:space="preserve">
+    <value>Önceki sayfa</value>
+  </data>
+  <data name="NextPage" xml:space="preserve">
+    <value>Sonraki sayfa</value>
+  </data>
+  <data name="CompanyUrlStr" xml:space="preserve">
+    <value>Web sitesi</value>
+  </data>
+  <data name="ExitPassword" xml:space="preserve">
+    <value>Parolayıdan çıkmak</value>
+  </data>
+  <data name="MobileNoStr" xml:space="preserve">
+    <value>Telefon</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Sıfırlamak</value>
+  </data>
+  <data name="NotFoundUSBKEY" xml:space="preserve">
+    <value>USB-KEY bulunamadı!</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Dönüş</value>
+  </data>
+  <data name="MuteRestore" xml:space="preserve">
+    <value>Kurtarma</value>
+  </data>
+  <data name="UpdateAlert" xml:space="preserve">
+    <value>Sistemin yeni bir sürümü bulundu, lütfen zamanında indirin ve güncelleyin!</value>
+  </data>
+  <data name="Exception_CheckSqlAndFile" xml:space="preserve">
+    <value>Veritabanı bağlantısı hatası, veritabanı dosyası veya veritabanı bağlantısı yapılandırması kontrol edin!</value>
+  </data>
+  <data name="CompanyShortName" xml:space="preserve">
+    <value>OYBAB</value>
+  </data>
+  <data name="CompleteInput" xml:space="preserve">
+    <value>Lütfen giriş verilerini tamamlayın!</value>
+  </data>
+  <data name="VersionNo" xml:space="preserve">
+    <value>Sürüm numarası</value>
+  </data>
+  <data name="SoftPlayerDescription" xml:space="preserve">
+    <value>Herhangi bir yorumunuz veya öneriniz varsa lütfen bizimle iletişime geçin, lütfen iletişim bilgilerini şuradan kontrol edin: "Sistem --- Hakkında".</value>
+  </data>
+  <data name="ChangeLanguage" xml:space="preserve">
+    <value>Dilleri değiştirin</value>
+  </data>
+  <data name="ChangeLanguageFailt" xml:space="preserve">
+    <value>Dili değiştirmek başarısız oldu!</value>
+  </data>
+  <data name="ChangeLanguageSuccess" xml:space="preserve">
+    <value>Dil değişikliği başarılı oldu ve sistem bir sonraki başlatılışında etkili olacaktır!</value>
+  </data>
+  <data name="Exception_InvalidLanguage" xml:space="preserve">
+    <value>Sistem dili geçersiz veya mevcut değil, lütfen yapılandırma dosyasını kontrol edin!</value>
+  </data>
+  <data name="Exception_LogError" xml:space="preserve">
+    <value>Günlükleri yüklemek için başarısız oldu!</value>
+  </data>
+  <data name="FontName2" xml:space="preserve">
+    <value>Arial</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Yardım</value>
+  </data>
+  <data name="Exception_InvalidDB" xml:space="preserve">
+    <value>Veritabanı dosyası geçersiz!</value>
+  </data>
+  <data name="Exception_KeyKeyError" xml:space="preserve">
+    <value>USB-KEY Anahtar hatası alındı. Hata: {0}, {1}.</value>
+  </data>
+  <data name="Exception_ApplicationCheckFaild" xml:space="preserve">
+    <value>Başvuru doğrulama başarısız oldu!</value>
+  </data>
+  <data name="Exception_CloseRequestFaild" xml:space="preserve">
+    <value>Oturumu kapatmak için istek gönderilirken hata oluştu!</value>
+  </data>
+  <data name="Exception_EncryptedRequestFaild" xml:space="preserve">
+    <value>Şifreleme isteği gönderilirken hata oluştu!</value>
+  </data>
+  <data name="Exception_LockRequestFaild" xml:space="preserve">
+    <value>Kilit isteği gönderilirken hata oluştu!</value>
+  </data>
+  <data name="Exception_NewRequestFailt" xml:space="preserve">
+    <value>Yeni oturum isteği gönderilirken hata oluştu! {0} hata kodu: 101</value>
+  </data>
+  <data name="Exception_OutClientLimitFaild" xml:space="preserve">
+    <value>İstemci bağlantı sınırı aşıldı! {0} hata kodu: 102</value>
+  </data>
+  <data name="Exception_RemoteServerConn" xml:space="preserve">
+    <value>Uzak sunucu bağlanamadı!</value>
+  </data>
+  <data name="Exception_ServerCantCorrConn" xml:space="preserve">
+    <value>Sunucuyla oturumu düzgün bir şekilde sürdüremiyor! Devam etmek için Lütfen Tekrar Dene'yi tıklatın veya sistemden çıkmak için Çıkış'a tıklayın!</value>
+  </data>
+  <data name="Exception_ServerCheckFaild" xml:space="preserve">
+    <value>Sunucu KEY hatasını kontrol edin!</value>
+  </data>
+  <data name="Exception_ServerFaild" xml:space="preserve">
+    <value>Sunucuda bir hata oluştu!</value>
+  </data>
+  <data name="Exception_ServerKeyFaild" xml:space="preserve">
+    <value>Sunucu KEY hatası!</value>
+  </data>
+  <data name="Exception_SessionExpiredRetry" xml:space="preserve">
+    <value>Oturum süresi doldu, lütfen tekrar deneyin!</value>
+  </data>
+  <data name="Exception_SessionFaildAndTry" xml:space="preserve">
+    <value>Oturum süresi doldu, yeniden edinmeyi deneyin!</value>
+  </data>
+  <data name="Exception_SessionRequestFaild" xml:space="preserve">
+    <value>Oturum tutma isteği gönderilirken hata oluştu!</value>
+  </data>
+  <data name="Exception_SessionUpdateFaild" xml:space="preserve">
+    <value>Oturum güncellemesi  başarısız oldu!</value>
+  </data>
+  <data name="Exception_UIDRequestFaild" xml:space="preserve">
+    <value>UID alma isteği gönderilemedi!</value>
+  </data>
+  <data name="SessionUpdateSuccess" xml:space="preserve">
+    <value>Oturum güncelleştirmesi başarılı oldu.</value>
+  </data>
+  <data name="Exception_SetClientTimeFailt" xml:space="preserve">
+    <value>İstemci zamanı kalibre sunucu süresi başarısız oldu!</value>
+  </data>
+  <data name="IsHidden" xml:space="preserve">
+    <value>Saklamak</value>
+  </data>
+  <data name="Exception_CheckDataFaild" xml:space="preserve">
+    <value>Uzak sunucu veri toplama hatası!</value>
+  </data>
+  <data name="Exception_DataNotReady" xml:space="preserve">
+    <value>Uzak sunucu verileri hazır değil! Lütfen daha sonra tekrar deneyin! Hata kodu: 107</value>
+  </data>
+  <data name="Exception_ChangePWDRequestFaild" xml:space="preserve">
+    <value>Parola değiştirme isteği gönderilirken hata oluştu!</value>
+  </data>
+  <data name="Exception_ValidPWDRequestFaild" xml:space="preserve">
+    <value>DoğrulamaParolası isteği gönderilirken hata oluştu!</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>Bize ulaşın</value>
+  </data>
+  <data name="Consumption" xml:space="preserve">
+    <value>Tüketim</value>
+  </data>
+  <data name="DealerContactWay" xml:space="preserve">
+    <value>Tüketici bayi iletişim bilgileri</value>
+  </data>
+  <data name="Mode" xml:space="preserve">
+    <value>Modu</value>
+  </data>
+  <data name="Remark" xml:space="preserve">
+    <value>Uyarılar</value>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>Diğer</value>
+  </data>
+  <data name="Exception_IPConflict" xml:space="preserve">
+    <value>IP adresi çakışması, lütfen yeniden başlatın!</value>
+  </data>
+  <data name="Exception_SessionInvalid" xml:space="preserve">
+    <value>Geçersiz oturum, lütfen yeniden başlatın!</value>
+  </data>
+  <data name="Exception_InvalidPending" xml:space="preserve">
+    <value>Geçersiz mod!</value>
+  </data>
+  <data name="Exception_IPInvalid" xml:space="preserve">
+    <value>IP adresi geçerli değildir, lütfen müşteri hizmetleri ile iletişime geçin!</value>
+  </data>
+  <data name="Exception_OrderExpired" xml:space="preserve">
+    <value>Fatura nın süresi doldu, lütfen müşteri hizmetleri ile iletişime geçin!</value>
+  </data>
+  <data name="Exception_OrderInvalid" xml:space="preserve">
+    <value>Fatura geçersiz, lütfen müşteri hizmetleri ile iletişime geçin!</value>
+  </data>
+  <data name="Exception_SendRequestFaild" xml:space="preserve">
+    <value>Bildirim isteği gönder hatası!</value>
+  </data>
+  <data name="Exception_SetConRequestFaild" xml:space="preserve">
+    <value>Ayar işlevi isteği gönder hatası!</value>
+  </data>
+  <data name="Exception_OperateRequestFaild" xml:space="preserve">
+    <value>İşlem isteği gönder hatası!</value>
+  </data>
+  <data name="ChangeSet" xml:space="preserve">
+    <value>Fonksiyon ayarları</value>
+  </data>
+  <data name="ExpenditureManager" xml:space="preserve">
+    <value>Gider yönetimi</value>
+  </data>
+  <data name="MainPage" xml:space="preserve">
+    <value>Ana Sayfa</value>
+  </data>
+  <data name="OrderManager" xml:space="preserve">
+    <value>Fatura yönetimi</value>
+  </data>
+  <data name="ProductManager" xml:space="preserve">
+    <value>Ürün yönetimi</value>
+  </data>
+  <data name="ProductTypeManager" xml:space="preserve">
+    <value>Ürün türü yönetimi</value>
+  </data>
+  <data name="RoomManager" xml:space="preserve">
+    <value>Yaser yönetimi</value>
+  </data>
+  <data name="SoftServiceName" xml:space="preserve">
+    <value>Oybab Ticaret Sistemi v1.1</value>
+  </data>
+  <data name="OperateFaild" xml:space="preserve">
+    <value>{0} başarısız oldu!</value>
+  </data>
+  <data name="ActualPrice" xml:space="preserve">
+    <value>Gerçek fiyat</value>
+  </data>
+  <data name="AddTime" xml:space="preserve">
+    <value>Zaman ekleyin</value>
+  </data>
+  <data name="Backstage" xml:space="preserve">
+    <value>Kulis</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>Miktar</value>
+  </data>
+  <data name="DealsPrice" xml:space="preserve">
+    <value>İndirimli fiyat</value>
+  </data>
+  <data name="Display" xml:space="preserve">
+    <value>Görüntüle</value>
+  </data>
+  <data name="DisplayType" xml:space="preserve">
+    <value>Ekran türü</value>
+  </data>
+  <data name="EndTime" xml:space="preserve">
+    <value>Bitiş zamanı</value>
+  </data>
+  <data name="FinishTime" xml:space="preserve">
+    <value>Tamamlanma süresi</value>
+  </data>
+  <data name="Hide" xml:space="preserve">
+    <value>Saklamak</value>
+  </data>
+  <data name="ImportTime" xml:space="preserve">
+    <value>Harcama tarihi</value>
+  </data>
+  <data name="IpAddress" xml:space="preserve">
+    <value>IP adresi</value>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>Sipariş</value>
+  </data>
+  <data name="ProductName" xml:space="preserve">
+    <value>Ürün adı</value>
+  </data>
+  <data name="ProductTypeName" xml:space="preserve">
+    <value>Ürün türünün adı</value>
+  </data>
+  <data name="RoomNo" xml:space="preserve">
+    <value>Koltuk numarası</value>
+  </data>
+  <data name="StartTime" xml:space="preserve">
+    <value>Başlangıç zamanı</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="TotalPrice" xml:space="preserve">
+    <value>Toplam fiyat</value>
+  </data>
+  <data name="UnitPrice" xml:space="preserve">
+    <value>Birim fiyat</value>
+  </data>
+  <data name="PropertyUsed" xml:space="preserve">
+    <value>Lütfen önce bu verilerle ilişkili verileri değiştirin veya silin!</value>
+  </data>
+  <data name="Exception_CountOutOfIPRequestLimit" xml:space="preserve">
+    <value>Çok fazla yinelenen istek var, lütfen daha sonra tekrar deneyin! Hata kodu: 103</value>
+  </data>
+  <data name="Exception_ExceptionSource" xml:space="preserve">
+    <value>{0} {1} Hata kaynağı {2}</value>
+  </data>
+  <data name="PropertyExists" xml:space="preserve">
+    <value>{0} zaten var, lütfen tekrar girmeyin!</value>
+  </data>
+  <data name="Checkout" xml:space="preserve">
+    <value>Ödeme</value>
+  </data>
+  <data name="Invalid" xml:space="preserve">
+    <value>Geçersiz</value>
+  </data>
+  <data name="Confirmed" xml:space="preserve">
+    <value>Onaylandı</value>
+  </data>
+  <data name="GetFailed" xml:space="preserve">
+    <value>Edinme başarısız oldu!</value>
+  </data>
+  <data name="OrderDetails" xml:space="preserve">
+    <value>Fatura ayrıntıları</value>
+  </data>
+  <data name="OrderNo" xml:space="preserve">
+    <value>Fatura numarası</value>
+  </data>
+  <data name="PropertyError" xml:space="preserve">
+    <value>Girilen {0} eksik veya yanlış!</value>
+  </data>
+  <data name="Requesting" xml:space="preserve">
+    <value>İstek devam ediyor</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>Görünüm</value>
+  </data>
+  <data name="ShowDescription" xml:space="preserve">
+    <value>Ayrıntıları görüntüleyin</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Saat</value>
+  </data>
+  <data name="TimeLimit" xml:space="preserve">
+    <value>Arama aralığı {0} gün içinde olmalı!</value>
+  </data>
+  <data name="ImportDetails" xml:space="preserve">
+    <value>Masrafların detayları</value>
+  </data>
+  <data name="ImportId" xml:space="preserve">
+    <value>Gider numarası</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Yazdırma</value>
+  </data>
+  <data name="PrintDescription" xml:space="preserve">
+    <value>İçeriği yazdırın</value>
+  </data>
+  <data name="AddImport" xml:space="preserve">
+    <value>Yeni masraflar</value>
+  </data>
+  <data name="LineDataError" xml:space="preserve">
+    <value>{0}satırındaki veri girişi eksik veya yanlış!</value>
+  </data>
+  <data name="BalanceCount" xml:space="preserve">
+    <value>Kalan miktar</value>
+  </data>
+  <data name="Exception_ProductCountRefreshExpiredRetry" xml:space="preserve">
+    <value>Ürün miktarı süresi doldu, lütfen tekrar deneyin!</value>
+  </data>
+  <data name="Exception_ProductCountRefreshFailed" xml:space="preserve">
+    <value>Ürün güncellemesi başarısız oldu!</value>
+  </data>
+  <data name="Exception_ProductCountRefreshRetry" xml:space="preserve">
+    <value>Ürün sayısı yeterli değil, tekrar ürün almaya çalışın!</value>
+  </data>
+  <data name="IsBindCount" xml:space="preserve">
+    <value>Bağlama sayısı</value>
+  </data>
+  <data name="ProductCountRefreshSuccess" xml:space="preserve">
+    <value>Ürün güncelleştirmesi başarılı oldu.</value>
+  </data>
+  <data name="WarningCount" xml:space="preserve">
+    <value>Uyarıların sayısı</value>
+  </data>
+  <data name="Call" xml:space="preserve">
+    <value>Aramak</value>
+  </data>
+  <data name="ConsumptionType" xml:space="preserve">
+    <value>Tüketim kontrolü</value>
+  </data>
+  <data name="ControlType" xml:space="preserve">
+    <value>Uzaktan kumanda</value>
+  </data>
+  <data name="CostPrice" xml:space="preserve">
+    <value>Maliyet fiyatı</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>Yeni</value>
+  </data>
+  <data name="Offline" xml:space="preserve">
+    <value>Çevrimdışı</value>
+  </data>
+  <data name="Online" xml:space="preserve">
+    <value>Çevrimiçi</value>
+  </data>
+  <data name="PaidPrice" xml:space="preserve">
+    <value>Ödenen miktar</value>
+  </data>
+  <data name="PermissionDenied" xml:space="preserve">
+    <value>Erişim yok!</value>
+  </data>
+  <data name="BalancePrice" xml:space="preserve">
+    <value>Kalan miktar</value>
+  </data>
+  <data name="ChangePrice" xml:space="preserve">
+    <value>Fiyatı değiştir</value>
+  </data>
+  <data name="ChangeTime" xml:space="preserve">
+    <value>Zamanı değiştir</value>
+  </data>
+  <data name="Disable" xml:space="preserve">
+    <value>Kapat</value>
+  </data>
+  <data name="Enable" xml:space="preserve">
+    <value>Açın</value>
+  </data>
+  <data name="Hour" xml:space="preserve">
+    <value>Saat</value>
+  </data>
+  <data name="InvalidIt" xml:space="preserve">
+    <value>Geçersiz</value>
+  </data>
+  <data name="Minute" xml:space="preserve">
+    <value>Dakika</value>
+  </data>
+  <data name="RemainingTime" xml:space="preserve">
+    <value>Kalan süre</value>
+  </data>
+  <data name="TotalTime" xml:space="preserve">
+    <value>Toplam süre</value>
+  </data>
+  <data name="BalanceCountNotEnough" xml:space="preserve">
+    <value>Operasyon başarısız oldu, bu ürünün kalan sayısı sadece{0}!</value>
+  </data>
+  <data name="CancelOrder" xml:space="preserve">
+    <value>Faturayı iptal et</value>
+  </data>
+  <data name="CancelOrderDescription" xml:space="preserve">
+    <value>Mevcut faturayı iptal edin.</value>
+  </data>
+  <data name="CheckoutOrder" xml:space="preserve">
+    <value>Faturaya bak</value>
+  </data>
+  <data name="CheckoutOrderDescription" xml:space="preserve">
+    <value>Mevcut faturayı kontrol edin.</value>
+  </data>
+  <data name="ConfirmCancelOrder" xml:space="preserve">
+    <value>Mevcut faturayı iptal etmeyi onaylıyor musunuz?</value>
+  </data>
+  <data name="FaildThenRefreshModel" xml:space="preserve">
+    <value>İşlem başarısız oldu, fatura değiştirildi, fatura bilgilerini güncellemeyi denemeye hazır!</value>
+  </data>
+  <data name="Locked" xml:space="preserve">
+    <value>Kilitle</value>
+  </data>
+  <data name="NewOrder" xml:space="preserve">
+    <value>Yeni bir fatura</value>
+  </data>
+  <data name="NewOrderDescription" xml:space="preserve">
+    <value>Yeni bir fatura oluşturun.</value>
+  </data>
+  <data name="OperateSuccess" xml:space="preserve">
+    <value>{0} başarı!</value>
+  </data>
+  <data name="RefreshOrderFailed" xml:space="preserve">
+    <value>Geçerli tasarıyı güncellemek için başarısız oldu!</value>
+  </data>
+  <data name="ReplaceRoom" xml:space="preserve">
+    <value>Koltuğu değiştirin</value>
+  </data>
+  <data name="ReplaceRoomDescription" xml:space="preserve">
+    <value>Güncel koltuğu diğer koltukla değiştirin.</value>
+  </data>
+  <data name="Request" xml:space="preserve">
+    <value>Istek</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Yeniden başlatın</value>
+  </data>
+  <data name="RestartDescription" xml:space="preserve">
+    <value>Ana bilgisayarı yeniden başlatın.</value>
+  </data>
+  <data name="SaveBeforeDelete" xml:space="preserve">
+    <value>Lütfen önce verileri kaydedin!</value>
+  </data>
+  <data name="ShowOrder" xml:space="preserve">
+    <value>Faturayı görüntüleyin</value>
+  </data>
+  <data name="ShowOrderDescription" xml:space="preserve">
+    <value>Fatura ayrıntılarını görüntüleyin.</value>
+  </data>
+  <data name="Shutdown" xml:space="preserve">
+    <value>Kapatma</value>
+  </data>
+  <data name="ShutdownDescription" xml:space="preserve">
+    <value>Ana bilgisayarı kapatın.</value>
+  </data>
+  <data name="UnevenBalance" xml:space="preserve">
+    <value>Denge düzensiz!</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Onaylamak</value>
+  </data>
+  <data name="NewRoom" xml:space="preserve">
+    <value>Yeni koltuk</value>
+  </data>
+  <data name="SendFireAlarm" xml:space="preserve">
+    <value>Yangın alarmı gönderin</value>
+  </data>
+  <data name="Barcode" xml:space="preserve">
+    <value>Barkod</value>
+  </data>
+  <data name="Disabled" xml:space="preserve">
+    <value>Engelli</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Fiyat</value>
+  </data>
+  <data name="IsPayByTime" xml:space="preserve">
+    <value>Zamana göre olsun</value>
+  </data>
+  <data name="PriceHour" xml:space="preserve">
+    <value>Zaman fiyatı</value>
+  </data>
+  <data name="IsAutoExtendTime" xml:space="preserve">
+    <value>Süreyi otomatik olarak uzatıp uzatmamak</value>
+  </data>
+  <data name="PropertyUnSame" xml:space="preserve">
+    <value>Veriler tutarsız, lütfen yeniden başlatın ve yeniden deneyin!</value>
+  </data>
+  <data name="AdminName" xml:space="preserve">
+    <value>Yönetici adı</value>
+  </data>
+  <data name="AdminManager" xml:space="preserve">
+    <value>Yönetici yönetimi</value>
+  </data>
+  <data name="AdminNo" xml:space="preserve">
+    <value>Yönetici numarası</value>
+  </data>
+  <data name="Sex" xml:space="preserve">
+    <value>Cinsiyet</value>
+  </data>
+  <data name="IDNumber" xml:space="preserve">
+    <value>Kimlik numarası</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>Menü</value>
+  </data>
+  <data name="IsOnlyOwn" xml:space="preserve">
+    <value>Limit yönetimi</value>
+  </data>
+  <data name="IsEnable" xml:space="preserve">
+    <value>Açıp açmamak</value>
+  </data>
+  <data name="Guest" xml:space="preserve">
+    <value>Konuklar</value>
+  </data>
+  <data name="Employee" xml:space="preserve">
+    <value>Çalışan</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>Yönetici</value>
+  </data>
+  <data name="DeviceNo" xml:space="preserve">
+    <value>Cihaz numarası</value>
+  </data>
+  <data name="DeviceType" xml:space="preserve">
+    <value>Cihazın türü</value>
+  </data>
+  <data name="DeviceManager" xml:space="preserve">
+    <value>Cihaz yönetimi</value>
+  </data>
+  <data name="Computer" xml:space="preserve">
+    <value>Bilgisayar</value>
+  </data>
+  <data name="Tablet" xml:space="preserve">
+    <value>Plaka</value>
+  </data>
+  <data name="PrinterManager" xml:space="preserve">
+    <value>Yazıcı yönetimi</value>
+  </data>
+  <data name="PrinterName" xml:space="preserve">
+    <value>Yazıcının adı</value>
+  </data>
+  <data name="PrinterDeviceName" xml:space="preserve">
+    <value>Yazıcı aygıtının adı</value>
+  </data>
+  <data name="PrintType" xml:space="preserve">
+    <value>Baskı türü</value>
+  </data>
+  <data name="Customer" xml:space="preserve">
+    <value>Müşteri</value>
+  </data>
+  <data name="Kitchen" xml:space="preserve">
+    <value>Mutfak</value>
+  </data>
+  <data name="MemberNo" xml:space="preserve">
+    <value>Üyelik numarası</value>
+  </data>
+  <data name="MemberManager" xml:space="preserve">
+    <value>Üye yönetimi</value>
+  </data>
+  <data name="MemberName" xml:space="preserve">
+    <value>Üyenin adı</value>
+  </data>
+  <data name="Occupation" xml:space="preserve">
+    <value>Meslek</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>Cep telefonu</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Telefon</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="OfferRate" xml:space="preserve">
+    <value>Satış oranı/100%</value>
+  </data>
+  <data name="SpendPrice" xml:space="preserve">
+    <value>Harcanan miktar</value>
+  </data>
+  <data name="FavorablePrice" xml:space="preserve">
+    <value>İndirimli miktar</value>
+  </data>
+  <data name="ExpiredTime" xml:space="preserve">
+    <value>Son kullanma tarihi</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>Erkek</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>Kadın</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Kayıtlı</value>
+  </data>
+  <data name="MachineNo" xml:space="preserve">
+    <value>Makine kodu</value>
+  </data>
+  <data name="RegisterNo" xml:space="preserve">
+    <value>Kayıt kodu</value>
+  </data>
+  <data name="SoftwareExpired" xml:space="preserve">
+    <value>Sistemin süresi doldu, yeniden kaydolun?</value>
+  </data>
+  <data name="SoftwareSoonExpired" xml:space="preserve">
+    <value>Sistemin süresi {0} gün {1} içinde doluyor, şimdi kaydolmak ister misiniz?</value>
+  </data>
+  <data name="SoftwareExpiredWarn" xml:space="preserve">
+    <value>Normal kullanımı etkilememek için, bizimle irtibata geçmenizi ve 7 gün önceden sisteme kayıt yaptırmanızı öneririz!</value>
+  </data>
+  <data name="RegisterSuccess" xml:space="preserve">
+    <value>Kayıt başarılı oldu, lütfen sistemi yeniden başlatın!</value>
+  </data>
+  <data name="MemberPay" xml:space="preserve">
+    <value>Üye ödemeleri</value>
+  </data>
+  <data name="MemberPayDescription" xml:space="preserve">
+    <value>Üye ödeme ayrıntılarını görüntüleyin</value>
+  </data>
+  <data name="MemberPayNo" xml:space="preserve">
+    <value>Üye ödeme numarası</value>
+  </data>
+  <data name="MemberBalanceNotEnough" xml:space="preserve">
+    <value>Üyelik dengesi yeterli değil!</value>
+  </data>
+  <data name="AddMember" xml:space="preserve">
+    <value>Üye ekle</value>
+  </data>
+  <data name="PropertyNotFound" xml:space="preserve">
+    <value>{0} bulunamadı!</value>
+  </data>
+  <data name="CheckoutImport" xml:space="preserve">
+    <value>Ödeme giderleri</value>
+  </data>
+  <data name="RoomPrice" xml:space="preserve">
+    <value>Koltuk fiyatı</value>
+  </data>
+  <data name="CountOfoffLimit" xml:space="preserve">
+    <value>Miktar belirtilen sınırı aşmamalıdır!</value>
+  </data>
+  <data name="MemberExpired" xml:space="preserve">
+    <value>Mevcut üyeliğin süresi doldu!</value>
+  </data>
+  <data name="MemberExpiredDescription" xml:space="preserve">
+    <value>Üyelik sona erme süresini değiştirin!</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>Bilinmeyen</value>
+  </data>
+  <data name="NotFoundProperty_Number" xml:space="preserve">
+    <value>{0}. {1} bulunamadı!</value>
+  </data>
+  <data name="Exception_UnknownDevice" xml:space="preserve">
+    <value>Cihaz mevcut değil veya devre dışı bırakıldı! {0} hata kodu: 111</value>
+  </data>
+  <data name="Exception_RoomCountOutOfLimit" xml:space="preserve">
+    <value>Maksimum koltuk sayısı sınırı aştı! {0} hata kodu: 104</value>
+  </data>
+  <data name="ResetDescription" xml:space="preserve">
+    <value>Yönetici parolasını sıfırla</value>
+  </data>
+  <data name="SureReset" xml:space="preserve">
+    <value>Sıfırlamak istediğinizden emin misiniz?</value>
+  </data>
+  <data name="Exception_UnknownAdmin" xml:space="preserve">
+    <value>Yönetici mevcut değil veya devre dışı bırakıldı! {0} hata kodu: 112</value>
+  </data>
+  <data name="ReturnPrice" xml:space="preserve">
+    <value>İade edilen miktar</value>
+  </data>
+  <data name="BorrowPrice" xml:space="preserve">
+    <value>Ödünç alınan miktar</value>
+  </data>
+  <data name="KeepPrice" xml:space="preserve">
+    <value>Kalan miktar</value>
+  </data>
+  <data name="RemainingDays" xml:space="preserve">
+    <value>Kalan günler</value>
+  </data>
+  <data name="Device" xml:space="preserve">
+    <value>Ekipman</value>
+  </data>
+  <data name="Table" xml:space="preserve">
+    <value>Zarif koltuk</value>
+  </data>
+  <data name="Package" xml:space="preserve">
+    <value>Paketlenmiş</value>
+  </data>
+  <data name="MemberDealsPrice" xml:space="preserve">
+    <value>Üye indirim miktarı</value>
+  </data>
+  <data name="MemberPaidPrice" xml:space="preserve">
+    <value>Üye ödenen miktarı</value>
+  </data>
+  <data name="TotalPaidPrice" xml:space="preserve">
+    <value>Toplam fiyatı ödeyin</value>
+  </data>
+  <data name="MemberBalancePrice" xml:space="preserve">
+    <value>Üye bakiyesi</value>
+  </data>
+  <data name="RegisterCount" xml:space="preserve">
+    <value>Kayıt sayısı</value>
+  </data>
+  <data name="Expenditure" xml:space="preserve">
+    <value>Harcama</value>
+  </data>
+  <data name="PrintTypeLimit" xml:space="preserve">
+    <value>Aynı yazıcı türünü ekleyemezsiniz!</value>
+  </data>
+  <data name="SameEnabledPrinterFailed" xml:space="preserve">
+    <value>Fatura türünde yalnızca bir yazıcı açılabilir!</value>
+  </data>
+  <data name="Server" xml:space="preserve">
+    <value>Sunucu</value>
+  </data>
+  <data name="PrintAfterBuy" xml:space="preserve">
+    <value>Satın alma işleminden sonra yazdırın</value>
+  </data>
+  <data name="PrintAfterCheckout" xml:space="preserve">
+    <value>Ödemeden sonra yazdırın</value>
+  </data>
+  <data name="LocalPrint" xml:space="preserve">
+    <value>Yerel olarak yazdırın</value>
+  </data>
+  <data name="ServerIpAddress" xml:space="preserve">
+    <value>Sunucu IP adresi</value>
+  </data>
+  <data name="OperateChangeNextStartup" xml:space="preserve">
+    <value>{0} başarılı, sistem bir sonraki başlatılışında etkili olacak!</value>
+  </data>
+  <data name="BarcodeNo" xml:space="preserve">
+    <value>Barkod numarası</value>
+  </data>
+  <data name="OnlyDisplaySelected" xml:space="preserve">
+    <value>Yalnızca seçili olanlar görüntülenir</value>
+  </data>
+  <data name="CurrentProductAlreadyExists" xml:space="preserve">
+    <value>Güncel  ürün zaten var!</value>
+  </data>
+  <data name="Statistic" xml:space="preserve">
+    <value>Istatistik</value>
+  </data>
+  <data name="Exception_InvalidMediaRoot" xml:space="preserve">
+    <value>Sunucu görüntü yolu geçersiz veya mevcut değil, lütfen klasörü veya ağı kontrol edin! Hata kodu: 100</value>
+  </data>
+  <data name="Canceld" xml:space="preserve">
+    <value>İptal edildi</value>
+  </data>
+  <data name="Exception_Relogin" xml:space="preserve">
+    <value>Oturumun süresi doldu, lütfen oturumu kapatın ve tekrar oturum açın!</value>
+  </data>
+  <data name="InputNotValid" xml:space="preserve">
+    <value>Lütfen güncel bilgileri doğru ve eksiksiz olarak girin!</value>
+  </data>
+  <data name="Bill" xml:space="preserve">
+    <value>Fatura</value>
+  </data>
+  <data name="IncomeManager" xml:space="preserve">
+    <value>Gelir yönetimi</value>
+  </data>
+  <data name="ExpendBill" xml:space="preserve">
+    <value>Gider faturası</value>
+  </data>
+  <data name="OwedPrice" xml:space="preserve">
+    <value>Borçlu olunan miktar</value>
+  </data>
+  <data name="IncomeStatistic" xml:space="preserve">
+    <value>Gelir istatistikleri</value>
+  </data>
+  <data name="SpendStatistic" xml:space="preserve">
+    <value>Harcama istatistikleri</value>
+  </data>
+  <data name="SellProductsStatistic" xml:space="preserve">
+    <value>Satılan Ürünlerin istatistikleri</value>
+  </data>
+  <data name="SpendProductsStatistic" xml:space="preserve">
+    <value>Ürün satın alma istatistikleri</value>
+  </data>
+  <data name="NotFoundAnyRecords" xml:space="preserve">
+    <value>Kayıt bulunamadı!</value>
+  </data>
+  <data name="Proportion" xml:space="preserve">
+    <value>Oran</value>
+  </data>
+  <data name="PermissionsMenu" xml:space="preserve">
+    <value>Yetki menüsü</value>
+  </data>
+  <data name="Exception_MemberDisabled" xml:space="preserve">
+    <value>Üye devre dışı bırakıldı!</value>
+  </data>
+  <data name="Income" xml:space="preserve">
+    <value>Gelir</value>
+  </data>
+  <data name="ImageMode" xml:space="preserve">
+    <value>Resim modu</value>
+  </data>
+  <data name="Exception_DeviceCountOutOfLimit" xml:space="preserve">
+    <value>Maksimum cihaz sayısı aşıldı! {0} hata kodu: 105</value>
+  </data>
+  <data name="NewPasswordSizeLimit" xml:space="preserve">
+    <value>Yeni şifre en az {0} basamaklı olmalıdır!</value>
+  </data>
+  <data name="AdminLog" xml:space="preserve">
+    <value>Yönetici günlüğü</value>
+  </data>
+  <data name="LogTitle" xml:space="preserve">
+    <value>Günlük başlığı</value>
+  </data>
+  <data name="LogContent" xml:space="preserve">
+    <value>Günlüğün içeriği</value>
+  </data>
+  <data name="AdminPay" xml:space="preserve">
+    <value>Yönetici ödemeleri</value>
+  </data>
+  <data name="AdminPayDescription" xml:space="preserve">
+    <value>Yönetici ödeme ayrıntılarını görüntüleyin</value>
+  </data>
+  <data name="AdminPayNo" xml:space="preserve">
+    <value>Yönetici ödeme numarası</value>
+  </data>
+  <data name="SupplierManager" xml:space="preserve">
+    <value>Tedarikçi yönetimi</value>
+  </data>
+  <data name="SupplierPay" xml:space="preserve">
+    <value>Tedarikçi ödemeleri</value>
+  </data>
+  <data name="SupplierPayDescription" xml:space="preserve">
+    <value>Tedarikçi ödeme ayrıntılarını görüntüleyin</value>
+  </data>
+  <data name="SupplierPayNo" xml:space="preserve">
+    <value>Tedarikçi ödeme numarası</value>
+  </data>
+  <data name="SupplierNo" xml:space="preserve">
+    <value>Tedarikçi numarası</value>
+  </data>
+  <data name="SupplierExpiredDescription" xml:space="preserve">
+    <value>Tedarikçinin son kullanma süresini değiştirin!</value>
+  </data>
+  <data name="SupplierName" xml:space="preserve">
+    <value>Satıcının adı</value>
+  </data>
+  <data name="AddSupplier" xml:space="preserve">
+    <value>Bir satıcı ekleyin</value>
+  </data>
+  <data name="SupplierExpired" xml:space="preserve">
+    <value>Geçerli tedarikçinin süresi doldu!</value>
+  </data>
+  <data name="Exception_SupplierDisabled" xml:space="preserve">
+    <value>Tedarikçi devre dışı!</value>
+  </data>
+  <data name="SupplierBalancePrice" xml:space="preserve">
+    <value>Satıcı dengesi</value>
+  </data>
+  <data name="SupplierBalanceNotEnough" xml:space="preserve">
+    <value>Tedarikçi dengesi yeterli değil!</value>
+  </data>
+  <data name="SupplierDealsPrice" xml:space="preserve">
+    <value>Tedarikçiler için indirimli fiyatlar</value>
+  </data>
+  <data name="SupplierPaidPrice" xml:space="preserve">
+    <value>Satıcı tarafından ödenen dengesi</value>
+  </data>
+  <data name="PleaseWait" xml:space="preserve">
+    <value>lütfen bkleyin ...</value>
+  </data>
+  <data name="CreatingTheDocument" xml:space="preserve">
+    <value>Belge oluşturmada...</value>
+  </data>
+  <data name="TableUsed" xml:space="preserve">
+    <value>Geçerli tablo kullanımda!</value>
+  </data>
+  <data name="Exception_InvalidType" xml:space="preserve">
+    <value>Lütfen güncel bilgileri doğru ve eksiksiz bir şekilde girin!</value>
+  </data>
+  <data name="ChangeCostPrice" xml:space="preserve">
+    <value>Maliyet fiyatını değiştirin</value>
+  </data>
+  <data name="IndexName" xml:space="preserve">
+    <value>Dizinin adı</value>
+  </data>
+  <data name="FinanceLog" xml:space="preserve">
+    <value>Finansal dergi</value>
+  </data>
+  <data name="OperateName" xml:space="preserve">
+    <value>Eylemin adı</value>
+  </data>
+  <data name="CashDrawer" xml:space="preserve">
+    <value>Nakit kutusu</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Açın</value>
+  </data>
+  <data name="IsPayByCard" xml:space="preserve">
+    <value>Kredi kartı ile ödemek</value>
+  </data>
+  <data name="CardPaidPrice" xml:space="preserve">
+    <value>Kredi kartı ile ödemek miktarı</value>
+  </data>
+  <data name="SpendPaysStatistic" xml:space="preserve">
+    <value>Ödeme harcama istatistikleri</value>
+  </data>
+  <data name="SalePaysStatistic" xml:space="preserve">
+    <value>Ödeme gelir istatistikleri</value>
+  </data>
+  <data name="BalancePay" xml:space="preserve">
+    <value>Bakiye ödemesi</value>
+  </data>
+  <data name="BalancePayDescription" xml:space="preserve">
+    <value>Bakiye ödeme ayrıntılarını görüntüleyin</value>
+  </data>
+  <data name="BalancePayNo" xml:space="preserve">
+    <value>Bakiye ödeme numarası</value>
+  </data>
+  <data name="SoftServiceNameWithoutVersion" xml:space="preserve">
+    <value>Oybab Ticaret Sistemi</value>
+  </data>
+  <data name="MediumLabelFontSize" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="LogoTitleLabelFontSize" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="SoftServiceVersion" xml:space="preserve">
+    <value>V1.1</value>
+  </data>
+  <data name="DirectionMode" xml:space="preserve">
+    <value>LeftToRight</value>
+  </data>
+  <data name="LoginUserInputMsg" xml:space="preserve">
+    <value>Lütfen yönetici numarasını girin</value>
+  </data>
+  <data name="LoginPasswordInputMsg" xml:space="preserve">
+    <value>Lütfen yönetici şifrenizi girin</value>
+  </data>
+  <data name="Reset2" xml:space="preserve">
+    <value>Sıfırlamak</value>
+  </data>
+  <data name="MediumButtonFontSize" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="OK2" xml:space="preserve">
+    <value>Tamam</value>
+  </data>
+  <data name="LittleKeyboardFontSize" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="HorizontalModel" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="CompanyLogoName" xml:space="preserve">
+    <value>Oybab Teknolojisi</value>
+  </data>
+  <data name="RegNoInputMessage" xml:space="preserve">
+    <value>Lütfen kayıt kodunuzu girin</value>
+  </data>
+  <data name="RegCountInputMessage" xml:space="preserve">
+    <value>Lütfen miktar kayıt kodunu girin</value>
+  </data>
+  <data name="TopLogoTitleLabelFontSize" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="LittleMediumLabelFontSize" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="Exception_AdminExists" xml:space="preserve">
+    <value>Şu anda bir yönetici tarafından kullanılıyor! {0} hata kodu: 113</value>
+  </data>
+  <data name="IncomeTradingManage" xml:space="preserve">
+    <value>Gelir işlem yönetimi</value>
+  </data>
+  <data name="Permission" xml:space="preserve">
+    <value>Izin</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>Gün</value>
+  </data>
+  <data name="Empty" xml:space="preserve">
+    <value>Boş</value>
+  </data>
+  <data name="Selected" xml:space="preserve">
+    <value>Seçili liste</value>
+  </data>
+  <data name="Products" xml:space="preserve">
+    <value>Ürün listesi</value>
+  </data>
+  <data name="Operate" xml:space="preserve">
+    <value>Işlem</value>
+  </data>
+  <data name="SelectedCount" xml:space="preserve">
+    <value>Miktarı seçin</value>
+  </data>
+  <data name="OperatingWait" xml:space="preserve">
+    <value>Lütfen bekleyin.....</value>
+  </data>
+  <data name="Cash" xml:space="preserve">
+    <value>Nakit</value>
+  </data>
+  <data name="Card" xml:space="preserve">
+    <value>Kredi kartı</value>
+  </data>
+  <data name="Member" xml:space="preserve">
+    <value>Üye</value>
+  </data>
+  <data name="Bind" xml:space="preserve">
+    <value>Bağlama</value>
+  </data>
+  <data name="Unbind" xml:space="preserve">
+    <value>Ayrıştırma</value>
+  </data>
+  <data name="MediumLargeButtonFontSize" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="OldRoomNo" xml:space="preserve">
+    <value>Eski koltuk numarası</value>
+  </data>
+  <data name="NewRoomNo" xml:space="preserve">
+    <value>Yeni koltuk numarası</value>
+  </data>
+  <data name="IpAddress2" xml:space="preserve">
+    <value>IP adresi</value>
+  </data>
+  <data name="RequestManager" xml:space="preserve">
+    <value>Gereksinimin yönetimi</value>
+  </data>
+  <data name="RequestName" xml:space="preserve">
+    <value>Gereksinimin adı</value>
+  </data>
+  <data name="Request2" xml:space="preserve">
+    <value>Gereksinim</value>
+  </data>
+  <data name="RequestDescription" xml:space="preserve">
+    <value>Geçerli verilere gereksinimler ekleyin.</value>
+  </data>
+  <data name="IsDisplayAll" xml:space="preserve">
+    <value>Hepsini göster</value>
+  </data>
+  <data name="CheckoutBy" xml:space="preserve">
+    <value>Ödemeci</value>
+  </data>
+  <data name="OrderPhoneNo" xml:space="preserve">
+    <value>Fatura telefon numarası</value>
+  </data>
+  <data name="PersonName" xml:space="preserve">
+    <value>Adı</value>
+  </data>
+  <data name="BillTypeInner" xml:space="preserve">
+    <value>İçişleri</value>
+  </data>
+  <data name="BillTypeOuter" xml:space="preserve">
+    <value>Dış</value>
+  </data>
+  <data name="BillType" xml:space="preserve">
+    <value>Fatura türü</value>
+  </data>
+  <data name="AddOuterBill" xml:space="preserve">
+    <value>Harici fatura ekleyin</value>
+  </data>
+  <data name="SuccessAndFailProperty" xml:space="preserve">
+    <value>Başarı: {0}, Başarısızlık: {1}.</value>
+  </data>
+  <data name="ConfirmSaveAll" xml:space="preserve">
+    <value>Hepsini kaydettiğinizden emin misiniz?</value>
+  </data>
+  <data name="Profit" xml:space="preserve">
+    <value>Net kazanç</value>
+  </data>
+  <data name="TypeName" xml:space="preserve">
+    <value>Türünün adı</value>
+  </data>
+  <data name="Summary" xml:space="preserve">
+    <value>Özetle</value>
+  </data>
+  <data name="SystemTimeInvalid" xml:space="preserve">
+    <value>Sistem ve sunucu süreleri tutarsız! {0} hata kodu: 106</value>
+  </data>
+  <data name="UnrecordedPrice" xml:space="preserve">
+    <value>Kaydedilmemiş miktar</value>
+  </data>
+  <data name="ReceivedPrice" xml:space="preserve">
+    <value>Alınan miktar</value>
+  </data>
+  <data name="Prefix" xml:space="preserve">
+    <value>Önek</value>
+  </data>
+  <data name="MultiLanguage" xml:space="preserve">
+    <value>Çok dilli</value>
+  </data>
+  <data name="Exception_DatabaseNotFound" xml:space="preserve">
+    <value>Uzak sunucu veritabanı bulunamadı, lütfen kontrol edin! Hata kodu: 108</value>
+  </data>
+  <data name="Exception_DatabaseLoadFailed" xml:space="preserve">
+    <value>Uzak sunucu veritabanı yüklemek için başarısız oldu! Hata kodu: 109</value>
+  </data>
+  <data name="NoLimit" xml:space="preserve">
+    <value>Herhangi bir kısıtlama yoktur</value>
+  </data>
+  <data name="ProductExpiredDescription" xml:space="preserve">
+    <value>Ürünün son kullanma süresini değiştirin!</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>Yok</value>
+  </data>
+  <data name="BarcodeReader" xml:space="preserve">
+    <value>Barkod okuyucu</value>
+  </data>
+  <data name="PrintBarcodeDescription" xml:space="preserve">
+    <value>Barkodu yazdır</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>Boyutu</value>
+  </data>
+  <data name="BarcodeLengthLimit" xml:space="preserve">
+    <value>Barkod uzunluğu 8 veya 13 bit olmalıdır!</value>
+  </data>
+  <data name="BillWide" xml:space="preserve">
+    <value>Fatura - geniş</value>
+  </data>
+  <data name="PrintAll" xml:space="preserve">
+    <value>Hepsini yazdır</value>
+  </data>
+  <data name="ConfirmBalanceInjustice" xml:space="preserve">
+    <value>Denge düzensiz, emin misin?</value>
+  </data>
+  <data name="ProductParentName" xml:space="preserve">
+    <value>Ana ürün adı</value>
+  </data>
+  <data name="ProductParentCount" xml:space="preserve">
+    <value>Ana ürünlerin sayısı</value>
+  </data>
+  <data name="Borrow" xml:space="preserve">
+    <value>Kredi</value>
+  </data>
+  <data name="CanNotExceed" xml:space="preserve">
+    <value>Toplam ödeme tutarı {0} yuan!</value>
+  </data>
+  <data name="ChangeCount" xml:space="preserve">
+    <value>Miktarı değiştirin</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Uçlar</value>
+  </data>
+  <data name="InnerBill" xml:space="preserve">
+    <value>Dahili faturalar</value>
+  </data>
+  <data name="OuterBill" xml:space="preserve">
+    <value>Dış faturalar</value>
+  </data>
+  <data name="IndexNameOrBarcode" xml:space="preserve">
+    <value>Lütfen dizin adını veya barkod'u girin</value>
+  </data>
+  <data name="Exception_DeviceExists" xml:space="preserve">
+    <value>Cihaz şu anda kullanımda! {0} hata kodu: 115</value>
+  </data>
+  <data name="ReturnId" xml:space="preserve">
+    <value>İade numarası</value>
+  </data>
+  <data name="ReturnBill" xml:space="preserve">
+    <value>Faturayı iade edin</value>
+  </data>
+  <data name="BalanceManager" xml:space="preserve">
+    <value>Denge yönetimi</value>
+  </data>
+  <data name="BalanceName" xml:space="preserve">
+    <value>Bakiye adı</value>
+  </data>
+  <data name="IsBind" xml:space="preserve">
+    <value>Bağlama</value>
+  </data>
+  <data name="CardOnlyCouldBindOnce" xml:space="preserve">
+    <value>En fazla sadece bir kart bağlanabilir!</value>
+  </data>
+  <data name="AccountBank" xml:space="preserve">
+    <value>Banka hesap açma</value>
+  </data>
+  <data name="AccountName" xml:space="preserve">
+    <value>Hesap adı</value>
+  </data>
+  <data name="AccountNo" xml:space="preserve">
+    <value>Hesap açma</value>
+  </data>
+  <data name="ReturnType" xml:space="preserve">
+    <value>İade türü</value>
+  </data>
+  <data name="ReturnManager" xml:space="preserve">
+    <value>İade yönetimi</value>
+  </data>
+  <data name="FromCustomer" xml:space="preserve">
+    <value>Müşteriden</value>
+  </data>
+  <data name="ToSupplier" xml:space="preserve">
+    <value>Tedarikçiye geri dönün</value>
+  </data>
+  <data name="ReturnDetails" xml:space="preserve">
+    <value>Ayrıntıları iade edin</value>
+  </data>
+  <data name="IsChange" xml:space="preserve">
+    <value>Değiştirmek</value>
+  </data>
+  <data name="CheckoutReturn" xml:space="preserve">
+    <value>Ödeme iadesi</value>
+  </data>
+  <data name="BalancePaysIncomeStatistic" xml:space="preserve">
+    <value>Bakiye ödeme gelir istatistikleri</value>
+  </data>
+  <data name="BalancePaysSpendStatistic" xml:space="preserve">
+    <value>Bakiye ödeme gideri istatistikleri</value>
+  </data>
+  <data name="BalancePayByCash" xml:space="preserve">
+    <value>Bakiye ödemesi (nakit)</value>
+  </data>
+  <data name="BalancePayByCard" xml:space="preserve">
+    <value>Bakiye ödemesi (kart)</value>
+  </data>
+  <data name="MemberPayByCash" xml:space="preserve">
+    <value>Üye Ödemeleri (Nakit)</value>
+  </data>
+  <data name="MemberPayByCard" xml:space="preserve">
+    <value>Üye ödemesi (kart)</value>
+  </data>
+  <data name="SupplierPayByCash" xml:space="preserve">
+    <value>Tedarikçi ödemeleri (nakit)</value>
+  </data>
+  <data name="SupplierPayByCard" xml:space="preserve">
+    <value>Tedarikçi ödemesi (kart)</value>
+  </data>
+  <data name="AdminPayByCash" xml:space="preserve">
+    <value>Yönetici ödemesi (nakit)</value>
+  </data>
+  <data name="AdminPayByCard" xml:space="preserve">
+    <value>Yönetici ödemesi (kart)</value>
+  </data>
+  <data name="ReturnStatistic" xml:space="preserve">
+    <value>İade istatistikleri</value>
+  </data>
+  <data name="AdminSaleStatistic" xml:space="preserve">
+    <value>Yönetici satış istatistikleri</value>
+  </data>
+  <data name="ReturnProductsStatistic" xml:space="preserve">
+    <value>İade edilen ürün istatistikleri</value>
+  </data>
+  <data name="ReplaceCount" xml:space="preserve">
+    <value>Değiştirmelerin sayısı</value>
+  </data>
+  <data name="RecordCount" xml:space="preserve">
+    <value>Kayıt sayısı</value>
+  </data>
+  <data name="Return" xml:space="preserve">
+    <value>Dönüş</value>
+  </data>
+  <data name="CardPrice" xml:space="preserve">
+    <value>Kredi kartı fiyatı</value>
+  </data>
+  <data name="CardBalancePrice" xml:space="preserve">
+    <value>Kart bakiyesi</value>
+  </data>
+  <data name="OtherPrice" xml:space="preserve">
+    <value>Diğer fiyatlar</value>
+  </data>
+  <data name="Supplier" xml:space="preserve">
+    <value>Tedarikçi</value>
+  </data>
+  <data name="PrintInfo" xml:space="preserve">
+    <value>Fatura bilgileri</value>
+  </data>
+  <data name="Test" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="InputPhoneNoFirst" xml:space="preserve">
+    <value>Fatura bilgilerini girerseniz, önce telefon numaranızı girin!</value>
+  </data>
+  <data name="PriceMonitor" xml:space="preserve">
+    <value>Fiyat görüntülenir</value>
+  </data>
+  <data name="ProductProfitStatistic" xml:space="preserve">
+    <value>Ürün kar istatistikleri</value>
+  </data>
+  <data name="IsBindWeigh" xml:space="preserve">
+    <value>Bağlayıcı ağırlık</value>
+  </data>
+  <data name="PageHeight" xml:space="preserve">
+    <value>Sayfanın yüksekliği</value>
+  </data>
+  <data name="CancelAndDelete" xml:space="preserve">
+    <value>İptal edin ve silin</value>
+  </data>
+  <data name="CashWithCard" xml:space="preserve">
+    <value>Nakit: ¥{0}. Kaydırma: ¥{1}.</value>
+  </data>
+  <data name="AdminCantCreateAnAdmin" xml:space="preserve">
+    <value>Yöneticiler yönetici ekemez!</value>
+  </data>
+  <data name="IncomePermission" xml:space="preserve">
+    <value>Gelir izinleri</value>
+  </data>
+  <data name="ExpenditurePermission" xml:space="preserve">
+    <value>Harcama izinleri</value>
+  </data>
+  <data name="TemporaryChangePrice" xml:space="preserve">
+    <value>Fiyatı geçici olarak değiştirin</value>
+  </data>
+  <data name="ChangeUnitPrice" xml:space="preserve">
+    <value>Birim fiyatı değiştirin</value>
+  </data>
+  <data name="AddPrice" xml:space="preserve">
+    <value>Miktarı artırın</value>
+  </data>
+  <data name="AddMemberBalancePrice" xml:space="preserve">
+    <value>Üyenin kalan miktarını artırın</value>
+  </data>
+  <data name="PosTopTitleFontSize" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="PosTotalPriceFontSize" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="PosCountFontSize" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="PosDescriptionFontSize" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Kullanıcı</value>
+  </data>
+  <data name="PosContentFontSize" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="PosDescription" xml:space="preserve">
+    <value>Ürün ara: F3, Evreleme: F7, Kurtarma: F8, Bağlayıcı Üye: F10, Kapalı: F12, Dili değiştir: TAB, Para kutusunu açın.: Alt-Z, Konumlandırma: s ← →, Sayfa Açma: PgUp/PgDn, Miktarı Artırın: s, Miktar Azaltın:-, Select/Ok: Girin, Seçili Sil: Del, İptal/İade: Esc,.</value>
+  </data>
+  <data name="Restore" xml:space="preserve">
+    <value>Kurtarma</value>
+  </data>
+  <data name="CardReader" xml:space="preserve">
+    <value>Kart okuyucu</value>
+  </data>
+  <data name="CardNo" xml:space="preserve">
+    <value>Kart numarası</value>
+  </data>
+  <data name="CardNoExists" xml:space="preserve">
+    <value>Kart numarası zaten mevcut, değiştirmeyi onaylıyor musunuz?</value>
+  </data>
+  <data name="SuccessReadBarcode" xml:space="preserve">
+    <value>Barkodu başarıyla okuyun!</value>
+  </data>
+  <data name="SuccessReadCardNo" xml:space="preserve">
+    <value>Kartı başarıyla okuyun!</value>
+  </data>
+  <data name="ServerIpAddress2" xml:space="preserve">
+    <value>Sunucu adresi</value>
+  </data>
+  <data name="BindMemberByNo" xml:space="preserve">
+    <value>Üyeleri sayıya göre bağla</value>
+  </data>
+  <data name="BindSupplierByNo" xml:space="preserve">
+    <value>Tedarikçileri numaraya göre bağlama</value>
+  </data>
+  <data name="BarcodeScales" xml:space="preserve">
+    <value>Barkod ölçekler</value>
+  </data>
+  <data name="SendData" xml:space="preserve">
+    <value>Veri gönderin</value>
+  </data>
+  <data name="IncorrectProductData" xml:space="preserve">
+    <value>Ürün bilgilerinde geçersiz veriler var!</value>
+  </data>
+  <data name="IncorrectProductName" xml:space="preserve">
+    <value>Ürün adında geçersiz veriler var!</value>
+  </data>
+  <data name="UnableToConnectIPAddress" xml:space="preserve">
+    <value>Bir IP adresine bağlanamıyorum!</value>
+  </data>
+  <data name="ConfirmNotPay" xml:space="preserve">
+    <value>Ödemeyeceğinden emin misin?</value>
+  </data>
+  <data name="ReadResourceStrError" xml:space="preserve">
+    <value>Kaynak okuma hatası!</value>
+  </data>
+  <data name="FreeRoomPriceLimit" xml:space="preserve">
+    <value>Ücretsiz fiyat sınırı</value>
+  </data>
+  <data name="CancelFireAlarm" xml:space="preserve">
+    <value>Yangın alarmını iptal et</value>
+  </data>
+  <data name="ConfirmOperate" xml:space="preserve">
+    <value>{0} onaylandı mı?</value>
+  </data>
+  <data name="DeleteProduct" xml:space="preserve">
+    <value>Öğeyi silin</value>
+  </data>
+  <data name="OpenCashDrawer" xml:space="preserve">
+    <value>Para kutusunu aç</value>
+  </data>
+  <data name="Paid" xml:space="preserve">
+    <value>Ödeme</value>
+  </data>
+  <data name="Platform" xml:space="preserve">
+    <value>Platform</value>
+  </data>
+  <data name="UnlimitedTime" xml:space="preserve">
+    <value>Sınırsız zaman</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>Açık</value>
+  </data>
+  <data name="DecreaseProductCount" xml:space="preserve">
+    <value>Ürün sayısını azaltın</value>
+  </data>
+  <data name="FaildThenWaitRetry" xml:space="preserve">
+    <value>Operasyon başarısız oldu, operasyon çok hızlı, lütfen tekrar deneyin!</value>
+  </data>
+  <data name="RemovePrice" xml:space="preserve">
+    <value>Fiyatı kaldırın</value>
+  </data>
+  <data name="Exception_ServerClientVersionMisalignment" xml:space="preserve">
+    <value>Uzak sunucu sistemi sürümü mevcut istemci sistemi sürümü ile tutarlı değildir, aynı sistem sürümüne güncelleme lütfen!</value>
+  </data>
+  <data name="Exception_ServerClientTimeMisalignment" xml:space="preserve">
+    <value>Uzaktan servis yan sistem süresi ve geçerli istemci sistemi süresi tutarlı değildir, aynı zamanda güncellemelütfen!</value>
+  </data>
+  <data name="ConfirmAddPay" xml:space="preserve">
+    <value>{2} ile {3} arasında {0} {1} eklemeyi onaylıyor musunuz?</value>
+  </data>
+  <data name="BalanceTransfer" xml:space="preserve">
+    <value>Transfer bakiyesi</value>
+  </data>
+  <data name="OldBalance" xml:space="preserve">
+    <value>Eski denge</value>
+  </data>
+  <data name="NewBalance" xml:space="preserve">
+    <value>Yeni denge</value>
+  </data>
+  <data name="BalanceTransferDescription" xml:space="preserve">
+    <value>Bakiyeler arasında para transferi</value>
+  </data>
+  <data name="LangName" xml:space="preserve">
+    <value>Türk</value>
+  </data>
+  <data name="HightFix" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Culcure" xml:space="preserve">
+    <value>tr-TR</value>
+  </data>
+  <data name="Dir" xml:space="preserve">
+    <value>ltr</value>
+  </data>
+  <data name="LargeFont" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="EnableAntialiasing" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="GlobalSetting" xml:space="preserve">
+    <value>Genel ayarlar</value>
+  </data>
+  <data name="PriceSymbol" xml:space="preserve">
+    <value>Fiyat sembolü</value>
+  </data>
+  <data name="Main" xml:space="preserve">
+    <value>Ana</value>
+  </data>
+  <data name="SystemLanguage" xml:space="preserve">
+    <value>Sistem dili</value>
+  </data>
+  <data name="SystemLanguageCantSame" xml:space="preserve">
+    <value>Sistem dilleri aynı olamaz!</value>
+  </data>
+  <data name="SystemLanguageChangeWarn" xml:space="preserve">
+    <value>Sistem dilindeki değişiklikler sistemi etkileyebilir, değişiklikleri onaylayabilir mi?</value>
+  </data>
+  <data name="PermissionsMenuDescription" xml:space="preserve">
+    <value>Yönetici izinlerini değiştirin</value>
+  </data>
+  <data name="ReturnMoney" xml:space="preserve">
+    <value>Parayı geri ver</value>
+  </data>
+  <data name="CanNotExceedConfirm" xml:space="preserve">
+    <value>Toplam ödeme tutarı {0} yuan! İade etmeyi onaylıyor musunuz?</value>
+  </data>
+  <data name="Exception_PasswordErrorCountLimit" xml:space="preserve">
+    <value>Çok fazla şifre hatası, lütfen daha sonra tekrar deneyin!</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>Şirketin adı</value>
+  </data>
+  <data name="CustomFont_Android" xml:space="preserve">
+    <value>OybabTuz.ttf#Oybab Tuz</value>
+  </data>
+  <data name="CustomFont_iOS" xml:space="preserve">
+    <value>Oybab Tuz</value>
+  </data>
+  <data name="CustomFont_UWP" xml:space="preserve">
+    <value>/Assets/OybabTuz.ttf#Oybab Tuz</value>
+  </data>
+  <data name="SavePassword" xml:space="preserve">
+    <value>Parolanızı kaydedin</value>
+  </data>
+  <data name="Tsmi_Lang_Icon" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="IncomeTypeStatistic" xml:space="preserve">
+    <value>Gelir türü istatistikleri</value>
+  </data>
+  <data name="SpendTypeStatistic" xml:space="preserve">
+    <value>Gider türü istatistikleri</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Işlev</value>
+  </data>
+  <data name="Agree" xml:space="preserve">
+    <value>Kabul</value>
+  </data>
+  <data name="PrivacyPolicy" xml:space="preserve">
+    <value>Gizlilik Politikası</value>
+  </data>
+  <data name="Exception_AdminUsing" xml:space="preserve">
+    <value>Şu anda bir yönetici tarafından kullanılıyor! Kendi işleminiz değilse, lütfen parolayı zamanında değiştirin!</value>
+  </data>
+  <data name="UserAgreement" xml:space="preserve">
+    <value>Kullanıcı protokolü</value>
+  </data>
+  <data name="And" xml:space="preserve">
+    <value>ve</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>Tarih</value>
+  </data>
+  <data name="HistoryDescription" xml:space="preserve">
+    <value>Geçerli verilerin geçmişini görüntüleyin.</value>
+  </data>
+  <data name="CompanyAbbreviation" xml:space="preserve">
+    <value>Oybab teknolojisi</value>
+  </data>
+  <data name="License" xml:space="preserve">
+    <value>Anlaşma</value>
+  </data>
+  <data name="Donate" xml:space="preserve">
+    <value>Bağış</value>
+  </data>
+  <data name="SourceCode" xml:space="preserve">
+    <value>Kaynak kodu</value>
+  </data>
+  <data name="ConfirmItemBalanceNotEnough" xml:space="preserve">
+    <value>{0} bakiye yeterli değil, onaylıyor musunuz?</value>
+  </data>
+</root>
