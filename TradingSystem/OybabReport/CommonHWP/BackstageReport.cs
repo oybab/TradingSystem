@@ -51,7 +51,7 @@ namespace Oybab.Report.CommonHWP
             // 先处理字体
             foreach (var item in reportModel.Fonts)
             {
-                newStr.Append(".").Append(item.Key).Append("{").Append("color:#000000; font-family:'").Append(item.Value.FontFamily.Name).Append("', '微软雅黑', 'Tahoma', 'Times New Roman','Arial'; font-size:").Append(item.Value.Size + "pt;}").AppendLine();
+                newStr.Append(".").Append(item.Key).Append("{").Append("color:#000000; font-family:'").Append(item.Value.FontFamily.Name).Append("', 'Microsoft YaHei', 'Tahoma', 'Times New Roman','Arial'; font-size:").Append(item.Value.Size + "pt;}").AppendLine();
             }
             htmlContent = htmlContent.Replace("/*${DynamicStyles}*/", newStr.ToString());
 

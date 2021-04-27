@@ -11766,7 +11766,7 @@ namespace Oybab.ServerManager.Operate
                     {
                         balance = JsonConvert.SerializeObject(Resources.GetRes().BALANCES.Where(x => x.HideType != 1).ToList().Select(x =>
                         {
-                            return x.FastCopy().ReChangeBalance();
+                            return x.FastCopy().ReChangeBalance(true);
                         }).ToList());
 
                         Result = true;
@@ -11777,7 +11777,7 @@ namespace Oybab.ServerManager.Operate
 
                         balance = JsonConvert.SerializeObject(Resources.GetRes().BALANCES.Where(x => x.HideType != 1).ToList().Select(x =>
                         {
-                            return x.FastCopy().ReChangeBalance();
+                            return x.FastCopy().ReChangeBalance(true);
                         }).ToList());
 
 

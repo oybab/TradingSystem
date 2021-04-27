@@ -186,6 +186,9 @@ namespace Oybab.ServicePC.SubWindow
             int SelectedIndex = krpcbBalancePay.SelectedIndex;
 
             krpcbBalancePay.Items.Clear();
+
+            
+
             if (null != balances && balances.Count > 0)
             {
 

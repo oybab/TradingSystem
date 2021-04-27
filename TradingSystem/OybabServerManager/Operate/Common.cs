@@ -292,7 +292,7 @@ namespace Oybab.ServerManager.Operate
             model.tb_adminpay = null;
         }
 
-        public static Balance ReChangeBalance(this Balance model)
+        public static Balance ReChangeBalance(this Balance model, bool withOrder = false)
         {
             // We need that to know Balance
             //x.BalanceId = 0;
@@ -308,7 +308,8 @@ namespace Oybab.ServerManager.Operate
             model.BalanceType = 0;
             model.HideType = 0;
             model.IsBind = 0;
-            model.Order = 0;
+            if (!withOrder)
+                model.Order = 0;
             model.Remark = null;
             model.RemoveRate = 0;
             model.UpdateTime = null;
