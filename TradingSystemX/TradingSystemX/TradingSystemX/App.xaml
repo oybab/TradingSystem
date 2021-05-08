@@ -62,8 +62,8 @@
 
 
 
-
-
+        <!-- We could use different font for different language in the future -->
+        <!--https://github.com/xamarin/Xamarin.Forms/issues/9716-->
         <OnPlatform x:TypeArguments="x:String" x:Key="NormalFont">
             <On Platform="Android" Value="OybabTuz.ttf#Oybab Tuz" />
             <On Platform="UWP" Value="/Assets/OybabTuz.ttf#Oybab Tuz" />
@@ -127,7 +127,6 @@
         <Style TargetType="Entry">
             <Setter Property="FontFamily" Value="{StaticResource NormalFont}"/>
         </Style>
-
 
 
         <Style TargetType="DatePicker">
