@@ -1,4 +1,4 @@
-v.1.1.0(-):
+v.1.1.0(2021.5.8):
 Add some new languages.
 Update to new Report library. Remove all DevExpress report component.
 Add statistic for Phone client.
