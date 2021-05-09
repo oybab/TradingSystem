@@ -83,3 +83,9 @@ Before you download the source code and use, make sure installed the prerequisit
  3. Open solution with Visual Studio and restore all project Nuget Packages.
  4. We recommend you run 2 Visual Studio instance when developing.(1.run `OybabServiceConsoleHost` as a server service and debugging, another 1 run `PC`/`Table`/`Phone` Client project and debugging)
  5. Start your journey.
+
+
+
+# Donations
+
+To support this project, you can make a [donation](https://oybab.net/tradingsystem/donate).
