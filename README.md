@@ -2,7 +2,7 @@
 
 <img src="banner.jpg" alt="Oybab Trading System banner">
 
-Oybab Trading System is an open source **trading system** that support **multiple language** and run in **multiple device** (By windows platform for now). Also it totally free for the end users which use the final binary / assembly files.
+Oybab Trading System is an open source **trading system** that support **multiple language** and run in **multiple device** (Windows platform , or all mobile platforms). Also it totally free for the end users which use the final binary / assembly files.
 
 See more [Screenshots](https://oybab.net/Screenshots.html).
 
