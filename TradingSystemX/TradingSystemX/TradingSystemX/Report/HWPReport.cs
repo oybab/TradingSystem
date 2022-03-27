@@ -79,37 +79,55 @@ namespace Oybab.TradingSystemX.Report
         internal string GetFont(StatisticModel reportModel)
         {
 
-
-
-            string fontFamilyName = reportModel.Fonts.FirstOrDefault().Value.FontFamily;
-            string fontAddress = "https://oybab.net/res/tradingsystem/fonts/" + fontFamilyName + "/" + fontFamilyName;
-
-            if (Device.RuntimePlatform == Device.iOS)
+            if (Res.Instance.GetString("UseCustomFont") == "1")
             {
-                fontAddress = "src: url('" + Resources.Instance.GetString("CustomFont_iOS") + ".ttf');";
-            }
-            else if (Device.RuntimePlatform == Device.Android)
-            {
-                fontAddress = "src: url('file:///android_asset/" + Resources.Instance.GetString("CustomFont_Android").Split('#')[0] + "');";
-            }
-            else if (Device.RuntimePlatform == Device.UWP)
-            {
-                fontAddress = @"src: url('ms-appx-web://" + Resources.Instance.GetString("CustomFont_UWP").Split('#')[0] + "');";
-            }
-            else
-            {
-                fontAddress = "src:url('" + fontAddress + ".eot');"
-                            + "src:url('" + fontAddress + ".eot?#iefix') format('embedded-opentype'),url('" + fontAddress + ".woff2') format('woff2'),url(" + fontAddress + ".woff') format('woff'),url('" + fontAddress + ".ttf') format('truetype'); ";
+                string fontFamilyName = reportModel.Fonts.FirstOrDefault().Value.FontFamily;
+                string fontAddress = "https://oybab.net/res/tradingsystem/fonts/" + fontFamilyName + "/" + fontFamilyName;
+
+                if (Device.RuntimePlatform == Device.iOS)
+                {
+                    fontAddress = "src: url('" + Resources.Instance.GetString("CustomFont_iOS") + ".ttf');";
+                }
+                else if (Device.RuntimePlatform == Device.Android)
+                {
+                    fontAddress = "src: url('file:///android_asset/" + Resources.Instance.GetString("CustomFont_Android").Split('#')[0] + "');";
+                }
+                else if (Device.RuntimePlatform == Device.UWP)
+                {
+                    // Debug not working for now
+                    fontAddress = @"src: url('ms-appx-web://" + Resources.Instance.GetString("CustomFont_UWP").Split('#')[0] + "');";
+                }
+                else
+                {
+                    fontAddress = "src:url('" + fontAddress + ".eot');"
+                                + "src:url('" + fontAddress + ".eot?#iefix') format('embedded-opentype'),url('" + fontAddress + ".woff2') format('woff2'),url(" + fontAddress + ".woff') format('woff'),url('" + fontAddress + ".ttf') format('truetype'); ";
+                }
+
+                // 新增fong-face
+                return "@font-face {"
+                                + "font-family: '" + fontFamilyName + "';"
+                                + fontAddress
+                                + "font-weight: normal;"
+                                + "font-style: normal;"
+                                + "}";
             }
 
+            return "";
 
-            // 新增fong-face
-            return "@font-face {"
-                            + "font-family: '" + fontFamilyName + "';"
-                            + fontAddress
-                            + "font-weight: normal;"
-                            + "font-style: normal;"
-                            + "}";
+            //else
+            //{
+            //    // 新增fong-face
+            //    return "@font-face {"
+            //                    + "font-family: 'Arial';"
+            //                    + "font-weight: normal;"
+            //                    + "font-style: normal;"
+            //                    + "}";
+            //}
+
+          
+
+
+            
 
         }
 

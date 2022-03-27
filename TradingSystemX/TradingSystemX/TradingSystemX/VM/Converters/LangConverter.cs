@@ -15,7 +15,7 @@ namespace Oybab.TradingSystemX.VM.Converters
 
         #region Instance
         /// <summary>
-        /// For Controls
+        /// For Langauge
         /// </summary>
         private static LangConverter _instance;
         public static LangConverter Instance

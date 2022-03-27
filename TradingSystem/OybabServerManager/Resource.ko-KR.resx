@@ -1944,4 +1944,7 @@
   <data name="ConfirmItemBalanceNotEnough" xml:space="preserve">
     <value>{0} 잔액이 부족합니다, 확인하시겠습니까?</value>
   </data>
+  <data name="UseCustomFont" xml:space="preserve">
+    <value>0</value>
+  </data>
 </root>

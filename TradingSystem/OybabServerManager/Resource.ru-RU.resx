@@ -1944,4 +1944,7 @@
   <data name="ConfirmItemBalanceNotEnough" xml:space="preserve">
     <value>Недостаточно остатка {0}, подтвердить?</value>
   </data>
+  <data name="UseCustomFont" xml:space="preserve">
+    <value>0</value>
+  </data>
 </root>

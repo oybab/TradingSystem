@@ -363,6 +363,8 @@ namespace Oybab.Res
             System.Globalization.CultureInfo culture = new System.Globalization.CultureInfo(name);
             System.Threading.Thread.CurrentThread.CurrentCulture = culture;
             System.Threading.Thread.CurrentThread.CurrentUICulture = culture;
+
+            System.Threading.Thread.CurrentThread.CurrentCulture.DateTimeFormat.Calendar = new GregorianCalendar();
         }
 
         /// <summary>

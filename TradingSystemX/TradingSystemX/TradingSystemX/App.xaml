@@ -44,6 +44,8 @@
         <converter:PriceConverter x:Key="PC"/>
         <!-- 已选索引转换器 -->
         <converter:ListViewIndexConverter x:Key="LVIC"/>
+        <!-- 自定义字体 -->
+        <converter:CustomFontConverter x:Key="CustomFontConverter"/>
 
 
       
@@ -99,42 +101,47 @@
             <Setter Property="Scale" Value="{StaticResource ActivityIndicatorSize}"/>
         </Style>
 
+        
+        
 
-        <!--<OnPlatform x:TypeArguments="x:String" x:Key="NormalFont">
+        <!--
+        Microsoft ...... too slow, use converter for now  https://github.com/xamarin/Xamarin.Forms/issues/9716
+        
+        <OnPlatform x:TypeArguments="x:String" x:Key="NormalFont">
                 <On Platform="Android" Value="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=CustomFont_Android}" />
                 <On Platform="UWP" Value="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=CustomFont_UWP}" />
                 <On Platform="iOS" Value="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=CustomFont_iOS}" />
             </OnPlatform>-->
 
         <Style TargetType="Button">
-            <Setter Property="FontFamily" Value="{StaticResource NormalFont}"/>
+            <Setter Property="FontFamily" Value="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource CustomFontConverter},ConverterParameter={StaticResource NormalFont}}"/>
             <Setter Property="TextColor" Value="{DynamicResource ButtonColor}"/>
         </Style>
 
         <Style TargetType="Label">
-            <Setter Property="FontFamily" Value="{StaticResource NormalFont}"/>
+            <Setter Property="FontFamily" Value="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource CustomFontConverter},ConverterParameter={StaticResource NormalFont}}"/>
             <Setter Property="TextColor" Value="{DynamicResource LabelColor}"/>
         </Style>
 
         <Style TargetType="Picker">
-            <Setter Property="FontFamily" Value="{StaticResource NormalFont}"/>
+            <Setter Property="FontFamily" Value="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource CustomFontConverter},ConverterParameter={StaticResource NormalFont}}"/>
         </Style>
 
         <Style TargetType="Editor">
-            <Setter Property="FontFamily" Value="{StaticResource NormalFont}"/>
+            <Setter Property="FontFamily" Value="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource CustomFontConverter},ConverterParameter={StaticResource NormalFont}}"/>
         </Style>
 
         <Style TargetType="Entry">
-            <Setter Property="FontFamily" Value="{StaticResource NormalFont}"/>
+            <Setter Property="FontFamily" Value="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource CustomFontConverter},ConverterParameter={StaticResource NormalFont}}"/>
         </Style>
 
 
         <Style TargetType="DatePicker">
-            <Setter Property="FontFamily" Value="{StaticResource NormalFont}"/>
+            <Setter Property="FontFamily" Value="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource CustomFontConverter},ConverterParameter={StaticResource NormalFont}}"/>
         </Style>
 
         <Style TargetType="TimePicker">
-            <Setter Property="FontFamily" Value="{StaticResource NormalFont}"/>
+            <Setter Property="FontFamily" Value="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource CustomFontConverter},ConverterParameter={StaticResource NormalFont}}"/>
         </Style>
 
 

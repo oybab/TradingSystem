@@ -1944,4 +1944,7 @@
   <data name="EnableAntialiasing" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="UseCustomFont" xml:space="preserve">
+    <value>0</value>
+  </data>
 </root>

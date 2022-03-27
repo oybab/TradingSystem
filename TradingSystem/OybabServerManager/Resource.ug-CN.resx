@@ -1944,4 +1944,7 @@
   <data name="ConfirmItemBalanceNotEnough" xml:space="preserve">
 		<value>{0} قالدۇق سوممىسى يېتەرلىك ئەمەس، جەزىملەشتۈرەمسىز ؟‏</value>
 	</data>
+  <data name="UseCustomFont" xml:space="preserve">
+    <value>1</value>
+  </data>
 </root>

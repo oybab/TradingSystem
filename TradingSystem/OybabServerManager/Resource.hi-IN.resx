@@ -1944,4 +1944,7 @@
   <data name="Tsmi_Lang_Icon" xml:space="preserve">
     <value>-</value>
   </data>
+  <data name="UseCustomFont" xml:space="preserve">
+    <value>0</value>
+  </data>
 </root>

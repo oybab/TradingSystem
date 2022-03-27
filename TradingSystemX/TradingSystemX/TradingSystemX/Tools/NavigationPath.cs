@@ -42,6 +42,10 @@ namespace Oybab.TradingSystemX.Tools
 
             NavigationList[CurrentNavigate].Add(page);
 
+
+            if (CurrentNavigate.Navigation.NavigationStack.Count > 1 && CurrentNavigate.Navigation.NavigationStack.Contains(page))
+                CurrentNavigate.Navigation.RemovePage(page);
+
             if (IsModal)
                 CurrentNavigate.Navigation.PushModalAsync(page, IsAnimate);
             else
@@ -355,6 +359,9 @@ namespace Oybab.TradingSystemX.Tools
                 NavigationMasterDetailList[CurrentMasterDetailNavigate].Remove(page);
 
             NavigationMasterDetailList[CurrentMasterDetailNavigate].Add(page);
+
+            if (CurrentNavigate.Navigation.NavigationStack.Count > 1 && CurrentMasterDetailNavigate.Navigation.NavigationStack.Contains(page))
+                CurrentMasterDetailNavigate.Navigation.RemovePage(page);
 
             if (IsModal)
                 CurrentMasterDetailNavigate.Navigation.PushModalAsync(page, IsAnimate);

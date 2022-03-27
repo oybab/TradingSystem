@@ -1944,4 +1944,7 @@
   <data name="PosDescription" xml:space="preserve">
 		<value>تلاش کی مصنوعات: F3 ، عارضی اسٹوریج: F7 ، بحالی: F8 ، پابند رکنیت: F10 ، بند  کرنا: F12 ، زبان تبدیل کریں: TAB ، کیش  باکس  کھولنا: Alt + Z ، پوزیشن:  ↓↑   → ←  ، صفحے کا رخ: PgUp / PgDn، مقدار میں اضافہ: + ، مقدار کم کریں: - ، منتخب کریں / ٹھیک ہے: Enter ، منتخب کردہ حذف کریں: Del ، منسوخ / واپس: Esc .</value>
 	</data>
+  <data name="UseCustomFont" xml:space="preserve">
+    <value>0</value>
+  </data>
 </root>

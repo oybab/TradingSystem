@@ -1944,4 +1944,7 @@
   <data name="ConfirmItemBalanceNotEnough" xml:space="preserve">
     <value>رصيد {0} غير كافٍ، هل أنت متأكد ؟‏</value>
   </data>
+  <data name="UseCustomFont" xml:space="preserve">
+    <value>0</value>
+  </data>
 </root>

@@ -44,7 +44,10 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
             if (Resources.Instance.IsSavePassword && !string.IsNullOrWhiteSpace(Resources.Instance.LastLoginPassword))
                 Password = Resources.Instance.LastLoginPassword;
             if (Resources.Instance.IsSavePassword)
+            {
                 IsSavePassword = Resources.Instance.IsSavePassword;
+                IsAgreeRequirements = true;
+            }
 
             if (InitCount > 0)
             {
@@ -152,7 +155,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
             }
         }
 
-        private bool _isAgreeRequirements = true;
+        private bool _isAgreeRequirements = false;
         /// <summary>
         /// 是否同意要求
         /// </summary>
@@ -253,8 +256,13 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
             {
                 return _loginCommand ?? (_loginCommand = new RelayCommand(async param =>
                 {
+                    if (!IsAgreeRequirements)
+                    {
+                        QueueMessageBoxNotification.Instance.ActionMessageBox(null, null, CommandTitles.Instance.Warn, string.Format(Resources.Instance.GetString("ConfirmOperate"), " " + Resources.Instance.GetString("PrivacyPolicy") + " " + Resources.Instance.GetString("And") + " " + Resources.Instance.GetString("UserAgreement") + " "), MessageBoxMode.Dialog, MessageBoxImageMode.Warn, MessageBoxButtonMode.OK, null, null);
+                        return;
+                    }
                     //判断是否空
-                    if (AdminNo.Trim().Equals("") || Password.Trim().Equals("") || !IsAgreeRequirements)
+                    if (AdminNo.Trim().Equals("") || Password.Trim().Equals(""))
                     {
 
                     }

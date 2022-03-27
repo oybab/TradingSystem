@@ -155,7 +155,7 @@ namespace Oybab.ServicePC
                 tsmi.Click += new System.EventHandler(this.tsmi_Click);
                 tsmiLanguage.DropDownItems.Add(tsmi);
 
-                if (Resources.GetRes().MainLangIndex == item.Value.MainLangIndex)
+                if (Resources.GetRes().CurrentLangIndex == item.Value.LangIndex)
                 {
                     tsmi.Checked = true;
                     tsmi.Enabled = false;
