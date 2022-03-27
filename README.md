@@ -2,7 +2,7 @@
 
 <img src="banner.jpg" alt="Oybab Trading System banner">
 
-Oybab Trading System is an open source **trading system** that support **multiple language** and run in **multiple device** (By windows platform for now). Also it totally free for the end users which use the final binary / assembly files.
+Oybab Trading System is an open source **trading system** that support **multiple language** and run in **multiple device** (Windows platform , or all mobile platforms). Also it totally free for the end users which use the final binary / assembly files.
 
 See more [Screenshots](https://oybab.net/Screenshots.html).
 
@@ -83,3 +83,9 @@ Before you download the source code and use, make sure installed the prerequisit
  3. Open solution with Visual Studio and restore all project Nuget Packages.
  4. We recommend you run 2 Visual Studio instance when developing.(1.run `OybabServiceConsoleHost` as a server service and debugging, another 1 run `PC`/`Table`/`Phone` Client project and debugging)
  5. Start your journey.
+
+
+
+# Donations
+
+To support this project, you can make a [donation](https://oybab.net/tradingsystem/donate).
