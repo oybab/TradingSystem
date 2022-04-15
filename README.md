@@ -2,6 +2,12 @@
 
 <img src="banner.jpg" alt="Oybab Trading System banner">
 
+## Introduction
+
+A multi-language cross-platform open source trading system that supports personal transaction management, restaurants, small shops, supermarkets, hotels, etc. It can also support secondary development and cooperate with your current business management and statistical reports.
+
+## Details
+
 Oybab Trading System is an open source **trading system** that support **multiple language** and run in **multiple device** (Windows platform , or all mobile platforms). Also it totally free for the end users which use the final binary / assembly files.
 
 See more [Screenshots](https://oybab.net/Screenshots.html).
