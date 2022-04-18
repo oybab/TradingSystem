@@ -75,5 +75,6 @@ namespace Oybab.TradingSystemX.Pages
                     view.GoCommand.Execute(new MainListModel { Name = "ChangeLanguageFinish" });
             }
         }
+
     }
 }

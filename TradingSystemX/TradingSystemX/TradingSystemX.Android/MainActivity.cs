@@ -14,9 +14,10 @@ using Android.Content.Res;
 
 namespace Oybab.TradingSystemX.Droid
 {
-    [Activity(Label = "Oybab Trading", Icon = "@mipmap/ic_launcher", Theme = "@style/MyTheme.Splash",  MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode)]
+    [Activity(Label = "Oybab Trading", Icon = "@mipmap/ic_launcher", Theme = "@style/MyTheme.Splash", LaunchMode = LaunchMode.SingleTask, MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             SetTheme(Resource.Style.MainTheme);
@@ -33,12 +34,13 @@ namespace Oybab.TradingSystemX.Droid
 
             base.OnCreate(savedInstanceState);
 
-            ZXing.Net.Mobile.Forms.Android.Platform.Init(); 
+            ZXing.Net.Mobile.Forms.Android.Platform.Init();
             ZXing.Mobile.MobileBarcodeScanner.Initialize(Application);
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
+
         }
 
         private void AndroidEnvironmentOnUnhandledException(object sender, RaiseThrowableEventArgs e)

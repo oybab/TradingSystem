@@ -577,7 +577,7 @@
     <value>لاؤنج مینجمنٹ</value>
   </data>
   <data name="SoftServiceName" xml:space="preserve">
-    <value>Oybab ٹریڈنگ سسٹم v1.1</value>
+    <value>Oybab ٹریڈنگ سسٹم v1.2</value>
   </data>
   <data name="OperateFaild" xml:space="preserve">
     <value>{0} ناکام !‏</value>
@@ -1321,7 +1321,7 @@
     <value>40</value>
   </data>
   <data name="SoftServiceVersion" xml:space="preserve">
-    <value>V1.1</value>
+    <value>V1.2</value>
   </data>
   <data name="DirectionMode" xml:space="preserve">
     <value>RightToLeft</value>

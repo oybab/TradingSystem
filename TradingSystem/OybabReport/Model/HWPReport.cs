@@ -85,6 +85,36 @@ namespace Oybab.Report.Model
 
 
 
+
+        /// <summary>
+        /// 从当前资源读取文件
+        /// </summary>
+        /// <param name="fileName"></param>
+        /// <returns></returns>
+        internal string GetResourceHTMLResourceFileFromLocal(string fileName)
+        {
+            string resource = null;
+            string file = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "CommonHWP", "Resources" , fileName);
+
+            if (System.IO.File.Exists(file))
+            {
+                using (FileStream fs = File.Open(file, FileMode.Open, FileAccess.Read))
+                {
+                    using (StreamReader sr = new StreamReader(fs))
+                    {
+                        resource = sr.ReadToEnd();
+                    }
+                }
+                return resource;
+            }
+            else
+            {
+                return GetResourceFileContentAsString(fileName);
+            }
+        }
+
+
+
         /// <summary>
         /// 获取产品名称
         /// </summary>

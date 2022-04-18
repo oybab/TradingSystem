@@ -22,8 +22,8 @@ namespace Oybab.TradingSystemX.Pages.Controls
 
             InitializeComponent ();
 
-            // iOS暂时不显示捐助, Apple要求使用内置购买功能.....
-            if (Device.RuntimePlatform == Device.iOS)
+            // 测试服务器
+            if (Oybab.TradingSystemX.Resources.Instance.SERVER_ADDRESS  == "oybab.net")
             {
                 columnDonate.Width = new GridLength(0);
             }

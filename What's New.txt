@@ -1,3 +1,13 @@
+
+v1.2.0(2022.4.18)
+Fix bugs.
+Increase stability.
+Optimize.
+
+
+-----------
+
+
 v.1.1.0(2021.5.8):
 Add some new languages.
 Update to new Report library. Remove all DevExpress report component.
@@ -6,8 +16,14 @@ Let Phone client auto login when startup.
 Fix some bugs.
 
 
-
+-----------
 
 
 v1.0.0(2020.7.21):
 Release on github.
+
+
+-----------
+
+
+Details: https://github.com/oybab/TradingSystem

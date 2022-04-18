@@ -39,7 +39,7 @@ namespace Oybab.Report.CommonHWP
             //if (string.IsNullOrWhiteSpace(JsContentToReport))
             //    JsContentToReport = GetResourceFileContentAsString("jquery-1.12.4.min.js");
 
-            string htmlContent = GetResourceFileContentAsString("ImportReport.html");
+            string htmlContent = GetResourceHTMLResourceFileFromLocal("ImportReport.html");
 
 
             htmlContent = htmlContent.Replace(@"<!--${DynamicImportJquery}-->", string.Format("<script type=\"text/javascript\" > {0}</script>", GetResourceFileContentAsString("JS.jquery-1.12.4.min.js")));

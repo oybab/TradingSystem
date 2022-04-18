@@ -36,7 +36,7 @@ namespace Oybab.Report.CommonHWP
         internal override string ProcessHTMLContent(ReportModel reportModel)
         {
 
-            string htmlContent = GetResourceFileContentAsString("BackstageTakeoutReport.html");
+            string htmlContent = GetResourceHTMLResourceFileFromLocal("BackstageTakeoutReport.html");
 
 
             htmlContent = htmlContent.Replace(@"<!--${DynamicImportJquery}-->", string.Format("<script type=\"text/javascript\" > {0}</script>", GetResourceFileContentAsString("JS.jquery-1.12.4.min.js")));

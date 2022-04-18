@@ -577,7 +577,7 @@
     <value>ניהול מושב</value>
   </data>
   <data name="SoftServiceName" xml:space="preserve">
-    <value>Oybab V1.1 מערכת הסחר</value>
+    <value>Oybab V1.2 מערכת הסחר</value>
   </data>
   <data name="OperateFaild" xml:space="preserve">
     <value>{0} נשכל !‏</value>
@@ -1321,7 +1321,7 @@
     <value>40</value>
   </data>
   <data name="SoftServiceVersion" xml:space="preserve">
-    <value>V1.1</value>
+    <value>V1.2</value>
   </data>
   <data name="DirectionMode" xml:space="preserve">
     <value>RightToLeft</value>

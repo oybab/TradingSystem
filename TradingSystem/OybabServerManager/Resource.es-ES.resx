@@ -577,7 +577,7 @@
     <value>Gestión</value>
   </data>
   <data name="SoftServiceName" xml:space="preserve">
-    <value>Oybab Sistema de Comercio v1.1</value>
+    <value>Oybab Sistema de Comercio v1.2</value>
   </data>
   <data name="OperateFaild" xml:space="preserve">
     <value>¡Fracasado {0}!</value>
@@ -1321,7 +1321,7 @@
     <value>40</value>
   </data>
   <data name="SoftServiceVersion" xml:space="preserve">
-    <value>V1.1</value>
+    <value>V1.2</value>
   </data>
   <data name="DirectionMode" xml:space="preserve">
     <value>LeftToRight</value>

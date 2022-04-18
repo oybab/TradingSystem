@@ -55,12 +55,29 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
                 AddDateEnd = DateTime.Now;
                 AddTimeEnd = DateTime.Now.TimeOfDay;
 
-                RefreshBillType();
-
             }
+
+
+
+            int oldTypeName = -1;
+
+            if (null != SelectedTypeName)
+                oldTypeName = (int)SelectedTypeName.Value;
+
+
+            RefreshBillType();
+
+
+
+            if (-1 != oldTypeName)
+                SelectedTypeName = TypeName.FirstOrDefault(x => (int)x.Value == oldTypeName);
+
+            if (null == SelectedTypeName)
+                SelectedTypeName = TypeName.FirstOrDefault();
+
         }
 
-     
+
 
         /// <summary>
         /// 刷新账单类型
@@ -68,12 +85,24 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
         private void RefreshBillType()
         {
 
+            int oldBillType = -1;
+
+            if (null != SelectedBillType)
+                oldBillType = (int)SelectedBillType.Value;
+
             BillType.Clear();
             BillType.Add(new Dict() { Name = Resources.Instance.GetString("BillTypeInner"), Value = 0 });
             BillType.Add(new Dict() { Name = Resources.Instance.GetString("BillTypeOuter"), Value = 1 });
             BillType.Add(new Dict() { Name = Resources.Instance.GetString("Expenditure"), Value = 2 });
 
             SelectedBillType = BillType.FirstOrDefault();
+
+            if (-1 != oldBillType)
+                SelectedBillType = BillType.FirstOrDefault(x => (int)x.Value == oldBillType);
+
+
+            if (null == SelectedBillType)
+                SelectedBillType = BillType.FirstOrDefault();
         }
 
 
@@ -103,6 +132,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
                 }
 
                 SelectedTypeName = TypeName.FirstOrDefault();
+
             }
 
         }

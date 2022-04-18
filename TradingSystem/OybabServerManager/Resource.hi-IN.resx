@@ -574,7 +574,7 @@
     <value>लाउंज प्रबंधन</value>
   </data>
   <data name="SoftServiceName" xml:space="preserve">
-    <value>Oybab ट्रेडिंग सिस्टम v1.1</value>
+    <value>Oybab ट्रेडिंग सिस्टम v1.2</value>
   </data>
   <data name="OperateFaild" xml:space="preserve">
     <value>{0} विफल!</value>
@@ -1918,7 +1918,7 @@
     <value>LeftToRight</value>
   </data>
   <data name="SoftServiceVersion" xml:space="preserve">
-    <value>v1.1</value>
+    <value>v1.2</value>
   </data>
   <data name="HorizontalModel" xml:space="preserve">
     <value>Left</value>
