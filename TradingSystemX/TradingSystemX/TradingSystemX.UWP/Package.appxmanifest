@@ -9,7 +9,7 @@
   <Identity
     Name="19006-OYBAB.OybabTrading"
     Publisher="CN=&quot;Oybab Co., Ltd.&quot;, OU=IT, O=&quot;Oybab Co., Ltd.&quot;, POBox=848000, STREET=&quot;No 82, Hawa Alley No 1, West Taibei Road&quot;, L=Hetian, S=Xinjiang, PostalCode=848000, C=CN"
-    Version="1.2.0.0" />
+    Version="1.2.3.0" />
 
   <mp:PhoneIdentity PhoneProductId="d71993d5-eb57-492d-8aa3-1535be5e30f4" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 

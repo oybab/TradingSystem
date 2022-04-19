@@ -38,7 +38,6 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
             IsSavePassword = false;
 
 
-
             if (!string.IsNullOrWhiteSpace(Resources.Instance.LastLoginAdminNo))
                 AdminNo = Resources.Instance.LastLoginAdminNo;
             if (Resources.Instance.IsSavePassword && !string.IsNullOrWhiteSpace(Resources.Instance.LastLoginPassword))
@@ -49,11 +48,14 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
                 IsAgreeRequirements = true;
             }
 
+            bool _isAdminUsing = false;
+
             if (InitCount > 0)
             {
                 HideSetting = true;
                 if (OperatesService.Instance.IsAdminUsing)
                 {
+                    _isAdminUsing = true;
                     OperatesService.Instance.IsAdminUsing = false;
 
                     QueueMessageBoxNotification.Instance.ActionMessageBox(null, null, CommandTitles.Instance.Information, string.Format(Resources.Instance.GetString("Exception_AdminExists"), Common.Instance.GetFormat()), MessageBoxMode.Dialog, MessageBoxImageMode.Error, MessageBoxButtonMode.OK, null, null);
@@ -65,7 +67,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
 
 
             // 自动开始登录
-            if (Resources.Instance.IsSavePassword)
+            if (Resources.Instance.IsSavePassword && !_isAdminUsing)
                 LoginCommand.Execute(null);
 
         }
@@ -138,6 +140,9 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
                 OnPropertyChanged("IsLoading");
             }
         }
+
+
+
 
 
 
@@ -247,7 +252,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
 
 
         /// <summary>
-        /// 退出
+        /// 登录
         /// </summary>
         private RelayCommand _loginCommand;
         public Command LoginCommand
@@ -309,6 +314,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
                                         {
                                                 // 登录
                                                 Login();
+                                                IsLoading = false;
                                         }, null);
                                     }
                                     // 如果快过期了则提示

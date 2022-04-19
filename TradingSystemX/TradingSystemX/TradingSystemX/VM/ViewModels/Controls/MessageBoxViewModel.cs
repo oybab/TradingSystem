@@ -161,7 +161,8 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Controls
                         if (OperatesService.Instance.IsExpired || OperatesService.Instance.IsAdminUsing)
                         {
                             MainViewModel viewModel = NavigationPath.Instance.CurrentNavigate.BindingContext as MainViewModel;
-                            viewModel.ReLyout();
+                            if (null != viewModel)
+                                viewModel.ReLyout();
                         }
                     });
                 

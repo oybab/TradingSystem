@@ -49,7 +49,22 @@
                         </Grid.ColumnDefinitions>
                         <Button Grid.Column="0" HorizontalOptions="End" Command="{Binding LoginCommand}" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Login}"  />
 
-                        <Button Grid.Column="1" HorizontalOptions="Center" Command="{Binding ResetCommand}" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Reset2}" />
+                        <Button Grid.Column="1" HorizontalOptions="Center" Command="{Binding ResetCommand}" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Reset2}" >
+                            <Button.Triggers>
+                                <DataTrigger TargetType="Button" Binding="{Binding HideSetting}" Value="True">
+                                    <Setter Property="IsVisible" Value="False"/>
+                                </DataTrigger >
+                            </Button.Triggers>
+                        </Button>
+
+                        <Button  HorizontalOptions="Center"  Grid.Column="1" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Close}" Command="{Binding CloseCommand}" IsVisible="False">
+                            <Button.Triggers>
+                                <DataTrigger TargetType="Button" Binding="{Binding HideSetting}" Value="True">
+                                    <Setter Property="IsVisible" Value="True"/>
+                                </DataTrigger >
+                            </Button.Triggers>
+                        </Button>
+                        
 
                         <Button Margin="10,0,0,0" HorizontalOptions="Start"  Grid.Column="2" Command="{Binding SettingCommand}" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Settings}"  >
                             <Button.Triggers >
@@ -59,17 +74,11 @@
                                 </DataTrigger >
                             </Button.Triggers>
                         </Button>
+                       
                     </Grid>
                 </StackLayout>
             </ScrollView>
-            <StackLayout Grid.Row="2"  HorizontalOptions="End" Orientation="Horizontal" IsVisible="False">
-                <Button Margin="0,0,5,0" Text="{Binding Path=T, Source={StaticResource LC}, Mode=OneWay, Converter={StaticResource LC},ConverterParameter=Close}" Command="{Binding CloseCommand}"></Button>
-                <StackLayout.Triggers>
-                    <DataTrigger TargetType="StackLayout" Binding="{Binding HideSetting}" Value="True">
-                        <Setter Property="IsVisible" Value="True"/>
-                    </DataTrigger > 
-                </StackLayout.Triggers>
-            </StackLayout>
+          
 
             <Grid Grid.Row="2">
                 <Grid.RowDefinitions>
