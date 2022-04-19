@@ -2,13 +2,18 @@
 
 <img src="banner.jpg" alt="Oybab Trading System banner">
 
+
 ## Introduction
+
 
 A multi-language cross-platform open source trading system that supports personal transaction management, restaurants, small shops, supermarkets, hotels, etc. It can also support secondary development and cooperate with your current business management and statistical reports.
 
-![Screenshots1](https://user-images.githubusercontent.com/68304210/164019598-8889cb1d-f111-48a7-902a-751370ea265d.gif)
-![Screenshots2](https://user-images.githubusercontent.com/68304210/164019631-7423da56-4a4c-4237-b6ba-061815e78bae.gif)
-![Screenshots3](https://user-images.githubusercontent.com/68304210/164019656-d222d951-b47c-457f-a81f-51161fbe7202.gif)
+
+<p align="center">
+ <img alt="Screenshots1" src="https://user-images.githubusercontent.com/68304210/164019598-8889cb1d-f111-48a7-902a-751370ea265d.gif" />
+ <img alt="Screenshots1" src="https://user-images.githubusercontent.com/68304210/164019631-7423da56-4a4c-4237-b6ba-061815e78bae.gif" />
+ <img alt="Screenshots1" src="https://user-images.githubusercontent.com/68304210/164019656-d222d951-b47c-457f-a81f-51161fbe7202.gif" />
+</p>
 
 ## Details
 
