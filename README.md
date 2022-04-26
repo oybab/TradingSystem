@@ -65,6 +65,9 @@ Currently supported external device:
 
 # Getting Started
 
+<img src="process.png" alt="How it work">
+
+
 
 ## End User
 
