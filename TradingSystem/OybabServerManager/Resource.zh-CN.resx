@@ -556,7 +556,7 @@
     <value>发送操作请求错误！</value>
   </data>
   <data name="SoftServiceName" xml:space="preserve">
-    <value>梦胜交易系统v1.1</value>
+    <value>梦胜交易系统v1.2</value>
   </data>
   <data name="ChangeSet" xml:space="preserve">
     <value>功能设置</value>
@@ -1321,7 +1321,7 @@
 		<value>40</value>
 	</data>
   <data name="SoftServiceVersion" xml:space="preserve">
-		<value>V1.1</value>
+		<value>V1.2</value>
 	</data>
   <data name="DirectionMode" xml:space="preserve">
 		<value>LeftToRight</value>

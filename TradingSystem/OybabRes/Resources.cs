@@ -466,10 +466,10 @@ namespace Oybab.Res
         }
 
 
-        internal string SOFT_SERVICE_NAME = "TradingSystemV1.1";
-        internal string SOFT_SERVICE_TABLET_NAME = "TradingSystemTabletV1.1";
-        internal string SOFT_SERVICE_MOBILE_NAME = "TradingSystemMobilesV1.1";
-        internal string SOFT_SERVICE_PC_NAME = "TradingSystemPCV1.1";
+        internal string SOFT_SERVICE_NAME = "TradingSystemV1.2";
+        internal string SOFT_SERVICE_TABLET_NAME = "TradingSystemTabletV1.2";
+        internal string SOFT_SERVICE_MOBILE_NAME = "TradingSystemMobilesV1.2";
+        internal string SOFT_SERVICE_PC_NAME = "TradingSystemPCV1.2";
 
 
         public int LongDay { get; private set; } // 查询最长时间限制
