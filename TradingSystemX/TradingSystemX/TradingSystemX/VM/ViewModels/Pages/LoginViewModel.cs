@@ -173,7 +173,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
                 OnPropertyChanged("IsAgreeRequirements");
             }
         }
-        
+
         /// <summary>
         /// 打开隐私政策
         /// </summary>
@@ -184,10 +184,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
             {
                 return _privacyPolicyCommand ?? (_privacyPolicyCommand = new RelayCommand(param =>
                 {
-                    if (Res.Instance.CurrentLangIndex == 0 || Res.Instance.CurrentLangIndex == 1)
-                        Xamarin.Essentials.Launcher.OpenAsync(new System.Uri("https://oybab.net/privacy.html#chinese")); 
-                    else
-                        Xamarin.Essentials.Launcher.OpenAsync(new System.Uri("https://oybab.net/privacy.html#english"));
+                    Xamarin.Essentials.Launcher.OpenAsync(new System.Uri("https://oybab.net/tradingsystem/privacypolicy/" + Res.Instance.MainLang.Culture.Name));
                 }));
             }
         }
@@ -204,10 +201,7 @@ namespace Oybab.TradingSystemX.VM.ViewModels.Pages
             {
                 return _userAgreementCommand ?? (_userAgreementCommand = new RelayCommand(param =>
                 {
-                    if (Res.Instance.CurrentLangIndex == 0 || Res.Instance.CurrentLangIndex == 1)
-                        Xamarin.Essentials.Launcher.OpenAsync(new System.Uri("https://oybab.net/argument.html#chinese"));
-                    else
-                        Xamarin.Essentials.Launcher.OpenAsync(new System.Uri("https://oybab.net/argument.html#english"));
+                    Xamarin.Essentials.Launcher.OpenAsync(new System.Uri("https://oybab.net/tradingsystem/useragreement/" + Res.Instance.MainLang.Culture.Name));
                 }));
             }
         }
